@@ -1,0 +1,52 @@
+<task_commission_rules>
+Tạo: 
+  Cơ chế kích hoạt: Chỉ tạo khi <user> xem bảng nhiệm vụ công hội hoặc khi cốt truyện xác định rõ ràng việc hạ đạt ủy thác cụ thể cho <user>.
+  Ràng buộc cốt lõi:
+    - Thiết luật cảnh nền: Thành phố = An toàn tuyệt đối (Cấm chiến đấu); Địa điểm Chiến đấu/Săn bắn/Thảo phạt phải ở ngoài thành/dã ngoại.
+    - Quy phạm phần thưởng: Khớp tương ứng theo <economic_price_guide>; Cấm các giá trị số như kinh nghiệm/danh tiếng/điểm số; Phải ghi chú rõ [Cách thức nhận].
+    - Kiểm soát nội dung: Từ chối các nhiệm vụ sáo rỗng như tìm mèo/cống rãnh; Mỗi lần tạo ra nhiều nhiệm vụ.
+    分级体系 (Hệ thống phân cấp):
+    - Cấp D (Cá nhân/Không chiến đấu): 
+      Loại hình điển hình: Phục vụ cư dân, thu thập rủi ro thấp, nhiệm vụ mang tính thú vị/tường thuật, v.v.
+    - Cấp C (Cá nhân hoặc Tổ đội): 
+      Loại hình điển hình: Quét sạch kẻ địch lẻ tẻ, hộ tống đường ngắn, trinh sát khu vực, điều tra môi trường, v.v.
+      Tầng thứ: Tầng thứ hai.
+    - Cấp B (Cá nhân hoặc Tổ đội): 
+      Thời gian tiêu tốn: 1-2 tuần.
+      Loại hình điển hình: Tiêu diệt mục tiêu cụ thể, hỗ trợ truy bắt, tiêu diệt bầy ma vật, hộ tống vật tư quan trọng, v.v.
+      Tầng thứ: Tầng thứ ba.
+    - Cấp A (Cá nhân hoặc Tổ đội): 
+      Thời gian tiêu tốn: ~1 tháng.
+      Loại hình điển hình: Hỗ trợ quân sự, trảm sát mục tiêu nguy hiểm cao, thảo phạt hang ổ, giải quyết khủng hoảng khu vực.
+      Tầng thứ: Tầng thứ tư.
+    - Cấp S (Cần nhà phiêu lưu cấp S dẫn dắt): 
+      Thời gian tiêu tốn: Có thể kéo dài vài tháng.
+      Loại hình điển hình: Liên quan đến khủng hoảng quốc gia, thảo phạt tồn tại vị cách cao, thay đổi vĩnh viễn địa khu.
+      Tầng thứ: Tầng thứ năm đến thứ sáu.
+  Định dạng đầu ra:
+    - Chỉ thị: Phải sử dụng định dạng sau; Nếu là phần thưởng tổ đội cần tách riêng thuyết minh.
+    - Mẫu: |
+        <task_info>
+        Nhiệm vụ: [Tên] ([Tổ đội/Cá nhân])
+        Ủy thác: [Bên ủy thác]
+        Cấp độ: [S/A/B/C/D]
+        Chi tiết: [Bối cảnh và động cơ]
+        Mục tiêu: [Mục tiêu thực hiện & Địa điểm (Chiến đấu tất yếu phải ra ngoài thành, kiểm soát nội dung tránh sáo rỗng)]; [Thời hạn kết thúc nhiệm vụ]
+        Thưởng: [Danh sách phần thưởng cụ thể (không bao gồm các hạng mục bị cấm)]; Tổ đội cần ghi rõ (Tổng thưởng | Phần của <user>); Cách thức nhận: [Cách thức nhận và Địa điểm]
+        </task_info>{{getvar::Aria【Câu chuyện của bạn】}}
+Quyết toán:
+  Cơ chế kích hoạt: Chỉ kích hoạt khi nhiệm vụ trong <status_current_variables> đã hoàn thành và nhận tất cả phần thưởng / nộp nhiệm vụ / nhiệm vụ thất bại (như quá thời hạn).
+  Ràng buộc cốt lõi: 
+    - Nghiêm cấm kích hoạt bởi <action_info> (như quyết toán chiến đấu/đánh giá sinh tồn/phần thưởng tạm thời).
+    - Một nhiệm vụ quyết toán một lần, tránh quyết toán lặp lại.
+  Định dạng đầu ra:
+    - Mẫu: |
+        <task_info>
+        Nhiệm vụ: [Tên] ([Tổ đội/Cá nhân])
+        Trạng thái: Đã hoàn thành/Thất bại
+        Ủy thác: [Bên ủy thác]
+        Cấp độ: [S/A/B/C/D]
+        Ghi chép hành động: Truy hồi toàn bộ quá trình nhiệm vụ đó của <user>, những thủ đoạn cốt lõi và hành động then chốt đã thực hiện khi thành công/thất bại.
+        Quyết toán: [Danh sách phần thưởng cụ thể (không bao gồm các hạng mục bị cấm)/Không]
+        </task_info>{{getvar::Aria【Không chỉ có thế】}}
+</task_commission_rules>

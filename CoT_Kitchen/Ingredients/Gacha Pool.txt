@@ -1,0 +1,15 @@
+<dice_pool>
+    Quy tắc: Tất cả số ngẫu nhiên cần thiết cho giao thức chiến đấu và giao thức sản xuất chế tạo trong văn bản lần này, phải lấy từ hồ kiểm định này theo thứ tự nghiêm ngặt
+    d20_60: [{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}},{{roll 1d20}}]
+Đặc tính hồ xúc xắc: Mỗi lần xuất đã mặc định làm mới, đều là kết quả gieo mới, chỉ mục lại từ đầu
+</dice_pool>
+<personality_pool>
+    Quy tắc: Để tránh định kiến, nhân vật mới sinh ra trong văn bản lần này, phải lấy ba tính cách sau khi ngẫu nhiên từ đây theo thứ tự nghiêm ngặt, không được sửa đổi
+    Tính cách: [{{random::g,G,p,P}}{{random::i,I,e
+,E}}{{random::t,T,f,F}}{{random::r,R,c,C}}{{random::m
+,M,n,N}}({{random::S,A,F}}),{{random::g,G,p,P}}{{random::i,I,e
+,E}}{{random::t,T,f,F}}{{random::r,R,c,C}}{{random::m
+,M,n,N}}({{random::S,A,F}}),{{random::g,G,p,P}}{{random::i,I,e
+,E}}{{random::t,T,f,F}}{{random::r,R,c,C}}{{random::m
+,M,n,N}}({{random::S,A,F}})]
+</personality_pool>

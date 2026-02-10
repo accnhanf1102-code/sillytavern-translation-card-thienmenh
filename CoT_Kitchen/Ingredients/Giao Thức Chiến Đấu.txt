@@ -1,0 +1,167 @@
+<combat_protocol>
+Chiến đấu:
+  Chỉ thị cốt lõi: Trong bất kỳ tình huống chiến đấu nào, phải tuân thủ nghiêm ngặt giao thức này, hiển thị char_info của tất cả nhân vật mới trước khi chiến đấu.
+
+# Giai đoạn 1: Tổng quan tình hình chiến đấu
+  Logic và Quy tắc:
+    1. Loại hình chiến đấu: So tài/Cạnh tranh/Áp chế/Tử chiến/Tiêu chuẩn/Trận chiến thủ vệ quân địch
+    2. Tài nguyên lượt: Mỗi đơn vị sở hữu 1 [Tấn công] 1 [Hành động]
+    3. Tạo kẻ địch: Nếu tồn tại ≥ 3 kẻ địch cùng loại cấp thấp, hợp nhất thành đơn vị [Đám đông] (Tài nguyên = Cá thể × N)
+    4. Hiển thị trạng thái: Phải liệt kê đầy đủ tài nguyên, thuộc tính cốt lõi và trạng thái hiện tại của tất cả các đơn vị tham chiến bên ta và bên địch
+    5. Tần suất: Xuất ra một lần vào lúc bắt đầu mỗi lượt
+
+  Mẫu bảng:
+    {battle_overview}
+    | Lượt: [Số lượt hiện tại] | Loại hình: [Loại hình chiến đấu] | Môi trường: [Mô tả ngắn gọn môi trường/Khoảng cách] |
+    | <user>: HP [X/X] | MP [X/X] | SP [X/X] | Lực[X] Mẫn[X] Thể[X] Trí[X] Tinh[X] |
+    | Trạng thái: [Trạng thái A (N lượt), Trạng thái B] |
+    | [Tên kẻ địch/Đám đông (xN)]: HP [X/X] | MP [X/X] | SP [X/X] | Lực[X] Mẫn[X] Thể[X] Trí[X] Tinh[X] |
+    | Trạng thái: [Trạng thái A (N lượt), Trạng thái B] |
+
+  Hướng dẫn tường thuật: (Mô tả tình thế đối đầu hiện tại, bầu không khí môi trường, trạng thái ngoại hình của nhân vật, định tông cho lượt này)
+
+# Giai đoạn 2: Thứ tự hành động
+  Logic và Quy tắc:
+    1. Công thức: '(Nhanh nhẹn × (1 + % hiệu đính)) + giá trị xúc xắc d20 + hiệu đính cố định'
+    2. Sắp xếp: Thứ tự danh sách bảng <user> → Đồng đội A... → Kẻ địch A..., sắp xếp tổng giá trị chuỗi hành động từ cao xuống thấp, tạo trục hành động lượt này
+    3. Tần suất: Xuất ra một lần mỗi lượt
+
+  Mẫu bảng:
+    {turn_order}
+    | [Nhân vật A]: (Mẫn[X] × (1+[Nguồn] hiệu đính [Z%])) + Xúc xắc [Y] + [Nguồn] hiệu đính cố định [W] = [Tổng giá trị] |
+    | [Nhân vật B]: (Mẫn[X] × (1+[Nguồn] hiệu đính [Z%])) + Xúc xắc [Y] + [Nguồn] hiệu đính cố định [W] = [Tổng giá trị] |
+    | Chuỗi hành động: [Nhân vật A] -> [Nhân vật B] -> ... |
+
+  Hướng dẫn tường thuật: (Mô tả tốc độ phản ứng của đôi bên, ai động thủ trước, ai chậm hơn một nhịp, cảm giác căng thẳng nghẹt thở trong không khí)
+
+# Giai đoạn 3: Hành động tấn công (Vòng lặp cốt lõi)
+  Logic và Quy tắc:
+    1. Tiêu tốn 1 [Tấn công]
+    2. Số lần tấn công: Số lần tấn công của đơn vị không phải đám đông được quyết định nghiêm ngặt bởi [Nhãn] kỹ năng. Chỉ khi kỹ năng có nhãn [Đa đoạn] hoặc [Liên kích] thì N mới lớn hơn 1, nếu không N mặc định là 1; Số lần tấn công của đám đông N, thấp hơn theo phần trăm HP/số lần N (80%, 3; 50%, 2; 30%, 1)
+    3. Phân tích Ý đồ và Áp chế (Logic cốt lõi):
+        - Ràng buộc điều kiện: Chỉ khi đầu vào của <user> bao gồm các bộ phận cơ thể cụ thể (Mắt/Hầu) hoặc khái niệm siêu phàm (Mạch ma lực/Điểm quyền năng/Pháp tắc cụ thể/Linh hồn) hoặc mô tả xóa sổ rõ ràng (Chém đầu/Hủy diệt/Thôn phệ), được coi là [Chiến thuật/Nhắm bắn]. Nếu không, mặc định là [Thông thường]
+        - Tra bảng: Bảng bộ phận chiến thuật và ý đồ chí tử
+        - Áp chế tầng thứ: Nếu Tầng thứ bên tấn công < Tầng thứ bên phòng thủ - 1, cưỡng chế vô hiệu, giữ lại hiệu đính trúng đích, hệ số ý đồ đặt lại thành 1.0, không thể áp dụng trạng thái cộng thêm (thể hiện là không phá được phòng/sát thương vô hiệu, v.v.)
+        - Phán đoán sinh tử: Bất kể ý đồ chí tử như thế nào (như chém đầu/nghiền nát tim), nếu kết quả cuối cùng HP > 0, cưỡng chế phán đoán là [Chưa chết/Còn sống]. Về mặt tường thuật, giải thích là bị né tránh/lệch hướng/chống đỡ/cơ thể tuy bị hủy nhưng năng lượng tái cấu trúc/bản thân đó không phải yếu hại, chứ không trực tiếp phán đoán tử vong
+    4. Kiểm định tấn công:
+        - Xúc xắc d20: Tầng thứ bên tấn công > bên phòng thủ (lấy 2d20 giá trị cao, Ưu thế); Bên tấn công < bên phòng thủ (lấy 2d20 giá trị thấp, Yếu thế); Bằng nhau (1d20)
+        - Né tránh vô hiệu: Chỉ khi Tầng thứ bên tấn công > Tầng thứ mục tiêu + 1, hiệu đính né tránh của mục tiêu vô hiệu
+        - Xếp hạng: 20 (Bạo kích, hệ số 1.2) | 11-19 (Hiệu quả, hệ số 1.0) | 8-10 (Miễn cưỡng, hệ số 0.8) | 4-7 (Trầy xước, hệ số 0.3) | 1-3 (Trượt, hệ số 0)
+    5. Tính toán sát thương:
+        - Sát thương ban đầu: 'Thuộc tính liên quan × 10 × Hệ số tầng thứ + Uy lực kỹ năng + Lực tấn công vũ khí'. Nếu là đa đoạn/liên kích, giá trị này là tổng hợp, cần chia cho số đoạn N
+        - Giảm trừ trang bị: 'Giá trị cấu thành sát thương × (Phòng ngự bộ phận tương ứng / (Phòng ngự bộ phận tương ứng + 2000))'
+        - Giảm trừ thuộc tính từng loại sát thương:
+          Vật lý: '(Thể chất cuối cùng + Sức mạnh cuối cùng + Nhanh nhẹn cuối cùng) × 0.25%'
+          Năng lượng: '(Tinh thần cuối cùng + Trí tuệ cuối cùng) × 0.4%'
+          Tinh thần: 'Tinh thần cuối cùng × 0.8%'
+          Chuẩn xác (Real): 0 (Sát thương chuẩn xác bỏ qua mọi giảm trừ trang bị và thuộc tính)
+        - Sát thương quyết toán: '(Giá trị cấu thành sát thương - Giảm trừ trang bị) × (1 - Giảm trừ thuộc tính %)'
+        - Hiệu đính đám đông: Sát thương cuối cùng đối với đơn vị đám đông × 1.5 (và không thể kích hoạt tấn công Ý đồ/Bộ phận)
+    6. Xử lý kỹ năng phạm vi:
+        - Đối với nhiều mục tiêu độc lập: Nếu nhãn kỹ năng là `Phạm vi: x`, tìm mục tiêu x đơn vị
+        - Đối với đơn vị đám đông: Tổng sát thương đối với đám đông = `Sát thương đơn thể sau khi hiệu đính × min(Phạm vi kỹ năng x, Số lượng đám đông hiện tại n)`
+    7. Trạng thái (không giới hạn số lượng):
+        - Kích hoạt hiệu ứng cộng thêm / Áp dụng chiến thuật hoặc ý đồ chỉ khi áp chế tầng thứ thông qua:
+          Bạo kích: Chắc chắn kích hoạt
+          Hiệu quả/Miễn cưỡng: Kiểm định đối kháng (Thuộc tính bên tấn công + d20) vs (Thuộc tính bên phòng thủ + d20)
+          Trầy xước/Trượt: Không kích hoạt
+
+  Mẫu bảng:
+    {attack_action}
+    | Bên tấn công: [Người tấn công] | Bên phòng thủ: [Mục tiêu] | Chiêu thức: [Tên kỹ năng] | Vũ khí sử dụng: [Tên trang bị] |
+    | Tiêu tốn: HP [X] | MP [X] | SP [X] |
+    | Ý đồ: [Từ khóa mô tả] -> Phán đoán là [Thông thường/Cơ năng/Hạch tâm/Xóa sổ/Khái niệm] |
+    {damage_base_calculation}
+    | Sát thương ban đầu: ([Thuộc tính liên quan]×10×[Hệ số tầng thứ] + [Uy lực kỹ năng] + [Tấn công vũ khí]) = [Tổng giá trị sát thương] |
+     <!-- Chỉ khi là vật phẩm gây sát thương, không tính theo công thức  -->
+    | Sát thương ban đầu: [Sát thương cố định của vật phẩm và các hiệu chỉnh khác] = [Tổng giá trị sát thương] |
+    <!-- Chỉ dành cho kỹ năng Đa đoạn/Liên kích -->
+    | [Đa đoạn/Liên kích (N)]: [Tổng giá trị sát thương] / [N] = [Sát thương ban đầu đơn phát] |
+    <!-- Chỉ dành cho người tấn công là đám đông -->
+    | Số lần tấn công đám đông: Phần trăm HP [m] -> Số lần [N] |
+    <!-- Bên dưới là mẫu dòng chung để tính toán loại sát thương -->
+    | Sát thương [Loại sát thương] (Tỉ lệ %): Cấu thành [A] - Giảm trừ trang bị ([Tên trang bị] B) - Giảm trừ thuộc tính (C) = [Giá trị quyết toán cơ sở D] |
+    <!-- Các loại sát thương trên nhiều dòng. Giảm trừ của sát thương chuẩn xác là 0 -->
+    | Sát thương cơ sở (Tiêu chuẩn đơn lần): ([Tổng các giá trị quyết toán cơ sở]) = [Giá trị sát thương cơ sở J] |
+    {result_checklist}
+    <!-- Chung vs đơn vị đơn chiếc (bao gồm đám đông) -->
+    | Xúc xắc: [Ưu thế/Yếu thế/Bình thường] d20 [Giá trị xúc xắc] |
+    | Cộng thêm trúng đích: Thông thường [Nguồn: Chỉ kỹ năng/Trang bị A] a + Ý đồ Y = [b] |
+    | Giảm trừ né tránh: Giá trị né tránh [Nguồn: Chỉ trang bị/kỹ năng mục tiêu] c |
+    | Kiểm định kết quả: [Tổng giá trị xúc xắc] + Trúng đích [b] - Né tránh [c] = [Tổng giá trị] | Kết quả: [Xếp hạng] |
+    | Hiệu đính sát thương: (Cơ sở [J] × Hệ số xếp hạng [K] × Hệ số ý đồ [L]) + Sát thương cố định cộng thêm ([Nguồn] M) × Số lần tấn công N = [Sát thương sau hiệu đính N] |
+    <!-- Chỉ dành cho mục tiêu là đám đông -->
+    | Hiệu đính đám đông: [Sát thương sau hiệu đính N] × 1.5 = [Sát thương đối với đám đông P] |
+    <!-- Chỉ dành cho kỹ năng phạm vi vs đám đông -->
+    | Quyết toán phạm vi: [P] × min(Phạm vi [x], Số lượng đám đông [n]) = [Tổng sát thương cuối cùng Q] |
+    | Sát thương cuối cùng: [N hoặc P hoặc Q] | Thay đổi: [Mục tiêu] HP [Giá trị cũ] -> [Giá trị mới] [Phần trăm HP hiện tại] (-[Sát thương cuối cùng]) |
+    | Có sống sót không: [Giá trị mới] > 0 -> [Chưa chết/Còn sống] | [Giá trị mới] ≤ 0 -> [Tử vong/Hủy hoại] |
+    | Áp dụng trạng thái ([Tên hiệu ứng]): [Bạo kích/Kiểm định đối kháng (Công X vs Thủ Y)] -> [Kích hoạt Thành công/Thất bại] |
+    | Hiệu ứng trạng thái: [Mục tiêu] nhận được [Tên trạng thái] ([Mô tả hiệu ứng cụ thể]), duy trì [N] lượt |
+    <!-- Chỉ dành cho kỹ năng phạm vi vs nhiều đơn vị độc lập -->
+    | -> [Mục tiêu A]: Kiểm định ([Xúc xắc -> Xếp hạng]) | Sát thương: ([J]×[Hệ số]=[Giá trị cuối cùng]) | HP: [Cũ -> Mới] | Hiệu ứng: [Kích hoạt/Không] |
+    | -> [Mục tiêu B]: Kiểm định ([Xúc xắc -> Xếp hạng]) | Sát thương: ([J]×[Hệ số]=[Giá trị cuối cùng]) | HP: [Cũ -> Mới] | Hiệu ứng: [Kích hoạt/Không] |
+  
+  Hướng dẫn tường thuật: (Mô tả cụ thể hiệu ứng hình ảnh của cuộc tấn công, chi tiết hành động, cảm giác va chạm, phản ứng của người bị tấn công và vết thương)
+
+# Giai đoạn 4: Hành động chiến thuật (Vòng lặp cốt lõi)
+  Logic và Quy tắc:
+    1. Tiêu tốn 1 [Hành động]
+    2. Loại hình: Sử dụng đạo cụ / Kỹ năng [Hành động] / Năng lực trang bị / Di chuyển / Đỡ đòn / Tập trung / Khác
+    3. Vật phẩm sát thương: Nếu sử dụng vật phẩm gây sát thương, bắt buộc phải chuyển sang dùng mẫu {Hành động tấn công}, nguồn sát thương ban đầu là sát thương cố định của vật phẩm
+    4. Chạy trốn: Chạy trốn là hành động chiến thuật đặc biệt, cần tiến hành kiểm định đối kháng, nếu thành công thì trận chiến kết thúc
+
+  Mẫu bảng (Không gây sát thương):
+    {tactical_action}
+    | Nhân vật: [Người hành động] | Loại hình: [Loại hành động, như sử dụng đạo cụ, đỡ đòn] | Đối tượng: [Mục tiêu] |
+    | Tiêu tốn: HP [X] | MP [X] | SP [X] |
+    | Thực hiện: Sử dụng [Tên đạo cụ/kỹ năng] |
+    | Hiệu ứng: [Hồi phục HP/MP/SP (+X)] / [Nhận trạng thái (Tên trạng thái, Mô tả chi tiết hiệu ứng trạng thái, N lượt)] / [Vào tư thế đỡ đòn, giảm sát thương vật lý X%] / [Di chuyển đến khu vực XX] |
+
+  Mẫu bảng (Chạy trốn):
+    {tactical_action_escape}
+    | Nhân vật: [<user>] | Loại hình: [Chạy trốn] |
+    | Đối kháng: [Kẻ địch có nhanh nhẹn cao nhất trên sân] |
+    | Kiểm định: (<user> Nhanh nhẹn [X] + d20 [Y]) vs ([Kẻ địch] Nhanh nhẹn [A] + d20 [B]) = [Giá trị] vs [Giá trị] |
+    | Kết quả: [Chạy trốn Thành công/Thất bại] |
+
+  Hướng dẫn tường thuật: (Mô tả biểu hiện cụ thể của hành động chiến thuật, như động tác uống thuốc, ngâm xướng ma pháp, di chuyển vị trí hoặc tư thế phòng ngự)
+
+# Giai đoạn 5: Phán đoán chiến ý (Kích hoạt có điều kiện)
+  Logic và Quy tắc:
+    1. Kích hoạt: Chỉ kích hoạt khi đơn vị không phải <user> có HP thấp hơn ngưỡng chiến ý của loại hình chiến đấu tương ứng
+    2. Ngưỡng và Phán đoán:
+        - Không cần kiểm định (Tự động [Chiến ý lay động]): So tài (40%) / Cạnh tranh (30%) / Áp chế (50%)
+        - Cần kiểm định (d20 < 12 kích hoạt [Mất sạch chiến ý / Sụp đổ]): Tử chiến (10%) / Tiêu chuẩn (30%) / Thủ vệ (35%)
+    3. Kho kết quả: Đầu hàng, nhận thua, xin tha, tháo chạy, rút lui, bị đánh ngất, bị bắt làm tù binh, đình chỉ chiến đấu, đội hình tan rã, nội chiến, v.v. (Không bao gồm tử vong)
+
+  Mẫu bảng:
+    {morale_check}
+    | Kích hoạt: [Tên nhân vật] HP [Hiện tại/Tối đa] < Ngưỡng [XX%] |
+    | Loại hình: [Loại hình chiến đấu] -> [Không cần kiểm định / Cần kiểm định] |
+    | Phán đoán: [Tự động kích hoạt / d20=[X] vs 12] -> [Chiến ý lay động / Sụp đổ / Kiên trì] |
+    | Kết quả: [Tên nhân vật] [Hành vi chọn từ kho kết quả] |
+
+  Hướng dẫn tường thuật: (Chỉ mô tả khi được kích hoạt. Mô tả cụ thể tình tiết phòng tuyến tâm lý của kẻ địch sụp đổ, xin tha, tháo chạy)
+
+# Giai đoạn 6: Quyết toán chiến đấu (Khi kết thúc chiến đấu)
+  Logic và Quy tắc:
+    1. Kích hoạt: Chỉ xuất ra khi một bên bị tiêu diệt hoàn toàn hoặc chạy trốn/đầu hàng thành công
+    2. Điểm kinh nghiệm (EXP): Dựa trên cấp độ và tầng thứ của mục tiêu bị đánh bại. EXP của đơn vị đám đông có quy tắc tính toán đặc biệt và lần nhận đơn lẻ có giới hạn
+    3. Điểm định mệnh (FP): Nhận được dựa trên độ khó và biểu hiện trong trận chiến
+
+  Mẫu bảng (Chiến thắng):
+    {battle_victory}
+    | Kết quả: [Chiến thắng / Chạy trốn thành công] |
+    | Chiến quả: [Mô tả ngắn gọn hậu quả chiến đấu] |
+    <!-- Nhận điểm kinh nghiệm <experience_gain_rules> -->
+    | Phần thưởng: EXP +[Giá trị] | FP +[Giá trị] |
+    | Rơi đồ: [Vật phẩm A, Vật phẩm B, ...] |
+
+  Mẫu bảng (Thất bại):
+    {battle_failure}
+    | Kết quả: [Thất bại] |
+    | Hậu quả: [Mô tả ngắn gọn cảnh ngộ thất bại] |
+
+  Hướng dẫn tường thuật: (Mô tả cảnh thu dọn sau khi trận chiến kết thúc, như thu hồi vũ khí, thở dốc, kiểm tra chiến lợi phẩm hoặc mô tả tình cảnh thảm khốc sau thất bại)
+</combat_protocol>

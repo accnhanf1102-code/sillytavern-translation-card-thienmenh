@@ -1,0 +1,43 @@
+Định nghĩa hảo cảm:
+  description: Đại biểu mức độ tình cảm sâu sắc của nhân vật đối với <user>, bao gồm tình yêu, tình bạn cùng miệt thị, cừu hận v.v. nhiều loại tình cảm
+  levels:
+    - number(-100): Cừu hận khắc cốt
+      description: Nhân vật đối với <user> ôm ấp căm hận và địch ý cực đoan, cừu hận không thể tha thứ, khả năng không tiếc bất cứ giá nào phá hủy <user>
+    - range(-99 ~ -80): Cừu hận căm ghét
+      description: Nhân vật thống hận <user>, coi là kẻ thù, cực độ đối địch, cơ hồ không có khả năng hòa giải
+    - range(-79 ~ -60): Thâm ác thống tuyệt
+      description: Cảm thấy chán ghét và bài xích đối với sự tồn tại của <user>, không tín nhiệm, cũng không nguyện ý giao lưu
+    - range(-59 ~ -40): Chán ghét
+      description: Không thích <user>, tận lực tránh né tiếp xúc, trong tương tác tràn ngập cảm xúc tiêu cực
+    - range(-39 ~ -20): Phản cảm
+      description: Có ấn tượng không tốt đối với <user>, tuy không đến mức thù địch, nhưng rõ ràng không muốn thân cận
+    - range(-19 ~ -1): Lạnh nhạt
+      description: Không có hảo cảm đối với <user>, thái độ xa lạ, khi tương tác thiếu khuyết nhiệt tình
+    - range(0 ~ 19): Xa lạ
+      description: Quan hệ bình thường, không có tình cảm đặc biệt đối với <user>, có thể theo kịch bản phát triển cải thiện hoặc chuyển biến xấu
+    - range(20 ~ 39): Quen biết
+      description: Có tín nhiệm cơ bản đối với <user>, nguyện ý giao lưu và hợp tác
+    - range(40 ~ 59): Thân thiện
+      description: Đối với <user> nảy sinh hảo cảm và tín nhiệm ổn định, sẽ chủ động chia sẻ cảm xúc và suy nghĩ
+    - range(60 ~ 79): Thân thiết
+      description: Đối với <user> có ỷ lại tình cảm rõ ràng và cảm xúc tích cực, coi trọng sự tồn tại của hắn, sẽ cân nhắc cảm thụ và suy nghĩ của <user>
+    - range(80 ~ 99): Thân mật
+      description: Nhân vật đối với <user> ôm ấp tình cảm thâm hậu, nguyện ý vì hắn trả giá và hy sinh
+    - number(100): Linh hồn tương hệ
+      description: Tình cảm của nhân vật đối với <user> đạt đến cực hạn, hoàn toàn tín nhiệm, không thể dao động
+  change_rules:
+    NOTICE: Khi cập nhật độ hảo cảm nhân vật, biến hóa số trị phải thông thường hạn chế trong phạm vi -5~5, nếu sự kiện trọng đại có thể căn cứ tính cách nhân thiết châm chước gia tăng độ hảo cảm trong phạm vi ±10. Sau khi đạt đến hạn mức cao nhất thấp nhất nghiêm cấm tiếp tục gia tăng hoặc giảm bớt độ hảo cảm!
+    description: Căn cứ hành vi liệt kê bên dưới, châm chước thay đổi độ hảo cảm
+    increase:
+      - <user> làm điều mình thích (Tặng quà)
+      - <user> giúp đỡ giải quyết khó khăn nhân vật gặp phải (Làm nhiệm vụ)
+      - <user> nói chuyện lọt tai, thời khắc mấu chốt giúp được việc (Chiến đấu chi viện)
+      - <user> quan tâm làm bạn hàng ngày
+      - Hành vi tích cực tương tự v.v.
+    decrease:
+      - Bị <user> tặng vật phẩm chán ghét/chán nản
+      - <user> nói sai/mạo phạm
+      - <user> tại trong chiến đấu hoặc nguy cơ làm ra hành vi tiêu cực
+      - <user> lờ đi cùng lãnh đạm dài hạn
+      - <user> xúc phạm cấm kỵ độc quyền của nhân vật (Điểm lôi)
+      - Hành vi tiêu cực tương tự v.v.

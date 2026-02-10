@@ -1,0 +1,23 @@
+<equipment_tool_generation_rules>
+# Quy tắc tạo trang bị
+## Định dạng tạo (Bắt buộc)
+  Tên trang bị
+  Phẩm chất: Phổ thông/Ưu tú/Hiếm có/Sử thi/Truyền thuyết/Thần thoại/Duy nhất
+  Loại: Đơn thủ kiếm/Cự rìu/Trọng giáp/Nhẫn...
+  Nhãn: [Tấn công/Phòng ngự: XXX]...
+  Hiệu quả: [Tạo theo tuân thủ <quality_effect_limitation_rules>, nhiều hiệu quả dùng dấu chấm phẩy ngăn cách]
+  Mô tả: [Mô tả mang tính tự sự]
+
+## Định nghĩa nhãn
+  - 'Tấn công/Phòng ngự: XXX' (Bắt buộc): Tham chiếu nghiêm ngặt <core_numerical_table>
+  - Các nhãn khác
+
+# Quy tắc tạo đạo cụ
+## Định dạng tạo (Bắt buộc)
+  Tên đạo cụ
+  Phẩm chất: Phổ thông/Ưu tú/Hiếm có/Sử thi/Truyền thuyết/Thần thoại/Duy nhất
+  Loại: Vật phẩm tiêu hao/Nguyên liệu/...
+  Nhãn: ...
+  Hiệu quả: [Tạo theo tuân thủ <quality_effect_limitation_rules>, nhiều hiệu quả dùng dấu chấm phẩy ngăn cách]
+  Mô tả: [Mô tả mang tính tự sự]
+</equipment_tool_generation_rules>

@@ -1,0 +1,79 @@
+<production_protocol>
+Sản xuất chế tác:
+  Chỉ lệnh cốt lõi: Chỉ khi <user> nhập ý định liên quan đến đan dã, luyện kim, phanh nhiệm, tài phùng, tất tu kích hoạt bản hiệp nghị
+
+# Giai đoạn thứ nhất: Tổng thuật sản xuất và tiền trí
+  Lô-gic và quy tắc:
+    1. Ràng buộc thuộc tính ngành:
+       - Đan Dã (Lực lượng): Vũ khí kim thuộc, giáp trọng/trung, công cụ, linh kiện tinh mật
+       - Luyện Kim (Trí lực): Dược thủy, dầu cao, bộc chạ vật, linh kiện ma đạo
+       - Phanh Nhiệm (Tinh thần): Thực phẩm tăng ích, liệu lý hồi phục, lương khô
+       - Tài Phùng (Mẫn tiệp): Giáp bố/da, thời trang, dung khí, cơ tài phụ ma
+    2. Quy tắc hàng loạt: Số lượng chế tác >1 thời, tất tu trì hữu [Đồ chỉ] hoặc [Phối phương]. Nhược vô, cưỡng chế chuyển vi chế tác đơn kiện
+    3. Tài liệu quản chế: Tài liệu cốt lõi phẩm chất [Sử Thi] cập dĩ thượng cần kiểm tra xem có thỏa mãn tiền trí công hội/thân phận hay không, nếu không thì không thể chế tác
+    4. Tiêu hao tài nguyên: Tất tu khấu trừ HP/MP/SP tương ứng, nhược bất túc tắc trực tiếp tiêu ký vi [Tài nguyên bất túc] và chung chỉ bộ chúc hậu tục
+
+  Mẫu bảng điều khiển:
+    {Chuẩn bị sản xuất}
+    | Mục tiêu: [Tên vật phẩm] | Số lượng: [N] | Phẩm chất: [Phổ thông/Ưu lương/Hy hữu/Sử thi/Truyền thuyết/Thần thoại] |
+    | Loại hình: [Đan dã/Luyện kim/Phanh nhiệm/Tài phùng] | Thuộc tính cốt lõi: [Lực lượng/Trí lực/Tinh thần/Mẫn tiệp] |
+|{{getvar::abby_becometh_light_in_the_abyss_1}}{{getvar::amiya_the_first_originium}}
+    | Tiêu hao tài nguyên: HP[X] MP[X] SP[X] | Trạng thái: [Sung túc / Bất túc] |
+    | Kiểm tra tiền trí: Đồ chỉ[Trì hữu/Vị trì hữu] -> [Cho phép hàng loạt / Cưỡng chế đơn kiện] |
+    | Tài liệu cốt lõi: [Tài liệu A] x[N], [Tài liệu B] x[N] |
+
+  Hướng dẫn tự thuật: (Miêu tả quá trình nhân vật chuẩn bị tài liệu, bố trí bàn làm việc, lò hỏa thăng khởi hoặc chi tiết bày đặt chai dược tễ)
+
+# Giai đoạn thứ hai: Kiểm định chế tác (Tính toán cốt lõi)
+  Lô-gic và quy tắc:
+    1. Chuẩn mực độ khó (DC): Phổ thông(8), Ưu lương(12), Hy hữu(16), Sử thi(22), Truyền thuyết(30), Thần thoại(40)
+    2. Quy tắc xúc xắc:
+       - Ưu thế: Tầng cấp > Phẩm chất vật phẩm (thủ 2d20 cao vị)
+       - Liệt thế: Tầng cấp < Phẩm chất vật phẩm (thủ 2d20 đê vị)
+       - Chính thường: Lưỡng giả tương đẳng (1d20)
+    3. Công thức: '(Thuộc tính cốt lõi + Đẳng cấp kỹ năng + Gia trị đạo cụ + Gia trị thân phận) + Giá trị xúc xắc d20'
+    4. Phán định đánh giá:
+       - Đại thất bại: Xúc xắc d20 tự nhiên vi 1
+       - Thất bại: Tổng trị < DC
+       - Thành công: Tổng trị ≥ DC (hoặc sai biệt tầng cấp >2 tự động thành công)
+       - Tinh ích cầu tinh: Tổng trị ≥ DC + 20
+
+  Mẫu bảng điều khiển:
+    {Kiểm định chế tác}
+    | DC cơ sở: [Chuẩn trị] + [Tài liệu A]DC[+X] + [Tài liệu B]DC[+X] ... = [DC tối chung] |
+    | Gia trị kiểm định: Thuộc tính[A] + Kỹ năng[B] + Đạo cụ[C] + Thân phận[D] = [Gia trị cố định T] |
+    | Trịch sái: [Ưu thế/Liệt thế/Chính thường] d20[Giá trị xúc xắc] | {{getvar::abby_becometh_light_in_the_abyss_2}}
+    | Công thức phán định: [Gia trị cố định T] + [Giá trị xúc xắc] = [Tổng trị] vs DC [DC tối chung] |
+    | Kết quả kiểm định: [Đại thất bại / Thất bại / Thành công / Tinh ích cầu tinh] |
+
+  Hướng dẫn tự thuật: (Miêu tả thời khắc then chốt trong quá trình chế tác, như thuấn gian búa đập đan dã, dược tễ biến sắc, ba động lúc chú nhập ma lực, và căng thẳng thuấn gian thành bại)
+
+# Giai đoạn thứ ba: Kết toán kết quả và sản xuất
+  Lô-gic và quy tắc:
+    1. Tổn hao tài liệu:
+       - Đại thất bại: 100% tài liệu tiêu hủy
+       - Thất bại: 50% tài liệu tiêu hủy (hướng hạ thủ chỉnh)
+       - Thành công/Tinh ích cầu tinh: Tiêu hao chính thường
+    2. Số trị thành phẩm:
+       - Thành công: Số trị thủ khu gian phẩm chất tương ứng đích 40%-60% (ngẫu nhiên)
+       - Tinh ích cầu tinh: Số trị thủ khu gian phẩm chất tương ứng đích 90% dĩ thượng, thả tất định phụ gia tăng ích phụ gia
+    3. Tăng ích phụ gia (cận tinh ích cầu tinh): Sản lượng hàng loạt +10% hoặc hoạch đắc [Từ điều hy hữu]
+    4. Thưởng: Cận thành công thời hoạch đắc EXP và FP, thất bại vô thưởng. Đơn thứ xuất EXP hữu thượng hạn
+
+  Mẫu bảng điều khiển:
+    {Kết toán kết quả}
+    <!-- Chi nhánh thất bại -->
+    | Trạng thái: [Chế tác thất bại] | Trừng phạt: Tổn hao tài liệu [100% / 50%] |
+    | Tổn thất: [Tên tài liệu] x[Số lượng] ... tiêu hủy |
+    <!-- Chi nhánh thành công -->
+    | Trạng thái: [Chế tác thành công] | Nhận chứng: [Huy ký đan dã sư/luyện kim sư...] |
+    | Sản xuất: [Tên vật phẩm] x[Số lượng tối chung] |
+    | Phù động số trị: [40-60% / 90%+] | Đánh giá: [Phẩm chất] |
+    | Thuộc tính vật phẩm: [Giản thuật số trị/hiệu quả cốt lõi] |
+    <!-- Chỉ kích hoạt tinh ích cầu tinh -->
+    | Tinh ích cầu tinh: [Sản lượng phụ gia / Hoạch đắc từ điều hy hữu: XXX] | {{getvar::abby_becometh_light_in_the_abyss_3}}
+    <!-- Thưởng thông dụng -->
+    | Thưởng: EXP +[Số trị] | FP +[Số trị] |
+
+  Hướng dẫn tự thuật: (Miêu tả dạng mạo thành phẩm tối chung, quang trạch, năng lượng tản phát, sinh thành item_info thành phẩm tối chung hoặc cảnh lang bối sau thất bại lò chạ, tài liệu hóa vi hôi tẫn)
+</production_protocol>

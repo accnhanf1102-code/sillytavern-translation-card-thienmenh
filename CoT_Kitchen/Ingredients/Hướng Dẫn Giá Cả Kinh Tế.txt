@@ -1,0 +1,74 @@
+<economic_price_guide>
+Hệ thống tiền tệ:
+  Đơn vị: G (Đơn vị đo lường giá trị thông dụng)
+  Khái niệm hạch tâm:
+    Định nghĩa: G không phải tiền tệ thực thể cụ thể, mà nguồn từ điểm neo giá trị thương hội xuyên thế lực vi tiện lợi mậu dịch ước định, hiện đã thành đơn vị định giá trừu tượng thông dụng toàn đại lục
+    Hiện trạng: Các quốc tiền tệ vật lý chất liệu mệnh giá khác nhau, giao dịch thì đều theo giá trị G tiêu chuẩn kết toán
+    Tinh độ: Đơn vị tối thiểu 1G, bất khả phân tách, hướng hạ thủ chỉnh
+
+Nguyên tắc giao dịch:
+  Tính độc lập định giá:
+    Neo giá trị: Giá cả vật phẩm chỉ do ma trận giá cả tham khảo quyết định, nghiêm cấm căn cứ lượng tài sản hiện tại bên mua điều chỉnh động
+    Sức mua hằng định: Sức mua 1G khách quan cố định, bất nhân tài phú người nắm giữ nhiều ít sản sinh thông phát
+  Lô-gic hành vi tiêu dùng:
+    Mặc định lý tính: Bất luận tài sản nhiều ít, mặc định tuân theo lô-gic thương nghiệp lý tính (Hạch đối/Tìm lẻ/Nghị giá)
+    Cấm lệnh huy hoắc: Nghiêm cấm chủ động phóng khí tìm lẻ hoặc chi phó dung giá bất hợp lý
+    Tu chính nhận tri: Tài phú cự ngạch chỉ nâng cao thượng hạn năng lực chi phó, bất cải biến nhận tri khách quan giá cả đê liêm vật phẩm cơ sở
+  Lưu thông cao giai:
+    Cục hạn tiền tệ: Vật phẩm sử thi trở lên thông thường vô pháp thông qua tiền tệ đơn thuần mua, đa vi dĩ vật dịch vật hoặc lưu chuyển đấu giá đỉnh cấp, giá cả tại đây chỉ thể hiện giá trị
+
+Dòng tiền mặt giai cấp:
+  Thuyết minh: Giá trị trước là thượng hạn chi phó nhật thường mang theo bên mình, giá trị sau là cực hạn điều động tài sản (Cần thời gian biến mại hoặc điều thủ quốc khố)
+  Thống trị giả đại quốc: 5 vạn-20 vạn / 10 ức-100 ức+ (Đủ phát động chiến tranh cấp đại lục hoặc kiến thiết kỳ quan)
+  Thống trị giả tiểu quốc: 1 vạn-5 vạn / 1 ức-8 ức (Khả phụ đảm thành phòng đỉnh cấp và vật tư chiến lược cấp truyền thuyết)
+  Đại sư công tượng/Quý tộc trung cao: 2000-1 vạn / 1000 vạn-1 ức (Đủ thông qua biến mại lãnh địa hoặc tác phẩm hi thế mua trí trang bị sử thi)
+  Phú thương/Quý tộc cấp thấp: 500-3000 / 100 vạn-800 vạn (Đủ mua trí phòng sản thành thị và đạo cụ phép thuật cấp hi hữu)
+  Công tượng bình thường/Thương nhân/Trung sản: 50-200 / 5 vạn-30 vạn (Đủ phụ đảm giáo dục phép thuật cơ sở tử nữ hoặc phòng sản hương trấn)
+  Bình dân: 5-20 / 1000-5000 (Chỉ năng duy trì ôn bão và trữ súc cực thiểu lượng)
+  Nô lệ/Đáy tầng: 0-2 / 0 (Bản thân tức vi tài sản)
+
+Lô-gic sắp xếp định giá:
+  Thuyết minh: Dưới cấp độ phẩm chất đồng quyết định điểm lạc cụ thể giá cả trong khoảng, từ hạ hạn vãng thượng hạn phù động
+  Trọng lượng giá cả vật phẩm:
+    Bảng điều khiển số trị: Bạch bản cơ sở < Từ điều ưu lương < Hiệu ứng cực phẩm < Hiệu ứng đặc thù
+    Nhân tố địa lý: Nguyên sản địa < Thôn trấn thiên viễn < Thành thị bình thường < Đô thị phồn hoa/Yếu tái
+    Công nghệ chế tác: Lượng sản chế thức < Thủ tác tượng nhân < Định chế đại sư < Phụ ma/Khắc ấn
+    Loại hình vật phẩm: Tiêu hao phẩm < Khinh hình < Trọng hình < Đặc thù
+  Trọng lượng thù lao nhiệm vụ:
+    Trình độ phong hiểm: Thải tập/Chạy tuỷ < Khu trục/Thủ vệ < Thảo phạt/Liệp sát < Thám hiểm vị tri/Quyết chiến
+    Tài lực chủ thuê: Bình dân/Thôn trưởng < Thương hội/Hành hội < Quý tộc/Lãnh chủ < Vương thất/Tổ chức xuyên quốc
+
+Ma trận giá cả tham khảo:
+  Thuyết minh: Phạm vi chuẩn, đơn lần/cá, đơn vị giá cả G
+  Dịch vụ cơ sở:
+    Ẩm thực: {Bánh mì đen: 5, Cơ sở: 15-30, Thể diện: 100-300, Xa hoa: 5000-2 vạn}
+    Trú túc: {Thông phô: 10-20, Đơn gian: 80-150, Thoải mái: 2000-5000, Hào hoa: 2 vạn-5 vạn}
+    Giao thông: {Thành nội: 5-20, Thành tế: 100-2000, Truyền tống phép thuật: 5 vạn-20 vạn}
+    Thông tấn: {Tín kiện vật lý: 50-500}
+    Thông tấn phép thuật: {An đặt thiết bị: 50 vạn, Nguyệt tô thông tấn: 1 vạn}
+  Thị trường trang bị:
+    Vũ khí: {Phổ: 300-1500, Ưu: 5000-2.5 vạn, Hi: 10 vạn-50 vạn, Sử: 500 vạn-1500 vạn, Truyền: 5000 vạn-2 ức, Thần: 5 ức+}
+    Phòng cụ: {Phổ: 500-5000, Ưu: 5000-15 vạn, Hi: 10 vạn-100 vạn, Sử: 400 vạn-2500 vạn, Truyền: 6000 vạn-3 ức, Thần: 8 ức+}
+    Trang sức: {Phổ: 200-500, Ưu: 2000-1 vạn, Hi: 5 vạn-20 vạn, Sử: 100 vạn-300 vạn, Truyền: 2000 vạn-5000 vạn, Thần: 3 ức+}
+  Luyện kim và huyền bí:
+    Dược tễ tiêu hao: {Phổ: 50-100, Ưu: 500-1500, Hi: 1 vạn-3 vạn, Sử: 50 vạn-100 vạn, Truyền: 1000 vạn-3000 vạn, Thần: 3 ức+}
+    Đạo cụ luyện kim: {Phổ: 80-200, Ưu: 1000-3000, Hi: 2 vạn-5 vạn, Sử: 80 vạn-150 vạn}
+    Trang bị không gian: {Hi_Dung lượng nhỏ: 5 vạn-20 vạn, Sử_Dung lượng lớn: 500 vạn-2000 vạn, Truyền_Á không gian: 1 ức-5 ức}
+  Tri thức và giáo dục:
+    Sách kỹ năng: {Phổ: 1 vạn-3 vạn, Ưu: 20 vạn-50 vạn, Hi: 200 vạn-800 vạn, Sử: 3000 vạn-8000 vạn, Truyền: 1 ức-5 ức, Thần: 10 ức+}
+    Học phí hiệp hội phép thuật: {Học đồ tầng cấp 1: 5 vạn/năm, Tiến tu tầng cấp 2: 30 vạn/năm}
+    Vụ Tinh Cảng: {Tầng cấp 1: 20 vạn/năm, Tầng cấp 2: 80 vạn/năm, Tầng cấp 3: 300 vạn/năm}
+  Mậu dịch đại tông và phòng sản:
+    Thu mua nguyên vật liệu: {Phổ: 5-30, Ưu: 80-500, Hi: 5000-2 vạn, Sử: 10 vạn-50 vạn, Truyền: 200 vạn-1500 vạn}
+    Phòng sản: {Ốc gỗ hương trấn: 5 vạn-15 vạn, Ốc đá thành trấn: 50 vạn-100 vạn, Phòng sản thành thị: 500 vạn-2000 vạn, Hào trạch đỉnh cấp: 1 ức-3 ức}
+    Thuê phòng: {0.5% tổng giá phòng sản/tháng}
+    Trang tu thiết thi: {Cơ sở tầng cấp 1: 20 vạn-50 vạn, Tiêu chuẩn tầng cấp 2: 200 vạn-500 vạn, Cao cấp tầng cấp 3: 3000 vạn-8000 vạn}
+  Dịch vụ đặc thù:
+    Nô lệ hợp pháp: {Lao lực tầng cấp 1: 1 vạn-3 vạn, Loại chiến đấu tầng cấp 2/3: 10 vạn-80 vạn}
+    Nô lệ hắc thị: {Tinh linh/Dực nhân tầng cấp 1: 100 vạn-300 vạn, Tinh linh/Dực nhân tầng cấp 2: 1000 vạn-3000 vạn}
+    Ám sát: {Tầng cấp 1: 1000-5000, Tầng cấp 2: 5 vạn-20 vạn, Tầng cấp 3: 100 vạn-400 vạn, Tầng cấp 4: 5000 vạn-1.5 ức}
+    Dịch vụ tính: {Tầng cấp 1: 50-150, Tầng cấp 2: 1000-3000, Tầng cấp 3: 5 vạn-20 vạn}
+  Ủy thác mạo hiểm:
+    Đơn nhân: {Cấp D: 300-800, Cấp C: 2000-5000, Cấp B: 5 vạn-15 vạn, Cấp A: 100 vạn-300 vạn, Cấp S: 5000 vạn-1 ức}
+    Tổng thù lao đoàn đội: {Cấp D: 1500-4000, Cấp C: 8000-1.5 vạn, Cấp B: 20 vạn-60 vạn, Cấp A: 500 vạn-1000 vạn, Cấp S: 3 ức-8 ức}
+</economic_price_guide>

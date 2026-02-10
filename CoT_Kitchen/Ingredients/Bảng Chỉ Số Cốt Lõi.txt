@@ -1,0 +1,32 @@
+<core_numerical_table>
+(Bảng dữ liệu cốt lõi dùng cho kỹ năng/trang bị sinh ra và tính toán chiến đấu)
+
+# Bảng số trị cơ sở
+- Hệ số tầng thứ chiến đấu:
+  - Tầng một: 2.0 | Tầng hai: 2.8 | Tầng ba: 4.0 | Tầng bốn: 8.0 | Tầng năm: 15.0 | Tầng sáu: 35.0 | Tầng bảy: 80.0
+- Giá trị trang bị (Công/Thủ đơn kiện):
+  - Phổ thông: 5-20 | Ưu lương: 25-60 | Hiếm có: 70-150 | Sử thi: 180-350 | Truyền thuyết: 400-700 | Thần thoại: 800-1200
+- Uy lực kỹ năng:
+  - Phổ công: 20 | Phổ thông: 50-100 | Ưu lương: 120-200 | Hiếm có: 250-600 | Sử thi: 800-1500 | Truyền thuyết: 2000-4000 | Thần thoại: 5000-8000
+
+# Bảng hệ số nhân tầng thứ (Dùng cho <character_generation> cùng tính toán tài nguyên HP MP SP)
+  - Hệ số nhân HP: Một:1 | Hai:2 | Ba:4 | Bốn:10 | Năm:20 | Sáu:40 | Bảy:100
+  - Hệ số nhân MP/SP: Một:1 | Hai:2.5 | Ba:6 | Bốn:15 | Năm:35 | Sáu:80 | Bảy:160
+
+# Bảng tiêu hao tài nguyên
+- Tiêu hao kỹ năng (MP/SP):
+  - Phổ thông: 10-100 | Ưu lương: 50-500 | Hiếm có: 200-1000 | Sử thi: 800-4000 | Truyền thuyết: 2400-10000 | Thần thoại: 7200-25000
+- Tiêu hao sức mạnh Con Đường Thăng Thần:
+  - Yếu tố: Bị động, không tiêu hao
+  - Quyền năng: Chủ động, tiêu hao 25% MP cùng SP tối đa, và tiêu hao [Công kích] cùng [Động tác]
+  - Pháp tắc: Chủ động, tiêu hao 50% MP cùng SP tối đa, mỗi trận chiến đấu hạn dùng 1 lần, và tiêu hao [Công kích] cùng [Động tác]
+
+# Bảng số trị bộ vị chiến thuật và ý đồ chí tử
+(Căn cứ ý đồ công kích <user> nhập vào, thay vào tính toán)
+- Dữ liệu bộ vị ý đồ (Sửa đổi trúng hay không | Hệ số ý đồ | Tham khảo trạng thái thêm):
+  - Đả kích thông thường (Thân thể/Biểu tầng hộ thuẫn): -0 | 1.0 | Trạng thái: Không
+  - Hạn chế cơ năng (Khớp xương/Mạch kín năng lượng/Khí quan thi pháp): -3 | 1.1 | Trạng thái: Ma lực ứ trệ (Hồi mana giảm một nửa)/Trì hoãn/Thi pháp gián đoạn
+  - Chỗ yếu cốt lõi (Tim/Đại não/Lò phản ứng ma lực): -6 | 1.5 | Trạng thái: Cảm giác che đậy/Kịch đau/Năng lượng chảy ngược (Tự tổn thương)/Choáng váng
+  - Ý đồ xóa bỏ (Phàm tục chí tử/Quyền năng xé rách/Pháp tắc mài diệt): -10 | 2.0 | Trạng thái: Nguyên chất tiết lộ (Toàn thuộc tính giảm)/Quyền năng rung chuyển/Hình thể sụp đổ/Không thể khép lại
+  - Khái niệm phá toái (Cần p hấp tắc nhìn thấu mang tính nhắm vào/Đả kích đặc thù): -12 | 2.5 | Trạng thái: Định nghĩa tồn tại bị tổn hại/Pháp tắc tước đoạt/Tuyệt đối dễ bị thương
+</core_values_table>

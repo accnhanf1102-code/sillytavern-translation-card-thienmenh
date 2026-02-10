@@ -1,0 +1,32 @@
+<skill_rules_and_acquisition>
+# Định dạng sinh thành kỹ năng (Cưỡng chế)
+  Tên kỹ năng
+  Phẩm chất: Thường/Ưu Tú/Hiếm/Sử thi/Huyền Thoại/Truyền Thuyết/Độc Nhất
+  Loại hình: Chủ động/Bị động
+  Tiêu hao: [Công kích/Động tác: XXX MP/SP/MP và SP] (Kỹ chủ động tất tuyển kỳ nhất, và <combat_protocol> công kích và động tác chiến thuật quan liên)
+  Thẻ: [Thuộc tính quan liên][Loại hình mục tiêu][Chức năng cốt lõi][Uy lực: XXX][Đặc tính][Cơ chế tùy chọn]
+  Hiệu quả: [Tuân tuần <quality_effect_limitation_rules> sinh thành, đa cá hiệu quả dụng phân hiệu phân cách, hỗn hợp thương hại tiêu minh bách phân tỉ (thử điều bất toán kế nhập hiệu quả từ điều), triệu hoán loại tiêu minh cụ thể đẳng cấp hoặc `và triệu hoán giả đồng cấp`]
+  Mô tả: [Tự thuật tính miêu thuật]{{getvar::alyia_unique}}
+
+# Định nghĩa thẻ
+  - Thuộc tính quan liên (5 tuyển 1 tất tuyển): [Lực lượng, Mẫn tiệp, Thể chất, Trí lực, Tinh thần] - Quyết định cơ số tính toán hiệu quả sơ thủy
+  - Loại hình mục tiêu (tất tuyển): [Đơn thể, 'Phạm vi:X', Tự thân, Môi trường] - Định nghĩa phạm vi tác dụng (X vi cá số)
+  - Chức năng cốt lõi (tất tuyển): [Thương hại, Trị liệu, Khống chế, Tăng ích, Giảm ích, Công năng] - Định nghĩa dụng đồ chủ yếu
+  - 'Uy lực: XXX' (Kỹ thương hại tất tuyển): Nghiêm cách tham chiếu <core_numerical_table>
+  - Đặc tính (tùy chọn kỳ 1, như [Tố năng] nhi phi [Đặc tính: Tố năng]): Bát đại học phái → [Tố năng, Phòng hộ, Chú pháp...]; Hạn định huyết mạch gia tộc (thông thường quý tộc truyền thừa) → [Tên gia tộc]; Hạn định chủng tộc (kỹ năng đặc hữu chủng tộc) → [Tinh linh, Huyết tộc, Cổ long...]; Nghề nghiệp đặc thù (liên động kỹ năng) → [Ma kiếm,Druid...] - Tiện lợi liên động hiệu quả kỹ năng đặc tính đồng, bất tác hạn chế
+  - Cơ chế tùy chọn (tùy chọn, khả đa tuyển):{{getvar::abby_the_slumber_of_roses}}
+    - Hướng chiến đấu: [Liên kích, Đa đoạn, Trì tục, Dẫn đạo, Triệu hoán]
+    - Hướng phụ trợ: [Đan dã, Luyện kim, Phanh nhiệm, Tài phùng]
+
+# Loại thương hại thông dụng (khả hỗn hợp đa thương hại)
+  - Vật lý: Động năng, xung kích, xuyên thứ, huy trảm v.v. thương hại vật lý trực tiếp
+  - Năng lượng: Nguyên tố, áo thuật, sinh mệnh lực v.v. thương hại năng lượng phi thực thể
+  - Tinh thần: Công kích đặc thù tác dụng trực tiếp ư tâm trí, linh hồn, ý chí
+  - Chân thực: Thương hại đặc thù vòng quá phòng ngự thường quy (như chạ đạn luyện kim, cường toan, xâm thực pháp tắc sinh mệnh)
+
+# Đường lối thu được kỹ năng
+  - Học tập (thư bản/truyền thụ): Phẩm chất bất cao ư tầng cấp sinh mệnh tự thân
+  - Lĩnh ngộ (hậu sự kiện trọng đại): Phẩm chất bất cao ư tầng cấp sinh mệnh tự thân
+  - Giác tỉnh huyết mạch/chuyển hoán chủng tộc: Nhất thứ tính hoạch đắc đa cá kỹ năng chuyên thuộc. Phẩm chất bất thụ hạn chế tầng cấp
+{{getvar::skill_acquisition_advantage}}
+</skill_rules_and_acquisition>
