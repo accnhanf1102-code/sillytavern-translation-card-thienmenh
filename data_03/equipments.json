@@ -4609,1521 +4609,1521 @@
   ],
   "Mở Rộng - Bùa Hộ Mệnh Elden": [
     {
-      "name": "Hồng Hổ Phách Tiểu Liễn Trụy",
+      "name": "Mặt Dây Hổ Phách Đỏ Nhỏ",
       "cost": 13,
       "type": "Trang Sức",
       "tag": [
-        "Vòng Cổ",
+        "Vòng cổ",
         "Phòng ngự: 50"
       ],
       "rarity": "uncommon",
       "effect": {
-        "Sinh mệnh gia thành": "Giới hạn HP tối đa được nâng lên thêm 6%."
+        "Gia tăng sinh mệnh": "Giới hạn HP tối đa tăng 6%."
       },
-      "description": "Sợi dây có đính một mảnh nhỏ hổ phách đỏ sậm. Khối hổ phách màu đỏ này đang ấp ủ sức sống nguyên thủy chực chờ bừng sáng, có khả năng kích phát tính dẻo dai khỏe khoắn của chủ sở hữu nó."
+      "description": "Mặt dây chuyền gắn một mảnh hổ phách đỏ nhỏ. Hổ phách đỏ ẩn chứa sinh mệnh lực nguyên thủy, có thể nâng cao sức sống của người đeo."
     },
     {
-      "name": "Lam Hổ Phách Tiểu Liễn Trụy",
+      "name": "Mặt Dây Hổ Phách Lam Nhỏ",
       "cost": 13,
       "type": "Trang Sức",
       "tag": [
-        "Vòng Cổ",
+        "Vòng cổ",
         "Phòng ngự: 50"
       ],
       "rarity": "uncommon",
       "effect": {
-        "Pháp lực gia thành": "Làm cho điểm MP tiêu hao bị giảm đi 8%."
+        "Gia tăng pháp lực": "Giảm 8% tiêu hao MP."
       },
-      "description": "Sợi dây chuyền xâu chuỗi kèm theo một viên ngọc hổ phách nhuốm màu xanh biếc. Tụ hội bên trong viên ngọc ấy chính là luồng sức mạnh phép thuật nguyên thủy tinh thuần, giúp ích cho tâm thức trở nên minh mẫn để giữ vững được mức độ tập trung cao độ."
+      "description": "Mặt dây chuyền gắn một mảnh hổ phách lam nhỏ. Hổ phách lam ẩn chứa ma lực nguyên thủy, có thể giúp người đeo tập trung tinh thần."
     },
     {
-      "name": "Lục Hổ Phách Tiểu Liễn Trụy",
+      "name": "Mặt Dây Hổ Phách Lục Nhỏ",
       "cost": 13,
       "type": "Trang Sức",
       "tag": [
-        "Vòng Cổ",
+        "Vòng cổ",
         "Phòng ngự: 50"
       ],
       "rarity": "uncommon",
       "effect": {
-        "Nại lực gia thành": "Làm cho điểm SP hao tổn bị hạ xuống mức 8%."
+        "Gia tăng thể lực": "Giảm 8% tiêu hao SP."
       },
-      "description": "Sợi dây chuyền được điêu khắc công phu cùng một tinh thể hổ phách hình lục lăng mang sắc thái của cỏ biếc tươi thắm. Hàm chứa một nguồn sinh lực nguyên sơ bền bỉ dẻo dai, kích thích toàn khối cơ năng rạo rực căng tràn nhựa sống."
+      "description": "Mặt dây chuyền gắn một mảnh hổ phách lục nhỏ. Hổ phách lục ẩn chứa hoạt lực nguyên thủy, có thể khiến người đeo tràn đầy năng lượng."
     },
     {
-      "name": "Lục Quy Quải Trụy",
+      "name": "Mặt Dây Rùa Lục",
       "cost": 14,
       "type": "Trang Sức",
       "tag": [
-        "Vòng Cổ",
+        "Vòng cổ",
         "Phòng ngự: 60"
       ],
       "rarity": "uncommon",
       "effect": {
-        "Nại lực khôi phục": "Vào mỗi lúc giao tranh khép lại hiệp đấu, lập tức phục hồi số lượng SP tương đương với mức 8% giá trị đỉnh điểm (giới hạn trên) của độ nại lực.",
-        "Quá tải khôi phục": "Xài [Hành động] nhằm hồi sinh 300 điểm SP, tính bằng một lần trải qua trận chiến đều có thể hô gọi 1 lần."
+        "Hồi phục thể lực": "Cuối mỗi lượt, hồi phục 8% giới hạn SP tối đa.",
+        "Hồi phục quá tải": "Sử dụng [Hành động] hồi phục 300 SP, mỗi trận chiến có thể dùng một lần."
       },
-      "description": "Khối ngọc thạch được khắc tạc mô phỏng theo hình ảnh dáng điệu của một con rùa màu xanh ngọc bích cực kỳ chân thực. Bởi vốn dĩ loại rùa Lục Quy này được mệnh danh vì nắm giữ sức chịu đựng và tinh lực bất tận không bao giờ biết mỏi mệt."
+      "description": "Hộ phù chế tác theo hình dáng rùa xanh. Rùa là biểu tượng của sức bền vô tận."
     },
     {
-      "name": "Hồng Long Thuẫn Hình Huy Chương",
+      "name": "Huy Hiệu Khiên Hồng Long",
       "cost": 18,
       "type": "Trang Sức",
       "tag": [
-        "Huy Chương",
+        "Huy hiệu",
         "Phòng ngự: 50"
       ],
       "rarity": "uncommon",
       "effect": {
-        "Đa trọng phòng hộ": "Làm tổn hao đi 8% đối với tất cả tổng hệ số lực sát thương vật lý và các luồng tàn phá nguồn năng lượng khác có mưu đồ công kích bản thân."
+        "Đa trọng phòng hộ": "Giảm 8% tất cả sát thương năng lượng và sát thương chân thực nhận vào."
       },
-      "description": "Huy hiệu làm bằng loại gang thép siêu già, phía trên có bức phù điêu lớn phác họa sinh động cảnh rồng bảy sắc cầu vồng tung hoành ngang dọc. Lấy chính hình bóng ấy làm thần tượng để biểu trưng cầu xin phước lành gia ân."
+      "description": "Hộ phù sắt thục cổ đại có phù điêu cầu vồng long khổng lồ. Hoa văn cầu vồng long được coi là biểu tượng của sự che chở."
     },
     {
-      "name": "Ma Long Thuẫn Hình Huy Chương",
+      "name": "Huy Hiệu Khiên Ma Long",
       "cost": 18,
       "type": "Trang Sức",
       "tag": [
-        "Huy Chương",
+        "Huy hiệu",
         "Phòng ngự: 50"
       ],
       "rarity": "uncommon",
       "effect": {
-        "Ma pháp phòng hộ": "Lượng sát thương mang sức mạnh ma pháp nhằm vào nhận lấy giảm sút đi 8%."
+        "Phòng hộ ma pháp": "Giảm 8% sát thương năng lượng nhận vào."
       },
-      "description": "Chiếc phù điêu cổ xưa được gọt giũa từ một khối sắt già, hiện rõ bóng dáng to lớn của con ma long. Đồ đằng ma long này luôn được truyền tụng xem như là báu vật thần diệu hòng khắc chế triệt tiêu hiệu quả ma pháp."
+      "description": "Hộ phù sắt thục cổ đại có phù điêu ma long khổng lồ. Hoa văn ma long được coi là biểu tượng kháng cự ma lực."
     },
     {
-      "name": "Hỏa Long Thuẫn Hình Huy Chương",
+      "name": "Huy Hiệu Khiên Hỏa Long",
       "cost": 18,
       "type": "Trang Sức",
       "tag": [
-        "Huy Chương",
+        "Huy hiệu",
         "Phòng ngự: 50"
       ],
       "rarity": "uncommon",
       "effect": {
-        "Hỏa diễm phòng hộ": "Lượng sát thương có mang nguyên tố thuộc tính (Hỏa) bị giảm uy lực đi 8%."
+        "Phòng hộ hỏa diệm": "Giảm 8% sát thương năng lượng (hỏa diệm) nhận vào."
       },
-      "description": "Chiếc phù điêu cổ xưa được gọt giũa từ một khối sắt già, hiện rõ bóng dáng to lớn của con rồng lửa đang hừng hực. Đồ đằng loài hỏa long này luôn được truyền tụng xem như là báu vật phản ngự chống lại sự đốt cháy của lửa."
+      "description": "Hộ phù sắt thục cổ đại có phù điêu hỏa long khổng lồ. Hoa văn hỏa long được coi là biểu tượng kháng cự hỏa diệm."
     },
     {
-      "name": "Lôi Long Thuẫn Hình Huy Chương",
+      "name": "Huy Hiệu Khiên Lôi Long",
       "cost": 18,
       "type": "Trang Sức",
       "tag": [
-        "Huy Chương",
+        "Huy hiệu",
         "Phòng ngự: 50"
       ],
       "rarity": "uncommon",
       "effect": {
-        "Lôi điện phòng hộ": "Lượng sát thương có mang tính chất năng lượng (Lôi Điện) đánh phải bị triệt hao chỉ còn -8%."
+        "Phòng hộ lôi điện": "Giảm 8% sát thương năng lượng (lôi điện) nhận vào."
       },
-      "description": "Chiếc phù điêu cổ xưa được gọt giũa từ một khối sắt già, hiện rõ bóng dáng to lớn của lôi long sấm chớp giật ùng oàng. Đồ đằng loài lôi long luôn được xem là vật phẩm bài xích lại các luồng sức mạnh sấm sét."
+      "description": "Hộ phù sắt thục cổ đại có phù điêu lôi long khổng lồ. Hoa văn lôi long được coi là biểu tượng kháng cự lôi điện."
     },
     {
-      "name": "Thánh Long Thuẫn Hình Huy Chương",
+      "name": "Huy Hiệu Khiên Thánh Long",
       "cost": 18,
       "type": "Trang Sức",
       "tag": [
-        "Huy Chương",
+        "Huy hiệu",
         "Phòng ngự: 50"
       ],
       "rarity": "uncommon",
       "effect": {
-        "Thần thánh phòng hộ": "Lượng sát thương có mang tính chất năng lượng (Thần Thánh) đánh tới bị hao mòn chỉ còn -8%."
+        "Phòng hộ thần thánh": "Giảm 8% sát thương năng lượng (thần thánh) nhận vào."
       },
-      "description": "Chiếc phù điêu cổ xưa được gọt giũa từ một khối sắt già, hiện rõ bóng dáng to lớn của loài rồng thiêng cao quý lộng lẫy. Đồ đằng loài thánh long luôn được truyền tụng nhằm tượng trưng cho sức mạnh bài trừ lại ánh hào quang chói lòa tinh ranh của các pháp thuật thánh khiết."
+      "description": "Hộ phù sắt thục cổ đại có phù điêu thánh long khổng lồ. Hoa văn thánh long được coi là biểu tượng kháng cự thần thánh."
     },
     {
-      "name": "Thú Tộc Miễn Dịch Tiểu Giác Sức Phẩm",
+      "name": "Sừng Nhỏ Miễn Dịch Thú Tộc",
       "cost": 17,
       "type": "Trang Sức",
       "tag": [
-        "Trang Sức Đầu",
+        "Đầu sức",
         "Phòng ngự: 55"
       ],
       "rarity": "uncommon",
       "effect": {
-        "Kháng độc": "Quá trình áp đặt thế đối kháng vào những hiệu ứng điểm [Trúng Độc], kết quả của việc xúc xắc kiểm định thể chất cho điểm +5."
+        "Kháng độc": "Khi kiểm định đối kháng hiệu ứng [Trúng độc], kiểm định thể chất của bạn +5."
       },
-      "description": "Tương truyền tương rằng tác phẩm chạm khắc này là món di tích biểu tượng cổ rêu phong lưu trữ bảo vệ hết đời này qua đời khác mà người của Bộ Lạc Thú Tộc trao truyền kế thừa, chống chịu đủ đầy trăm ngàn thể loại kịch độc cùng trạng thái trúng loại bùa độc phế truất."
+      "description": "Tương truyền đây là biểu tượng cổ xưa do thú tộc chế tác qua nhiều đời, có thể kháng cự các loại độc tố và trạng thái trúng độc."
     },
     {
-      "name": "Thú Tộc Kiện Tráng Tiểu Giác Sức Phẩm",
+      "name": "Sừng Nhỏ Cường Tráng Thú Tộc",
       "cost": 17,
       "type": "Trang Sức",
       "tag": [
-        "Trang Sức Đầu",
+        "Đầu sức",
         "Phòng ngự: 50"
       ],
       "rarity": "uncommon",
       "effect": {
-        "Cường Nhận": "Những tổn thương vật lý dạng kéo dài (chẳng hạn như là Chảy Máu) nhận phải sẽ được giảm đi 8%."
+        "Kiên cường": "Giảm 8% sát thương vật lý liên tục nhận vào (như chảy máu)."
       },
-      "description": "Tương truyền đây là một món bảo vật mà được truyền đời cho Bộ Lạc Người Thú, có khả năng hóa giải vô số những tác động của Tê Cóng hay xuất huyết."
+      "description": "Tương truyền đây là biểu tượng cổ xưa do thú tộc chế tác qua nhiều đời, có thể kháng cự các hiệu ứng chảy máu và đóng băng."
     },
     {
-      "name": "Thú Tộc Lý Trí Tiểu Giác Sức Phẩm",
+      "name": "Sừng Nhỏ Lý Trí Thú Tộc",
       "cost": 17,
       "type": "Trang Sức",
       "tag": [
-        "Trang Sức Đầu",
+        "Đầu sức",
         "Phòng ngự: 50"
       ],
       "rarity": "uncommon",
       "effect": {
-        "Thanh Tỉnh": "Khi thực hiện phản kháng những hiệu lực suy giảm nhận thức thần kinh (chẳng hạn: mê hoặc, hoảng loạn sợ hãi), quá trình kiểm tra điểm tinh thần cho bạn được tăng +5 lợi thế."
+        "Tỉnh táo": "Khi kiểm định đối kháng hiệu ứng giảm ích tinh thần (như mê hoặc, khiếp sợ), kiểm định tinh thần của bạn +5."
       },
-      "description": "Được đồn thổi là di vật cổ của Bộ Lạc Thú Nhân đã tự sản xuất ra và bảo lưu qua nhiều giai đoạn thời đại, là công cụ hữu dụng chống chọi và bài xích những yếu tố xấu bủa vây phá vỡ tâm trí."
+      "description": "Tương truyền đây là biểu tượng cổ xưa do thú tộc chế tác qua nhiều đời, có thể kháng cự các hiệu ứng ảnh hưởng tinh thần."
     },
     {
-      "name": "Trượng Hộ Phù",
+      "name": "Hộ Phù Trượng",
       "cost": 12,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 50"
       ],
       "rarity": "uncommon",
       "effect": {
-        "Pháp thuật tăng thương": "Hệ số tấn công sát thương kết liễu đầu ra của toàn bộ những nguồn kĩ năng gây thiệt hại thuộc nhóm năng lượng được tăng lên 5%."
+        "Tăng sát thương pháp thuật": "Sát thương cuối cùng của tất cả kỹ năng sát thương năng lượng tăng 5%."
       },
-      "description": "Bùa hộ mạng được đúc tạc hình ảnh phỏng theo bàn tay đang siết chặt vào cây gậy phép tiêu chuẩn của một vị đồ đệ. Món đồ này được xem như một sự khởi nguyên cực kỳ xa xưa của các chuỗi ma thuật."
+      "description": "Hộ phù chế tác theo hình bàn tay nắm pháp trượng chuẩn của học đồ. Đây là nguồn gốc cổ xưa của pháp thuật."
     },
     {
-      "name": "Luyện Kim Sư Hộ Phù",
+      "name": "Hộ Phù Luyện Kim Sư",
       "cost": 12,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 50"
       ],
       "rarity": "uncommon",
       "effect": {
-        "Luyện Kim Cường Hóa": "Với các đạo cụ hao tài tốn của nhóm [Tiêu Hao Phẩm] do bạn xài, điểm gia tăng hiệu năng nhận được mức tăng trưởng 8%."
+        "Cường hóa luyện kim": "Hiệu quả giá trị số của [Vật phẩm tiêu hao] bạn sử dụng tăng 8%."
       },
-      "description": "Một loại bùa chú phù điêu mang hình dáng như một chiếc bình bình hồ lô làm từ thuật nhào nặn giả kim, là một loại khí cụ trang bị theo kiểu thời bao cấp thời đương đại của tất cả những người hành nghề thuật luyện kim."
+      "description": "Hộ phù chế tác theo hình bình nung luyện kim, là trang bị tiêu chuẩn của tất cả luyện kim sư đương đại."
     },
     {
-      "name": "Sơn Dương Sức Phẩm",
+      "name": "Sức Phẩm Sơn Dương",
       "cost": 16,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 60"
       ],
       "rarity": "uncommon",
       "effect": {
-        "Chuyên Chú": "Vào lúc bạn khai triển các chuỗi phép thuật bắt buộc cần sự trợ thủ trong việc dẫn dắt định hướng, điểm phán định thể chất hòng chống ngăn lại sự dở dang nứt gãy sẽ được cấp thêm trị số là +5."
+        "Chuyên chú": "Khi bạn sử dụng kỹ năng cần dẫn đạo, kiểm định thể chất kháng gián đoạn nhận +5 gia trị."
       },
-      "description": "Lấy hình ảnh đôi sừng của loài sơn dương để tiện bề tạc nên phù thuẫn bảo mệnh. Vì theo đôn thổi con dê rừng là một biểu tượng vô giá cho lòng dẻo dai kiên nhẫn, một khi đã lâm trận, cho dẫu phải rớt dãi vì đòn đau của địch thân mình trầy xước bao la thế nào thì chúng nó vẫn đủ tự hào để lao về phía trước không bỏ cuộc dở dang."
+      "description": "Hộ phù chế tác theo sừng sơn dương. Sơn dương là biểu tượng của sự kiên cường, dù bị tấn công cũng kiên trì phát động tấn công."
     },
     {
-      "name": "Vũ Dực Hộ Phù",
+      "name": "Hộ Phù Vũ Dực",
       "cost": 19,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 55"
       ],
       "rarity": "uncommon",
       "effect": {
-        "Khinh Doanh": "Lượng sát thương vật lý khi bị nhận lấy triệt hao xuống 6%, và đối diện với nó là lượng sức tấn công từ nguồn phép năng lượng mà bạn phải hứng thụ cũng tăng thành 6%."
+        "Nhẹ nhàng": "Giảm 6% sát thương vật lý nhận vào, nhưng sát thương năng lượng bạn nhận vào tăng 6%."
       },
-      "description": "Tạo tác mô phỏng về cội nguồn huyết kế của dòng Dực dân dùng chế tác thành lá bùa bảo vệ bản thân. Đã từ rất xa xưa, khi bộ đôi cánh lông vũ ấy chưa hề lớn và mượt mà diễm lệ."
+      "description": "Hộ phù chế tác theo hình tượng nguồn gốc của dực dân. Thuở xa xưa ấy, đôi cánh còn chưa rộng lớn và duyên dáng."
     },
     {
-      "name": "Hồng Hổ Phách Liễn Trụy",
+      "name": "Mặt Dây Hổ Phách Đỏ",
       "cost": 26,
       "type": "Trang Sức",
       "tag": [
-        "Vòng Cổ",
+        "Vòng cổ",
         "Phòng ngự: 140"
       ],
       "rarity": "rare",
       "effect": {
-        "Cường hiệu sinh mệnh gia thành": "Giới hạn HP tối thượng được đội thăng tiến thành 12%."
+        "Gia tăng sinh mệnh cường hiệu": "Giới hạn HP tối đa tăng 12%."
       },
-      "description": "Mặt dây chuyền nạm vào đó thành dạng khảm dính một loạt những kết tinh huyết hổ phách tươi nhạt màu máu. Loại huyết hổ phách mang đậm tư thái tích trữ nhựa sống bừng cháy vô tận thuở hoang sơ, có thể dồi dào hóa kịch liệt sức trỗi dậy đầy dũng mãnh khỏe mạnh của chủ nhân mang theo."
+      "description": "Mặt dây chuyền gắn nhiều mảnh hổ phách đỏ. Hổ phách đỏ ẩn chứa sinh mệnh lực nguyên thủy, có thể nâng cao đáng kể sức sống của người đeo."
     },
     {
-      "name": "Lam Hổ Phách Liễn Trụy",
+      "name": "Mặt Dây Hổ Phách Lam",
       "cost": 26,
       "type": "Trang Sức",
       "tag": [
-        "Vòng Cổ",
+        "Vòng cổ",
         "Phòng ngự: 140"
       ],
       "rarity": "rare",
       "effect": {
-        "Cường hiệu pháp lực gia thành": "Trị tối đỉnh cực hạn MP vượt bậc thăng cấp lên +12%."
+        "Gia tăng pháp lực cường hiệu": "Giới hạn MP tối đa tăng 12%."
       },
-      "description": "Sợi xích được gắn khảm đan cài nhiều loại ngọc hổ phách màu nước biển biếc xanh. Viên đá hổ phách biếc xanh như mặt đại dương này dung nạp sức mạnh dồi dao ma lực cổ xưa hoang sơ, mang trong mình khả năng bổ trợ đại lượng cao cho việc tinh rèn tâm thần trí não người đeo đi vào sự tập trung ngưng thần tối điểm."
+      "description": "Mặt dây chuyền gắn nhiều mảnh hổ phách lam. Hổ phách lam ẩn chứa ma lực nguyên thủy, có thể giúp người đeo tập trung tinh thần một cách đáng kể."
     },
     {
-      "name": "Lục Hổ Phách Liễn Trụy",
+      "name": "Mặt Dây Hổ Phách Lục",
       "cost": 26,
       "type": "Trang Sức",
       "tag": [
-        "Vòng Cổ",
+        "Vòng cổ",
         "Phòng ngự: 140"
       ],
       "rarity": "rare",
       "effect": {
-        "Cường hiệu nại lực gia thành": "Đỉnh mức năng lượng SP lột xác với trị số tiến bực +12%."
+        "Gia tăng thể lực cường hiệu": "Giới hạn SP tối đa tăng 12%."
       },
-      "description": "Xích chuỗi móc cài thêm đa dạng loại ngọc bảo lục bảo hổ phách mang xanh mướt lá non. Trong tầng tầng lớp lớp tinh quang màu xanh lá này chính là sức bật tung bay cho tuổi trẻ mơn mởn dào dạt hoang sơ, mang trọng trách cưu mang những khoảnh thời khắc hăng sức bùng cháy tột bậc sinh lực của thân chủ sở hữu trang sức."
+      "description": "Mặt dây chuyền gắn nhiều mảnh hổ phách lục. Hổ phách lục ẩn chứa hoạt lực nguyên thủy, có thể khiến người đeo luôn tràn đầy năng lượng."
     },
     {
-      "name": "Ân Huệ Lộ Tích Hộ Phù",
+      "name": "Hộ Phù Giọt Sương Ân Huệ",
       "cost": 25,
       "type": "Trang Sức",
       "tag": [
-        "Vòng Cổ",
+        "Vòng cổ",
         "Phòng ngự: 160"
       ],
       "rarity": "rare",
       "effect": {
-        "Sinh mệnh khôi phục": "Cứ đến giai đoạn kết thúc một phiên chiến báo, tự bù đắp bù trừ lại 12% trị giới hạn tối cao của điểm số HP.",
-        "Quá tải khôi phục": "Khai thông tùy biến kỹ năng [Hành động] đắp nặn cho 800 sinh mạng HP, trong một cuộc chạm súng giáp lá cà mỗi thứ vũ cụ đạo khí chỉ xài được một lần để duy trì."
+        "Hồi phục sinh mệnh": "Cuối mỗi lượt, hồi phục 12% giới hạn HP tối đa.",
+        "Hồi phục quá tải": "Sử dụng [Hành động] hồi phục 800 HP, mỗi trận chiến có thể dùng một lần."
       },
-      "description": "Pha trộn nhào chế nên bằng thuật dùng hổ phách ngả ánh sáng đồng kết tinh sắc sương mai từ thời rực rỡ vàng son tạo tác thành hình, nó sao chép vẽ lại cái viễn cảnh sự xuất hiện thưở nguyên sơ xa xưa mông muội, khi ấy trên nhân gian những chủng sống chồi non chực chờ khát vọng chộp lãnh nhặt liếm thứ giọt sương vàng nạm ân oán rơi rớt lấm tấm xuống từ cội rễ Cây Sự Sống Thần Thánh."
+      "description": "Làm bằng hổ phách vàng và đồng thau, phỏng theo hình dáng những sinh mệnh trên mặt đất đón nhận những giọt sương rơi xuống từ Cây Thế Giới từ thuở xa xưa."
     },
     {
-      "name": "Lam Sắc Ân Huệ Lộ Tích Hộ Phù",
+      "name": "Hộ Phù Giọt Sương Ân Huệ Lam",
       "cost": 25,
       "type": "Trang Sức",
       "tag": [
-        "Vòng Cổ",
+        "Vòng cổ",
         "Phòng ngự: 160"
       ],
       "rarity": "rare",
       "effect": {
-        "Pháp lực khôi phục": "Vào mỗi khoảnh khép hiệp trận, trực chuyển cung cấp cho 12% cho đỉnh ngưỡng MP cực điểm.",
-        "Quá tải khôi phục": "Vắt sức sử dụng điểm năng [Hành Động] tự hoàn điểm nạp MP khôi phục tới con số 800 điểm, mỗi tiến trình chinh phục tham vấn chiến sự chỉ cho dùng khả năng trên một đợt mà thôi."
+        "Hồi phục pháp lực": "Cuối mỗi lượt, hồi phục 12% giới hạn MP tối đa.",
+        "Hồi phục quá tải": "Sử dụng [Hành động] hồi phục 800 MP, mỗi trận chiến có thể dùng một lần."
       },
-      "description": "Dùng hổ phách quang tinh ngọc xanh biếc mang nạp kim nhũ thau để tinh luyện đả tạo, họa lại bóng hình vóc dáng xưa thật là xưa lúc con người dâng hiến đôi tay khao khát mót nhặt hớp nuốt trọn giọt sương mai từ nhành của Thần Mộc đẫm sương giáng trần ngọc lan."
+      "description": "Làm bằng hổ phách lam và đồng thau, phỏng theo hình dáng những sinh mệnh trên mặt đất đón nhận những giọt sương rơi xuống từ Cây Thế Giới từ thuở xa xưa."
     },
     {
-      "name": "Song Đầu Lục Quy Quải Trụy",
+      "name": "Mặt Dây Rùa Lục Hai Đầu",
       "cost": 28,
       "type": "Trang Sức",
       "tag": [
-        "Vòng Cổ",
+        "Vòng cổ",
         "Phòng ngự: 165"
       ],
       "rarity": "rare",
       "effect": {
-        "Nại lực khôi phục": "Khi điểm mút hiệp thứ nhất kết sổ chấm điểm, cho hoàn trở về 12% trị cốt SP cực đại.",
-        "Quá tải khôi phục": "Trang dụng kỹ năng dạng [Hành Động] thăng hồi về 800 điềm khôi phục SP, qua một quy luật quy trình chiến báo bất khả nhị chiến thì chỉ có độc một thời khắc xài mà thôi."
+        "Hồi phục thể lực": "Cuối mỗi lượt, hồi phục 12% giới hạn SP tối đa.",
+        "Hồi phục quá tải": "Sử dụng [Hành động] hồi phục 800 SP, mỗi trận chiến có thể dùng một lần."
       },
-      "description": "Nghệ nhân đã lấy cảm giác thị giác về thứ dị thú rùa rồng song đầu mang trên mình lớp màu xanh rì để làm ra lá bùa hộ mệnh. Rùa chính là di vật tượng trưng bất biến của tinh xảo chịu đựng bền bỉ không có ngọn cũng chẳng có bến vờ."
+      "description": "Hộ phù chế tác theo hình dáng rùa xanh hai đầu. Rùa là biểu tượng của sức bền vô tận."
     },
     {
-      "name": "Hồng Chủng Tử Trụy Sức",
+      "name": "Trang Sức Hạt Giống Đỏ",
       "cost": 27,
       "type": "Trang Sức",
       "tag": [
-        "Vòng Cổ",
+        "Vòng cổ",
         "Phòng ngự: 165"
       ],
       "rarity": "rare",
       "effect": {
-        "Trị liệu tăng phúc": "Tại mọi ngốc ngách khe rảnh hễ là mang thiên hướng phục nguyên chức năng sinh học cho điểm HP, chúng sẽ đều cho ăn lời thêm 12% chênh lệch."
+        "Khuếch đại trị liệu": "Tất cả hiệu quả hồi phục HP từ mọi nguồn tăng 12%."
       },
-      "description": "Nham thạch đỏ chót đem luyện vào cùng vàng khối cốt cho ra tạo hình một hạt mầm mới cắm rễ, là bức họa diễm lệ ngụ ý thiết tha dâng hiến mọi điều tuyệt sắc tốt đẹp hòng cầu khấn cầu siêu linh nghiệm của Mộc Thần thụ tinh thế giới rủ lòng từ bi nghe màng thỉnh an."
+      "description": "Hổ phách đỏ và vàng được chế tác thành hình hạt giống, là một nguyện vọng tốt đẹp cầu mong sự đáp lại của Cây Thế Giới."
     },
     {
-      "name": "Lam Chủng Tử Trụy Sức",
+      "name": "Trang Sức Hạt Giống Lam",
       "cost": 27,
       "type": "Trang Sức",
       "tag": [
-        "Vòng Cổ",
+        "Vòng cổ",
         "Phòng ngự: 165"
       ],
       "rarity": "rare",
       "effect": {
-        "Pháp lực hồi phục tăng phúc": "Mọi mạch nhánh tạo ra kết quả giúp cho MP vãn hồi điểm yếu sẽ mạnh mẽ tiếp thêm 12% tốc độ phục sinh của nó."
+        "Khuếch đại hồi phục pháp lực": "Tất cả hiệu quả hồi phục MP từ mọi nguồn tăng 12%."
       },
-      "description": "Hổ phách sắc lam nhuộm cùng vàng thau tinh luyện ra giống hạt gốc của hoa quả, phỏng lên kỳ nguyện được Thần Mộc chiếu rọi ân điển đáp từ cho tâm tư của người trần mắt thịt."
+      "description": "Hổ phách lam và vàng được chế tác thành hình hạt giống, là một nguyện vọng tốt đẹp cầu mong sự đáp lại của Cây Thế Giới."
     },
     {
-      "name": "Cổ Long Thuẫn Hình Huy Chương",
+      "name": "Huy Hiệu Khiên Cổ Long",
       "cost": 30,
       "type": "Trang Sức",
       "tag": [
-        "Huy Chương",
+        "Huy hiệu",
         "Phòng ngự: 180"
       ],
       "rarity": "rare",
       "effect": {
-        "Vật lý phòng hộ": "Gánh chịu trọn vẹn điểm cho mọi cơ sở vật lý chịu thương, giảm thiểu mất tích toàn vùng 12%."
+        "Phòng hộ vật lý": "Giảm 12% tất cả sát thương vật lý nhận vào."
       },
-      "description": "Khối thiết già chạm khắc thô lồi chi tiết hoa văn một con Cổ long rồng thần siêu phàm đắp trượng huy hiệu tước vị cổ đại. Họa ảnh bức rồng là bùa chỉ ấn mang vạn phúc an khang."
+      "description": "Hộ phù sắt thục cổ đại có phù điêu cổ long khổng lồ. Hoa văn rồng được coi là biểu tượng của sự che chở."
     },
     {
-      "name": "Hồng Long Kiên Thuẫn Huy Chương",
+      "name": "Huy Hiệu Khiên Cứng Hồng Long",
       "cost": 32,
       "type": "Trang Sức",
       "tag": [
-        "Huy Chương",
+        "Huy hiệu",
         "Phòng ngự: 180"
       ],
       "rarity": "rare",
       "effect": {
-        "Cường hiệu đa trọng phòng hộ": "Làm tổn hao đi 12% đối với tổng hệ số lực sát thương từ nguồn năng lượng, tinh thần và sát thương chuẩn nhận phải."
+        "Đa trọng phòng hộ cường hiệu": "Giảm 12% tất cả sát thương năng lượng, tinh thần, và chân thực nhận vào."
       },
-      "description": "Huy hiệu làm bằng loại gang thép siêu già, phía trên có bức phù điêu lớn phác họa sinh động cảnh rồng bảy sắc cầu vồng tung hoành ngang dọc. Lấy chính hình bóng ấy làm thần tượng để biểu trưng cầu xin phước lành gia ân."
+      "description": "Hộ phù sắt thục cổ đại có phù điêu cầu vồng long khổng lồ. Hoa văn cầu vồng long được coi là biểu tượng của sự che chở."
     },
     {
-      "name": "Ma Long Kiên Thuẫn Huy Chương",
+      "name": "Huy Hiệu Khiên Cứng Ma Long",
       "cost": 32,
       "type": "Trang Sức",
       "tag": [
-        "Huy Chương",
+        "Huy hiệu",
         "Phòng ngự: 180"
       ],
       "rarity": "rare",
       "effect": {
-        "Cường hiệu ma pháp phòng hộ": "Lượng sát thương mang sức mạnh ma pháp nhằm vào nhận lấy giảm sút đi 12%."
+        "Phòng hộ ma pháp cường hiệu": "Giảm 12% sát thương năng lượng nhận vào."
       },
-      "description": "Chiếc phù điêu cổ xưa được gọt giũa từ một khối sắt già, hiện rõ bóng dáng to lớn của con ma long. Đồ đằng ma long này luôn được truyền tụng xem như là báu vật thần diệu hòng khắc chế triệt tiêu hiệu quả ma pháp."
+      "description": "Hộ phù sắt thục cổ đại có phù điêu ma long khổng lồ. Hoa văn ma long được coi là biểu tượng kháng cự ma lực."
     },
     {
-      "name": "Hỏa Long Kiên Thuẫn Huy Chương",
+      "name": "Huy Hiệu Khiên Cứng Hỏa Long",
       "cost": 32,
       "type": "Trang Sức",
       "tag": [
-        "Huy Chương",
+        "Huy hiệu",
         "Phòng ngự: 180"
       ],
       "rarity": "rare",
       "effect": {
-        "Cường hiệu hỏa diễm phòng hộ": "Lượng sát thương có mang nguyên tố thuộc tính (Hỏa) bị giảm uy lực đi 12%."
+        "Phòng hộ hỏa diệm cường hiệu": "Giảm 12% sát thương năng lượng (hỏa diệm) nhận vào."
       },
-      "description": "Chiếc phù điêu cổ xưa được gọt giũa từ một khối sắt già, hiện rõ bóng dáng to lớn của con rồng lửa đang hừng hực. Đồ đằng loài hỏa long này luôn được truyền tụng xem như là báu vật phản ngự chống lại sự đốt cháy của lửa."
+      "description": "Hộ phù sắt thục cổ đại có phù điêu hỏa long khổng lồ. Hoa văn hỏa long được coi là biểu tượng kháng cự hỏa diệm."
     },
     {
-      "name": "Lôi Long Kiên Thuẫn Huy Chương",
+      "name": "Huy Hiệu Khiên Cứng Lôi Long",
       "cost": 32,
       "type": "Trang Sức",
       "tag": [
-        "Huy Chương",
+        "Huy hiệu",
         "Phòng ngự: 180"
       ],
       "rarity": "rare",
       "effect": {
-        "Cường hiệu lôi điện phòng hộ": "Lượng sát thương có mang tính chất năng lượng (Lôi Điện) đánh phải bị triệt hao chỉ còn -12%."
+        "Phòng hộ lôi điện cường hiệu": "Giảm 12% sát thương năng lượng (lôi điện) nhận vào."
       },
-      "description": "Chiếc phù điêu cổ xưa được gọt giũa từ một khối sắt già, hiện rõ bóng dáng to lớn của lôi long sấm chớp giật ùng oàng. Đồ đằng loài lôi long luôn được xem là vật phẩm bài xích lại các luồng sức mạnh sấm sét."
+      "description": "Hộ phù sắt thục cổ đại có phù điêu lôi long khổng lồ. Hoa văn lôi long được coi là biểu tượng kháng cự lôi điện."
     },
     {
-      "name": "Thánh Long Kiên Thuẫn Huy Chương",
+      "name": "Huy Hiệu Khiên Cứng Thánh Long",
       "cost": 32,
       "type": "Trang Sức",
       "tag": [
-        "Huy Chương",
+        "Huy hiệu",
         "Phòng ngự: 180"
       ],
       "rarity": "rare",
       "effect": {
-        "Cường hiệu thần thánh phòng hộ": "Lượng sát thương có mang tính chất năng lượng (Thần Thánh) đánh tới bị hao mòn chỉ còn -12%."
+        "Phòng hộ thần thánh cường hiệu": "Giảm 12% sát thương năng lượng (thần thánh) nhận vào."
       },
-      "description": "Chiếc phù điêu cổ xưa được gọt giũa từ một khối sắt già, hiện rõ bóng dáng to lớn của loài rồng thiêng cao quý lộng lẫy. Đồ đằng loài thánh long luôn được truyền tụng nhằm tượng trưng cho sức mạnh bài trừ lại ánh hào quang chói lòa tinh ranh của các pháp thuật thánh khiết."
+      "description": "Hộ phù sắt thục cổ đại có phù điêu thánh long khổng lồ. Hoa văn thánh long được coi là biểu tượng kháng cự thần thánh."
     },
     {
-      "name": "Thú Tộc Miễn Dịch Đại Giác Sức Phẩm",
+      "name": "Sừng Lớn Miễn Dịch Thú Tộc",
       "cost": 31,
       "type": "Trang Sức",
       "tag": [
-        "Trang Sức Đầu",
+        "Đầu sức",
         "Phòng ngự: 130"
       ],
       "rarity": "rare",
       "effect": {
-        "Độc tố miễn dịch": "Quá trình áp đặt thế đối kháng vào những hiệu ứng điểm [Trúng Độc], có tỷ lệ 12% khả năng xúc xắc (d20≥7) cho ra kết quả triệt tiêu kháng hoàn toàn hiệu lực đó."
+        "Miễn dịch độc tố": "Khi kiểm định đối kháng hiệu ứng [Trúng độc], bạn có 12% tỷ lệ (d20≥7) trực tiếp miễn dịch hiệu ứng này."
       },
-      "description": "Tương truyền tương rằng tác phẩm chạm khắc này là món di tích biểu tượng cổ rêu phong lưu trữ bảo vệ hết đời này qua đời khác mà người của Bộ Lạc Thú Tộc trao truyền kế thừa, chống chịu đủ đầy trăm ngàn thể loại kịch độc cùng trạng thái trúng loại bùa độc phế truất cản bước một cách quyết liệt."
+      "description": "Tương truyền đây là biểu tượng cổ xưa do thú tộc chế tác qua nhiều đời, có thể kháng cự mạnh mẽ các loại độc tố và trạng thái trúng độc."
     },
     {
-      "name": "Thú Tộc Kiện Tráng Đại Giác Sức Phẩm",
+      "name": "Sừng Lớn Cường Tráng Thú Tộc",
       "cost": 31,
       "type": "Trang Sức",
       "tag": [
-        "Trang Sức Đầu",
+        "Đầu sức",
         "Phòng ngự: 130"
       ],
       "rarity": "rare",
       "effect": {
-        "Cường Nhận Thân Khu": "Những tổn thương vật lý dạng kéo dài (chẳng hạn như là Chảy Máu) nhận phải sẽ được giảm đi tận 12%."
+        "Thân thể kiên cường": "Giảm 12% sát thương vật lý liên tục nhận vào (như chảy máu)."
       },
-      "description": "Tương truyền đây là một món bảo vật mà được truyền đời cho Bộ Lạc Người Thú, có khả năng hóa giải trên diện rất rộng vô số những tác động của Tê Cóng hay xuất huyết rỉn rỉ."
+      "description": "Tương truyền đây là biểu tượng cổ xưa do thú tộc chế tác qua nhiều đời, có thể kháng cự mạnh mẽ các hiệu ứng chảy máu và đóng băng."
     },
     {
-      "name": "Thú Tộc Lý Trí Đại Giác Sức Phẩm",
+      "name": "Sừng Lớn Lý Trí Thú Tộc",
       "cost": 31,
       "type": "Trang Sức",
       "tag": [
-        "Trang Sức Đầu",
+        "Đầu sức",
         "Phòng ngự: 130"
       ],
       "rarity": "rare",
       "effect": {
-        "Cương Thiết Ý Chí": "Lúc phải phán xét sự xung thực khắc kỵ với các điểm bất lợi tinh thần (tỉ dụ như Mê Luyến hay Hãi Bi Hùng), bản thể có tới hẳn 12% lẩn chốn (d20≥6) để cự ráo khỏi mớ hỗn loạn kia."
+        "Ý chí sắt thép": "Khi kiểm định đối kháng hiệu ứng giảm ích tinh thần (như mê hoặc, khiếp sợ), bạn có 12% tỷ lệ (d20≥6) trực tiếp miễn dịch hiệu ứng này."
       },
-      "description": "Được đồn thổi là di vật cổ của Bộ Lạc Thú Nhân đã tự sản xuất ra và bảo lưu qua nhiều giai đoạn thời đại, là công cụ hữu dụng đả lực đẩy lui mạnh các khuynh hướng nguyền rủa phá não hãm hoại linh trí."
+      "description": "Tương truyền đây là biểu tượng cổ xưa do thú tộc chế tác qua nhiều đời, có thể kháng cự mạnh mẽ các hiệu ứng ảnh hưởng tinh thần."
     },
     {
-      "name": "Tật Bệnh Hộ Phù",
+      "name": "Hộ Phù Tật Bệnh",
       "cost": 29,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 130"
       ],
       "rarity": "rare",
       "effect": {
-        "Thích ứng tính": "Chỉ khi đã đẩy thối khỏi thân được một thứ ám chiêu, ngay trong giai đoạn đánh vật quyết chiến đó quá trình đối khám suy sát các hiểm nghèo giống thế của thân chủ sẽ ăn may có thêm điểm tăng phán định dội qua là +5. Trạng thái dồn tụ tầng xếp là 3 nếp vắt."
+        "Thích ứng": "Khi bạn kháng cự thành công một hiệu ứng giảm ích, trong trận đấu đó kiểm định kháng cự đối với hiệu ứng giảm ích cùng tên nhận +5 gia trị. Hiệu ứng này cộng dồn tối đa 3 lần."
       },
-      "description": "Chiết tác lấy nguồn ý tưởng từ cái nhăn mặt của nạn nhân bỏ mạng vì suy bệnh yểu tử mà hình khắc thành bảo cụ bùa truyền. Với những khối nhục nhân gầy rỗng mà tài ba ngoi ngóp được qua lằn sương của sự vây hãm thì mãi một kiếp không phiền lụy đau thương về sau."
+      "description": "Hộ phù chế tác theo bộ dạng người chết vì bệnh. Những người ốm yếu nếu sống sót qua cơn bạo bệnh sẽ không còn bị thứ bệnh đó quấy nhiễu nữa."
     },
     {
-      "name": "Chủy Thủ Hộ Phù",
+      "name": "Hộ Phù Chủy Thủ",
       "cost": 22,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 130"
       ],
       "rarity": "rare",
       "effect": {
-        "Thâu tập": "Khi rắp tâm tấn công một địch thù đang chưa kịp phòng bị đi vào trạng thái giao tranh, nhát cắn kích thích khởi thủy đầu thai ấy sẽ có thêm 600 điểm phụ lực đập vỡ."
+        "Đánh lén": "Khi bạn tấn công một kẻ địch chưa bước vào trạng thái chiến đấu, đòn tấn công đầu tiên của bạn mang thêm 600 điểm sát thương vật lý."
       },
-      "description": "Lấy tạo biểu từ hình trạng vũ khí con dao ngắn Chủy Thủ vương vấn theo gót lính đánh thuê làm khuôn đúc thành vòng bùa ngải bảo trợ, nó lừng danh là công cụ sát hại chớp nháy chẳng chịu nhúng lọt cho lóng lánh ánh nắng chi phối của tụi công hội lính đâm thuê chém mướn 'Ám Ảnh Chi Thủ'."
+      "description": "Hộ phù lấy hình tượng chủy thủ và thích khách, đại diện cho đòn chí mạng khuất lấp trong bóng tối của công hội 'Bàn Tay Ảm Ảnh'."
     },
     {
-      "name": "Khúc Kiếm Hộ Phù",
+      "name": "Hộ Phù Khúc Kiếm",
       "cost": 22,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 130"
       ],
       "rarity": "rare",
       "effect": {
-        "Phản kích": "Ngay cái đà đang mâm xôi nỗ lực gỡ đòn chặn phũ đầu hoặc luồn cú trốn né chót lọt để chờ thời tại lúc một hồi hiệp trôi qua ấy, nước cờ đánh bật theo luồng tấn công đánh đáp lễ sẽ nương lực bổ oán 500 điểm choáng váng gầm thét."
+        "Phản kích": "Trong vòng 1 lượt sau khi bạn thành công đỡ đòn hoặc né tránh một đòn tấn công của kẻ địch, đòn tấn công tiếp theo sẽ gây thêm 500 điểm sát thương vật lý."
       },
-      "description": "Nắm bắt được tính cơ giới của đường thanh gươm Khúc Kiếm làm rực tỏa trên bóng một kẻ ngự kiếm làm mẫu tạo lá bùa. Điều cho ngắm nhìn thấy lại được cái tài hoa luồn khe né cửa chết gặm cửa sống mưu đồ tài ba đến thế, là kĩ năng hiếm có khó tìm của một đấng kiếm sư ngộ chiết được qua những giai thoại."
+      "description": "Hộ phù thiết kế theo hình tượng khúc kiếm và kiếm sĩ. Nó thể hiện kiếm thuật điêu luyện tìm kiếm chiến thắng trong hiểm cảnh, một kỹ thuật được lĩnh ngộ bởi các kiếm sĩ huyền thoại."
     },
     {
-      "name": "Song Đầu Kiếm Hộ Phù",
+      "name": "Hộ Phù Song Đầu Kiếm",
       "cost": 22,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 130"
       ],
       "rarity": "rare",
       "effect": {
-        "Chung kết nhất kích": "Chỉ khi xuất thủ bủa các ma chưởng kĩ năng có sở lủng lẳng chữ [Liên Kích] hoặc [Đa Đoạn] làm thẻ nạp hiệu ứng, nhát chém cấu thành của loại tuyệt năng đó sẽ tự cộng hưởng sinh sôi thêm 12% trị uy hiếp."
+        "Đòn kết liễu": "Khi dùng kỹ năng có thẻ [Liên Kích] hoặc [Đa Đoạn], sát thương của mỗi đòn đánh trong kỹ năng đó tăng 12%."
       },
-      "description": "Đúc thủ bằng loại khuôn rèn họa lên thanh gông song lưỡi kèm đôi cánh sứ giả thần tàng khảm lên thành phù ngải bảo trì thể chất mệnh đồ. Những mật sứ dấn thân trong mưu đồ hành hung hãm hại này rất am hiểu một bí truyền: Vung đánh rát bao nhiêu vào chốn không rụng ngàn vàng bằng vung một rìu sắc sảo bổ gục thân thù để đứt dây còi tận diệt là hay hơn cả."
+      "description": "Hộ phù thiết kế theo hình tượng song đầu kiếm và mật sứ. Các mật sứ lấy tôn chỉ thi triển những đòn đánh không nguy hiểm nhưng tung đánh kết liễu với uy lực mạnh nhất."
     },
     {
-      "name": "Phủ Hộ Phù",
+      "name": "Hộ Phù Rìu",
       "cost": 22,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 130"
       ],
       "rarity": "rare",
       "effect": {
-        "Súc lực công kích cường hóa": "Dàn nhát bổ chất chứa năng lượng dồn kìm của bạn (gây tiêu hao mảng điểm [Tấn Công] cũng như [Hành Động] mà mang nợ thứ trừng phạt kịch đau) sẽ nổ bục lên mốc giới hạn 12% tàn tích."
+        "Cường hóa tấn công tụ lực": "Đòn tấn công tụ lực (đòn tấn công mạnh tiêu hao [Tấn công] và [Hành động]) của bạn tăng 12% sát thương cuối cùng."
       },
-      "description": "Đóng khung bằng sự uy phong mãnh hách của lính binh rùi lớn để chế sinh ra tấm bùa che đỡ. Phủ (Rùi Chiến) chính danh ngôn ngôn là đại diện pháp cụ của các chiến vương băng thổ bắc cực, họ sành sõi cách thức luồn ép tích dồn sát khí tống đẩy ra ngoài trong các chiêu bài oanh tạc."
+      "description": "Hộ phù thiết kế theo hình tượng chiếc rìu và chiến binh. Rìu là vũ khí của chiến vương phương Bắc, họ rất giỏi sử dụng sức mạnh tối đa để đánh bại đối thủ."
     },
     {
-      "name": "Chùy Hộ Phù",
+      "name": "Hộ Phù Búa",
       "cost": 22,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 130"
       ],
       "rarity": "rare",
       "effect": {
-        "Phá thuẫn": "Khoảnh khắc chĩa ngòi súng để nã sát phạt tới kẻ định mang mắc [Trọng Giáp] (Áo giáp sắt xù xì) hoặc [Thuẫn Bài] (Khiên đỡ) hòng phòng chống, mốc tổn hại máu do vật thể cứng đập nén vọt thêm số lượng +12%."
+        "Phá thuẫn": "Khi tấn công lên kẻ địch trang bị [Giáp Nặng] hoặc [Khiên], tăng 12% sát thương vật lý."
       },
-      "description": "Trùng khảm hình bóng quả móc lớn cồng kềnh với bộ sậu lính đánh kỵ mã để sinh lập lên vòng chú. Quả vồ lớn rất là ăn ý chuyên tâm khoét đập tảng thuẫn giáp, đây vốn là quân mã mài kiếm đồ sát bọn ngựa sĩ lừng vang uy thế một khúc trời."
+      "description": "Hộ phù thiết kế theo hình tượng búa tạ và kỵ sĩ. Búa tạ vô cùng hiệu quả khi đối đầu với kẻ địch mặc trọng giáp và có khiên, vũ khí nổi danh dùng để săn lùng hiệp sĩ."
     },
     {
-      "name": "Mâu Hộ Phù",
+      "name": "Hộ Phù Giáo",
       "cost": 22,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 130"
       ],
       "rarity": "rare",
       "effect": {
-        "Nghênh kích": "Sự xuất hiện của chấn thương phát sinh tại điểm rơi khi đánh chỏm về ngay trung tâm của mục tiêu lúc nó đang thênh thang rảo múa múa bạt, số lượng thương thế đấy sẽ bị cho cắp kênh vọt số làm +12%."
+        "Nghênh kích": "Khi bạn gây sát thương lên kẻ địch đang trong tư thế xuất chiêu kiểm định đòn đánh, sát thương lần này sẽ tăng 12%."
       },
-      "description": "Lột nét đường thương đâm lụi mũi xiên Mâu với con binh lốt làm khung phù rập ra đúc thành bảo bối. Chạm ngõ trán sừng gai mãnh thú, nắm bắt nhịp hở lỏng của sự hung hãn bạo tàn này mà đốp chát làm miếng thâm đòn, đôi lúc mang về điều kì dệu chẳng tưởng nổi."
+      "description": "Hộ phù mang thiết kế giáo và binh lính. Khi gặp kẻ địch mạnh, nắm bắt sơ hở để tấn công trả đũa thường mang lại kết quả bất ngờ."
     },
     {
-      "name": "Kỵ Binh Hộ Phù",
+      "name": "Hộ Phù Kỵ Binh",
       "cost": 22,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 140"
       ],
       "rarity": "rare",
       "effect": {
-        "Kỵ thừa công kích cường hóa": "Tại vị trí lưng chừng con yên cương ngựa của thân chủ, tần sóng lượng sát thương ở khúc vĩ diện đòn đánh bừa bãi vút phổng nảy nở ở độ 12% trị giá."
+        "Cường hóa chiến đấu trên thú cưỡi": "Khi cưỡi trên thú cưỡi, sát thương cuối cùng của tất cả kỹ năng đánh được cộng thêm 12%."
       },
-      "description": "Bắt tạc tư phong của một cây thương dùng lao chiến của kỵ hiệp làm bức vẽ thiết kế đúc kết bùa ấn hộ. Các kỵ binh lúc an tọa nài lưng chú chiến mã thì hung bá tàn bạo khiếp oai chừng nào, vừa đứng kiễng chỏm trần lầu đài cao chót vót lại hừng hực nhãn quan bao quát ngắm nhòm."
+      "description": "Hộ phù mang thiết kế thương cưỡi ngựa và kỹ binh. Cưỡi trận mã mang đến ưu thế to lớn về góc nhìn toàn diện, kỹ binh rất đáng sợ khi ở vị trí cao hơn."
     },
     {
-      "name": "Câu Trảo Hộ Phù",
+      "name": "Hộ Phù Móng Vuốt",
       "cost": 22,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 140"
       ],
       "rarity": "rare",
       "effect": {
-        "Cao địa ưu thế": "Khi thiết lập thi triển thế gọng kìm xuất thủ từ vị trí ưu việt bao quát được mục tiêu ở tầm nhìn trên cao, đòn xuất kích đánh bồi này sẽ móc thủng gieo rắc đến 500 điểm trị nội thể sát thương vật lý."
+        "Ưu thế địa hình cao": "Khi bạn phát động tấn công từ vị trí cao hơn mục tiêu, đòn tấn công đó gây thêm 500 điểm sát thương vật lý."
       },
-      "description": "Là tạo hình mô tả chân thực binh khí móc vuốt của hệ tử sĩ tử hình thành phù ngải hộ vệ. Đám sát thủ bần tiện mạc nhược thuộc chốn hội kín 'Ám Ảnh Chi Thủ' thường cực kì tinh ranh trong mánh khoé mượn sức vòm địa hình cao thấp mà dập chết con mồi một đòn vong mạng."
+      "description": "Hộ phù thiết kế theo hình tượng móng vuốt và tử sĩ. Các thích khách của 'Bàn Tay Ảm Ảnh' rất giỏi lợi dụng độ chênh lệch cao thấp để tung đòn chí mạng."
     },
     {
-      "name": "Đại Thuẫn Hộ Phù",
+      "name": "Hộ Phù Khiên Lớn",
       "cost": 24,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 150"
       ],
       "rarity": "rare",
       "effect": {
-        "Thuẫn phòng cường hóa": "Tại phân đoạn gồng thủ với [Thuẫn Bài] (Khiên), chỉ số gánh chống điểm chết [Đánh Lui] sẽ đoạt cộng thêm mức độ tin tưởng là +5, song song đấy là khoảng sát thương đục khoét điểm SP tựa khiên giảm trừ đi 12%."
+        "Cường hóa khiên chắn": "Khi bạn trang bị [Khiên], kiểm định kháng cự hiệu ứng [Đẩy lùi] nhận +5 gia trị, đồng thời sát thương SP phải chịu khi đỡ đòn giảm 12%."
       },
-      "description": "Chiết khấu lại đường nhét hình bàn tay ghì nắm chặt thanh chủy thủ nấp lùm bóng nhọ nồi mà tạc ra phù phù nề che thân. Hỡi những kị sĩ uy vũ, kẻ gạt mũi kiếm không đày lùi bằng kẻ vác đà khiên gánh tạ cả giang sơn."
+      "description": "Hộ phù thiết kế theo hình tượng bàn tay cầm chủy thủ trong bóng tối. Những kỵ sĩ vinh quang, thứ nên giương lên trước không phải là kiếm, mà là khiên."
     },
     {
-      "name": "Song Thủ Kiếm Hộ Phù",
+      "name": "Hộ Phù Song Thủ Kiếm",
       "cost": 24,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 155"
       ],
       "rarity": "rare",
       "effect": {
-        "Song thủ trì ác": "Khi tự thân thi triển hai bàn tay ghì đốc siết chặt lấy một món Cận chiến binh khí, hệ thống năng lực rèn phá đập sát thương vật lý dâng trào 12%."
+        "Cầm hai tay": "Khi bạn dùng hai tay cầm một loại vũ khí cận chiến, sát thương vật lý bạn gây ra tăng 12%."
       },
-      "description": "Rập khuôn chế dạng kiểu kiếm lưỡng thủ đi liền bóng binh gia hòng tạo lập ra bùa bình an. Sự mê đắm điêu đứng chiến trận của các lang đánh mướn khiến người đó bỏ lỡ đi công cụ chắn đòn bẩy là khiên vật, nhưng thay vào việc dồn chưởng lực tay đôi đốc xách kiếm bự."
+      "description": "Hộ phù thiết kế theo hình tượng song thủ kiếm và chiến binh. Chiến binh chìm đắm trong chiến đấu, từ bỏ cầm khiên, chuyển sang dùng hai tay nắm chặt đại kiếm."
     },
     {
-      "name": "Cung Hộ Phù",
+      "name": "Hộ Phù Cung",
       "cost": 23,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 140"
       ],
       "rarity": "rare",
       "effect": {
-        "Cung thuật tinh thông": "Trong chót vót mọi tình huống kéo [Cung] xả tiễn gieo đòn rỉa rớt mạng thù, lực điểm dứt kết đoạn chốt hạ phóng mạnh hơn 12%."
+        "Tinh thông cung thuật": "Sát thương cuối cùng của tất cả đòn tấn công sử dụng vũ khí loại [Cung] tăng 12%."
       },
-      "description": "Nghệ nhân dùng chính món nghề đi rừng săn mồi làm cung kiếm xen ảnh ảo thú nhân bộ lạc thêu diệt bùa ấn đúc khuôn. Tộc người thú mượn hơi rừng tàn sát hoang thú dị thú, song rốt cục cũng là miếng mồi ngon mỏ của mãnh thú cuồng lang."
+      "description": "Hộ phù thiết kế theo hình tượng cung và thú tộc. Thú tộc săn lùng dã thú, dã thú cũng săn lùng thú tộc."
     },
     {
-      "name": "Tiễn Hộ Phù",
+      "name": "Hộ Phù Mũi Tên",
       "cost": 23,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 140"
       ],
       "rarity": "rare",
       "effect": {
-        "Viễn trình xạ kích": "Với tầm hoạt động ngắm bắn sải tay của dòng công cụ mạo danh [Cung] được cấp kéo dãn uy lực tới 12% bán kính đạc đo viễn trình mốc ranh, lại điềm nhiên chốt dội 10% đỉnh sát thương tiễn mạc xuất phát trúng bờ cuối."
+        "Xạ kích tầm xa": "Khoảng cách tấn công hiệu quả của tất cả vũ khí loại [Cung] tăng 12%, đồng thời sát thương cuối cùng gây ra tăng 10%."
       },
-      "description": "Tổng cục thiết tạo bằng kiểu buộc bó tên lông vũ chắp mảnh ghép cùng mũi nhọn tên thiết lập thành bùa gia bọc mạng. Khâu ngắt nhọc phân loại tên mũi đục bắn đi phù hợp từng con cá nằm trên thớt là thứ cẩm nang lão làng của bọn thú nhân tộc luôn dắt vào máu."
+      "description": "Hộ phù chế tác theo sự kết hợp giữa mũi tên lông vũ và tiễn sắt. Lựa chọn những loại tên khác nhau để tiến hành săn bắn, thợ săn của thú tộc vô cùng am hiểu đạo lý này."
     },
     {
-      "name": "Thư Kích Hộ Phù",
+      "name": "Hộ Phù Bắn Tỉa",
       "cost": 23,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 140"
       ],
       "rarity": "rare",
       "effect": {
-        "Miểu chuẩn xạ kích": "Dốc bòn nguồn điềm [Hành Động] ngắm chĩa hồng tâm đọng lực siết, ngay sau đó nhả sức rỉa nhát [Cung] nỏ tung bực thêm đà +500 lượng sức công phá thể vật lí."
+        "Ngắm bắn": "Bạn có thể tiêu hao tài nguyên [Hành động] để tiến hành ngắm bắn, đòn tấn công tiếp theo sử dụng [Cung] hoặc [Nỏ] của bạn gây thêm 500 điểm sát thương vật lý."
       },
-      "description": "Trồng trọt bức thư họa rập điêu bằng cội cung sừng trâu trường hình đi đôi bóng vía một tay khất xạ tiễn thiện ngự. Chỉ chót dọng một khắc lấy hồng tâm tiêu chuẩn bách phát bách trúng cự ly xa thẳm tót vời, đấy mới đích thực là thú săn rừng chuyên sâu lão luyện của tộc đi rừng thú nhân."
+      "description": "Hộ phù thiết kế theo hình tượng trường cung và xạ thủ. Thợ săn thú tộc sẽ tiến hành ngắm bắn tỉ mỉ trong chốc lát, sau đó tung đòn đoạt mạng."
     },
     {
-      "name": "Thư Hộ Phù",
+      "name": "Hộ Phù Sách",
       "cost": 25,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 140"
       ],
       "rarity": "rare",
       "effect": {
-        "Pháp thuật thương hại cường hóa": "Dàn nhát bổ chất chứa ma pháp thần bí gieo đòn rỉa rớt mạng thù, lực điểm dứt kết đoạn chốt hạ phóng mạnh hơn 12%."
+        "Cường hóa sát thương pháp thuật": "Sát thương cuối cùng của tất cả kỹ năng sát thương năng lượng tăng 12%."
       },
-      "description": "Cốt yếu bứng lại nét bàn tay thủ chắp sách cuốn ma đạo đồ sộ thành khuôn rập đúc nặn bảo phù chú trấn yểm. Toàn bộ lượng tri thức siêu việt cổ kim Đông Tây do tập đoàn phù thủy ma giáo để lại gieo mầm cả thành đồ sộ tàng thư bảo khố."
+      "description": "Hộ phù thiết kế theo hình tượng bàn tay cầm sách ma pháp. Trí tuệ của các ma pháp sư qua các thời kỳ đã tạo nên vô số thư viện của Hiệp Hội Ma Pháp."
     },
     {
-      "name": "Bào Hao Liễn Trụy",
+      "name": "Mặt Dây Chuyền Gầm Rú",
       "cost": 26,
       "type": "Trang Sức",
       "tag": [
-        "Vòng Cổ",
+        "Vòng cổ",
         "Phòng ngự: 150"
       ],
       "rarity": "rare",
       "effect": {
-        "Bào hao cường hóa": "Trị số sức nặng oanh toạc xé xác rát gào ở hệ [Mở mồm the thét gào lên] tung phốc bành trướng đè dí chấn phát tới mức độ vĩ ngạc sinh uy là 12% sát thương đoạt mạng."
+        "Cường hóa gầm rú": "Sát thương cuối cùng của những kỹ năng loại gầm rú hoặc thổ tức của bạn tăng 12%."
       },
-      "description": "Bắt nguồn ở cái điệu bộ nhăn trán há mồm gào thét hung hăng ngấu nghiến của gã Người Khổng Lồ đắp nặn ra hình vòng tràng hạt cõi cổ thiếc thau. Sự tương truyền ghi lại cái tiếng thét cuồng loạn húc đổ muôn vàn đỉnh núi dốc, khua mây quấy động bão táp băng sương dập dồn."
+      "description": "Mặt dây chuyền đồng xanh thiết kế theo hình tượng cự nhân gào thét. Tương truyền tiếng gầm rú ầm ĩ của cự nhân có thể phá hoại tự nhiên——ví dụ như gây lở núi, hoặc gọi đến bão tuyết."
     },
     {
-      "name": "Ma Kiếm Huy Chương",
+      "name": "Huy Hiệu Ma Kiếm",
       "cost": 28,
       "type": "Trang Sức",
       "tag": [
-        "Huy Chương",
+        "Huy hiệu",
         "Phòng ngự: 150"
       ],
       "rarity": "rare",
       "effect": {
-        "Ma kiếm sĩ": "Ngay khâu vắt chảo tung cước Cận Chiến khè lưỡi lửa thi pháp năng lượng răn đe đánh thẳng mặt địch, con số ngốn MP hay SP lúc gọi thuật này sút kém cắt phéng 12% thu hồi bảo quản."
+        "Ma kiếm sĩ": "Khi bạn sử dụng vũ khí cận chiến để thi triển kỹ năng có thể gây sát thương năng lượng, MP hoặc SP tiêu hao của kỹ năng đó giảm 12%."
       },
-      "description": "Dấu ấn điểm mặt được cắm gác ở phía đằng ngọn chiếc huy chương kiên thuẫn lá bùa chấn ếm. Dằng dặc bao tháng năm xoay vần, có được cho thấy những gã ma kiếm sĩ bàng môn tà đạo này rất bỡn cợt đùa đòi khoái chí nhập vai Cận chiến."
+      "description": "Hộ phù có huy hiệu ma kiếm trên mặt khiên. Từ rất lâu đời, đã có một nhóm ma pháp sư ưa thích cận chiến."
     },
     {
-      "name": "Chiến Sĩ Hồ Sức Phẩm",
+      "name": "Sức Phẩm Bình Chiến Binh",
       "cost": 28,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 155"
       ],
       "rarity": "rare",
       "effect": {
-        "Chiến kỹ cường hóa": "Dồn uy phá đập kĩ năng chiến đội của vũ khí (một tuyệt thuật xài ngốn dốc sức điểm SP của binh khí cung ứng chuyên môn cho đòn giáng chót), đánh khạc thêm ngầu đỉnh vút vọt tận 12% trị lực đoạt sinh mệnh."
+        "Cường hóa chiến kỹ": "Chiến kỹ vũ khí của bạn (kỹ năng vũ khí chuyên chúc tiêu hao SP), sát thương cuối cùng gây ra tăng 12%."
       },
-      "description": "Tạc khuôn mang tính lưu trữ linh tro bụi cốt tử hình chiếc ché chum nặn bảnh bao bù ngải bảo độ bình an. Giai thoại ghi chú thuở cổ xưa, vạn kiếp anh linh bất khuất chinh chiến một khi bị hỏa táng là thu tro đem mài đúc thành món trang sức này."
+      "description": "Hộ phù chế tác phỏng theo hình dáng bình gốm chứa tro cốt của chiến binh. Thời cổ đại, những chiến binh dũng mãnh sau khi chết sẽ được hỏa táng."
     },
     {
-      "name": "Đại Sơn Dương Sức Phẩm",
+      "name": "Sức Phẩm Đại Sơn Dương",
       "cost": 30,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 140"
       ],
       "rarity": "rare",
       "effect": {
-        "Cường nhận": "Vào lúc bạn khai triển các chuỗi phép thuật bắt buộc cần sự trợ thủ trong việc dẫn dắt định hướng, điểm phán định thể chất hòng chống ngăn lại sự dở dang nứt gãy sút kém sẽ được cắm cấp thêm trị số là +2."
+        "Kiên cường": "Khi bạn sử dụng kỹ năng cần dẫn đạo, kiểm định thể chất kháng gián đoạn nhận +2 gia trị."
       },
-      "description": "Lấy hình ảnh đôi sừng đồ sộ của con đại sơn dương để tiện bề tạc nên phù thuẫn bảo mệnh. Vì theo đôn thổi con dê rừng là một biểu tượng vô giá cho lòng dẻo dai kiên nhẫn, một khi đã lâm trận, cho dẫu phải rớt dãi vì đòn đau của địch thân mình trầy xước bao la thế nào thì chúng nó vẫn đủ tự hào để lao về phía trước không bỏ cuộc dở dang."
+      "description": "Hộ phù chế tác theo sừng đại sơn dương. Sơn dương là biểu tượng của sự kiên cường, dù bị tấn công cũng kiên trì phát động tấn công."
     },
     {
-      "name": "Liệt Thạch Hộ Phù",
+      "name": "Hộ Phù Toái Thạch",
       "cost": 24,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 140"
       ],
       "rarity": "rare",
       "effect": {
-        "Xung kích cường hóa": "Dồn uy phá đập bằng kĩ năng mang hơi sức dộng cùi trỏ đá nứt húc đổ, đánh khạc thêm ngầu đỉnh vút vọt tận 12% trị lực kết liễu tối cường."
+        "Cường hóa xung kích": "Sát thương cuối cùng của đòn đá, giẫm đạp hoặc lao tới của bạn tăng 12%."
       },
-      "description": "Loại đá trấn hung tà ma quỷ mị âm u nhằm ngăn cự trừng trị những lần rung chuyển động đất oán giận. Tương truyền chỉ khi hòn linh thạch nứt toác đôi nẻ thì cái thành trì ngự trị phía dưới rễ mới bị lún cắm giam cầm vào nơi bóng đen vô tận."
+      "description": "Trấn tà thạch là linh dị thạch dùng để trấn động đất. Tương truyền khi nó nứt vỡ, thị trấn cũng rơi luôn xuống lòng đất."
     },
     {
-      "name": "Đồng Lục Viên Bính",
+      "name": "Bánh Tròn Rỉ Sét",
       "cost": 29,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 150"
       ],
       "rarity": "rare",
       "effect": {
-        "Phụ trọng phòng ngự": "Trọng tải vác vất vưởng mang đeo đè nghẹt lên phần eo và lưng hễ đạt tới 25% hạn mức kịch trần gánh tải, tức tốc độ mài mòn sinh lực từ đối trọng tổn thương vật ngã vật lý giảm tháo xuống 3% che đậy tản mát. (Hoàn bị cho dốc kịch hạn đỉnh là 12%)"
+        "Phòng ngự phụ trọng": "Tổng trọng lượng trang bị của bạn cứ vượt quá giới hạn phụ trọng cơ bản 25%, giảm trừ sát thương vật lý bạn nhận được sẽ tăng thêm 3%. (Tối đa 12%)"
       },
-      "description": "Trùng khảm hình bóng tròn vành vạnh bánh dẻo bưng sáp rỉ sét đồng đen móp nặng mỏi rã rời cổ tay tạo tạc nên phù thuẫn bảo mệnh. Trọng điểm là cốt sức độ chắc chắn dày cộp, cũng chính vì rứa mà nó là đấng anh hùng giương che bảo hộ cưu mang đồng đạo."
+      "description": "Một chiếc bánh tròn làm bằng đồng xanh rỉ sét vô cùng nặng nề. Trọng lượng đại diện cho cường độ, cũng chính là sức mạnh để bảo vệ kẻ khác."
     },
     {
-      "name": "Ma Lực Đối Yết",
+      "name": "Bọ Cạp Đối Ma Lực",
       "cost": 33,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 120"
       ],
       "rarity": "rare",
       "effect": {
-        "Ma lực tăng phúc": "Lượng sát thương mang sức mạnh ma pháp nhằm vào nhận lấy được kích vút tận số trên 12%, ngặt một nỗi hệ số sát thương bị oằn lại thì cho vào tận mức mài tòn 10% sát sinh."
+        "Khuếch đại ma lực": "Tất cả sát thương năng lượng bạn gây ra tăng 12%, nhưng tất cả sát thương vật lý bạn phải chịu cũng tăng 10%."
       },
-      "description": "Thi công xây nặn dựa theo nền cốt cái bóc vỏ xác rắn trút tấm ve sầu hình tượng giống bò cạp rụng nọc độc càng cua, nó lại còn đính kẹp cái xác phàm tim queo nức bung màu tàn tích năng lượng ma quái huyền hoặc. Tuy nâng vọt cho khả lực phép tính sức chưởng phép, đắng thay mảng móng đai gồng gánh che lực chịu tai họa lại cạp thủng giáng giá không phanh."
+      "description": "Chế tác phỏng theo hình bọ cạp vừa lột xác, đôi càng kẹp chặt lấy trái tim khô quắt mang màu sắc ma lực. Có thể nâng cao lực công kích thuộc tính ma lực, nhưng sẽ làm giảm tỷ lệ giảm trừ sát thương."
     },
     {
-      "name": "Hỏa Diễm Đối Yết",
+      "name": "Bọ Cạp Đối Hỏa Diệm",
       "cost": 33,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 120"
       ],
       "rarity": "rare",
       "effect": {
-        "Hỏa diễm tăng phúc": "Lượng sát thương mang nguyên tố thuộc tính (Hỏa) được kích vút tận số trên 12%, ngặt một nỗi hệ số sát thương bị oằn đòn tay đấm lại thì cho vào tận mức mài tòn 10% sát sinh lực tổn hại uy hiếp kinh hãi tột đỉnh."
+        "Khuếch đại hỏa diệm": "Sát thương năng lượng (hỏa diệm) bạn gây ra tăng 12%, nhưng tất cả sát thương vật lý bạn phải chịu cũng tăng 10%."
       },
-      "description": "Thi công xây nặn dựa theo nền cốt cái bóc vỏ xác rắn trút tấm ve sầu hình tượng giống bò cạp rụng nọc độc càng cua, nó lại còn đính kẹp cái xác phàm tim queo nức bung màu ngọn lửa thiêu cháy nồng đượp. Tuy nâng vọt cho khả lực phép tính sức chưởng phép Hỏa tính, đắng thay mảng móng đai gồng gánh bạt mạn lại sụp cạp cản triệt triệt hạ."
+      "description": "Chế tác phỏng theo hình bọ cạp vừa lột xác, đôi càng kẹp chặt lấy trái tim khô quắt mang màu sắc hỏa diệm. Có thể nâng cao lực công kích thuộc tính lửa, nhưng sẽ làm giảm tỷ lệ giảm trừ sát thương."
     },
     {
-      "name": "Lôi Điện Đối Yết",
+      "name": "Bọ Cạp Đối Lôi Điện",
       "cost": 33,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 120"
       ],
       "rarity": "rare",
       "effect": {
-        "Lôi điện tăng phúc": "Lượng sát thương có mang tính chất năng lượng (Lôi Điện) được kích vút tận số trên 12%, ngặt một nỗi hệ số sát thương bị oằn đòn tay đấm lại thì cho vào tận mức mài tòn 10% sát sinh lực tổn hại uy hiếp kinh hãi tột đỉnh."
+        "Khuếch đại lôi điện": "Sát thương năng lượng (lôi điện) bạn gây ra tăng 12%, nhưng tất cả sát thương vật lý bạn phải chịu cũng tăng 10%."
       },
-      "description": "Thi công xây nặn dựa theo nền cốt cái bóc vỏ xác rắn trút tấm ve sầu hình tượng giống bò cạp rụng nọc độc càng cua, nó lại còn đính kẹp cái xác phàm tim queo nức bung màu sấm chớp giật xé lòa. Tuy nâng vọt cho khả lực phép tính sức chưởng phép sấm sét oai nghiêm, đắng thay mảng móng đai gồng gánh che lực chịu tai họa lại cạp thủng giáng giá không phanh."
+      "description": "Chế tác phỏng theo hình bọ cạp vừa lột xác, đôi càng kẹp chặt lấy trái tim khô quắt mang màu sắc lôi điện. Có thể nâng cao lực công kích thuộc tính lôi điện, nhưng sẽ làm giảm tỷ lệ giảm trừ sát thương."
     },
     {
-      "name": "Thần Thánh Đối Yết",
+      "name": "Bọ Cạp Đối Thần Thánh",
       "cost": 33,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 120"
       ],
       "rarity": "rare",
       "effect": {
-        "Thần thánh tăng phúc": "Lượng sát thương có mang tính chất năng lượng (Thần Thánh) được kích vút tận số trên 12%, ngặt một nỗi hệ số sát thương bị oằn đòn tay đấm lại thì cho vào tận mức mài tòn 10% sát sinh lực tổn hại uy hiếp."
+        "Khuếch đại thần thánh": "Sát thương năng lượng (thần thánh) bạn gây ra tăng 12%, nhưng tất cả sát thương vật lý bạn phải chịu cũng tăng 10%."
       },
-      "description": "Thi công xây nặn dựa theo nền cốt cái bóc vỏ xác rắn trút tấm ve sầu hình tượng giống bò cạp rụng nọc độc càng cua, nó lại còn đính kẹp cái xác phàm tim queo nức bung màu thanh khiết thánh quang rực rỡ. Tuy nâng vọt cho khả lực phép tính sức chưởng phép Thần Thánh, đắng thay mảng móng đai gồng gánh cản kháng bạt mạn lại hụt sụt mòn hao."
+      "description": "Chế tác phỏng theo hình bọ cạp vừa lột xác, đôi càng kẹp chặt lấy trái tim khô quắt mang màu sắc thần thánh. Có thể nâng cao lực công kích thuộc tính thần thánh, nhưng sẽ làm giảm tỷ lệ giảm trừ sát thương."
     },
     {
-      "name": "Hồng Vũ Thất Nhận Kiếm",
+      "name": "Kiếm Bảy Lưỡi Lông Vũ Đỏ",
       "cost": 34,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 120"
       ],
       "rarity": "rare",
       "effect": {
-        "Tần tử bạo phát": "Khoảnh khắc chỉ mạng HP rơi vào tình trạng lay lắt thảm khốc mức ngấp ngoải dưới 20% sinh mạng, cọng sức nhả sát thương do bản thể tung chiêu khạc khí đều bật nhảy mạnh chót vót lên mức 12% đoạt mạng."
+        "Bộc phát khi cận kề cái chết": "Khi HP của bạn dưới 20%, tất cả sát thương bạn gây ra tăng 12%."
       },
-      "description": "Phù ấn khảm móc họa lên hình bóng chiếc cánh bọc lông đỏ thẫm huyết đẫm sương, dẫu cho ở tận sát ranh vực sự đoạt mạng diêm vương cận kề, dòng khí xung thiên cuồng nộ vẫn chực trào điếu ngoa nảy nở, tư thế sống mái liều kiếp tới cùng hòng mong cầu duy ngã sống sót ấy, mới thật sự tỏa sáng hừng hực nháng lửa vào khoảnh khắc đối mặt kịch cùng sự kết vong lộng lẫy."
+      "description": "Hộ phù làm từ lông chim màu đỏ. Khi kề cận cái chết, cảm xúc sẽ dâng trào——bộ dạng liều mạng cầu sinh tồn ấy sẽ khiến cái chết sau đó càng thêm rực rỡ."
     },
     {
-      "name": "Lam Vũ Thất Nhận Kiếm",
+      "name": "Kiếm Bảy Lưỡi Lông Vũ Lam",
       "cost": 34,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 180"
       ],
       "rarity": "rare",
       "effect": {
-        "Tần tử thủ hộ": "Khi nấc HP tuột dốc rớt độ chẳng mành đến 20% đáy, rào chắn cho tảng thương mài thân giảm tháo triệt ráo tận 12%."
+        "Thủ hộ khi cận kề cái chết": "Khi HP của bạn dưới 20%, tất cả sát thương bạn phải chịu giảm 12%."
       },
-      "description": "Dải phù đeo hông buộc đùm túm lông vũ màu lam biếc đắp thành bùa mệnh. Khi cái chết gõ cửa thập thò cận vách nhà, ý thức sinh linh lại cuồn cuộn chễm trệ sục sôi trỗi dậy - sự vặn vẹo chối từ số mệnh lìa kiếp này hòng tẩu bộ đào li kì vọng tột cùng vào sức sống, sẽ khảm họa lồng lộng cho khắc diệt vong sau chót đến viếng mang thêm nét huy hoàng kỳ ảo dịu thường."
+      "description": "Hộ phù làm từ lông chim màu xanh. Khi kề cận cái chết, cảm xúc sẽ dâng trào——bộ dạng liều mạng cầu sinh tồn ấy sẽ khiến cái chết sau đó càng thêm rực rỡ."
     },
     {
-      "name": "Hiến Đấu Kiếm Trụy Sức",
+      "name": "Mặt Dây Chuyền Kiếm Hiến Đấu",
       "cost": 28,
       "type": "Trang Sức",
       "tag": [
-        "Vòng Cổ",
+        "Vòng cổ",
         "Phòng ngự: 160"
       ],
       "rarity": "rare",
       "effect": {
-        "Hoàn hảo tăng thương": "Tiên quyết tại khi số HP của thân chủ rực đầy mức hạn nấc tột căng 100%, cái rỉa húng lực châm phọt sát thương tung đòn đều được ăn lấn cày thâm vọt lên độ 10% uy thế."
+        "Tăng sát thương thể trạng hoàn hảo": "Khi HP của bạn ở mức 100%, tất cả sát thương bạn gây ra tăng 10%."
       },
-      "description": "Mặt khảm dây chuyền chạm đường thét khắc hình kiếm tiễn, một món đồ cống ngự xa xưa cung hiến vương tước binh đao trận tiền chốn linh đài hiến tế đẫm máu. Đền thờ cũ kĩ kia ắt đã từ lâu chìm vào dĩ vãng, nay chỉ còn trơ trọi đấu trường đài quyết tử trấn cứ một giải lạnh tanh cõi mạn bắc phơi thây."
+      "description": "Hộ phù mang hình dáng thanh kiếm, được sử dụng trong nghi thức chiến đấu dâng lên chiến vương và thần linh thuở xưa. Nay nghi thức đã sớm bị bãi bỏ, và giác đấu trường ở phương Bắc là tàn tích còn sót lại."
     },
     {
-      "name": "Hiến Đấu Thuẫn Trụy Sức",
+      "name": "Mặt Dây Chuyền Khiên Hiến Đấu",
       "cost": 28,
       "type": "Trang Sức",
       "tag": [
-        "Vòng Cổ",
+        "Vòng cổ",
         "Phòng ngự: 160"
       ],
       "rarity": "rare",
       "effect": {
-        "Hoàn hảo giảm thương": "Tiên quyết tại khi số HP của riêng rẽ bản gốc cặm cắm ở độ full cây số 100%, vách chắn tường thủ trừ hao đi tất thảy tổn hại mang họa mang lại tháo bớt đi mức 12%."
+        "Giảm sát thương thể trạng hoàn hảo": "Khi HP của bạn ở mức 100%, tất cả sát thương bạn phải chịu giảm 12%."
       },
-      "description": "Mặt dây đeo đúc thành khiên vật khi xưa là đồ cống để ngự phụng tiến cống dâng đức Chiến Vương Thần Chỉ trong khoảnh thời khắc thực hành lễ cúng bái binh đao tế linh. Tuy nhiên hình thức bái tổ trần thi đó đã lui vào xó tối bụi bặm dĩ vãng, nên giờ đấu trường ác thú phương bắc ngự định ấy chính là những thứ rơi rụng cặn cỗi báu vật sau hồi chuông giã biệt thời đại."
+      "description": "Hộ phù mang hình dáng tấm khiên, được sử dụng trong nghi thức chiến đấu dâng lên chiến vương và thần linh thuở xưa. Nay nghi thức đã sớm bị bãi bỏ, và giác đấu trường ở phương Bắc là tàn tích còn sót lại."
     },
     {
-      "name": "Nhiễm Hồng Hung Đao",
+      "name": "Hung Đao Nhuốm Đỏ",
       "cost": 30,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 140"
       ],
       "rarity": "rare",
       "effect": {
-        "Bạo kích hấp huyết": "Mỗi một lượt thả xúc xắc thăm dò sát thương nổ đoạt tiêu chí [Mệnh Trung Hợp Lệ] (Trúng đích) trở bước bồi lên, bón gỡ đắp được 500 điểm trị giá HP. Quá trình băm mủn mỗi mục tiêu trên sàn cờ trận thế đều chỉ gài gọi ra quyền này rỗng rẽnh một lần đơn duy nhất."
+        "Bạo kích hút máu": "Khi kiểm định tấn công đạt [Trúng đích hiệu quả] hoặc cao hơn, hồi phục 500 điểm HP. Mỗi mục tiêu chỉ có thể kích hoạt một lần trong mỗi trận đấu."
       },
-      "description": "Thân đao quằn ngoằn đoản chuống ứa nước tứa máu mủ ối nhuộm thấm đầm dề đỏ hỏn. Vào trận phong vân động triều chấn động nổ tung cả thiên hạ chấn động châu lục do biến cố thảm sát kinh đồ, chính đây là hình nặn của một trong danh các cây đao oan nghiệt sát thủ."
+      "description": "Thanh chủy thủ có hình dáng uốn lượn, nhuốm màu đỏ tươi. Đây là hình dáng của một trong những hung đao từng gây ra vụ ám sát chấn động đại lục."
     },
     {
-      "name": "Nhiễm Lam Hung Đao",
+      "name": "Hung Đao Nhuốm Lam",
       "cost": 30,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 140"
       ],
       "rarity": "rare",
       "effect": {
-        "Bạo kích hấp lam": "Mỗi một lượt thả xúc xắc thăm dò sát thương nổ đoạt tiêu chí [Mệnh Trung Hợp Lệ] (Trúng đích) trở bước bồi lên, hút phéng quắp vào 500 nấc đo MP thần tủy. Quá trình băm mủn mỗi mục tiêu trên sàn cờ trận thế đều chỉ gài gọi ra quyền này rỗng rẽnh một lần đơn duy nhất."
+        "Bạo kích hút năng lượng": "Khi kiểm định tấn công đạt [Trúng đích hiệu quả] hoặc cao hơn, hồi phục 500 điểm MP. Mỗi mục tiêu chỉ có thể kích hoạt một lần trong mỗi trận đấu."
       },
-      "description": "Hình dáng con thủy quái giun xà nén ẹo thắt lưng lưỡi thép mang xăm sắc xanh u ám trên mình chuôi đao. Một dạo biến động rung chuyển lịch sử oanh toạc diệt khẩu phanh thây toàn cõi, thì đây là mảng tạc miêu tả đúc nặn một trong những gã đồ binh bần thần ngập ngụi sắc khí."
+      "description": "Thanh chủy thủ có hình dáng uốn lượn, nhuốm màu xanh lam. Đây là hình dáng của một trong những hung đao từng gây ra vụ ám sát chấn động đại lục."
     },
     {
-      "name": "Giới Thác Đao",
+      "name": "Đoản Đao Giới Thiệu",
       "cost": 26,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 140"
       ],
       "rarity": "rare",
       "effect": {
-        "Bạo kích tăng thương": "Khi đòn dằn vặt của bản thân đập phát nổ chạm mốc [Bạo Kích] hoặc bạo chúa xé trời hơn thế, thì luồng uy hiếp trích ra kế tiếp ở 2 mốc hồi tiến độ vòng chiến nhảy số 12% trị. Tuy nhiên đà dồn bả bùa này chả thèm chồng chất tích tụ dây chuyền."
+        "Bạo kích tăng sát thương": "Khi kiểm định tấn công của bạn đạt [Bạo kích] hoặc cao hơn, tất cả sát thương bạn gây ra sẽ tăng 12% trong 2 lượt tiếp theo. Hiệu ứng này không cộng dồn."
       },
-      "description": "Phiến đao hẹp xọc thon mỏng vướng vệt loan lổ máu sầu đọng đặc. Quá vãng từng làm thanh đoạn đao siêu độ bòn gỡ thoát xác cho cõi oan hồn chinh phu thương tàn tật ách ngấp nghé âm phủ, nay bị lấm lấm phảng phất mùi ác ma tử sát ô nhiễm tanh rình chướng khí."
+      "description": "Thanh đoản đao có lưỡi hẹp ngắn, vương đầy vết máu. Từng được dùng làm vật phẩm giải thoát cho những chiến binh bị thương, nay mang theo một tia tà khí."
     },
     {
-      "name": "Thánh Chiến Huy Chương",
+      "name": "Huy Hiệu Thánh Chiến",
       "cost": 26,
       "type": "Trang Sức",
       "tag": [
-        "Huy Chương",
+        "Huy hiệu",
         "Phòng ngự: 140"
       ],
       "rarity": "rare",
       "effect": {
-        "Kích sát tăng thương": "Khoảnh khắc chính đòn dứt điểm tống mạng tiễn biệt sinh cơ cõi đời một ác bá thủ hạ, toàn thảy mọi trận thương thế nã tới đối phương tại 2 đợt giao mốc tiếp diễn bật lên 12%. Cũng ngặt là hiệu ứng này cộc tính không ưu chồng lấn lên nhau chắp vá."
+        "Tiêu diệt tăng sát thương": "Sau khi bạn tiêu diệt một kẻ địch, tất cả sát thương bạn gây ra trong 2 lượt tiếp theo sẽ tăng 12%. Hiệu ứng này không cộng dồn."
       },
-      "description": "Chiết mẫu đúc khắc cái bộ dạng phổng tạc mũi sào vung nã liệt hỏa phừng phực sáng lòe chói làm điểm tô bùa chú, chỉ kẻ xả thịt sánh bước chia buồn hoạn nạn bên đấng uy hào quật cường chiến chinh, chịu đem sinh cơ tử nghiệp hóa bùn hòa cỏ cho ngai thánh chiến mới xứng được cấp chưởng nhận mảng huy tín này."
+      "description": "Hộ phù chế tác theo hình ảnh ngọn giáo và ngọn lửa giương cao, là huy hiệu thuộc về những người sát cánh chiến đấu cùng các anh hùng, xả thân vì thánh chiến."
     },
     {
-      "name": "Càn Khô Hoa Thúc",
+      "name": "Bó Hoa Khô Héo",
       "cost": 26,
       "type": "Trang Sức",
       "tag": [
-        "Trang Sức",
+        "Trang sức",
         "Phòng ngự: 140"
       ],
       "rarity": "rare",
       "effect": {
-        "Triệu hoán vật tử vong tăng thương": "Giữa lúc triệu hồn một chủng súc vật hay tùy tùng biến mất bốc hơi đứt điểm sống, đòn mài tòn vật lộn của thày đẻ chúng hằn lên đỉnh xé +12% tại 2 đợt giao hồi điểm. Nhưng luồng tính năng này tuyệt nhiên độc ngự cự tuyệt xếp chồng lấp liếm."
+        "Vật triệu hồi tử vong tăng sát thương": "Khi sinh vật bạn triệu hồi tử vong hoặc biến mất, tất cả sát thương bạn gây ra trong 2 lượt tiếp theo sẽ tăng 12%. Hiệu ứng này không cộng dồn."
       },
-      "description": "Bó hoa tàn úa rũ rượi lại mang phong vị thương vay khóc muộn động mẫn bi xót, nó là thứ vật cống bày tế chưng thờ cúng nơi mạn thềm phiến đá nhỏ bé hoang mộ. Tiếc não ruột trước cái tai kiếp thảm sầu phủ ập đến đầu hồng nhan tri kỉ gửi thương dâng yến - đây có lẽ là bản tính nhân chi không hề phai nhòa hao đứt mặc chi không cách trần ai xa lánh dị cảnh thế gian nào."
+      "description": "Bó hoa khô héo đáng thương, vật phẩm được đặt trước tấm bia mộ nhỏ. Đau lòng trước sự bất hạnh của người mình yêu thương sâu đậm——thứ tình cảm này dù ở nơi đâu cũng đều như vậy."
     },
     {
-      "name": "Lão Ông Chi Hoan Du",
+      "name": "Niềm Vui Của Lão Trượng",
       "cost": 26,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 140"
       ],
       "rarity": "rare",
       "effect": {
-        "Hỗn loạn tăng thương": "Khi có một gã oan gia nằm tại khoảng vi trần 10 thước chung quanh dẫm dính cái ác bùa [Hỗn Loạn] hoặc chìm sâu trong [Sợ Hãi], sức gồng lên chém khạc của bản mệnh giáng móc bạo hành tăng tiến +12% trị sát mãi cho ráo tới phút hiệu lực kia biến mất."
+        "Hỗn loạn tăng sát thương": "Khi có đơn vị lọt vào trạng thái [Hỗn Loạn] hoặc [Khiếp Sợ] trong phạm vi 10 mét xung quanh bạn, tất cả sát thương bạn gây ra tăng 12% cho đến khi trạng thái đó kết thúc."
       },
-      "description": "Khảm đính nguyên si y khuôn nét mặt khú đế rúm ró thỏa thuê đắc đạo đến dại quắp của Cấm Xúc Lão Ông nhào chế ra tấm bùa oán ám. Ban xuống đi hỡi các ác trọc quỷ vương cuồng si hoảng điên gào thét nơi cõi âm sầu thế gian trần trụy, quậy đục ngầu cuống xoáy mọi thứ thảy lầm than điên đảo khoái cảm rợn ngợm nhất nhì."
+      "description": "Hộ phù chế tác theo bộ dạng hân hoan của Cấm Xúc Lão Trượng. Hãy để chúa tể điên loạn giáng trần, hãy để tất cả mọi người chìm trong niềm vui sướng điên cuồng."
     },
     {
-      "name": "Dung Nê Chi Hoan Du",
+      "name": "Niềm Vui Của Bùn Tan",
       "cost": 26,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 140"
       ],
       "rarity": "rare",
       "effect": {
-        "Thụy miên tăng thương": "Tình huống trong phạm cự ly 10 mét có vật thể chợp mắt mộng mị trúng bả [Ngủ Say], chỉ số xé phanh dộng gầm công lực oán thù xui khạc tăng dội thêm 12% nín nhịn cho đến khi chúng ngóc ráo tỉnh dạo thì dứt bạt hiệu lực."
+        "Ngủ say tăng sát thương": "Khi có đơn vị lọt vào trạng thái [Ngủ Say] trong phạm vi 10 mét xung quanh bạn, tất cả sát thương bạn gây ra tăng 12% cho đến khi trạng thái đó kết thúc."
       },
-      "description": "Phỏng tạc cái mím môi ngây bễ nhếch chót nở chúm chím mỉm cười hoan đắc thỏa lòng thoả mạn trong cơn mê trù thám trập sầu của vị Thâm Miên Chi Chủ thêu thùa phù mệnh. Cực độ quyền trưởng quản ấy cưu mang tưới tiêu cho đám sền sệt bã nhờn có lộc tận hương vị phè phỡn nhắm tịt cơn đói mòn sảng chìm lỉm trôi đắm say sưa, đấy ắt hẳn đích thị một chốn yên ả ngủ vùi mồ yên mả đẹp đẽ ngàn vạn đời."
+      "description": "Hộ phù thiết kế theo bộ dạng mỉm cười khi Say Giấc của Thâm Miên Chi Chủ. Thâm Miên Chi Chủ đã ban cho bùn tan một giấc ngủ say sưa, đó là sự an bình vĩnh cửu."
     },
     {
-      "name": "Hủ Bại Quyến Thuộc Chi Hoan Du",
+      "name": "Niềm Vui Của Quyến Thuộc Hủ Bại",
       "cost": 26,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 140"
       ],
       "rarity": "rare",
       "effect": {
-        "Trúng độc tăng thương": "Hễ là xung túc bao hàm nội 10 mét có một nạn chủ nhiễm dính độc dược [Trúng Độc], lực móc túi lấy mạng đối tấc tăng bự +12% rền rĩ liên thủ kéo miết cho tận lúc hết thời rã độc đứt hơi."
+        "Trúng độc tăng sát thương": "Khi có đơn vị lọt vào trạng thái [Trúng Độc] trong phạm vi 10 mét xung quanh bạn, tất cả sát thương bạn gây ra tăng 12% cho đến khi trạng thái đó kết thúc."
       },
-      "description": "Phay đúc thành tượng dạo rảo lũ kén nhện kiến trùng chen chúc giòi bọ độc mọt hăm hở dạo chơi trên dòng suối trần phác họa phù ngải độ tà. Hỡi đấng Tinh Hồng Chủ Nhân (Chủ nhân Tinh Hồng Thần Đạo) quyền quý đỏ chót thét ra lửa tát mồ hôi xót láng xa thẳm, rủ xuống thâu gộp tụi mục rầy bã rác thối tanh bần thần này vào một tổ kén an dưỡng chốn nhà bầy sọt quyến đi nào."
+      "description": "Hộ phù chế tác theo bộ dạng hân hoan của bầy côn trùng kịch độc. Hãy dâng hiến sự hủ bại cho Tinh Hồng Chi Chủ——hãy trở về bên cạnh những kẻ bị ruồng bỏ như chúng ta đi."
     },
     {
-      "name": "Tiên Huyết Quân Vương Chi Hoan Du",
+      "name": "Niềm Vui Của Huyết Quân Vương",
       "cost": 26,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 140"
       ],
       "rarity": "rare",
       "effect": {
-        "Lưu huyết tăng thương": "Trường hợp ở trong khoảng cự ly 10 mét có mục tiêu bị cắt cứa tóe [Chảy Máu], dòng sát thương chủ nhân quăng vô mồm đối tác bục trướng lên 12% trị lực bám dai nhách đến giây phút cái họa kia trôi biến."
+        "Chảy máu tăng sát thương": "Khi có đơn vị lọt vào trạng thái [Chảy Máu] trong phạm vi 10 mét xung quanh bạn, tất cả sát thương bạn gây ra tăng 12% cho đến khi trạng thái đó kết thúc."
       },
-      "description": "Nặn bằng hình ảnh tươi cười rạng rỡ đắc ý tận mây xanh của tên Tiên Huyết Quân Vương u ám xắn làm bùa đọa đày. Mau nâng chén tiết tươi dâng phết lên thần điện hiến tế cho Tiên Huyết Quân Vương đi - vị Thần của đấng Quân vương đang tru tréo gào thét vì mòn mỏi khát khao đấy."
+      "description": "Hộ phù chế tác theo bộ dạng hân hoan của Tiên Huyết Quân Vương. Hãy dâng hiến máu tươi cho Tiên Huyết Quân Vương——vị Thần của ngài ấy đang rất khao khát."
     },
     {
-      "name": "Thế Giới Thụ Đích Ân Huệ",
+      "name": "Ân Huệ Của Cây Thế Giới",
       "cost": 45,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 400"
       ],
       "rarity": "epic",
       "effect": {
-        "Toàn diện đề thăng": "Toàn cảnh giới hạn mốc cao nhất của HP, MP và SP thảy đều vọt tăng thêm định mức 16%.",
-        "Vi nhược yếu tố · Sinh mệnh": "Vì được phủ tá tấu thêm điềm may vi lượng thuộc tích chất Sinh Mệnh, thành ra vòng tuần hoàn của mỗi đợt giao mốc sẽ bơm tút bù lại số dư HP là min(vào khoảng 1200 điểm đo HP, cực độ là 10% trong lượng HP chót vót)."
+        "Nâng cao toàn diện": "Giới hạn HP, MP, SP tối đa đều tăng 16%.",
+        "Yếu tố yếu ớt · Sinh mệnh": "Trang bị kèm theo yếu tố sinh mệnh yếu ớt, mỗi lượt hồi phục min(1200 điểm HP, 10% HP tối đa)."
       },
-      "description": "Lấy Hoàng Kim nguyên cục chưng lò đúc nặn làm phù chú. Theo dòng hoài niệm tự nảo từ nao, vạn kiếp thảo mộc sinh linh giăng mắc cõi đại lục đều tung ca suy tôn thần thụ (Thế Giới Thụ) bằng chiếc vòng chấn ếm đồ cổ này."
+      "description": "Trang sức cổ bằng vàng ròng, là vật phẩm được sử dụng từ thời xa xưa khi những sinh mệnh trên mặt đất ca tụng Cây Thế Giới."
     },
     {
-      "name": "Cổ Long Kiên Thuẫn Huy Chương",
+      "name": "Huy Hiệu Khiên Cứng Cổ Long",
       "cost": 42,
       "type": "Trang Sức",
       "tag": [
-        "Huy Chương",
+        "Huy hiệu",
         "Phòng ngự: 450"
       ],
       "rarity": "epic",
       "effect": {
-        "Cường hiệu vật lý phòng hộ": "Tiếp xốc toàn diện mọi chấn thương thiên về sát thương thể xác và cắt tháo gỡ nạp nhẹ 16%.",
-        "Vi nhược yếu tố · Nguyên thủy": "Chất áo tạc bùa có chắp vá điểm lốm đốm thành phần cấu trúc nguyên khí xa xưa Cổ Nguyên Thủy, hỗ trợ đẩy trượt sát thương thể chất vật lý dộng mạnh +13%."
+        "Phòng hộ vật lý cường hiệu": "Tất cả sát thương vật lý bạn phải chịu giảm 16%.",
+        "Yếu tố yếu ớt · Nguyên thủy": "Trang bị kèm theo yếu tố nguyên thủy yếu ớt, sát thương vật lý tăng 13%."
       },
-      "description": "Bức huy chương thiết tạo từ cái rập nổi cục thô kệch nhằng nhịt hình bóng loài thần rồng siêu cổ Cổ Long đồ sộ cổ cặn trên lớp sắt thiết già. Biểu ảnh đồ đằng về con rồng ngàn năm này tự tôn truyền miệng là lá chắn hóa giải ngàn thảm vạn họa sầu."
+      "description": "Hộ phù sắt thục cổ đại có phù điêu cổ long khổng lồ. Hoa văn rồng được coi là biểu tượng của sự che chở."
     },
     {
-      "name": "Hồng Long Đại Thuẫn Huy Chương",
+      "name": "Huy Hiệu Khiên Lớn Hồng Long",
       "cost": 44,
       "type": "Trang Sức",
       "tag": [
-        "Huy Chương",
+        "Huy hiệu",
         "Phòng ngự: 450"
       ],
       "rarity": "epic",
       "effect": {
-        "Cứu cực đa trọng phòng hộ": "Làm tổn hao đi 16% đối với tổng hệ số lực sát thương từ nguồn năng lượng, tinh thần và sát thương chuẩn nhận phải.",
-        "Vi nhược yếu tố · Thánh quang": "Vật phẩm bung phất luồng diễm may phảng phất chất thánh khiết Thánh Quang linh ứng, giảm khống vơi lượng sát thương của các nguồn sức năng lượng vây đánh -13%."
+        "Đa trọng phòng hộ cứu cực": "Tất cả sát thương năng lượng, tinh thần, sát thương chân thực bạn phải chịu giảm 16%.",
+        "Yếu tố yếu ớt · Thánh quang": "Trang bị tỏa ra yếu tố thánh quang yếu ớt, sát thương năng lượng phải chịu giảm 13%."
       },
-      "description": "Bức huy chương thiết tạo từ cái rập nổi cục thô kệch nhằng nhịt hình bóng con rồng 7 sắc cầu vồng Hồng Long trên lớp sắt thiết già siêu cổ. Lấy chính hình bóng ấy làm thần tượng để biểu trưng cầu xin phước lành gia ân."
+      "description": "Hộ phù sắt thục cổ đại có phù điêu cầu vồng long khổng lồ. Hoa văn cầu vồng long được coi là biểu tượng của sự che chở."
     },
     {
-      "name": "Ma Long Đại Thuẫn Huy Chương",
+      "name": "Huy Hiệu Khiên Lớn Ma Long",
       "cost": 44,
       "type": "Trang Sức",
       "tag": [
-        "Huy Chương",
+        "Huy hiệu",
         "Phòng ngự: 450"
       ],
       "rarity": "epic",
       "effect": {
-        "Cứu cực ma pháp phòng hộ": "Lượng sát thương mang sức mạnh ma pháp nhằm vào nhận lấy giảm sút đi 16%, vả chăng cứ nối đuôi một trận chu kì luân hồi quay mốc lại rặn sinh một tầng che chở 1200 điểm máu khiên (Hộ Thuẫn), cơ mà cái lớp vỏ máu dỏm kia không được quyền chất chồng làm đống lên nhau.",
-        "Vi nhược yếu tố · Nguyên thủy": "Chất áo tạc bùa có chắp vá điểm lốm đốm thành phần cấu trúc nguyên khí xa xưa Cổ Nguyên Thủy, hỗ trợ đẩy trượt sát thương thể chất vật lý dộng mạnh +13%."
+        "Cứu cực phòng hộ ma pháp": "Tất cả sát thương năng lượng bạn phải chịu giảm 16%, đồng thời mỗi lượt tạo ra một lá chắn 1200 điểm, hiệu ứng lá chắn không cộng dồn.",
+        "Yếu tố yếu ớt · Nguyên thủy": "Trang bị kèm theo yếu tố nguyên thủy yếu ớt, sát thương vật lý tăng 13%."
       },
-      "description": "Chiếc phù điêu cổ xưa được gọt giũa từ một khối sắt già, hiện rõ bóng dáng to lớn của con ma long. Đồ đằng ma long này luôn được truyền tụng xem như là báu vật thần diệu hòng khắc chế triệt tiêu hiệu quả ma pháp."
+      "description": "Hộ phù sắt thục cổ đại có phù điêu ma long khổng lồ. Hoa văn ma long được coi là biểu tượng kháng cự ma lực."
     },
     {
-      "name": "Hỏa Long Đại Thuẫn Huy Chương",
+      "name": "Huy Hiệu Khiên Lớn Hỏa Long",
       "cost": 44,
       "type": "Trang Sức",
       "tag": [
-        "Huy Chương",
+        "Huy hiệu",
         "Phòng ngự: 450"
       ],
       "rarity": "epic",
       "effect": {
-        "Cứu cực hỏa diễm phòng hộ": "Lượng sát thương có mang nguyên tố thuộc tính (Hỏa) bị giảm uy lực đi 16%.",
-        "Vi nhược yếu tố · Hỏa diễm": "Mỗi cú oanh kích vần phập lại cộm pha lẫn sắc tố vi lượng (Hỏa), làm dấy thêm trị giá vọt số tới 220 điểm năng lượng xé thân."
+        "Cứu cực phòng hộ hỏa diệm": "Tất cả sát thương năng lượng (hỏa diệm) bạn phải chịu giảm 16%.",
+        "Yếu tố yếu ớt · Hỏa diệm": "Khi tấn công kèm theo yếu tố hỏa diệm yếu ớt, mỗi lần tấn công gây thêm 220 điểm sát thương năng lượng (hỏa diệm)."
       },
-      "description": "Chiếc phù điêu cổ xưa được gọt giũa từ một khối sắt già, hiện rõ bóng dáng to lớn của con rồng lửa đang hừng hực. Đồ đằng loài hỏa long này luôn được truyền tụng xem như là báu vật phản ngự chống lại sự đốt cháy của lửa."
+      "description": "Hộ phù sắt thục cổ đại có phù điêu hỏa long khổng lồ. Hoa văn hỏa long được coi là biểu tượng kháng cự hỏa diệm."
     },
     {
-      "name": "Lôi Long Đại Thuẫn Huy Chương",
+      "name": "Huy Hiệu Khiên Lớn Lôi Long",
       "cost": 44,
       "type": "Trang Sức",
       "tag": [
-        "Huy Chương",
+        "Huy hiệu",
         "Phòng ngự: 450"
       ],
       "rarity": "epic",
       "effect": {
-        "Cứu cực lôi điện phòng hộ": "Lượng sát thương có mang tính chất năng lượng (Lôi Điện) đánh phải bị triệt hao chỉ còn -16%.",
-        "Vi nhược yếu tố · Lôi điện": "Mỗi đợt nhào lộn tấn sát có pha tấu một lượng dư chấn li ti (Lôi Điện) bùng nhùng đâm dọng bồi tận 220 trị sức vồ điểm mạng năng lượng xé thể."
+        "Cứu cực phòng hộ lôi điện": "Tất cả sát thương năng lượng (lôi điện) bạn phải chịu giảm 16%.",
+        "Yếu tố yếu ớt · Lôi điện": "Khi tấn công kèm theo yếu tố lôi điện yếu ớt, mỗi lần tấn công gây thêm 220 điểm sát thương năng lượng (lôi điện)."
       },
-      "description": "Chiếc phù điêu cổ xưa được gọt giũa từ một khối sắt già, hiện rõ bóng dáng to lớn của lôi long sấm chớp giật ùng oàng. Đồ đằng loài lôi long luôn được xem là vật phẩm bài xích lại các luồng sức mạnh sấm sét."
+      "description": "Hộ phù sắt thục cổ đại có phù điêu lôi long khổng lồ. Hoa văn lôi long được coi là biểu tượng kháng cự lôi điện."
     },
     {
-      "name": "Thánh Long Đại Thuẫn Huy Chương",
+      "name": "Huy Hiệu Khiên Lớn Thánh Long",
       "cost": 32,
       "type": "Trang Sức",
       "tag": [
-        "Huy Chương",
+        "Huy hiệu",
         "Phòng ngự: 450"
       ],
       "rarity": "epic",
       "effect": {
-        "Cứu cực thần thánh phòng hộ": "Lượng sát thương có mang tính chất năng lượng (Thần Thánh) đánh tới bị hao mòn chỉ còn -16%.",
-        "Vi nhược yếu tố · Thánh quang": "Vật phẩm tung chiêu vứt phóng lượng nguyên lốm đốm thành phần (Thánh Quang), giúp gạn giảm dòng giáng sát thương năng lượng xuống âm đi -13%."
+        "Cứu cực phòng hộ thần thánh": "Tất cả sát thương năng lượng (thần thánh) bạn phải chịu giảm 16%.",
+        "Yếu tố yếu ớt · Thánh quang": "Trang bị tỏa ra yếu tố thánh quang yếu ớt, sát thương năng lượng phải chịu giảm 13%."
       },
-      "description": "Chiếc phù điêu cổ xưa được gọt giũa từ một khối sắt già, hiện rõ bóng dáng to lớn của loài rồng thiêng cao quý lộng lẫy (Thánh Long). Đồ đằng loài thánh long luôn được truyền tụng nhằm tượng trưng cho sức mạnh bài trừ lại ánh hào quang chói lòa tinh ranh của các pháp thuật thánh khiết."
+      "description": "Hộ phù sắt thục cổ đại có phù điêu thánh long khổng lồ. Hoa văn thánh long được coi là biểu tượng kháng cự thần thánh."
     },
     {
-      "name": "Tháp Hộ Phù",
+      "name": "Hộ Phù Tháp",
       "cost": 40,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 350"
       ],
       "rarity": "epic",
       "effect": {
-        "Đại pháp sư": "Vạn dòng phép thuật có thuộc tính sát thương thể năng lượng đồng diễn xé chót vót thêm mốc nhãn là cày sâu 16%, vả chăng tuyệt kĩ khạc đó còn kéo bù lên 450 điểm trị mạng sát thương phép.",
-        "Vi nhược yếu tố · Kiên thủ": "Được đắp khoác lớp bụi thuộc tích bảo hộ thần thông cản họa, ván DR leo nóc 2%."
+        "Đại pháp sư": "Sát thương cuối cùng của tất cả kỹ năng sát thương năng lượng tăng 16%, kỹ năng gây thêm 450 điểm sát thương năng lượng.",
+        "Yếu tố yếu ớt · Kiên thủ": "Trang bị kèm theo yếu tố thủ hộ yếu ớt, DR 2%."
       },
-      "description": "Trùng hình vẽ nét bóng đai pháp trượng dạo nọ khởi nguyên, cuốn ma đạo thư mở màn và mớ lâu đài bảo tháp pháp sư tàng trữ nhằm phác dựng gộp đủ lên thứ bùa phù này. Chỉ nhõn nhằn xuất lai truyền đời 8 mai chiếc vòng thế này, hòng lột tả chân vẹn những thánh thoại lẫy lừng về sự mở cõi bành trướng phái đạo kì nhân dị thuật."
+      "description": "Hộ phù chế tác phỏng theo hình ảnh sơ thủy pháp trượng, sơ thủy ma pháp thư và học phái ma pháp sư tháp. Có tất cả cả tám chiếc, đó là sự truyền kỳ khai tông lập phái."
     },
     {
-      "name": "Hữu Hảo Hồ",
+      "name": "Bình Hữu Hảo",
       "cost": 48,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 400"
       ],
       "rarity": "epic",
       "effect": {
-        "Bạo tạc vật cường hóa": "Những thể loại khí cụ dùng mắm muối đắp đổi xài xọng 1 nhát (Tiêu Hao Phẩm) hễ nạp đặc tính cắn phập điểm sức sống thể năng lượng hệ (Hỏa), bạo quật khạc lên 100% trần nức sát thương.",
-        "Vi nhược yếu tố · Hỏa diễm": "Mỗi cú oanh kích vần phập lại cộm pha lẫn sắc tố vi lượng (Hỏa), làm dấy thêm trị giá vọt số tới 220 điểm năng lượng xé thân (Hỏa)."
+        "Cường hóa vật nổ": "Vật phẩm [Vật phẩm tiêu hao] gây sát thương năng lượng (hỏa diệm) bạn sử dụng tăng 100% sát thương.",
+        "Yếu tố yếu ớt · Hỏa diệm": "Khi tấn công kèm theo yếu tố hỏa diệm yếu ớt, mỗi lần tấn công gây thêm 220 điểm sát thương năng lượng (hỏa diệm)."
       },
-      "description": "Chiếc phù được thiết tác bằng cái dáng vóc hòm lưu tro cốt do tinh linh hỏa hệ cung ứng tặng biếu chí hảo hữu. Cất nghẹo mấy món chực cháy chực tung vào đồ đựng bình gốm tro tàn, chính vì rứa mà thứ thuật chiết xuất nảy lò."
+      "description": "Hộ phù mang dáng vẻ chiếc bình do tinh linh nguyên tố hỏa diệm tặng cho bằng hữu. Nhồi những thứ dễ cháy nổ vào trong bình gốm, đó chính là nguồn cội của thuật luyện kim."
     },
     {
-      "name": "Tinh Thần Toái Phiến Đao",
+      "name": "Đao Mảnh Vỡ Tinh Thần",
       "cost": 46,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 350"
       ],
       "rarity": "epic",
       "effect": {
-        "Bô ly đại pháo": "Lượng cạn kiệt tuột ráo MP mỗi khi niệm chưởng ma pháp bị hốc rút nín đi 16%, bùn nhão lại ở chỗ chóp bu giới hạn sinh cơ HP tự vặn giảm tận -15%.",
-        "Vi nhược yếu tố · Tinh thần": "Nền tảng trang cụ này trét quét chút nguyên khí linh miễu Tinh Thần xa tinh quang, đục khét sức công kích thể lực năng lượng nhích tận biên cõi +13%."
+        "Pháo đài pha lê": "Tất cả kỹ năng giảm 16% MP tiêu hao, nhưng giới hạn HP tối đa của bạn giảm 15%.",
+        "Yếu tố yếu ớt · Tinh thần": "Trang bị kèm theo yếu tố tinh thần yếu ớt, sát thương năng lượng tăng thêm 13%."
       },
-      "description": "Họa nặn theo cây đao cổ xẻ nát nhuộm sắc mủ máu đượm sắc bụi ngàn tinh hà. Nhạc cổ thuật lại, pháp sư cổ xưa nếu muốn ném bỏ số mệnh kiếp này vào ngàn sương đêm tinh tú hư không, bọn họ sẽ móc thanh đao quấy trái tim rỉ máu toác hoác gột sạch phàm trần mà lìa thây lên chầu ông vải."
+      "description": "Đao tinh thần cổ đại nhuốm máu. Những pháp sư cổ đại, để có thể hòa thân phận của mình vào giữa các vì sao, sẽ dùng con dao này rạch nát trái tim và sau đó bước vào cõi chết."
     },
     {
-      "name": "Cửu Viễn Vũ Dực Hộ Phù",
+      "name": "Hộ Phù Vũ Dực Cổ Xưa",
       "cost": 48,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 370"
       ],
       "rarity": "epic",
       "effect": {
-        "Cứu cực thiểm tị": "Điểm bổ nạp dồn đắp cho sự mượt mà uốn dẻo đánh võng né tử [Thiểm Tị] được lăng lên số điểm chót +5, ngái nỗi mớ giọt thương mài trên người thảy đều vọt căng đét đèn đẹt +10%.",
-        "Vi nhược yếu tố · Lôi điện": "Mỗi đợt nhào lộn tấn sát có pha tấu một lượng dư chấn li ti (Lôi Điện) bùng nhùng đâm dọng bồi tận 220 trị sức vồ điểm mạng năng lượng xé thể (Lôi Điện)."
+        "Cứu cực né tránh": "Kiểm định né tránh của bạn có thêm +5 gia trị, nhưng tất cả sát thương bạn phải chịu tăng 10%.",
+        "Yếu tố yếu ớt · Lôi điện": "Khi tấn công kèm theo yếu tố lôi điện yếu ớt, mỗi lần tấn công gây thêm 220 điểm sát thương năng lượng (lôi điện)."
       },
-      "description": "Đúc thành từ những chi tiết sơ thủy bản mạch giống nòi của sinh loài Vũ Dân chắp cánh sải bay ngang trời di cư. Ngược lội xa xăm thuở vũ trụ mịt mù ráo cạn, sải cánh đôi phi ấy vẫn chẳng đồ sộ khổng lồ, kiều mị tuyệt trần nhường thế."
+      "description": "Hộ phù chế tác theo hình tượng nguồn gốc của dực dân. Thuở xa xưa ấy, đôi cánh còn chưa rộng lớn và duyên dáng."
     },
     {
-      "name": "Lược Đoạt Phù Điêu Trụy Sức",
+      "name": "Mặt Dây Phù Điêu Lược Đoạt",
       "cost": 47,
       "type": "Trang Sức",
       "tag": [
-        "Vòng Cổ",
+        "Vòng cổ",
         "Phòng ngự: 380"
       ],
       "rarity": "epic",
       "effect": {
-        "Lược đoạt sinh mệnh": "Khoảnh khắc thây cốt quân thù phế chuốc ngã gục tàn tạ ở miền phủ địa bao vây 15 thước, phác đồ tu thân bơm rỉ vọt lượng hồi ngót nghét (1800 + 16% max cây máu).",
-        "Vi nhược yếu tố · Ám ảnh": "Trên áo khoác bảo cụ được trát nhuộm vệt nhạt nhòa của dòng hạt (Ám Ảnh), làm cho mỗi trận nhét đồ dọng vũ khí dứt nhát đôn thêm 220 điểm năng lượng vong hồn đoạt mạng u tối (Ám)."
+        "Lược đoạt sinh mệnh": "Khi kẻ địch trong phạm vi 15 mét xung quanh bạn tử trận, hồi phục sinh mệnh bằng (1800 + 16% giới hạn HP tối đa).",
+        "Yếu tố yếu ớt · Ám ảnh": "Trang bị kèm theo yếu tố ám ảnh yếu ớt, mỗi lần tấn công gây thêm 220 điểm sát thương năng lượng (ám)."
       },
-      "description": "Kéo đúc y xì bản mặt tham quyền thét gió ác đạo đê hèn che mặt tòm tem thiên ha thành dáng vóc phù nhãn. Vào đợt phán xử của tòa thánh, tay bạo chúa khét nồng cất lời bạo thệ xướng dâng muôn vàn những hắc đạo hủy thân triệt sinh thiêng liêng đê mạt nhất, và lúc bấy giờ trăm nghìn chiêu trò đồ tể đâm cướp nhơ nhớp lại rủng rỉnh được gật đầu hưởng quyền mạn che."
+      "description": "Hộ phù được chết tác theo gương mặt của một dã tâm gia từng càn quét khắp đại lục. Khi vị quân vương thống trị pháp luật thề sẽ thực hiện hành vi báng bổ chống lại sự sống, tất cả những vụ cướp bóc và tàn sát đều được dung túng."
     },
     {
-      "name": "Thú Hộ Chi Chủ Đích Giác",
+      "name": "Sừng Của Thủ Hộ Chi Chủ",
       "cost": 47,
       "type": "Trang Sức",
       "tag": [
-        "Trang Sức",
+        "Trang sức",
         "Phòng ngự: 380"
       ],
       "rarity": "epic",
       "effect": {
-        "Lược đoạt pháp lực": "Khoảnh khắc thây cốt quân thù phế chuốc ngã gục tàn tạ ở miền phủ địa bao vây 15 thước, phác đồ tu thân bơm rỉ vọt lượng MP (pháp thuật) ngót nghét (1800 + 16% max cây MP).",
-        "Vi nhược yếu tố · Ám ảnh": "Trên áo khoác bảo cụ được trát nhuộm vệt nhạt nhòa của dòng hạt (Ám Ảnh), làm cho mỗi trận nhét đồ dọng vũ khí dứt nhát đôn thêm 220 điểm năng lượng vong hồn đoạt mạng u tối (Ám)."
+        "Lược đoạt pháp lực": "Khi kẻ địch trong phạm vi 15 mét xung quanh bạn tử trận, hồi phục pháp lực bằng (1800 + 16% giới hạn MP tối đa).",
+        "Yếu tố yếu ớt · Ám ảnh": "Trang bị kèm theo yếu tố ám ảnh yếu ớt, mỗi lần tấn công gây thêm 220 điểm sát thương năng lượng (ám)."
       },
-      "description": "切下山林与原野之主的角而成的物品。魔力不仅来自于群星与夜空，也来自于悠久的生命与死亡。"
+      "description": "Vật phẩm được cắt ra từ sừng của chủ nhân sơn lâm và đồng dã. Ma lực không chỉ đến từ các vì sao và bầu trời đêm, mà còn từ sự sống và cái chết xa xưa."
     },
     {
-      "name": "Thánh Tế Cưỡng Bảo",
+      "name": " Thánh Tế Cưỡng Bảo (Tã Lót)",
       "cost": 45,
       "type": "Trang Sức",
       "tag": [
-        "Trang Sức",
+        "Trang sức",
         "Phòng ngự: 350"
       ],
       "rarity": "epic",
       "effect": {
-        "Liên tục công kích khôi phục": "Vào một nấc mà thân chủ vung nhát cắn nã [Tấn công thường] trúng phốc 3 nhịp điệu liên hoàn sờn rách cùng một đối tượng, phục vị hồi lưu đoạt được đắp trả điểm máu sinh cơ (1500 điểm + 16% vạch cọc máu max cận đỉnh).",
-        "Vi nhược yếu tố · Thánh quang": "Vật phẩm tung chiêu vứt phóng lượng nguyên lốm đốm thành phần (Thánh Quang), giúp gạn giảm dòng giáng sát thương năng lượng xuống âm đi -13%."
+        "Tấn công liên tục hồi phục": "Khi bạn liên tục sử dụng tấn công thường trúng cùng một mục tiêu 3 lần, hồi phục sinh mệnh bằng (1500 + 16% giới hạn HP tối đa).",
+        "Yếu tố yếu ớt · Thánh quang": "Trang bị tỏa ra yếu tố thánh quang yếu ớt, sát thương năng lượng phải chịu giảm 13%."
       },
-      "description": "Là tấm manh tã vải của bọn tế tự thuở viễn cổ tạc thành vật bảo mạng. Sau hàng nghìn dao hành hình lột xẻ máu thịt dâng thần thánh, cái đám xác rữa của đám tế sinh xui rủi sẽ được dùng cọng manh tã để cuộn bó bọc lại - nhằm rước chào kiếp thác sinh 'Trường Tồn' thiêng mộng của chúng cho lần tới."
+      "description": "Một mảnh nhỏ của vật phẩm tế lễ cổ đại. Sau khi bị băm vằm thành từng mảnh, thi thể của kẻ hiến tế thần thánh sẽ được bọc trong mảnh vải này để ăn mừng họ bước vào một \"cuộc sống\" hoàn toàn khác lạ."
     },
     {
-      "name": "Dực Kiếm Huy Chương",
+      "name": "Huy Hiệu Kiếm Có Cánh",
       "cost": 45,
       "type": "Trang Sức",
       "tag": [
-        "Huy Chương",
+        "Huy hiệu",
         "Phòng ngự: 350"
       ],
       "rarity": "epic",
       "effect": {
-        "Liên kích chi dực": "Vào một nấc mà thân chủ vung nhát cắn nã [Tấn công thường] trúng phốc 3 nhịp điệu liên hoàn sờn rách cùng một đối tượng, cấp trích thưởng ngay một độ khảm ếm [Liên Kích Chi Dực], đẩy dội trào dâng thông số khạc nhổ sát thương thể lực vật lí đi tận 8%, độ sên bám dai nhách chực chờ kết ván cờ giao mạng. Giới hạn phỉnh dồn chất đống tối thiểu là 4 lớp chồng.",
-        "Vi nhược yếu tố · Phong": "Chất áo tạc bùa có chắp vá điểm lốm đốm thành phần cấu trúc nguyên khí (Phong Lốc), độ nảy dộng vạch tiên phán khởi điểm xốc nhích +1 trị hằng số."
+        "Đôi cánh liên kích": "Khi bạn liên tục sử dụng tấn công thường trúng cùng một mục tiêu 3 lần, nhận được một tầng hiệu ứng [Đôi Cánh Liên Kích], mỗi tầng giúp sát thương vật lý bạn gây ra tăng 8%, kéo dài đến hết trận đấu. Hiệu ứng này cộng dồn tối đa 4 lần.",
+        "Yếu tố yếu ớt · Phong": "Trang bị kèm theo yếu tố phong yếu ớt, kiểm định tiên thủ nhận +1 gia trị cố định."
       },
-      "description": "Bức phù dung trổ trên mình cánh chim giang sải với con tay giả nắm siết chặt lưỡi gươm Khúc Kiếm tạc vẽ phác nên. Một bóng ngự kiếm sư tài hoa huyền thoại vung gươm chém tan rã cỗi hủ bại cổ đại thuở hồng hoang."
+      "description": "Hộ phù cổ xưa lấy hình tượng cánh tay giả giơ cao thanh khúc kiếm được vây quanh bởi đôi cánh đang bay. Đây là bức chân dung của một kiếm sĩ huyền thoại khi đối đầu với sự thối nát cổ xưa."
     },
     {
-      "name": "Khắc Lôi Phổ Đích Tiểu Bình Tử",
+      "name": "Chiếc Lọ Nhỏ Của Crepus",
       "cost": 40,
       "type": "Trang Sức",
       "tag": [
-        "Trang Sức",
+        "Trang sức",
         "Phòng ngự: 380"
       ],
       "rarity": "epic",
       "effect": {
-        "Triệt để vô thanh": "Gót di chuyển vần mình của bản thể (bày đặt cả chạy bứt sải rảo bước, hay búng nhảy vực đồi) trọn ráo chẳng thèm làm đục vẳng nhả một hồi tí teo thanh âm lốc cốc nào.",
-        "Vi nhược yếu tố · Lôi điện": "Mỗi đợt nhào lộn tấn sát có pha tấu một lượng dư chấn li ti (Lôi Điện) bùng nhùng đâm dọng bồi tận 220 trị sức vồ điểm mạng năng lượng xé thể (Lôi Điện)."
+        "Tuyệt đối tĩnh lặng": "Tất cả các hành động di chuyển của bạn (bao gồm chạy, nhảy) đều sẽ không phát ra bất kỳ âm thanh nào.",
+        "Yếu tố yếu ớt · Lôi điện": "Khi tấn công kèm theo yếu tố lôi điện yếu ớt, mỗi lần tấn công gây thêm 220 điểm sát thương năng lượng (lôi điện)."
       },
-      "description": "Chiếc lọ hồ lô con con bịp kín nút bọc giấu luồng sương Ám Vụ ma mảnh bên trong ruột tuýp, tương truyền danh tính cộp mác một tông sư ám khí tên là Khắc Lôi Phổ thuộc nghiệp đoàn 'Ám Ảnh Chi Thủ'. Chỉ có thời khắc chìm vào bóng vắng im lìm rợn rát sầu tai bạt thảm mới khiến bọn cừu non đâm mướn mới mẻ chộn rộn bấn rùng rợn tim."
+      "description": "Chiếc lọ nhỏ bí ẩn phong ấn sương mù hắc ám, được đặt theo tên của sát thủ tông sư 'Crepus' của 'Bàn Tay Ảm Ảnh'. Sát thủ mới vào nghề thường hay hoảng sợ nhất vào những lúc im ắng tĩnh mịch."
     },
     {
-      "name": "Ẩn Thân Diện Sa",
+      "name": "Khăn Voan Tàng Hình",
       "cost": 40,
       "type": "Trang Sức",
       "tag": [
-        "Trang Sức",
+        "Trang sức",
         "Phòng ngự: 380"
       ],
       "rarity": "epic",
       "effect": {
-        "Phục kích": "Chỉ nhón thao tác lom khom dẹp vóc thu người chết câm điếc nín nhịn vượt trôi 3 giây tấc hồ trôi giạt, kèm hờ dãn khoảng hở 15 mét cự ly tàng đối ranh cùng gã thù gần nhất, thân chủ sẽ tự ắt được phù dấn độ chìm điêu khắc thành dạng [Tàng Hình]. Hễ cứ mấp máy nhúc nhích hay múa may quay cuồng cử chỉ là ván cờ tàng biến này sẽ đổ bể phơi bày trần tục.",
-        "Vi nhược yếu tố · Ám nặc": "Lấy bọc hạt tử chất lượng che giấu (Ám Nặc) điểm xuyết vào vật tạc, độ nảy dộng vạch tiên phán khởi điểm nhích xốc +1 trị hằng số."
+        "Mai phục": "Khi bạn ngồi xổm và giữ yên lặng quá 3 giây, đồng thời cách kẻ địch gần nhất hơn 15 mét, bạn sẽ tiến vào trạng thái [Tàng Hình]. Di chuyển hoặc thực hiện bất kỳ hành động nào sẽ hóa giải trạng thái này.",
+        "Yếu tố yếu ớt · Ẩn Nặc": "Trang bị kèm theo yếu tố ẩn nặc yếu ớt, kiểm định tiên thủ nhận +1 gia trị cố định."
       },
-      "description": "Cuộn phiến giẻ lót cọ sẫm màu nhám nhũ mài độ bóng đượm dùng nhào tạc phù độ mệnh. Trong cái đêm tối trời hành chước sát chúa u huyền, một vị tổ sư tông môn lính đánh thuê đâm lén nào đấy đã dùng xé toạc tấm mạng che hắc ám này để dìm bạt bóng hình vào u nhã."
+      "description": "Hộ phù được cuộn từ một mảnh vải sẫm màu có bề mặt sáng bóng. Đây là một phần chiếc khăn che mặt của một bậc thầy sát thủ thời xưa dùng để che giấu hình thể trong đêm ám sát."
     },
     {
-      "name": "Chủ Nhân Ngụy Trang Kính",
+      "name": "Gương Ngụy Trang Chủ Nhân",
       "cost": 40,
       "type": "Trang Sức",
       "tag": [
-        "Trang Sức",
+        "Trang sức",
         "Phòng ngự: 380"
       ],
       "rarity": "epic",
       "effect": {
-        "Ngụy trang": "Cứ điểm kích chạy thao tác gọi thuật mở đường bưng bít dung mạo, độ vắt trải dài 10 phút, tất ráo bọn u uất uẩn tính và mọi chóp bu tinh khôn đều sẽ mụ mẫm đánh giá độ tín tạc hình ấn ban sơ của bạn với con chòm 'Nhân dân cư bản địa khu' hoặc 'Kẻ vô dụng phế vật đụt cặn đợt trong bầy đàn', ngặt nỗi một khi bạn ngứa đòn múa rìu hếch hách thì cạch mặt xóa sổ cái tẩu hỏa này ngay tắp lự. Một ngày gọi hồn xài mõm được đúng 1 đợt phẩy phép.",
-        "Vi nhược yếu tố · Đại địa": "Áo mũ tạc bùa có chắp vá điểm lốm đốm thành phần cấu trúc nguyên khí xa xưa (Đại Địa Thế Cục), ván DR leo nóc 2%."
+        "Ngụy trang": "Sau khi kích hoạt, trong 10 phút tiếp theo, ấn tượng ban đầu của tất cả các sinh vật có trí tuệ đối với bạn sẽ là \"Người bản địa\" hoặc \"Người phe mình không đe dọa\", trừ khi bạn thực hiện các hành động thù địch rõ ràng. Mỗi ngày dùng một lần.",
+        "Yếu tố yếu ớt · Đại địa": "Trang bị kèm theo yếu tố đại địa yếu ớt, DR 2%."
       },
-      "description": "Chiếc kính rọi bưng phản chiếu một mảng điêu khức vóc bóng hình nhòe nhoẹt mờ tịt, một dụng cụ bốc phép thuật ngụy dung thay lốt đánh tráo gương mặt. Nhằm bịp mắt hột lừa đảo bá tánh làm chúng đinh ninh gật gù thân quyến cũng rặt là ruột thịt của đàn."
+      "description": "Một chiếc gương nhỏ phản chiếu hình dáng người mờ ảo, một dụng cụ hóa trang cổ đại. Nhằm mục đích phục vụ cho việc lừa gạt, khiến người khác tin rằng kẻ đó cũng là một thành viên gốc gác ở nơi này."
     },
     {
-      "name": "Cuồng Nộ Thần Thú",
+      "name": "Thần Thú Cuồng Nộ",
       "cost": 48,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 400"
       ],
       "rarity": "epic",
       "effect": {
-        "Phong lôi tăng thương": "Toàn ráo các thể loại ma pháp chưởng kích gọi độ mủn mục sát thương rỉ thân mang thuộc tính dòng cốt tử năng lượng (Lôi Điện hay Cuồng Phong Lốc), lực đánh võng chót hạ móc lọt rã nấc lên tận 16%.",
-        "Vi nhược yếu tố · Lôi điện": "Mỗi đợt nhào lộn tấn sát có pha tấu một lượng dư chấn li ti (Lôi Điện) bùng nhùng đâm dọng bồi tận 220 trị sức vồ điểm mạng năng lượng xé thể (Lôi Điện)."
+        "Phong lôi tăng sát thương": "Tất cả các kỹ năng gây sát thương năng lượng (lôi điện hoặc phong) của bạn, sát thương cuối cùng tăng thêm 16%.",
+        "Yếu tố yếu ớt · Lôi điện": "Khi tấn công kèm theo yếu tố lôi điện yếu ớt, mỗi lần tấn công gây thêm 220 điểm sát thương năng lượng (lôi điện)."
       },
-      "description": "Họa tạc theo dáng bộ chồm bước sải thân uấn điệu nhảy múa chực sầu thịnh nộ gầm vang rít của vị Thần Thú điên loạn để hình thành di vật này. Cơn phong giận bốc càn lôi trút oán của nó sẽ dễ bề bóp vỡ tan tần dải trật tự của chốn thiên cung, và hệ lụy điển hình phô phang phớt tỉnh phay nhất có lẽ là màn đâm đầu giội gió quét lá ầm vang phũ phàng."
+      "description": "Hộ phù chế tác theo hình ảnh thần thú khiêu vũ cuồng nộ trong tế lễ cổ đại. Sự phẫn nộ của nó sẽ khiến bầu trời mất đi trật tự, và thứ rõ ràng nhất trong đó chính là giông bão."
     },
     {
-      "name": "Tinh Dữ Hỏa Phù Điêu Trụy Sức",
+      "name": "Mặt Dây Phù Điêu Tinh Hòa Hỏa",
       "cost": 48,
       "type": "Trang Sức",
       "tag": [
-        "Vòng Cổ",
+        "Vòng cổ",
         "Phòng ngự: 400"
       ],
       "rarity": "epic",
       "effect": {
-        "Chuẩn bị công kích": "Chỉ lấy vón lốm đốm sức ngậm (hành động nguồn dữ liệu cội rễ) để bày đặt màn thi sức dàn nhai nén trữ chuẩn bị tư thái tĩnh thiền chẳng cần khều khạc chi hết sất cõi mạng, thế chẻ tre đoạt mạng lúc sải (tấn kích oanh tạc) sẽ tạc ra luồng sức công phá vật tàn thể chất dội số bật chót nhích xốc lội thêm +16%.",
-        "Vi nhược yếu tố · Hỏa diễm": "Mỗi cú oanh kích vần phập lại cộm pha lẫn sắc tố vi lượng (Hỏa), làm dấy thêm trị giá vọt số tới 220 điểm năng lượng xé thân."
+        "Chuẩn bị tấn công": "Khi bạn sử dụng tài nguyên [Hành động] để [Chuẩn bị] (không làm gì cả), sát thương gây ra của lần [Tấn công] tiếp theo tăng 16%.",
+        "Yếu tố yếu ớt · Hỏa diệm": "Khi tấn công kèm theo yếu tố hỏa diệm yếu ớt, mỗi lần tấn công gây thêm 220 điểm sát thương năng lượng (hỏa diệm)."
       },
-      "description": "Tinh Hỏa kị sĩ - đấng chưởng gươm gánh đôi đại đao Hỏa Kiếm dữ Ma Kiếm khuấy loạn mạn phép uy quyền, trên tráng đắp viếng khắc chìm tạc nét gã mĩ nam nhân lọng lượn cao quý uy nghiêm u tịch lên mảnh phù đồ dây hạt."
+      "description": "Hiệp sĩ sao hỏa——hiệp sĩ song kiếm sử dụng ma kiếm và hỏa kiếm, hộ phù có hình chân dung với khuôn mặt lạnh lùng sắc bén của cô ấy."
     },
     {
-      "name": "Cổ Long Đại Thuẫn Huy Chương",
+      "name": "Huy Hiệu Khiên Lớn Cổ Long",
       "cost": 65,
       "type": "Trang Sức",
       "tag": [
-        "Huy Chương",
+        "Huy hiệu",
         "Phòng ngự: 1000"
       ],
       "rarity": "legendary",
       "effect": {
-        "Cứu cực vật lý phòng hộ": "Gánh chống toàn triệt mọi sát thương thể xác và cắt tháo gỡ nạp nhẹ 24%, song song đấy là kết chuyển thành 3200 máu nhét bao da vỏ bọc che (Hộ Thuẫn) dội văng dòng đoạt mạng vật lý ở mọi ngã đấu thềm chiến.",
-        "Vi nhược quyền năng · Nhiên thiêu": "Cú múc tấn trượng mang kèm mốc uy quyền thượng thừa dạng Lửa (Quyền Năng Cấp Hỏa Diễm), với mỗi lần khai ấn chưởng phạt bù nạp 600 điểm sát thương năng lượng tàn phá tế bào (Hỏa Diễm) và đèo cả tỷ lệ đổ xúc xắc d20≥16 để vứt mìn kích án [Thiêu Đốt], cấu rút mỗi lượt 300 điểm giọt máu năng lượng sát sinh thiêu trụi (Hỏa Diễm), kéo giằng cho 3 lượt ngã bài."
+        "Cứu cực phòng hộ vật lý": "Tất cả sát thương vật lý nhận phải giảm 24%, mỗi lượt hồi phục 3200 điểm khiên đỡ đòn vật lý.",
+        "Quyền năng yếu ớt · Thiêu đốt": "Đòn tấn công đem theo cấp quyền năng hỏa diệm, mỗi lần tấn công gây thêm 600 sát thương năng lượng (hỏa diệm) và có tỷ lệ d20≥16 thi triển [Thiêu Đốt], mỗi lượt gây 300 sát thương (Hỏa), duy trì 3 lượt."
       },
-      "description": "Bức huy chương thiết tạo từ cái rập nổi cục thô kệch nhằng nhịt hình bóng loài thần rồng siêu cổ Cổ Long đồ sộ cổ cặn trên lớp sắt thiết già. Biểu ảnh đồ đằng về con rồng ngàn năm này tự tôn truyền miệng là lá chắn hóa giải ngàn thảm vạn họa sầu."
+      "description": "Hộ phù sắt thục cổ đại có phù điêu cổ long khổng lồ. Hoa văn rồng được coi là biểu tượng của sự che chở."
     },
     {
-      "name": "Kim Hoàng Sắc Biên Phát",
+      "name": "Tóc Bện Vàng Kim",
       "cost": 75,
       "type": "Trang Sức",
       "tag": [
-        "Trang Sức",
+        "Trang sức",
         "Phòng ngự: 700"
       ],
       "rarity": "legendary",
       "effect": {
-        "Thần thánh tí hộ": "Lượng uy hiếp mang tính chất năng lượng (Thần Thánh) đánh tới bị hao mòn chỉ còn -24%.",
-        "Vi nhược quyền năng · Thần thánh": "Phục sức hào nhoáng phun trào vầng thánh quang cực độ (Quyền Năng Cấp Thánh Quang), suy mòn muôn trùng sức xé toạc nã tới giảm tiệt 17%, nhưng bù đắp luồng phản pháo đoạt thế lên đám oán mọt tà tinh tà ma sinh vật lại đẩy bổng nhấc +17% sát đòn sinh não."
+        "Thần thánh che chở": "Sát thương năng lượng nhận vào (thần thánh) giảm 24%.",
+        "Quyền năng yếu ớt · Thần thánh": "Trang bị tản ra cấp quyền năng thánh quang, tất cả sát thương nhận vào giảm 17%, sát thương thực tế gây lên sinh vật tà ác tăng cường 17%."
       },
-      "description": "Món thánh vật rụng thừa cổ đại Thần Chích, tương truyền là thủ đoạn kết xài cung dâng của Đấng ngự trị lúc xá hiến vách sầu. Ráo rớt nhân loại vô ưu chả biết nhắm đoán ra đâu cái khao khát nguyện thỉnh van xin cầu an bài băn khoăn của Thần Chỉ là hướng gì, ngộ có chăng thì lại nhằm chuộc lỡ sầu tội mọn nào sao đây."
+      "description": "Di vật của các vị thần cổ đại, là đồ hiến tế bị bỏ lại khi dùng. Chẳng ai biết được chư thần ngài ấy cầu nguyện, ước nguyện điều gì, hay lại là, dùng để sám hối thứ gì."
     },
     {
-      "name": "Hoàng Kim Nghĩa Thủ",
+      "name": "Tay Giả Hoàng Kim",
       "cost": 80,
       "type": "Trang Sức",
       "tag": [
-        "Nghĩa Chi",
+        "Tay giả",
         "Phòng ngự: 750"
       ],
       "rarity": "legendary",
       "effect": {
-        "Liên vũ": "Vào khoảnh cõi bạn thi dọng các chiêu bí kĩ dặm mác [Liên Kích] hoặc là đoạt rã [Đa Đoạn] nện phập trúng lõi đích không sẩy tróc 1 hào, lập tức cấp trích thưởng ngay 1 thẻ lớp hiệu ứng [Liên Vũ], mỗi thẻ đắp bồi sức dọng trát táng đòn vật lí rớt mạng cày sâu 10% sát kiếp bền cứng ráo trọn kì so tài quyết chiến. Số tầng cao nhất mà chức năng này chiu đựng bảo hòa bành trướng là 6 nấc.",
-        "Vi nhược quyền năng · Thần thánh": "Phục sức hào nhoáng phun trào vầng thánh quang cực độ (Quyền Năng Cấp Thánh Quang), suy mòn muôn trùng sức xé toạc nã tới giảm tiệt 17%, nhưng bù đắp luồng phản pháo đoạt thế lên đám oán mọt tà tinh tà ma sinh vật lại đẩy bổng nhấc +17% sát đòn tuyệt lộ."
+        "Liên vũ": "Khi bạn sử dụng kỹ năng gán mác [Liên Kích] hoặc [Đa Đoạn] và đánh trúng toàn bộ, bạn nhận được một lớp [Liên Vũ], mỗi lớp giúp sát thương vật lý tăng trưởng thêm 10%, duy trì đến khi rời trận. Hiệu ứng này tối đa có thể tích lũy 6 lần.",
+        "Quyền năng yếu ớt · Thần thánh": "Trang bị tản ra cấp quyền năng thánh quang, tất cả sát thương nhận vào giảm 17%, sát thương thực tế gây lên sinh vật tà ác tăng cường 17%."
       },
-      "description": "Tiên nhân kiếm thuật giai thoại thân mình chắp vá tật nguyền không nguyên vóc, một mảnh ghép này đích danh là vật báu thế sải chắp khi kiếm khách giáng phàm oanh dẹp sào huyệt hủ bại cổ đại thuở đồ kim di tích, món Hoàng Kim Nghĩa Chi (Tay Giả Vàng Đúc) xưng danh thế trận."
+      "description": "Ghi chú hình ảnh của truyền thuyết về một kiếm sĩ bị khuyết tật chân tay dùng chiếc tay giả hoàng kim tỷ võ với hủ bại cổ đại."
     },
     {
-      "name": "Trường Vĩ Miêu Biệt Châm",
+      "name": "Trâm Cài Mèo Đuôi Dài",
       "cost": 60,
       "type": "Trang Sức",
       "tag": [
-        "Biệt Châm",
+        "Trâm cài",
         "Phòng ngự: 750"
       ],
       "rarity": "legendary",
       "effect": {
-        "Miêu chi ưu nhã": "Thể chất đắc cường phế tháo hoàn triệt những tổn hại dộng do sa não rơi cắm thây từ đỉnh dốc tít mù mây.",
-        "Vi nhược quyền năng · Linh xảo": "Thân mang vật bảo mang sức uy vi diệu (Quyền Năng Cấp Linh Xảo Đài), móc điểm né múa nhào lượn trốn đánh nhảy số cộng +6 vản, ván phán định xuất thương lải đà cũng điềm nhiên thọc nác phập +3 hằng nhịp."
+        "Ưu nhã như mèo": "Bạn miễn giảm toàn bộ những thương tổn do rơi từ trên cao.",
+        "Quyền năng yếu ớt · Linh xảo": "Trang bị ẩn chứa cấp quyền năng năng lượng linh xảo, kiểm định né tránh +6, kiểm định tiên thủ +3."
       },
-      "description": "Chế tác uốn ghim hình tượng đồ đằng mèo duôi ngoe nguẩy rảo cuộn. Sách thần đồ tương truyền kể lại ấy là Yêu Tinh Miêu, mọt rệp chầu hầu vương triều Thần Thể của muôn trăng nghìn sao thiên khung vạn vật, dẫu cho róc thân lao mình thả trôi khỏi trời cao trượt xuống thì mình miếc cũng sạch sành sanh bình yên chẳng mảy may xước vảy."
+      "description": "Chế tác từ hình tượng của con mèo đuôi dài. Nghe đồn trong truyền thuyết kể về trăng và chư tinh của một vị thần có xuất hiện một con yêu tinh mèo, dù nhảy từ bầu trời ngàn sao rơi về mặt đất vẫn sẽ được bình yên vô sự."
     },
     {
-      "name": "Cuồng Long Hộ Phù",
+      "name": "Hộ Phù Cuồng Long",
       "cost": 90,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 850"
       ],
       "rarity": "legendary",
       "effect": {
-        "Cuồng long chi lực": "Sự cuồng hãm của sát thương năng lượng tàn phế bản mệnh vạch xuất xưởng với thông điệp (Hỏa Diễm rực xé, Lôi Điện giật gào) được phất nảy mốc tận +24% trị tuyệt luân đoạt quỷ. Ngoài ra bạn hưởng luôn sái miễn tội bài xích những răn đe án tử như [Thiêu Đốt] với châm ngòi ải [Ma Tí] (Tê dại còng kẹt tay chân).",
-        "Vi nhược quyền năng · Nhiên thiêu": "Cú múc tấn trượng mang kèm mốc uy quyền thượng thừa dạng Lửa (Quyền Năng Cấp Hỏa Diễm), với mỗi lần khai ấn chưởng phạt bù nạp 600 điểm sát thương năng lượng tàn phá tế bào (Hỏa Diễm) và đèo cả tỷ lệ đổ xúc xắc d20≥16 để vứt mìn kích án [Thiêu Đốt], cấu rút mỗi lượt 300 điểm giọt máu năng lượng sát sinh thiêu trụi (Hỏa Diễm), kéo giằng cho 3 lượt ngã bài."
+        "Lực lượng Của Cuồng Long": "Năng lượng sát thương do bạn gây ra (hỏa diệm, lôi điện) tăng cường 24%. Bạn miễn nhiễm hiệu quả [Bốc Cháy] cùng [Tê Liệt].",
+        "Quyền năng yếu ớt · Thiêu đốt": "Đòn tấn công đem theo cấp quyền năng hỏa diệm, mỗi lần tấn công gây thêm 600 sát thương năng lượng (hỏa diệm) và có tỷ lệ d20≥16 thi triển [Thiêu Đốt], mỗi lượt gây 300 sát thương (Hỏa), duy trì 3 lượt."
       },
-      "description": "Thi công xây nặn học mẫu hình bộ dạng kiêu hùng uy oai của Phi Long Thủ Lĩnh thành mảnh vòng bùa. Chóp bu sừng sỏ nhất đàn Rồng Giương Sải ấy là con phi long sặc xụi lửa nhâm sấm chớp - tên hung đồ mạn ngược danh Cuồng Long, ngông cuồng vô kị dấn tới tận sào huyệt nã cờ giao tranh với cả Đấng Đế Vương Cổ Long của muôn loài, để rốt cục chắt chiu về cái kết cắm thây hoang đẫm giọt lệ rát hai phe hụt hẫng rúng oán nhường nhịn."
+      "description": "Chế tác bắt chước hình dáng của thủ lĩnh phi long. Thủ lĩnh phi long là con cuồng long bị nuốt chửng bởi sấm sét và hỏa diệm, nghe kể ngày xưa con rồng này từng khiêu chiến với vương giả của Cổ Long, cuối cùng nhận phải tình trạng đôi bên cùng tổn thương."
     },
     {
-      "name": "Vương Thụ Tứ Hộ Phù",
+      "name": "Hộ Phù Tôn Vương",
       "cost": 85,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 850"
       ],
       "rarity": "legendary",
       "effect": {
-        "Bất động chi vương": "Bất luận vắt chảo tung mọi loại thức ngốn nhai khạc nuốt mồi chài (Tiêu Hao Phẩm) nhằm dồn hồi HP, MP, SP hay vận thuật, toàn mảng quy trình ấy sừng sững dạn gan không thể nào bị bọn ác đồ cành cây nấc tấc thứ Năm hoặc cấp độ thấp tè hơn nã trúng thọc xiên dằn mặt cản lối.",
-        "Vi nhược quyền năng · Chiến ý": "Gom gộp tàng trữ vạn nguồn điềm lực ý chí chinh quân vô biên vực (Quyền Năng Cấp Chiến Ý), độ phá hoại thể chất vật lí bừng vọt lên 17% đỉnh số, chưa kể hăm he chẻ 9% mức khoét sâu phòng thủ vã máu."
+        "Bất Động Chi Vương": "Khi bạn sử dụng bất kì loại [Vật phẩm tiêu hao] nào giúp hồi phục HP, MP hoặc SP hoặc thi triển kỹ năng, toàn bộ sẽ không thể bị kẻ địch cấp 5 trở xuống dùng đòn đánh xen vào cắt đứt.",
+        "Quyền năng yếu ớt · Chiến ý": "Trang bị ẩn chứa cấp quyền năng chiến ý, sát thương vật lý tăng lên 17%, xuyên thấu 9%."
       },
-      "description": "Sừng sững đứng đấy khắc vẽ diện cạo kiêu hùng xé mây của đấng Chiến Vương, ngạo nghễ thề dập Thần Chỉ chường mặt lãnh án ngàn sủng hạnh (Tứ Phúc) thành nên khuôn bùa yểm ấn. Đạo chúa một vai dánh muôn gánh Thần Chỉ - Đấng Bá Vương, hiên ngang dõng dạc dâng trụ chốn nhân gian ngự đỉnh non nước."
+      "description": "Chế tác bắt chước tạo hình tuyệt cường của một vị Chiến Vương nhận được lễ ban phúc nhờ thực hiện khế ước với thần linh. Vương Giả ký sinh tử khế với thần linh, đỉnh thiên lập địa."
     },
     {
-      "name": "Thân Ái Đích Tinh Trần",
+      "name": "Bụi Sao Thân Yêu",
       "cost": 95,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 850"
       ],
       "rarity": "legendary",
       "effect": {
-        "Cực tốc thi pháp": "Chốt ráo muôn tuyệt chiêu yêu sách lòi lõi ra nguồn móc điểm phán đoán của [Hành Động], vặn số nhào mốc thì lại lột biến chuyển tráo thành phớt bơ không chịu xài [Hành Động] là mấy, dưng bùn rỉ máu ở điểm là tất thảy chuỗi thương vong bào lẹ mạng phải rặn gánh chịu bành xê lên đôn mức 24%.",
-        "Vi nhược quyền năng · Tinh thần": "Gom gộp tàng trữ vạn nguồn điềm năng lượng (Quyền Năng Cấp Tinh Thần), trọn lốc mọi cơn nã điểm sức lực xé thân năng lượng cày sâu độ nẩy trị là 17%, cứ vòng hồi đánh điểm là được gạn rót lấy thọt rỉ lượng MP hồi sinh mốc sinh cơ 2600."
+        "Thi triển siêu tốc": "Tất cả các kỹ năng cần tiêu hao [Hành động] nay đổi thành không tiêu hao tài nguyên [Hành động], nhưng tất cả sát thương bạn phải chịu tăng 24%.",
+        "Quyền năng yếu ớt · Tinh thần": "Trang bị ẩn chứa năng lượng cấp quyền năng tinh thần, tất cả sát thương năng lượng tăng cường 17%, mỗi lượt hồi phục 2600 HP."
       },
-      "description": "Mượn nắn hình họa bàn tay khú khụ của người xưa mớm nhón mảnh vụn xỉ xám ngân trần sao băng xa xăm tít để gọt bùa yểm. Đãi ráo cậu ranh ồ, thân mình nên dốc máu ngàn vàng mà thấu học cách vị tha san mến trân ái ái."
+      "description": "Chế tác bắt chước hình dáng một vị lão giả cầm tinh trần trên tay. Người hỡi, phải học cách yêu thương."
     },
     {
-      "name": "Chiến Vương Đích Tiếu Tượng",
+      "name": "Chân Dung Của Chiến Vương",
       "cost": 80,
       "type": "Trang Sức",
       "tag": [
-        "Trang Sức",
+        "Trang sức",
         "Phòng ngự: 900"
       ],
       "rarity": "legendary",
       "effect": {
-        "Chiến vương chi lực": "Dàn nhát bổ chất chứa năng lượng dồn kìm của bạn (gây tiêu hao mảng điểm [Tấn Công] cũng như [Hành Động]) sẽ nổ bục rực sát thương lên mốc giới hạn là 24% tàn tích kịch khung.",
-        "Vi nhược quyền năng · Chiến ý": "Gom gộp tàng trữ vạn nguồn điềm lực ý chí chinh quân vô biên vực (Quyền Năng Cấp Chiến Ý), độ phá hoại thể chất vật lí bừng vọt lên 17% đỉnh số, chưa kể hăm he chẻ 9% mức khoét sâu phòng thủ vã máu."
+        "Sức mạnh Chiến Vương": "Tất cả các đòn tấn công tích lũy sức mạnh của bạn (tiêu hao [Tấn công] và [Hành động]) sẽ được tăng 24% sát thương cuối cùng.",
+        "Quyền năng yếu ớt · Chiến ý": "Trang bị ẩn chứa cấp quyền năng chiến ý, sát thương vật lý tăng lên 17%, xuyên thấu 9%."
       },
-      "description": "Nặn từ bức điêu khắc mặt người dung dáng quân thần vị vua ngạo mạn lẫm kiệt thuở hồng hoang thành vòng bùa cổ điển, kẻ xưng vương đấy vốn sinh thời là một nài hổ khét tiếng sa môn chinh chiến bất chấp, dõng dạc tát máu thề oán vạch lời hứa cùng các Đấng Thần Chích tối cao."
+      "description": "Một bức chân dung nhỏ được làm theo hình dáng của các vị Vua cổ đại, vị Vua này là một chiến binh dũng mãnh, đã lập giao ước với các vị Thần."
     },
     {
-      "name": "Pháp Vương Đích Tiếu Tượng",
+      "name": "Chân Dung Của Pháp Vương",
       "cost": 80,
       "type": "Trang Sức",
       "tag": [
-        "Trang Sức",
+        "Trang sức",
         "Phòng ngự: 900"
       ],
       "rarity": "legendary",
       "effect": {
-        "Pháp vương chi lực": "Vạn ngàn mọi thế đạo thần thông pháp thuật đèo bồng dắt dây công phụ định hướng thủ quyết, khoảng đồng hồ trì rát thi pháp sẽ chẻ đôi thời khắc làm nửa (chừng nào ngắt gạn dành riêng nổi một nhát thi pháp diễn đoạn ít rờm rà chót nấc có thể).",
-        "Vi nhược quyền năng · Chiến ý": "Gom gộp tàng trữ vạn nguồn điềm lực ý chí chinh quân vô biên vực (Quyền Năng Cấp Chiến Ý), độ phá hoại thể chất vật lí bừng vọt lên 17% đỉnh số, chưa kể hăm he chẻ 9% mức khoét sâu phòng thủ vã máu."
+        "Sức mạnh Pháp Vương": "Tất cả các kỹ năng cần thời gian dẫn dắt sẽ được giảm một nửa thời gian thi triển (giữ lại ít nhất một hành động thi triển ngắn nhất).",
+        "Quyền năng yếu ớt · Chiến ý": "Trang bị ẩn chứa cấp quyền năng chiến ý, sát thương vật lý tăng lên 17%, xuyên thấu 9%."
       },
-      "description": "Nặn từ bức điêu khắc mặt người dung dáng quân thần vị vua ngạo mạn lẫm kiệt thuở hồng hoang thành vòng bùa cổ điển, kẻ xưng vương đấy vốn sinh thời là một đại cao đạo thành tài pháp sư thuật sĩ sành sỏi chuyên tâm tinh tấn, nối gót bước theo bóng dài của đám Thần Chích cổ quái."
+      "description": "Một bức chân dung nhỏ được làm theo hình dáng của vị Vua cổ đại, vị Vua này thông thạo phép thuật và có mối liên hệ với các vị Thần."
     },
     {
-      "name": "Cổ Vương Hộ Phù",
+      "name": "Hộ Phù Cổ Vương",
       "cost": 90,
       "type": "Trang Sức",
       "tag": [
-        "Hộ Phù",
+        "Hộ phù",
         "Phòng ngự: 900"
       ],
       "rarity": "legendary",
       "effect": {
-        "Cổ vương chúc phúc": "Toàn bộ hiệu ứng [Tăng Ích] mà bạn dội vào bản mệnh hay đám đồng minh hữu hảo sẽ được kéo dài thêm thời lượng 2 nhịp ván, còn thông số bùa phép thì nốc căng lên tới +24%.",
-        "Vi nhược quyền năng · Thần thánh": "Phục sức hào nhoáng phun trào vầng thánh quang cực độ (Quyền Năng Cấp Thánh Quang), suy mòn muôn trùng sức xé toạc nã tới giảm tiệt 17%, nhưng bù đắp luồng phản pháo đoạt thế lên đám oán mọt tà tinh tà ma sinh vật lại đẩy bổng nhấc +17% sát đòn sinh não."
+        "Lời chúc phúc Cổ Vương": "Tất cả các hiệu ứng [Cường hóa] mà bạn áp dụng cho chính mình hoặc đồng minh sẽ tăng thời gian duy trì lên 2 lượt và hiệu quả chỉ số tăng 24%.",
+        "Quyền năng yếu ớt · Thần thánh": "Trang bị tản ra cấp quyền năng thánh quang, tất cả sát thương nhận vào giảm 17%, sát thương thực tế gây lên sinh vật tà ác tăng cường 17%."
       },
-      "description": "Thi công nặn tạc theo học khuôn diện mạo oai nghiêm của Đấng Viễn Cổ Cự Long Chi Vương trên nền sắt già tạo ra bức phù chấn báu này. Truyền ngôn tương truyền kể lể rạng, tòa thành nguy nga của Cổ Vương dạo nọ vẫn sừng sững lỳ lợm đứng án ngự tại ranh bến trời vô định."
+      "description": "Hộ phù sắt thục cổ đại được chế tạo phỏng theo hình ảnh Cổ Long Chi Vương. Nghe nói tòa thành của Cổ Vương vẫn sừng sững tọa lạc ở tận cùng chân trời xa xôi."
     },
     {
-      "name": "Hi Sinh Tế Chi",
+      "name": "Cành Cây Hiến Tế",
       "cost": 110,
       "type": "Trang Sức",
       "tag": [
-        "Kỳ Vật",
+        "Kỳ vật",
         "Phòng ngự: 2000"
       ],
       "rarity": "mythic",
       "effect": {
-        "Thần thụ tí hộ": "Tại trận khoảnh khắc thân chủ bị dộng thương đoạt mạng đứt hơi sinh ngõ, chiêu này búng tự kích hoạt phế bãi bỏ sạch nhát kết tàn hồn kia cơ, liền búng trảo chạy tót khới xa trường thảm độ dồn biến chuyển thoát ly. Toàn ráo các trụ thước chứa HP, MP, SP căng đét lại thành trăng rằm trọn vẹn. Ngặt nỗi dẫu một lần bung nẩy thoát mạng này, vật phẩm sẽ ra bã mùn tiêu tan theo hồn cốt.",
-        "Vi nhược pháp tắc · Trọng sinh": "Đeo mang trang cụ nạp kèm đạo sức tái tạo lại thân cội rễ kiếp hoàn hương (Pháp Tắc Cấp Trọng Sinh Chi Lực), vào độ mốc nhịp trận tỉ thí mỗi đợt, mỗi lúc bãi máu HP bị dọng bóp về hàng 0 sẽ thốc ngửa ngay 25% cực bão HP bù lại phế bãi nốt đạn kết mạng ngõ cụt hẻm chui nọ, ván DR vớt là 11%."
+        "Thần thụ che chở": "Khi bạn phải chịu sát thương chí mạng, miễn nhiễm sát thương đó và lập tức dịch chuyển khỏi trận chiến. HP, MP, SP của bạn được phục hồi hoàn toàn. Sau khi hiệu ứng này được kích hoạt, vật phẩm sẽ bị phá hủy.",
+        "Quy luật yếu ớt · Trọng sinh": "Trang bị chứa sức mạnh quy luật trọng sinh, có thể dùng một lần trong mỗi trận chiến, khi HP giảm xuống 0 sẽ tự động phục hồi 25% giới hạn HP tối đa và miễn dịch với sát thương gây tử vong ngày lúc đó, DR 11%."
       },
-      "description": "Là một nhánh tẽ mọc chiết thừa sót dư dăm gốc Thế Giới Thụ, chồi gai gốc nhánh ấy bị lặt tỉa phát quang đi tắp hồi từ những thuở kiến tạo thế cục khởi nguyên hồng hoang vạn dặm."
+      "description": "Một phần của Cây Thế Giới, một cành cây bị cắt đi vào thời sơ khai của thế giới."
     },
     {
       "name": "Hắc Nguyệt",
       "cost": 200,
       "type": "Trang Sức",
       "tag": [
-        "Kỳ Vật",
+        "Kỳ vật",
         "Phòng ngự: 2000"
       ],
       "rarity": "mythic",
       "effect": {
-        "Mệnh vận nghịch chuyển": "Tiêu ngốn xài một nhát duy chót nhứt trong ráo cõi kiếp mệnh. Bạn gật bừa đặc xá cớ một sinh mạng (né bỏ phứa bọn cấp thần thánh ra phết) mới nằm chỏng chơ ngỏm củ tỏi từ bữa nhão cạn trôi nội trong dòng luân hồi 24 giờ, độ thế hồi dương tót nháy mắt trở ngược đằng hồn chẳng hề vướng lú tí giọt di họa mầm bệnh dư đồ ốm yếu nào tỳ lại chốn gầm. Ngửa xài món này để đoạt sinh thời thây ma vật liệu đành hóa hắc bay sắc không chừa bụi tợn.",
-        "Vi nhược pháp tắc · Luân hồi": "Đeo mang trang cụ nạp kèm đạo sức xoay vần guồng luân lưu xoay vòng quy thiên (Pháp Tắc Cấp Luân Hồi Chi Lực), lột cấu xé tróc giặc ra máu thì cũng ngấu nghiến gặm rút về HP nạp khống đốm máu thòm thèm ngót 25% dòng sát thương bục giáng chót dứt, sức khoét bục thủ là 16%."
+        "Nghịch chuyển vận mệnh": "Bảo vật dùng một lần. Bạn có thể chỉ định một sinh vật đã chết trong vòng 24 giờ qua (không tính các vị Thần) để hồi sinh hoàn toàn thành người đó mà không bị ảnh hưởng bởi bất kỳ bệnh tật hay chấn thương nào trước đó. Vật phẩm này sẽ biến mất sau khi sử dụng.",
+        "Quy luật yếu ớt · Luân hồi": "Trang bị chứa sức mạnh quy luật luân hồi, khi gây sát thương sẽ hồi phục 25% HP tương đương với sát thương cuối cùng, xuyên thủng 16%."
       },
-      "description": "Món bảo vật trân sâu cất giấu của Đấng ngỏ lời rầm rì với vầng trăng và hạt sao biển tinh tú - Luna. Đắp trượt phăng phắc với vầng trăng ngân ngọc tinh tươm vẹn chuỗi rạng ngời của bổn đạo Luna, cái cục hắc tịt xịt lụi đen sì này nhỉnh vác án trạm lưu đày điềm trạm ga kết cho vô cùng mớ vòng dây hỗn cảnh mệnh khổ - Ấy chính là, vầng ngọc trăng tồi bôi nhọ gắt gao Hắc Nguyệt."
+      "description": "Kho báu bí mật của Người Thì Thầm Của Trăng Và Sao · Luna, không giống với ánh trăng trắng tinh khiết hoàn mỹ của Luna, nơi tận cùng của vô số sinh mệnh chính là mặt trăng đen kịt này hóa thành."
     },
     {
-      "name": "Sinh Mệnh Liên Tiếp Pháp Hoàn",
+      "name": "Pháp Hoàn Liên Kết Sinh Mệnh",
       "cost": 52,
       "type": "Trang Sức",
       "tag": [
-        "Pháp Hoàn"
+        "Pháp hoàn"
       ],
       "rarity": "rare",
       "effect": {
-        "Sinh mệnh liên tiếp": "Chủ đạo với mớ bạn chiến lân cốt kề chảng măng chia miếng ngọt san miếng bùi tát đạn dộng đau trổ vạ thây sát (Sát thương đập chia hều hều ra mỗi trự dội ngộp)."
+        "Liên kết sinh mệnh": "Bạn và đồng đội gần nhất sẽ chia sẻ HP (cùng nhau chia sẻ sát thương)."
       },
-      "description": "Vòng pháp ngọc phát xạ ánh ngời năng lượng hồi xuân, xâu nối liền gộp gắn keo sơn hai dòng định số cơ mạch trọn gắn kết sinh mệnh này lại bết bền chằng chịt."
+      "description": "Pháp hoàn tỏa ra ánh sáng của sự sống, mang lại khả năng kết nối hai sinh mệnh với nhau."
     },
     {
-      "name": "Nguyên Tố Chuyển Hoán Pháp Hoàn",
+      "name": "Pháp Hoàn Chuyển Đổi Nguyên Tố",
       "cost": 46,
       "type": "Trang Sức",
       "tag": [
-        "Pháp Hoàn"
+        "Pháp hoàn"
       ],
       "rarity": "rare",
       "effect": {
-        "Nguyên tố chuyển hoán": "Trọn ráo mớ cục máu xả đánh tước bục tát văng của bạn giờ rành rọt bị đốn thay đổi hóa lốt thành gốc cốt lõi nguyên tố bạn ấn định chĩa mặt chọn chừa (Hỏa/Băng/Lôi/Độc)."
+        "Chuyển đổi nguyên tố": "Chuyển mọi loại sát thương bạn gây ra thành loại nguyên tố mà bạn chọn (Hoả/Băng/Lôi/Độc)."
       },
-      "description": "Vòng pháp ngọc năng sức lật tráo đặc bẩm dòng năng lượng phả túa của pháp ma thuật thao diễn oanh kích, chuốc đỡ tiếp người ngâm mớ câu khấn vái hỏa thi linh động tay chân lắt léo tác biến muôn đường muôn dạng."
+      "description": "Pháp hoàn có khả năng thay đổi thuộc tính nguyên tố của ma thuật, giúp người thi triển linh hoạt hơn trong chiến đấu."
     },
     {
-      "name": "Triệu Hoán Pháp Hoàn",
+      "name": "Pháp Hoàn Triệu Hồi",
       "cost": 58,
       "type": "Trang Sức",
       "tag": [
-        "Pháp Hoàn"
+        "Pháp hoàn"
       ],
       "rarity": "epic",
       "effect": {
-        "Triệu hoán cường hóa": "Trị điểm đắp đổi thuộc tính mấy con đồ vật xướng gọi chiêu binh mã đội vọt nhích +30% căng khỏe, mốc thọ bền trường độ lết trụ rịn thêm +2 vòng lượt chơi mâm cỗ."
+        "Triệu hồi cường hoá": "Chỉ số của vật triệu hồi +30%, thời gian tồn tại +2 lượt."
       },
-      "description": "Vòng pháp ngọc căng mướt phù trì mạnh cho điềm lực chưởng hiệu ứng triệu tập kêu hái ngải thần thức."
+      "description": "Pháp hoàn này tăng cường hiệu lực của ma thuật triệu hồi."
     }
   ]
 }
