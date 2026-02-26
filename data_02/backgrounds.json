@@ -1,6 +1,14 @@
 {
   "Kịch bản mở đầu chung": [
     {
+      "name": "Thường ngày",
+      "description": "Một ngày bình thường"
+    },
+    {
+      "name": "Trò đùa của Nữ thần Xúc xắc",
+      "description": "Không biết là trò đùa của thần minh nào, bạn mất đi toàn bộ trang bị, đạo cụ, kỹ năng thậm chí là ký ức trước đây, và bị ném đến một địa điểm ngẫu nhiên trên lục địa. Có lẽ như một khoản đền bù, bạn chú ý thấy trước mặt có vài hộp mù, trên đó lần lượt viết kỹ năng, vũ khí, trang sức, đạo cụ, bên cạnh còn có một quả trứng vẽ dấu chấm hỏi. Một mảnh giấy viết: Lỡ làm sai rồi, những thứ này là để đền bù cho cậu, nhưng chất lượng là thần thoại hay rác rưởi, thì phải xem vận may của cậu thôi hi hi! (Tất cả vật phẩm đều cần qua kiểm tra xúc xắc để xác định phẩm chất và nội dung, 1-5 bình thường, 6-10 ưu lương, 11-14 hiếm có, 15-17 sử thi, 18-19 truyền thuyết, 20 thần thoại)"
+    },
+    {
       "name": "【Hành trình và May mắn】Sự chỉ dẫn của Tekoh",
       "description": "Khi bạn cầu nguyện trước một miếu thờ hoang tàn, Thánh Linh của hành trình và may mắn \"Tekoh\" dường như đã nghe thấy tiếng bạn. Bạn nhận được một thần dụ: Hãy đến thị trấn gần nhất, ở trên người \"người đầu tiên bạn gặp khi tiếng chuông đầu tiên vang lên\", có bước ngoặt của số phận bạn, có lẽ bạn sẽ gặp được \"cô ấy\"?"
     },
@@ -33,17 +41,32 @@
       "description": "Khi phong ấn Ma Vương ngày càng lỏng lẻo, Nữ hoàng Đế quốc lệnh cho Thánh Nữ thi triển ma pháp trận cổ đại để triệu hồi dũng giả dị thế giới tiêu diệt Ma Vương, pháp trận triệu hồi ra bốn dũng giả, \"Lý Chi Ma Nữ\", \"Kiếm Chi Dũng Giả\", \"Thuẫn Chi Bích Lũy\" và <user>, ba người triệu hồi đều có dị tượng và khí thế mạnh mẽ, nhưng <user> không có gì xảy ra, khiến mọi người cảm thấy hoang mang và nghi ngờ."
     },
     {
+      "name": "Người đến trễ",
+      "description": "Bên trong một lâu đài cổ bỏ hoang, ma pháp trận đáng lẽ phải khởi động từ năm trăm năm trước đột nhiên kích hoạt. Sáu cơ thể người được triệu hồi đến sáu góc của ma pháp trận, trong đó ba người chết ngay tại chỗ. Sáng hôm sau, <user> tỉnh dậy giữa đống đổ nát, phát hiện mình mất sạch trí nhớ và đang trần truồng, trong lúc hoang mang liền mặc vào bộ quần áo cũ lộng lẫy được xếp gọn gàng ở bên cạnh."
+    },
+    {
       "name": "Người dũng cảm",
       "description": "Phong ấn Ma Vương ngày càng lỏng lẻo, Đế quốc khắp nơi tuyển binh. Để góp vui, thợ rèn trong làng cắm một thanh kiếm thép vào đá, còn phù phép ký tự trọng lực, cười nói đây là \"Kiếm Dũng Giả\". Ba năm qua, người lớn trong làng thường trêu trẻ con rút kiếm, nhưng không ai rút được. Đến hôm nay, <user> giơ tay rút kiếm, kiếm đã rỉ sét gãy mất, thợ rèn ngượng ngùng, đành tuyên bố ngươi chính là dũng giả, và tặng ngươi một thanh kiếm phẩm chất ưu lương. Tay cầm lợi kiếm, ngươi chắc chắn mình chính là người mệnh định phải thảo phạt Ma Vương."
     },
+    {
+      "name": "Ngục tối ám hắc",
+      "description": "<user> nhận được một bức di thư, ngươi được tổ tiên gia tộc chọn làm người thừa kế trang viên, tổ tiên của ngươi tiết lộ trong thư, ông ta đã phát hiện và giải phóng một thế lực tà ác không thể gọi tên dưới trang viên, tiến hành một loạt thí nghiệm điên cuồng sa đọa, cuối cùng gây ra đại họa. Bây giờ, sự mục nát này đang lan rộng, xâm thực đất đai và lòng người, nhiệm vụ của ngươi là đến trang viên, đi sâu vào hang ổ dưới lòng đất trang viên, rừng, vịnh và các vùng đất bị nguyền rủa khác, dọn dẹp mớ hỗn độn tổ tiên để lại, từng bước đối mặt với nỗi kinh hoàng tối thượng ở sâu dưới lòng đất."
+    },
+    {
+      "name": "Chị búp bê",
+      "description": "<user> có một người chị từ nhỏ ở trong trạng thái vô ý thức, gia đình còn khá giả, dùng khí quan luyện kim duy trì sự sống của chị, nhưng cha mẹ qua đời trong một cuộc tập kích của thám tử Thú tộc, ngươi gánh vác trách nhiệm gia đình cũng như bảo vệ chị, ngươi nên đi tìm kiếm khả năng bảo trì và thay thế khí quan luyện kim và cải tạo thân thể."
+    }
+  ],
+  "Giới hạn thân phận": [
     {
       "name": "Lãnh chúa trang viên",
       "description": "<user> là kỵ sĩ thế tập bản địa, đầu gối của cha đã từng đỡ một mũi tên cho Bá tước đại nhân, Bá tước đại nhân ban cho cha tước vị kỵ sĩ thế tập, và ban cho một trang viên không lớn, nhưng tốt cảnh không dài, vài năm trước lãnh chúa đối địch tập kích bản địa, cha mẹ tử trận, lãnh địa bị phá hủy, còn ngươi được Bá tước đại nhân dẫn theo chạy trốn, thoát nạn, bây giờ ngươi trở lại trang viên từng được ban thưởng này đã thành phế tích, ngươi đào kho báu dưới hầm trang viên, chuẩn bị tái thiết trang viên.",
       "requiredIdentity": "Quý tộc thế tập cấp thấp"
     },
     {
-      "name": "Ngục tối ám hắc",
-      "description": "<user> nhận được một bức di thư, ngươi được tổ tiên gia tộc chọn làm người thừa kế trang viên, tổ tiên của ngươi tiết lộ trong thư, ông ta đã phát hiện và giải phóng một thế lực tà ác không thể gọi tên dưới trang viên, tiến hành một loạt thí nghiệm điên cuồng sa đọa, cuối cùng gây ra đại họa. Bây giờ, sự mục nát này đang lan rộng, xâm thực đất đai và lòng người, nhiệm vụ của ngươi là đến trang viên, đi sâu vào hang ổ dưới lòng đất trang viên, rừng, vịnh và các vùng đất bị nguyền rủa khác, dọn dẹp mớ hỗn độn tổ tiên để lại, từng bước đối mặt với nỗi kinh hoàng tối thượng ở sâu dưới lòng đất."
+      "name": "Lễ đính hôn",
+      "description": "Ngày mai là lễ đính hôn với thanh mai trúc mã hai tình cùng duyệt của mình, bạn có chút lo âu, còn đối phương thì luôn an ủi bạn",
+      "requiredIdentity": "Quý tộc thế tập cấp thấp"
     },
     {
       "name": "Tiểu chủ nô",
@@ -66,10 +89,6 @@
       "requiredIdentity": "Thương nhân thương hội"
     },
     {
-      "name": "Chị búp bê",
-      "description": "<user> có một người chị từ nhỏ ở trong trạng thái vô ý thức, gia đình còn khá giả, dùng khí quan luyện kim duy trì sự sống của chị, nhưng cha mẹ qua đời trong một cuộc tập kích của thám tử Thú tộc, ngươi gánh vác trách nhiệm gia đình cũng như bảo vệ chị, ngươi nên đi tìm kiếm khả năng bảo trì và thay thế khí quan luyện kim và cải tạo thân thể."
-    },
-    {
       "name": "Tiểu chủ cửa hàng",
       "description": "Một phú thương bị cướp tập kích thân bị trọng thương, mà <user> dùng dược thủy của mình cứu ông ta, ông ta quyết định chuyển nhượng một cửa hàng của mình cho <user>, ông ta có đủ loại cửa hàng khác nhau chờ ngươi chọn, tiệm bánh mì, lữ quán, tiệm rèn, cửa hàng luyện kim thậm chí cả kỹ viện đều có, lựa chọn của ngươi là?",
       "requiredIdentity": "Chủ cửa hàng"
@@ -87,6 +106,11 @@
       "requiredRace": "Tinh linh"
     },
     {
+      "name": "Tạo vật say giấc",
+      "description": "Lõi ma lực của bạn sau khi chìm trong tĩnh lặng không biết bao nhiêu ngàn năm đột nhiên hoạt động trở lại. Cảnh vật xung quanh lọt vào nhận thức của bạn, nhưng đã khác xa so với trước khi bạn ngủ say. Thành phố từng huy hoàng giờ hóa thành di tích, những đồng liêu từng sát cánh cũng đã tàn tạ không chịu nổi. Bạn cúi đầu, chú ý thấy có những cấu trúc thể xa lạ đang nạp năng lượng và sửa chữa vết thương cho bạn.",
+      "requiredRace": "Cấu trang thể"
+    },
+    {
       "name": "Đồ đằng thị tộc thất lạc",
       "description": "(Chỉ dành cho Thú tộc) Đồ đằng thị tộc của ngươi bị bộ lạc đối địch đánh cắp, đây là sự nhục nhã lớn. Ngươi phải một mình đột nhập lãnh địa của đối phương, trước khi cơn thịnh nộ của linh hồn tổ tiên giáng xuống, bằng sức mạnh và vinh quang của mình đoạt lại đồ đằng.",
       "requiredRace": "Thú tộc"
@@ -94,7 +118,7 @@
     {
       "name": "Tiến về Thần Sử Lai Mềm",
       "description": "<user> là một Sử Lai Mơ vừa mới sinh ra ý thức, ngươi bây giờ sinh ra ở một vùng hoang dã, ngươi cần sống sót, <user> bây giờ là một khối gel, ngươi có thể quan sát môi trường xung quanh rồi cảm nhận tri thức của chủng loài mình chọn ngươi muốn hình thành loại Sử Lai Mơ nào? \"Loại môi trường\"?, \"Loại nguyên tố\"? hay loại khác? Không sao cả, trợ thủ hệ thống sẽ hướng dẫn ngươi sống sót trở thành Thần Sử Lai Mơ mạnh nhất, ngươi chỉ cần biết ngươi có thể tiến hóa siêu cấp ở tầng thứ ba và tầng thứ năm là đủ rồi, bây giờ ngươi có thể nhận được hai kỹ năng phẩm chất ưu lương, lựa chọn của ngươi là?",
-      "requiredRace": "Ma vật",
+      "requiredRace": "Sử Lai Mơ",
       "requiredIdentity": "Ma vật hoang dã"
     }
   ],
@@ -125,6 +149,11 @@
       "requiredLocation": "Khu vực Trung Đông lục địa-Đế quốc Augustim-Thành Clock Tower"
     },
     {
+      "name": "Tế lễ của Bạch Hồ",
+      "description": "Việc xuyên không của bạn do sự triệu hồi của một vu nữ mà xảy ra sai lệch, bạn giáng xuống một ngôi đền cổ kính ở Liên minh Thú tộc, trước mặt là một mục sư cáo trắng gần như sắp ngất vì nhảy múa.",
+      "requiredLocation": "Khu vực Trung Tây lục địa"
+    },
+    {
       "name": "Vô tận chi vũ và Vô tận chi lữ",
       "description": "(Chỉ dành cho kịch bản mở màn thành Nova Valentina) Ngươi đã đến thành phố mạo hiểm lớn nhất trên toàn lục địa——thành Nova Valentina. Rừng mưa vô tận, sông Novval đồ sộ, Long Cơ huyền thoại, cùng \"Vô Tận Địa Thành\" thần tích trong thần thoại phong ấn Dị Thần thế hệ thứ hai, thành mưa tọa lạc tại rừng mưa ma pháp nguyên thủy \"Vô Tận Thụ Hải\" này, sẽ trở thành khởi điểm của sử thi truyền kỳ của ngươi. Lúc này ngươi đang ở trong đại sảnh phục vụ của phân hội đông nhất trên toàn lục địa——\"Công hội Mạo hiểm Valentina\", đang chuẩn bị đăng ký trở thành một nhà mạo hiểm chính thức.",
       "requiredLocation": "Khu vực Trung Nam lục địa-Công quốc Valentina-Thành Nova Valentina"
@@ -148,6 +177,16 @@
       "name": "Tiếng gọi của Bắc Cảnh",
       "description": "(Chỉ dành cho kịch bản mở màn Liên minh Nosguard) Hiệp hội thợ rèn của Liên minh Nosguard cấp bách cần một loại \"Tinh Thể Băng Vĩnh Đông\" chỉ có thể tìm thấy trên \"Băng Nguyên Vĩnh Đông\". Đây không chỉ là một chuyến hành trình nguy hiểm đi sâu vào bụng ma vật, mà còn là cơ hội giành được sự tôn trọng của những người Bắc phương kiên cường này.",
       "requiredLocation": "Khu vực Đông Bắc lục địa-Liên minh Nosguard"
+    },
+    {
+      "name": "Cuộn giấy Thượng cổ",
+      "description": "Khi băng qua biên giới Liên minh, bạn bị coi là quân phản loạn và bị ném vào xe tù. Không biết bao lâu đã trôi qua, bạn tỉnh lại trong sự rung lắc, phát hiện tay chân bị trói, bên cạnh là vài người cũng đang xám xịt mặt mày. Một người trong số họ thấy bạn mở mắt ra, thấp giọng chào: \"Này, cậu kia, cuối cùng cậu cũng tỉnh rồi.\"",
+      "requiredLocation": "Khu vực Đông Bắc lục địa-Liên minh Nosguard"
+    },
+    {
+      "name": "Quốc gia biên thùy",
+      "description": "(Khuyên dùng cho những người chọn cốt lõi Lily) Bạn sinh ra ở Giáo khu Trắng của Thành phố Than Thở, đó là nơi sinh của Bạch vu nữ Lily. Cô ấy hi vọng kỵ sĩ đại nhân có thể cùng cô, xoa dịu đi sự dơ bẩn của tất cả mọi người, vì mọi người mà lập một tấm bia mộ.",
+      "requiredLocation": "Khu vực miền Nam lục địa-Đầm lầy Bi Minh-Quốc gia biên thùy"
     },
     {
       "name": "Rừng Tĩnh Mịch",
