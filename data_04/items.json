@@ -1743,149 +1743,149 @@
       "description": "Một cây búa sắt vừa tay, một chiếc tạp dề da chắc chắn, tiếng gõ đập là khúc ca tuyệt vời nhất của người thợ."
     },
     {
-      "name": "锻造工匠套装",
+      "name": "Bộ Trang Bị Thợ Rèn",
       "cost": 80,
       "type": "Khác",
       "tag": [
-        "制作",
-        "锻造",
-        "套装"
+        "Chế tác",
+        "Rèn",
+        "Bộ trang bị"
       ],
       "rarity": "rare",
       "quantity": 1,
       "effect": {
-        "优势": "在[锻造]时获得+2加值。"
+        "Ưu thế": "Khi [Rèn] nhận +2 bonus."
       },
-      "description": "包含一套精良的锻造工具，恒温的淬火槽，自动调节风力的风箱，这套工具让繁重的锻造工作变得精准而高效。"
+      "description": "Bao gồm một bộ công cụ rèn tinh lương, bể tôi hằng nhiệt và ống bễ tự động điều chỉnh sức gió. Bộ công cụ này biến công việc rèn nặng nhọc trở nên chính xác và hiệu quả."
     },
     {
-      "name": "优质厨具",
+      "name": "Bộ Dụng Cụ Nấu Ăn Cao Cấp",
       "cost": 40,
       "type": "Khác",
       "tag": [
-        "制作",
-        "烹饪",
-        "套装"
+        "Chế tác",
+        "Nấu ăn",
+        "Bộ trang bị"
       ],
       "rarity": "uncommon",
       "quantity": 1,
       "effect": {
-        "优势": "在[烹饪]时获得+1加值，生产时间减少20%。"
+        "Ưu thế": "Khi [Nấu ăn] nhận +1 bonus, thời gian sản xuất giảm 20%."
       },
-      "description": "一整套制作精良的厨具，包含锅碗瓢盆，砧板厨刀等。"
+      "description": "Một bộ dụng cụ nhà bếp chế tác tinh xảo, bao gồm nồi chảo bát muỗng, thớt và dao bếp đủ cả."
     },
     {
-      "name": "柠檬牌缝纫机",
+      "name": "Máy May Ma Đạo Hiệu Chanh",
       "cost": 60,
       "type": "Khác",
       "tag": [
-        "制作",
-        "缝纫",
-        "魔导"
+        "Chế tác",
+        "May vá",
+        "Ma đạo"
       ],
       "rarity": "rare",
       "quantity": 1,
       "effect": {
-        "优势": "在[缝纫]时获得+2加值。",
-        "生产加速": "生产时间减少30%，使用时需消耗40 MP。"
+        "Ưu thế": "Khi [May vá] nhận +2 bonus.",
+        "Sản xuất tăng tốc": "Thời gian sản xuất giảm 30%, khi sử dụng cần tiêu hao 40 MP."
       },
-      "description": "由魔法协会研制的民用魔导缝纫机，可以大幅缩短贵妇们的制作时间。"
+      "description": "Máy may ma đạo dân dụng do Hiệp hội Ma pháp nghiên chế, có thể rút ngắn đáng kể thời gian chế tác cho các quý phu nhân."
     },
     {
-      "name": "永夜巡游者之哨",
+      "name": "Tiêu Địch Của Tuần Du Giả Vĩnh Dạ",
       "cost": 30,
       "type": "Khác",
       "tag": [
-        "召唤",
-        "载具"
+        "Triệu hồi",
+        "Phương tiện"
       ],
       "rarity": "rare",
       "quantity": 1,
       "effect": {
-        "召唤幽夜座驾": "在室外吹响后，可召唤一辆由两匹幽魂驹牵引的豪华马车[幽夜座驾]。马车可持续存在直到被遣散，可用于代步。"
+        "Triệu hồi U Dạ Tọa Kỵ": "Thổi vang ngoài trời, có thể triệu hồi một cỗ mã xa hoa lệ do hai con u hồn câu kéo [U Dạ Tọa Kỵ]. Mã xa tồn tại liên tục cho đến khi bị giải tán, có thể dùng để di chuyển."
       },
-      "description": "一支由黑曜石雕刻而成的哨笛，吹奏出的并非乐曲，而是来自亡灵位面的低语，呼唤着忠诚的仆从。"
+      "description": "Một chiếc tiêu địch được điêu khắc từ hắc diệu thạch, âm thanh phát ra không phải nhạc khúc mà là lời thì thầm từ vị diện vong linh, triệu gọi những tùy tùng trung thành."
     },
     {
-      "name": "柔情圣杯",
+      "name": "Nhu Tình Thánh Bôi",
       "cost": 30,
       "type": "Khác",
       "tag": [
-        "召唤",
-        "性玩具"
+        "Triệu hồi",
+        "Đồ chơi tình dục"
       ],
       "rarity": "rare",
       "quantity": 1,
       "effect": {
-        "召唤柔情猫娘": "使用后生成一只随机外观的[兽族-猫族]的无意识少女肉体用于发泄性欲，持续一小时。"
+        "Triệu hồi Nhu Tình Miêu Nương": "Sau khi sử dụng sẽ sinh ra một thân xác thiếu nữ [Thú tộc - Miêu tộc] có ngoại hình ngẫu nhiên, không có ý thức, dùng để giải tỏa dục vọng, tồn tại trong một giờ."
       },
-      "description": "一个粉色的猫耳圣杯，缓解每一个深夜的焦虑。"
+      "description": "Một chiếc thánh bôi tai mèo màu hồng, xoa dịu mỗi đêm khuya lo âu."
     },
     {
-      "name": "赌徒的幸运骰子",
+      "name": "Xúc Xắc May Mắn Của Đổ Đồ",
       "cost": 35,
       "type": "Khác",
       "tag": [
-        "工具",
-        "命运",
-        "概率"
+        "Công cụ",
+        "Mệnh vận",
+        "Xác suất"
       ],
       "rarity": "rare",
       "quantity": 1,
       "effect": {
-        "命运一掷": "每天可使用一次。当你面临一个选择时，投掷这对8面骰子。结果总和大于8，你的选择有更高几率导向正面结果；小于8则有更高几率导向负面结果。"
+        "Nhất trịch mệnh vận": "Mỗi ngày có thể sử dụng một lần. Khi bạn đối mặt với một lựa chọn, hãy gieo đôi xúc xắc 8 mặt này. Tổng kết quả lớn hơn 8, lựa chọn của bạn có xác suất cao hơn dẫn đến kết quả tích cực; nhỏ hơn 8 thì có xác suất cao hơn dẫn đến kết quả tiêu cực."
       },
-      "description": "一对由未知生物骨骼制成的骰子，上面猩红的点数似乎在微微搏动。每一次投掷，都是在与命运对赌。"
+      "description": "Một đôi xúc xắc được chế từ xương cốt sinh vật chưa rõ tên, những chấm đỏ thẫm trên đó tựa hồ đang vi vi mạch động. Mỗi lần gieo, chính là một canh bạc với mệnh vận."
     },
     {
-      "name": "野外生存套装",
+      "name": "Bộ Trang Bị Sinh Tồn Dã Ngoại",
       "cost": 40,
       "type": "Khác",
       "tag": [
-        "工具",
-        "野外",
-        "生存",
-        "套装"
+        "Công cụ",
+        "Dã ngoại",
+        "Sinh tồn",
+        "Bộ trang bị"
       ],
       "rarity": "rare",
       "quantity": 1,
       "effect": {
-        "内含物品": "包含全套野外生存所需工具与物资。",
-        "检定优势": "使用此套装进行采集或野营时，相关检定获得+2优势。"
+        "Vật phẩm bao gồm": "Bao gồm toàn bộ công cụ và vật tư cần thiết cho sinh tồn ngoài hoang dã.",
+        "Ưu thế kiểm định": "Khi sử dụng bộ trang bị này để thu thập hoặc cắm trại, kiểm định liên quan nhận +2 ưu thế."
       },
-      "description": "从砍柴、挖矿到烹饪、缝补，这个背包里应有尽有，足以让最挑剔的生存专家都点头称赞。"
+      "description": "Từ chặt củi, đào khoáng đến nấu ăn, vá may, chiếc ba lô này ứng hữu tận hữu, đủ khiến chuyên gia sinh tồn khắt khe nhất cũng phải gật đầu tán thưởng."
     },
     {
-      "name": "古代炼金傀儡核心",
+      "name": "Lõi Hạch Ngẫu Luyện Kim Cổ Đại",
       "cost": 36,
-      "type": "材料",
+      "type": "Nguyên liệu",
       "tag": [
-        "制作",
-        "炼金",
-        "核心"
+        "Chế tác",
+        "Luyện kim",
+        "Lõi hạch"
       ],
       "rarity": "epic",
       "quantity": 1,
       "effect": {
-        "核心部件": "用于制作史诗或传说品质炼金傀儡的核心部件。",
-        "强大动力": "可为傀儡提供强大的动力源。"
+        "Bộ phận cốt lõi": "Dùng để chế tác bộ phận cốt lõi cho ngẫu luyện kim phẩm chất sử thi hoặc truyền thuyết.",
+        "Động lực mạnh mẽ": "Có thể cung cấp nguồn động lực mạnh mẽ cho ngẫu."
       },
-      "description": "一颗仍在缓慢搏动的金属心脏，其中封存着古代魔像的强大能量与失落的工艺。"
+      "description": "Một trái tim kim loại vẫn đang chậm rãi mạch động, bên trong phong ấn năng lượng mạnh mẽ của ma tượng cổ đại cùng công nghệ đã thất truyền."
     },
     {
-      "name": "思念水晶",
+      "name": "Tư Niệm Thủy Tinh",
       "cost": 50,
       "type": "Khác",
       "tag": [
-        "工具",
-        "通讯"
+        "Công cụ",
+        "Thông tin"
       ],
       "rarity": "epic",
       "quantity": 1,
       "effect": {
-        "远程通讯": "消耗200MP，可与一名你熟知的目标进行一次远程魔法通讯，持续10分钟。"
+        "Thông tin viễn trình": "Tiêu hao 200MP, có thể tiến hành một lần thông tin ma pháp viễn trình với một mục tiêu bạn quen biết, kéo dài 10 phút."
       },
-      "description": "一掌可握的心形深红魔法水晶。据说它是由一对恋人至死不渝的思念凝结而成，能够跨越千山万水传递彼此的声音与影像。"
+      "description": "Viên thủy tinh ma pháp hình trái tim đỏ thẫm vừa nắm trong lòng bàn tay. Tương truyền nó được ngưng kết từ nỗi nhớ nhung chí tử bất du của một đôi tình nhân, có thể vượt qua ngàn sơn vạn thủy để truyền đi thanh âm và ảnh tượng của nhau."
     },
     {
       "name": "Thẻ bài ác tác kịch",
