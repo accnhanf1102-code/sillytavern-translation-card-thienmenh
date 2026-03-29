@@ -260,7 +260,8 @@
             entries = Object.keys(data.entries).map(key => ({ id: key, ...data.entries[key] }));
             document.getElementById('welcome-screen').classList.add('hidden');
             document.getElementById('file-status').innerText = `Lorebook: ${fileName}`;
-            switchMode(currentMode);
+            switchMode('read');
+            renderViews();
         }
 
         function switchMode(mode) {
@@ -289,11 +290,22 @@
             list.innerHTML = '';
             
             if (!categoryMap) {
-                list.innerHTML = '<div class="p-8 text-center text-slate-600 italic text-[11px]">Bấm "Load Map" để nạp bộ lọc...</div>';
+                list.innerHTML = `
+                    <button onclick="activeReadCategory = 'all'; renderReadView();" class="w-full text-left px-3 py-2.5 rounded-lg border flex items-center justify-between group transition-all ${activeReadCategory === 'all' || !activeReadCategory ? 'bg-accent/10 border-accent text-accent' : 'border-transparent hover:bg-white/5 text-slate-400'}">
+                        <span class="text-[11px] font-bold tracking-tight">All Entries</span>
+                        <span class="text-[9px] bg-slate-800/80 px-1.5 py-0.5 rounded-md text-slate-500 font-mono">${entries.length}</span>
+                    </button>
+                    <div class="p-8 text-center text-slate-600 italic text-[10px] mt-4">Nạp tệp Map để phân loại...</div>`;
                 return;
             }
 
             const sortedKeys = Object.keys(categoryMap).sort();
+            
+            // Auto-select first category if none selected
+            if (!activeReadCategory && sortedKeys.length > 0) {
+                activeReadCategory = sortedKeys[0];
+            }
+
             sortedKeys.forEach(catName => {
                 const style = getCategoryStyle(catName);
                 const isActive = activeReadCategory === catName;
@@ -308,7 +320,7 @@
                 
                 btn.onclick = () => {
                    activeReadCategory = catName;
-                   activeReadEntryId = null; // Reset entry selection
+                   activeReadEntryId = null;
                    renderReadView();
                 };
                 list.appendChild(btn);
@@ -322,28 +334,37 @@
             
             list.innerHTML = '';
 
-            if (!activeReadCategory) {
-                title.innerText = 'Entries';
-                list.innerHTML = '<div class="h-40 flex items-center justify-center text-slate-700 text-[11px] italic">Chọn chuyên mục bên trái...</div>';
-                return;
+            if (!activeReadCategory && !categoryMap) {
+                activeReadCategory = 'all';
             }
 
-            title.innerText = activeReadCategory;
-            const uids = categoryMap[activeReadCategory] || [];
-            
-            // Map UIDs to actual lorebook entries
-            const filteredEntries = uids
-                .map(uid => entries.find(e => e.id === uid.toString()))
-                .filter(e => e && e.comment.toLowerCase().includes(searchVal));
+            let filteredEntries = [];
+            if (activeReadCategory === 'all' || !categoryMap) {
+                title.innerText = 'All Entries';
+                filteredEntries = entries.filter(e => e.comment.toLowerCase().includes(searchVal));
+            } else {
+                title.innerText = activeReadCategory;
+                const uids = categoryMap[activeReadCategory] || [];
+                filteredEntries = uids
+                    .map(uid => entries.find(e => e.id === uid.toString()))
+                    .filter(e => e && e.comment.toLowerCase().includes(searchVal));
+            }
 
             if (filteredEntries.length === 0) {
                  list.innerHTML = '<div class="p-4 text-center text-slate-700 text-[10px] italic">Không có thẻ nào phù hợp</div>';
+                 return;
+            }
+
+            // Auto-select first entry if none selected
+            if (!activeReadEntryId && filteredEntries.length > 0) {
+                activeReadEntryId = filteredEntries[0].id;
+                renderReadPane();
             }
 
             filteredEntries.forEach(e => {
                 const isActive = activeReadEntryId === e.id;
                 const div = document.createElement('button');
-                div.className = `w-full text-left p-3 rounded-xl border transition-all duration-200 group ${isActive ? 'bg-accent border-accent' : 'bg-cardBg border-border hover:border-slate-500'}`;
+                div.className = `w-full text-left p-3 rounded-xl border transition-all duration-200 group ${isActive ? 'bg-accent border-accent shadow-lg shadow-accent/20' : 'bg-cardBg border-border hover:border-slate-500'}`;
                 div.title = e.comment;
                 div.innerHTML = `
                     <p class="text-[12px] font-bold truncate ${isActive ? 'text-white' : 'text-slate-300 group-hover:text-white'}">${e.comment}</p>
@@ -352,7 +373,7 @@
                 div.onclick = () => {
                     activeReadEntryId = e.id;
                     renderReadPane();
-                    renderReadEntriesList(); // Force styling update
+                    renderReadEntriesList();
                 };
                 list.appendChild(div);
             });
