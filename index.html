@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorebook Workspace</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f111a',
+                        cardBg: '#1a1d27',
+                        border: '#2a2e3d',
+                        accent: '#6366f1',
+                        accentHover: '#4f46e5'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', "Liberation Mono", "Courier New", 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { 
+            background-color: #0f111a; 
+            color: #f1f5f9; 
+            overflow: hidden;
+        }
+        .custom-scroll::-webkit-scrollbar { width: 4px; height: 4px; }
+        .custom-scroll::-webkit-scrollbar-track { background: transparent; }
+        .custom-scroll::-webkit-scrollbar-thumb { background: #2a2e3d; border-radius: 10px; }
+        .custom-scroll::-webkit-scrollbar-thumb:hover { background: #4b5563; }
+        
+        .tab-active { border-bottom: 2px solid #6366f1; color: #f1f5f9 !important; }
+        .drag-over { border: 2px dashed #6366f1 !important; background: rgba(99, 102, 241, 0.05); }
+        .truncate-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        [contenteditable]:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.05);
+            border-bottom: 1px solid #6366f1;
+        }
+        .bg-glass { background: rgba(26, 29, 39, 0.7); backdrop-blur: 10px; }
+    </style>
+</head>
+<body class="font-sans antialiased h-screen flex flex-col">
+
+    <!-- Header Navigation -->
+    <header class="h-16 border-b border-border bg-cardBg/80 backdrop-blur-md flex items-center justify-between px-6 z-20 sticky top-0">
+        <div class="flex items-center space-x-8 h-full">
+            <h1 class="text-xl font-black tracking-tight text-accent flex items-center">
+                <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18 18.246 18.477 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                LB WORKSPACE
+            </h1>
+            <nav class="flex h-full items-center space-x-6">
+                <button onclick="switchMode('read')" id="btn-read" class="h-full px-2 text-slate-400 font-bold text-[13px] tracking-widest hover:text-slate-200 transition-colors uppercase tab-active">Read Mode</button>
+                <button onclick="switchMode('category')" id="btn-category" class="h-full px-2 text-slate-400 font-bold text-[13px] tracking-widest hover:text-slate-200 transition-colors uppercase">Category Mode</button>
+            </nav>
+        </div>
+        
+        <div class="flex items-center space-x-3">
+            <div id="file-status" class="text-[10px] text-slate-500 bg-slate-800/50 px-3 py-1.5 rounded-full border border-border hidden lg:block">No file loaded</div>
+            <button onclick="document.getElementById('fileInput').click()" class="bg-slate-800 hover:bg-slate-700 text-white text-[11px] font-bold px-3 py-2 rounded-lg border border-border shadow-sm">Load Lorebook</button>
+            <button onclick="document.getElementById('mapInput').click()" class="bg-slate-800 hover:bg-slate-700 text-white text-[11px] font-bold px-3 py-2 rounded-lg border border-border shadow-sm">Load Map</button>
+            <div class="h-6 w-px bg-border mx-1"></div>
+            <button onclick="exportJSON()" class="text-slate-400 hover:text-slate-200 text-[11px] font-bold px-3 py-2 transition-colors">JSON</button>
+            <button onclick="exportMapJSON()" class="bg-accent hover:bg-accentHover text-white text-[11px] font-bold px-4 py-2 rounded-lg transition-all shadow-lg shadow-accent/20">Map Export</button>
+            
+            <input type="file" id="fileInput" accept=".json" class="hidden" onchange="handleFileUpload(event)"/>
+            <input type="file" id="mapInput" accept=".json" class="hidden" onchange="handleMapUpload(event)"/>
+        </div>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main id="view-container" class="flex-1 relative overflow-hidden">
+        
+        <!-- Welcome Screen -->
+        <div id="welcome-screen" class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center animate-in fade-in zoom-in duration-500 bg-darkBg">
+            <div class="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mb-6 border border-accent/20 shadow-2xl">
+                <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+            </div>
+            <h2 class="text-3xl font-black mb-2 tracking-tight">Lorebook Workspace</h2>
+            <p class="text-slate-400 max-w-sm mb-8 leading-relaxed text-sm">Vui lòng nạp <code class="bg-slate-800 text-slate-300 px-1.5 py-0.5 rounded font-mono text-[12px]">v4.2.json</code> và <code class="bg-slate-800 text-slate-300 px-1.5 py-0.5 rounded font-mono text-[12px]">4.2.json</code> (Map) để bắt đầu.</p>
+            <div class="flex space-x-4">
+                <button onclick="document.getElementById('fileInput').click()" class="bg-accent px-8 py-3 rounded-xl font-bold hover:scale-105 transition-transform shadow-lg shadow-accent/20">Tải Lorebook</button>
+            </div>
+        </div>
+
+        <!-- READ MODE VIEW (3 Columns Pane) -->
+        <div id="read-view" class="hidden absolute inset-0 flex">
+            <!-- Col 1: Categories Sidebar -->
+            <aside class="w-64 border-r border-border bg-darkBg flex flex-col">
+                <div class="p-4 border-b border-border">
+                    <h3 class="text-[10px] font-black text-slate-500 uppercase tracking-widest">Map Categories</h3>
+                </div>
+                <div id="read-categories-list" class="flex-1 overflow-y-auto p-2 space-y-1 custom-scroll">
+                    <div class="p-8 text-center text-slate-600 italic text-[11px]">Nạp tệp Map đề phân loại...</div>
+                </div>
+            </aside>
+
+            <!-- Col 2: Cards List -->
+            <aside class="w-80 border-r border-border bg-[#13151f] flex flex-col">
+                <div class="p-4 border-b border-border flex flex-col space-y-3">
+                    <h3 id="current-read-cat-title" class="text-[11px] font-black text-slate-400 uppercase tracking-widest">Entries</h3>
+                    <div class="relative">
+                        <input id="search-read-entries" type="text" placeholder="Filter..." class="w-full bg-slate-900 border border-border text-xs rounded-lg px-3 py-2 outline-none focus:border-accent transition-colors pl-8"/>
+                        <svg class="w-3.5 h-3.5 text-slate-600 absolute left-2.5 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                </div>
+                <div id="read-entries-list" class="flex-1 overflow-y-auto p-2 space-y-2 custom-scroll"></div>
+            </aside>
+
+            <!-- Col 3: Reading Pane -->
+            <section class="flex-1 bg-darkBg p-8 overflow-y-auto custom-scroll relative">
+                <div id="read-pane-content" class="max-w-3xl mx-auto space-y-12">
+                     <div class="h-full flex items-center justify-center text-slate-700 opacity-20">
+                          <svg class="w-32 h-32" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18 18.246 18.477 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                     </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- CATEGORY MODE VIEW (Kanban - Original Workspace) -->
+        <div id="category-view" class="hidden absolute inset-0 flex">
+            <!-- Left: Library (Unfiltered Content) -->
+            <aside class="w-80 border-r border-border bg-darkBg flex flex-col">
+                <div class="p-4 border-b border-border space-y-3">
+                    <h3 class="text-xs font-black text-slate-500 uppercase tracking-widest">Source Library</h3>
+                    <div class="relative">
+                        <input id="search-library" type="text" placeholder="Search entries..." class="w-full bg-slate-900 border border-border text-sm rounded-lg px-3 py-2 outline-none focus:border-accent transition-colors pl-9"/>
+                        <svg class="w-4 h-4 text-slate-500 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                </div>
+                <div id="library-list" class="flex-1 overflow-y-auto p-3 space-y-2 custom-scroll"></div>
+            </aside>
+
+            <!-- Middle: Active Group dropzone -->
+            <section class="flex-1 bg-slate-900/40 p-6 flex flex-col space-y-4">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h2 id="active-group-title" class="text-2xl font-black tracking-tight">Select a Group</h2>
+                        <p id="active-group-count" class="text-xs text-slate-500 font-mono mt-1 uppercase">0 entries assigned</p>
+                    </div>
+                </div>
+                
+                <div id="dropzone" class="flex-1 border-2 border-dashed border-slate-800 rounded-2xl flex flex-wrap items-start content-start gap-4 p-4 overflow-y-auto custom-scroll transition-all" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event)">
+                    <div id="drop-placeholder" class="m-auto text-slate-600 flex flex-col items-center">
+                        <svg class="w-12 h-12 mb-3 opacity-20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"></path></svg>
+                        <p class="text-sm font-medium">Bấm chọn Group hoặc kéo thẻ vào đây</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right: Groups Manager -->
+            <aside class="w-72 border-l border-border bg-darkBg flex flex-col overflow-hidden">
+                <div class="p-4 border-b border-border space-y-4">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-xs font-black text-slate-500 uppercase tracking-widest">Groups Panel</h3>
+                        <span class="text-[10px] text-slate-600 italic">Click to rename</span>
+                    </div>
+                    <div class="flex space-x-2">
+                        <input id="new-group-name" type="text" placeholder="Group name..." class="flex-1 bg-slate-900 border border-border text-[11px] rounded-lg px-3 py-2 outline-none focus:border-accent transition-colors"/>
+                        <button onclick="addNewGroup()" class="bg-accent/20 hover:bg-accent/30 text-accent p-2 rounded-lg transition-colors border border-accent/30">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                        </button>
+                    </div>
+                </div>
+                <div id="groups-list" class="flex-1 overflow-y-auto p-4 space-y-2 custom-scroll"></div>
+            </aside>
+        </div>
+
+    </main>
+
+    <script>
+        // --- GLOBAL STATE ---
+        let rawData = null; 
+        let entries = [];   
+        let categoryMap = null; // Filter mapping from external JSON
+        let currentMode = 'read';
+        let activeGroupId = null; // For Kanban/Category Mode
+        
+        let activeReadCategory = null; 
+        let activeReadEntryId = null; 
+        
+        let currentFileSource = null;
+
+        // --- PALETTE GENERATOR ---
+        const pastelColors = [
+            { bg: 'bg-blue-500/10', text: 'text-blue-200', border: 'border-blue-500/40' },
+            { bg: 'bg-indigo-500/10', text: 'text-indigo-200', border: 'border-indigo-500/40' },
+            { bg: 'bg-purple-500/10', text: 'text-purple-200', border: 'border-purple-500/40' },
+            { bg: 'bg-pink-500/10', text: 'text-pink-200', border: 'border-pink-500/40' },
+            { bg: 'bg-rose-500/10', text: 'text-rose-200', border: 'border-rose-500/40' },
+            { bg: 'bg-orange-500/10', text: 'text-orange-200', border: 'border-orange-500/40' },
+            { bg: 'bg-amber-500/10', text: 'text-amber-200', border: 'border-amber-500/40' },
+            { bg: 'bg-emerald-500/10', text: 'text-emerald-200', border: 'border-emerald-500/40' },
+            { bg: 'bg-teal-500/10', text: 'text-teal-200', border: 'border-teal-500/40' },
+            { bg: 'bg-sky-500/10', text: 'text-sky-200', border: 'border-sky-500/40' }
+        ];
+
+        function getCategoryStyle(name) {
+            let hash = 0;
+            for (let i = 0; i < name.length; i++) hash = name.charCodeAt(i) + ((hash << 5) - hash);
+            const index = Math.abs(hash % pastelColors.length);
+            return pastelColors[index];
+        }
+
+        // --- CORE FUNCTIONS ---
+        
+        async function initFromFetch() {
+            try {
+                const loreResponse = await fetch('V4.2/Lorebook/v4.2.json');
+                if (loreResponse.ok) processData(await loreResponse.json(), 'v4.2.json');
+                
+                const mapResponse = await fetch('V4.2/library_category/4.2.json');
+                if (mapResponse.ok) {
+                    categoryMap = await mapResponse.json();
+                    renderViews();
+                }
+            } catch (e) { console.log('Auto-fetch blocked or failed.'); }
+        }
+
+        function handleFileUpload(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = (evt) => {
+                try { processData(JSON.parse(evt.target.result), file.name); } 
+                catch (err) { alert("Lỗi đọc file JSON: " + err.message); }
+            };
+            reader.readAsText(file);
+        }
+
+        function handleMapUpload(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = (evt) => {
+                try { 
+                    categoryMap = JSON.parse(evt.target.result); 
+                    renderViews(); 
+                } catch (err) { alert("Lỗi đọc file Map JSON: " + err.message); }
+            };
+            reader.readAsText(file);
+        }
+
+        function processData(data, fileName) {
+            rawData = data;
+            currentFileSource = fileName;
+            entries = Object.keys(data.entries).map(key => ({ id: key, ...data.entries[key] }));
+            document.getElementById('welcome-screen').classList.add('hidden');
+            document.getElementById('file-status').innerText = `Lorebook: ${fileName}`;
+            renderViews();
+        }
+
+        function switchMode(mode) {
+            currentMode = mode;
+            document.getElementById('btn-read').classList.toggle('tab-active', mode === 'read');
+            document.getElementById('btn-category').classList.toggle('tab-active', mode === 'category');
+            document.getElementById('read-view').classList.toggle('hidden', mode !== 'read');
+            document.getElementById('category-view').classList.toggle('hidden', mode !== 'category');
+            if (rawData) renderViews();
+        }
+
+        function renderViews() {
+            if (currentMode === 'read') renderReadView();
+            else renderCategoryMode();
+        }
+
+        // --- NEW READ MODE (3 COLUMNS) ---
+        function renderReadView() {
+            renderReadCategories();
+            renderReadEntriesList();
+            renderReadPane();
+        }
+
+        function renderReadCategories() {
+            const list = document.getElementById('read-categories-list');
+            list.innerHTML = '';
+            
+            if (!categoryMap) {
+                list.innerHTML = '<div class="p-8 text-center text-slate-600 italic text-[11px]">Bấm "Load Map" để nạp bộ lọc...</div>';
+                return;
+            }
+
+            const sortedKeys = Object.keys(categoryMap).sort();
+            sortedKeys.forEach(catName => {
+                const style = getCategoryStyle(catName);
+                const isActive = activeReadCategory === catName;
+                
+                const btn = document.createElement('button');
+                btn.className = `w-full text-left px-3 py-2.5 rounded-lg border flex items-center justify-between group transition-all duration-200 ${isActive ? style.bg + ' ' + style.border : 'border-transparent hover:bg-white/5'}`;
+                
+                btn.innerHTML = `
+                    <span class="text-[11px] font-bold tracking-tight truncate pl-1 ${isActive ? style.text : 'text-slate-400 group-hover:text-slate-200'}">${catName}</span>
+                    <span class="text-[9px] bg-slate-800/80 px-1.5 py-0.5 rounded-md text-slate-500 font-mono">${categoryMap[catName].length}</span>
+                `;
+                
+                btn.onclick = () => {
+                   activeReadCategory = catName;
+                   activeReadEntryId = null; // Reset entry selection
+                   renderReadView();
+                };
+                list.appendChild(btn);
+            });
+        }
+
+        function renderReadEntriesList() {
+            const list = document.getElementById('read-entries-list');
+            const searchVal = document.getElementById('search-read-entries').value.toLowerCase();
+            const title = document.getElementById('current-read-cat-title');
+            
+            list.innerHTML = '';
+
+            if (!activeReadCategory) {
+                title.innerText = 'Entries';
+                list.innerHTML = '<div class="h-40 flex items-center justify-center text-slate-700 text-[11px] italic">Chọn chuyên mục bên trái...</div>';
+                return;
+            }
+
+            title.innerText = activeReadCategory;
+            const uids = categoryMap[activeReadCategory] || [];
+            
+            // Map UIDs to actual lorebook entries
+            const filteredEntries = uids
+                .map(uid => entries.find(e => e.id === uid.toString()))
+                .filter(e => e && e.comment.toLowerCase().includes(searchVal));
+
+            if (filteredEntries.length === 0) {
+                 list.innerHTML = '<div class="p-4 text-center text-slate-700 text-[10px] italic">Không có thẻ nào phù hợp</div>';
+            }
+
+            filteredEntries.forEach(e => {
+                const isActive = activeReadEntryId === e.id;
+                const div = document.createElement('button');
+                div.className = `w-full text-left p-3 rounded-xl border transition-all duration-200 group ${isActive ? 'bg-accent border-accent' : 'bg-cardBg border-border hover:border-slate-500'}`;
+                div.title = e.comment;
+                div.innerHTML = `
+                    <p class="text-[12px] font-bold truncate ${isActive ? 'text-white' : 'text-slate-300 group-hover:text-white'}">${e.comment}</p>
+                    <p class="text-[10px] mt-1 truncate ${isActive ? 'text-white/60' : 'text-slate-500'} font-mono">${e.content.substring(0, 40)}...</p>
+                `;
+                div.onclick = () => {
+                    activeReadEntryId = e.id;
+                    renderReadPane();
+                    renderReadEntriesList(); // Force styling update
+                };
+                list.appendChild(div);
+            });
+        }
+        document.getElementById('search-read-entries').oninput = renderReadEntriesList;
+
+        function renderReadPane() {
+            const pane = document.getElementById('read-pane-content');
+            
+            if (!activeReadEntryId) {
+                pane.innerHTML = `<div class="h-full flex flex-col items-center justify-center text-slate-700/50 mt-32">
+                    <svg class="w-24 h-24 mb-4 stroke-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18 18.246 18.477 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    <p class="text-xs font-mono uppercase tracking-[0.2em]">Select an entry to read</p>
+                </div>`;
+                return;
+            }
+
+            const entry = entries.find(e => e.id === activeReadEntryId);
+            if (!entry) return;
+
+            const style = activeReadCategory ? getCategoryStyle(activeReadCategory) : { text: 'text-accent' };
+
+            pane.innerHTML = `
+                <div class="space-y-10 animate-in fade-in slide-in-from-top-4 duration-500">
+                    <header class="space-y-4">
+                        <span class="inline-block px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest ${style.bg} ${style.text} ${style.border} border">${activeReadCategory || 'Untracked'}</span>
+                        <h2 class="text-4xl md:text-5xl font-black tracking-tighter text-white leading-none">${entry.comment}</h2>
+                    </header>
+                    <div class="h-px w-full bg-gradient-to-r from-border to-transparent"></div>
+                    <article class="prose prose-invert max-w-none">
+                        <div class="text-slate-300 font-mono text-sm md:text-base leading-relaxed whitespace-pre-wrap selection:bg-accent selection:text-white">${entry.content.replace(/\n/g, '<br>')}</div>
+                    </article>
+                </div>
+            `;
+        }
+
+        // --- CATEGORY MODE (KANBAN) ---
+        function renderCategoryMode() {
+            renderLibrary();
+            renderGroupsPanel();
+            renderDropzone();
+        }
+
+        function renderLibrary() {
+            const list = document.getElementById('library-list');
+            const searchVal = document.getElementById('search-library').value.toLowerCase();
+            list.innerHTML = '';
+            entries.filter(e => e.comment.toLowerCase().includes(searchVal)).forEach(e => {
+                const div = document.createElement('div');
+                div.className = `p-3 bg-cardBg rounded-xl border border-border cursor-grab active:cursor-grabbing hover:border-slate-500 transition-all ${e.group ? 'opacity-40' : ''}`;
+                div.draggable = true;
+                div.title = e.comment;
+                div.innerHTML = `
+                    <p class="text-[10px] font-black text-accent uppercase mb-1 truncate">${e.group || 'No Group'}</p>
+                    <p class="text-xs font-bold truncate text-slate-300">${e.comment}</p>
+                `;
+                div.ondragstart = (evt) => { evt.dataTransfer.setData('text/entry-id', e.id); evt.target.style.opacity = '0.5'; };
+                div.ondragend = (evt) => { evt.target.style.opacity = e.group ? '0.4' : '1'; };
+                list.appendChild(div);
+            });
+        }
+        document.getElementById('search-library').oninput = renderLibrary;
+
+        function renderGroupsPanel() {
+            const list = document.getElementById('groups-list');
+            list.innerHTML = '';
+            const groups = new Set();
+            entries.forEach(e => { if(e.group) groups.add(e.group); });
+            const sortedGroups = Array.from(groups).sort();
+            
+            if (sortedGroups.length === 0) list.innerHTML = `<div class="text-[11px] text-slate-600 text-center py-10 italic">No groups found</div>`;
+
+            sortedGroups.forEach(grp => {
+                const isActive = activeGroupId === grp;
+                const style = getCategoryStyle(grp);
+                const div = document.createElement('div');
+                div.className = `w-full p-2.5 rounded-xl border transition-all flex items-center justify-between group-container ${isActive ? style.bg + ' ' + style.border : 'bg-cardBg border-border hover:border-slate-500'}`;
+                
+                div.innerHTML = `
+                    <span contenteditable="true" class="text-[11px] font-bold uppercase truncate outline-none px-2 ${isActive ? style.text : 'text-slate-400'}">${grp}</span>
+                    <button class="select-btn p-1 rounded-md hover:bg-slate-700 transition-colors">
+                        <svg class="w-4 h-4 text-slate-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                    </button>
+                `;
+                
+                const span = div.querySelector('span');
+                span.onblur = () => {
+                    const newName = span.innerText.trim();
+                    if(newName && newName !== grp) {
+                         entries.forEach(e => { if(e.group === grp) e.group = newName; });
+                         if(activeGroupId === grp) activeGroupId = newName;
+                         renderCategoryMode();
+                    } else span.innerText = grp;
+                };
+                
+                div.querySelector('.select-btn').onclick = () => { activeGroupId = grp; renderCategoryMode(); };
+                list.appendChild(div);
+            });
+        }
+
+        function renderDropzone() {
+            const container = document.getElementById('dropzone');
+            const placeholder = document.getElementById('drop-placeholder');
+            const title = document.getElementById('active-group-title');
+            const count = document.getElementById('active-group-count');
+            container.querySelectorAll('.entry-card').forEach(c => c.remove());
+            
+            if (!activeGroupId) {
+                placeholder.classList.remove('hidden');
+                title.innerText = "Select a Group";
+                count.innerText = "0 entries";
+                return;
+            }
+
+            placeholder.classList.add('hidden');
+            title.innerText = activeGroupId;
+            const groupEntries = entries.filter(e => e.group === activeGroupId);
+            count.innerText = `${groupEntries.length} entries assigned`;
+
+            groupEntries.forEach(e => {
+                const card = document.createElement('div');
+                card.className = "entry-card w-40 p-3 bg-cardBg border border-border rounded-xl shadow-lg relative group";
+                card.title = e.comment;
+                card.innerHTML = `
+                    <button onclick="removeFromGroup('${e.id}')" class="absolute top-1 right-1 p-1 text-red-500 opacity-0 group-hover:opacity-100"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"></path></svg></button>
+                    <h4 class="text-[10px] font-bold mb-1 truncate text-slate-100">${e.comment}</h4>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function addNewGroup() {
+            const name = document.getElementById('new-group-name').value.trim();
+            if (!name) return;
+            activeGroupId = name;
+            document.getElementById('new-group-name').value = '';
+            renderCategoryMode();
+        }
+
+        // --- DRAG / DROP ---
+        function handleDragOver(e) { e.preventDefault(); if(activeGroupId) document.getElementById('dropzone').classList.add('drag-over'); }
+        function handleDragLeave(e) { document.getElementById('dropzone').classList.remove('drag-over'); }
+        function handleDrop(e) {
+            e.preventDefault(); document.getElementById('dropzone').classList.remove('drag-over');
+            const id = e.dataTransfer.getData('text/entry-id');
+            const entry = entries.find(ent => ent.id === id);
+            if (entry && activeGroupId) { entry.group = activeGroupId; renderCategoryMode(); }
+        }
+        function removeFromGroup(id) {
+            const entry = entries.find(ent => ent.id === id);
+            if (entry) { entry.group = ''; renderCategoryMode(); }
+        }
+
+        // --- EXPORT ---
+        function exportJSON() {
+            const exportData = JSON.parse(JSON.stringify(rawData));
+            entries.forEach(e => { const { id, ...of } = e; exportData.entries[id] = of; });
+            downloadFile(exportData, `lb_${currentFileSource || 'lore.json'}`);
+        }
+        function exportMapJSON() {
+            const map = {};
+            entries.forEach(e => { if(e.group) { if(!map[e.group]) map[e.group] = []; map[e.group].push(e.id); } });
+            downloadFile(map, 'lb_map.json');
+        }
+        function downloadFile(obj, name) {
+            const blob = new Blob([JSON.stringify(obj, null, 4)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a'); a.href = url; a.download = name; a.click(); URL.revokeObjectURL(url);
+        }
+
+        initFromFetch();
+    </script>
+</body>
+</html>
