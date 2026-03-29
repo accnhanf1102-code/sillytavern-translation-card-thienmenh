@@ -260,7 +260,7 @@
             entries = Object.keys(data.entries).map(key => ({ id: key, ...data.entries[key] }));
             document.getElementById('welcome-screen').classList.add('hidden');
             document.getElementById('file-status').innerText = `Lorebook: ${fileName}`;
-            renderViews();
+            switchMode(currentMode);
         }
 
         function switchMode(mode) {
