@@ -7,7 +7,7 @@ import 'https://testingcf.jsdelivr.net/gh/accnhanf1102-code/sillytavern-translat
 apiconfig
 import 'https://testingcf.jsdelivr.net/gh/accnhanf1102-code/sillytavern-translation-card-thienmenh@main/V4.2/Plugin/apiConfigBubble.js'
 Fp Shop
-import 'https://testingcf.jsdelivr.net/gh/accnhanf1102-code/sillytavern-translation-card-thienmenh@main/V4.2/Plugin/fpshop.js'
+import 'https://testingcf.jsdelivr.net/gh/accnhanf1102-code/sillytavern-translation-card-thienmenh@main/V4.2/Plugin/fpShop.js'
 
 Map-Marker (in Fp Shop)
 'https://testingcf.jsdelivr.net/gh/accnhanf1102-code/sillytavern-translation-card-thienmenh@main/V4.2/Plugin/map_marker.json'
