@@ -319,7 +319,7 @@
         try {
             // Lấy URL của script hiện tại để tìm file JSON cùng thư mục
             const scripts = document.getElementsByTagName('script');
-            let scriptPath = '';
+            let scriptPath = 'https://testingcf.jsdelivr.net/gh/accnhanf1102-code/sillytavern-translation-card-thienmenh@main/v4.2/plugin/map_marker.json';
             for (let s of scripts) {
                 if (s.src.includes('fpShopBubble Codex.js')) {
                     scriptPath = s.src.substring(0, s.src.lastIndexOf('/') + 1);
@@ -1701,6 +1701,7 @@
                         <li style="margin-bottom: 8px;">Có thể <b>điều chỉnh lượng từ ngữ</b> dùng để mô tả ở góc trên bên phải (Mô tả ngắn gọn/vừa phải/Đầy Đủ).</li>
                         <li style="margin-bottom: 8px;">Có thể <b>điều chỉnh Số Lượng Linh Phục Hệ Thống</b> ở góc trên bên phải. Mỗi Linh Phục Hệ Thống sẽ truy xuất được 1 số lượng nhất định Vật Phẩm/Trang Bị/Kỹ Năng. Càng nhiều thì sẽ càng có nhiều vật phẩm được bán.</li>
                         <li style="margin-bottom: 8px;">Có thể <b>tạm thời tắt bảng điều khiển</b> (Close) trong quá trình chờ truy xuất; hệ thống vẫn sẽ tiếp tục làm việc ngầm.</li>
+                        <li style="margin-bottom: 8px;"><b>Khuyến nghị sử dụng</b> model <b>gemini-3-flash-preview</b> hoặc các model nhẹ tương tự để có tốc độ phản hồi tối ưu.</li>
                         <li style="opacity: 0.8; font-size: 12px; font-style: italic;">Lưu ý: Đôi khi Linh Phục có thể gặp "tai nạn đáng tiếc" trong quá trình truy xuất nên việc dùng nhiều Linh Phục cũng giúp giảm tỉ lệ thất bại hoàn toàn.</li>
                     </ul>
                 </div>
