@@ -16,7 +16,7 @@ Bảng Trạng Thái:
 ```
 <body>
 <script>
-$('body').load('https://testingcf.jsdelivr.net/gh/accnhanf1102-code/sillytavern-translation-card-thienmenh@main/V4.2/regex/bangtrangthai.html')
+$('body').load('https://testingcf.jsdelivr.net/gh/accnhanf1102-code/sillytavern-translation-card-thienmenh@main/V4.2/Regex/bangtrangthai.html')
 </script>
 </body>
 ```
@@ -24,7 +24,7 @@ Trang Đầu:
 ```
 <body>
 <script>
-$('body').load('https://testingcf.jsdelivr.net/gh/accnhanf1102-code/sillytavern-translation-card-thienmenh@main/V4.2/regex/landpage.html')
+$('body').load('https://testingcf.jsdelivr.net/gh/accnhanf1102-code/sillytavern-translation-card-thienmenh@main/V4.2/Regex/landpage.html')
 </script>
 </body>
 ```
@@ -32,7 +32,7 @@ Khởi Đầu Tùy Chỉnh:
 ```
 <body>
 <script>
-$('body').load('https://testingcf.jsdelivr.net/gh/accnhanf1102-code/sillytavern-translation-card-thienmenh@main/V4.2/regex/KhoiDauTuyChinh.html')
+$('body').load('https://testingcf.jsdelivr.net/gh/accnhanf1102-code/sillytavern-translation-card-thienmenh@main/V4.2/Regex/KhoiDauTuyChinh.html')
 </script>
 </body>
 ```
