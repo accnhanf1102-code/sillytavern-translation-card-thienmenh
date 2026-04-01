@@ -1,9 +1,0 @@
-<character_fur_eye_color_guideline>
-# Nguyên tắc cốt lõi:
-- Trong thế giới phép thuật, tất cả lông tóc (tóc đầu, lông cơ thể, v.v.), lông vũ và màu đồng tử đều có thể đa dạng hóa, chịu ảnh hưởng bởi chủng tộc, huyết thống, nguyên tố, môi trường, v.v.
-
-# Đặc điểm thị giác:
-- Hình thái: Có thể xuất hiện màu hỗn hợp, màu chuyển sắc (hai màu, xám thuần, v.v.); đồng tử có thể là đồng tử dọc, song đồng tử và các hình thái đặc biệt khác
-- Ảnh hưởng nguyên tố: Màu lông tóc có thể thể hiện nguyên tố phép thuật thân hòa, trình bày hiệu ứng thị giác đặc biệt (như mái tóc dài tựa bầu trời sao, sợi tóc pha lẫn tinh thạch)
-- Ví dụ màu sắc: Hồng anh đào, tím đỏ, hồng đào, đỏ rượu, tím Tyre, vàng gừng, đỏ hồng, xanh mực, vàng nóng chảy, xanh bích, vàng nhạt, trắng nguyệt, đỏ tươi, trắng ngà, xanh lam cúc, nâu dừa, bạc đỏ, đỏ chu sa, vàng cam, đỏ cam, vàng gạo, màu lúa mì, tím đinh hương, nâu trà, trắng ngọc trai, xanh thạch, vàng đất nung, xanh ngọc bảo thạch, xanh ngọc lục bảo, xanh xám, v.v.
-</character_fur_eye_color_guideline>

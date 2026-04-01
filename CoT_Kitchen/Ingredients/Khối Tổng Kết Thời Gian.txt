@@ -1,4 +1,0 @@
-> **【Khối tổng kết thời gian | Cố định đặt đầu】**
-> Tổng kết thời gian: +{{getvar::time_cost_total}} phút ｜ Thời gian thế giới {{getvar::world_time_old}} -> {{getvar::world_time_new}}
-> Thời hạn nhiệm vụ: {{getvar::deadline_at}} ｜ Còn lại {{getvar::deadline_remaining_new}}
-（Nếu tới hạn/nguy cấp: Gợi ý hệ thống/Mô tả khẩn cấp: {{getvar::deadline_pressure_note}}）

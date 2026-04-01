@@ -1,0 +1,2417 @@
+```
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Trình Xem nhân vật</title>
+    <script type="module">
+        import {
+            createPinia as e
+        } from 'https://testingcf.jsdelivr.net/npm/pinia/+esm';
+        import {
+            load as t
+        } from 'https://testingcf.jsdelivr.net/npm/js-yaml/+esm';
+        var n = {
+            992(e, t) {
+                t.A = (e, t) => {
+                    const n = e.__vccOpts || e;
+                    for (const [e, a] of t) n[e] = a;
+                    return n
+                }
+            }
+        },
+            a = {};
+        const r = Vue;
+
+        function l(e) {
+            if (!e) return !1;
+            const t = String(e).trim().toLowerCase();
+            return '' !== t && 'null' !== t && 'none' !== t && '[]' !== t
+        }
+
+        function o(e) {
+            return Array.isArray(e) && e.length > 0
+        }
+
+        function c(e) {
+            if (null == e) return 0;
+            const t = String(e).trim();
+            if (t.includes('=')) {
+                const e = t.split('='),
+                    n = e[e.length - 1].trim();
+                return parseInt(n, 10) || 0
+            }
+            return parseInt(t, 10) || 0
+        }
+
+        function i(e) {
+            if (null == e) return [];
+            if (Array.isArray(e)) return e.map(e => String(e ?? '').trim()).filter(Boolean);
+            const t = String(e).trim();
+            if (!t || 'null' === t.toLowerCase() || 'none' === t.toLowerCase()) return [];
+            let n = t.replace(/\]\s*\[/g, '], [');
+            n = n.replace(/^[\s\["']+|[\s\]"']+$/g, '');
+            return n.split(/[,;|，；、]/).map(e => e.trim().replace(/^["'\[\(]+|["'\]\)]+$/g, '')).filter(e => e && 'null' !== e)
+        }
+
+        function normalizeData(e) {
+            const t = {
+'Họ tên': 'Name',
+'Giai Vị Sinh Mệnh': 'LifeTier',
+'Cấp độ': 'Level',
+'Chủng tộc': 'Race',
+'Thân phận': 'Identity',
+'Nghề nghiệp': 'Class',
+'Tính cách': 'Personality',
+'Yêu thích': 'Likes',
+'Đặc điểm ngoại hình': 'Appearance',
+'Trang phục và Phụ kiện': 'Outfit',
+'Thuộc tính': 'Attributes',
+'Tài nguyên': 'Resources',
+'Đăng Thần Trường Giai': 'AscensionStairway',
+'Thần Vị': 'Godhood',
+'Thần Quốc': 'Divine_Kingdom',
+'Tên gọi': 'Name',
+'Mô tả': 'Description',
+'Kỹ năng': 'Skills',
+'Phẩm chất': 'Quality',
+'Loại hình': 'Type',
+'Tiêu tốn': 'Cost',
+'Nhãn': 'Tags',
+'Hiệu quả': 'Effect',
+'Trang bị': 'Equipment',
+'Phân loại': 'Category',
+'Vật phẩm đặc biệt': 'SpecialItems',
+'Đạo cụ': 'Items',
+'Vật phẩm': 'Item',
+'Câu Chuyện Bối Cảnh': 'Background',
+'Câu chuyện bối cảnh': 'Background',
+'Yếu Tố': 'Elements',
+'Quyền Năng': 'Authority',
+'Pháp Tắc': 'Law',
+'Hiệu quả bị động': 'PassiveEffect',
+'Hiệu quả chủ động': 'ActiveEffect',
+'Sức mạnh': 'Strength',
+'Mẫn tiệp': 'Agility',
+'Thể chất': 'Constitution',
+'Trí tuệ': 'Intelligence',
+'Tinh thần': 'Spirit'
+            };
+            if ('object' != typeof e || null === e) return e;
+            if (Array.isArray(e)) return e.map(e => normalizeData(e));
+            const n = {};
+            for (const a in e)
+                if (Object.prototype.hasOwnProperty.call(e, a)) {
+                    const r = t[a] || a;
+                    n[r] = normalizeData(e[a])
+                } return n
+        }
+
+        function s() {
+            return window.TavernHelper || window.parent?.TavernHelper || window
+        }
+
+        function m(e) {
+            return Array.isArray(e) ? e.join(', ') : e ? String(e) : ''
+        }
+
+        function d(e) {
+            return i(e)
+        }
+
+        function u(e, t) {
+            const n = {};
+            return Array.isArray(e) ? (e.forEach(e => {
+                if (!e || 'object' != typeof e) return;
+                const a = e;
+if (!a.Name) return;
+                const {
+Name: r,
+                    ...l
+                } = a, o = {
+                    ...l
+                };
+o.Tags ? o.Tags = d(o.Tags) : 'skill' !== t && 'equip' !== t || (o.Tags = []), 'divinity' !== t && (o.Effect = function (e) {
+                    if (e && 'object' == typeof e && !Array.isArray(e)) {
+                        const t = e;
+                        return Object.fromEntries(Object.entries(t).map(([e, t]) => [String(e).trim(), m(t).trim()]).filter(([e, t]) => e.length > 0 && t.length > 0))
+                    }
+                    const t = m(e).replace(/\r\n/g, '\n').trim();
+                    if (!t) return {};
+                    const n = t.split('\n').map(e => e.trim()).filter(Boolean),
+                        a = {},
+                        r = [];
+                    return n.forEach(e => {
+                        const t = e.match(/^\[([^\]]+)\]\s*[：:]\s*(.*)$/);
+                        if (t) {
+                            const e = String(t[1] || '').trim(),
+                                n = String(t[2] || '').trim();
+                            return void (e && n && (a[e] = n))
+                        }
+                        const n = e.match(/^([^[\]：:]+?)\s*[：:]\s*(.+)$/);
+                        if (n) {
+                            const e = String(n[1] || '').trim(),
+                                t = String(n[2] || '').trim();
+                            if (e && t) return void (a[e] = t)
+                        }
+                        r.push(e)
+}), Object.keys(a).length > 0 ? (r.length > 0 && (a.Description = r.join('\n')), a) : {
+Description: t
+                    }
+}(o.Effect)), 'equip' === t ? (o.Quality = o.Quality || 'Chưa rõ', o.Type = o.Category || o.Type || 'Chưa rõ', o.Description = o.Description || '', o.Location = o.Location || '') : 'skill' === t && (o.Quality = o.Quality || 'Chưa rõ', o.Type = o.Type || 'Chưa rõ', o.Cost = o.Cost ? m(o.Cost) : '', o.Description = o.Description || ''), n[String(r)] = o
+            }), n) : n
+        }
+        const p = {
+'OtherGod': '#C2D67A',
+'DemonKing': '#C876E7',
+'Abyss': '#C876E7',
+'Abyss': '#C876E7',
+'Undead': '#B0C4DE',
+'Death': '#B0C4DE',
+'Succubus': '#E64DE6',
+'LustDemon': '#E64DE6',
+'LittleDemon': '#E64DE6',
+'LittleDemon': '#E64DE6',
+'Viêm Ma': '#EBD284',
+'Ác Ma': '#D9739A',
+'Ác Ma': '#D9739A',
+'Ma Quỷ': '#D9739A',
+'Thi Linh': '#D1C4E9',
+'Thi Linh': '#D1C4E9',
+'Khí Linh': '#C0C0C0',
+'Khí Linh': '#C0C0C0',
+'Vật Hồn': '#C0C0C0',
+'Chú Hồn': '#C0C0C0',
+'Chú Hồn': '#C0C0C0',
+'Nguyện Linh': '#FFEEAA',
+'Nguyện Linh': '#FFEEAA',
+'Thánh Linh': '#FFEEAA',
+'Thánh Linh': '#FFEEAA',
+'Anh Linh': '#FFEEAA',
+'Anh Linh': '#FFEEAA',
+'Anh Linh': '#FFEEAA',
+'Anh Linh': '#FFEEAA',
+'Cấu Trang': '#B0BEC5',
+'Construct': '#B0BEC5',
+'ArtificialCreature': '#B0BEC5',
+'Artificial': '#B0BEC5',
+'Amorphous': '#98FB98',
+'Slime': '#98FB98',
+'Slime': '#98FB98',
+'Exotic': '#C876E7',
+'Exotic': '#C876E7',
+'Otherworld': '#C876E7',
+'Otherworld': '#C876E7',
+'Element': '#8DFAFA',
+'Monster': '#E64DE6',
+'Plant': '#C5E1A5',
+'OriginElf': '#C0F0C0',
+'OriginElf': '#C0F0C0',
+'MoonElf': '#9575CD',
+'MoonElf': '#9575CD',
+'StamenElves': '#FFAB91',
+'StamenElves': '#FFAB91',
+'HeartWrappingElf': '#FFAB91',
+'StamenElves': '#FFAB91',
+'SnowElves': '#E0FFFF',
+'SnowElves': '#E0FFFF',
+'SunElves': '#E6C64D',
+'SunElves': '#E6C64D',
+'Elf': '#98D98E',
+'Elf': '#98D98E',
+'WoodElves': '#C5E1A5',
+'WoodElves': '#C5E1A5',
+'FangedRace': '#BA68C8',
+'SkyDanceDragon': '#E1BEE7',
+'SkyDanceDragon': '#E1BEE7',
+'MagicPatternDragon': '#D1C4E9',
+'MagicPatternDragon': '#D1C4E9',
+'SubDragon': '#E6924D',
+'SubDragon': '#E6924D',
+'NorthgardDragonkin': '#B0C4DE',
+'NorthgardDragonkin': '#B0C4DE',
+'EasternDragonkin': '#BEEBBE',
+'EasternDragonkin': '#BEEBBE',
+'FlowerSpirit': '#FFAB91',
+'FlowerSpirit': '#FFAB91',
+'FlowerSpirit': '#FFAB91',
+'FlowerSpirit': '#FFAB91',
+'FlowerSpirit': '#FFAB91',
+'TidalSeaFairy': '#7FFFD4',
+'Fairy': '#F8BBD0',
+'Erin': '#F48FB1',
+'Titan': '#EBD284',
+'FrostGiant': '#E0FFFF',
+'Giant': '#E6924D',
+'MountainTroll': '#D19A66',
+'SnowMonster': '#D1D1FB',
+'Ogre': '#A3D76B',
+'Troll': '#A3D76B',
+'Centaur': '#B88461',
+'Centaur': '#B88461',
+'SnakeWoman': '#78C297',
+'Salamander': '#F8BBD0',
+'Salamander': '#F8BBD0',
+'black_horn_kin': '#F8BBD0',
+'siren': '#7FFFD4',
+'fallen_winged_kin': '#D1D1FB',
+'fallen_winged_kin': '#D1D1FB',
+'fallen_winged_kin': '#D1D1FB',
+'fallen_winged_kin': '#D1D1FB',
+'banshee': '#D1D1FB',
+'halfling': '#E6B26A',
+'dwarf': '#D19A66',
+'goblin': '#9CCC65',
+'Người Lùn': '#9CCC65',
+'Thần': '#FFF8DC',
+'Thiên': '#FFF8DC',
+'Long': '#EBD284',
+'Long': '#EBD284',
+'Huyết': '#E65A5A',
+'Ký': '#E65A5A',
+'Thực': '#E65A5A',
+'Ma': '#B0C4DE',
+'Linh': '#B0C4DE',
+'Spirit': '#B0C4DE',
+'Star': '#D1C4E9',
+'Phantom': '#D1C4E9',
+'Fish': '#7FFFD4',
+'Fish': '#7FFFD4',
+'Wing': '#87CEFA',
+'Bird': '#87CEFA',
+'Bird': '#87CEFA',
+'Feather': '#87CEFA',
+'Beast': '#E6924D',
+'Beast': '#E6924D',
+'Rat': '#A3D76B',
+'Machine': '#B0BEC5',
+'Machine': '#B0BEC5',
+'Construct': '#B0BEC5',
+'Construct': '#B0BEC5',
+'Tool': '#B0BEC5',
+'Object': '#B0BEC5',
+'Statue': '#B0BEC5',
+'Fairy': '#E64DE6',
+'Monster': '#E64DE6',
+'Human': '#DEB887',
+'Girl': '#DEB887',
+'Other': '#C0C0C0'
+        },
+            f = {
+                1: '#898B90',
+                2: '#50C878',
+                3: '#2196F3',
+                4: '#9932CC',
+                5: '#FFD700',
+                6: '#DC143C',
+                7: '#00FFFF'
+            };
+
+        function y(e) {
+            let t = (e || '#808080').replace(/^#/, '');
+            3 === t.length && (t = `${t[0]}${t[0]}${t[1]}${t[1]}${t[2]}${t[2]}`);
+            const n = parseInt(t.substring(0, 2), 16),
+                a = parseInt(t.substring(2, 4), 16),
+                r = parseInt(t.substring(4, 6), 16);
+            return {
+                r: Number.isFinite(n) ? n : 128,
+                g: Number.isFinite(a) ? a : 128,
+                b: Number.isFinite(r) ? r : 128
+            }
+        }
+
+        function v(e) {
+            const {
+                r: t,
+                g: n,
+                b: a
+            } = y(e);
+            return `${t}, ${n}, ${a}`
+        }
+
+        function k(e, t = '#94a3b8', n = .48, a = 92, r = 188) {
+            const l = y(e),
+                o = y(t);
+            let c = l.r * (1 - n) + o.r * n,
+                i = l.g * (1 - n) + o.g * n,
+                s = l.b * (1 - n) + o.b * n;
+            const m = () => .299 * c + .587 * i + .114 * s;
+            let d = m();
+            if (d < a) {
+                const e = (a - d) / 255;
+                c += (255 - c) * e, i += (255 - i) * e, s += (255 - s) * e, d = m()
+            }
+            if (d > r) {
+                const e = (d - r) / 255;
+                c *= 1 - e, i *= 1 - e, s *= 1 - e
+            }
+            return function (e, t, n) {
+                const a = e => Math.max(0, Math.min(255, Math.round(e))).toString(16).padStart(2, '0');
+                return `#${a(e)}${a(t)}${a(n)}`
+            }(c, i, s)
+        }
+
+        function g(e) {
+            const t = function (e) {
+                const t = {
+                    'Nhất': 1, 'Nhị': 2, 'Tam': 3, 'Tứ': 4, 'Ngũ': 5, 'Lục': 6, 'Thất': 7,
+                    '一': 1, '二': 2, '三': 3, '四': 4, '五': 5, '六': 6, '七': 7
+                },
+                    n = String(e || '').trim(),
+                    a = n.match(/Giai Vị\s*(\S+)/) || n.match(/[第](.)[层層][级級]/);
+                if (a) {
+                    const e = a[1];
+                    return t[e] || parseInt(e, 10) || 1
+                }
+                return parseInt(n.match(/\d/)?.[0]) || 1
+            }(e.LifeTier),
+                n = function (e) {
+let t = 'Khác';
+                    const n = Object.keys(p);
+                    for (const a of n)
+                        if (e.includes(a)) {
+                            t = a;
+                            break
+                        } return t
+}(e.Race || 'Khác'),
+                a = f[t] || f[1],
+r = k(p[n] || p.Other, '#808080', .1, 84, 198),
+                l = a;
+            return {
+                tier: t,
+                raceKey: n,
+                raceHex: r,
+                tierHex: l,
+                raceRgb: v(r),
+                tierRgb: v(l)
+            }
+        }
+
+        function h(e) {
+            return String(e ?? '').replace(/\t/g, '⇥').replace(/\u00A0/g, '⍽')
+        }
+
+        function E(e, t, n) {
+            const a = e,
+                r = a?.mark,
+                l = String(a?.reason || a?.message || String(e));
+            if (!r || 'number' != typeof r.line) return {
+                message: l
+            };
+            const o = r.line,
+                c = 'number' == typeof r.column ? r.column : 0,
+                i = String(t ?? '').split('\n'),
+                s = String(n ?? '').split('\n'),
+                m = i[o] ?? '',
+                d = h(s[o] ?? '');
+            return {
+                message: l,
+                line: o,
+                column: c,
+                cleanedLine: d,
+                originalLine: h(m),
+                caretLine: `${' '.repeat(Math.max(0, Math.min(c, d.length)))}^`
+            }
+        }
+        const B = {
+            class: 'viewer-root'
+        },
+            V = {
+                key: 0,
+                class: 'error-card'
+            },
+            N = {
+                class: 'error-body'
+            },
+            b = {
+                class: 'yaml-error-row yaml-error-sub'
+            },
+            F = {
+                key: 0,
+                class: 'yaml-error-row'
+            },
+            S = {
+                key: 1,
+                class: 'yaml-fix-box'
+            },
+            C = {
+                class: 'yaml-fix-list'
+            },
+            w = {
+                class: 'yaml-error-pre'
+            },
+            D = {
+                key: 3,
+                class: 'yaml-error-details'
+            },
+            x = {
+                class: 'yaml-error-pre alt'
+            },
+            A = {
+                class: 'sheet-content-wrapper'
+            },
+            L = {
+                class: 'sheet-header'
+            },
+            M = {
+                class: 'level-badge'
+            },
+            j = {
+                class: 'char-name'
+            },
+            I = {
+                class: 'char-meta-row'
+            },
+            O = {
+                class: 'tier-name'
+            },
+            T = {
+                class: 'sheet-body'
+            },
+            q = {
+                class: 'attributes-grid'
+            },
+            P = ['onClick'],
+            H = {
+                class: 'attribute-name'
+            },
+            R = {
+                class: 'attribute-total'
+            },
+            W = {
+                key: 0,
+                class: 'attribute-formula'
+            },
+            Y = {
+                class: 'tab-nav'
+            },
+            U = ['onClick'],
+            G = {
+                class: 'tab-content'
+            },
+            K = {
+                key: 0,
+                class: 'profile-grid'
+            },
+            Z = {
+                class: 'profile-row'
+            },
+            J = {
+                class: 'profile-cell'
+            },
+            Q = {
+                class: 'story profile-panel'
+            },
+            X = {
+                class: 'profile-cell'
+            },
+            ee = {
+                class: 'story profile-panel'
+            },
+            te = {
+                class: 'profile-row'
+            },
+            ne = {
+                class: 'profile-cell'
+            },
+            ae = {
+                class: 'story profile-panel'
+            },
+            re = {
+                class: 'profile-cell'
+            },
+            le = {
+                class: 'story profile-panel'
+            },
+            oe = {
+                class: 'card-header'
+            },
+            ce = {
+                class: 'card-body'
+            },
+            ie = {
+                key: 0,
+                class: 'card-tags'
+            },
+            se = {
+                key: 1
+            },
+            me = {
+                key: 2
+            },
+            de = {
+                class: 'effect-list'
+            },
+            ue = {
+                key: 0,
+                class: 'effect-name'
+            },
+            pe = {
+                class: 'effect-text'
+            },
+            fe = {
+                key: 4
+            },
+            ye = {
+                key: 5,
+                class: 'card-description'
+            },
+            ve = {
+                class: 'card-header'
+            },
+            ke = {
+                class: 'card-body'
+            },
+            ge = {
+                key: 0,
+                class: 'card-tags'
+            },
+            he = {
+                key: 1
+            },
+            Ee = {
+                class: 'effect-list'
+            },
+            Be = {
+                key: 0,
+                class: 'effect-name'
+            },
+            Ve = {
+                class: 'effect-text'
+            },
+            Ne = {
+                key: 3
+            },
+            be = {
+                key: 4,
+                class: 'card-description'
+            },
+            Fe = {
+                class: 'subsection-title'
+            },
+            Se = {
+                class: 'card-header'
+            },
+            $e = {
+                class: 'card-body'
+            },
+            Ce = {
+                key: 0,
+                class: 'card-tags'
+            },
+            we = {
+                key: 1
+            },
+            De = {
+                class: 'effect-list'
+            },
+            xe = {
+                key: 0,
+                class: 'effect-name'
+            },
+            Ae = {
+                class: 'effect-text'
+            },
+            Le = {
+                key: 3
+            },
+            Me = {
+                key: 4,
+                class: 'card-description'
+            },
+            je = {
+                key: 0,
+                class: 'subsection-title divinity-main-title'
+            },
+            _e = {
+                key: 1,
+                class: 'card divinity-card'
+            },
+            Ie = {
+                class: 'card-header'
+            },
+            Oe = {
+                class: 'card-title'
+            },
+            ze = {
+                class: 'card-body'
+            },
+            Te = {
+                class: 'card-header'
+            },
+            qe = {
+                class: 'card-title'
+            },
+            Pe = {
+                class: 'card-body'
+            },
+            He = {
+                class: 'card-header'
+            },
+            Re = {
+                class: 'card-title'
+            },
+            We = {
+                class: 'card-body'
+            },
+            Ye = {
+                class: 'card-header'
+            },
+            Ue = {
+                class: 'card-title'
+            },
+            Ge = {
+                class: 'card-body'
+            },
+            Ke = {
+                key: 0
+            },
+            Ze = {
+                key: 1
+            },
+            Je = {
+                key: 2
+            },
+            Qe = {
+                key: 5,
+                class: 'story'
+            },
+            Xe = ['disabled'],
+            et = ['disabled'],
+            tt = ['disabled'],
+            nt = {
+                key: 2,
+                class: 'loading-card'
+            },
+            at = (0, r.defineComponent)({
+                __name: 'App',
+                setup(e) {
+                    const n = [{
+                        key: 'profile',
+label: 'Hồ sơ'
+                    }, {
+                        key: 'skills',
+label: 'Kỹ năng'
+                    }, {
+                        key: 'equipment',
+label: 'Trang bị'
+                    }, {
+                        key: 'inventory',
+label: 'Vật phẩm'
+                    }, {
+                        key: 'divinity',
+label: 'Đăng Thần Trường Giai'
+                    }, {
+                        key: 'backstory',
+label: 'Câu Chuyện Bối Cảnh'
+                    }],
+                        a = (0, r.ref)(null),
+                        p = (0, r.ref)(null),
+                        f = (0, r.ref)(''),
+                        y = (0, r.ref)(null),
+                        v = (0, r.ref)('profile'),
+                        k = (0, r.ref)(null),
+                        h = (0, r.ref)(null);
+                    let at = null;
+                    const rt = (0, r.ref)(!1),
+                        lt = (0, r.ref)(!1),
+                        ot = (0, r.ref)('📥'),
+                        ct = ((0, r.computed)(() => {
+                            const e = String(p.value?.message || '').toLowerCase();
+return e.includes('indent') ? 'Cấp độ khoảng trắng phía trước của dòng này không đúng (lỗi thụt lề)' : e.includes('mapping') ? 'Định dạng "Key: Value" có vấn đề (thường là dấu hai chấm hoặc nội dung viết sai)' : e.includes('unexpected') || e.includes('end of the stream') ? 'Nội dung có thể thiếu dấu ngoặc kép, dấu ngoặc đơn, hoặc dòng trước đó chưa kết thúc đúng cách.' : 'Định dạng không phù hợp yêu cầu, vui lòng kiểm tra theo số dòng định vị'
+}), (0, r.computed)(() => ['1. Xem mũi tên nhỏ ^ trong dòng này chỉ vào đâu, hãy sửa ở đó', '2. Kiểm tra định dạng "Khóa: Giá trị" có vấn đề gì không (thường là thừa dấu hai chấm hoặc nội dung viết sai)', '3. Xem khoảng trắng ở đầu dòng này, cố gắng giữ thụt lề giống với các dòng tương tự lân cận (lỗi thụt lề)', '4. Nội dung có thể thiếu dấu ngoặc kép, dấu ngoặc đơn, hoặc dòng trước đó chưa kết thúc đúng cách'])),
+                        it = {
+Strength: 'Lực',
+Agility: 'Mẫn',
+Constitution: 'Thể',
+Intelligence: 'Trí',
+Spirit: 'Tinh'
+                        },
+                        st = (0, r.computed)(() => y.value?.tier ?? 1),
+                        mt = (0, r.computed)(() => ({
+                            'card-wrapper': !0,
+                            [`tier-${st.value}`]: !0,
+                            'high-tier': st.value >= 5
+                        }));
+
+                    function dt(e, ...t) {
+                        if (!e || 'object' != typeof e) return;
+                        const n = e;
+                        for (const e of t) {
+                            const t = n[e];
+                            if (null != t) return t
+                        }
+                    }
+const ut = (0, r.computed)(() => String(dt(a.value, 'Name') || 'Unknown')),
+pt = (0, r.computed)(() => String(dt(a.value, 'Level', 'Level') ?? '?')),
+                        lp = (0, r.computed)(() => {
+                            const e = parseInt(String(pt.value ?? '1'), 10) || 1;
+                            return e >= 25 ? 7 : e >= 21 ? 6 : e >= 17 ? 5 : e >= 13 ? 4 : e >= 9 ? 3 : e >= 5 ? 2 : 1
+                        }),
+zSum = (0, r.computed)(() => Object.values(dt(a.value, 'Attributes', 'Attributes') || {}).reduce((e, t) => {
+                            const n = String(t).split('=')[0].split('+');
+                            return n.length >= 3 ? e + (parseInt(n[2].trim(), 10) || 0) : e
+                        }, 0)),
+ft = (0, r.computed)(() => String(dt(a.value, 'Race', 'Race') || 'Khác')),
+yt = (0, r.computed)(() => String(dt(a.value, 'LifeTier', 'LifeTier') || 'Không xác định')),
+vt = (0, r.computed)(() => i(dt(a.value, 'Identity')).join(' / ') || '-'),
+kt = (0, r.computed)(() => i(dt(a.value, 'Class', 'Class')).join(' / ') || '-'),
+                        gt = (0, r.computed)(() => {
+const e = dt(a.value, 'Personality');
+                            return e ? Array.isArray(e) ? e.join('，') : String(e) : ''
+                        }),
+ht = (0, r.computed)(() => i(dt(a.value, 'Likes', 'Likes')).map(e => e.trim().replace(/。+$/g, '').trim()).filter(Boolean).join('，')),
+Et = (0, r.computed)(() => String(dt(a.value, 'Appearance', 'Appearance') || '').trim()),
+Bt = (0, r.computed)(() => String(dt(a.value, 'Outfit', 'Outfit') || '').trim()),
+Vt = (0, r.computed)(() => String(dt(a.value, 'Background') || '').trim()),
+                        Nt = (0, r.ref)({});
+
+                    function bt(e) {
+                        if (null == e) return {
+                            total: '0',
+                            formula: ''
+                        };
+                        const t = String(e).trim();
+                        if (!t) return {
+                            total: '0',
+                            formula: ''
+                        };
+                        if (!t.includes('=')) return {
+                            total: String(c(t)),
+                            formula: ''
+                        };
+                        const n = t.split('='),
+                            a = n.slice(0, -1).join('=').trim();
+                        return {
+                            total: n[n.length - 1]?.trim() || '' || String(c(t)),
+                            formula: a
+                        }
+                    }
+                    const Ft = {
+Strength: ['Strength', 'Sức mạnh'],
+Agility: ['Agility', 'Mẫn tiệp'],
+Constitution: ['Constitution', 'Thể chất'],
+Intelligence: ['Intelligence', 'Trí tuệ'],
+Spirit: ['Spirit', 'Tinh thần']
+                    };
+
+                    function St(e, t) {
+                        const n = Ft[t] || [t];
+                        for (const t of n) {
+                            const n = e[t];
+                            if (null != n) return n
+                        }
+                    }
+                    const $t = (0, r.computed)(() => {
+const e = dt(a.value, 'Attributes', 'Attributes') || {};
+return ['Strength', 'Agility', 'Constitution', 'Intelligence', 'Spirit'].map(t => {
+                            const n = bt(St(e, t)),
+                                a = parseInt(n.total, 10),
+                                r = isNaN(a) || a < 0 || a > 20;
+                            return {
+                                key: t,
+                                short: it[t] || t,
+                                total: n.total,
+                                formula: n.formula,
+                                showFormula: !!n.formula && !!Nt.value[t],
+                                isAbnormal: r
+                            }
+                        })
+                    });
+
+                    function Ct(e) {
+                        return Array.isArray(e) ? e.filter(e => e && 'object' == typeof e) : []
+                    }
+
+                    function wt(e) {
+                        if (null == e) return '';
+                        if ('string' == typeof e) return e.trim();
+                        if ('number' == typeof e || 'boolean' == typeof e) return String(e);
+                        if (Array.isArray(e)) return e.map(e => wt(e)).filter(Boolean).join(' / ');
+                        if ('object' == typeof e) {
+                            return Object.entries(e).map(([e, t]) => {
+                                const n = wt(t);
+                                return n ? `${e}: ${n}` : ''
+                            }).filter(Boolean).join('； ')
+                        }
+                        return String(e)
+                    }
+
+                    function Dt(e) {
+                        const t = String(e || '').replace(/\r\n/g, '\n').trim();
+                        if (!t) return [];
+                        const n = t.split('\n').map(e => e.trim()).filter(Boolean),
+                            a = [],
+                            r = [];
+                        return n.forEach(e => {
+                            const t = function (e) {
+                                const t = String(e || '').trim();
+                                if (!t) return null;
+                                const n = t.match(/^\[([^\]]+)\]\s*[：:]\s*(.*)$/);
+                                if (n) {
+                                    const e = String(n[1] || '').trim(),
+                                        t = String(n[2] || '').trim();
+                                    return e && t ? {
+                                        name: e,
+                                        content: t,
+                                        fallback: !1
+                                    } : null
+                                }
+                                const a = t.search(/[：:]/);
+                                if (a <= 0) return null;
+                                const r = t.slice(0, a).trim(),
+                                    l = t.slice(a + 1).trim();
+                                return r && l ? {
+                                    name: r,
+                                    content: l,
+                                    fallback: !1
+                                } : null
+                            }(e);
+                            t ? a.push(t) : r.push(e)
+                        }), 0 === a.length ? [{
+name: 'Mô tả',
+                            content: t,
+                            fallback: !0
+                        }] : (r.length > 0 && a.push({
+name: 'Mô tả',
+                            content: r.join('\n'),
+                            fallback: !0
+                        }), a)
+                    }
+
+                    function xt(e) {
+if (0 === e.length) return 'Không';
+                        if (1 === e.length) {
+                            const t = e[0];
+                            return t.fallback ? t.content : `${t.name}: ${t.content}`
+                        }
+                        return e.map(e => e.fallback ? e.content : `${e.name}: ${e.content}`).join('\n')
+                    }
+
+                    function At(e) {
+return t = e?.Effect, t && 'object' == typeof t && !Array.isArray(t) ? Object.entries(t).map(([e, t]) => {
+const n = String(e || '').trim() || 'Mô tả';
+                            return {
+                                name: n,
+                                content: wt(t).trim(),
+fallback: 'Mô tả' === n
+                            }
+                        }).filter(e => e.content.length > 0) : Dt(wt(t));
+                        var t
+                    }
+
+                    function Lt(e) {
+                        const t = At(e);
+                        if (t.length > 0) return t;
+                        const n = Ot(e);
+                        return n ? [{
+name: 'Mô tả',
+                            content: n,
+                            fallback: !0
+                        }] : []
+                    }
+
+                    function Mt(e) {
+return wt(e?.Name) || 'Chưa đặt tên'
+                    }
+
+                    function jt(e) {
+return wt(e?.Quality || e?.Rarity)
+                    }
+
+                    function _t(e) {
+                        const t = jt(e);
+                        if (!t) return '';
+                        const n = {
+'Unique': 'quality-unique',
+'Mythic': 'quality-mythic',
+'Mythic': 'quality-mythic',
+'Legendary': 'quality-legendary',
+'Legendary': 'quality-legendary',
+'Epic': 'quality-epic',
+'Epic': 'quality-epic',
+'Rare': 'quality-rare',
+'Uncommon': 'quality-uncommon',
+'Uncommon': 'quality-uncommon',
+'Common': 'quality-common'
+                        };
+                        return n[t] || ''
+                    }
+                    const qualityHexMap = {
+'Unique': '#FFDE59',
+'Mythic': '#FF6B6B',
+'Mythic': '#FF6B6B',
+'Legendary': '#FFB74D',
+'Legendary': '#FFB74D',
+'Epic': '#CE93D8',
+'Epic': '#CE93D8',
+'Rare': '#64B5F6',
+'Excellent': '#AED581',
+'Excellent': '#AED581',
+'Common': '#BFBFBF'
+                    };
+
+                    function getQualityHex(e) {
+                        return qualityHexMap[jt(e)] || '#f0f0f0'
+                    }
+
+                    function It(e) {
+return wt(e?.Type || e?.Category)
+                    }
+
+                    function Ot(e) {
+return wt(e?.Description)
+                    }
+
+                    function zt(e) {
+                        return xt(Lt(e))
+                    }
+
+                    function Tt(e) {
+return i(e?.Tags)
+                    }
+
+                    function qt(e) {
+const t = i(e?.Cost).join(' / ');
+return t || wt(e?.Cost)
+                    }
+
+                    function Pt(e) {
+return wt(e?.Passive_Effect)
+                    }
+
+                    function Ht(e) {
+return wt(e?.Active_Effect)
+                    }
+const Rt = (0, r.computed)(() => Ct(a.value?.Skills)),
+Wt = (0, r.computed)(() => Ct(a.value?.Equipment)),
+                        Yt = (0, r.computed)(() => [{
+                            key: 'props',
+title: 'Đạo cụ',
+items: Ct(a.value?.Items)
+                        }, {
+                            key: 'special',
+title: 'Vật phẩm đặc biệt',
+items: Ct(a.value?.Special_Items)
+                        }, {
+                            key: 'items',
+title: 'Vật phẩm',
+items: Ct(a.value?.Item)
+                        }].filter(e => e.items.length > 0)),
+                        Ut = (0, r.computed)(() => {
+const e = a.value?.AscensionStairway;
+                            return e && 'object' == typeof e ? e : {}
+                        }),
+                        Gt = (0, r.computed)(() => {
+const e = wt(Ut.value?.Godhood);
+                            if (l(e)) return e;
+const t = wt(a.value?.Godhood);
+                            return l(t) ? t : ''
+                        }),
+                        Kt = (0, r.computed)(() => {
+const e = Ut.value?.Divine_Kingdom || a.value?.Divine_Kingdom;
+                            if (!e || 'object' != typeof e) return null;
+                            const t = e,
+n = wt(t?.Name),
+r = wt(t?.Description);
+                            return l(n) || l(r) ? {
+name: n || 'Thần Quốc',
+                                description: r
+                            } : null
+                        }),
+Zt = (0, r.computed)(() => Ct(Ut.value?.Elements || a.value?.Elements)),
+Jt = (0, r.computed)(() => Ct(Ut.value?.Authorities || a.value?.Authorities)),
+Qt = (0, r.computed)(() => Ct(Ut.value?.Laws || a.value?.Laws)),
+                        Xt = (0, r.computed)(() => Yt.value.length > 0),
+                        en = (0, r.computed)(() => l(Gt.value) || !!Kt.value || o(Zt.value) || o(Jt.value) || o(Qt.value)),
+                        tn = (0, r.computed)(() => n.filter(e => 'profile' === e.key || ('skills' === e.key ? Rt.value.length > 0 : 'equipment' === e.key ? Wt.value.length > 0 : 'inventory' === e.key ? Xt.value : 'divinity' === e.key ? en.value : 'backstory' === e.key && l(Vt.value))));
+
+                    function nn() {
+                        const e = navigator.userAgent || '',
+                            t = /iPad|iPhone|iPod/.test(e) || 'MacIntel' === navigator.platform && navigator.maxTouchPoints > 1,
+                            n = /Safari/i.test(e) && !/CriOS|FxiOS|EdgiOS|OPiOS/i.test(e);
+                        return t && n
+                    }
+
+                    function an() {
+                        k.value && h.value && y.value && (at?.destroy(), at = function (e) {
+                            const {
+                                canvas: t,
+                                host: n,
+                                tier: a,
+                                colorHex: r,
+                                isIOSSafari: l = !1
+                            } = e, o = t.getContext('2d');
+                            if (!o) return {
+                                start: () => { },
+                                stop: () => { },
+                                destroy: () => { }
+                            };
+                            const c = o;
+                            let i = 0;
+                            const s = parseInt(String(a), 10);
+                            3 === s || 4 === s ? i = 1 : 5 === s ? i = 2 : 6 === s ? i = 3 : s >= 7 && (i = 4), 0 === i && (i = 1);
+                            const m = window.innerWidth < 600 ? 15 : 30,
+                                d = s <= 2 ? Math.max(8, Math.floor(.55 * m)) : m;
+                            let u = 255,
+                                p = 255,
+                                f = 255;
+                            const y = (r || '#ffffff').replace(/^#/, '');
+                            6 === y.length && (u = parseInt(y.substring(0, 2), 16), p = parseInt(y.substring(2, 4), 16), f = parseInt(y.substring(4, 6), 16));
+                            let v = 0,
+                                k = !1,
+                                g = !0;
+                            class h {
+                                x = 0;
+                                y = 0;
+                                size = 2;
+                                speedY = .2;
+                                sway = .2;
+                                opacity = .2;
+                                constructor() {
+                                    this.reset(!0)
+                                }
+                                reset(e = !1) {
+                                    this.x = Math.random() * t.width, this.opacity = .4 * Math.random() + .1, l && (this.opacity = Math.min(.9, this.opacity + .18)), 1 === i ? (this.y = e ? Math.random() * t.height : t.height + 20, this.size = 4 * Math.random() + 2, this.speedY = .4 * Math.random() + .1, this.sway = .2 * Math.random()) : 2 === i ? (this.y = e ? Math.random() * t.height : -10, this.size = 5 * Math.random() + 3, this.speedY = 1 * Math.random() + .5, this.sway = .5 * Math.random()) : 3 === i ? (this.y = e ? Math.random() * t.height : t.height + 20, this.size = 4 * Math.random() + 2, this.speedY = .8 * Math.random() + .2, this.sway = .1 * Math.random()) : (this.y = e ? Math.random() * t.height : t.height + 20, this.size = 8 * Math.random() + 4, this.speedY = 1 * Math.random() + .5, this.sway = .2 * Math.random())
+                                }
+                                update() {
+                                    2 === i ? (this.y += this.speedY, this.x += Math.sin(.02 * this.y) * this.sway, this.y > t.height && this.reset(!1)) : (this.y -= this.speedY, this.x += Math.sin(.01 * this.y) * (this.sway || .2), this.y < -50 && this.reset(!1))
+                                }
+                                draw() {
+                                    const e = c.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.size);
+                                    4 === i || 1 === i ? (e.addColorStop(0, `rgba(${u}, ${p}, ${f}, ${this.opacity})`), e.addColorStop(.4, `rgba(${u}, ${p}, ${f}, ${.5 * this.opacity})`), e.addColorStop(1, `rgba(${u}, ${p}, ${f}, 0)`)) : (e.addColorStop(0, `rgba(${u}, ${p}, ${f}, ${this.opacity})`), e.addColorStop(.7, `rgba(${u}, ${p}, ${f}, ${.5 * this.opacity})`), e.addColorStop(1, `rgba(${u}, ${p}, ${f}, 0)`)), c.fillStyle = e, c.beginPath(), c.arc(this.x, this.y, this.size, 0, 2 * Math.PI), c.fill()
+                                }
+                            }
+                            const E = Array.from({
+                                length: d
+                            }, () => new h),
+                                B = () => {
+                                    t.width = n.offsetWidth, t.height = n.offsetHeight
+                                },
+                                V = new ResizeObserver(() => B());
+                            V.observe(n), B();
+                            const N = new IntersectionObserver(e => {
+                                e.forEach(e => {
+                                    g = e.isIntersecting, g && k && b()
+                                })
+                            }, {
+                                rootMargin: '50px'
+                            });
+                            N.observe(n);
+                            const b = () => {
+                                k && g && (o.clearRect(0, 0, t.width, t.height), E.forEach(e => {
+                                    e.update(), e.draw()
+                                }), v = requestAnimationFrame(b))
+                            };
+                            return {
+                                start() {
+                                    k || (k = !0, b())
+                                },
+                                stop() {
+                                    k = !1, v && cancelAnimationFrame(v)
+                                },
+                                destroy() {
+                                    this.stop(), V.disconnect(), N.disconnect(), o.clearRect(0, 0, t.width, t.height)
+                                }
+                            }
+                        }({
+                            canvas: k.value,
+                            host: h.value,
+                            tier: y.value.tier,
+                            colorHex: y.value.tierHex,
+                            isIOSSafari: nn()
+                        }), at.start())
+                    }
+
+                    function rn() {
+                        const e = document.getElementById('data-source'),
+                            n = e?.textContent?.trim() || '';
+                        if (f.value = n, !n) return void (p.value = {
+message: 'Không tìm thấy dữ liệu YAML (#data-source trống).'
+                        });
+                        const l = function (e) {
+                            const n = function (e) {
+                                if (!e) return '';
+                                const t = e.replace(/\u00A0/g, ' ').replace(/\t/g, '  ').replace(/】/g, ']').replace(/【/g, '[').split('\n'),
+n = ['Thân phận', 'Nghề nghiệp', 'Tính cách', 'Yêu thích', 'Đặc điểm ngoại hình', 'Trang phục và Phụ kiện', 'Câu chuyện bối cảnh', 'Mô tả', 'Hiệu quả', 'Nhãn', 'Tiêu tốn', 'Loại hình', 'Phẩm chất', 'Thần Vị', 'Tên gọi', 'Họ tên', 'Chủng tộc', 'Cấp độ', 'Giai Vị Sinh Mệnh'],
+a = ['Sức mạnh', 'Mẫn tiệp', 'Thể chất', 'Trí tuệ', 'Tinh thần'];
+                                return t.map(e => {
+                                    e = e.replace(/^(\s*)(-\s*)?([^\s:：][^:：]*?)\s*：/, (e, t, n, a) => `${t}${n || ''}${a.trim()}:`);
+                                    const t = e.match(/^(\s*)(-\s*)?([^\s:：][^:：]*?)\s*:\s*(.*)$/);
+                                    if (!t) return e;
+                                    const r = t[1],
+                                        l = t[2] || '',
+                                        o = t[3];
+                                    let c = t[4].trim();
+                                    if (!c) return e;
+                                    if (c.startsWith('|') || c.startsWith('>')) return e;
+                                    if (a.some(e => o.includes(e)) && (/[+=]/.test(c) || c.includes('{')) && !/^["'].*["']$/.test(c)) return c = c.replace(/"/g, '\\"'), `${r}${l}${o}: "${c}"`;
+                                    const i = n.some(e => o.includes(e)),
+                                        s = /[{}[\]]/.test(c),
+                                        m = c.includes('"'),
+                                        d = /^["'].*["']$/.test(c);
+                                    return (i || s || m) && !d ? (c = c.replace(/"/g, '\\"'), `${r}${l}${o}: "${c}"`) : e
+                                }).join('\n')
+                            }(e);
+                            try {
+                                let e = t(n);
+if (!e) throw new Error('Kết quả phân giải trống');
+                                return e = normalizeData(e), {
+                                    success: !0,
+                                    data: e
+                                }
+                            } catch (t) {
+                                return {
+                                    success: !1,
+                                    error: E(t, e, n)
+                                }
+                            }
+                        }(n);
+                        l.success ? (p.value = null, a.value = l.data.char_info || l.data, y.value = g(a.value), function (e, t = document.documentElement) {
+                            t.style.setProperty('--race-color', e.raceHex), t.style.setProperty('--race-color-rgb', e.raceRgb), t.style.setProperty('--tier-color', e.tierHex), t.style.setProperty('--tier-color-rgb', e.tierRgb)
+                        }(y.value), (0, r.nextTick)(() => an())) : p.value = l.error
+                    }
+
+                    function ln() {
+                        rt.value = !rt.value
+                    }
+
+                    function on() {
+                        rt.value = !1
+                    }
+
+                    function cn(e, t = 1200) {
+                        const n = ot.value;
+                        ot.value = e, setTimeout(() => {
+                            ot.value = n
+                        }, t)
+                    }
+                    async function sn() {
+                        if (a.value && !lt.value) {
+                            lt.value = !0, on();
+                            try {
+if (!window.confirm(`Bạn có chắc chắn muốn nhập nhân vật "${a.value.Name || 'Unknown'}" vào hệ thống biến MVU (Destiny_System.RelationshipList) không？\nNếu nhân vật cùng tên đã tồn tại, dữ liệu của họ sẽ bị ghi đè.`)) return;
+                                ot.value = '⏳', await async function (e) {
+                                    const t = s();
+if ('function' != typeof t.getVariables || 'function' != typeof t.insertOrAssignVariables) throw new Error('Không tìm thấy TavernHelper API (getVariables / insertOrAssignVariables).');
+const n = e.Name || 'Unknown',
+                                        a = {
+                                            type: 'message',
+                                            message_id: 'latest'
+                                        },
+                                        r = {
+IsPresent: !0,
+LifeTier: e.LifeTier || 'Nhất Giai/Giai Vị Thông Thường',
+Level: parseInt(String(e.Level ?? '1'), 10) || 1,
+Race: e.Race || 'Chưa rõ',
+Identity: d(e.Identity),
+Class: d(e.Class),
+Personality: m(e.Personality).trim(),
+Likes: m(e.Likes).trim(),
+Appearance: m(e.AppearanceTraits).trim(),
+Outfit: m(e.ClothingDecorations).trim(),
+Attributes: {
+Strength: c(e.Attributes?.Strength),
+Agility: c(e.Attributes?.Agility),
+Constitution: c(e.Attributes?.Constitution),
+Intelligence: c(e.Attributes?.Intelligence),
+Spirit: c(e.Attributes?.Spirit)
+                                            },
+Skills: u(e.Skills, 'skill'),
+Equipment: u(e.Equipment, 'equip'),
+AscensionStairway: {
+IsEnabled: !!(e.AscensionStairway || e.LifeTier && String(e.LifeTier).includes('Thần')),
+Godhood: e.AscensionStairway?.Godhood || e.Godhood || '',
+Divine_Kingdom: {
+Name: e.AscensionStairway?.Divine_Kingdom?.Name || e.Divine_Kingdom?.Name || '',
+Description: e.AscensionStairway?.Divine_Kingdom?.Description || e.Divine_Kingdom?.Description || ''
+                                                },
+Elements: u(e.AscensionStairway?.Elements || e.Elements, 'divinity'),
+Authorities: u(e.AscensionStairway?.Authorities || e.Authorities, 'divinity'),
+Laws: u(e.AscensionStairway?.Laws || e.Laws, 'divinity')
+                                            },
+DestinyContract: !1,
+Affection: 0,
+InnerThoughts: '',
+Background: e.Background || ''
+                                        };
+                                    let l = 'stat_data.',
+                                        o = null;
+                                    try {
+o = await t.getVariables(a), o?.Destiny_System ? l = '' : o?.stat_data && (l = 'stat_data.')
+                                    } catch {
+                                        l = 'stat_data.'
+                                    }
+                                    const i = e => null == e ? void 0 : e,
+                                        p = [];
+                                    let f, y;
+'stat_data.' === l ? (p.push(o?.stat_data?.Destiny_System?.RelationshipList?.[n]), p.push(o?.stat_data?.[n]), p.push(o?.stat_data?.ThatNPC)) : p.push(o?.Destiny_System?.RelationshipList?.[n]);
+for (const e of p) e && (void 0 === f && (f = i(e?.Affection)), void 0 === y && (y = i(e?.InnerThoughts)));
+void 0 !== f && (r.Affection = f), void 0 !== y && (r.InnerThoughts = y);
+                                    const v = {};
+                                    'stat_data.' === l ? v.stat_data = {
+Destiny_System: {
+RelationshipList: {
+                                                [n]: r
+                                            }
+                                        }
+} : v.Destiny_System = {
+RelationshipList: {
+                                            [n]: r
+                                        }
+                                    }, await t.insertOrAssignVariables(v, a)
+                                }(a.value), cn('✅', 1600)
+                            } catch (e) {
+console.error('Lỗi nhập MVU:', e), cn('❌', 1800), window.alert(`Nhập thất bại: ${e?.message || String(e)}`)
+                            } finally {
+                                lt.value = !1
+                            }
+                        }
+                    }
+                    async function mn() {
+                        if (a.value && !lt.value) {
+                            lt.value = !0, on();
+                            try {
+                                ot.value = '⏳', await async function (e, t) {
+                                    const n = s();
+if ('function' != typeof n.getOrCreateChatWorldbook || 'function' != typeof n.createWorldbookEntries) throw new Error('Không tìm thấy Worldbook API.');
+const a = e.Name || 'Không rõ',
+                                        r = a.split(/[·\s]/)[0],
+                                        l = r && r.trim().length > 0 ? r : a;
+                                    let o = null;
+                                    if ('function' == typeof n.getChatWorldbookName && (o = await n.getChatWorldbookName('current')), !o) {
+                                        const e = new Date,
+t = `Vận Mệnh Chi Thi-charinfo-Chat_Book_${e.getFullYear()}_${String(e.getMonth() + 1).padStart(2, '0')}_${String(e.getDate()).padStart(2, '0')}_${e.getHours()}h_${e.getMinutes()}m_${e.getSeconds()}s`;
+                                        o = await n.getOrCreateChatWorldbook('current', t)
+                                    }
+                                    const c = {
+                                        name: a,
+                                        enabled: !0,
+                                        strategy: {
+                                            type: 'selective',
+                                            keys: [l]
+                                        },
+                                        position: {
+                                            type: 'after_character_definition',
+                                            order: 152
+                                        },
+                                        content: t
+                                    };
+                                    await n.createWorldbookEntries(o, [c])
+                                }(a.value, f.value), cn('✅', 1200)
+                            } catch (e) {
+console.error('Lỗi lưu Worldbook:', e), cn('❌', 1800), window.alert(`Lưu thất bại: ${e?.message || String(e)}`)
+                            } finally {
+                                lt.value = !1
+                            }
+                        }
+                    }
+
+                    function dn() {
+                        rt.value && on()
+                    }
+
+                    function un(e) {
+                        'Escape' === e.key && on()
+                    }
+                    return (0, r.watchEffect)(() => {
+                        tn.value.some(e => e.key === v.value) || (v.value = tn.value[0]?.key || 'profile')
+                    }), (0, r.onMounted)(() => {
+                        rn(), document.addEventListener('click', dn), document.addEventListener('keydown', un)
+                    }), (0, r.onBeforeUnmount)(() => {
+                        at?.destroy(), at = null, document.removeEventListener('click', dn), document.removeEventListener('keydown', un)
+}), (e, t) => ((0, r.openBlock)(), (0, r.createElementBlock)('div', B, [p.value ? ((0, r.openBlock)(), (0, r.createElementBlock)('div', V, [t[5] || (t[5] = (0, r.createElementVNode)('h3', null, '⚠️ Giải mã YAML thất bại', -1)), (0, r.createElementVNode)('div', N, [(0, r.createElementVNode)('div', b, [t[0] || (t[0] = (0, r.createElementVNode)('b', null, 'Thông tin kỹ thuật：', -1)), (0, r.createTextVNode)((0, r.toDisplayString)(p.value.message), 1)]), void 0 !== p.value.line ? ((0, r.openBlock)(), (0, r.createElementBlock)('div', F, [t[1] || (t[1] = (0, r.createElementVNode)('b', null, 'Định vị：', -1)), (0, r.createTextVNode)('Dòng ' + (0, r.toDisplayString)((p.value.line ?? 0) + 1) + ' , cột ' + (0, r.toDisplayString)((p.value.column ?? 0) + 1) + ' ', 1)])) : (0, r.createCommentVNode)('v-if', !0), ct.value.length > 0 ? ((0, r.openBlock)(), (0, r.createElementBlock)('div', S, [t[2] || (t[2] = (0, r.createElementVNode)('div', {
+                        class: 'yaml-fix-title'
+}, 'Bé đừng vội, thầy Tam Giác sẽ dẫn bạn kiểm tra từng bước', -1)), (0, r.createElementVNode)('ul', C, [((0, r.openBlock)(!0), (0, r.createElementBlock)(r.Fragment, null, (0, r.renderList)(ct.value, e => ((0, r.openBlock)(), (0, r.createElementBlock)('li', {
+                        key: e
+                    }, (0, r.toDisplayString)(e), 1))), 128))])])) : (0, r.createCommentVNode)('v-if', !0), p.value.cleanedLine ? ((0, r.openBlock)(), (0, r.createElementBlock)(r.Fragment, {
+                        key: 2
+                    }, [t[3] || (t[3] = (0, r.createElementVNode)('div', {
+                        class: 'yaml-error-title'
+}, 'Dòng lỗi hệ thống định vị được (vui lòng kiểm tra kỹ)', -1)), (0, r.createElementVNode)('pre', w, (0, r.toDisplayString)(p.value.cleanedLine) + '\n' + (0, r.toDisplayString)(p.value.caretLine), 1)], 64)) : (0, r.createCommentVNode)('v-if', !0), p.value.originalLine ? ((0, r.openBlock)(), (0, r.createElementBlock)('details', D, [t[4] || (t[4] = (0, r.createElementVNode)('summary', null, 'Xem nội dung gốc bạn đã nhập (tùy chọn)', -1)), (0, r.createElementVNode)('pre', x, (0, r.toDisplayString)(p.value.originalLine), 1)])) : (0, r.createCommentVNode)('v-if', !0)])])) : a.value ? ((0, r.openBlock)(), (0, r.createElementBlock)('div', {
+                        key: 1,
+                        class: (0, r.normalizeClass)(mt.value)
+                    }, [(0, r.createElementVNode)('div', {
+                        class: (0, r.normalizeClass)(['frame-layer', {
+                            show: st.value >= 5
+                        }]),
+                        'aria-hidden': 'true'
+                    }, [...t[6] || (t[6] = [(0, r.createStaticVNode)('<svg class="frame-svg frame-top" viewBox="0 0 400 100" preserveAspectRatio="none" data-v-78f94286><path d="M 5,100 A 195,80 0 0,1 395,100" data-v-78f94286></path><path d="M 15,100 A 185,70 0 0,1 385,100" stroke-width="1" opacity="0.6" data-v-78f94286></path><line x1="60" y1="60" x2="60" y2="90" stroke-width="1" data-v-78f94286></line><line x1="340" y1="60" x2="340" y2="90" stroke-width="1" data-v-78f94286></line><circle cx="60" cy="92" r="3" fill="var(--tier-color)" stroke="none" data-v-78f94286></circle><circle cx="340" cy="92" r="3" fill="var(--tier-color)" stroke="none" data-v-78f94286></circle><path d="M 200,2 L 205,15 L 220,20 L 205,25 L 200,38 L 195,25 L 180,20 L 195,15 Z" fill="var(--tier-color)" stroke="none" data-v-78f94286></path></svg><svg class="frame-svg frame-body" viewBox="0 0 400 100" preserveAspectRatio="none" data-v-78f94286><line x1="5" y1="0" x2="5" y2="100" data-v-78f94286></line><line x1="395" y1="0" x2="395" y2="100" data-v-78f94286></line><line x1="15" y1="0" x2="15" y2="98" stroke-width="1" opacity="0.6" data-v-78f94286></line><line x1="385" y1="0" x2="385" y2="98" stroke-width="1" opacity="0.6" data-v-78f94286></line><line x1="5" y1="100" x2="395" y2="100" data-v-78f94286></line></svg>', 2)])], 2), (0, r.createElementVNode)('div', {
+                        ref_key: 'bgLayerRef',
+                        ref: h,
+                        class: 'card-background-layer'
+                    }, [(0, r.createElementVNode)('canvas', {
+                        id: 'particle-canvas',
+                        ref_key: 'canvasRef',
+                        ref: k
+                    }, null, 512)], 512), (0, r.createElementVNode)('div', A, [(0, r.createElementVNode)('header', L, [(0, r.createElementVNode)('span', M, 'Lv.' + (0, r.toDisplayString)(pt.value), 1), (0, r.createElementVNode)('h1', j, (0, r.toDisplayString)(ut.value), 1), (0, r.createElementVNode)('div', I, [(0, r.createElementVNode)('span', {
+                        style: {
+                            'font-weight': 'bold',
+                            color: y.value.raceHex
+                        }
+                    }, (0, r.toDisplayString)(ft.value), 5), (0, r.createElementVNode)('span', {
+                        class: 'meta-separator',
+                        style: {
+                            color: y.value.raceHex
+                        }
+                    }, '◆', 4), (0, r.createElementVNode)('span', null, (0, r.toDisplayString)(vt.value), 1), t[7] || (t[7] = (0, r.createElementVNode)('span', {
+                        class: 'meta-separator'
+                    }, '◆', -1)), (0, r.createElementVNode)('span', null, (0, r.toDisplayString)(kt.value), 1), (0, r.createElementVNode)('span', {
+                        class: 'meta-separator',
+                        style: {
+                            color: y.value.tierHex
+                        }
+                    }, '◆', 4), (0, r.createElementVNode)('span', {
+                        style: {
+                            color: y.value.tierHex,
+                            'font-weight': 'bold'
+                        }
+                    }, (0, r.toDisplayString)(yt.value), 5)])]), (0, r.createElementVNode)('div', T, [(0, r.createElementVNode)('div', q, [((0, r.openBlock)(!0), (0, r.createElementBlock)(r.Fragment, null, (0, r.renderList)($t.value, e => ((0, r.openBlock)(), (0, r.createElementBlock)('div', {
+                        key: e.key,
+                        class: (0, r.normalizeClass)(['attribute-item', {
+                            'show-formula': e.showFormula,
+                            'has-formula': !!e.formula
+                        }]),
+                        onClick: t => {
+return n = e.key, void (bt(St(dt(a.value, 'Thuộc tính', 'Thuộc tính') || {}, n)).formula && (Nt.value = {
+                                ...Nt.value,
+                                [n]: !Nt.value[n]
+                            }));
+                            var n
+                        }
+                    }, [(0, r.createElementVNode)('span', H, (0, r.toDisplayString)(e.short), 1), (0, r.createElementVNode)('span', {
+                        class: (0, r.normalizeClass)(['attribute-total', {
+                            abnormal: e.isAbnormal
+                        }])
+                    }, (0, r.toDisplayString)(e.total), 3), e.formula ? ((0, r.openBlock)(), (0, r.createElementBlock)('span', W, e.formula.split('+').reduce((t, n, a) => {
+                        const i = parseInt(n.trim(), 10);
+                        let s = !1;
+                        return 0 === a ? s = i > 6 : 1 === a ? s = i > lp.value - 1 : 2 === a && (s = zSum.value > parseInt(pt.value, 10) - 1), a > 0 && t.push((0, r.createTextVNode)(' + ')), t.push((0, r.createElementVNode)('span', {
+                            class: (0, r.normalizeClass)({
+                                'formula-part-warning': s
+                            })
+                        }, n.trim(), 2)), t
+                    }, []))) : (0, r.createCommentVNode)('v-if', !0)], 10, P))), 128))]), (0, r.createElementVNode)('div', Y, [((0, r.openBlock)(!0), (0, r.createElementBlock)(r.Fragment, null, (0, r.renderList)(tn.value, e => ((0, r.openBlock)(), (0, r.createElementBlock)('button', {
+                        key: e.key,
+                        class: (0, r.normalizeClass)(['tab-button', {
+                            active: v.value === e.key,
+                            'is-divinity-tab': 'divinity' === e.key
+                        }]),
+                        onClick: t => v.value = e.key
+                    }, (0, r.toDisplayString)(e.label), 11, U))), 128))]), (0, r.createElementVNode)('section', G, ['profile' === v.value ? ((0, r.openBlock)(), (0, r.createElementBlock)('div', K, [(0, r.createElementVNode)('div', Z, [(0, r.createElementVNode)('div', J, [gt.value ? ((0, r.openBlock)(), (0, r.createElementBlock)(r.Fragment, {
+                        key: 0
+                    }, [t[8] || (t[8] = (0, r.createElementVNode)('h3', {
+                        class: 'subsection-title'
+}, 'Tính cách', -1)), (0, r.createElementVNode)('div', Q, (0, r.toDisplayString)(gt.value), 1)], 64)) : (0, r.createCommentVNode)('v-if', !0)]), (0, r.createElementVNode)('div', X, [Et.value ? ((0, r.openBlock)(), (0, r.createElementBlock)(r.Fragment, {
+                        key: 0
+                    }, [t[9] || (t[9] = (0, r.createElementVNode)('h3', {
+                        class: 'subsection-title'
+}, 'Đặc điểm ngoại hình', -1)), (0, r.createElementVNode)('div', ee, (0, r.toDisplayString)(Et.value), 1)], 64)) : (0, r.createCommentVNode)('v-if', !0)])]), (0, r.createElementVNode)('div', te, [(0, r.createElementVNode)('div', ne, [ht.value ? ((0, r.openBlock)(), (0, r.createElementBlock)(r.Fragment, {
+                        key: 0
+                    }, [t[10] || (t[10] = (0, r.createElementVNode)('h3', {
+                        class: 'subsection-title'
+}, 'Yêu thích', -1)), (0, r.createElementVNode)('div', ae, (0, r.toDisplayString)(ht.value), 1)], 64)) : (0, r.createCommentVNode)('v-if', !0)]), (0, r.createElementVNode)('div', re, [Bt.value ? ((0, r.openBlock)(), (0, r.createElementBlock)(r.Fragment, {
+                        key: 0
+                    }, [t[11] || (t[11] = (0, r.createElementVNode)('h3', {
+                        class: 'subsection-title'
+}, 'Trang phục và Phụ kiện', -1)), (0, r.createElementVNode)('div', le, (0, r.toDisplayString)(Bt.value), 1)], 64)) : (0, r.createCommentVNode)('v-if', !0)])])])) : 'skills' === v.value ? ((0, r.openBlock)(!0), (0, r.createElementBlock)(r.Fragment, {
+                        key: 1
+                    }, (0, r.renderList)(Rt.value, (e, n) => ((0, r.openBlock)(), (0, r.createElementBlock)('article', {
+                        key: `skill-${n}-${Mt(e)}`,
+                        class: (0, r.normalizeClass)(['card', _t(e)]),
+                        style: {
+                            borderLeftColor: getQualityHex(e)
+                        }
+                    }, [(0, r.createElementVNode)('div', oe, [(0, r.createElementVNode)('h3', {
+                        class: 'card-title',
+                        style: {
+                            color: getQualityHex(e)
+                        }
+                    }, (0, r.toDisplayString)(Mt(e)), 5), jt(e) ? ((0, r.openBlock)(), (0, r.createElementBlock)('span', {
+                        key: 0,
+                        class: 'card-subtitle',
+                        style: {
+                            color: getQualityHex(e)
+                        }
+                    }, (0, r.toDisplayString)(jt(e)), 5)) : (0, r.createCommentVNode)('v-if', !0)]), (0, r.createElementVNode)('div', ce, [Tt(e).length > 0 ? ((0, r.openBlock)(), (0, r.createElementBlock)('div', ie, [((0, r.openBlock)(!0), (0, r.createElementBlock)(r.Fragment, null, (0, r.renderList)(Tt(e), e => ((0, r.openBlock)(), (0, r.createElementBlock)('span', {
+                        key: `skill-tag-${n}-${e}`,
+                        class: 'card-tag'
+                    }, (0, r.toDisplayString)(e), 1))), 128))])) : (0, r.createCommentVNode)('v-if', !0), It(e) ? ((0, r.openBlock)(), (0, r.createElementBlock)('p', se, [t[12] || (t[12] = (0, r.createElementVNode)('span', {
+                        class: 'card-label'
+}, 'Loại hình:', -1)), (0, r.createTextVNode)((0, r.toDisplayString)(It(e)), 1)])) : (0, r.createCommentVNode)('v-if', !0), qt(e) ? ((0, r.openBlock)(), (0, r.createElementBlock)('p', me, [t[13] || (t[13] = (0, r.createElementVNode)('span', {
+                        class: 'card-label'
+}, 'Tiêu tốn:', -1)), (0, r.createTextVNode)((0, r.toDisplayString)(qt(e)), 1)])) : (0, r.createCommentVNode)('v-if', !0), At(e).length > 0 ? ((0, r.openBlock)(), (0, r.createElementBlock)(r.Fragment, {
+                        key: 3
+                    }, [t[14] || (t[14] = (0, r.createElementVNode)('p', null, [(0, r.createElementVNode)('span', {
+                        class: 'card-label'
+}, 'Hiệu quả:')], -1)), (0, r.createElementVNode)('ul', de, [((0, r.openBlock)(!0), (0, r.createElementBlock)(r.Fragment, null, (0, r.renderList)(At(e), (e, t) => ((0, r.openBlock)(), (0, r.createElementBlock)('li', {
+                        key: `skill-effect-${n}-${t}-${e.name}`,
+                        class: 'effect-item'
+                    }, [e.fallback ? (0, r.createCommentVNode)('v-if', !0) : ((0, r.openBlock)(), (0, r.createElementBlock)('span', ue, (0, r.toDisplayString)(e.name), 1)), (0, r.createElementVNode)('span', pe, (0, r.toDisplayString)(e.content), 1)]))), 128))])], 64)) : ((0, r.openBlock)(), (0, r.createElementBlock)('p', fe, [...t[15] || (t[15] = [(0, r.createElementVNode)('span', {
+                        class: 'card-label'
+}, 'Hiệu quả:', -1), (0, r.createTextVNode)('Chưa có', -1)])])), Ot(e) ? ((0, r.openBlock)(), (0, r.createElementBlock)('p', ye, (0, r.toDisplayString)(Ot(e)), 1)) : (0, r.createCommentVNode)('v-if', !0)])], 2))), 128)) : 'equipment' === v.value ? ((0, r.openBlock)(!0), (0, r.createElementBlock)(r.Fragment, {
+                        key: 2
+                    }, (0, r.renderList)(Wt.value, (e, n) => ((0, r.openBlock)(), (0, r.createElementBlock)('article', {
+                        key: `equip-${n}-${Mt(e)}`,
+                        class: (0, r.normalizeClass)(['card', _t(e)]),
+                        style: {
+                            borderLeftColor: getQualityHex(e)
+                        }
+                    }, [(0, r.createElementVNode)('div', ve, [(0, r.createElementVNode)('h3', {
+                        class: 'card-title',
+                        style: {
+                            color: getQualityHex(e)
+                        }
+                    }, (0, r.toDisplayString)(Mt(e)), 5), jt(e) ? ((0, r.openBlock)(), (0, r.createElementBlock)('span', {
+                        key: 0,
+                        class: 'card-subtitle',
+                        style: {
+                            color: getQualityHex(e)
+                        }
+                    }, (0, r.toDisplayString)(jt(e)), 5)) : (0, r.createCommentVNode)('v-if', !0)]), (0, r.createElementVNode)('div', ke, [Tt(e).length > 0 ? ((0, r.openBlock)(), (0, r.createElementBlock)('div', ge, [((0, r.openBlock)(!0), (0, r.createElementBlock)(r.Fragment, null, (0, r.renderList)(Tt(e), e => ((0, r.openBlock)(), (0, r.createElementBlock)('span', {
+                        key: `equip-tag-${n}-${e}`,
+                        class: 'card-tag'
+                    }, (0, r.toDisplayString)(e), 1))), 128))])) : (0, r.createCommentVNode)('v-if', !0), It(e) ? ((0, r.openBlock)(), (0, r.createElementBlock)('p', he, [t[16] || (t[16] = (0, r.createElementVNode)('span', {
+                        class: 'card-label'
+}, 'Loại hình:', -1)), (0, r.createTextVNode)((0, r.toDisplayString)(It(e)), 1)])) : (0, r.createCommentVNode)('v-if', !0), At(e).length > 0 ? ((0, r.openBlock)(), (0, r.createElementBlock)(r.Fragment, {
+                        key: 2
+                    }, [t[17] || (t[17] = (0, r.createElementVNode)('p', null, [(0, r.createElementVNode)('span', {
+                        class: 'card-label'
+}, 'Hiệu quả:')], -1)), (0, r.createElementVNode)('ul', Ee, [((0, r.openBlock)(!0), (0, r.createElementBlock)(r.Fragment, null, (0, r.renderList)(At(e), (e, t) => ((0, r.openBlock)(), (0, r.createElementBlock)('li', {
+                        key: `equip-effect-${n}-${t}-${e.name}`,
+                        class: 'effect-item'
+                    }, [e.fallback ? (0, r.createCommentVNode)('v-if', !0) : ((0, r.openBlock)(), (0, r.createElementBlock)('span', Be, (0, r.toDisplayString)(e.name), 1)), (0, r.createElementVNode)('span', Ve, (0, r.toDisplayString)(e.content), 1)]))), 128))])], 64)) : ((0, r.openBlock)(), (0, r.createElementBlock)('p', Ne, [...t[18] || (t[18] = [(0, r.createElementVNode)('span', {
+                        class: 'card-label'
+}, 'Hiệu quả:', -1), (0, r.createTextVNode)('Chưa có', -1)])])), Ot(e) ? ((0, r.openBlock)(), (0, r.createElementBlock)('p', be, (0, r.toDisplayString)(Ot(e)), 1)) : (0, r.createCommentVNode)('v-if', !0)])], 2))), 128)) : 'inventory' === v.value ? ((0, r.openBlock)(!0), (0, r.createElementBlock)(r.Fragment, {
+                        key: 3
+                    }, (0, r.renderList)(Yt.value, e => ((0, r.openBlock)(), (0, r.createElementBlock)(r.Fragment, {
+                        key: e.key
+                    }, [(0, r.createElementVNode)('h3', Fe, (0, r.toDisplayString)(e.title), 1), ((0, r.openBlock)(!0), (0, r.createElementBlock)(r.Fragment, null, (0, r.renderList)(e.items, (n, a) => ((0, r.openBlock)(), (0, r.createElementBlock)('article', {
+                        key: `${e.key}-${a}-${Mt(n)}`,
+                        class: (0, r.normalizeClass)(['card', _t(n)]),
+                        style: {
+                            borderLeftColor: getQualityHex(n)
+                        }
+                    }, [(0, r.createElementVNode)('div', Se, [(0, r.createElementVNode)('h3', {
+                        class: 'card-title',
+                        style: {
+                            color: getQualityHex(n)
+                        }
+                    }, (0, r.toDisplayString)(Mt(n)), 5), jt(n) ? ((0, r.openBlock)(), (0, r.createElementBlock)('span', {
+                        key: 0,
+                        class: 'card-subtitle',
+                        style: {
+                            color: getQualityHex(n)
+                        }
+                    }, (0, r.toDisplayString)(jt(n)), 5)) : (0, r.createCommentVNode)('v-if', !0)]), (0, r.createElementVNode)('div', $e, [Tt(n).length > 0 ? ((0, r.openBlock)(), (0, r.createElementBlock)('div', Ce, [((0, r.openBlock)(!0), (0, r.createElementBlock)(r.Fragment, null, (0, r.renderList)(Tt(n), t => ((0, r.openBlock)(), (0, r.createElementBlock)('span', {
+                        key: `${e.key}-${a}-${t}`,
+                        class: 'card-tag'
+                    }, (0, r.toDisplayString)(t), 1))), 128))])) : (0, r.createCommentVNode)('v-if', !0), It(n) ? ((0, r.openBlock)(), (0, r.createElementBlock)('p', we, [t[19] || (t[19] = (0, r.createElementVNode)('span', {
+                        class: 'card-label'
+}, 'Loại hình:', -1)), (0, r.createTextVNode)((0, r.toDisplayString)(It(n)), 1)])) : (0, r.createCommentVNode)('v-if', !0), Lt(n).length > 0 ? ((0, r.openBlock)(), (0, r.createElementBlock)(r.Fragment, {
+                        key: 2
+                    }, [t[20] || (t[20] = (0, r.createElementVNode)('p', null, [(0, r.createElementVNode)('span', {
+                        class: 'card-label'
+}, 'Hiệu quả:')], -1)), (0, r.createElementVNode)('ul', De, [((0, r.openBlock)(!0), (0, r.createElementBlock)(r.Fragment, null, (0, r.renderList)(Lt(n), (t, n) => ((0, r.openBlock)(), (0, r.createElementBlock)('li', {
+                        key: `${e.key}-${a}-${n}-${t.name}`,
+                        class: 'effect-item'
+                    }, [t.fallback ? (0, r.createCommentVNode)('v-if', !0) : ((0, r.openBlock)(), (0, r.createElementBlock)('span', xe, (0, r.toDisplayString)(t.name), 1)), (0, r.createElementVNode)('span', Ae, (0, r.toDisplayString)(t.content), 1)]))), 128))])], 64)) : ((0, r.openBlock)(), (0, r.createElementBlock)('p', Le, [...t[21] || (t[21] = [(0, r.createElementVNode)('span', {
+                        class: 'card-label'
+}, 'Hiệu quả:', -1), (0, r.createTextVNode)('Chưa có', -1)])])), Ot(n) && At(n).length > 0 ? ((0, r.openBlock)(), (0, r.createElementBlock)('p', Me, (0, r.toDisplayString)(Ot(n)), 1)) : (0, r.createCommentVNode)('v-if', !0)])], 2))), 128))], 64))), 128)) : 'divinity' === v.value ? ((0, r.openBlock)(), (0, r.createElementBlock)(r.Fragment, {
+                        key: 4
+}, [Gt.value ? ((0, r.openBlock)(), (0, r.createElementBlock)('h3', je, (0, r.toDisplayString)(Gt.value), 1)) : (0, r.createCommentVNode)('v-if', !0), Kt.value ? ((0, r.openBlock)(), (0, r.createElementBlock)('article', _e, [(0, r.createElementVNode)('div', Ie, [(0, r.createElementVNode)('h3', Oe, (0, r.toDisplayString)(Kt.value.name), 1)]), (0, r.createElementVNode)('div', ze, [(0, r.createElementVNode)('p', null, (0, r.toDisplayString)(Kt.value.description || 'Chưa có'), 1)])])) : (0, r.createCommentVNode)('v-if', !0), Zt.value.length > 0 ? ((0, r.openBlock)(), (0, r.createElementBlock)(r.Fragment, {
+                        key: 2
+                    }, [(0, r.createElementVNode)('h3', {
+                        class: 'subsection-title divinity-subsection'
+}, 'Yếu Tố', -1), ((0, r.openBlock)(!0), (0, r.createElementBlock)(r.Fragment, null, (0, r.renderList)(Zt.value, (e, t) => ((0, r.openBlock)(), (0, r.createElementBlock)('article', {
+                        key: `elem-${t}-${Mt(e)}`,
+                        class: 'card divinity-card'
+                    }, [(0, r.createElementVNode)('div', Te, [(0, r.createElementVNode)('h3', qe, (0, r.toDisplayString)(Mt(e)), 1)]), (0, r.createElementVNode)('div', Pe, [(0, r.createElementVNode)('p', null, (0, r.toDisplayString)(zt(e)), 1)])]))), 128))], 64)) : (0, r.createCommentVNode)('v-if', !0), Jt.value.length > 0 ? ((0, r.openBlock)(), (0, r.createElementBlock)(r.Fragment, {
+                        key: 3
+                    }, [(0, r.createElementVNode)('h3', {
+                        class: 'subsection-title divinity-subsection'
+}, 'Quyền Năng', -1), ((0, r.openBlock)(!0), (0, r.createElementBlock)(r.Fragment, null, (0, r.renderList)(Jt.value, (e, t) => ((0, r.openBlock)(), (0, r.createElementBlock)('article', {
+                        key: `power-${t}-${Mt(e)}`,
+                        class: 'card divinity-card'
+                    }, [(0, r.createElementVNode)('div', He, [(0, r.createElementVNode)('h3', Re, (0, r.toDisplayString)(Mt(e)), 1)]), (0, r.createElementVNode)('div', We, [(0, r.createElementVNode)('p', null, (0, r.toDisplayString)(zt(e)), 1)])]))), 128))], 64)) : (0, r.createCommentVNode)('v-if', !0), Qt.value.length > 0 ? ((0, r.openBlock)(), (0, r.createElementBlock)(r.Fragment, {
+                        key: 4
+                    }, [(0, r.createElementVNode)('h3', {
+                        class: 'subsection-title divinity-subsection'
+}, 'Pháp Tắc', -1), ((0, r.openBlock)(!0), (0, r.createElementBlock)(r.Fragment, null, (0, r.renderList)(Qt.value, (e, n) => ((0, r.openBlock)(), (0, r.createElementBlock)('article', {
+                        key: `law-${n}-${Mt(e)}`,
+                        class: 'card divinity-card'
+                    }, [(0, r.createElementVNode)('div', Ye, [(0, r.createElementVNode)('h3', Ue, (0, r.toDisplayString)(Mt(e)), 1)]), (0, r.createElementVNode)('div', Ge, [Ot(e) ? ((0, r.openBlock)(), (0, r.createElementBlock)('p', Ke, (0, r.toDisplayString)(Ot(e)), 1)) : (0, r.createCommentVNode)('v-if', !0), Pt(e) ? ((0, r.openBlock)(), (0, r.createElementBlock)('p', Ze, [t[22] || (t[22] = (0, r.createElementVNode)('span', {
+                        class: 'card-label'
+}, 'Bị động:', -1)), (0, r.createTextVNode)((0, r.toDisplayString)(Pt(e)), 1)])) : (0, r.createCommentVNode)('v-if', !0), Ht(e) ? ((0, r.openBlock)(), (0, r.createElementBlock)('p', Je, [t[23] || (t[23] = (0, r.createElementVNode)('span', {
+                        class: 'card-label'
+}, 'Chủ động:', -1)), (0, r.createTextVNode)((0, r.toDisplayString)(Ht(e)), 1)])) : (0, r.createCommentVNode)('v-if', !0)])]))), 128))], 64)) : (0, r.createCommentVNode)('v-if', !0)], 64)) : ((0, r.openBlock)(), (0, r.createElementBlock)('div', Qe, (0, r.toDisplayString)(Vt.value || 'Chưa có câu chuyện'), 1))])]), (0, r.createElementVNode)('button', {
+                        id: 'import-action-btn',
+                        disabled: lt.value,
+                        onClick: (0, r.withModifiers)(ln, ['stop'])
+                    }, (0, r.toDisplayString)(ot.value), 9, Xe), (0, r.createElementVNode)('div', {
+                        id: 'import-action-menu',
+                        class: (0, r.normalizeClass)({
+                            show: rt.value
+                        })
+                    }, [(0, r.createElementVNode)('button', {
+                        type: 'button',
+                        disabled: lt.value,
+                        onClick: sn
+}, 'Nhập vào biến MVU', 8, et), (0, r.createElementVNode)('button', {
+                        type: 'button',
+                        disabled: lt.value,
+                        onClick: mn
+}, 'Nhập vào Sách Thế Giới trò chuyện', 8, tt)], 2)])], 2)) : ((0, r.openBlock)(), (0, r.createElementBlock)('div', nt, 'Đang chờ dữ liệu YAML...'))]))
+                }
+            });
+        var rt = function e(t) {
+            var r = a[t];
+            if (void 0 !== r) return r.exports;
+            var l = a[t] = {
+                exports: {}
+            };
+            return n[t](l, l.exports, e), l.exports
+        }(992);
+        const lt = (0, rt.A)(at, [
+            ['__scopeId', 'data-v-78f94286']
+        ]);
+        $(() => {
+            const t = (0, r.createApp)(lt).use(e());
+            t.mount('#app'), $(window).on('pagehide', () => t.unmount())
+        });
+        //# sourceMappingURL=index.js.map
+    </script>
+    <style>
+        @keyframes fade-in {
+            from {
+                opacity: 0
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade-out {
+            from {
+                opacity: 1
+            }
+
+            to {
+                opacity: 0
+            }
+        }
+
+        @keyframes slide-down-fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(-15px)
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+        @keyframes abnormal-attribute-glow {
+
+            0%,
+            100% {
+                color: #ff4d4d;
+                text-shadow: 0 0 5px #ff1a1a, 0 0 10px #ff1a1a, 0 0 15px #e60000
+            }
+
+            50% {
+                color: #ff8080;
+                text-shadow: 0 0 10px #ff1a1a, 0 0 20px #e60000, 0 0 30px #c00
+            }
+        }
+
+        [data-v-78f94286]:root {
+            --race-color: #ffffff;
+            --race-color-rgb: 255, 255, 255;
+            --tier-color: #808080;
+            --tier-color-rgb: 128, 128, 128;
+            --name-font-stack: 'Noto Serif SC', 'Source Han Serif SC', 'Noto Sans SC', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+            --name-shadow: rgba(0, 0, 0, 0.58);
+            --name-glow: rgba(var(--tier-color-rgb), 0.12);
+            --tier-label-fg: #f3f6ff;
+        }
+
+        .viewer-root[data-v-78f94286] {
+            min-height: 100vh;
+            padding: 24px 12px 48px;
+            color: #f0f0f0;
+            font-family: 'Noto Sans SC', sans-serif
+        }
+
+        .loading-card[data-v-78f94286],
+        .error-card[data-v-78f94286] {
+            max-width: 720px;
+            margin: 0 auto;
+            border-radius: 12px;
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 16px
+        }
+
+        .error-body[data-v-78f94286] {
+            margin-top: 10px;
+            font-size: 0.9rem
+        }
+
+        .yaml-error-row[data-v-78f94286] {
+            margin-bottom: 6px
+        }
+
+        .yaml-error-title[data-v-78f94286] {
+            font-weight: 700;
+            margin-bottom: 6px
+        }
+
+        .yaml-error-pre[data-v-78f94286] {
+            margin: 0;
+            padding: 10px;
+            border-radius: 6px;
+            background: rgba(0, 0, 0, 0.35);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            white-space: pre;
+            overflow: auto
+        }
+
+        .yaml-error-pre.alt[data-v-78f94286] {
+            margin-top: 8px;
+            background: rgba(0, 0, 0, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.1)
+        }
+
+        .yaml-error-details[data-v-78f94286] {
+            margin-top: 10px
+        }
+
+        .yaml-error-details summary[data-v-78f94286] {
+            cursor: pointer;
+            -webkit-user-select: none;
+            user-select: none
+        }
+
+        .card-wrapper[data-v-78f94286] {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            border-radius: 16px;
+            overflow: visible;
+            z-index: 1
+        }
+
+        .card-wrapper[data-v-78f94286]::before {
+            content: '';
+            position: absolute;
+            inset: -10px;
+            border-radius: 24px;
+            pointer-events: none;
+            z-index: -1;
+            background: radial-gradient(120% 75% at 50% -5%, rgba(var(--tier-color-rgb), 0.34) 0%, rgba(var(--tier-color-rgb), 0.14) 38%, transparent 74%), linear-gradient(180deg, rgba(var(--tier-color-rgb), 0.22) 0%, rgba(var(--tier-color-rgb), 0.06) 30%, transparent 62%);
+            box-shadow: 0 0 0 1px rgba(var(--tier-color-rgb), 0.2), 0 0 24px rgba(var(--tier-color-rgb), 0.22);
+            filter: blur(8px)
+        }
+
+        .frame-layer[data-v-78f94286] {
+            position: absolute;
+            top: -25px;
+            left: -5px;
+            width: calc(100% + 10px);
+            height: calc(100% + 50px);
+            z-index: 4;
+            pointer-events: none;
+            display: none;
+            flex-direction: column
+        }
+
+        .frame-layer.show[data-v-78f94286] {
+            display: flex
+        }
+
+        .frame-svg[data-v-78f94286] {
+            width: 100%;
+            fill: none;
+            stroke: var(--tier-color);
+            stroke-width: 2;
+            vector-effect: non-scaling-stroke;
+            filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 5px rgba(var(--tier-color-rgb), 0.8))
+        }
+
+        .frame-top[data-v-78f94286] {
+            width: 100%;
+            height: 100px;
+            flex-shrink: 0
+        }
+
+        .frame-body[data-v-78f94286] {
+            width: 100%;
+            flex-grow: 1
+        }
+
+        .card-background-layer[data-v-78f94286] {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            border-radius: 16px;
+            overflow: hidden;
+            background: linear-gradient(180deg, rgba(16, 21, 32, 0.9) 0%, rgba(13, 18, 29, 0.92) 56%, rgba(10, 14, 23, 0.94) 100%);
+            border: 1px solid rgba(var(--tier-color-rgb), 0.72);
+            border-top: 2px solid rgba(var(--tier-color-rgb), 1);
+            box-shadow: 0 14px 36px rgba(0, 0, 0, 0.78), 0 0 28px rgba(var(--tier-color-rgb), 0.24), 0 -2px 30px rgba(var(--tier-color-rgb), 0.42), inset 0 0 30px rgba(0, 0, 0, 0.34), inset 0 1px 0 rgba(var(--tier-color-rgb), 0.75);
+            backdrop-filter: blur(2px) saturate(136%);
+            -webkit-backdrop-filter: blur(2px) saturate(136%)
+        }
+
+        .card-background-layer[data-v-78f94286]::before,
+        .card-background-layer[data-v-78f94286]::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            pointer-events: none
+        }
+
+        .card-background-layer[data-v-78f94286]::before {
+            z-index: 1;
+            mix-blend-mode: screen;
+            background-image: radial-gradient(140% 95% at 50% -8%, rgba(var(--tier-color-rgb), 0.66) 0%, rgba(var(--tier-color-rgb), 0.3) 32%, rgba(var(--tier-color-rgb), 0.08) 58%, transparent 78%), linear-gradient(180deg, rgba(var(--tier-color-rgb), 0.48) 0%, rgba(var(--tier-color-rgb), 0.16) 26%, transparent 56%)
+        }
+
+        .card-background-layer[data-v-78f94286]::after {
+            z-index: 1;
+            opacity: 0.92;
+            background-image: radial-gradient(circle at 50% 82%, rgba(var(--race-color-rgb), 0.26) 0%, transparent 74%), radial-gradient(circle at 50% 48%, transparent 58%, rgba(0, 0, 0, 0.33) 100%)
+        }
+
+        #particle-canvas[data-v-78f94286] {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            pointer-events: none;
+            mix-blend-mode: normal;
+            opacity: 0.78
+        }
+
+        .card-wrapper.high-tier .card-background-layer[data-v-78f94286] {
+            border: 1px solid rgba(var(--tier-color-rgb), 0.95);
+            border-top: 3px solid rgba(var(--tier-color-rgb), 1)
+        }
+
+        .sheet-content-wrapper[data-v-78f94286] {
+            position: relative;
+            z-index: 3
+        }
+
+        .sheet-header[data-v-78f94286] {
+            padding: 50px 20px 25px;
+            text-align: center;
+            position: relative;
+            margin-bottom: 10px;
+            border-bottom: 1px solid rgba(var(--tier-color-rgb), 0.2);
+            background: radial-gradient(ellipse at 50% 0%, rgba(var(--tier-color-rgb), 0.15) 0%, transparent 80%)
+        }
+
+        .sheet-header[data-v-78f94286]::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            z-index: -1;
+            background-image: linear-gradient(90deg, transparent 95%, rgba(var(--tier-color-rgb), 0.1) 95%), linear-gradient(0deg, transparent 95%, rgba(var(--tier-color-rgb), 0.1) 95%);
+            background-size: 40px 40px;
+            mask-image: linear-gradient(to bottom, rgba(148, 148, 148, 0.72) 0%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, rgba(148, 148, 148, 0.72) 0%, transparent 100%)
+        }
+
+        .level-badge[data-v-78f94286] {
+            display: inline-block;
+            padding: 4px 16px;
+            border-radius: 50px;
+            border: 1px solid var(--tier-color);
+            color: var(--tier-color);
+            font-weight: 700;
+            margin-bottom: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 15px rgba(var(--tier-color-rgb), 0.2);
+            text-shadow: 0 0 8px rgba(var(--tier-color-rgb), 0.6)
+        }
+
+        .char-name[data-v-78f94286] {
+            margin: 0 0 10px;
+            font-size: 3rem;
+            color: #f8f8f8;
+            font-family: var(--name-font-stack);
+            font-weight: 700;
+            letter-spacing: 0.25px;
+            line-height: 1.08;
+            text-shadow: 1px -1px 2px var(--race-color), -1px -1px 2px var(--race-color), 1px 1px 2px var(--race-color), -1px 1px 2px var(--race-color)
+        }
+
+        .char-meta-row[data-v-78f94286] {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.95rem;
+            text-shadow: -1px -1px 2px #4a4a4a, 1px -1px 2px #4a4a4a, -1px 1px 2px #4a4a4a, 1px 1px 2px #4a4a4a
+        }
+
+        .meta-separator[data-v-78f94286] {
+            color: rgba(242, 247, 255, 0.78);
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.86), 0 0 3px rgba(var(--tier-color-rgb), 0.22)
+        }
+
+        .sheet-body[data-v-78f94286] {
+            padding: 20px 30px 90px
+        }
+
+        .attributes-grid[data-v-78f94286] {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+            --flag-width: 96px;
+            --flag-min-height: 118px;
+            --flag-top-padding: 15px;
+            --flag-bottom-padding: 30px;
+            --flag-name-size: clamp(1rem, calc(var(--flag-width) * 0.2), 1.08rem);
+            --flag-total-size: clamp(2rem, calc(var(--flag-width) * 0.4), 2.45rem);
+            --flag-formula-size: clamp(0.76rem, calc(var(--flag-width) * 0.115), 0.86rem);
+            --flag-total-offset: 0px
+        }
+
+        .attribute-item[data-v-78f94286] {
+            flex: 0 0 var(--flag-width);
+            width: var(--flag-width);
+            min-width: var(--flag-width);
+            max-width: var(--flag-width);
+            min-height: var(--flag-min-height);
+            box-sizing: border-box;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-top: 2px solid var(--race-color);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
+            padding: var(--flag-top-padding) 5px var(--flag-bottom-padding);
+            text-align: center;
+            cursor: default;
+            transition: transform 0.2s, background 0.2s, border-color 0.2s, box-shadow 0.2s
+        }
+
+        .attribute-item.has-formula[data-v-78f94286] {
+            cursor: pointer
+        }
+
+        .attribute-item[data-v-78f94286]:hover {
+            transform: translateY(-3px);
+            background: rgba(var(--race-color-rgb), 0.1);
+            box-shadow: 0 5px 20px rgba(var(--race-color-rgb), 0.15);
+            border-color: rgba(var(--race-color-rgb), 0.4)
+        }
+
+        .attribute-name[data-v-78f94286] {
+            display: block;
+            font-size: var(--flag-name-size);
+            color: #fff;
+            margin-bottom: 6px;
+            font-weight: 700;
+            line-height: 1.05;
+            opacity: 0.96
+        }
+
+        .attribute-total[data-v-78f94286] {
+            display: block;
+            margin-top: var(--flag-total-offset, 0px);
+            font-family: 'Cinzel', 'Times New Roman', serif;
+            font-size: var(--flag-total-size);
+            line-height: 1;
+            font-weight: 700;
+            text-shadow: 1px 1px 0 var(--tier-color), -1px -1px 0 var(--tier-color), 1px -1px 0 var(--tier-color), -1px 1px 0 var(--tier-color);
+            transition: opacity .2s ease-in-out
+        }
+
+        .attribute-total.abnormal[data-v-78f94286] {
+            animation: abnormal-attribute-glow 1.5s ease-in-out infinite
+        }
+
+        .formula-part-warning[data-v-78f94286] {
+            color: #ff4d4d;
+            text-shadow: 0 0 5px #ff1a1a, 0 0 8px #e60000;
+            font-weight: bold
+        }
+
+        .attribute-formula[data-v-78f94286] {
+            opacity: 0;
+            margin-top: 6px;
+            font-size: 10pt;
+            color: var(--race-color);
+            font-weight: 700;
+            line-height: 1.3;
+            word-break: break-all;
+            padding: 0 2px;
+            position: absolute;
+            bottom: var(--flag-bottom-padding);
+            left: 5px;
+            right: 5px;
+            pointer-events: none;
+            transition: opacity .2s ease-in-out
+        }
+
+        .attribute-item.show-formula .attribute-total[data-v-78f94286] {
+            opacity: 0
+        }
+
+        .attribute-item.show-formula .attribute-formula[data-v-78f94286] {
+            display: block;
+            opacity: 1
+        }
+
+        .tab-nav[data-v-78f94286] {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+            margin-bottom: 14px;
+            margin-left: 20px;
+            margin-right: 20px
+        }
+
+        .tab-button[data-v-78f94286] {
+            flex: 1 1 auto;
+            background: transparent;
+            border: none;
+            color: #bbbbbb;
+            padding: 12px 16px;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: color 0.2s ease, border-color 0.2s ease
+        }
+
+        .tab-button.active[data-v-78f94286] {
+            color: var(--race-color);
+            border-bottom: 2px solid var(--race-color);
+            font-weight: 700;
+            animation: fade-in .3s ease
+        }
+
+        .tab-button.active.is-divinity-tab[data-v-78f94286] {
+            color: var(--tier-color);
+            border-bottom-color: var(--tier-color)
+        }
+
+        .tab-content[data-v-78f94286] {
+            display: block;
+            margin-left: 20px;
+            margin-right: 20px
+        }
+
+        .tab-content[data-v-78f94286]>* {
+            animation: slide-down-fade-in .5s ease-out
+        }
+
+        .profile-grid[data-v-78f94286] {
+            display: grid;
+            gap: 8px
+        }
+
+        .profile-row[data-v-78f94286] {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+            align-items: stretch
+        }
+
+        .profile-cell[data-v-78f94286] {
+            min-width: 0;
+            display: flex;
+            flex-direction: column
+        }
+
+        .profile-panel[data-v-78f94286] {
+            height: 100%;
+            box-sizing: border-box
+        }
+
+        .subsection-title[data-v-78f94286] {
+            font-size: 1.08rem;
+            margin: 0 0 8px;
+            padding-left: 8px;
+            border-left: 3px solid var(--race-color);
+            color: var(--race-color)
+        }
+
+        .divinity-main-title[data-v-78f94286] {
+            text-align: center;
+            border-left: none;
+            color: #454545;
+            font-weight: bold;
+            text-shadow: -1px -1px 2px var(--tier-color), 1px -1px 2px var(--tier-color), -1px 1px 2px var(--tier-color), 1px 1px 2px var(--tier-color)
+        }
+
+        .subsection-title.divinity-subsection[data-v-78f94286] {
+            border-left-color: var(--tier-color);
+            color: var(--tier-color)
+        }
+
+        .story[data-v-78f94286] {
+            white-space: pre-line;
+            line-height: 1.58;
+            margin-bottom: 12px;
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 6px;
+            padding: 12px
+        }
+
+        .tags-box[data-v-78f94286] {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 12px;
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 6px;
+            padding: 10px
+        }
+
+        .card[data-v-78f94286] {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-left: 3px solid var(--race-color);
+            padding: 12px;
+            margin-bottom: 12px;
+            border-radius: 6px
+        }
+
+        .divinity-card[data-v-78f94286] {
+            border-left-color: var(--tier-color)
+        }
+
+        .card-header[data-v-78f94286] {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 10px;
+            margin-bottom: 8px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08)
+        }
+
+        .card-title[data-v-78f94286] {
+            margin: 0;
+            font-size: 1.05rem;
+            font-weight: 700
+        }
+
+        .card-subtitle[data-v-78f94286] {
+            font-size: 0.85rem
+        }
+
+        .card-body p[data-v-78f94286] {
+            margin: 5px 0;
+            white-space: pre-line;
+            line-height: 1.5
+        }
+
+        .card-label[data-v-78f94286] {
+            color: var(--race-color);
+            font-weight: 700;
+            margin-right: 4px
+        }
+
+        .effect-list[data-v-78f94286] {
+            margin: 4px 0 8px;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 6px
+        }
+
+        .effect-item[data-v-78f94286] {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 6px;
+            padding: 6px 8px;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            background: rgba(255, 255, 255, 0.04)
+        }
+
+        .effect-name[data-v-78f94286] {
+            display: inline-flex;
+            align-items: center;
+            border-radius: 999px;
+            border: 1px solid rgba(var(--race-color-rgb), 0.5);
+            background: rgba(var(--race-color-rgb), 0.12);
+            color: var(--race-color);
+            font-weight: 700;
+            font-size: 0.78rem;
+            line-height: 1;
+            padding: 3px 8px
+        }
+
+        .effect-text[data-v-78f94286] {
+            flex: 1;
+            min-width: 0;
+            white-space: pre-line;
+            line-height: 1.45
+        }
+
+        .card-description[data-v-78f94286] {
+            margin-top: 8px;
+            border-top: 1px solid rgba(255, 255, 255, 0.12);
+            padding-top: 8px;
+            opacity: 0.9
+        }
+
+        .card-tags[data-v-78f94286] {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 8px
+        }
+
+        .card-tag[data-v-78f94286] {
+            display: inline-block;
+            border-radius: 999px;
+            padding: 4px 10px;
+            font-size: 0.82rem;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.05)
+        }
+
+        #import-action-btn[data-v-78f94286] {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(30, 30, 30, 0.82);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 60;
+            font-size: 1.2rem;
+            transition: all 0.2s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5)
+        }
+
+        #import-action-btn[data-v-78f94286]:disabled {
+            opacity: 0.7;
+            cursor: wait
+        }
+
+        #import-action-btn[data-v-78f94286]:hover:not(:disabled) {
+            background: rgba(60, 60, 60, 0.92);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            border-color: #fff
+        }
+
+        #import-action-menu[data-v-78f94286] {
+            position: absolute;
+            bottom: 55px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(20, 20, 20, 0.92);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 10px;
+            padding: 6px;
+            z-index: 70;
+            min-width: 190px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            display: none
+        }
+
+        #import-action-menu.show[data-v-78f94286] {
+            display: block
+        }
+
+        #import-action-menu button[data-v-78f94286] {
+            width: 100%;
+            background: transparent;
+            border: 1px solid transparent;
+            color: #eee;
+            padding: 10px 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: left;
+            font-size: 0.95rem
+        }
+
+        #import-action-menu button[data-v-78f94286]:disabled {
+            opacity: 0.6;
+            cursor: wait
+        }
+
+        #import-action-menu button[data-v-78f94286]:hover:not(:disabled) {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.12)
+        }
+
+        @media (min-width:900px) {
+            .attributes-grid[data-v-78f94286] {
+                justify-content: center;
+                gap: 12px;
+                --flag-width: 140px;
+                --flag-min-height: 150px;
+                --flag-top-padding: 20px;
+                --flag-bottom-padding: 38px;
+                --flag-total-offset: 10px
+            }
+        }
+
+        @media (max-width:820px) {
+            .viewer-root[data-v-78f94286] {
+                padding: 18px 10px 36px
+            }
+
+            .sheet-body[data-v-78f94286] {
+                padding: 16px 18px 84px
+            }
+
+            .sheet-header[data-v-78f94286] {
+                padding: 40px 16px 20px
+            }
+
+            .char-name[data-v-78f94286] {
+                font-size: 2.2rem;
+                letter-spacing: 0.2px;
+                text-shadow: 1px -1px 2px var(--race-color), -1px -1px 2px var(--race-color), 1px 1px 2px var(--race-color), -1px 1px 2px var(--race-color)
+            }
+
+            .tab-button[data-v-78f94286] {
+                flex: 0 0 auto;
+                min-width: 82px;
+                padding: 10px 12px
+            }
+        }
+
+        @media (max-width:640px) {
+            .card-wrapper[data-v-78f94286] {
+                max-width: 100%;
+                border-radius: 14px
+            }
+
+            .card-background-layer[data-v-78f94286] {
+                border-radius: 14px
+            }
+
+            .sheet-header[data-v-78f94286] {
+                padding: 34px 12px 16px;
+                margin-bottom: 6px
+            }
+
+            .level-badge[data-v-78f94286] {
+                margin-bottom: 10px;
+                padding: 3px 12px;
+                font-size: 0.9rem
+            }
+
+            .char-name[data-v-78f94286] {
+                font-size: 1.8rem;
+                margin-bottom: 8px;
+                letter-spacing: 0.1px;
+                text-shadow: 1px -1px 1px var(--race-color), -1px -1px 1px var(--race-color), 1px 1px 1px var(--race-color), -1px 1px 1px var(--race-color)
+            }
+
+            .char-meta-row[data-v-78f94286] {
+                gap: 6px;
+                font-size: 0.82rem
+            }
+
+            .sheet-body[data-v-78f94286] {
+                padding: 12px 10px 80px
+            }
+
+            .attributes-grid[data-v-78f94286] {
+                gap: 8px 10px;
+                margin-bottom: 16px;
+                --flag-width: calc((100% - 20px) / 3);
+                --flag-min-height: calc(var(--flag-width) * 1.18);
+                --flag-top-padding: 12px;
+                --flag-bottom-padding: 26px;
+                --flag-name-size: clamp(0.98rem, calc(var(--flag-width) * 0.16), 1.08rem);
+                --flag-total-size: clamp(2.05rem, calc(var(--flag-width) * 0.34), 2.45rem);
+                --flag-formula-size: clamp(0.72rem, calc(var(--flag-width) * 0.105), 0.82rem)
+            }
+
+            .attribute-item[data-v-78f94286] {
+                flex: 0 0 var(--flag-width);
+                width: var(--flag-width);
+                max-width: var(--flag-width);
+                min-width: 0;
+                min-height: var(--flag-min-height);
+                padding: var(--flag-top-padding) 5px var(--flag-bottom-padding)
+            }
+
+            .profile-row[data-v-78f94286] {
+                grid-template-columns: 1fr;
+                gap: 0
+            }
+
+            .subsection-title[data-v-78f94286] {
+                font-size: 1rem
+            }
+
+            .story[data-v-78f94286],
+            .card[data-v-78f94286],
+            .tags-box[data-v-78f94286] {
+                padding: 10px
+            }
+
+            #import-action-btn[data-v-78f94286] {
+                bottom: 10px;
+                font-size: 1.05rem;
+                padding: 7px 10px
+            }
+
+            #import-action-menu[data-v-78f94286] {
+                bottom: 46px;
+                min-width: 170px
+            }
+
+            #import-action-menu button[data-v-78f94286] {
+                padding: 8px;
+                font-size: 0.9rem
+            }
+        }
+
+        @media (max-width:480px) {
+
+            .attributes-grid[data-v-78f94286],
+            .tab-nav[data-v-78f94286],
+            .tab-content[data-v-78f94286] {
+                margin-left: 0;
+                margin-right: 0
+            }
+        }
+
+        /*# sourceMappingURL=main.css.map*/
+    </style>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script id="data-source" type="text/yaml">$1</script>
+</body>
+```

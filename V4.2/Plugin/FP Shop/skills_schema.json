@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Skills Schema",
+  "description": "Schema dành cho tệp tin skills.json trong hệ thống FP Shop",
+  "type": "object",
+  "required": ["Skills"],
+  "properties": {
+    "Skills": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "cost", "tag", "type", "rarity", "effect", "description"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Tên của kỹ năng"
+          },
+          "cost": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Giá mua kỹ năng bằng FP"
+          },
+          "consume": {
+            "type": "string",
+            "description": "Tài nguyên tiêu hao khi sử dụng (ví dụ: Hành động, MP, SP)"
+          },
+          "tag": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Các nhãn mô tả đặc tính hoặc điều kiện của kỹ năng"
+          },
+          "type": {
+            "type": "string",
+            "enum": ["Chủ động", "Bị động", "Khác"],
+            "description": "Loại kỹ năng"
+          },
+          "rarity": {
+            "type": "string",
+            "enum": ["Thần thoại", "Huyền thoại", "Hiếm", "Thông thường"],
+            "description": "Độ hiếm hoặc phẩm chất của kỹ năng"
+          },
+          "effect": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Danh sách các hiệu ứng của kỹ năng. Key là tên hiệu ứng/kích hoạt, Value là mô tả."
+          },
+          "description": {
+            "type": "string",
+            "description": "Mô tả chi tiết về kỹ năng"
+          },
+          "roast": {
+            "type": "string",
+            "description": "Đánh giá của hệ thống về kỹ năng"
+          }
+        }
+      }
+    }
+  }
+}

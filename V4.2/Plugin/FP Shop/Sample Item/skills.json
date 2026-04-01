@@ -1,0 +1,40 @@
+{
+    "Skills": [
+        {
+            "name": "Tiên Kiến Chi Minh",
+            "cost": 100,
+            "tag": [
+                "Tinh thần",
+                "Bản thân",
+                "Tăng ích",
+                "Quan giả",
+                "Thấu thị"
+            ],
+            "type": "Bị động",
+            "rarity": "Thần thoại",
+            "effect": {
+                "Tiên Tri": "Khi bắt đầu lượt của bạn, nhận 4 tầng [Thấu thị]",
+                "Kích hoạt": "Kỹ năng: 2500 SP"
+            },
+            "description": "Linh nhãn giữa trán tạm thời mở ra, giúp bạn nhìn thấy trước nhiều tương lai có thể xảy ra và chọn lấy con đường có lợi nhất cho bản thân."
+        },
+        {
+            "name": "Thánh Quang Tí Hộ",
+            "cost": 100,
+            "consume": "Hành động: 400 MP",
+            "tag": [
+                "Tinh thần",
+                "Bản thân",
+                "Trị liệu",
+                "Tăng ích"
+            ],
+            "type": "Chủ động",
+            "rarity": "Hiếm",
+            "effect": {
+                "Hồi Phục Sinh Mệnh": "Lập tức hồi phục 200 điểm Sinh lực (HP) cho bản thân",
+                "Giảm Sát Thương Năng Lượng": "Đồng thời nhận trạng thái [Thánh Thuẫn], giảm 10% sát thương năng lượng gánh chịu, kéo dài trong 3 lượt."
+            },
+            "description": "Triệu hồi ánh sáng thánh khiết nhân từ bao quanh cơ thể, vừa chữa lành vết thương vừa ngưng tụ thành một rào chắn ánh sáng, chống lại sự xâm kích ma pháp sắp tới."
+        }
+    ]
+}

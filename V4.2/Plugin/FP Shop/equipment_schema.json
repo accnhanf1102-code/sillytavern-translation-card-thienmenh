@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Equipment Schema",
+  "description": "Schema dành cho tệp tin equipment.json trong hệ thống FP Shop",
+  "type": "object",
+  "required": ["Trang Bị"],
+  "properties": {
+    "Trang Bị": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "cost", "type", "tag", "rarity", "effect", "description"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Tên của trang bị"
+          },
+          "cost": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Giá mua trang bị bằng FP"
+          },
+          "type": {
+            "type": "string",
+            "description": "Loại trang bị (Vũ khí, Trang sức, v.v.)"
+          },
+          "tag": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Các nhãn mô tả đặc tính hoặc chỉ số của trang bị"
+          },
+          "rarity": {
+            "type": "string",
+            "enum": ["Thần Thoại", "Huyền Thoại", "Hiếm", "Thông Thường"],
+            "description": "Độ hiếm của trang bị"
+          },
+          "effect": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Danh sách các hiệu ứng đặc biệt của trang bị. Key là tên hiệu ứng, Value là mô tả."
+          },
+          "description": {
+            "type": "string",
+            "description": "Mô tả cốt truyện hoặc ngoại hình của trang bị"
+          },
+          "roast": {
+            "type": "string",
+            "description": "Đánh giá của hệ thống về trang bị"
+          }
+        }
+      }
+    }
+  }
+}

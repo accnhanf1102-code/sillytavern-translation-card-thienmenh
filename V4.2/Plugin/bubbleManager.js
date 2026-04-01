@@ -57,6 +57,7 @@
             subContainer: null,  // Container bóng phụ
             subs: []             // Mảng bóng phụ
         },
+        notifications: {},       // Trạng thái thông báo { id: boolean }
         dragData: {              // Dữ liệu kéo thả
             startX: 0,
             startY: 0,
@@ -185,6 +186,32 @@
 .fmm-sub-fab.collapsing {
     animation: fmmCollapseBall ${CONFIG.ANIMATION_DURATION}ms ease-in forwards;
 }
+
+/* Badge thông báo */
+.fmm-badge {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 12px;
+    height: 12px;
+    background: #ef4444;
+    border: 2px solid white;
+    border-radius: 50%;
+    z-index: 2;
+    display: none;
+    box-shadow: 0 0 5px rgba(239, 68, 68, 0.6);
+}
+
+.fmm-badge.show {
+    display: block;
+}
+
+.fmm-main-fab .fmm-badge {
+    width: 14px;
+    height: 14px;
+    top: 4px;
+    right: 4px;
+}
 </style>
         `;
 
@@ -195,7 +222,10 @@
     function createMainFab() {
         const fab = parentDocument.createElement('div');
         fab.className = 'fmm-main-fab';
-        fab.innerHTML = `<div class="icon">${ICONS.menu}</div>`;
+        fab.innerHTML = `
+            <div class="icon">${ICONS.menu}</div>
+            <div class="fmm-badge" id="fmm-main-badge"></div>
+        `;
 
         // Cài đặt vị trí ban đầu
         fab.style.top = state.position.top + 'px';
@@ -244,6 +274,14 @@
         } else {
             fab.textContent = config.icon || '●';
         }
+
+        // Thêm Badge nếu có thông báo
+        const badge = parentDocument.createElement('div');
+        badge.className = 'fmm-badge';
+        if (state.notifications[config.id]) {
+            badge.classList.add('show');
+        }
+        fab.appendChild(badge);
 
         // Cài đặt độ lệch vị trí
         const offset = -(index + 1) * CONFIG.SUB_SPACING;
@@ -574,6 +612,34 @@
          */
         toggle: function () {
             toggle();
+        },
+
+        /**
+         * Cập nhật trạng thái thông báo cho một nút
+         * @param {string} id - ID nút
+         * @param {boolean} hasNotify - Trạng thái có thông báo hay không
+         */
+        updateNotification: function (id, hasNotify) {
+            state.notifications[id] = !!hasNotify;
+
+            // Cập nhật Badge trên bóng phụ nếu đang hiển thị
+            state.buttons.forEach((btn, index) => {
+                if (btn.id === id && state.elements.subs[index]) {
+                    const badge = state.elements.subs[index].querySelector('.fmm-badge');
+                    if (badge) {
+                        badge.classList.toggle('show', !!hasNotify);
+                    }
+                }
+            });
+
+            // Cập nhật Badge trên bóng chính
+            const hasAnyNotify = Object.values(state.notifications).some(v => v === true);
+            const mainBadge = parentDocument.getElementById('fmm-main-badge');
+            if (mainBadge) {
+                mainBadge.classList.toggle('show', hasAnyNotify);
+            }
+
+            console.log('[FloatingMenuManager] Cập nhật thông báo:', id, hasNotify);
         },
 
         /**

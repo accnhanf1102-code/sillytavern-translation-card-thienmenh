@@ -1,0 +1,864 @@
+{
+  "第一层级": [
+    {
+      "name": "Eilin",
+      "cost": 100,
+      "lifeLevel": "Đệ nhất tầng cấp/Phổ thông tầng cấp",
+      "level": 4,
+      "race": "Nhân tộc",
+      "identity": [
+        "Con gái vệ binh thị trấn"
+      ],
+      "career": [
+        "Học đồ mục sư tập sự"
+      ],
+      "personality": "Hoạt bát, lương thiện, hơi hậu đậu.",
+      "like": "Cô ấy ôm ấp sự sùng bái và ái mộ ngây thơ đối với bạn. Thích nướng các loại bánh mì hương vị khác nhau cho bạn, và mong chờ nhận được lời khen ngợi của bạn. Khi bạn bị thương, sẽ vừa hoảng loạn vừa nghiêm túc băng bó vết thương cho bạn. Thích ngồi bên cạnh bạn lúc rảnh rỗi, nghe bạn kể chuyện mạo hiểm.",
+      "app": "Một mái tóc ngắn màu nâu vàng ấm áp, trên mặt có chút tàn nhang nhỏ, đôi mắt màu nâu trong veo luôn lấp lánh ánh sáng đầy sức sống. Dáng người nhỏ nhắn, trên người luôn mang theo mùi thơm nhàn nhạt của lúa mạch.",
+      "cloth": "Trang phục thôn nữ giản dị.",
+      "equip": [],
+      "attributes": {
+        "strength": 5,
+        "dexterity": 5,
+        "constitution": 4,
+        "intelligence": 6,
+        "mind": 7
+      },
+      "stairway": {
+        "isOpen": false
+      },
+      "isContract": true,
+      "affinity": 25,
+      "comment": "Chỉ cần có thể nhìn thấy nụ cười mệt mỏi nhưng an tâm của anh khi mạo hiểm trở về, bánh mì em làm chính là ngon nhất thế giới!",
+      "backgroundInfo": "Dưới sự ảnh hưởng của người cha vệ binh, Eilin từ nhỏ đã tràn đầy lòng kính trọng đối với những anh hùng bảo vệ quê hương. Khi bạn bộc lộ tài năng ở thị trấn nhỏ, cô ấy đã lặng lẽ đặt sự sùng bái này lên người bạn, mơ ước một ngày nào đó có thể dùng ma pháp chữa trị của mình, trở thành hậu phương vững chắc nhất của bạn.",
+      "skills": [
+        {
+          "name": "Bánh mì tình yêu",
+          "type": "Chủ động",
+          "tag": [
+            "Chức năng",
+            "Trị liệu"
+          ],
+          "rarity": "common",
+          "effect": {
+            "Hồi phục sinh mệnh yếu": "Mỗi ngày một lần, Eilin nướng cho bạn một chiếc bánh mì tràn đầy tình yêu, sau khi ăn nhận được hiệu quả [Hồi phục sinh mệnh yếu] kéo dài 1 giờ (mỗi phút hồi phục 1% HP tối đa)."
+          },
+          "description": "Bánh mì ấm áp tràn đầy tâm ý của người làm, có thể an ủi thân tâm người lữ hành."
+        },
+        {
+          "name": "Trái tim an ủi",
+          "type": "Bị động",
+          "tag": [
+            "Tăng ích"
+          ],
+          "rarity": "common",
+          "effect": {
+            "Kháng tính tinh thần": "Sự bầu bạn của Eilin khiến bạn cảm thấy an tâm, kháng tính trạng thái tinh thần tiêu cực của bạn (như sợ hãi, hỗn loạn) tăng 5%."
+          },
+          "description": "Sự bầu bạn lương thiện ngây thơ là liều thuốc tốt nhất."
+        }
+      ]
+    },
+    {
+      "name": "Fina",
+      "cost": 100,
+      "lifeLevel": "Đệ nhất tầng cấp/Phổ thông tầng cấp",
+      "level": 4,
+      "race": "Tinh linh",
+      "identity": [
+        "Tinh linh bình dân"
+      ],
+      "career": [
+        "Người hái thuốc",
+        "Học đồ thợ săn"
+      ],
+      "personality": "Văn tĩnh, hay xấu hổ, tràn đầy tò mò với thế giới bên ngoài.",
+      "like": "Cô ấy xem bạn là người bạn và chỗ dựa quan trọng, tình cảm này đang lặng lẽ chuyển biến thành tình yêu. Thích cùng bạn tản bộ trong rừng, nhận biết các loại thực vật kỳ lạ cho bạn. Tuy không giỏi ngôn từ, nhưng sẽ dùng cung tên lặng lẽ bảo vệ sau lưng bạn. Khi bạn chăm chú nhìn cô ấy, cô ấy sẽ xấu hổ cúi đầu, chóp tai hơi ửng đỏ.",
+      "app": "Mái tóc dài màu xanh lục nhu thuận, dùng dây leo buộc đơn giản, đôi tai nhọn đặc biệt linh động, đôi mắt xanh biếc như suối trong rừng. Dáng người mảnh khảnh.",
+      "cloth": "Giáp da thuận tiện hoạt động và váy ngắn màu xanh.",
+      "equip": [
+        {
+          "name": "Cung gỗ nhỏ nhắn",
+          "type": "Vũ khí",
+          "tag": [
+            "Cung"
+          ],
+          "rarity": "common",
+          "effect": {
+            "Tấn công tầm xa cơ bản": "Cung cấp khả năng tấn công vật lý tầm xa cơ bản."
+          },
+          "description": "Một cây cung gỗ nhẹ nhàng do học đồ thợ săn tinh linh sử dụng, gia công nhỏ nhắn tinh xảo."
+        }
+      ],
+      "attributes": {
+        "strength": 5,
+        "dexterity": 7,
+        "constitution": 5,
+        "intelligence": 5,
+        "mind": 6
+      },
+      "stairway": {
+        "isOpen": false
+      },
+      "isContract": true,
+      "affinity": 28,
+      "comment": "Rừng rậm... nói cho em biết vị trí của anh. Chỉ cần anh cần, mũi tên của em sẽ quét sạch chông gai phía trước cho anh.",
+      "backgroundInfo": "Fina là tinh linh sinh ra ở Nguyệt Quang Lâm Địa, từ nhỏ đã có thể lắng nghe thanh âm của vạn vật. Một lần bị thương ngoài ý muốn khiến bạn lạc vào cuộc sống bình lặng của cô, hơi thở phức tạp mà mạnh mẽ đến từ thế giới bên ngoài trên người bạn đã thu hút cô sâu sắc. Đối với bạn là bèo nước gặp nhau, đối với cô lại là lời thì thầm của vận mệnh.",
+      "skills": [
+        {
+          "name": "Lời thì thầm của rừng",
+          "type": "Chủ động",
+          "consume": "20MP",
+          "tag": [
+            "Chức năng"
+          ],
+          "rarity": "uncommon",
+          "effect": {
+            "Thăm dò sinh vật": "Để Fina giao tiếp với thực vật xung quanh, có thể thăm dò động tĩnh của sinh vật trong phạm vi 50 mét gần đó, kéo dài 1 phút."
+          },
+          "description": "Rừng rậm là tai mắt đáng tin cậy nhất của tinh linh."
+        },
+        {
+          "name": "Hòa hợp thiên nhiên",
+          "type": "Bị động",
+          "tag": [
+            "Tăng ích"
+          ],
+          "rarity": "common",
+          "effect": {
+            "Môi trường hồi thể": "Trong môi trường rừng rậm hoặc thảo nguyên, tốc độ hồi phục SP của Fina tăng 10%."
+          },
+          "description": "Ở trong tự nhiên, tinh linh có thể hồi phục thể lực nhanh hơn."
+        }
+      ]
+    },
+    {
+      "name": "Miko",
+      "cost": 100,
+      "lifeLevel": "Đệ nhất tầng cấp/Phổ thông tầng cấp",
+      "level": 4,
+      "race": "Thú tộc (Miêu tộc)",
+      "identity": [
+        "Bần dân",
+        "Trẻ lang thang"
+      ],
+      "career": [
+        "Tạp dịch tân thủ đoàn lính đánh thuê"
+      ],
+      "personality": "Cảnh giác, lanh lợi, ngoài lạnh trong nóng.",
+      "like": "Bạn là người mang lại sự ấm áp khi cô ấy khó khăn nhất, cô ấy đã nhận định bạn là người nhà và chủ nhân duy nhất. Thích cuộn mình trong lòng bạn ngủ, phát ra tiếng grừ grừ thỏa mãn. Sẽ dâng cho bạn những 'bảo vật' trộm được (thường là những món đồ nhỏ lấp lánh). Cho phép bạn vuốt ve đôi tai và cái đuôi nhạy cảm của cô ấy, đây là cách cô ấy biểu đạt sự tin tưởng cao nhất.",
+      "app": "Dưới mái tóc ngắn màu đen xù xì, đôi mắt mèo màu vàng linh động đặc biệt nổi bật, trên đầu có đôi tai mèo màu đen, sau lưng là cái đuôi cùng màu. Dáng người gầy nhỏ, động tác nhanh nhẹn.",
+      "cloth": "Quần áo cũ đầy miếng vá nhưng rất sạch sẽ.",
+      "equip": [],
+      "attributes": {
+        "strength": 5,
+        "dexterity": 8,
+        "constitution": 4,
+        "intelligence": 5,
+        "mind": 5
+      },
+      "stairway": {
+        "isOpen": false
+      },
+      "isContract": true,
+      "affinity": 30,
+      "comment": "Đừng... đừng hiểu lầm! Cái này không phải đặc biệt để lại cho anh đâu! Chỉ là tôi ăn không hết thôi!... Tay của anh, rất ấm.",
+      "backgroundInfo": "Trước khi gặp bạn, thế giới của Miko chỉ có đường phố lạnh lẽo và sự giãy giụa vì sinh tồn. Bạn là người đầu tiên cho cô ấy thức ăn mà không đòi hỏi bất kỳ sự đền đáp nào, cũng là người đầu tiên dịu dàng vuốt ve tai cô ấy. Sự ấm áp này khiến cô lần đầu tiên có cảm giác 'nhà', cũng khiến cô hạ quyết tâm dùng móng vuốt nhỏ bé của mình bảo vệ chốn về khó khăn lắm mới có được này.",
+      "skills": [
+        {
+          "name": "Móng vuốt linh hoạt",
+          "type": "Chủ động",
+          "consume": "10SP",
+          "tag": [
+            "Chức năng"
+          ],
+          "rarity": "uncommon",
+          "effect": {
+            "Mở khóa và trộm cắp": "Mỗi ngày ba lần, Miko có thể tiến hành một lần kiểm định khéo tay, nỗ lực mở ổ khóa đơn giản hoặc trộm cắp một vật phẩm giá trị không cao từ trên người mục tiêu."
+          },
+          "description": "Thiên phú của Miêu tộc khiến các cô làm được những việc tinh tế mà nhiều con người không làm được."
+        },
+        {
+          "name": "Người đi đêm",
+          "type": "Bị động",
+          "tag": [
+            "Chức năng"
+          ],
+          "rarity": "common",
+          "effect": {
+            "Tiềm hành gia thành": "Trong môi trường ban đêm hoặc u tối, kiểm định tiềm hành của Miko nhận được +10% tỷ lệ thành công."
+          },
+          "description": "Đêm tối là sự ngụy trang tốt nhất của loài mèo."
+        }
+      ]
+    },
+    {
+      "name": "Luna",
+      "cost": 100,
+      "lifeLevel": "Đệ nhất tầng cấp/Phổ thông tầng cấp",
+      "level": 4,
+      "race": "Dực tộc",
+      "identity": [
+        "Dực Nhân bình dân",
+        "Tín sử"
+      ],
+      "career": [
+        "Học đồ tín sử"
+      ],
+      "personality": "Hoạt bát, lạc quan, hơi mù đường.",
+      "like": "Cô ấy mê đắm bạn sâu sắc, cho rằng bạn là người đẹp trai nhất, mạnh mẽ nhất trên mặt đất. Thích lượn vòng từ trên không xuống, cho bạn một cái ôm bất ngờ. Thích để bạn chải vuốt lông vũ trên cánh cô ấy, điều này khiến cô cảm thấy vô cùng thoải mái và thân mật. Thường xuyên chia sẻ một số 'tình báo quan trọng' nghe được nhưng không chính xác cho bạn.",
+      "app": "Mái tóc ngắn ngang vai màu xanh da trời, đôi mắt xanh thẳm tràn đầy thần thái, sau lưng có một đôi cánh trắng chưa trưởng thành hoàn toàn, sau tai có cánh nhỏ xinh xắn. Dáng người nhẹ nhàng.",
+      "cloth": "Váy ngắn đồng phục công hội tín sử, tất trắng quá gối, giày ngắn thuận tiện bay lượn.",
+      "equip": [],
+      "attributes": {
+        "strength": 4,
+        "dexterity": 7,
+        "constitution": 6,
+        "intelligence": 5,
+        "mind": 5
+      },
+      "stairway": {
+        "isOpen": false
+      },
+      "isContract": true,
+      "affinity": 26,
+      "comment": "Thế giới trên mặt đất, vì có anh mới trở nên thú vị như vậy! Lần sau mang em đi mạo hiểm cùng nhé, em đảm bảo, lần này tuyệt đối sẽ không lạc đường nữa! Chắc là vậy...",
+      "backgroundInfo": "Là một học đồ tín sử, Luna luôn tràn đầy ảo tưởng với thế giới bên ngoài bầu trời. Một lần ngẫu nhiên đưa sai thư, khiến cô hạ cánh xuống trước mặt bạn. Dáng vẻ ung dung ứng đối rắc rối của bạn, cùng với những câu chuyện mạo hiểm mặt đất bạn kể, hoàn toàn đốt lên ngọn lửa trong lòng cô, khiến cô nhận định bạn chính là anh hùng không gì không làm được trong câu chuyện.",
+      "skills": [
+        {
+          "name": "Gió lông vũ nhẹ",
+          "type": "Chủ động",
+          "consume": "50SP",
+          "tag": [
+            "Chức năng"
+          ],
+          "rarity": "uncommon",
+          "effect": {
+            "Lướt đi ngắn": "Luna ôm bạn tiến hành lướt đi tối đa 30 mét, có thể vượt qua một số chướng ngại nhỏ."
+          },
+          "description": "Khả năng bay lượn bẩm sinh của Dực tộc, cho dù chưa trưởng thành hoàn toàn cũng có thể cung cấp trợ giúp rất lớn."
+        },
+        {
+          "name": "Sự chúc phúc của bầu trời",
+          "type": "Bị động",
+          "tag": [
+            "Tăng ích"
+          ],
+          "rarity": "common",
+          "effect": {
+            "Giảm thương rơi": "Khi đi cùng Luna, sát thương rơi bạn phải chịu giảm 50%."
+          },
+          "description": "Có bạn bè Dực tộc ở đây, nơi cao dường như cũng không đáng sợ như vậy nữa."
+        }
+      ]
+    }
+  ],
+  "Đệ nhị tầng cấp": [
+    {
+      "name": "Claire Ventrue",
+      "cost": 250,
+      "lifeLevel": "Đệ nhị tầng cấp/Trung kiên tầng cấp",
+      "level": 8,
+      "race": "Nhân tộc",
+      "identity": [
+        "Học giả đặc sính thư khố Hoàng gia",
+        "Mạo hiểm giả cấp C"
+      ],
+      "career": [
+        "Học giả"
+      ],
+      "personality": "Trí thức, bình tĩnh, tỉ mỉ, nhưng sẽ bộc lộ sự dịu dàng với người mình để ý.",
+      "like": "Cô ấy tràn đầy hứng thú học thuật nồng hậu và ái mộ cá nhân đối với bạn. Thích cùng bạn thảo luận bí mật của di tích cổ đại, và giải đọc cổ văn khó hiểu cho bạn. Khi bạn thức đêm nghiên cứu, sẽ khoác chăn cho bạn, và chuẩn bị đồ uống giúp tỉnh táo. Thích cùng bạn chơi trò chơi trí tuệ, và hưởng thụ khoảnh khắc bị bạn 'chiếu tướng'. Riêng tư, cô ấy khát vọng bạn dùng phương thức cưỡng ép làm rối loạn trạng thái bình thường tỉ mỉ của cô.",
+      "app": "Mái tóc đen dài như gỗ mun được búi lên thanh lịch bằng một chiếc trâm bạc, đôi mắt màu tím sau mắt kính thâm thúy và trí tuệ. Dáng người cao ráo, đường cong tuyệt đẹp, tỏa ra khí tức của sách vở và mực nước.",
+      "cloth": "Mắt kính gọng vàng, áo choàng học giả cắt may vừa người.",
+      "equip": [],
+      "attributes": {
+        "strength": 5,
+        "dexterity": 6,
+        "constitution": 5,
+        "intelligence": 11,
+        "mind": 8
+      },
+      "stairway": {
+        "isOpen": false
+      },
+      "isContract": true,
+      "affinity": 45,
+      "comment": "Anh giống như một cuốn cổ tịch em vĩnh viễn không thể giải đọc hoàn toàn, mỗi một phát hiện mới đều khiến em càng thêm trầm mê. Xin hãy cho phép em, tiếp tục nghiên cứu tất cả về anh.",
+      "backgroundInfo": "Xuất thân từ thế gia học giả, quỹ đạo cuộc đời của Claire vốn nên là tìm kiếm chân tướng lịch sử trong đống giấy cũ. Tuy nhiên, là mạo hiểm giả cấp C, sức mạnh và quỹ đạo vận mệnh không hợp lẽ thường thể hiện trên người bạn, đã trở thành 'biến số' lớn nhất trong sự nghiệp nghiên cứu của cô. Thăm dò bí mật của bạn, bất tri bất giác đã từ hứng thú học thuật diễn biến thành tình cảm không thể dứt bỏ.",
+      "skills": [
+        {
+          "name": "Giải tích tri thức",
+          "type": "Chủ động",
+          "consume": "100MP",
+          "tag": [
+            "Chức năng"
+          ],
+          "rarity": "rare",
+          "effect": {
+            "Giám định vật phẩm và cung cấp tình báo": "Mỗi ngày một lần, Claire có thể tiêu hao 100MP để giám định một vật phẩm chưa biết (không phải cấp truyền thuyết), hoặc cung cấp một tin tức mấu chốt liên quan đến khốn cảnh hiện tại của bạn."
+          },
+          "description": "Tri thức uyên bác là chìa khóa tiết lộ chân tướng."
+        },
+        {
+          "name": "Động sát của học giả",
+          "type": "Bị động",
+          "tag": [
+            "Chức năng"
+          ],
+          "rarity": "rare",
+          "effect": {
+            "Tăng ích thông tin": "Khi giải đọc văn hiến hoặc phân tích tình báo, có 15% xác suất nhận được thông tin thêm."
+          },
+          "description": "Đầu óc được huấn luyện bài bản luôn có thể phát hiện chi tiết người thường bỏ qua."
+        }
+      ]
+    },
+    {
+      "name": "Ilya Moonshadow",
+      "cost": 250,
+      "lifeLevel": "Đệ nhị tầng cấp/Trung kiên tầng cấp",
+      "level": 8,
+      "race": "Tinh linh",
+      "identity": [
+        "Trợ lý tư tế Nguyệt Thần Điện"
+      ],
+      "career": [
+        "Học đồ Nguyệt Quang Du Hiệp"
+      ],
+      "personality": "Cao quý, điển nhã, từ bi với thế gian.",
+      "like": "Cô ấy tin rằng bạn là người bạn đời do vận mệnh chỉ dẫn, tình yêu đối với bạn thâm trầm mà thần thánh. Thích cầu nguyện và chúc phúc cho bạn dưới ánh trăng. Có thói quen khi ngủ dùng ma lực mang hơi thở Nguyệt Thần xây dựng cho bạn một giấc mộng an ninh. Khi ân ái, cô sẽ thể hiện ra một mặt thuận tùng lại khát cầu hoàn toàn tương phản với khí chất thần thánh ngày thường, coi đây là sự kết hợp thần thánh nhất của linh hồn và thể xác.",
+      "app": "Mái tóc bạc như ánh trăng dài thẳng đến mắt cá chân, đôi mắt màu vàng nhạt dường như ẩn chứa tinh tú. Giữa trán có ấn ký màu bạc hình mặt trăng, khí chất không linh mà thánh khiết, đi chân trần.",
+      "cloth": "Áo choàng tư tế hở lưng hoa lệ, vải vóc như ánh trăng chảy xuôi, trên mắt cá chân đeo chuông bạc.",
+      "equip": [],
+      "attributes": {
+        "strength": 6,
+        "dexterity": 8,
+        "constitution": 6,
+        "intelligence": 8,
+        "mind": 9
+      },
+      "stairway": {
+        "isOpen": false
+      },
+      "isContract": true,
+      "affinity": 50,
+      "comment": "Nguyệt Thần ở trên, tinh tú làm chứng. Thân xác em, trái tim em, tín ngưỡng của em, đều dâng hiến cho ngài. Xin hãy tiếp nhận tất cả của em, người yêu trong định mệnh của em.",
+      "backgroundInfo": "Ilya là người hầu thành kính nhất trong Nguyệt Thần Điện, từ nhỏ cô đã có thể cảm nhận được sự chỉ dẫn của ánh trăng. Trong một buổi tế lễ quan trọng, cô đã nhìn thấy hình bóng của bạn từ trong gợi ý của Nguyệt Thần. Cô tin chắc đây là an bài của vận mệnh, bạn là người bạn đời Nguyệt Thần ban cho cô, sứ mệnh của cô không chỉ là thờ phụng thần minh, mà còn là dùng cả đời để bảo vệ và ái mộ bạn.",
+      "skills": [
+        {
+          "name": "Sự an ủi của Nguyệt Thần",
+          "type": "Chủ động",
+          "consume": "150MP",
+          "tag": [
+            "Trị liệu",
+            "Tăng ích"
+          ],
+          "rarity": "rare",
+          "effect": {
+            "Trị liệu ánh trăng và hộ thuẫn": "Ilya ngâm xướng lời cầu nguyện, hồi phục cho bạn lượng sinh mệnh tương đương (Tinh thần x20) của cô ấy, đồng thời kèm theo một khiên ánh trăng có thể hấp thu (Tinh thần x10) sát thương, kéo dài 30 giây."
+          },
+          "description": "Sức mạnh của ánh trăng không chỉ có thể xoa dịu nỗi đau, mà con che chở tín đồ."
+        },
+        {
+          "name": "Tinh tú che chở",
+          "type": "Bị động",
+          "tag": [
+            "Tăng ích"
+          ],
+          "rarity": "rare",
+          "effect": {
+            "Giảm thương ma pháp": "Vào ban đêm hoặc khi được ánh trăng chiếu rọi, sát thương phép bạn phải chịu giảm 10%."
+          },
+          "description": "Dưới màn đêm, tín đồ của Nguyệt Thần sẽ nhận được sự ưu ái thêm của tinh tú."
+        }
+      ]
+    },
+    {
+      "name": "Fenrir",
+      "cost": 250,
+      "lifeLevel": "Đệ nhị tầng cấp/Trung kiên tầng cấp",
+      "level": 8,
+      "race": "Thú tộc (Lang tộc)",
+      "identity": [
+        "Đội trưởng săn bắn thị tộc Thú tộc"
+      ],
+      "career": [
+        "Chiến sĩ chính thức"
+      ],
+      "personality": "Dũng mãnh, trung thành, chiếm hữu dục đầy dã tính.",
+      "like": "Bạn dùng sức mạnh đạt được sự công nhận và tình yêu của cô ấy, cô ấy coi bạn là đầu lang và phối ngẫu duy nhất. Thích dùng phương thức liếm láp để làm sạch vết thương cho bạn, đây là lễ ngộ cao nhất của thú tộc. Có thói quen nửa ngồi xổm bảo vệ bên cạnh bạn, cảnh giác bất kỳ uy hiếp tiềm tàng nào. Trong thế giới hai người, cô ấy sẽ hóa thân thành sói mẹ nhiệt tình như lửa, khát vọng bạn dùng phương thức nguyên thủy nhất chinh phục cô, để cô sinh ra hậu đại mạnh nhất cho bạn.",
+      "app": "Một mái tóc dài màu xám bạc kiêu ngạo khó thuần, đôi mắt thú màu hổ phách sắc bén, trên đầu có đôi tai sói lông xù. Dáng người cao lớn khỏe mạnh, đường cong cơ bắp lưu loát tràn đầy cảm giác sức mạnh. Sau lưng là một cái đuôi lớn lông xù sẽ đung đưa theo cảm xúc.",
+      "cloth": "Giáp ngực da thú, váy chiến da thú.",
+      "equip": [],
+      "attributes": {
+        "strength": 9,
+        "dexterity": 8,
+        "constitution": 8,
+        "intelligence": 5,
+        "mind": 5
+      },
+      "stairway": {
+        "isOpen": false
+      },
+      "isContract": true,
+      "affinity": 48,
+      "comment": "Gâu! Đầu lang của tôi, mùi của anh khiến tôi an tâm. Chỉ cần có tôi ở đây, không có bất kỳ kẻ nào có thể làm tổn thương anh. Đêm nay... cùng tôi đi săn bắn nhé.",
+      "backgroundInfo": "Ở Lang tộc, sức mạnh đại diện cho tất cả. Là đội trưởng săn bắn mạnh nhất thị tộc, Fenrir chưa bao giờ để bất kỳ giống đực nào vào mắt. Mãi đến khi bạn xuất hiện, dùng sức mạnh tuyệt đối hoàn toàn khuất phục cô trong chiến đấu. Tuân theo quy tắc cổ xưa nhất của thú tộc, cô dâng lên sự trung thành và tình yêu của mình cho kẻ mạnh, nhận định bạn là đầu lang duy nhất có tư cách dẫn dắt cô, chinh phục cô.",
+      "skills": [
+        {
+          "name": "Nhịp điệu săn bắn",
+          "type": "Chủ động",
+          "consume": "100SP",
+          "tag": [
+            "Tăng ích",
+            "Giảm ích"
+          ],
+          "rarity": "rare",
+          "effect": {
+            "Ấn ký săn giết": "Sau khi mở kéo dài 1 phút. Bạn và Fenrir hiệp đồng tấn công sẽ cộng dồn [Ấn ký săn giết] lên kẻ địch (tối đa 3 tầng), mỗi tầng ấn ký khiến sát thương vật lý các bạn gây ra cho hắn tăng 5%."
+          },
+          "description": "Đạo săn bắn của bầy sói nằm ở sự phối hợp ăn ý và truy kích trí mạng."
+        },
+        {
+          "name": "Trực giác hoang dã",
+          "type": "Bị động",
+          "tag": [
+            "Chức năng"
+          ],
+          "rarity": "rare",
+          "effect": {
+            "Cảm nhận nguy hiểm": "Khi đi cùng Fenrir, kiểm định cảm nhận bị động của bạn đối với địch ý và cạm bẫy trong bán kính 20 mét nhận được + 10% tỷ lệ thành công."
+          },
+          "description": "Trực giác của dã thú nhạy bén hơn giác quan của con người rất nhiều."
+        }
+      ]
+    },
+    {
+      "name": "Seraphina",
+      "cost": 250,
+      "lifeLevel": "Đệ nhị tầng cấp/Trung kiên tầng cấp",
+      "level": 8,
+      "race": "Dực tộc",
+      "identity": [
+        "Thành viên Thánh Dực Kỵ Sĩ Đoàn"
+      ],
+      "career": [
+        "Học đồ kỵ sĩ Thánh Dực Kỵ Sĩ Đoàn"
+      ],
+      "personality": "Nghiêm cẩn, đáng tin, có tinh thần trách nhiệm.",
+      "like": "Cô ấy thưởng thức sự mạnh mẽ và phẩm cách của bạn, coi bạn là người bạn đời có thể giao phó sau lưng. Thích sau khi kết thúc nhiệm vụ, cùng bạn bay lượn trên mây. Là người bạn đời của bạn, cô ấy sẽ dùng đôi cánh bảo vệ chặt chẽ bạn dưới thân, bất luận là khi nghỉ ngơi hay ân ái. Cô ấy sẽ nghiêm túc thực hiện bất kỳ mệnh lệnh nào bạn đưa ra, và đạt được sự thỏa mãn từ đó.",
+      "app": "Mái tóc dài màu vàng chói mắt buộc thành đuôi ngựa cao, đôi mắt màu xanh biếc sắc bén như ưng. Sau lưng là hai đôi cánh trắng mạnh mẽ, khi mở ra cực kỳ có cảm giác áp bách. Đường cong phái nữ đầy đặn trưởng thành, khí chất hiên ngang.",
+      "cloth": "Tạm không có",
+      "equip": [
+        {
+          "name": "Giáp nhẹ Thánh Dực Kỵ Sĩ",
+          "type": "Phòng cụ",
+          "tag": [
+            "Giáp nhẹ"
+          ],
+          "rarity": "rare",
+          "effect": {
+            "Phòng thủ vật lý ưu lương": "Cung cấp phòng thủ vật lý ưu lương, đồng thời trải qua thiết kế đặc biệt để thích ứng bay lượn trên cao."
+          },
+          "description": "Giáp toàn thân nhẹ màu bạc được chế tạo riêng cho thành viên Thánh Dực Kỵ Sĩ Đoàn, là tượng trưng của vinh quang và trách nhiệm."
+        }
+      ],
+      "attributes": {
+        "strength": 8,
+        "dexterity": 8,
+        "constitution": 8,
+        "intelligence": 6,
+        "mind": 7
+      },
+      "stairway": {
+        "isOpen": false
+      },
+      "isContract": true,
+      "affinity": 46,
+      "comment": "Cánh của tôi sẽ vĩnh viễn là lá chắn của ngài. Xin hãy ra lệnh đi, chỉ huy của tôi. Bất luận phía trước là vực sâu hay luyện ngục, tôi đều sẽ mở đường cho ngài.",
+      "backgroundInfo": "Seraphina là tinh anh của Thánh Dực Kỵ Sĩ Đoàn, kỷ luật và vinh quang là tín điều cô khắc vào trong xương cốt. Trong một lần nhiệm vụ liên hợp, cô ấy đã chứng kiến phán đoán hơn người và thực lực mạnh mẽ của bạn. Bạn không chỉ giành được sự tôn trọng của cô ấy, càng khiến trái tim nghiêm cẩn kia đập vì bạn. Giao phó sau lưng cho bạn, là sự tán thành cao nhất của cô với tư cách là kỵ sĩ, cũng là sự tin cậy cao nhất với tư cách là phụ nữ.",
+      "skills": [
+        {
+          "name": "Trinh sát mắt ưng",
+          "type": "Chủ động",
+          "tag": [
+            "Chức năng"
+          ],
+          "rarity": "rare",
+          "effect": {
+            "Trinh sát trên cao": "Mỗi ngày một lần, Seraphina có thể bay lên cao, trinh sát địa hình và động tĩnh đơn vị cỡ lớn trong phạm vi bán kính 5km cho bạn, và vẽ thành bản đồ đơn giản."
+          },
+          "description": "Không có gì có thể thoát khỏi đôi mắt sắc bén của kỵ sĩ bầu trời."
+        },
+        {
+          "name": "Đi theo chiều gió",
+          "type": "Bị động",
+          "tag": [
+            "Tăng ích"
+          ],
+          "rarity": "rare",
+          "effect": {
+            "Tăng tốc hành tiến": "Khi đi cùng Seraphina, tốc độ hành tiến của ở trạng thái phi chiến đấu ngoài tự nhiên tăng 15%."
+          },
+          "description": "Mượn nhờ sự khống chế luồng khí của Dực tộc, đội ngũ hành tiến sẽ càng thêm nhẹ nhàng."
+        }
+      ]
+    }
+  ],
+  "Đệ tam tầng cấp": [
+    {
+      "name": "Suigintou",
+      "cost": 400,
+      "lifeLevel": "Đệ tam tầng cấp/Tinh anh tầng cấp",
+      "level": 11,
+      "race": "Người giả kim phỏng sinh",
+      "identity": [
+        "Người ngẫu phỏng sinh do bạn chế tạo"
+      ],
+      "career": [
+        "Chiến sĩ con rối thẩm phán"
+      ],
+      "personality": "Sở hữu linh hồn nhân tạo, linh hồn, hành vi và phương thức tư duy hoàn toàn giống con người. Tính cách thanh lãnh, rụt rè, kiêu ngạo.",
+      "like": "Coi bạn là người cha và chủ nhân yêu quý nhất, thích dùng phương thức rụt rè làm nũng với bạn, khát vọng được bạn sủng ái và vuốt ve, thích nghe bạn hát và ngâm nga đi theo, bình thường thích ngồi trên vai bạn. Khát vọng bảo vệ tất cả của bạn, nguyện vọng và sở thích của bạn chính là nguyện vọng và sở thích của cô.",
+      "app": "Người ngẫu phỏng sinh cao 75cm, thân thể non mềm, có tất cả chức năng sinh lý của con người. Cô có một đôi cánh đen rộng lớn, mái tóc dài màu bạc như ánh trăng, đôi mắt như bảo thạch màu đỏ tươi. Giọng nói thanh lãnh, khí chất ưu nhã.",
+      "cloth": "Váy dài con rối Gothic đen trắng, tất đen, ủng da nhỏ đen nhánh. Không mặc đồ lót.",
+      "equip": [
+        {
+          "name": "Kẻ thu hoạch",
+          "type": "Vũ khí",
+          "tag": [
+            "Lưỡi hái lớn"
+          ],
+          "rarity": "epic",
+          "effect": {
+            "Dẫn truyền linh hồn": "Một cây lưỡi hái lớn có thể dẫn truyền ma lực mạnh mẽ của người sử dụng, có thể dễ dàng chém đứt linh hồn."
+          },
+          "description": "Lưỡi hái đen nhánh khổng lồ hình thành sự tương phản rõ nét với thân hình nhỏ nhắn của Suigintou, là vũ khí tiêu chuẩn của cô."
+        }
+      ],
+      "attributes": {
+        "strength": 11,
+        "dexterity": 11,
+        "constitution": 6,
+        "intelligence": 8,
+        "mind": 8
+      },
+      "stairway": {
+        "isOpen": false
+      },
+      "isContract": true,
+      "affinity": 100,
+      "comment": "Cha của con, chủ nhân của con, thật muốn được ngài ôm vào lòng...",
+      "backgroundInfo": "Người ngẫu do chính tay bạn chế tạo, khoảnh khắc mở mắt ra, đã yêu người chế tạo của mình, 'Cha' của mình.",
+      "skills": [
+        {
+          "name": "Tử vong thu hoạch",
+          "type": "Chủ động",
+          "consume": "1000MP của bạn",
+          "tag": [
+            "Sát thương",
+            "Sát thương chuẩn"
+          ],
+          "rarity": "epic",
+          "effect": {
+            "Trảm kích sát thương chuẩn": "Mượn ma lực từ trên người bạn, múa may lưỡi hái khổng lồ chém ra trảm kích ma lực đen nhánh, đồng thời gây ra sát thương chuẩn 30% giới hạn sinh mệnh của đối phương cho tối đa ba mục tiêu."
+          },
+          "description": "Người ngẫu múa may lưỡi hái không rõ, thu hoạch kẻ địch ngăn cản trước mặt chủ nhân."
+        },
+        {
+          "name": "Lĩnh vực N",
+          "type": "Bị động",
+          "tag": [
+            "Chức năng",
+            "Truyền tống"
+          ],
+          "rarity": "epic",
+          "effect": {
+            "Xuyên qua không gian và quay về vị diện": "Suigintou có thể thông qua vị diện thứ cấp 'Lĩnh vực N' chuyên thuộc về cô để xuyên qua không gian, không nhìn khoảng cách tùy thời đi đến bên cạnh bạn. Cô cũng có thể khi bản thân trọng thương hoặc sắp chết, một mình quay về 'Lĩnh vực N' an toàn hồi phục."
+          },
+          "description": "Một không gian khe hở chỉ thuộc về Suigintou, là bến cảng an toàn nhất và thông đạo thuận tiện nhất của cô."
+        }
+      ]
+    },
+    {
+      "name": "Celestine Aerylon",
+      "cost": 400,
+      "lifeLevel": "Đệ tam tầng cấp/Tinh anh tầng cấp",
+      "level": 10,
+      "race": "Dực Nhân",
+      "identity": [
+        "Quý tộc Dực Nhân",
+        "Nam tước Aerylon",
+        "Lãnh chúa trấn Aerylon"
+      ],
+      "career": [
+        "Mục sư thánh quang",
+        "Đầu bếp chuyên nghiệp"
+      ],
+      "personality": "Dịu dàng, lương thiện, thỉnh thoảng có chút ngờ nghệch tự nhiên.",
+      "like": "Cô ấy yêu bạn sâu sắc. Thích nấu nướng món ngon. Có thói quen khi ngủ dùng đôi cánh to lớn mềm mại bọc lấy toàn bộ người bạn.",
+      "app": "Tóc vàng dài đến thắt lưng, đôi mắt trong veo như lam bảo thạch, sau lưng mang hai đôi cánh trắng vàng to lớn, phía trên sau tai có cánh nhỏ màu trắng vàng. Dáng người cao ráo, gợi cảm đầy đặn, ngực to mông nở. Khí chất điềm tĩnh ôn hòa, luôn mang theo nụ cười chữa lành lòng người, giọng nói nhu hòa ấm áp.",
+      "cloth": "Áo choàng mục sư thần thánh viền vàng trắng, miếng dán ngực màu trắng, quần lót lọt khe màu vàng trắng, tất treo màu trắng, giày cao gót đế trắng viền vàng.",
+      "equip": [
+        {
+          "name": "Quyền trượng thần ân",
+          "type": "Vũ khí",
+          "tag": [
+            "Quyền trượng"
+          ],
+          "rarity": "rare",
+          "effect": {
+            "Thánh quang tăng phúc": "Có thể tăng phúc uy lực và phạm vi của pháp thuật thánh quang."
+          },
+          "description": "Một cây quyền trượng do thần điện trao tặng cho mục sư thâm niên, thường được treo bên hông như tượng trưng cho thân phận."
+        }
+      ],
+      "attributes": {
+        "strength": 6,
+        "dexterity": 6,
+        "constitution": 8,
+        "intelligence": 10,
+        "mind": 12
+      },
+      "stairway": {
+        "isOpen": false
+      },
+      "isContract": true,
+      "affinity": 70,
+      "comment": "Hình như em yêu anh ấy rồi, đây chính là món quà vận mệnh ban cho em sao? Nếu có thể để anh ấy nếm thử cơm em làm thì tốt quá...",
+      "backgroundInfo": "Tộc trưởng đương đại của gia tộc quý tộc Dực Nhân Aerylon, từ nhỏ xuất thân cao quý, gánh vác trách nhiệm và vinh quang của gia tộc và lãnh chúa. Cô ấy nhìn như hoàn mỹ không tì vết, nội tâm lại khát vọng một tình yêu thuần túy không bị thân phận trói buộc. Sự xuất hiện của bạn, giống như một tia sáng chiếu vào cuộc sống bị quy tắc lấp đầy của cô, khiến cô lần đầu tiên cảm nhận được mùi vị rung động.",
+      "skills": [
+        {
+          "name": "Cống hiến tịnh hóa",
+          "type": "Chủ động",
+          "consume": "500MP",
+          "tag": [
+            "Chức năng",
+            "Trị liệu"
+          ],
+          "rarity": "epic",
+          "effect": {
+            "Tịnh hóa trạng thái xấu": "Mỗi ngày một lần. Xóa bỏ tất cả trạng thái xấu tạm thời như nguyền rủa, trúng độc, bệnh tật không quá Đệ tam tầng cấp (cấp Tinh anh) cho bạn."
+          },
+          "description": "Dùng tín ngưỡng thành kính dẫn tới thánh quang, gột rửa tất cả ô uế."
+        },
+        {
+          "name": "Trái tim bảo vệ",
+          "type": "Bị động",
+          "tag": [
+            "Chức năng",
+            "Bảo vệ"
+          ],
+          "rarity": "epic",
+          "effect": {
+            "Thương tổn đại thường": "Khi bạn sắp sửa chịu đựng thương tổn trí mạng, Celestine sẽ lập tức phát giác không nhìn khoảng cách, và có thể chủ động lựa chọn gánh chịu 100% thương tổn lần này cho bạn. Hiệu quả này mỗi 72 giờ kích hoạt tối đa một lần."
+          },
+          "description": "Vì bảo vệ người trân quý, cho dù hy sinh chính mình cũng không tiếc."
+        }
+      ]
+    },
+    {
+      "name": "Hinteria Platinum",
+      "cost": 400,
+      "lifeLevel": "Đệ tam tầng cấp/Tinh anh tầng cấp",
+      "level": 11,
+      "race": "Thú tộc (Bán nhân mã)",
+      "identity": [
+        "Cựu sát thủ Bàn Tay Bóng Tối",
+        "Người yêu của bạn"
+      ],
+      "career": [
+        "Bạch Kim xạ thủ",
+        "Sát thủ"
+      ],
+      "personality": "Lười biếng, tản mạn, thanh lãnh. Cô ấy sẽ không gọi bạn là chủ nhân, mà coi bạn là tình yêu chân thành.",
+      "like": "Tràn đầy tình yêu và sự ngưỡng mộ đối với bạn. Cô ấy yêu thích cuộc sống thanh tịnh, quen với phương thức xã giao xa cách, cách nói chuyện luôn mang theo một tia lười biếng, khi giao lưu với người khác quen mang theo chút châm chọc nhẹ và tự giễu. Cô ấy thích để bạn cưỡi trên lưng ngựa của cô, cõng bạn đi dạo ở nơi thanh tịnh không người.",
+      "app": "Dáng người ưu nhã mà cao lớn, vừa có sự nhu mỹ vừa có sức mạnh, hình thể cao khoảng 2.5 mét. Khí chất ưu nhã mà lười biếng, giọng nói trong trẻo như chuông bạc. Có một mái tóc dài màu tuyết xõa xuống thắt lưng, lông mày trắng tuyết, đồng tử như vàng nung chảy. Nửa người trên là hình thể phụ nữ đường cong lung linh, da thịt trắng nõn như tuyết, bộ ngực sữa trắng nõn đầy đặn cao vút sẽ phập phồng như sóng biển khi cô chạy trốn, vạch ra đường cong trên không trung, nhảy lên xuống, vỗ vào nhau. Từ chiếc eo thon thả non mềm của hình người kéo dài về phía sau, nửa người dưới là thân ngựa mạnh mẽ ưu nhã, toàn thân bao phủ lông tóc trắng tuyết thuần khiết, có bờm và đuôi ngựa màu trắng bạc.",
+      "cloth": "Nửa người trên mặc áo choàng không tay hở rốn màu trắng thuần, eo người mặc váy xẻ tà cao màu trắng. Để thuận tiện cho bạn cưỡi, lưng ngựa đeo yên ngựa đen trắng, yên ngựa kéo dài về phía sau có rèm vải màu trắng thuần (chỗ đuôi ngựa mở lỗ) che khuất bộ phận riêng tư mông ngựa. Bốn móng ngựa đi ủng da ống dài màu trắng thuần.",
+      "equip": [
+        {
+          "name": "Thiên Mã Trường Cung",
+          "type": "Vũ khí",
+          "tag": [
+            "Trường cung"
+          ],
+          "rarity": "epic",
+          "effect": {
+            "Mũi tên quang năng và phá tà": "Có thể ngưng tụ năng lượng của người sử dụng thành mũi tên thuộc tính quang, có thêm sát thương đối với sinh vật tà ác."
+          },
+          "description": "Trường cung làm từ gỗ Thiên Mã trong truyền thuyết, thân cung tỏa ra ánh sáng trắng nhu hòa thánh khiết, là quá khứ của kiếp sống sát thủ, cũng là vũ khí sắc bén bảo vệ người yêu hiện nay."
+        }
+      ],
+      "attributes": {
+        "strength": 10,
+        "dexterity": 12,
+        "constitution": 9,
+        "intelligence": 5,
+        "mind": 7
+      },
+      "stairway": {
+        "isOpen": false
+      },
+      "isContract": true,
+      "affinity": 75,
+      "comment": "Muốn cùng anh ấy đi xem rạp xiếc biểu diễn, nghe nói Cảng Vụ Tinh có 'Khu vui chơi' gì đó, ở đó có vui không nhỉ?",
+      "backgroundInfo": "Cô từng bị Bàn Tay Bóng Tối dùng ma pháp ác độc khống chế, bị ép trở thành sát thủ bán mạng, sau đó được bạn cứu vớt, từ đó tràn đầy ngưỡng mộ và tình yêu đối với bạn. Bạn không chỉ cho cô tự do, càng khiến cô cảm nhận lại được sắc màu của thế giới. Hiện nay, đối với cô mà nói, hạnh phúc lớn nhất chính là có thể cùng bạn trải nghiệm những sự vật bình phàm mà tốt đẹp cô chưa từng tiếp xúc kia.",
+      "skills": [
+        {
+          "name": "Tầm nhìn Thiên Mã",
+          "type": "Chủ động",
+          "consume": "300MP và 300SP",
+          "tag": [
+            "Sát thương",
+            "Tầm xa"
+          ],
+          "rarity": "epic",
+          "effect": {
+            "Bắn tỉa siêu cự ly": "Tụ lực 3 giây, ngưng tụ mũi tên năng lượng thuộc tính quang, tiến hành một lần bắn tỉa độ chính xác cao đối với mục tiêu đơn lẻ trong vòng 2000 mét, gây ra lượng lớn sát thương hỗn hợp vật lý và thuộc tính quang."
+          },
+          "description": "Thị lực và thuật bắn cung của Bán nhân mã vốn đã siêu phàm, mà mũi tên của cô lại càng ký túc ánh sáng của tinh tú."
+        },
+        {
+          "name": "Trái tim Bạch Kim",
+          "type": "Bị động",
+          "tag": [
+            "Tăng ích",
+            "Sát thương"
+          ],
+          "rarity": "epic",
+          "effect": {
+            "Kháng tính thuộc tính và sát thương kèm theo": "Kháng tính thuộc tính quang và thuộc tính thần thánh của Hinteria tăng 30%, hơn nữa tất cả công kích của cô đều kèm theo sát thương thuộc tính quang thêm."
+          },
+          "description": "Linh hồn thuần khiết khiến cô trời sinh thân hòa với quang minh, cũng khiến cô có sức đề kháng mạnh hơn đối với sự xâm蚀 của bóng tối."
+        }
+      ]
+    },
+    {
+      "name": "Nephys",
+      "cost": 400,
+      "lifeLevel": "Đệ tam tầng cấp/Tinh anh tầng cấp",
+      "level": 11,
+      "race": "Hải Uyên Long (Á long biển chủng)",
+      "identity": [
+        "Thú cưng của bạn",
+        "Thú cưỡi"
+      ],
+      "career": [
+        "Ma thú chiến đấu"
+      ],
+      "personality": "Ý thức và tuổi tâm lý tương đương với trẻ con loài người khoảng 3 tuổi. Ngoan ngoãn, thích làm nũng.",
+      "like": "Thích sinh sống bơi lội trong nước sâu và nước biển. Cô bé khát vọng thời khắc dính bên cạnh bạn được bạn vuốt ve, thích cuộn thân thể dài dằng dặc của mình lại dịu dàng vây bạn ở giữa. Cô bé rất thích cái tên bạn ban cho cô bé, thích gọi bạn là 'Ba ba chủ nhân'. Ôm ấp sự ái mộ và trung thành vĩnh hằng đối với bạn.",
+      "app": "Rồng con tuổi sinh lý chỉ khoảng 50 tuổi. Sở hữu thân thể hình dòng suối ưu mỹ hình rắn, vảy màu đen lam dày đặc thâm trầm, đôi mắt to màu xanh biển, trên đầu một chiếc sừng tinh thể biển màu xanh biển mộng ảo. Thân dài khoảng 6 mét.",
+      "cloth": "Tinh thể máu đỏ khảm nạm trên đỉnh sừng bạn tặng cho cô bé.",
+      "equip": [],
+      "attributes": {
+        "strength": 8,
+        "dexterity": 7,
+        "constitution": 11,
+        "intelligence": 10,
+        "mind": 9
+      },
+      "stairway": {
+        "isOpen": false
+      },
+      "isContract": true,
+      "affinity": 100,
+      "comment": "Ba ba... chủ nhân... ở cùng nhau...",
+      "backgroundInfo": "Vốn là rồng biển nhỏ tự do tự tại trong biển sâu, bị linh hồn xuyên không đến của bạn thu hút, dưới sự chỉ dẫn của trợ lý hệ thống đã ký kết tơ hồng với bạn. Trước khi có bạn, thế giới của cô bé chỉ có nước biển lạnh lẽo và cô độc. Linh hồn của bạn là sự ấm áp đầu tiên cô bé cảm nhận được, khiến cô bé theo bản năng muốn tới gần, đi theo, vĩnh viễn không xa rời.",
+      "skills": [
+        {
+          "name": "Gọi xoáy nước",
+          "type": "Chủ động",
+          "consume": "1000MP",
+          "tag": [
+            "Sát thương",
+            "Khống chế",
+            "Phạm vi"
+          ],
+          "rarity": "epic",
+          "effect": {
+            "Xoáy nước biển sâu": "Tạo ra một xoáy nước kinh khủng đường kính 50 mét trong vùng nước chỉ định, kéo dài 1 phút, gây ra hiệu quả lôi kéo cực mạnh và sát thương thuộc tính thủy liên tục đối với tất cả đơn vị trong phạm vi. Thời gian hồi chiêu 2 giờ."
+          },
+          "description": "Hải long là con cưng của đại dương, có thể dễ dàng khuấy động sức mạnh biển sâu, tạo ra tai nạn người phàm không cách nào chống lại."
+        },
+        {
+          "name": "Ràng buộc linh hồn",
+          "type": "Bị động",
+          "tag": [
+            "Chức năng",
+            "Triệu hồi"
+          ],
+          "rarity": "epic",
+          "effect": {
+            "Thần giao cách cảm và triệu hồi vượt giới": "Linh hồn của Nephys kết nối trực tiếp với bạn, có thể không nhìn khoảng cách tiến hành giao lưu ý thức. Bạn có thể tiêu hao 500MP, thông qua liên kết linh hồn xé mở đường hầm không gian, triệu hồi Nephys đến bên cạnh mình (cần gần đó có đủ nguồn nước)."
+          },
+          "description": "Liên hệ vượt qua không gian, chứng minh khế ước không thể phá vỡ giữa các bạn."
+        }
+      ]
+    },
+    {
+      "name": "Ignis",
+      "cost": 400,
+      "lifeLevel": "Đệ tam tầng cấp/Tinh anh tầng cấp",
+      "level": 11,
+      "race": "Viêm Ngục Long (Á long lửa chủng)",
+      "identity": [
+        "Thú cưng của bạn",
+        "Thú cưỡi"
+      ],
+      "career": [
+        "Ma thú chiến đấu"
+      ],
+      "personality": "Ý thức và tuổi tâm lý tương đương với trẻ con loài người khoảng 3 tuổi. Hoạt bát, thích tranh sủng.",
+      "like": "Thích sinh sống trong môi trường khô nóng, ví dụ như miệng núi lửa. Cô bé khát vọng thời khắc dính bên cạnh bạn được bạn vuốt ve, thích dùng chiếc lưỡi rồng con đầy gai nhỏ của mình liếm láp thân thể bạn. Cô bé rất thích cái tên bạn ban cho cô bé, thích gọi bạn là 'Ba ba chủ nhân'. Ôm ấp sự ái mộ và trung thành vĩnh hằng đối với bạn.",
+      "app": "Rồng con tuổi sinh lý chỉ khoảng 50 tuổi. Sở hữu giáp xác và vảy màu đen đỏ dữ tợn, cánh rồng đen đỏ khổng lồ sải cánh khoảng 5 mét, đồng tử dựng đứng màu vàng kim khổng lồ, trên đầu có một đôi sừng tinh thể đen đỏ. Có thể mở hai cánh mượn nhờ ma lực bay lượn đường ngắn. Thể hình khoảng 4 mét.",
+      "cloth": "Nhẫn vàng rực rỡ bạn tặng trên ngón chân vuốt trái của cô bé.",
+      "equip": [],
+      "attributes": {
+        "strength": 11,
+        "dexterity": 8,
+        "constitution": 11,
+        "intelligence": 8,
+        "mind": 7
+      },
+      "stairway": {
+        "isOpen": false
+      },
+      "isContract": true,
+      "affinity": 100,
+      "comment": "Ba ba... chủ nhân... của con!",
+      "backgroundInfo": "Vốn là rồng lửa nhỏ vô ưu vô lo sống trong núi lửa, bị linh hồn xuyên không đến của bạn thu hút, dưới sự chỉ dẫn của trợ lý hệ thống đã ký kết tơ hồng với bạn. Khác với sự dịu ngoan của Nephys, bản năng của Ignis càng có tính xâm lược và chiếm hữu hơn. Theo cô bé thấy, linh hồn ấm áp này của bạn là kho báu thuộc riêng về cô bé, bất kỳ sự tồn tại nào mưu toan chia sẻ sự ấm áp này, đều là kẻ địch cần bị long tức cảnh cáo.",
+      "skills": [
+        {
+          "name": "Hơi thở viêm ngục",
+          "type": "Chủ động",
+          "consume": "1000MP",
+          "tag": [
+            "Sát thương",
+            "Phạm vi",
+            "Giảm ích"
+          ],
+          "rarity": "epic",
+          "effect": {
+            "Hơi thở của rồng": "Phun ra một luồng hơi thở viêm ngục bao phủ phạm vi hình nón 8 mét phía trước, gây ra lượng lớn sát thương hỗn hợp thuộc tính hỏa và thuộc tính tử vong cho tất cả mục tiêu, và kèm theo hiệu quả [Thiêu đốt] và [Ăn mòn]. Thời gian hồi chiêu 2 giờ."
+          },
+          "description": "Lửa giận đến từ sâu trong núi lửa, đủ để nung chảy sắt thép, ăn mòn sinh mệnh."
+        },
+        {
+          "name": "Ràng buộc linh hồn",
+          "type": "Bị động",
+          "tag": [
+            "Chức năng",
+            "Triệu hồi"
+          ],
+          "rarity": "epic",
+          "effect": {
+            "Thần giao cách cảm và triệu hồi vượt giới": "Linh hồn của Ignis kết nối trực tiếp với bạn, có thể không nhìn khoảng cách tiến hành giao lưu ý thức. Bạn có thể tiêu hao 500MP, thông qua liên kết linh hồn xé mở đường hầm không gian, triệu hồi Ignis đến bên cạnh mình."
+          },
+          "description": "Liên hệ vượt qua không gian, chứng minh khế ước không thể phá vỡ giữa các bạn."
+        }
+      ]
+    }
+  ]
+}
