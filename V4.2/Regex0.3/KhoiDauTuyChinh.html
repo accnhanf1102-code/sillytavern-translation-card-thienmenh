@@ -126,11 +126,11 @@
         const b = (0, c.computed)(() => [...(g.value.genders || []).filter(e => 'Tùy chỉnh' !== e), 'Tùy chỉnh']),
             h = (0, c.computed)(() => ({
                 ...g.value.raceCosts || {},
-                Custom: 80
+                "Tùy chỉnh": 80
             })),
             B = (0, c.computed)(() => ({
                 ...g.value.identityCosts || {},
-                Custom: 80
+                "Tùy chỉnh": 80
             })),
             C = ((0, c.computed)(() => [...(g.value.startLocations || []).filter(e => 'Tùy chỉnh' !== e), 'Tùy chỉnh']), (0, c.computed)(() => {
                 const e = ((e, t = '-') => {
@@ -5759,7 +5759,7 @@
                             label: e + (0 !== (0, c.unref)(m)[e] ? ` (${(0, c.unref)(m)[e] > 0 ? '-' : '+'}${Math.abs((0, c.unref)(m)[e])} điểm)` : ''),
                             value: e
                         }))
-                    }, null, 8, ['modelValue', 'options']), 'Tùy chỉnh' === (0, c.unref)(l).Identity ? ((0, c.openBlock)(), (0, c.createBlock)((0, c.unref)(zt), {
+                    }, null, 8, ['modelValue', 'options']), 'Tùy chỉnh' === (0, c.unref)(l).identity ? ((0, c.openBlock)(), (0, c.createBlock)((0, c.unref)(zt), {
                         key: 0,
                         modelValue: (0, c.unref)(l).customIdentity,
                         'onUpdate:modelValue': a[8] || (a[8] = e => (0, c.unref)(l).customIdentity = e),
