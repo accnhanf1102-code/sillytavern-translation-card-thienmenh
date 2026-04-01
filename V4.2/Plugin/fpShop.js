@@ -160,6 +160,8 @@
         panelPos: null, // { width, height }
         selectedPromptLength: 'Moderate', // Default
         selectedWorkerCount: 1,
+        isGuideExpanded: false,
+        searchDraft: '',
         hasCompletedWhileHidden: false,
         displayMode: 'MENU', // MENU, LOADING_SCREEN, SHOP_GRID
         markers: [],
@@ -315,11 +317,19 @@
             comment === kwNoBrackets;
     }
 
+    function escapeHtml(value) {
+        return String(value ?? '')
+            .replace(/&/g, '&amp;')
+            .replace(/"/g, '&quot;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+    }
+
     async function loadMarkers() {
         try {
             // Lấy URL của script hiện tại để tìm file JSON cùng thư mục
             const scripts = document.getElementsByTagName('script');
-            let scriptPath = 'https://testingcf.jsdelivr.net/gh/accnhanf1102-code/sillytavern-translation-card-thienmenh@main/v4.2/plugin/map_marker.json';
+            let scriptPath = 'https://testingcf.jsdelivr.net/gh/accnhanf1102-code/sillytavern-translation-card-thienmenh@main/V4.2/Plugin/';
             for (let s of scripts) {
                 if (s.src.includes('fpShopBubble Codex.js')) {
                     scriptPath = s.src.substring(0, s.src.lastIndexOf('/') + 1);
@@ -690,6 +700,22 @@
     padding: 48px 40px;
     text-align: center;
 }
+.fps-menu-shell {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.fps-menu-body {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+}
+.fps-state-screen.fps-empty-screen {
+    justify-content: flex-start;
+    padding: 32px 40px 20px;
+}
 .fps-state-screen h2 {
     font-family: "Lobster", Georgia, serif;
     font-size: 28px;
@@ -714,6 +740,65 @@
     margin: 0;
     color: var(--fps-text-muted);
     line-height: 1.7;
+}
+.fps-guide-container {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    padding: 18px 20px;
+    text-align: left;
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--fps-text-muted);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(217, 181, 107, 0.1);
+}
+.fps-guide-header {
+    color: var(--fps-accent);
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+}
+.fps-guide-summary {
+    margin: 0;
+    max-width: none;
+}
+.fps-guide-toggle {
+    margin-top: 14px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: var(--fps-accent-strong);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.fps-guide-toggle:hover {
+    color: var(--fps-accent);
+}
+.fps-guide-content {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(217, 181, 107, 0.12);
+}
+.fps-guide-list {
+    margin: 0;
+    padding-left: 20px;
+}
+.fps-guide-list li {
+    margin-bottom: 8px;
+}
+.fps-guide-note {
+    opacity: 0.8;
+    font-size: 12px;
+    font-style: italic;
 }
 .fps-btn-hero {
     margin-top: 24px;
@@ -1066,6 +1151,14 @@
 
     .fps-input-wrap {
         flex-direction: column;
+    }
+
+    .fps-state-screen.fps-empty-screen {
+        padding: 24px 20px 16px;
+    }
+
+    .fps-guide-container {
+        padding: 16px;
     }
 
     .fps-send-btn {
@@ -1686,31 +1779,41 @@
 
     function renderEmptyState() {
         return `
-            <div class="fps-state-screen" style="padding-bottom: 20px;">
-                <div class="fps-icon-large">📦</div>
-                <h2>Hệ Thống Chưa Liên Kết Với Vật Phẩm</h2>
-                <p style="color:#71717a">Hãy yêu cầu hệ thống truy xuất vật phẩm ngẫu nhiên hoặc theo yêu cầu</p>
-                
-                <div class="fps-guide-container" style="margin-top: 20px; width: 100%; max-width: 600px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(217, 181, 107, 0.1); padding: 20px; text-align: left; font-size: 13px; line-height: 1.6; color: var(--fps-text-muted);">
-                    <div style="color: var(--fps-accent); font-weight: 700; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; text-transform: uppercase; font-size: 12px; letter-spacing: 0.1em;">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-                        Hướng dẫn sử dụng Cửa Hàng Hệ Thống
-                    </div>
-                    <ul style="margin: 0; padding-left: 20px;">
-                        <li style="margin-bottom: 8px;">Có thể <b>nhập một vật phẩm cụ thể</b> hay loại vật phẩm nào đó đang tìm kiếm ở ô nhập bên dưới.</li>
-                        <li style="margin-bottom: 8px;">Có thể <b>điều chỉnh lượng từ ngữ</b> dùng để mô tả ở góc trên bên phải (Mô tả ngắn gọn/vừa phải/Đầy Đủ).</li>
-                        <li style="margin-bottom: 8px;">Có thể <b>điều chỉnh Số Lượng Linh Phục Hệ Thống</b> ở góc trên bên phải. Mỗi Linh Phục Hệ Thống sẽ truy xuất được 1 số lượng nhất định Vật Phẩm/Trang Bị/Kỹ Năng. Càng nhiều thì sẽ càng có nhiều vật phẩm được bán.</li>
-                        <li style="margin-bottom: 8px;">Có thể <b>tạm thời tắt bảng điều khiển</b> (Close) trong quá trình chờ truy xuất; hệ thống vẫn sẽ tiếp tục làm việc ngầm.</li>
-                        <li style="margin-bottom: 8px;"><b>Khuyến nghị sử dụng</b> model <b>gemini-3-flash-preview</b> hoặc các model nhẹ tương tự để có tốc độ phản hồi tối ưu.</li>
-                        <li style="opacity: 0.8; font-size: 12px; font-style: italic;">Lưu ý: Đôi khi Linh Phục có thể gặp "tai nạn đáng tiếc" trong quá trình truy xuất nên việc dùng nhiều Linh Phục cũng giúp giảm tỉ lệ thất bại hoàn toàn.</li>
-                    </ul>
-                </div>
+            <div class="fps-menu-shell">
+                <div class="fps-menu-body">
+                    <div class="fps-state-screen fps-empty-screen">
+                        <div class="fps-icon-large">📦</div>
+                        <h2>Hệ Thống Chưa Liên Kết Với Vật Phẩm</h2>
+                        <p style="color:#71717a">Hãy yêu cầu hệ thống truy xuất vật phẩm ngẫu nhiên hoặc theo yêu cầu</p>
 
-                <button class="fps-btn-hero" id="fps-btn-fetch" style="margin-top: 25px;">TRUY XUẤT VẬT PHẨM</button>
-            </div>
-            <div class="fps-input-wrap">
-                <input class="fps-input" id="fps-search-input" placeholder="Nhập vật phẩm cần tìm..." />
-                <button class="fps-send-btn" id="fps-btn-send">GỬI</button>
+                        <div class="fps-guide-container ${state.isGuideExpanded ? 'expanded' : 'collapsed'}">
+                            <div class="fps-guide-header">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                                Hướng dẫn sử dụng Cửa Hàng Hệ Thống
+                            </div>
+                            <p class="fps-guide-summary">Bạn có thể nhập vật phẩm muốn tìm ở ô bên dưới, rồi để hệ thống truy xuất theo đúng bối cảnh hiện tại.</p>
+                            <button class="fps-guide-toggle" id="fps-guide-toggle" type="button">${state.isGuideExpanded ? 'Thu gọn' : 'Xem hướng dẫn'}</button>
+                            ${state.isGuideExpanded ? `
+                                <div class="fps-guide-content">
+                                    <ul class="fps-guide-list">
+                                        <li>Có thể <b>nhập một vật phẩm cụ thể</b> hay loại vật phẩm nào đó đang tìm kiếm ở ô nhập bên dưới.</li>
+                                        <li>Có thể <b>điều chỉnh lượng từ ngữ</b> dùng để mô tả ở góc trên bên phải (Mô tả ngắn gọn/vừa phải/Đầy Đủ).</li>
+                                        <li>Có thể <b>điều chỉnh Số Lượng Linh Phục Hệ Thống</b> ở góc trên bên phải. Mỗi Linh Phục Hệ Thống sẽ truy xuất được 1 số lượng nhất định Vật Phẩm/Trang Bị/Kỹ Năng. Càng nhiều thì sẽ càng có nhiều vật phẩm được bán.</li>
+                                        <li>Có thể <b>tạm thời tắt bảng điều khiển</b> (Close) trong quá trình chờ truy xuất; hệ thống vẫn sẽ tiếp tục làm việc ngầm.</li>
+                                        <li><b>Khuyến nghị sử dụng</b> model <b>gemini-3-flash-preview</b> hoặc các model nhẹ tương tự để có tốc độ phản hồi tối ưu.</li>
+                                        <li class="fps-guide-note">Lưu ý: Đôi khi Linh Phục có thể gặp "tai nạn đáng tiếc" trong quá trình truy xuất nên việc dùng nhiều Linh Phục cũng giúp giảm tỉ lệ thất bại hoàn toàn.</li>
+                                    </ul>
+                                </div>
+                            ` : ''}
+                        </div>
+
+                        <button class="fps-btn-hero" id="fps-btn-fetch">TRUY XUẤT VẬT PHẨM</button>
+                    </div>
+                </div>
+                <div class="fps-input-wrap">
+                    <input class="fps-input" id="fps-search-input" placeholder="Nhập vật phẩm cần tìm..." value="${escapeHtml(state.searchDraft)}" />
+                    <button class="fps-send-btn" id="fps-btn-send">GỬI</button>
+                </div>
             </div>
         `;
     }
@@ -2132,6 +2235,7 @@ ${userInput || 'Tạo vật phẩm ngẫu nhiên phù hợp bối cảnh.'}
         const fetchBtn = panel.querySelector('#fps-btn-fetch');
         const sendBtn = panel.querySelector('#fps-btn-send');
         const searchInput = panel.querySelector('#fps-search-input');
+        const guideToggle = panel.querySelector('#fps-guide-toggle');
 
         // Loading Screen Events
         const imgPrev = panel.querySelector('#fps-img-prev');
@@ -2181,6 +2285,7 @@ ${userInput || 'Tạo vật phẩm ngẫu nhiên phù hợp bối cảnh.'}
 
         const doFetch = (input) => {
             if (state.status === 'LOADING') return;
+            state.searchDraft = input || '';
             state.status = 'LOADING';
             state.displayMode = 'LOADING_SCREEN';
 
@@ -2196,7 +2301,17 @@ ${userInput || 'Tạo vật phẩm ngẫu nhiên phù hợp bối cảnh.'}
 
         if (fetchBtn) fetchBtn.onclick = () => doFetch('');
         if (sendBtn) sendBtn.onclick = () => doFetch(searchInput?.value || '');
+        if (guideToggle) {
+            guideToggle.onclick = () => {
+                state.searchDraft = searchInput?.value || '';
+                state.isGuideExpanded = !state.isGuideExpanded;
+                renderState();
+            };
+        }
         if (searchInput) {
+            searchInput.oninput = () => {
+                state.searchDraft = searchInput.value;
+            };
             searchInput.onkeydown = (e) => {
                 if (e.key === 'Enter') doFetch(searchInput.value);
             };

@@ -749,7 +749,7 @@
                 }
 
                 function xt(e, t, n, a, r, l, s, i) {
-                    e.name = '', null != s && 'function' != typeof s && 'symbol' != typeof s && 'boolean' != typeof s ? e.type = s : e.removeAttribute('type'), null != t ? 'number' === s ? (0 === t && '' === e.value || e.value != t) && (e.value = '' + pt(t)) : e.value !== '' + pt(t) && (e.value = '' + pt(t)) : 'submit' !== s && 'reset' !== s || e.removeAttribute('value'), null != t ? kt(e, s, pt(t)) : null != n ? kt(e, s, pt(n)) : null != a && e.removeAttribute('value'), null == r && null != l && (e.defaultChecked = !!l), null != r && (e.checked = r && 'function' != typeof r && 'symbol' != typeof r), null != i && 'function' != typeof i && 'symbol' != typeof i && 'boolean' != typeof i ? e.name = '' + pt(i) : e.removeAttribute('name')
+                    e.name = '', null != s && 'function' != typeof s && 'symbol' != typeof s && 'boolean' != typeof s ? e.type = s : e.removeAttribute('Type'), null != t ? 'number' === s ? (0 === t && '' === e.value || e.value != t) && (e.value = '' + pt(t)) : e.value !== '' + pt(t) && (e.value = '' + pt(t)) : 'submit' !== s && 'reset' !== s || e.removeAttribute('value'), null != t ? kt(e, s, pt(t)) : null != n ? kt(e, s, pt(n)) : null != a && e.removeAttribute('value'), null == r && null != l && (e.defaultChecked = !!l), null != r && (e.checked = r && 'function' != typeof r && 'symbol' != typeof r), null != i && 'function' != typeof i && 'symbol' != typeof i && 'boolean' != typeof i ? e.name = '' + pt(i) : e.removeAttribute('name')
                 }
 
                 function wt(e, t, n, a, r, l, s, i) {
@@ -4078,7 +4078,7 @@
                                                 if (e.hasAttribute('data-precedence')) break;
                                                 return e;
                                             case 'script':
-                                                if (((l = e.getAttribute('src')) !== (null == r.src ? null : r.src) || e.getAttribute('type') !== (null == r.type ? null : r.type) || e.getAttribute('crossorigin') !== (null == r.crossOrigin ? null : r.crossOrigin)) && l && e.hasAttribute('async') && !e.hasAttribute('itemprop')) break;
+                                                if (((l = e.getAttribute('src')) !== (null == r.src ? null : r.src) || e.getAttribute('Type') !== (null == r.type ? null : r.type) || e.getAttribute('crossorigin') !== (null == r.crossOrigin ? null : r.crossOrigin)) && l && e.hasAttribute('async') && !e.hasAttribute('itemprop')) break;
                                                 return e;
                                             default:
                                                 return e
@@ -4651,7 +4651,7 @@
                                     for (var m in a) {
                                         var p = a[m];
                                         if (f = n[m], a.hasOwnProperty(m) && (null != p || null != f)) switch (m) {
-                                            case 'type':
+                                            case 'Type':
                                                 l = p;
                                                 break;
                                             case 'name':
@@ -7202,7 +7202,7 @@
                                         case 'name':
                                             l = d;
                                             break;
-                                        case 'type':
+                                        case 'Type':
                                             i = d;
                                             break;
                                         case 'checked':
@@ -8936,27 +8936,27 @@
             u = s(471);
         const c = [{
             id: 'quests',
-            label: '任务',
+            label: 'Nhiệm vụ',
             icon: 'fa-solid fa-scroll'
         }, {
             id: 'status',
-            label: '信息',
+            label: 'Thông tin',
             icon: 'fa-solid fa-user'
         }, {
             id: 'items',
-            label: '持有物',
+            label: 'Vật phẩm',
             icon: 'fa-solid fa-briefcase'
         }, {
             id: 'destiny',
-            label: '命定',
+            label: 'Định Mệnh',
             icon: 'fa-solid fa-star'
         }, {
             id: 'news',
-            label: '新闻',
+            label: 'Tin tức',
             icon: 'fa-solid fa-newspaper'
         }, {
             id: 'map',
-            label: '地图',
+            label: 'Bản đồ',
             icon: 'fa-solid fa-map'
         }],
             d = e => {
@@ -9010,7 +9010,7 @@
                             e.editEnabled = n
                         })
                     } catch (e) {
-                        console.error('[StatusBar] 加载编辑设置失败:', e)
+                        console.error('[StatusBar] Tải cài đặt chỉnh sửa thất bại:', e)
                     }
                 },
                 saveSettings: async () => {
@@ -9021,7 +9021,7 @@
                             type: 'character'
                         })
                     } catch (e) {
-                        console.error('[StatusBar] 保存编辑设置失败:', e)
+                        console.error('[StatusBar] Lưu cài đặt chỉnh sửa thất bại:', e)
                     }
                 }
             }))),
@@ -9029,157 +9029,157 @@
             y = (e, t, n) => g.z.coerce.number().prefault(e).transform(e => _.clamp(e, t, n)),
             v = (e, t) => _.fromPairs(_.take(_.toPairs(e), t)),
             x = g.z.object({
-                状态: g.z.string().prefault(''),
-                关注度: g.z.enum(['低', '中', '高']).prefault('中'),
-                进展: g.z.string().prefault(''),
-                详情: g.z.string().prefault(''),
-                目标: g.z.string().prefault(''),
-                奖励: g.z.string().prefault('')
+                Status: g.z.string().prefault(''),
+                Priority: g.z.enum(['Thấp', 'Trung bình', 'Cao']).prefault('Trung bình'),
+                Progress: g.z.string().prefault(''),
+                Details: g.z.string().prefault(''),
+                Goal: g.z.string().prefault(''),
+                Reward: g.z.string().prefault('')
             }).prefault({}),
             w = g.z.object({
-                品质: g.z.string().prefault(''),
-                类型: g.z.string().prefault(''),
-                标签: g.z.array(g.z.string()).prefault([]).transform(e => _.uniq(e)).optional(),
-                效果: g.z.record(g.z.string(), g.z.string()).prefault({}),
-                描述: g.z.string().prefault('')
+                Quality: g.z.string().prefault(''),
+                Type: g.z.string().prefault(''),
+                Tags: g.z.array(g.z.string()).prefault([]).transform(e => _.uniq(e)).optional(),
+                Effect: g.z.record(g.z.string(), g.z.string()).prefault({}),
+                Description: g.z.string().prefault('')
             }),
             k = w.extend({
-                位置: g.z.string().prefault('')
+                Location: g.z.string().prefault('')
             }),
             S = w.extend({
-                消耗: g.z.string().prefault('')
-            }).transform(e => _.pick(e, ['品质', '类型', '消耗', '标签', '效果', '描述'])),
+                Cost: g.z.string().prefault('')
+            }).transform(e => _.pick(e, ['Quality', 'Type', 'Cost', 'Tags', 'Effect', 'Description'])),
             N = g.z.object({
-                类型: g.z.enum(['增益', '减益', '特殊']).prefault('增益'),
-                效果: g.z.string().prefault(''),
-                层数: g.z.coerce.number().prefault(1),
-                剩余时间: g.z.string().prefault(''),
-                来源: g.z.string().prefault('')
+                Type: g.z.enum(['Buff', 'Debuff', 'Đặc thù']).prefault('Buff'),
+                Effect: g.z.string().prefault(''),
+                Stacks: g.z.coerce.number().prefault(1),
+                RemainingTime: g.z.string().prefault(''),
+                Source: g.z.string().prefault('')
             }).prefault({}),
             T = w.extend({
-                数量: g.z.coerce.number().prefault(1)
-            }).transform(e => _.pick(e, ['品质', '类型', '数量', '标签', '效果', '描述'])),
+                Quantity: g.z.coerce.number().prefault(1)
+            }).transform(e => _.pick(e, ['Quality', 'Type', 'Quantity', 'Tags', 'Effect', 'Description'])),
             C = g.z.object(_.mapValues({
-                力量: 0,
-                敏捷: 0,
-                体质: 0,
-                智力: 0,
-                精神: 0
+                Strength: 0,
+                Agility: 0,
+                Constitution: 0,
+                Intelligence: 0,
+                Spirit: 0
             }, () => g.z.coerce.number().prefault(0))).prefault({}),
             j = g.z.object({
-                是否开启: g.z.boolean().prefault(!1),
-                要素: g.z.record(g.z.string(), g.z.record(g.z.string(), g.z.string())).prefault({}),
-                权能: g.z.record(g.z.string(), g.z.record(g.z.string(), g.z.string())).prefault({}),
-                法则: g.z.record(g.z.string(), g.z.record(g.z.string(), g.z.string())).prefault({}),
-                神位: g.z.string().prefault(''),
-                神国: g.z.object({
-                    名称: g.z.string().prefault(''),
-                    描述: g.z.string().prefault('')
+                IsEnabled: g.z.boolean().prefault(!1),
+                Elements: g.z.record(g.z.string(), g.z.record(g.z.string(), g.z.string())).prefault({}),
+                Authorities: g.z.record(g.z.string(), g.z.record(g.z.string(), g.z.string())).prefault({}),
+                Laws: g.z.record(g.z.string(), g.z.record(g.z.string(), g.z.string())).prefault({}),
+                Godhood: g.z.string().prefault(''),
+                Divine_Kingdom: g.z.object({
+                    Name: g.z.string().prefault(''),
+                    Description: g.z.string().prefault('')
                 }).prefault({})
             }).prefault({}).transform(e => {
-                const t = _.size(e.法则),
-                    n = _.size(e.权能),
-                    a = e.神国?.名称 ? Number.POSITIVE_INFINITY : e.神位 ? 2 : 1;
+                const t = _.size(e.Laws),
+                    n = _.size(e.Authorities),
+                    a = e.Divine_Kingdom?.Name ? Number.POSITIVE_INFINITY : e.Godhood ? 2 : 1;
                 return t > 0 ? {
                     ...e,
-                    要素: {},
-                    权能: {},
-                    法则: v(e.法则, a)
+                    Elements: {},
+                    Authorities: {},
+                    Laws: v(e.Laws, a)
                 } : n > 0 ? {
                     ...e,
-                    要素: {},
-                    权能: v(e.权能, 1),
-                    法则: v(e.法则, a)
+                    Elements: {},
+                    Authorities: v(e.Authorities, 1),
+                    Laws: v(e.Laws, a)
                 } : {
                     ...e,
-                    要素: v(e.要素, 3),
-                    权能: v(e.权能, 1),
-                    法则: {}
+                    Elements: v(e.Elements, 3),
+                    Authorities: v(e.Authorities, 1),
+                    Laws: {}
                 }
             }),
             E = g.z.object({
-                等级: y(1, 1, 25),
-                生命层级: g.z.string().prefault(''),
-                种族: g.z.string().prefault(''),
-                身份: g.z.array(g.z.string()).prefault([]).transform(e => _.uniq(e)),
-                职业: g.z.array(g.z.string()).prefault([]).transform(e => _.uniq(e)),
-                属性: C,
-                装备: g.z.record(g.z.string(), k).prefault({}),
-                技能: g.z.record(g.z.string(), S).prefault({}),
-                登神长阶: j
+                Level: y(1, 1, 25),
+                LifeTier: g.z.string().prefault(''),
+                Race: g.z.string().prefault(''),
+                Identity: g.z.array(g.z.string()).prefault([]).transform(e => _.uniq(e)),
+                Class: g.z.array(g.z.string()).prefault([]).transform(e => _.uniq(e)),
+                Attributes: C,
+                Equipment: g.z.record(g.z.string(), k).prefault({}),
+                Skills: g.z.record(g.z.string(), S).prefault({}),
+                AscensionStairway: j
             }),
             M = g.z.object({
                 ...E.shape,
-                累计经验值: g.z.coerce.number().prefault(0),
-                升级所需经验: g.z.union([g.z.coerce.number().prefault(120), g.z.literal('MAX')]),
-                冒险者等级: g.z.string().prefault('未评级'),
-                生命值: g.z.coerce.number().prefault(0),
-                生命值上限: g.z.coerce.number().prefault(0),
-                法力值: g.z.coerce.number().prefault(0),
-                法力值上限: g.z.coerce.number().prefault(0),
-                体力值: g.z.coerce.number().prefault(0),
-                体力值上限: g.z.coerce.number().prefault(0),
-                属性点: g.z.coerce.number().prefault(0),
-                背包: g.z.record(g.z.string(), T).prefault({}).transform(e => _.pickBy(e, e => e.数量 > 0)),
-                金钱: g.z.coerce.number().prefault(0).transform(Math.round),
-                状态效果: g.z.record(g.z.string(), N).prefault({})
+                TotalExperience: g.z.coerce.number().prefault(0),
+                ExpRequired: g.z.union([g.z.coerce.number().prefault(120), g.z.literal('MAX')]),
+                AdventurerRank: g.z.string().prefault('Chưa phân hạng'),
+                HP: g.z.coerce.number().prefault(0),
+                MaxHP: g.z.coerce.number().prefault(0),
+                MP: g.z.coerce.number().prefault(0),
+                MaxMP: g.z.coerce.number().prefault(0),
+                Stamina: g.z.coerce.number().prefault(0),
+                MaxStamina: g.z.coerce.number().prefault(0),
+                AttributePoints: g.z.coerce.number().prefault(0),
+                Inventory: g.z.record(g.z.string(), T).prefault({}).transform(e => _.pickBy(e, e => e.Quantity > 0)),
+                Money: g.z.coerce.number().prefault(0).transform(Math.round),
+                StatusEffects: g.z.record(g.z.string(), N).prefault({})
             }).prefault({}).transform(e => {
                 const t = {
                     ...e,
-                    升级所需经验: e.等级 >= 25 ? 'MAX' : e.升级所需经验,
-                    生命值: _.clamp(e.生命值, 0, e.生命值上限),
-                    法力值: _.clamp(e.法力值, 0, e.法力值上限),
-                    体力值: _.clamp(e.体力值, 0, e.体力值上限)
+                    ExpRequired: e.Level >= 25 ? 'MAX' : e.ExpRequired,
+                    HP: _.clamp(e.HP, 0, e.MaxHP),
+                    MP: _.clamp(e.MP, 0, e.MaxMP),
+                    Stamina: _.clamp(e.Stamina, 0, e.MaxStamina)
                 };
-                return _.pick(t, ['种族', '身份', '职业', '生命层级', '等级', '累计经验值', '升级所需经验', '冒险者等级', '属性点', '属性', '生命值上限', '生命值', '法力值上限', '法力值', '体力值上限', '体力值', '状态效果', '金钱', '背包', '装备', '技能', '登神长阶'])
+                return _.pick(t, ['Race', 'Identity', 'Class', 'LifeTier', 'Level', 'TotalExperience', 'ExpRequired', 'AdventurerRank', 'AttributePoints', 'Attributes', 'MaxHP', 'HP', 'MaxMP', 'MP', 'MaxStamina', 'Stamina', 'StatusEffects', 'Money', 'Inventory', 'Equipment', 'Skills', 'AscensionStairway'])
             }),
             D = g.z.record(g.z.string(), g.z.object({
                 ...E.shape,
-                在场: g.z.boolean().prefault(!1),
-                性格: g.z.string().prefault(''),
-                喜爱: g.z.string().prefault(''),
-                外貌: g.z.string().prefault(''),
-                着装: g.z.string().prefault(''),
-                命定契约: g.z.boolean().prefault(!1),
-                好感度: y(0, -100, 100),
-                状态效果: g.z.record(g.z.string(), N).prefault({}),
-                背包: g.z.record(g.z.string(), T).prefault({}).transform(e => _.pickBy(e, e => e.数量 > 0)),
-                心里话: g.z.string().prefault(''),
-                背景故事: g.z.string().prefault('')
-            }).prefault({}).transform(e => _.pick(e, ['在场', '种族', '身份', '职业', '生命层级', '性格', '喜爱', '外貌', '着装', '等级', '属性', '状态效果', '背包', '装备', '技能', '登神长阶', '命定契约', '好感度', '心里话', '背景故事']))).prefault({}),
+                IsPresent: g.z.boolean().prefault(!1),
+                Personality: g.z.string().prefault(''),
+                Likes: g.z.string().prefault(''),
+                Appearance: g.z.string().prefault(''),
+                Outfit: g.z.string().prefault(''),
+                DestinyContract: g.z.boolean().prefault(!1),
+                Affection: y(0, -100, 100),
+                StatusEffects: g.z.record(g.z.string(), N).prefault({}),
+                Inventory: g.z.record(g.z.string(), T).prefault({}).transform(e => _.pickBy(e, e => e.Quantity > 0)),
+                InnerThoughts: g.z.string().prefault(''),
+                Backstory: g.z.string().prefault('')
+            }).prefault({}).transform(e => _.pick(e, ['IsPresent', 'Race', 'Identity', 'Class', 'LifeTier', 'Personality', 'Likes', 'Appearance', 'Outfit', 'Level', 'Attributes', 'StatusEffects', 'Inventory', 'Equipment', 'Skills', 'AscensionStairway', 'DestinyContract', 'Affection', 'InnerThoughts', 'Backstory']))).prefault({}),
             P = g.z.object({
-                阿斯塔利亚快讯: g.z.object({
-                    势力要闻: g.z.string().prefault(''),
-                    尊位行迹: g.z.string().prefault(''),
-                    军事行动: g.z.string().prefault(''),
-                    经济动脉: g.z.string().prefault(''),
-                    灾害预警: g.z.string().prefault('')
+                Astaria_Express: g.z.object({
+                    Faction_News: g.z.string().prefault(''),
+                    Sovereign_Tracks: g.z.string().prefault(''),
+                    Military_Operations: g.z.string().prefault(''),
+                    Economic_Arteries: g.z.string().prefault(''),
+                    Disaster_Warnings: g.z.string().prefault('')
                 }).prefault({}),
-                酒馆留言板: g.z.object({
-                    高额悬赏: g.z.string().prefault(''),
-                    冒险发现: g.z.string().prefault(''),
-                    怪物异动: g.z.string().prefault(''),
-                    通缉要犯: g.z.string().prefault(''),
-                    宝物传闻: g.z.string().prefault('')
+                Tavern_Message_Board: g.z.object({
+                    High_Rewards: g.z.string().prefault(''),
+                    Adventure_Discoveries: g.z.string().prefault(''),
+                    MonsterAbnormality: g.z.string().prefault(''),
+                    WantedCriminal: g.z.string().prefault(''),
+                    TreasureRumors: g.z.string().prefault('')
                 }).prefault({}),
-                午后茶会: g.z.object({
-                    社交逸闻: g.z.string().prefault(''),
-                    千里远望: g.z.string().prefault(''),
-                    命运涟漪: g.z.string().prefault(''),
-                    邂逅预兆: g.z.string().prefault('')
+                AfternoonTeaParty: g.z.object({
+                    SocialAnecdotes: g.z.string().prefault(''),
+                    FarSight: g.z.string().prefault(''),
+                    DestinyRipples: g.z.string().prefault(''),
+                    EncounterOmen: g.z.string().prefault('')
                 }).prefault({})
             }),
             B = g.z.object({
-                事件: g.z.record(g.z.any(), g.z.any()).prefault({}),
-                世界: g.z.object({
-                    时间: g.z.string().prefault(''),
-                    地点: g.z.string().prefault('')
+                Event: g.z.record(g.z.any(), g.z.any()).prefault({}),
+                World: g.z.object({
+                    Time: g.z.string().prefault(''),
+                    Location: g.z.string().prefault('')
                 }).prefault({}),
-                任务列表: g.z.record(g.z.string(), x).prefault({}),
-                主角: M.prefault({}),
-                命运点数: (L = 0, F = 0, g.z.coerce.number().prefault(L).transform(e => Math.max(Math.round(e), F))),
-                关系列表: D,
-                新闻: P.prefault({})
+                QuestList: g.z.record(g.z.string(), x).prefault({}),
+                Protagonist: M.prefault({}),
+                DestinyPoints: (L = 0, F = 0, g.z.coerce.number().prefault(L).transform(e => Math.max(Math.round(e), F))),
+                RelationshipList: D,
+                News: P.prefault({})
             });
         var L, F;
         const A = p()(h((e, t) => ({
@@ -9198,15 +9198,15 @@
                     }),
                         n = _.get(t, 'stat_data', {}),
                         a = B.safeParse(n);
-                    if (!a.success) return console.warn('[StatusBar] 数据校验失败:', a.error), void e(e => {
-                        e.error = `数据格式错误：${a.error.message || '未知错误'}`, e.loading = !1
+                    if (!a.success) return console.warn('[StatusBar] Kiểm định dữ liệu thất bại:', a.error), void e(e => {
+                        e.error = `Lỗi định dạng dữ liệu: ${a.error.message || 'Lỗi không xác định'}`, e.loading = !1
                     });
                     e(e => {
                         e.data = a.data, e.loading = !1, e.error = null, e.lastRefreshTime = new Date
-                    }), console.log('[StatusBar] 数据已刷新')
+                    }), console.log('[StatusBar] Dữ liệu đã làm mới')
                 } catch (t) {
-                    console.error('[StatusBar] 加载数据失败:', t), e(e => {
-                        e.error = t instanceof Error ? t.message : '未知错误', e.loading = !1
+                    console.error('[StatusBar] Tải dữ liệu thất bại:', t), e(e => {
+                        e.error = t instanceof Error ? t.message : 'Lỗi không xác định', e.loading = !1
                     })
                 }
             },
@@ -9222,7 +9222,7 @@
                         message_id: getCurrentMessageId()
                     }), t().refresh(), !0
                 } catch (e) {
-                    return console.error('[StatusBar] 更新数据失败:', e), !1
+                    return console.error('[StatusBar] Cập nhật dữ liệu thất bại:', e), !1
                 }
             },
             deleteField: async e => {
@@ -9237,13 +9237,13 @@
                         message_id: getCurrentMessageId()
                     }), t().refresh(), !0
                 } catch (e) {
-                    return console.error('[StatusBar] 删除数据失败:', e), !1
+                    return console.error('[StatusBar] Xóa dữ liệu thất bại:', e), !1
                 }
             }
         }))),
             I = {
                 id: 'ivory',
-                name: '米黄羊皮纸',
+                name: 'Giấy da dê màu kem',
                 colors: {
                     windowBg: '#f1e8dc',
                     windowBorder: '#c3a97c',
@@ -9299,7 +9299,7 @@
             R = {
                 parchment: {
                     id: 'parchment',
-                    name: '羊皮纸',
+                    name: 'Giấy da dê',
                     colors: {
                         windowBg: '#1c1410',
                         windowBorder: '#6b4b2e',
@@ -9354,7 +9354,7 @@
                 },
                 crimson: {
                     id: 'crimson',
-                    name: '暗酒红',
+                    name: 'Đỏ rượu vang tối',
                     colors: {
                         windowBg: '#1b0e10',
                         windowBorder: '#6d2b30',
@@ -9409,7 +9409,7 @@
                 },
                 indigo: {
                     id: 'indigo',
-                    name: '深靛蓝',
+                    name: 'Xanh chàm đậm',
                     colors: {
                         windowBg: '#0d1322',
                         windowBorder: '#2a3f66',
@@ -9464,7 +9464,7 @@
                 },
                 bronze: {
                     id: 'bronze',
-                    name: '古铜金',
+                    name: 'Vàng đồng cổ',
                     colors: {
                         windowBg: '#14160f',
                         windowBorder: '#6c6134',
@@ -9519,7 +9519,7 @@
                 },
                 sakura: {
                     id: 'sakura',
-                    name: '樱花粉紫',
+                    name: 'Tím hồng anh đào',
                     colors: {
                         windowBg: '#1b1016',
                         windowBorder: '#6a3a52',
@@ -9574,7 +9574,7 @@
                 },
                 obsidian: {
                     id: 'obsidian',
-                    name: '墨黑',
+                    name: 'Đen mực',
                     colors: {
                         windowBg: '#15171c',
                         windowBorder: '#323846',
@@ -9630,7 +9630,7 @@
                 ivory: I,
                 'misty-lilac': {
                     id: 'misty-lilac',
-                    name: '雾紫',
+                    name: 'Tím sương mù',
                     colors: {
                         windowBg: '#F1EDF6',
                         windowBorder: '#8574A3',
@@ -9687,28 +9687,28 @@
             O = I,
             q = [{
                 id: 'parchment',
-                name: '羊皮纸'
+                name: 'Giấy da dê'
             }, {
                 id: 'crimson',
-                name: '暗酒红'
+                name: 'Đỏ rượu đậm'
             }, {
                 id: 'indigo',
-                name: '深靛蓝'
+                name: 'Xanh chàm đậm'
             }, {
                 id: 'bronze',
-                name: '古铜金'
+                name: 'Vàng đồng cổ'
             }, {
                 id: 'sakura',
-                name: '樱花粉紫'
+                name: 'Tím hồng anh đào'
             }, {
                 id: 'obsidian',
-                name: '墨黑'
+                name: 'Đen mực'
             }, {
                 id: 'ivory',
-                name: '米黄羊皮纸'
+                name: 'Giấy da màu kem'
             }, {
                 id: 'misty-lilac',
-                name: '雾紫'
+                name: 'Tím sương mù'
             }],
             H = p()(h((e, t) => ({
                 currentThemeId: O.id,
@@ -9725,7 +9725,7 @@
                             e.loaded = !0
                         }), t().applyCssVariables()
                     } catch (t) {
-                        console.error('[StatusBar] 加载主题失败:', t), e(e => {
+                        console.error('[StatusBar] Tải chủ đề thất bại:', t), e(e => {
                             e.loaded = !0
                         })
                     }
@@ -9738,13 +9738,13 @@
                             type: 'character'
                         })
                     } catch (e) {
-                        console.error('[StatusBar] 保存主题失败:', e)
+                        console.error('[StatusBar] Lưu chủ đề thất bại:', e)
                     }
                 },
                 setTheme: n => {
                     R[n] ? (e(e => {
                         e.currentThemeId = n
-                    }), t().applyCssVariables()) : console.warn(`[StatusBar] 未知主题ID: ${n}`)
+                    }), t().applyCssVariables()) : console.warn(`[StatusBar] ID chủ đề không xác định: ${n}`)
                 },
                 reset: async () => {
                     e(e => {
@@ -9755,7 +9755,7 @@
                             type: 'character'
                         })
                     } catch (e) {
-                        console.error('[StatusBar] 重置主题失败:', e)
+                        console.error('[StatusBar] Đặt lại chủ đề thất bại:', e)
                     }
                     t().applyCssVariables()
                 },
@@ -9861,7 +9861,7 @@
                     data: t,
                     refresh: n,
                     loading: a
-                } = A(), [r, l] = (0, u.useState)(!1), [s, o] = (0, u.useState)(null), c = t?.世界;
+                } = A(), [r, l] = (0, u.useState)(!1), [s, o] = (0, u.useState)(null), c = t?.World;
                 (0, u.useEffect)(() => {
                     'undefined' != typeof document && o(document.getElementById('status-window'))
                 }, []);
@@ -9896,16 +9896,16 @@
                     className: re,
                     children: [(0, i.jsxs)('div', {
                         className: le,
-                        children: [c?.时间 && (0, i.jsxs)('span', {
+                        children: [c?.Time && (0, i.jsxs)('span', {
                             className: se,
                             children: [(0, i.jsx)('i', {
                                 className: 'fa-regular fa-clock'
-                            }), c.时间]
-                        }), c?.地点 && (0, i.jsxs)('span', {
+                            }), c.Time]
+                        }), c?.Location && (0, i.jsxs)('span', {
                             className: ie,
                             children: [(0, i.jsx)('i', {
                                 className: 'fa-solid fa-location-dot'
-                            }), c.地点]
+                            }), c.Location]
                         })]
                     }), (0, i.jsxs)('div', {
                         className: oe,
@@ -9913,7 +9913,7 @@
                             className: ue,
                             onClick: f,
                             disabled: !d,
-                            title: r ? '退出全屏' : '进入全屏',
+                            title: r ? 'Thoát toàn màn hình' : 'Vào toàn màn hình',
                             children: (0, i.jsx)('i', {
                                 className: 'fa-solid ' + (r ? 'fa-compress' : 'fa-expand')
                             })
@@ -9921,14 +9921,14 @@
                             className: ue,
                             onClick: () => n(),
                             disabled: a,
-                            title: '刷新数据',
+                            title: 'Làm mới dữ liệu',
                             children: (0, i.jsx)('i', {
                                 className: 'fa-solid fa-rotate-right ' + (a ? 'fa-spin' : '')
                             })
                         }), (0, i.jsx)('button', {
                             className: ue,
                             onClick: e,
-                            title: '设置',
+                            title: 'Cài đặt',
                             children: (0, i.jsx)('i', {
                                 className: 'fa-solid fa-gear'
                             })
@@ -9959,9 +9959,9 @@
                     deleteField: n
                 } = A(), a = (0, u.useCallback)(async () => {
                     if (e) try {
-                        await n(e.path), toastr.success(`已删除「${e.name}」`)
+                        await n(e.path), toastr.success(`Đã xóa 「${e.name}」`)
                     } catch {
-                        toastr.error('删除失败')
+                        toastr.error('Xóa thất bại')
                     } finally {
                         t(null)
                     }
@@ -9977,22 +9977,22 @@
                 }
             },
             pe = {
-                普通: 'common',
-                唯一: 'unique',
-                神话: 'mythic',
-                传说: 'legendary',
-                史诗: 'epic',
-                稀有: 'rare',
-                优良: 'uncommon'
+                common: 'common',
+                unique: 'unique',
+                mythic: 'mythic',
+                legendary: 'legendary',
+                Epic: 'Sử Thi',
+                Rare: 'Hiếm',
+                Uncommon: 'Ưu tú'
             },
             he = {
-                普通: 1,
-                优良: 2,
-                稀有: 3,
-                史诗: 4,
-                传说: 5,
-                神话: 6,
-                唯一: 7
+                Common: 1,
+                Uncommon: 2,
+                Rare: 3,
+                Epic: 4,
+                Legendary: 5,
+                Mythic: 6,
+                Unique: 7
             },
             be = e => e ? he[e] ?? 0 : 0,
             ge = {
@@ -10013,7 +10013,7 @@
                 }), [n, ...Array.from(a).sort()]
             },
             _e = (e, t, n, a) => {
-                const r = (l = e, _.orderBy(Object.entries(l), [([e, t]) => be(t?.品质), ([e]) => e], ['desc', 'asc']));
+                const r = (l = e, _.orderBy(Object.entries(l), [([e, t]) => be(t?.Quality), ([e]) => e], ['desc', 'asc']));
                 var l;
                 return n === a ? r : r.filter(([, e]) => _.get(e, t) === n)
             },
@@ -10089,15 +10089,15 @@
                 a.onload = () => t(String(a.result || '')), a.onerror = () => n(a.error), a.readAsDataURL(e)
             }), ze = [{
                 threshold: 1e12,
-                suffix: '兆',
+                suffix: 'T',
                 divisor: 1e12
             }, {
                 threshold: 1e8,
-                suffix: '亿',
+                suffix: 'Tr',
                 divisor: 1e8
             }, {
                 threshold: 1e4,
-                suffix: '万',
+                suffix: 'N',
                 divisor: 1e4
             }];
 
@@ -10122,14 +10122,14 @@
                     if (!n) return t;
                     return JSON.parse(n) ?? t
                 } catch (e) {
-                    return console.warn('[StatusTab] 读取会话状态失败:', e), t
+                    return console.warn('[StatusTab] Đọc trạng thái hội thoại thất bại:', e), t
                 }
             },
             Ie = (e, t) => {
                 try {
                     sessionStorage.setItem(e, JSON.stringify(t))
                 } catch (e) {
-                    console.warn('[StatusTab] 保存会话状态失败:', e)
+                    console.warn('[StatusTab] Lưu trạng thái hội thoại thất bại:', e)
                 }
             },
             $e = 'ConfirmModal-module__overlay--lTXFz',
@@ -10227,7 +10227,7 @@
             it = ({
                 value: e,
                 onChange: t,
-                placeholder: n = '请输入...',
+                placeholder: n = 'Vui lòng nhập...',
                 multiline: a = !1,
                 rows: r = 3,
                 disabled: l = !1,
@@ -10251,7 +10251,7 @@
                 if ('inline' === c && !d) return (0, i.jsxs)('div', {
                     className: `${Je} ${Ze} ${l ? et : ''} ${o ?? ''}`,
                     onClick: b,
-                    title: l ? '不可编辑' : '点击编辑',
+                    title: l ? 'Không thể chỉnh sửa' : 'Nhấn để chỉnh sửa',
                     children: [(0, i.jsx)('span', {
                         className: `${nt} ${e ? '' : at}`,
                         children: y
@@ -10375,7 +10375,7 @@
                                 p(String(e)), b(!0), N.current(S)
                             },
                             disabled: l || void 0 !== n && e <= n,
-                            title: '减少',
+                            title: 'Giảm',
                             children: (0, i.jsx)('i', {
                                 className: 'fa-solid fa-minus'
                             })
@@ -10384,7 +10384,7 @@
                             onClick: () => {
                                 l || (f(!0), p(String(e)))
                             },
-                            title: l ? '不可编辑' : '点击编辑',
+                            title: l ? 'Không thể chỉnh sửa' : 'Nhấn để chỉnh sửa',
                             children: [h ? m : e, o && (0, i.jsx)('span', {
                                 className: pt,
                                 children: o
@@ -10397,7 +10397,7 @@
                                 p(String(e)), b(!0), N.current(S)
                             },
                             disabled: l || void 0 !== a && e >= a,
-                            title: '增加',
+                            title: 'Thêm',
                             children: (0, i.jsx)('i', {
                                 className: 'fa-solid fa-plus'
                             })
@@ -10415,7 +10415,7 @@
             Tt = ({
                 value: e,
                 onChange: t,
-                placeholder: n = '添加标签...',
+                placeholder: n = 'Thêm nhãn...',
                 disabled: a = !1,
                 maxTags: r,
                 className: l
@@ -10437,7 +10437,7 @@
                             children: [e, !a && (0, i.jsx)('button', {
                                 className: kt,
                                 onClick: () => h(e),
-                                title: '移除标签',
+                                title: 'Xóa nhãn',
                                 children: (0, i.jsx)('i', {
                                     className: 'fa-solid fa-xmark'
                                 })
@@ -10460,7 +10460,7 @@
                             onClick: () => {
                                 a || (d(!0), setTimeout(() => f.current?.focus(), 0))
                             },
-                            title: '添加标签',
+                            title: 'Thêm nhãn',
                             children: (0, i.jsx)('i', {
                                 className: 'fa-solid fa-plus'
                             })
@@ -10487,8 +10487,8 @@
             Ht = ({
                 value: e,
                 onChange: t,
-                keyPlaceholder: n = '键',
-                valuePlaceholder: a = '值',
+                keyPlaceholder: n = 'Khóa',
+                valuePlaceholder: a = 'Giá trị',
                 disabled: r = !1,
                 className: l,
                 valueType: s = 'string'
@@ -10545,7 +10545,7 @@
                                         className: Ft,
                                         rows: 3,
                                         autoFocus: !0,
-                                        placeholder: '失焦自动保存 · Esc 取消'
+                                        placeholder: 'Tự động lưu khi mất tiêu điểm · Esc để hủy'
                                     })
                                 }) : (0, i.jsxs)(i.Fragment, {
                                     children: [(0, i.jsx)('span', {
@@ -10553,7 +10553,7 @@
                                         onClick: () => (t => {
                                             r || (p(t), b(String(e[t])))
                                         })(t),
-                                        title: '点击编辑',
+                                        title: 'Nhấn để sửa',
                                         children: n
                                     }), !r && (0, i.jsx)('button', {
                                         className: At,
@@ -10564,7 +10564,7 @@
                                             };
                                             delete n[t], g(n)
                                         })(t),
-                                        title: '删除',
+                                        title: 'Xóa',
                                         children: (0, i.jsx)('i', {
                                             className: 'fa-solid fa-trash'
                                         })
@@ -10591,21 +10591,21 @@
                                 value: d,
                                 onChange: e => f(e.target.value),
                                 onKeyDown: e => w(e, 'add'),
-                                placeholder: `${a} (Ctrl+Enter 添加)`,
+                                placeholder: `${a} (Ctrl+Enter để thêm)`,
                                 className: Rt,
                                 rows: 2
                             }), (0, i.jsx)('button', {
                                 className: Ot,
                                 onClick: y,
                                 disabled: !o.trim() || !d,
-                                title: '添加 (Ctrl+Enter)',
+                                title: 'Thêm (Ctrl+Enter)',
                                 children: (0, i.jsx)('i', {
                                     className: 'fa-solid fa-plus'
                                 })
                             })]
                         }), 0 === k.length && r && (0, i.jsx)('span', {
                             className: qt,
-                            children: '暂无数据'
+                            children: 'Tạm không có dữ liệu'
                         })]
                     })
                 })
@@ -10706,7 +10706,7 @@
                 } = A(), [p, h] = (0, u.useState)(null), [g, y] = (0, u.useState)(''), [v, x] = (0, u.useState)(null), [w, k] = (0, u.useState)(!1), {
                     editEnabled: S
                 } = b(), N = r || !S, T = (0, u.useMemo)(() => t, [t]), C = e => {
-                    if (null == e) return '空';
+                    if (null == e) return 'Trống';
                     if ('string' == typeof e) return e;
                     if ('number' == typeof e || 'boolean' == typeof e) return String(e);
                     try {
@@ -10719,7 +10719,7 @@
                 }, [N, T, a, e]), E = (0, u.useCallback)(async () => {
                     if (!w) return;
                     const t = await m(e, p);
-                    k(!1), h(null), x(null), t ? (toastr.success('已保存'), f?.()) : toastr.error('保存失败')
+                    k(!1), h(null), x(null), t ? (toastr.success('Đã lưu'), f?.()) : toastr.error('Lưu thất bại')
                 }, [w, m, e, p, f]), M = (0, u.useCallback)(() => {
                     k(!1), h(null), x(null)
                 }, []);
@@ -10781,23 +10781,23 @@
                         })()
                     }), (0, i.jsx)(Xe, {
                         open: w,
-                        title: '确认修改',
+                        title: 'Xác nhận sửa đổi',
                         rows: [{
-                            label: '字段',
+                            label: 'Trường',
                             value: g
                         }, {
-                            label: '旧值',
+                            label: 'Giá trị cũ',
                             value: C(v)
                         }, {
-                            label: '新值',
+                            label: 'Giá trị mới',
                             value: C(p)
                         }],
                         buttons: [{
-                            text: '确认',
+                            text: 'Xác nhận',
                             variant: 'primary',
                             onClick: E
                         }, {
-                            text: '取消',
+                            text: 'Hủy',
                             variant: 'secondary',
                             onClick: M
                         }],
@@ -10809,7 +10809,7 @@
                 ascension: 'Ascension-module__ascension--oJBii',
                 compact: 'Ascension-module__compact--ExJVj',
                 sectionTitle: 'Ascension-module__sectionTitle--ovxGN',
-                item: 'Ascension-module__item--hZNf1',
+                Item: 'Ascension-module__item--hZNf1',
                 godTitle: 'Ascension-module__godTitle--WUTcN',
                 items: 'Ascension-module__items--koRgl',
                 itemName: 'Ascension-module__itemName--cFZww',
@@ -10834,9 +10834,9 @@
                 editEnabled: n = !1,
                 pathPrefix: a
             }) => {
-                if (!e?.是否开启) return (0, i.jsx)('div', {
+                if (!e?.IsEnabled) return (0, i.jsx)('div', {
                     className: tn.empty,
-                    children: '登神长阶尚未开启'
+                    children: 'Đăng Thần Trường Giai chưa mở'
                 });
                 const r = ({
                     data: e,
@@ -10854,7 +10854,7 @@
                     }), (0, i.jsx)('div', {
                         className: tn.items,
                         children: _.map(e, (e, t) => (0, i.jsxs)('div', {
-                            className: `${tn.item} ${tn[l]}`,
+                            className: `${tn.Item} ${tn[l]}`,
                             children: [(0, i.jsx)('div', {
                                 className: tn.itemName,
                                 children: t
@@ -10884,48 +10884,48 @@
                 return (0, i.jsxs)('div', {
                     className: `${tn.ascension} ${t ? tn.compact : ''}`,
                     children: [r({
-                        data: e.要素,
-                        title: '要素',
+                        data: e.Elements,
+                        title: 'Yếu Tố',
                         icon: 'fa-solid fa-atom',
                         itemClass: 'itemElement',
-                        sectionKey: '要素'
+                        sectionKey: 'elements'
                     }), r({
-                        data: e.权能,
-                        title: '权能',
+                        data: e.Authorities,
+                        title: 'Quyền Năng',
                         icon: 'fa-solid fa-fire',
                         itemClass: 'itemPower',
-                        sectionKey: '权能'
+                        sectionKey: 'authorities'
                     }), r({
-                        data: e.法则,
-                        title: '法则',
+                        data: e.Laws,
+                        title: 'Pháp Tắc',
                         icon: 'fa-solid fa-scroll',
                         itemClass: 'itemLaw',
-                        sectionKey: '法则'
-                    }), e.神位 && (0, i.jsxs)('div', {
+                        sectionKey: 'Pháp Tắc'
+                    }), e.Godhood && (0, i.jsxs)('div', {
                         className: tn.section,
                         children: [(0, i.jsxs)('div', {
                             className: tn.sectionTitle,
                             children: [(0, i.jsx)('i', {
                                 className: 'fa-solid fa-crown'
-                            }), ' 神位']
+                            }), ' Thần Vị']
                         }), (0, i.jsx)('div', {
                             className: tn.godInfo,
                             children: n && a ? (0, i.jsx)(en, {
-                                path: `${a}.神位`,
-                                value: e.神位,
+                                path: `${a}.Godhood`,
+                                value: e.Godhood,
                                 type: 'text'
                             }) : (0, i.jsx)('div', {
                                 className: tn.godTitle,
-                                children: e.神位
+                                children: e.Godhood
                             })
                         })]
-                    }), (e.神国?.名称 || e.神国?.描述) && (0, i.jsxs)('div', {
+                    }), (e.Divine_Kingdom?.Name || e.Divine_Kingdom?.Description) && (0, i.jsxs)('div', {
                         className: tn.section,
                         children: [(0, i.jsxs)('div', {
                             className: tn.sectionTitle,
                             children: [(0, i.jsx)('i', {
                                 className: 'fa-solid fa-landmark'
-                            }), ' 神国']
+                            }), ' Thần Quốc']
                         }), (0, i.jsx)('div', {
                             className: tn.godInfo,
                             children: n && a ? (0, i.jsxs)(i.Fragment, {
@@ -10933,30 +10933,30 @@
                                     className: tn.godInfoRow,
                                     children: [(0, i.jsx)('span', {
                                         className: tn.godInfoLabel,
-                                        children: '名称:'
+                                        children: 'Tên gọi:'
                                     }), (0, i.jsx)(en, {
-                                        path: `${a}.神国.名称`,
-                                        value: e.神国?.名称,
+                                        path: `${a}.Divine_Kingdom.Name`,
+                                        value: e.Divine_Kingdom?.Name,
                                         type: 'text'
                                     })]
                                 }), (0, i.jsxs)('div', {
                                     className: tn.godInfoRow,
                                     children: [(0, i.jsx)('span', {
                                         className: tn.godInfoLabel,
-                                        children: '描述:'
+                                        children: 'Mô tả:'
                                     }), (0, i.jsx)(en, {
-                                        path: `${a}.神国.描述`,
-                                        value: e.神国?.描述,
+                                        path: `${a}.Divine_Kingdom.Description`,
+                                        value: e.Divine_Kingdom?.Description,
                                         type: 'textarea'
                                     })]
                                 })]
                             }) : (0, i.jsxs)(i.Fragment, {
-                                children: [e.神国?.名称 && (0, i.jsx)('div', {
+                                children: [e.Divine_Kingdom?.Name && (0, i.jsx)('div', {
                                     className: tn.godTitle,
-                                    children: e.神国.名称
-                                }), e.神国?.描述 && (0, i.jsx)('div', {
+                                    children: e.Divine_Kingdom.Name
+                                }), e.Divine_Kingdom?.Description && (0, i.jsx)('div', {
                                     className: tn.kingdomDesc,
-                                    children: e.神国.描述
+                                    children: e.Divine_Kingdom.Description
                                 })]
                             })
                         })]
@@ -10978,12 +10978,12 @@
                 open: e,
                 title: t,
                 subtitle: n,
-                linkPlaceholder: a = '请输入头像链接',
+                linkPlaceholder: a = 'Vui lòng nhập liên kết ảnh đại diện',
                 canExport: r = !1,
                 canDelete: l = !1,
                 canReset: s = !1,
-                deleteLabel: o = '删除头像',
-                resetLabel: c = '恢复默认',
+                deleteLabel: o = 'Xóa ảnh đại diện',
+                reset_label: c = 'Khôi phục mặc định',
                 onClose: d,
                 onUpload: f,
                 onSubmitLink: m,
@@ -11008,14 +11008,14 @@
                             className: sn,
                             children: [(0, i.jsx)('div', {
                                 className: on,
-                                children: '本地导入'
+                                children: 'Nhập từ máy'
                             }), (0, i.jsxs)('label', {
                                 htmlFor: v,
                                 className: fn,
                                 children: [(0, i.jsx)('i', {
                                     className: 'fa-solid fa-upload'
                                 }), (0, i.jsx)('span', {
-                                    children: '导入头像'
+                                    children: 'Nhập ảnh đại diện'
                                 })]
                             }), (0, i.jsx)('input', {
                                 id: v,
@@ -11033,7 +11033,7 @@
                             className: sn,
                             children: [(0, i.jsx)('div', {
                                 className: on,
-                                children: '图片链接'
+                                children: 'Liên kết hình ảnh'
                             }), (0, i.jsxs)('div', {
                                 className: un,
                                 children: [(0, i.jsx)('input', {
@@ -11054,7 +11054,7 @@
                                     children: [(0, i.jsx)('i', {
                                         className: 'fa-solid fa-link'
                                     }), (0, i.jsx)('span', {
-                                        children: '保存链接'
+                                        children: 'Lưu liên kết'
                                     })]
                                 })]
                             })]
@@ -11071,7 +11071,7 @@
                                 children: [(0, i.jsx)('i', {
                                     className: 'fa-solid fa-file-export'
                                 }), (0, i.jsx)('span', {
-                                    children: '导出头像'
+                                    children: 'Xuất ảnh đại diện'
                                 })]
                             }) : null, l ? (0, i.jsxs)('button', {
                                 type: 'button',
@@ -11201,20 +11201,20 @@
             onCancel: a
         }) => (0, i.jsx)(Xe, {
             open: e,
-            title: `确认删除${t?.type ?? ''}`,
+            title: `Xác nhận xóa ${t?.type ?? ''}`,
             rows: [{
-                label: '名称',
+                label: 'Tên gọi',
                 value: t?.name ?? ''
             }, {
-                label: '提示',
-                value: '此操作不可撤销'
+                label: 'Gợi ý',
+                value: 'Thao tác này không thể hoàn tác'
             }],
             buttons: [{
-                text: '删除',
+                text_key: 'Xóa',
                 variant: 'danger',
                 onClick: n
             }, {
-                text: '取消',
+                text_key: 'Hủy',
                 variant: 'secondary',
                 onClick: a
             }],
@@ -11273,7 +11273,7 @@
                             }), (0, i.jsx)('button', {
                                 className: An,
                                 onClick: r,
-                                title: '关闭详情',
+                                title_key: 'Đóng chi tiết',
                                 children: (0, i.jsx)('i', {
                                     className: 'fa-solid fa-xmark'
                                 })
@@ -11364,28 +11364,28 @@
         },
             Un = [{
                 value: '',
-                label: '无'
+                label_key: 'Không'
             }, {
-                value: '普通',
-                label: '普通'
+                value_key: 'Thông thường',
+                label_key: 'Thông thường'
             }, {
-                value: '优良',
-                label: '优良'
+                value_key: 'Ưu tú',
+                label_key: 'Ưu tú'
             }, {
-                value: '稀有',
-                label: '稀有'
+                value_key: 'Hiếm',
+                label_key: 'Hiếm'
             }, {
-                value: '史诗',
-                label: '史诗'
+                value: 'Sử Thi',
+                label: 'Sử Thi'
             }, {
-                value: '传说',
-                label: '传说'
+                value: 'Truyền Thuyết',
+                label: 'Truyền Thuyết'
             }, {
-                value: '神话',
-                label: '神话'
+                value: 'Thần Thoại',
+                label: 'Thần Thoại'
             }, {
-                value: '唯一',
-                label: '唯一'
+                value: 'Duy Nhất',
+                label: 'Duy Nhất'
             }],
             Qn = ({
                 name: e,
@@ -11394,7 +11394,7 @@
                 editEnabled: a = !1,
                 pathPrefix: r,
                 onDelete: l,
-                itemCategory: s = 'item',
+                itemCategory: s = 'Item',
                 displayMode: o = 'panel-card',
                 onInspect: u
             }) => {
@@ -11407,13 +11407,13 @@
                         if (!n) return '';
                         const a = ge[n];
                         return a ? t[a] : ''
-                    })(t.品质, Vn),
-                    f = [t.类型 ? {
-                        key: 'type',
-                        label: '类型',
-                        value: t.类型
+                    })(t.Quality, Vn),
+                    f = [t.Type ? {
+                        key: 'Type',
+                        label: 'Loại hình',
+                        value: t.Type
                     } : null].filter(Boolean),
-                    m = Hn().entries(t.效果 ?? {}),
+                    m = Hn().entries(t.Effect ?? {}),
                     p = m.map(([e]) => e),
                     h = p.slice(0, 3),
                     b = Math.max(p.length - h.length, 0),
@@ -11460,79 +11460,79 @@
                                 type: 'button',
                                 className: Vn.deleteButton,
                                 onClick: c,
-                                title: '删除',
+                                title: 'Xóa',
                                 children: (0, i.jsx)('i', {
                                     className: 'fa-solid fa-trash-can'
                                 })
                             }) : null
                         })]
                     }),
-                    v = (e = a && !!r) => Hn().isEmpty(t.标签) ? null : (0, i.jsx)('div', {
+                    v = (e = a && !!r) => Hn().isEmpty(t.Tags) ? null : (0, i.jsx)('div', {
                         className: Vn.itemTags,
                         children: e ? (0, i.jsx)(en, {
-                            path: `${r}.标签`,
-                            value: t.标签 ?? [],
+                            path: `${r}.Tags`,
+                            value: t.Tags ?? [],
                             type: 'tags'
-                        }) : t.标签?.map((e, t) => (0, i.jsx)('span', {
+                        }) : t.Tags?.map((e, t) => (0, i.jsx)('span', {
                             className: Vn.tag,
                             children: e
                         }, t))
                     }),
                     x = () => (0, i.jsxs)('div', {
                         className: Vn.itemDetails,
-                        children: [(t.品质 || a) && (0, i.jsxs)('div', {
+                        children: [(t.Quality || a) && (0, i.jsxs)('div', {
                             className: Vn.itemFieldRow,
                             children: [(0, i.jsx)('span', {
                                 className: Vn.fieldLabel,
-                                children: '品质'
-                            }), g('品质', t.品质 ?? '', 'select', Un)]
-                        }), (t.类型 || a) && (0, i.jsxs)('div', {
+                                children: 'Phẩm chất'
+                            }), g('Phẩm chất', t.Quality ?? '', 'select', Un)]
+                        }), (t.Type || a) && (0, i.jsxs)('div', {
                             className: Vn.itemFieldRow,
                             children: [(0, i.jsx)('span', {
                                 className: Vn.fieldLabel,
-                                children: '类型'
-                            }), g('类型', t.类型 ?? '', 'text')]
-                        }), 'modal-detail' !== o && !a || 'equipment' !== s && 'item' !== s || !t.位置 && 'equipment' !== s ? null : (0, i.jsxs)('div', {
+                                children: 'Loại hình'
+                            }), g('Loại hình', t.Type ?? '', 'text')]
+                        }), 'modal-detail' !== o && !a || 'Equipment' !== s && 'Item' !== s || !t.Location && 'Equipment' !== s ? null : (0, i.jsxs)('div', {
                             className: Vn.itemFieldRow,
                             children: [(0, i.jsx)('span', {
                                 className: Vn.fieldLabel,
-                                children: '位置'
-                            }), g('位置', t.位置 ?? '', 'text')]
-                        }), 'modal-detail' !== o && !a || 'skill' !== s && 'item' !== s || !t.消耗 && 'skill' !== s ? null : (0, i.jsxs)('div', {
+                                children: 'Vị trí'
+                            }), g('Vị trí', t.Location ?? '', 'text')]
+                        }), 'modal-detail' !== o && !a || 'Skill' !== s && 'Item' !== s || !t.Cost && 'Skill' !== s ? null : (0, i.jsxs)('div', {
                             className: Vn.itemFieldRow,
                             children: [(0, i.jsx)('span', {
                                 className: Vn.fieldLabel,
-                                children: '消耗'
-                            }), g('消耗', t.消耗 ?? '', 'text')]
-                        }), 'item' !== s || 'modal-detail' !== o && !a ? null : (0, i.jsxs)('div', {
+                                children: 'Tiêu tốn'
+                            }), g('Tiêu tốn', t.Cost ?? '', 'text')]
+                        }), 'Item' !== s || 'modal-detail' !== o && !a ? null : (0, i.jsxs)('div', {
                             className: Vn.itemFieldRow,
                             children: [(0, i.jsx)('span', {
                                 className: Vn.fieldLabel,
-                                children: '数量'
-                            }), g('数量', t.数量 ?? 1, 'number')]
-                        }), v(), (t.描述 || a) && (0, i.jsxs)('div', {
+                                children: 'Số lượng'
+                            }), g('Số lượng', t.Quantity ?? 1, 'number')]
+                        }), v(), (t.Description || a) && (0, i.jsxs)('div', {
                             className: Vn.itemBlock,
                             children: [(0, i.jsx)('div', {
                                 className: Vn.itemBlockTitle,
-                                children: '描述'
+                                children: 'Mô tả'
                             }), (0, i.jsx)('div', {
                                 className: Vn.itemDesc,
                                 children: a && r ? (0, i.jsx)(en, {
-                                    path: `${r}.描述`,
-                                    value: t.描述 ?? '',
+                                    path: `${r}.Description`,
+                                    value: t.Description ?? '',
                                     type: 'textarea'
-                                }) : t.描述
+                                }) : t.Description
                             })]
-                        }), (!Hn().isEmpty(t.效果) || a) && (0, i.jsxs)('div', {
+                        }), (!Hn().isEmpty(t.Effect) || a) && (0, i.jsxs)('div', {
                             className: Vn.itemBlock,
                             children: [(0, i.jsx)('div', {
                                 className: Vn.itemBlockTitle,
-                                children: '效果'
+                                children: 'Hiệu quả'
                             }), (0, i.jsx)('div', {
                                 className: Vn.itemEffects,
                                 children: a && r ? (0, i.jsx)(en, {
-                                    path: `${r}.效果`,
-                                    value: t.效果 ?? {},
+                                    path: `${r}.Effect`,
+                                    value: t.Effect ?? {},
                                     type: 'keyvalue'
                                 }) : 'modal-detail' === o || 'compact' === o ? m.map(([e, t]) => (0, i.jsxs)('div', {
                                     className: Vn.effectRow,
@@ -11578,9 +11578,9 @@
                                         children: e.value
                                     })]
                                 }, e.key))
-                            }), v(!1), t.描述 ? (0, i.jsx)('div', {
+                            }), v(!1), t.Description ? (0, i.jsx)('div', {
                                 className: Vn.itemSummaryDesc,
-                                children: t.描述
+                                children: t.Description
                             }) : null, h.length > 0 ? (0, i.jsxs)('div', {
                                 className: Vn.itemSummaryEffects,
                                 children: [h.map(e => (0, i.jsx)('span', {
@@ -11646,7 +11646,7 @@
                                 type: 'button',
                                 className: Zn,
                                 onClick: r,
-                                title: '关闭详情',
+                                title: 'Đóng chi tiết',
                                 children: (0, i.jsx)('i', {
                                     className: 'fa-solid fa-xmark'
                                 })
@@ -11738,14 +11738,14 @@
             Aa = 'StatusEffectDisplay-module__effectDeleteBtn--sCxUc',
             Ia = 'StatusEffectDisplay-module__emptyEffects--WvafI',
             $a = [{
-                label: '增益',
-                value: '增益'
+                label: 'Buff',
+                value: 'Buff'
             }, {
-                label: '减益',
-                value: '减益'
+                label: 'Debuff',
+                value: 'Debuff'
             }, {
-                label: '特殊',
-                value: '特殊'
+                label: 'Đặc thù',
+                value: 'Đặc thù'
             }],
             Ra = ({
                 effects: e,
@@ -11753,7 +11753,7 @@
                 compact: n = !1,
                 editEnabled: a = !1,
                 pathPrefix: r,
-                emptyText: l = '暂无状态效果',
+                emptyText: l = 'Chưa có hiệu ứng trạng thái',
                 maxVisible: s,
                 showRemainingCount: o = !0,
                 onDelete: u
@@ -11771,17 +11771,17 @@
                         className: `${la} ${t ? sa : ''}`,
                         children: [s.map(([e, t]) => {
                             return (0, i.jsxs)('span', {
-                                className: `${ia} ${n = t.类型, '减益' === n ? ua : '特殊' === n ? ca : oa}`,
-                                title: t.效果 || e,
+                                className: `${ia} ${n = t.Type, 'Debuff' === n ? ua : 'Special' === n ? ca : oa}`,
+                                title: t.Effect || e,
                                 children: [(0, i.jsx)('span', {
                                     className: da,
                                     children: e
-                                }), 'number' == typeof t.层数 && t.层数 > 1 ? (0, i.jsxs)('span', {
+                                }), 'number' == typeof t.Stacks && t.Stacks > 1 ? (0, i.jsxs)('span', {
                                     className: fa,
-                                    children: ['x', t.层数]
-                                }) : null, t.剩余时间 ? (0, i.jsx)('span', {
+                                    children: ['x', t.Stacks]
+                                }) : null, t.RemainingTime ? (0, i.jsx)('span', {
                                     className: fa,
-                                    children: t.剩余时间
+                                    children: t.RemainingTime
                                 }) : null]
                             }, e);
                             var n
@@ -11793,7 +11793,7 @@
                 })(e, n, l, s, o) : c.length ? (0, i.jsx)('div', {
                     className: ha,
                     children: c.map(([e, t]) => {
-                        const n = '减益' === (l = t.类型) ? va : '特殊' === l ? _a : ya;
+                        const n = 'Debuff' === (l = t.Type) ? va : 'Special' === l ? _a : ya;
                         var l;
                         const s = r ? `${r}.${e}` : '';
                         return (0, i.jsx)('div', {
@@ -11809,8 +11809,8 @@
                                                 className: ka,
                                                 children: e
                                             }), (0, i.jsx)(en, {
-                                                path: `${s}.类型`,
-                                                value: t.类型 ?? '增益',
+                                                path: `${s}.Type`,
+                                                value: t.Type ?? 'Buff',
                                                 type: 'select',
                                                 selectConfig: {
                                                     options: $a
@@ -11822,10 +11822,10 @@
                                                 className: za,
                                                 children: [(0, i.jsx)('span', {
                                                     className: Ba,
-                                                    children: '层数'
+                                                    children: 'Số tầng'
                                                 }), (0, i.jsx)(en, {
-                                                    path: `${s}.层数`,
-                                                    value: t.层数 ?? 1,
+                                                    path: `${s}.Stacks`,
+                                                    value: t.Stacks ?? 1,
                                                     type: 'number',
                                                     numberConfig: {
                                                         min: 1,
@@ -11836,10 +11836,10 @@
                                                 className: za,
                                                 children: [(0, i.jsx)('span', {
                                                     className: Ba,
-                                                    children: '剩余时间'
+                                                    children: 'Thời gian còn lại'
                                                 }), (0, i.jsx)(en, {
-                                                    path: `${s}.剩余时间`,
-                                                    value: t.剩余时间 ?? '',
+                                                    path: `${s}.RemainingTime`,
+                                                    value: t.RemainingTime ?? '',
                                                     type: 'text'
                                                 })]
                                             })]
@@ -11847,7 +11847,7 @@
                                     }), u ? (0, i.jsx)('button', {
                                         className: Aa,
                                         onClick: () => u(e),
-                                        title: '删除状态效果',
+                                        title: 'Xóa hiệu ứng trạng thái',
                                         type: 'button',
                                         children: (0, i.jsx)('i', {
                                             className: 'fa-solid fa-trash'
@@ -11857,20 +11857,20 @@
                                     className: La,
                                     children: [(0, i.jsx)('span', {
                                         className: Fa,
-                                        children: '效果'
+                                        children: 'Hiệu quả'
                                     }), (0, i.jsx)(en, {
-                                        path: `${s}.效果`,
-                                        value: t.效果 ?? '',
+                                        path: `${s}.Effect`,
+                                        value: t.Effect ?? '',
                                         type: 'textarea'
                                     })]
                                 }), (0, i.jsxs)('div', {
                                     className: La,
                                     children: [(0, i.jsx)('span', {
                                         className: Fa,
-                                        children: '来源'
+                                        children: 'Nguồn gốc'
                                     }), (0, i.jsx)(en, {
-                                        path: `${s}.来源`,
-                                        value: t.来源 ?? '',
+                                        path: `${s}.Source`,
+                                        value: t.Source ?? '',
                                         type: 'text'
                                     })]
                                 })]
@@ -11882,26 +11882,26 @@
                                         children: [(0, i.jsx)('span', {
                                             className: ka,
                                             children: e
-                                        }), t.类型 ? (0, i.jsx)('span', {
+                                        }), t.Type ? (0, i.jsx)('span', {
                                             className: Sa,
-                                            children: t.类型
+                                            children: t.Type
                                         }) : null]
                                     }), (0, i.jsxs)('div', {
                                         className: Na,
-                                        children: ['number' == typeof t.层数 && t.层数 > 1 ? (0, i.jsxs)('span', {
+                                        children: ['number' == typeof t.Stacks && t.Stacks > 1 ? (0, i.jsxs)('span', {
                                             className: Ta,
-                                            children: ['x', t.层数]
-                                        }) : null, t.剩余时间 ? (0, i.jsx)('span', {
+                                            children: ['x', t.Stacks]
+                                        }) : null, t.RemainingTime ? (0, i.jsx)('span', {
                                             className: Ca,
-                                            children: t.剩余时间
+                                            children: t.RemainingTime
                                         }) : null]
                                     })]
-                                }), t.效果 ? (0, i.jsx)('div', {
+                                }), t.Effect ? (0, i.jsx)('div', {
                                     className: ja,
-                                    children: t.效果
-                                }) : null, t.来源 ? (0, i.jsxs)('div', {
+                                    children: t.Effect
+                                }) : null, t.Source ? (0, i.jsxs)('div', {
                                     className: Ea,
-                                    children: ['来源：', t.来源]
+                                    children: ['Nguồn gốc: ', t.Source]
                                 }) : null]
                             })
                         }, e)
@@ -12048,56 +12048,56 @@
             Fl = 'DestinyTab-module__partnerAscension--uHlxV',
             Al = 'DestinyTab-module__ascensionLabel--eDPmR',
             Il = 'DestinyTab-module__emptyHint--OeeoC',
-            $l = '全部',
+            $l = 'Tất cả',
             Rl = [{
                 key: 'all',
-                label: '全部',
+                label: 'Tất cả',
                 matches: () => !0
             }, {
                 key: 'present',
-                label: '在场',
-                matches: e => Boolean(e.在场)
+                label: 'Hiện diện',
+                matches: e => Boolean(e.IsPresent)
             }, {
                 key: 'away',
-                label: '不在场',
-                matches: e => !e.在场
+                label: 'Không hiện diện',
+                matches: e => !e.IsPresent
             }, {
                 key: 'contracted',
-                label: '已缔约',
-                matches: e => Boolean(e.命定契约)
+                label: 'Đã ký kết',
+                matches: e => Boolean(e.DestinyContract)
             }],
             Ol = [{
-                key: 'equipment',
-                label: '装备',
-                dataKey: '装备',
-                filterKey: '类型',
-                itemCategory: 'equipment',
-                emptyText: '暂无装备',
-                getTitleSuffix: e => e.位置 ? (0, i.jsxs)('span', {
+                key: 'Equipment',
+                label: 'Trang bị',
+                dataKey: 'Equipment',
+                filterKey: 'Type',
+                itemCategory: 'Equipment',
+                emptyText: 'Tạm thời không có trang bị',
+                getTitleSuffix: e => e.Location ? (0, i.jsxs)('span', {
                     className: Sl,
-                    children: ['[', e.位置, ']']
+                    children: ['[', e.Location, ']']
                 }) : null
             }, {
-                key: 'skills',
-                label: '技能',
-                dataKey: '技能',
-                filterKey: '类型',
-                itemCategory: 'skill',
-                emptyText: '暂无技能',
-                getTitleSuffix: e => e.消耗 ? (0, i.jsx)('span', {
+                key: 'Skills',
+                label: 'Kỹ năng',
+                dataKey: 'Skills',
+                filterKey: 'Type',
+                itemCategory: 'Skill',
+                emptyText: 'Chưa có kỹ năng',
+                getTitleSuffix: e => e.Cost ? (0, i.jsx)('span', {
                     className: Cl,
-                    children: e.消耗
+                    children: e.Cost
                 }) : null
             }, {
                 key: 'inventory',
-                label: '背包',
-                dataKey: '背包',
-                filterKey: '类型',
-                itemCategory: 'item',
-                emptyText: '背包空空如也',
-                getTitleSuffix: e => e.数量 ? (0, i.jsxs)('span', {
+                label: 'Hành trang',
+                dataKey: 'Inventory',
+                filterKey: 'Type',
+                itemCategory: 'Item',
+                emptyText: 'Hành trang trống rỗng',
+                getTitleSuffix: e => e.Quantity ? (0, i.jsxs)('span', {
                     className: Cl,
-                    children: ['x', e.数量]
+                    children: ['x', e.Quantity]
                 }) : null
             }],
             ql = Oa({
@@ -12113,8 +12113,8 @@
                         cancelDelete: l,
                         isConfirmOpen: s
                     } = me(),
-                    o = e.命运点数,
-                    c = e.关系列表,
+                    o = e.DestinyPoints,
+                    c = e.RelationshipList,
                     d = (0, u.useMemo)(() => Object.entries(c ?? {}), [c]),
                     f = Fe('destiny', 'partner-category'),
                     m = Fe('destiny', 'partner-name'),
@@ -12161,7 +12161,7 @@
                                 ...u
                             }) : (0, i.jsx)('span', {
                                 className: o,
-                                children: null == a ? '无' : 'tags' === r && Array.isArray(a) ? a.length > 0 ? a.join(' / ') : '无' : 'toggle' === r ? a ? '是' : '否' : 'keyvalue' === r ? _.isEmpty(a) ? '无' : _.map(a, (e, t) => `${t}: ${null == e || '' === e ? '无' : String(e)}`).join(' / ') : '' === a ? '无' : String(a)
+                                children: null == a ? 'Không' : 'tags' === r && Array.isArray(a) ? a.length > 0 ? a.join(' / ') : 'Không' : 'toggle' === r ? a ? 'Có' : 'Không' : 'keyvalue' === r ? _.isEmpty(a) ? 'Không' : _.map(a, (e, t) => `${t}: ${null == e || '' === e ? 'Không' : String(e)}`).join(' / ') : '' === a ? 'Không' : String(a)
                             })]
                         })
                     },
@@ -12196,8 +12196,8 @@
                     },
                     X = (e, n) => {
                         const r = U,
-                            l = 'equipment' === n.key ? wl : Nl,
-                            s = 'equipment' === n.key ? kl : Tl,
+                            l = 'Equipment' === n.key ? wl : Nl,
+                            s = 'Equipment' === n.key ? kl : Tl,
                             o = Object.keys(r).length;
                         return 0 !== o || t ? (0, i.jsxs)('div', {
                             className: l,
@@ -12209,7 +12209,7 @@
                                         children: n.label
                                     }), (0, i.jsxs)('div', {
                                         className: gl,
-                                        children: ['当前显示 ', Q.length, ' / ', o, ' 项']
+                                        children: ['Hiện đang hiển thị ', Q.length, ' / ', o, ' mục']
                                     })]
                                 })
                             }), K.length > 1 && (0, i.jsx)('div', {
@@ -12235,10 +12235,10 @@
                                     data: l,
                                     titleSuffix: n.getTitleSuffix(l),
                                     editEnabled: t,
-                                    pathPrefix: `关系列表.${e}.${n.dataKey}.${r}`,
+                                    pathPrefix: `RelationshipList.${e}.${n.dataKey}.${r}`,
                                     onDelete: () => a({
                                         type: n.label,
-                                        path: `关系列表.${e}.${n.dataKey}.${r}`,
+                                        path: `RelationshipList.${e}.${n.dataKey}.${r}`,
                                         name: r
                                     }),
                                     itemCategory: n.itemCategory,
@@ -12246,7 +12246,7 @@
                                 }, r))
                             }) : (0, i.jsx)(Rn, {
                                 className: Il,
-                                text: `没有${j}分类的${n.label}`
+                                text: `Không có ${j} phân loại của ${n.label}`
                             })]
                         }) : (0, i.jsx)(Rn, {
                             className: Il,
@@ -12257,24 +12257,24 @@
                         className: Nl,
                         children: [(0, i.jsx)('div', {
                             className: cl,
-                            children: '状态效果'
+                            children: 'Hiệu ứng trạng thái'
                         }), (0, i.jsx)(Rn, {
                             className: Il,
-                            text: '暂无 Buff'
+                            text: 'Tạm thời không có Buff'
                         })]
                     }) : (0, i.jsxs)('div', {
                         className: Nl,
                         children: [(0, i.jsx)('div', {
                             className: cl,
-                            children: '状态效果'
+                            children: 'Hiệu ứng trạng thái'
                         }), (0, i.jsx)(Ra, {
                             effects: e ?? {},
                             editEnabled: t,
-                            pathPrefix: `关系列表.${n}.状态效果`,
-                            emptyText: '无',
+                            pathPrefix: `RelationshipList.${n}.StatusEffects`,
+                            emptyText: 'Trống',
                             onDelete: e => a({
-                                type: '状态效果',
-                                path: `关系列表.${n}.状态效果.${e}`,
+                                type: 'Trạng thái hiệu quả',
+                                path: `RelationshipList.${n}.StatusEffects.${e}`,
                                 name: e
                             })
                         })]
@@ -12283,12 +12283,12 @@
                         className: Ga,
                         onClick: t => {
                             t.stopPropagation(), a({
-                                type: '伙伴',
-                                path: `关系列表.${e}`,
+                                type: 'Cộng sự',
+                                path: `RelationshipList.${e}`,
                                 name: e
                             })
                         },
-                        title: '删除关系',
+                        title: 'Xóa quan hệ',
                         children: (0, i.jsx)('i', {
                             className: 'fa-solid fa-trash'
                         })
@@ -12304,15 +12304,15 @@
                             className: Za,
                             children: [(0, i.jsxs)('span', {
                                 className: er,
-                                children: ['好感度 ', t.好感度 ?? 0]
+                                children: ['Hảo cảm ', t.Affection ?? 0]
                             }), (0, i.jsxs)('div', {
                                 className: Er,
-                                children: [t.在场 && (0, i.jsx)('span', {
+                                children: [t.IsPresent && (0, i.jsx)('span', {
                                     className: `${Mr} ${Dr}`,
-                                    children: '在场'
-                                }), t.命定契约 && (0, i.jsx)('span', {
+                                    children: 'Hiện diện'
+                                }), t.DestinyContract && (0, i.jsx)('span', {
                                     className: `${Mr} ${Pr}`,
-                                    children: '命定契约'
+                                    children: 'Khế Ước Định Mệnh'
                                 })]
                             })]
                         }), (0, i.jsx)('div', {
@@ -12324,7 +12324,7 @@
                         })]
                     }),
                     te = e => {
-                        const t = e.状态效果 ?? {};
+                        const t = e.StatusEffects ?? {};
                         return (0, i.jsx)('div', {
                             className: xr,
                             children: (0, i.jsx)(Ra, {
@@ -12333,7 +12333,7 @@
                                 compact: !0,
                                 maxVisible: 3,
                                 showRemainingCount: !0,
-                                emptyText: '暂无 Buff'
+                                emptyText: 'Chưa có Buff'
                             })
                         })
                     },
@@ -12348,8 +12348,8 @@
                         F(e)
                     },
                     le = e => (e => {
-                        const t = [e.种族, Array.isArray(e.职业) ? e.职业.join(' / ') : e.职业, e.等级 ? `Lv.${e.等级}` : '', e.生命层级];
-                        return _.compact(t).join(' · ') || '暂无定位'
+                        const t = [e.Race, Array.isArray(e.Class) ? e.Class.join(' / ') : e.Class, e.Level ? `Lv.${e.Level}` : '', e.LifeTier];
+                        return _.compact(t).join(' · ') || 'Chưa có định vị'
                     })(e),
                     se = e => {
                         k(e), C('overview'), E($l), N(!0)
@@ -12366,7 +12366,7 @@
                             className: br,
                             children: [(0, i.jsx)(Tn, {
                                 src: ne(e),
-                                alt: `${e}头像`,
+                                alt: `${e} Ảnh đại diện`,
                                 size: 'md',
                                 placeholderText: e,
                                 showEditHint: !0,
@@ -12385,22 +12385,22 @@
                             className: Br,
                             children: [{
                                 key: 'overview',
-                                label: '概览'
+                                label: 'Khái Quát'
                             }, {
                                 key: 'status',
-                                label: '状态'
+                                label: 'Trạng thái'
                             }, {
-                                key: 'equipment',
-                                label: '装备'
+                                key: 'Equipment',
+                                label: 'Trang bị'
                             }, {
-                                key: 'skills',
-                                label: '技能'
+                                key: 'Skills',
+                                label: 'Kỹ năng'
                             }, {
                                 key: 'inventory',
-                                label: '背包'
+                                label: 'Hành Trang'
                             }, {
                                 key: 'background',
-                                label: '背景'
+                                label: 'Bối cảnh'
                             }].map(e => (0, i.jsx)('button', {
                                 type: 'button',
                                 className: `${Lr} ${T === e.key ? Fr : ''}`,
@@ -12418,31 +12418,31 @@
                                         className: Hr,
                                         children: [(0, i.jsx)('span', {
                                             className: Vr,
-                                            children: '好感度'
+                                            children: 'Hảo cảm'
                                         }), t ? (0, i.jsx)(en, {
-                                            path: `关系列表.${e}.好感度`,
-                                            value: n.好感度 ?? 0,
+                                            path: `RelationshipList.${e}.Affection`,
+                                            value: n.Affection ?? 0,
                                             type: 'number',
                                             numberConfig: {
                                                 min: -100,
                                                 max: 100,
                                                 step: 1
                                             }
-                                        }) : Y(n.好感度 ?? 0)]
+                                        }) : Y(n.Affection ?? 0)]
                                     }), t && (0, i.jsxs)('div', {
                                         className: Yr,
                                         children: [(0, i.jsxs)('div', {
                                             className: Xr,
                                             children: [(0, i.jsx)('span', {
                                                 className: Jr,
-                                                children: '在场状态'
+                                                children: 'Trạng thái hiện diện'
                                             }), (0, i.jsx)(en, {
-                                                path: `关系列表.${e}.在场`,
-                                                value: n.在场 ?? !1,
+                                                path: `RelationshipList.${e}.IsPresent`,
+                                                value: n.IsPresent ?? !1,
                                                 type: 'toggle',
                                                 toggleConfig: {
-                                                    labelOff: '离场',
-                                                    labelOn: '在场',
+                                                    labelOff: 'Rời khỏi',
+                                                    labelOn: 'Hiện diện',
                                                     size: 'sm'
                                                 }
                                             })]
@@ -12450,14 +12450,14 @@
                                             className: Xr,
                                             children: [(0, i.jsx)('span', {
                                                 className: Jr,
-                                                children: '命定契约'
+                                                children: 'Khế Ước Định Mệnh'
                                             }), (0, i.jsx)(en, {
-                                                path: `关系列表.${e}.命定契约`,
-                                                value: n.命定契约 ?? !1,
+                                                path: `RelationshipList.${e}.DestinyContract`,
+                                                value: n.DestinyContract ?? !1,
                                                 type: 'toggle',
                                                 toggleConfig: {
-                                                    labelOff: '未缔结',
-                                                    labelOn: '已缔结',
+                                                    labelOff: 'Chưa ký kết',
+                                                    labelOn: 'Đã ký kết',
                                                     size: 'sm'
                                                 }
                                             })]
@@ -12469,25 +12469,25 @@
                                         className: Rr,
                                         children: [(0, i.jsx)('div', {
                                             className: cl,
-                                            children: '基础信息'
+                                            children: 'Thông tin cơ bản'
                                         }), (0, i.jsxs)('div', {
                                             className: Or,
-                                            children: [W('种族', `关系列表.${e}.种族`, n.种族, 'text', Zr, el, tl), W('身份', `关系列表.${e}.身份`, n.身份, 'tags', Zr, el, tl), W('职业', `关系列表.${e}.职业`, n.职业, 'tags', Zr, el, tl), G('生命层级', n.生命层级, Zr, el, tl), G('等级', n.等级 ? `Lv.${n.等级}` : '', Zr, el, tl)]
+                                            children: [W('Chủng tộc', `RelationshipList.${e}.Race`, n.Race, 'text', Zr, el, tl), W('Thân phận', `RelationshipList.${e}.Identity`, n.Identity, 'tags', Zr, el, tl), W('Nghề nghiệp', `RelationshipList.${e}.Class`, n.Class, 'tags', Zr, el, tl), G('Giai Vị Sinh Mệnh', n.LifeTier, Zr, el, tl), G('Cấp độ', n.Level ? `Lv.${n.Level}` : '', Zr, el, tl)]
                                         })]
-                                    }), !_.isEmpty(n.属性) && (0, i.jsxs)('div', {
+                                    }), !_.isEmpty(n.Attributes) && (0, i.jsxs)('div', {
                                         className: Rr,
                                         children: [(0, i.jsx)('div', {
                                             className: cl,
-                                            children: '属性'
+                                            children: 'Thuộc tính'
                                         }), (0, i.jsx)('div', {
                                             className: `${qr} ${t ? dl : ''}`,
-                                            children: _.map(n.属性, (n, a) => (0, i.jsxs)('div', {
+                                            children: _.map(n.Attributes, (n, a) => (0, i.jsxs)('div', {
                                                 className: `${fl} ${t ? ml : ''}`,
                                                 children: [(0, i.jsx)('span', {
                                                     className: pl,
                                                     children: a
                                                 }), t ? (0, i.jsx)(en, {
-                                                    path: `关系列表.${e}.属性.${a}`,
+                                                    path: `RelationshipList.${e}.Attributes.${a}`,
                                                     value: n ?? 0,
                                                     type: 'number',
                                                     numberConfig: {
@@ -12503,33 +12503,33 @@
                                         })]
                                     })]
                                 })]
-                            }), (n.外貌 || n.着装 || t) && (0, i.jsxs)('div', {
+                            }), (n.Appearance || n.Outfit || t) && (0, i.jsxs)('div', {
                                 className: nl,
-                                children: [W('外貌', `关系列表.${e}.外貌`, n.外貌, 'textarea', al, rl, ll), W('着装', `关系列表.${e}.着装`, n.着装, 'textarea', al, rl, ll)]
-                            }), (n.性格 || n.喜爱 || t) && (0, i.jsxs)('div', {
+                                children: [W('Ngoại hình', `RelationshipList.${e}.Appearance`, n.Appearance, 'textarea', al, rl, ll), W('Trang phục', `RelationshipList.${e}.Outfit`, n.Outfit, 'textarea', al, rl, ll)]
+                            }), (n.Personality || n.Likes || t) && (0, i.jsxs)('div', {
                                 className: sl,
-                                children: [W('性格', `关系列表.${e}.性格`, n.性格, 'textarea', il, ol, ul), W('喜爱', `关系列表.${e}.喜爱`, n.喜爱, 'textarea', il, ol, ul)]
+                                children: [W('Tính cách', `RelationshipList.${e}.Personality`, n.Personality, 'textarea', il, ol, ul), W('Yêu thích', `RelationshipList.${e}.Likes`, n.Likes, 'textarea', il, ol, ul)]
                             })]
                         }), 'status' === T && (0, i.jsxs)(i.Fragment, {
-                            children: [J(n.状态效果, e), n.登神长阶?.是否开启 && (0, i.jsxs)('div', {
+                            children: [J(n.StatusEffects, e), n.AscensionStairway?.IsEnabled && (0, i.jsxs)('div', {
                                 className: Fl,
                                 children: [(0, i.jsx)('div', {
                                     className: Al,
-                                    children: '登神长阶'
+                                    children: 'Đăng Thần Trường Giai'
                                 }), (0, i.jsx)(nn, {
-                                    data: n.登神长阶,
+                                    data: n.AscensionStairway,
                                     compact: !0,
                                     editEnabled: t,
-                                    pathPrefix: `关系列表.${e}.登神长阶`
+                                    pathPrefix: `RelationshipList.${e}.AscensionStairway`
                                 })]
                             })]
                         }), V && X(e, V), 'background' === T && (0, i.jsxs)(i.Fragment, {
-                            children: [(n.心里话 || t) && (0, i.jsx)('div', {
+                            children: [(n.InnerThoughts || t) && (0, i.jsx)('div', {
                                 className: jl,
-                                children: W('心里话', `关系列表.${e}.心里话`, n.心里话, 'textarea', El, Ml, Dl)
-                            }), (n.背景故事 || t) && (0, i.jsx)('div', {
+                                children: W('Lời lòng', `RelationshipList.${e}.InnerThoughts`, n.InnerThoughts, 'textarea', El, Ml, Dl)
+                            }), (n.Backstory || t) && (0, i.jsx)('div', {
                                 className: Pl,
-                                children: W('背景故事', `关系列表.${e}.背景故事`, n.背景故事, 'textarea', zl, Bl, Ll)
+                                children: W('Câu Chuyện Bối Cảnh', `RelationshipList.${e}.Backstory`, n.Backstory, 'textarea', zl, Bl, Ll)
                             })]
                         })]
                     }),
@@ -12543,7 +12543,7 @@
                                         className: Ya,
                                         children: [(0, i.jsx)(Tn, {
                                             src: ne(e),
-                                            alt: `${e}头像`,
+                                            alt: `${e} ảnh đại diện`,
                                             size: 'md',
                                             placeholderText: e,
                                             showEditHint: !0,
@@ -12559,7 +12559,7 @@
                             }), oe(O, q)]
                         }) : (0, i.jsx)(Rn, {
                             className: Il,
-                            text: '暂无可查看伙伴'
+                            text: 'Tạm thời không có cộng sự để xem'
                         });
                         var e, t
                     };
@@ -12573,7 +12573,7 @@
                                 a = t.reduce((e, [t, n]) => (e[t] = 'removed' === n?.source_type, e), {});
                             D(n), B(a)
                         } catch (t) {
-                            console.warn('[DestinyTab] 读取伙伴头像失败:', t), e || (D({}), B({}))
+                            console.warn('[DestinyTab] Đọc ảnh đại diện cộng sự thất bại:', t), e || (D({}), B({}))
                         }
                     })(), () => {
                         e = !0
@@ -12603,18 +12603,18 @@
                         onClick: async () => {
                             await createChatMessages([{
                                 role: 'user',
-                                message: '打开FP商店'
+                                message: 'Mở cửa hàng FP'
                             }]), await triggerSlash('/trigger')
                         },
                         disabled: !0,
-                        title: '待上线',
+                        title: 'Sắp ra mắt',
                         children: [(0, i.jsx)('i', {
                             className: 'fa-solid fa-store'
                         }), (0, i.jsx)('span', {
-                            children: 'FP商店'
+                            children: 'Cửa hàng FP'
                         }), (0, i.jsx)('span', {
                             className: Ka,
-                            children: '待上线'
+                            children: 'Sắp ra mắt'
                         })]
                     }), (0, i.jsx)(jn, {
                         className: Ua,
@@ -12624,9 +12624,9 @@
                                 className: `fa-solid fa-star ${or}`
                             }), (0, i.jsx)('span', {
                                 className: ur,
-                                children: '命运点数'
+                                children: 'Điểm Vận Mệnh'
                             }), t ? (0, i.jsx)(en, {
-                                path: '命运点数',
+                                path: 'DestinyPoints',
                                 value: o ?? 0,
                                 type: 'number',
                                 numberConfig: {
@@ -12642,11 +12642,11 @@
                         className: Qa,
                         children: [(0, i.jsx)('div', {
                             className: nr,
-                            children: '伙伴列表'
+                            children: 'Danh sách cộng sự'
                         }), (() => {
                             if (_.isEmpty(c)) return (0, i.jsx)(Rn, {
                                 className: Il,
-                                text: '暂无伙伴'
+                                text: 'Tạm thời không có cộng sự'
                             });
                             const e = ue();
                             return (0, i.jsxs)('div', {
@@ -12674,7 +12674,7 @@
                                             children: ie(e, t)
                                         }, e)) : (0, i.jsx)(Rn, {
                                             className: Il,
-                                            text: `当前“${I?.label ?? '全部'}”分类下暂无伙伴`
+                                            text: `Hiện tại không có cộng sự trong phân loại "${I?.label ?? 'Tất cả'}"`
                                         })
                                     }), (0, i.jsx)('div', {
                                         className: wr,
@@ -12695,7 +12695,7 @@
                                 children: [(0, i.jsx)('i', {
                                     className: 'fa-solid fa-chevron-left'
                                 }), (0, i.jsx)('span', {
-                                    children: '返回伙伴列表'
+                                    children: 'Quay lại danh sách cộng sự'
                                 })]
                             })
                         }), (0, i.jsx)('div', {
@@ -12704,12 +12704,12 @@
                         })]
                     }), L ? (0, i.jsx)(hn, {
                         open: !0,
-                        title: `${L}头像`,
-                        subtitle: '支持导入本地图片、保存图片链接、导出当前头像，或删除当前伙伴头像。',
-                        linkPlaceholder: `请输入${L}头像图片链接`,
+                        title: `Ảnh đại diện ${L}`,
+                        subtitle: 'Hỗ trợ nhập ảnh cục bộ, lưu liên kết ảnh, xuất ảnh đại diện hiện tại hoặc xóa ảnh đại diện cộng sự hiện tại.',
+                        linkPlaceholder: `Vui lòng nhập liên kết ảnh đại diện ${L}`,
                         canExport: ce?.canExport ?? !1,
                         canDelete: ce?.canDelete ?? !1,
-                        deleteLabel: '删除头像',
+                        deleteLabel: 'Xóa ảnh đại diện',
                         onClose: () => {
                             F(null)
                         },
@@ -12731,7 +12731,7 @@
                                     [e]: !1
                                 }))
                             } catch (e) {
-                                console.warn('[DestinyTab] 上传伙伴头像失败:', e)
+                                console.warn('[DestinyTab] Tải lên ảnh đại diện cộng sự thất bại:', e)
                             }
                         })(L, e),
                         onSubmitLink: e => (async (e, t) => {
@@ -12751,7 +12751,7 @@
                                     [e]: !1
                                 }))
                             } catch (e) {
-                                console.warn('[DestinyTab] 保存伙伴头像链接失败:', e)
+                                console.warn('[DestinyTab] Lưu liên kết ảnh đại diện cộng sự thất bại:', e)
                             }
                         })(L, e),
                         onExport: () => (async e => {
@@ -12759,7 +12759,7 @@
                             if (t) try {
                                 await De(`${e}-avatar.png`, t)
                             } catch (e) {
-                                console.warn('[DestinyTab] 导出伙伴头像失败:', e)
+                                console.warn('[DestinyTab] Xuất ảnh đại diện cộng sự thất bại:', e)
                             }
                         })(L),
                         onDelete: () => (async e => {
@@ -12772,7 +12772,7 @@
                                     [e]: !0
                                 }))
                             } catch (e) {
-                                console.warn('[DestinyTab] 删除伙伴头像失败:', e)
+                                console.warn('[DestinyTab] Xóa ảnh đại diện cộng sự thất bại:', e)
                             }
                         })(L)
                     }) : null, (0, i.jsx)(En, {
@@ -12805,27 +12805,30 @@
             os = 'ItemsTab-module__emptyHint--xNr2F',
             us = [{
                 id: 'inventory',
-                label: '背包',
+                label: 'Hành trang',
                 icon: 'fa-solid fa-box',
-                filterKey: '类型',
-                pathPrefix: '主角.背包',
-                itemCategory: 'item'
+                filterKey: 'Loại hình',
+                pathPrefix: 'Protagonist.Inventory',
+                dataKey: 'Inventory',
+                itemCategory: 'Item'
             }, {
-                id: 'equipment',
-                label: '装备',
+                id: 'Equipment',
+                label: 'Trang bị',
                 icon: 'fa-solid fa-shield',
-                filterKey: '类型',
-                pathPrefix: '主角.装备',
-                itemCategory: 'equipment'
+                filterKey: 'Loại hình',
+                pathPrefix: 'Protagonist.Equipment',
+                dataKey: 'Equipment',
+                itemCategory: 'Equipment'
             }, {
-                id: 'skills',
-                label: '技能',
+                id: 'Skills',
+                label: 'Kỹ năng',
                 icon: 'fa-solid fa-wand-magic-sparkles',
-                filterKey: '类型',
-                pathPrefix: '主角.技能',
-                itemCategory: 'skill'
+                filterKey: 'Loại hình',
+                pathPrefix: 'Protagonist.Skills',
+                dataKey: 'Skills',
+                itemCategory: 'Skill'
             }],
-            cs = '全部',
+            cs = 'Tất cả',
             ds = Oa({
                 baseClassName: Hl
             })(({
@@ -12844,17 +12847,25 @@
                     [d, f] = (0, u.useState)(() => Ae(o, 'inventory')),
                     [m, p] = (0, u.useState)(() => Ae(c, cs)),
                     [h, g] = (0, u.useState)(null),
-                    y = e.主角,
+                    y = e.Protagonist,
                     v = e => us.find(t => t.id === e),
                     x = e => {
                         const t = us.find(t => t.id === e);
-                        return t?.filterKey ?? '类型'
+                        return t?.filterKey ?? 'Loại hình'
                     },
                     w = v(d),
                     k = (0, u.useMemo)(() => (e => {
                         const t = v(e);
-                        return ye(y, t.label)
-                    })(d), [d, y.技能, y.装备, y.背包]),
+                        const data = ye(y, t.dataKey || t.label);
+                        console.log('%c DEBUG CATEGORY DATA ', 'background: #222; color: #bada55', {
+                            category: e,
+                            label: t.label,
+                            dataKey: t.dataKey,
+                            itemsCount: Object.keys(data || {}).length,
+                            rawData: data
+                        });
+                        return data;
+                    })(d), [d, y.Skills, y.Equipment, y.Inventory]),
                     S = h ? v(h.categoryId) : null;
                 (0, u.useEffect)(() => {
                     w.id === d ? Ie(o, w.id) : f(w.id)
@@ -12903,7 +12914,7 @@
                     children: [(0, i.jsx)(jn, {
                         className: Vl,
                         children: (() => {
-                            const e = y.金钱 ?? 0;
+                            const e = y.Money ?? 0;
                             return e || t ? (0, i.jsx)('div', {
                                 className: `${Yl} ${t ? Xl : ''}`,
                                 children: (0, i.jsxs)('span', {
@@ -12911,7 +12922,7 @@
                                     children: [(0, i.jsx)('i', {
                                         className: 'fa-solid fa-coins'
                                     }), t ? (0, i.jsx)(en, {
-                                        path: '主角.金钱',
+                                        path: 'Protagonist.Money',
                                         value: e,
                                         type: 'number',
                                         numberConfig: {
@@ -12955,19 +12966,19 @@
                         children: (() => {
                             switch (d) {
                                 case 'inventory':
-                                    return M(T === cs ? '背包空空如也' : `没有${T}类型的物品`, e => (0, i.jsxs)('span', {
+                                    return M(T === cs ? 'Trống' : `Không có vật phẩm loại ${T}`, e => (0, i.jsxs)('span', {
                                         className: rs,
-                                        children: ['×', e.数量]
+                                        children: ['×', e.Quantity]
                                     }));
-                                case 'equipment':
-                                    return M(T === cs ? '暂无装备' : `没有${T}位置的装备`, e => e.位置 ? (0, i.jsxs)('span', {
+                                case 'Equipment':
+                                    return M(T === cs ? 'Tạm thời không có trang bị' : `Không có trang bị ở vị trí ${T}`, e => e.Location ? (0, i.jsxs)('span', {
                                         className: ls,
-                                        children: ['[', e.位置, ']']
+                                        children: ['[', e.Location, ']']
                                     }) : null);
-                                case 'skills':
-                                    return M(T === cs ? '暂无技能' : `没有${T}类型的技能`, e => e.消耗 ? (0, i.jsx)('span', {
+                                case 'Skills':
+                                    return M(T === cs ? 'Tạm thời không có kỹ năng' : `Không có kỹ năng loại ${T}`, e => e.Cost ? (0, i.jsx)('span', {
                                         className: ss,
-                                        children: e.消耗
+                                        children: e.Cost
                                     }) : null);
                                 default:
                                     return null
@@ -12986,15 +12997,15 @@
                         children: h && S ? (0, i.jsx)(Qn, {
                             name: h.name,
                             data: h.data,
-                            titleSuffix: 'item' === S.itemCategory ? (0, i.jsxs)('span', {
+                            titleSuffix: 'Item' === S.itemCategory ? (0, i.jsxs)('span', {
                                 className: rs,
-                                children: ['×', h.data.数量]
-                            }) : 'equipment' === S.itemCategory ? h.data.位置 ? (0, i.jsxs)('span', {
+                                children: ['×', h.data.Quantity]
+                            }) : 'Equipment' === S.itemCategory ? h.data.Location ? (0, i.jsxs)('span', {
                                 className: ls,
-                                children: ['[', h.data.位置, ']']
-                            }) : null : h.data.消耗 ? (0, i.jsx)('span', {
+                                children: ['[', h.data.Location, ']']
+                            }) : null : h.data.Cost ? (0, i.jsx)('span', {
                                 className: ss,
-                                children: h.data.消耗
+                                children: h.data.Cost
                             }) : null,
                             editEnabled: t,
                             pathPrefix: `${S.pathPrefix}.${h.name}`,
@@ -13014,16 +13025,16 @@
             ms = 'fa-solid fa-location-dot',
             ps = ['#ffcc66', '#ff6b6b', '#4dabf7', '#63e6be', '#845ef7', '#ffd43b', '#ffffff', '#000000'],
             hs = {
-                'fa-solid fa-location-dot': '地点',
-                'fa-solid fa-star': '星标',
-                'fa-solid fa-flag': '旗帜',
-                'fa-solid fa-landmark': '地标',
-                'fa-solid fa-skull-crossbones': '危险',
-                'fa-solid fa-city': '城市',
-                'fa-solid fa-mountain': '山脉',
-                'fa-solid fa-tree': '森林',
-                'fa-solid fa-water': '水域',
-                'fa-solid fa-campground': '营地'
+                'fa-solid fa-location-dot': 'Địa điểm',
+                'fa-solid fa-star': 'Dấu sao',
+                'fa-solid fa-flag': 'Cờ',
+                'fa-solid fa-landmark': 'Địa danh',
+                'fa-solid fa-skull-crossbones': 'Nguy hiểm',
+                'fa-solid fa-city': 'Thành Thị',
+                'fa-solid fa-mountain': 'Dãy Núi',
+                'fa-solid fa-tree': 'Rừng Rậm',
+                'fa-solid fa-water': 'Thủy vực',
+                'fa-solid fa-campground': 'Doanh trại'
             },
             bs = ['fa-solid fa-location-dot', 'fa-solid fa-star', 'fa-solid fa-flag', 'fa-solid fa-landmark', 'fa-solid fa-skull-crossbones', 'fa-solid fa-city', 'fa-solid fa-mountain', 'fa-solid fa-tree', 'fa-solid fa-water', 'fa-solid fa-campground'],
             gs = ({
@@ -13044,7 +13055,7 @@
                     const n = `marker-${Date.now()}-${Math.random().toString(16).slice(2, 8)}`,
                         a = {
                             id: n,
-                            name: '新标记',
+                            name: 'Dấu mốc mới',
                             group: '',
                             description: '',
                             icon: ms,
@@ -13094,7 +13105,7 @@
                         const e = a.icon ?? ms;
                         i.className = `${t.mapMarkerIconNode} ${e}`
                     }
-                    o && (o.textContent = a.name || '未命名标记')
+                    o && (o.textContent = a.name || 'Dấu mốc chưa đặt tên')
                 }, [t, n]), T = (0, u.useCallback)(e => {
                     const n = document.createElement('div');
                     n.className = t.mapMarker, n.dataset.markerId = e.id, n.setAttribute('role', 'button'), n.tabIndex = 0;
@@ -13206,11 +13217,11 @@
             vs = 'destined-journey-cache-v1',
             _s = [{
                 key: 'small',
-                name: '高清地图',
+                name: 'Bản đồ HD',
                 url: 'https://i.ibb.co/G3rrhgVS/Maplite-1.webp'
             }, {
                 key: 'large',
-                name: '超清地图',
+                name: 'Bản đồ Ultra HD',
                 url: 'https://i.ibb.co/2zYccsJ/Map.webp'
             }];
         var xs = s(289);
@@ -13329,7 +13340,7 @@
             Co = 'MapTab-module__drawLayerDisabled--b0p3n',
             jo = 'MapTab-module__drawCanvasDisabled--uTW62',
             Eo = 'MapTab-module__mapPlaceholder--OjtcT',
-            Mo = (e, t) => e ? '当前为新增标记模式，点击地图任意位置即可落点。' : t ? '当前为涂画模式，可直接在地图上勾画并同步保存。' : '普通浏览模式下可点选地图标记，工作台仅在手动打开后用于集中编辑。',
+            Mo = (e, t) => e ? 'Hiện đang ở chế độ thêm dấu mốc mới, nhấp vào bất kỳ vị trí nào trên bản đồ để đặt điểm.' : t ? 'Hiện đang ở chế độ vẽ, có thể trực tiếp vẽ trên bản đồ và lưu đồng bộ.' : 'Trong chế độ xem thông thường có thể chọn các dấu mốc trên bản đồ, bàn làm việc chỉ dùng để chỉnh sửa tập trung sau khi mở thủ công.',
             Do = ({
                 mapMarkerCount: e,
                 markerAddMode: t,
@@ -13351,15 +13362,15 @@
                         className: Ts,
                         children: [(0, i.jsx)('span', {
                             className: Cs,
-                            children: '地图舞台'
+                            children: 'Sân khấu bản đồ'
                         }), (0, i.jsxs)('div', {
                             className: js,
                             children: [(0, i.jsx)('h3', {
                                 className: Es,
-                                children: '标记与涂画工作区'
+                                children: 'Khu vực làm việc dấu mốc và vẽ'
                             }), (0, i.jsxs)('span', {
                                 className: Ms,
-                                children: [e, ' 个标记']
+                                children: [e, ' dấu mốc']
                             })]
                         }), (0, i.jsx)('p', {
                             className: Ds,
@@ -13379,18 +13390,18 @@
                             className: `${vi} ${n ? _i : ''}`,
                             onClick: s,
                             type: 'button',
-                            children: n ? '退出绘制' : '进入绘制'
+                            children: n ? 'Thoát vẽ' : 'Vào vẽ'
                         }), (0, i.jsx)('button', {
                             type: 'button',
                             className: `${ki} ${r ? Si : ''}`,
                             onClick: o,
                             disabled: n,
-                            children: n ? '绘制模式下已禁用工作台' : r ? '收起标记工作台' : '打开标记工作台'
+                            children: n ? 'Bàn làm việc đã bị vô hiệu hóa trong chế độ vẽ' : r ? 'Thu gọn bàn làm việc đánh dấu' : 'Mở bàn làm việc đánh dấu'
                         }), n && (0, i.jsxs)('div', {
                             className: di,
                             children: [(0, i.jsx)('span', {
                                 className: fi,
-                                children: '涂画颜色'
+                                children: 'Màu vẽ'
                             }), (0, i.jsx)('div', {
                                 className: mi,
                                 children: ps.map(e => (0, i.jsx)('button', {
@@ -13400,14 +13411,14 @@
                                         backgroundColor: e
                                     },
                                     onClick: () => c(e),
-                                    'aria-label': `涂画颜色 ${e}`
+                                    'aria-label': `Màu vẽ ${e}`
                                 }, e))
                             })]
                         }), n && (0, i.jsx)('button', {
                             className: xi,
                             onClick: d,
                             type: 'button',
-                            children: '清空涂画'
+                            children: 'Xóa sạch nét vẽ'
                         })]
                     })]
                 })
@@ -13443,10 +13454,10 @@
                         className: Ti,
                         children: [(0, i.jsx)('span', {
                             className: Ci,
-                            children: '标记工作台'
+                            children: 'Bàn làm việc đánh dấu'
                         }), (0, i.jsx)('span', {
                             className: ji,
-                            children: n ? '点击地图添加标记' : '支持搜索、定位与详情编辑'
+                            children: n ? 'Nhấp vào bản đồ để thêm đánh dấu' : 'Hỗ trợ tìm kiếm, định vị và chỉnh sửa chi tiết'
                         })]
                     }), (0, i.jsxs)('div', {
                         className: Ei,
@@ -13455,12 +13466,12 @@
                             className: `${Mi} ${n ? Di : ''}`,
                             onClick: l,
                             disabled: t,
-                            children: n ? '取消新增' : '新增标记'
+                            children: n ? 'Hủy thêm mới' : 'Thêm đánh dấu mới'
                         }), (0, i.jsx)('input', {
                             className: Pi,
                             value: a,
                             onChange: e => r(e.target.value),
-                            placeholder: '搜索标记名称/分组/描述'
+                            placeholder: 'Tìm kiếm tên đánh dấu/nhóm/mô tả'
                         })]
                     }), (0, i.jsx)('div', {
                         className: zi,
@@ -13472,10 +13483,10 @@
                                     type: 'button',
                                     className: Ji,
                                     onClick: () => y(null),
-                                    children: '返回列表'
+                                    children: 'Quay lại danh sách'
                                 }), (0, i.jsx)('span', {
                                     className: Ii,
-                                    children: u.name || '未命名标记'
+                                    children: u.name || 'Đánh dấu chưa đặt tên'
                                 })]
                             }), (0, i.jsx)('div', {
                                 className: Yi,
@@ -13484,7 +13495,7 @@
                                         className: Zi,
                                         children: [(0, i.jsx)('label', {
                                             className: eo,
-                                            children: '名称'
+                                            children: 'Tên gọi'
                                         }), (0, i.jsx)('input', {
                                             className: to,
                                             value: c,
@@ -13494,13 +13505,13 @@
                                                     name: c
                                                 }), w(u.id)
                                             },
-                                            placeholder: '输入标记名称'
+                                            placeholder: 'Nhập tên đánh dấu'
                                         })]
                                     }), (0, i.jsxs)('div', {
                                         className: Zi,
                                         children: [(0, i.jsx)('label', {
                                             className: eo,
-                                            children: '分组'
+                                            children: 'Phân nhóm'
                                         }), (0, i.jsx)('input', {
                                             className: to,
                                             value: d,
@@ -13510,13 +13521,13 @@
                                                     group: d
                                                 }), w(u.id)
                                             },
-                                            placeholder: '例如：城邦 / 遗迹'
+                                            placeholder: 'Ví dụ: Thành Bang / Di tích'
                                         })]
                                     }), (0, i.jsxs)('div', {
                                         className: Zi,
                                         children: [(0, i.jsx)('label', {
                                             className: eo,
-                                            children: '图标'
+                                            children: 'Biểu tượng'
                                         }), (0, i.jsx)('div', {
                                             className: ao,
                                             children: bs.map(e => (0, i.jsxs)('button', {
@@ -13539,7 +13550,7 @@
                                         className: Zi,
                                         children: [(0, i.jsx)('label', {
                                             className: eo,
-                                            children: '颜色'
+                                            children: 'Màu sắc'
                                         }), (0, i.jsx)('div', {
                                             className: io,
                                             children: ps.map(e => (0, i.jsx)('button', {
@@ -13559,7 +13570,7 @@
                                         className: Zi,
                                         children: [(0, i.jsx)('label', {
                                             className: eo,
-                                            children: '描述'
+                                            children: 'Mô tả'
                                         }), (0, i.jsx)('textarea', {
                                             className: no,
                                             value: f,
@@ -13569,15 +13580,15 @@
                                                     description: f
                                                 }), w(u.id)
                                             },
-                                            placeholder: '输入标记说明'
+                                            placeholder: 'Nhập mô tả đánh dấu'
                                         })]
                                     }), (0, i.jsxs)('div', {
                                         className: Zi,
                                         children: [(0, i.jsxs)('label', {
                                             className: eo,
-                                            children: ['图片链接组', (0, i.jsx)('span', {
+                                            children: ['Nhóm liên kết hình ảnh', (0, i.jsx)('span', {
                                                 className: ko,
-                                                children: '（每行一个链接，支持多张图片轮播）'
+                                                children: '（Mỗi dòng một liên kết, hỗ trợ trình chiếu nhiều ảnh）'
                                             })]
                                         }), (0, i.jsx)('textarea', {
                                             className: no,
@@ -13592,14 +13603,14 @@
                                                     imageUrls: e
                                                 }), w(u.id)
                                             },
-                                            placeholder: '每行输入一个图片链接\n例如：https://example.com/image1.jpg\nhttps://example.com/image2.jpg'
+                                            placeholder: 'Nhập mỗi dòng một liên kết hình ảnh\nVí dụ: https://example.com/image1.jpg\nhttps://example.com/image2.jpg'
                                         }), m.filter(e => e.length > 0).length > 0 && (0, i.jsx)('div', {
                                             className: vo,
                                             children: m.filter(e => e.length > 0).map((e, t) => (0, i.jsxs)('div', {
                                                 className: _o,
                                                 children: [(0, i.jsx)('img', {
                                                     src: e,
-                                                    alt: `预览 ${t + 1}`,
+                                                    alt: `Xem trước ${t + 1}`,
                                                     className: xo,
                                                     onError: e => {
                                                         e.target.style.display = 'none'
@@ -13625,7 +13636,7 @@
                                             type: 'button',
                                             className: fo,
                                             onClick: () => k(u.id),
-                                            children: '删除标记'
+                                            children: 'Xóa đánh dấu'
                                         })
                                     })]
                                 })
@@ -13636,16 +13647,16 @@
                                 className: $i,
                                 children: [(0, i.jsx)('span', {
                                     className: Ri,
-                                    children: '标记列表'
+                                    children: 'Danh sách đánh dấu'
                                 }), (0, i.jsxs)('span', {
                                     className: Oi,
-                                    children: [s.length, ' 条']
+                                    children: [s.length, ' mục']
                                 })]
                             }), (0, i.jsx)('div', {
                                 className: qi,
                                 children: 0 === s.length ? (0, i.jsx)('div', {
                                     className: Xi,
-                                    children: '暂无标记'
+                                    children: 'Chưa có đánh dấu'
                                 }) : s.map(e => (0, i.jsxs)('button', {
                                     type: 'button',
                                     className: `${Hi} ${e.id === o ? Vi : ''}`,
@@ -13659,7 +13670,7 @@
                                             }
                                         }), (0, i.jsx)('div', {
                                             className: Ki,
-                                            children: e.name || '未命名标记'
+                                            children: e.name || 'Đánh dấu chưa đặt tên'
                                         })]
                                     }), (0, i.jsx)('div', {
                                         className: Wi,
@@ -13669,7 +13680,7 @@
                                             onClick: t => {
                                                 t.stopPropagation(), v(e)
                                             },
-                                            children: '定位'
+                                            children: 'Định vị'
                                         })
                                     })]
                                 }, e.id))
@@ -13714,16 +13725,16 @@
                                 className: As,
                                 children: [(0, i.jsx)('span', {
                                     className: Is,
-                                    children: e ? '绘制模式' : t ? '新增标记模式' : '浏览模式'
+                                    children: e ? 'Chế độ vẽ' : t ? 'Chế độ thêm đánh dấu' : 'Chế độ xem'
                                 }), (0, i.jsx)('span', {
                                     className: $s,
-                                    children: n ? '地图资源加载中…' : '支持缩放、平移、点击标记与落点新增'
+                                    children: n ? 'Đang tải tài nguyên bản đồ...' : 'Hỗ trợ thu phóng, di chuyển, nhấn vào đánh dấu và thêm vị trí đặt'
                                 })]
                             }), (0, i.jsxs)('div', {
                                 className: Rs,
                                 children: [(0, i.jsx)('span', {
                                     className: Os,
-                                    children: '当前选中'
+                                    children: 'Đang chọn'
                                 }), a ? (0, i.jsxs)('button', {
                                     type: 'button',
                                     className: Hs,
@@ -13734,11 +13745,11 @@
                                             backgroundColor: a.color ?? fs
                                         }
                                     }), (0, i.jsx)('span', {
-                                        children: a.name || '未命名标记'
+                                        children: a.name || 'Dấu mốc chưa đặt tên'
                                     })]
                                 }) : (0, i.jsx)('div', {
                                     className: qs,
-                                    children: '尚未选中标记'
+                                    children: 'Chưa chọn dấu mốc'
                                 })]
                             })]
                         }), (0, i.jsx)('div', {
@@ -13751,7 +13762,7 @@
                                 }), n && (0, i.jsx)('div', {
                                     className: Eo,
                                     children: (0, i.jsx)('span', {
-                                        children: '地图加载中，请稍候…'
+                                        children: 'Đang tải bản đồ, vui lòng đợi...'
                                     })
                                 }), (0, i.jsx)('div', {
                                     className: o,
@@ -13784,13 +13795,13 @@
                                             onClick: () => {
                                                 w(e => (e - 1 + v.length) % v.length)
                                             },
-                                            'aria-label': '查看上一张图片',
+                                            'aria-label': 'Xem ảnh trước',
                                             children: (0, i.jsx)('i', {
                                                 className: 'fa-solid fa-chevron-left'
                                             })
                                         }), (0, i.jsx)('img', {
                                             src: k,
-                                            alt: `${a.name || '标记'}主视觉`,
+                                            alt: `${a.name || 'Dấu mốc'} Hình ảnh chính`,
                                             className: Ys,
                                             onError: e => {
                                                 e.target.style.display = 'none'
@@ -13802,7 +13813,7 @@
                                                 onClick: () => {
                                                     w(e => (e + 1) % v.length)
                                                 },
-                                                'aria-label': '查看下一张图片',
+                                                'aria-label': 'Xem ảnh sau',
                                                 children: (0, i.jsx)('i', {
                                                     className: 'fa-solid fa-chevron-right'
                                                 })
@@ -13812,7 +13823,7 @@
                                                     type: 'button',
                                                     className: `${ui} ${e === x ? ci : ''}`,
                                                     onClick: () => w(e),
-                                                    'aria-label': `查看第 ${e + 1} 张图片`
+                                                    'aria-label': `Xem ảnh thứ ${e + 1}`
                                                 }, `${a.id}-dot-${e}`))
                                             })]
                                         })]
@@ -13829,10 +13840,10 @@
                                                 className: ni,
                                                 children: [(0, i.jsx)('div', {
                                                     className: ri,
-                                                    children: a.name || '未命名标记'
+                                                    children: a.name || 'Dấu mốc chưa đặt tên'
                                                 }), (0, i.jsx)('div', {
                                                     className: li,
-                                                    children: a.group || '未分组'
+                                                    children: a.group || 'Chưa phân nhóm'
                                                 })]
                                             })]
                                         })
@@ -13840,7 +13851,7 @@
                                         className: si,
                                         children: (0, i.jsx)('p', {
                                             className: ii,
-                                            children: a.description || '暂无说明'
+                                            children: a.description || 'Chưa có mô tả'
                                         })
                                     })]
                                 }), h)]
@@ -14097,7 +14108,7 @@
                         const n = Hn().get(e, 'map_markers', []);
                         Array.isArray(n) && H(n)
                     } catch (e) {
-                        console.error('[StatusMap] 读取地图涂画/标记失败:', e)
+                        console.error('[StatusMap] Đọc hình vẽ/đánh dấu bản đồ thất bại:', e)
                     }
                 }, [H]), (0, u.useEffect)(() => {
                     const e = window.setTimeout(() => {
@@ -14108,7 +14119,7 @@
                                 type: 'character'
                             })
                         } catch (e) {
-                            console.error('[StatusMap] 保存地图涂画失败:', e)
+                            console.error('[StatusMap] Lưu hình vẽ bản đồ thất bại:', e)
                         }
                     }, 1e3);
                     return () => window.clearTimeout(e)
@@ -14121,7 +14132,7 @@
                                 type: 'character'
                             })
                         } catch (e) {
-                            console.error('[StatusMap] 保存地图标记失败:', e)
+                            console.error('[StatusMap] Lưu đánh dấu bản đồ thất bại:', e)
                         }
                     }, 1e3);
                     return () => window.clearTimeout(e)
@@ -14243,7 +14254,7 @@
                                 })
                             } catch (e) {
                                 if (r.signal.aborted) return;
-                                console.error('[MapViewer] 地图加载失败:', e)
+                                console.error('[MapViewer] Tải bản đồ thất bại:', e)
                             }
                         })(), () => {
                             r.abort()
@@ -14403,15 +14414,15 @@
                 emptyHint: 'NewsTab-module__emptyHint--LCk5q'
             },
             Fo = [{
-                key: '阿斯塔利亚快讯',
+                key: 'Astaria_Express',
                 icon: 'fa-solid fa-newspaper',
                 colorClassName: 'categoryAccentNews'
             }, {
-                key: '酒馆留言板',
+                key: 'Tavern_Message_Board',
                 icon: 'fa-solid fa-clipboard',
                 colorClassName: 'categoryAccentBoard'
             }, {
-                key: '午后茶会',
+                key: 'AfternoonTeaParty',
                 icon: 'fa-solid fa-mug-hot',
                 colorClassName: 'categoryAccentTea'
             }],
@@ -14422,7 +14433,7 @@
             }) => {
                 const {
                     editEnabled: t
-                } = b(), n = e.新闻 ?? {}, a = (0, u.useMemo)(() => Fo.flatMap(e => {
+                } = b(), n = e.News ?? {}, a = (0, u.useMemo)(() => Fo.flatMap(e => {
                     const t = Hn().get(n, e.key, {});
                     return Hn().entries(t).filter(([, e]) => Boolean(e?.trim())).map(([t, n]) => ({
                         categoryKey: e.key,
@@ -14440,7 +14451,7 @@
                         children: (0, i.jsx)(Rn, {
                             className: Lo.emptyHint,
                             icon: 'fa-solid fa-newspaper',
-                            text: '暂无新闻'
+                            text: 'Chưa có tin tức'
                         })
                     })
                 }) : (0, i.jsx)('div', {
@@ -14448,7 +14459,7 @@
                     children: (0, i.jsx)('div', {
                         className: Lo.newsFeed,
                         children: a.map(e => {
-                            const n = `新闻.${e.categoryKey}.${e.title}`;
+                            const n = `News.${e.categoryKey}.${e.title}`;
                             return (0, i.jsxs)(jn, {
                                 className: Lo.newsFeedCard,
                                 bodyClassName: Lo.newsFeedCardBody,
@@ -14526,9 +14537,9 @@
                 inspectSubtitle: 'QuestsTab-module__inspectSubtitle--wQaN8',
                 questStatusBadge: 'QuestsTab-module__questStatusBadge--VH50j',
                 questPriorityBadge: 'QuestsTab-module__questPriorityBadge--qkOm1',
-                priority高: 'QuestsTab-module__priority高--uv3gD',
-                priority中: 'QuestsTab-module__priority中--_lhUX',
-                priority低: 'QuestsTab-module__priority低--AVM3s',
+                priority_high: 'QuestsTab-module__priority_high--uv3gD',
+                priority_medium: 'QuestsTab-module__priority_medium--_lhUX',
+                priority_low: 'QuestsTab-module__priority_low--AVM3s',
                 deleteButton: 'QuestsTab-module__deleteButton--E1_Sa',
                 questProgress: 'QuestsTab-module__questProgress--ZN13H',
                 questDetailPreview: 'QuestsTab-module__questDetailPreview--pvgbN',
@@ -14544,46 +14555,46 @@
                 emptyCardBody: 'QuestsTab-module__emptyCardBody--sZJst',
                 emptyHint: 'QuestsTab-module__emptyHint--qYP6l'
             },
-            $o = '全部',
+            $o = 'Tất cả',
             Ro = [{
-                key: '状态',
-                label: '状态',
+                key: 'status',
+                label: 'Trạng thái',
                 type: 'text'
             }, {
-                key: '关注度',
-                label: '关注度',
+                key: 'priority',
+                label: 'Mức độ ưu tiên',
                 type: 'select'
             }, {
-                key: '进展',
-                label: '进展',
+                key: 'progress',
+                label: 'Tiến triển',
                 type: 'textarea'
             }, {
-                key: '详情',
-                label: '详情',
+                key: 'details',
+                label: 'Chi tiết',
                 type: 'textarea'
             }, {
-                key: '目标',
-                label: '目标',
+                key: 'goal',
+                label: 'Mục tiêu',
                 type: 'textarea'
             }, {
-                key: '奖励',
-                label: '奖励',
+                key: 'reward',
+                label: 'Phần thưởng',
                 type: 'textarea'
             }],
             Oo = {
-                高: 0,
-                中: 1,
-                低: 2
+                High: 0,
+                Medium: 1,
+                Low: 2
             },
             qo = [{
-                value: '高',
-                label: '高'
+                value: 'Cao',
+                label: 'Cao'
             }, {
-                value: '中',
-                label: '中'
+                value: 'Trung',
+                label: 'Trung'
             }, {
-                value: '低',
-                label: '低'
+                value: 'Thấp',
+                label: 'Thấp'
             }],
             Ho = ({
                 name: e,
@@ -14592,7 +14603,7 @@
                 onInspect: a,
                 onDelete: r
             }) => {
-                const l = `任务列表.${e}`;
+                const l = `QuestList.${e}`;
                 return (0, i.jsxs)('button', {
                     type: 'button',
                     className: Io.questCard,
@@ -14606,12 +14617,12 @@
                                 className: Io.questTitle
                             }), (0, i.jsxs)('div', {
                                 className: Io.questBadges,
-                                children: [t.状态 ? (0, i.jsx)('span', {
+                                children: [t.Status ? (0, i.jsx)('span', {
                                     className: Io.questStatusBadge,
-                                    children: t.状态
-                                }) : null, t.关注度 ? (0, i.jsx)('span', {
-                                    className: `${Io.questPriorityBadge} ${Io[`priority${t.关注度}`] ?? ''}`.trim(),
-                                    children: t.关注度
+                                    children: t.Status
+                                }) : null, t.Priority ? (0, i.jsx)('span', {
+                                    className: `${Io.questPriorityBadge} ${Io[`priority${t.Priority}`] ?? ''}`.trim(),
+                                    children: t.Priority
                                 }) : null]
                             })]
                         }), n ? (0, i.jsx)('button', {
@@ -14620,36 +14631,36 @@
                             onClick: t => {
                                 t.stopPropagation(), r(e, l)
                             },
-                            title: '删除任务',
+                            title: 'Xóa nhiệm vụ',
                             children: (0, i.jsx)('i', {
                                 className: 'fa-solid fa-trash-can'
                             })
                         }) : null]
-                    }), t.进展 ? (0, i.jsx)('div', {
+                    }), t.Progress ? (0, i.jsx)('div', {
                         className: Io.questProgress,
-                        children: t.进展
-                    }) : null, t.详情 ? (0, i.jsx)('div', {
+                        children: t.Progress
+                    }) : null, t.Details ? (0, i.jsx)('div', {
                         className: Io.questDetailPreview,
-                        children: t.详情
+                        children: t.Details
                     }) : null, (0, i.jsxs)('div', {
                         className: Io.questMeta,
-                        children: [t.目标 ? (0, i.jsxs)('div', {
+                        children: [t.Goal ? (0, i.jsxs)('div', {
                             className: Io.questMetaRow,
                             children: [(0, i.jsx)('span', {
                                 className: Io.questMetaLabel,
-                                children: '目标'
+                                children: 'Mục tiêu'
                             }), (0, i.jsx)('span', {
                                 className: Io.questMetaValue,
-                                children: t.目标
+                                children: t.Goal
                             })]
-                        }) : null, t.奖励 ? (0, i.jsxs)('div', {
+                        }) : null, t.Reward ? (0, i.jsxs)('div', {
                             className: Io.questMetaRow,
                             children: [(0, i.jsx)('span', {
                                 className: Io.questMetaLabel,
-                                children: '奖励'
+                                children: 'Phần thưởng'
                             }), (0, i.jsx)('span', {
                                 className: Io.questMetaValue,
-                                children: t.奖励
+                                children: t.Reward
                             })]
                         }) : null]
                     })]
@@ -14660,19 +14671,19 @@
                 quest: t,
                 editEnabled: n
             }) => {
-                const a = `任务列表.${e}`,
+                const a = `QuestList.${e}`,
                     r = e => {
                         const r = t[e] ?? '',
                             l = `${a}.${e}`;
-                        return n ? '关注度' === e ? (0, i.jsx)(en, {
+                        return n ? 'Priority' === e ? (0, i.jsx)(en, {
                             path: l,
-                            value: r || '中',
+                            value: r || 'Trung',
                             type: 'select',
                             selectConfig: {
                                 options: qo
                             },
                             className: Io.questEditableField
-                        }) : '状态' === e ? (0, i.jsx)(en, {
+                        }) : 'Status' === e ? (0, i.jsx)(en, {
                             path: l,
                             value: r,
                             type: 'text',
@@ -14684,7 +14695,7 @@
                             className: Io.questEditableField
                         }) : (0, i.jsx)('div', {
                             className: Io.questDetailValue,
-                            children: r || '无'
+                            children: r || 'Chưa có'
                         })
                     };
                 return (0, i.jsx)('div', {
@@ -14716,10 +14727,10 @@
                     [d, f] = (0, u.useState)(() => Ae(o, $o)),
                     [m, p] = (0, u.useState)(null),
                     [h, g] = (0, u.useState)(() => Ae(c, '')),
-                    y = e.任务列表 ?? {},
+                    y = e.QuestList ?? {},
                     v = (0, u.useMemo)(() => Hn().entries(y), [y]),
                     x = (0, u.useMemo)(() => {
-                        const e = Hn().uniq(v.map(([, e]) => e.状态?.trim()).filter(e => Boolean(e)));
+                        const e = Hn().uniq(v.map(([, e]) => e.Status?.trim()).filter(e => Boolean(e)));
                         return [$o, ...e]
                     }, [v]);
                 (0, u.useEffect)(() => {
@@ -14727,11 +14738,11 @@
                 }, [d, x]);
                 const w = x.includes(d) ? d : $o,
                     k = (0, u.useMemo)(() => {
-                        const e = w === $o ? v : v.filter(([, e]) => (e.状态?.trim() || '') === w);
-                        return Hn().orderBy(e, [([, e]) => Oo[e.关注度 ?? '中'] ?? 99, ([e]) => e.toLowerCase()], ['asc', 'asc'])
+                        const e = w === $o ? v : v.filter(([, e]) => (e.Status?.trim() || '') === w);
+                        return Hn().orderBy(e, [([, e]) => Oo[e.Priority ?? 'Trung'] ?? 99, ([e]) => e.toLowerCase()], ['asc', 'asc'])
                     }, [w, v]),
-                    S = (0, u.useMemo)(() => x.reduce((e, t) => t === $o ? (e[t] = v.length, e) : (e[t] = v.filter(([, e]) => (e.状态?.trim() || '') === t).length, e), {}), [v, x]),
-                    N = (0, u.useMemo)(() => Hn().orderBy(v, [([, e]) => Oo[e.关注度 ?? '中'] ?? 99, ([e]) => e.toLowerCase()], ['asc', 'asc']), [v]),
+                    S = (0, u.useMemo)(() => x.reduce((e, t) => t === $o ? (e[t] = v.length, e) : (e[t] = v.filter(([, e]) => (e.Status?.trim() || '') === t).length, e), {}), [v, x]),
+                    N = (0, u.useMemo)(() => Hn().orderBy(v, [([, e]) => Oo[e.Priority ?? 'Trung'] ?? 99, ([e]) => e.toLowerCase()], ['asc', 'asc']), [v]),
                     T = (0, u.useMemo)(() => h ? v.find(([e]) => e === h) ?? null : null, [h, v]);
                 (0, u.useEffect)(() => {
                     if (!h) return void Ie(c, '');
@@ -14742,7 +14753,7 @@
                 }, [d, o]);
                 const C = (e, t) => {
                     a({
-                        type: '任务',
+                        type: 'Nhiệm vụ',
                         path: t,
                         name: e
                     })
@@ -14756,7 +14767,7 @@
                             className: Io.overviewHeader,
                             children: (0, i.jsx)(On, {
                                 icon: 'fa-solid fa-list-check',
-                                text: '任务态势',
+                                text: 'Tình thế nhiệm vụ',
                                 className: Io.overviewTitle,
                                 as: 'span'
                             })
@@ -14778,19 +14789,19 @@
                                 className: Io.overviewFocusHeader,
                                 children: [(0, i.jsx)('span', {
                                     className: Io.overviewFocusLabel,
-                                    children: '当前焦点'
+                                    children: 'Tiêu điểm hiện tại'
                                 }), h ? (0, i.jsx)('button', {
                                     type: 'button',
                                     className: Io.focusClearButton,
                                     onClick: () => g(''),
-                                    children: '清空'
+                                    children: 'Xóa sạch'
                                 }) : null]
                             }), v.length > 0 ? (0, i.jsxs)('div', {
                                 className: Io.overviewFocusControls,
                                 children: [(0, i.jsx)('label', {
                                     className: Io.overviewFocusSelectLabel,
                                     htmlFor: 'quest-focus-select',
-                                    children: '选择焦点任务'
+                                    children: 'Chọn nhiệm vụ tiêu điểm'
                                 }), (0, i.jsxs)('select', {
                                     id: 'quest-focus-select',
                                     className: Io.overviewFocusSelect,
@@ -14798,7 +14809,7 @@
                                     onChange: e => g(e.target.value),
                                     children: [(0, i.jsx)('option', {
                                         value: '',
-                                        children: '未设置'
+                                        children: 'Chưa thiết lập'
                                     }), N.map(([e]) => (0, i.jsx)('option', {
                                         value: e,
                                         children: e
@@ -14810,24 +14821,24 @@
                                     className: Io.overviewFocusLine,
                                     children: [(0, i.jsx)('span', {
                                         className: Io.overviewFocusLineLabel,
-                                        children: '目标'
+                                        children: 'mục tiêu'
                                     }), (0, i.jsx)('span', {
                                         className: Io.overviewFocusText,
-                                        children: T[1].目标 || '暂无目标'
+                                        children: T[1].Goal || 'Tạm thời không có mục tiêu'
                                     })]
                                 }), (0, i.jsxs)('div', {
                                     className: Io.overviewFocusLine,
                                     children: [(0, i.jsx)('span', {
                                         className: Io.overviewFocusLineLabel,
-                                        children: '进展'
+                                        children: 'Tiến triển'
                                     }), (0, i.jsx)('span', {
-                                        className: T[1].进展 ? Io.overviewFocusText : Io.overviewFocusTextEmpty,
-                                        children: T[1].进展 || '暂无进展'
+                                        className: T[1].Progress ? Io.overviewFocusText : Io.overviewFocusTextEmpty,
+                                        children: T[1].Progress || 'Tạm thời không có tiến triển'
                                     })]
                                 })]
                             }) : (0, i.jsx)('span', {
                                 className: Io.overviewFocusEmpty,
-                                children: 0 === v.length ? '暂无任务焦点' : '请在上方选择一个任务作为焦点'
+                                children: 0 === v.length ? 'Tạm thời không có tiêu điểm nhiệm vụ' : 'Vui lòng chọn một nhiệm vụ ở phía trên làm tiêu điểm'
                             })]
                         })]
                     }), x.length > 1 ? (0, i.jsx)('div', {
@@ -14849,7 +14860,7 @@
                         children: (0, i.jsx)(Rn, {
                             className: Io.emptyHint,
                             icon: 'fa-solid fa-scroll',
-                            text: w === $o ? '暂无任务' : `暂无“${w}”状态的任务`
+                            text: w === $o ? 'Tạm thời không có nhiệm vụ' : `Tạm thời không có nhiệm vụ ở trạng thái “${w}”`
                         })
                     }) : (0, i.jsx)('div', {
                         className: Io.questList,
@@ -14870,12 +14881,12 @@
                         title: m?.name ?? '',
                         subtitle: m ? (0, i.jsxs)('div', {
                             className: Io.inspectSubtitle,
-                            children: [m.quest.状态 ? (0, i.jsx)('span', {
+                            children: [m.quest.Status ? (0, i.jsx)('span', {
                                 className: Io.questStatusBadge,
-                                children: m.quest.状态
-                            }) : null, m.quest.关注度 ? (0, i.jsx)('span', {
-                                className: `${Io.questPriorityBadge} ${Io[`priority${m.quest.关注度}`] ?? ''}`.trim(),
-                                children: m.quest.关注度
+                                children: m.quest.Status
+                            }) : null, m.quest.Priority ? (0, i.jsx)('span', {
+                                className: `${Io.questPriorityBadge} ${Io[`priority${m.quest.Priority}`] ?? ''}`.trim(),
+                                children: m.quest.Priority
                             }) : null]
                         }) : null,
                         onClose: () => {
@@ -14926,24 +14937,24 @@
                         className: Ko,
                         children: [(0, i.jsx)('span', {
                             className: Wo,
-                            children: '允许编辑数据'
+                            children: 'Cho phép chỉnh sửa dữ liệu'
                         }), (0, i.jsx)(Xt, {
                             value: r,
                             onChange: async e => {
-                                l(e), await s(), toastr.success(e ? '已启用编辑' : '已关闭编辑')
+                                l(e), await s(), toastr.success(e ? 'Đã bật chỉnh sửa' : 'Đã tắt chỉnh sửa')
                             },
-                            labelOff: '关闭',
-                            labelOn: '开启',
+                            labelOff: 'Tắt',
+                            labelOn: 'Bật',
                             size: 'sm'
                         })]
                     }), (0, i.jsxs)(jn, {
-                        title: '主题设置',
+                        title: 'Cài đặt chủ đề',
                         className: Go,
                         children: [(0, i.jsxs)('div', {
                             className: Yo,
                             children: [(0, i.jsx)('div', {
                                 className: Xo,
-                                children: '选择主题'
+                                children: 'Chọn chủ đề'
                             }), (0, i.jsx)('div', {
                                 className: Jo,
                                 children: q.map(n => (0, i.jsxs)('button', {
@@ -14966,15 +14977,15 @@
                             children: [(0, i.jsx)('button', {
                                 className: `${ru} ${su}`,
                                 onClick: async () => {
-                                    await n(), toastr.info('已恢复默认主题')
+                                    await n(), toastr.info('Đã khôi phục chủ đề mặc định')
                                 },
-                                children: '恢复默认'
+                                children: 'Khôi phục mặc định'
                             }), (0, i.jsx)('button', {
                                 className: `${ru} ${lu}`,
                                 onClick: async () => {
-                                    await a(), toastr.success('主题已保存')
+                                    await a(), toastr.success('Chủ đề đã được lưu')
                                 },
-                                children: '保存主题'
+                                children: 'Lưu chủ đề'
                             })]
                         })]
                     })]
@@ -15020,57 +15031,57 @@
             Uu = 'StatusTab-module__resourceSeparator--Kr2bK',
             Qu = 'StatusTab-module__expMax--nK30O',
             Ku = [{
-                key: '种族',
-                label: '种族',
+                key: 'Race',
+                label: 'Chủng tộc',
                 type: 'text',
                 editable: !0,
-                defaultValue: '未知'
+                defaultValue: 'Chưa rõ'
             }, {
-                key: '职业',
-                label: '职业',
+                key: 'Class',
+                label: 'Nghề nghiệp',
                 type: 'tags',
                 editable: !0,
                 defaultValue: []
             }, {
-                key: '身份',
-                label: '身份',
+                key: 'Identity',
+                label: 'Thân phận',
                 type: 'tags',
                 editable: !0,
                 defaultValue: []
             }, {
-                key: '生命层级',
-                label: '生命层级',
+                key: 'LifeTier',
+                label: 'Giai Vị Sinh Mệnh',
                 type: 'text',
                 editable: !1,
-                defaultValue: '第一层级'
+                default_value: 'Nhất Giai'
             }, {
-                key: '等级',
-                label: '等级',
+                key: 'Level',
+                label: 'Cấp độ',
                 type: 'number',
                 editable: !1,
                 defaultValue: 1,
                 prefix: 'Lv.'
             }, {
-                key: '冒险者等级',
-                label: '冒险者等级',
+                key: 'AdventurerRank',
+                label: 'Hạng mạo hiểm giả',
                 type: 'text',
                 editable: !0,
-                defaultValue: '未评级'
+                default_value: 'Chưa phân hạng'
             }],
             Wu = [{
                 label: 'HP',
-                currentKey: '生命值',
-                maxKey: '生命值上限',
+                currentKey: 'HP',
+                maxKey: 'MaxHP',
                 type: 'hp'
             }, {
                 label: 'MP',
-                currentKey: '法力值',
-                maxKey: '法力值上限',
+                currentKey: 'MP',
+                maxKey: 'MaxMP',
                 type: 'mp'
             }, {
                 label: 'SP',
-                currentKey: '体力值',
-                maxKey: '体力值上限',
+                currentKey: 'Stamina',
+                maxKey: 'MaxStamina',
                 type: 'sp'
             }],
             Gu = Oa({
@@ -15091,16 +15102,16 @@
                     [m, p] = (0, u.useState)(''),
                     [h, g] = (0, u.useState)(!1),
                     [y, v] = (0, u.useState)(!1),
-                    x = e.主角,
+                    x = e.Protagonist,
                     w = (0, u.useMemo)(() => Ne(), []);
                 (0, u.useEffect)(() => {
                     let e = !1;
                     return (async () => {
                         try {
-                            const [t, n] = await Promise.all([Te(w, 'player', '主角'), SillyTavern.substituteParams('{{userAvatarPath}}')]), a = _.trim(n || ''), r = a && '{{userAvatarPath}}' !== a ? a : '';
+                            const [t, n] = await Promise.all([Te(w, 'player', 'Protagonist'), SillyTavern.substituteParams('{{userAvatarPath}}')]), a = _.trim(n || ''), r = a && '{{userAvatarPath}}' !== a ? a : '';
                             e || (f(Ee(t) ? '' : t?.value ?? ''), g(Ee(t)), p(r))
                         } catch (t) {
-                            console.warn('[StatusTab] 读取主角头像失败:', t), e || (f(''), p(''), g(!1))
+                            console.warn('[StatusTab] Đọc ảnh đại diện Nhân Vật Chính thất bại:', t), e || (f(''), p(''), g(!1))
                         }
                     })(), () => {
                         e = !0
@@ -15108,17 +15119,17 @@
                 }, [w]);
                 const k = e => {
                     const t = _.get(x, e.key);
-                    if ('tags' === e.type) return _.isArray(t) && t.length > 0 ? t.join(' / ') : '无';
+                    if ('tags' === e.type) return _.isArray(t) && t.length > 0 ? t.join(' / ') : 'Không';
                     const n = t ?? e.defaultValue ?? '';
-                    return '' === n ? '无' : e.prefix ? `${e.prefix}${n}` : n
+                    return '' === n ? 'Không' : e.prefix ? `${e.prefix}${n}` : n
                 },
-                    S = x.状态效果 ?? {},
+                    S = x.StatusEffects ?? {},
                     N = {
                         total: Object.entries(S).length
                     },
-                    T = x.登神长阶,
-                    C = [Object.keys(T?.要素 ?? {}).length ? `要素 ${Object.keys(T?.要素 ?? {}).length}` : '', Object.keys(T?.权能 ?? {}).length ? `权能 ${Object.keys(T?.权能 ?? {}).length}` : '', Object.keys(T?.法则 ?? {}).length ? `法则 ${Object.keys(T?.法则 ?? {}).length}` : '', T?.神位 ? `神位 ${T.神位}` : '', T?.神国?.名称 ? `神国 ${T.神国.名称}` : ''],
-                    j = T?.是否开启 ? _.compact(C).join(' · ') || '已开启' : '未开启',
+                    T = x.AscensionStairway,
+                    C = [Object.keys(T?.Elements ?? {}).length ? `Yếu Tố ${Object.keys(T?.Elements ?? {}).length}` : '', Object.keys(T?.Authorities ?? {}).length ? `Quyền Năng ${Object.keys(T?.Authorities ?? {}).length}` : '', Object.keys(T?.Laws ?? {}).length ? `Pháp Tắc ${Object.keys(T?.Laws ?? {}).length}` : '', T?.Godhood ? `Thần Vị ${T.Godhood}` : '', T?.Divine_Kingdom?.Name ? `Thần Quốc ${T.Divine_Kingdom.Name}` : ''],
+                    j = T?.IsEnabled ? _.compact(C).join(' · ') || 'Đã kích hoạt' : 'Chưa kích hoạt',
                     E = h ? '' : d || m,
                     M = Me({
                         current_url: E,
@@ -15136,14 +15147,14 @@
                                 className: fu,
                                 children: [(0, i.jsx)('span', {
                                     className: mu,
-                                    children: '角色总览'
+                                    children: 'Tổng quan nhân vật'
                                 }), (0, i.jsxs)('div', {
                                     className: pu,
                                     children: [(0, i.jsx)(Tn, {
                                         src: E,
-                                        alt: '主角头像',
+                                        alt: 'Ảnh đại diện nhân vật chính',
                                         size: 'lg',
-                                        placeholderText: '主',
+                                        placeholderText: 'Chính',
                                         showEditHint: !0,
                                         className: hu,
                                         onClick: () => v(!0),
@@ -15156,25 +15167,25 @@
                                             className: gu,
                                             children: [(0, i.jsxs)('span', {
                                                 className: yu,
-                                                children: ['Lv.', x.等级 ?? 1]
+                                                children: ['Lv.', x.Level ?? 1]
                                             }), (0, i.jsx)('span', {
                                                 className: vu,
-                                                children: x.生命层级 || '未记录生命层级'
+                                                children: x.LifeTier || 'Chưa ghi nhận Giai Vị Sinh Mệnh'
                                             })]
                                         }), (0, i.jsx)('span', {
                                             className: _u,
-                                            children: x.冒险者等级 || '未评级冒险者'
+                                            children: x.AdventurerRank || 'Mạo hiểm giả chưa phân hạng'
                                         })]
                                     })]
                                 }), (0, i.jsxs)('div', {
                                     className: xu,
-                                    children: [_.map(x.属性, (e, n) => (0, i.jsxs)('div', {
+                                    children: [_.map(x.Attributes, (e, n) => (0, i.jsxs)('div', {
                                         className: wu,
                                         children: [(0, i.jsx)('span', {
                                             className: ku,
                                             children: n
                                         }), t ? (0, i.jsx)(en, {
-                                            path: `主角.属性.${n}`,
+                                            path: `Protagonist.Attributes.${n}`,
                                             value: e ?? 0,
                                             type: 'number',
                                             numberConfig: {
@@ -15190,10 +15201,10 @@
                                         className: wu,
                                         children: [(0, i.jsx)('span', {
                                             className: ku,
-                                            children: '属性点'
+                                            children: 'Điểm thuộc tính'
                                         }), t ? (0, i.jsx)(en, {
-                                            path: '主角.属性点',
-                                            value: x.属性点 ?? 0,
+                                            path: 'Protagonist.AttributePoints',
+                                            value: x.AttributePoints ?? 0,
                                             type: 'number',
                                             numberConfig: {
                                                 min: 0,
@@ -15201,7 +15212,7 @@
                                             }
                                         }) : (0, i.jsx)('span', {
                                             className: Su,
-                                            children: x.属性点 ?? 0
+                                            children: x.AttributePoints ?? 0
                                         })]
                                     })]
                                 }), (0, i.jsxs)('div', {
@@ -15210,19 +15221,19 @@
                                         className: Cu,
                                         children: [(0, i.jsx)('span', {
                                             className: ku,
-                                            children: '状态效果'
+                                            children: 'Hiệu ứng trạng thái'
                                         }), (0, i.jsx)(Ra, {
                                             effects: S,
                                             mode: 'chips',
                                             maxVisible: 4,
                                             showRemainingCount: !0,
-                                            emptyText: '无效果'
+                                            emptyText: 'Không có hiệu ứng'
                                         })]
                                     }), (0, i.jsxs)('div', {
                                         className: Cu,
                                         children: [(0, i.jsx)('span', {
                                             className: ku,
-                                            children: '登神长阶'
+                                            children: 'Đăng Thần Trường Giai'
                                         }), (0, i.jsx)('span', {
                                             className: Nu,
                                             children: j
@@ -15244,7 +15255,7 @@
                                         }), (0, i.jsxs)('div', {
                                             className: Vu,
                                             children: [(0, i.jsx)(en, {
-                                                path: `主角.${e.currentKey}`,
+                                                path: `Protagonist.${e.currentKey}`,
                                                 value: n,
                                                 type: 'number',
                                                 numberConfig: {
@@ -15256,7 +15267,7 @@
                                                 className: Uu,
                                                 children: '/'
                                             }), (0, i.jsx)(en, {
-                                                path: `主角.${e.maxKey}`,
+                                                path: `Protagonist.${e.maxKey}`,
                                                 value: a,
                                                 type: 'number',
                                                 numberConfig: {
@@ -15279,12 +15290,12 @@
                                     }), (0, i.jsxs)('div', {
                                         className: Vu,
                                         children: [(0, i.jsx)(en, {
-                                            path: '主角.累计经验值',
-                                            value: x.累计经验值 ?? 0,
+                                            path: 'Protagonist.TotalExperience',
+                                            value: x.TotalExperience ?? 0,
                                             type: 'number',
                                             numberConfig: {
                                                 min: 0,
-                                                max: _.isNumber(x.升级所需经验) ? x.升级所需经验 - 1 : void 0,
+                                                max: _.isNumber(x.ExpRequired) ? x.ExpRequired - 1 : void 0,
                                                 step: 1
                                             }
                                         }), (0, i.jsx)('span', {
@@ -15292,20 +15303,31 @@
                                             children: '/'
                                         }), (0, i.jsx)('span', {
                                             className: Qu,
-                                            children: _.isNumber(x.升级所需经验) ? x.升级所需经验 : 'MAX'
+                                            children: _.isNumber(x.ExpRequired) ? x.ExpRequired : 'TỐI ĐA'
                                         })]
                                     })]
                                 })]
                             }) : (0, i.jsxs)(i.Fragment, {
-                                children: [Wu.map(e => (0, i.jsx)(ra, {
-                                    label: e.label,
-                                    current: _.get(x, e.currentKey, 0),
-                                    max: _.get(x, e.maxKey, 0),
-                                    type: e.type
-                                }, e.type)), (0, i.jsx)(ra, {
+                                children: [Wu.map(e => {
+                                    const n = _.get(x, e.currentKey, 0),
+                                        a = _.get(x, e.maxKey, 0);
+                                    console.log('%c DEBUG VIEWER MODE ', 'background: #0000ff; color: #ffffff; font-weight: bold;', {
+                                        label: e.label,
+                                        currentKey: e.currentKey,
+                                        n: n,
+                                        a: a,
+                                        x_data: x
+                                    });
+                                    return (0, i.jsx)(ra, {
+                                        label: e.label,
+                                        current: n,
+                                        max: a,
+                                        type: e.type
+                                    }, e.type)
+                                }), (0, i.jsx)(ra, {
                                     label: 'EXP',
-                                    current: x.累计经验值 ?? 0,
-                                    max: _.isNumber(x.升级所需经验) ? x.升级所需经验 : 999,
+                                    current: x.TotalExperience ?? 0,
+                                    max: _.isNumber(x.ExpRequired) ? x.ExpRequired : 999,
                                     type: 'exp'
                                 })]
                             })
@@ -15313,13 +15335,13 @@
                     }), (0, i.jsx)('div', {
                         className: ju,
                         children: (0, i.jsx)(jn, {
-                            title: '角色档案',
+                            title: 'Hồ sơ nhân vật',
                             className: uu,
                             children: (0, i.jsx)('div', {
                                 className: Mu,
                                 children: Ku.map(e => (e => {
                                     const n = _.get(x, e.key),
-                                        a = `主角.${e.key}`;
+                                        a = `Protagonist.${e.key}`;
                                     return t && e.editable ? (0, i.jsxs)('div', {
                                         className: Du,
                                         children: [(0, i.jsx)('span', {
@@ -15354,7 +15376,7 @@
                                 children: [(0, i.jsxs)('div', {
                                     children: [(0, i.jsx)('div', {
                                         className: Au,
-                                        children: '状态效果'
+                                        children: 'Hiệu quả trạng thái'
                                     }), (0, i.jsx)('div', {
                                         className: Iu,
                                         children: (0, i.jsx)(Ra, {
@@ -15363,7 +15385,7 @@
                                             compact: !0,
                                             maxVisible: 4,
                                             showRemainingCount: !0,
-                                            emptyText: '无效果'
+                                            emptyText: 'Không có hiệu quả'
                                         })
                                     })]
                                 }), (0, i.jsxs)('div', {
@@ -15385,7 +15407,7 @@
                                 children: [(0, i.jsxs)('div', {
                                     children: [(0, i.jsx)('div', {
                                         className: Au,
-                                        children: '登神长阶'
+                                        children: 'Đăng Thần Trường Giai'
                                     }), (0, i.jsx)('div', {
                                         className: Iu,
                                         children: j
@@ -15394,7 +15416,7 @@
                                     className: $u,
                                     children: [(0, i.jsx)('span', {
                                         className: Ru,
-                                        children: T?.是否开启 ? '已开启' : '未开启'
+                                        children: T?.IsEnabled ? 'Đã bật' : 'Chưa bật'
                                     }), (0, i.jsx)('i', {
                                         className: `fa-solid fa-chevron-right ${Ou}`
                                     })]
@@ -15403,39 +15425,39 @@
                         })]
                     }), (0, i.jsx)($n, {
                         open: 'status-effects' === o,
-                        title: '状态效果',
-                        subtitle: N.total ? Object.keys(S).join('、') : '无效果',
+                        title: 'Trạng thái hiệu quả',
+                        subtitle: N.total ? Object.keys(S).join('、') : 'Không có hiệu quả',
                         onClose: () => c(null),
                         children: (0, i.jsx)(Ra, {
                             effects: S,
                             editEnabled: t,
-                            pathPrefix: '主角.状态效果',
+                            pathPrefix: 'Protagonist.StatusEffects',
                             onDelete: e => a({
-                                type: '状态效果',
-                                path: `主角.状态效果.${e}`,
+                                type: 'Trạng thái hiệu quả',
+                                path: `Protagonist.StatusEffects.${e}`,
                                 name: e
                             })
                         })
                     }), (0, i.jsx)($n, {
                         open: 'ascension' === o,
-                        title: '登神长阶',
+                        title: 'Đăng Thần Trường Giai',
                         subtitle: j,
                         onClose: () => c(null),
                         children: (0, i.jsx)(nn, {
-                            data: x.登神长阶,
+                            data: x.AscensionStairway,
                             editEnabled: t,
-                            pathPrefix: '主角.登神长阶'
+                            pathPrefix: 'Protagonist.AscensionStairway'
                         })
                     }), (0, i.jsx)(hn, {
                         open: y,
-                        title: '主角头像',
-                        subtitle: E ? '支持导入本地图片、保存图片链接、导出当前头像，或恢复到酒馆默认头像。' : '当前未设置头像，可导入图片、填写图片链接，或恢复到酒馆默认头像。',
-                        linkPlaceholder: '请输入主角头像图片链接',
+                        title: 'Ảnh đại diện nhân vật chính',
+                        subtitle: E ? 'Hỗ trợ nhập ảnh cục bộ, lưu liên kết ảnh, xuất ảnh đại diện hiện tại hoặc khôi phục về ảnh đại diện mặc định của tửu quán.' : 'Hiện chưa thiết lập ảnh đại diện, có thể nhập ảnh, điền liên kết ảnh hoặc khôi phục về ảnh đại diện mặc định của tửu quán.',
+                        linkPlaceholder: 'Vui lòng nhập liên kết ảnh đại diện của nhân vật chính',
                         canExport: M.canExport,
                         canDelete: M.canDelete,
                         canReset: M.canReset,
-                        deleteLabel: '删除头像',
-                        resetLabel: '恢复默认',
+                        deleteLabel: 'Xóa ảnh đại diện',
+                        resetLabel: 'Khôi phục mặc định',
                         onClose: () => v(!1),
                         onUpload: async e => {
                             try {
@@ -15444,12 +15466,12 @@
                                 await Ce({
                                     scope_key: w,
                                     owner_type: 'player',
-                                    owner_name: '主角',
+                                    owner_name: 'Nhân vật chính',
                                     source_type: 'upload',
                                     value: t
                                 }), f(t), g(!1)
                             } catch (e) {
-                                console.warn('[StatusTab] 上传主角头像失败:', e)
+                                console.warn('[StatusTab] Tải lên ảnh đại diện nhân vật chính thất bại:', e)
                             }
                         },
                         onSubmitLink: async e => {
@@ -15458,26 +15480,26 @@
                                 await Ce({
                                     scope_key: w,
                                     owner_type: 'player',
-                                    owner_name: '主角',
+                                    owner_name: 'Nhân vật chính',
                                     source_type: 'url',
                                     value: t
                                 }), f(t), g(!1)
                             } catch (e) {
-                                console.warn('[StatusTab] 保存主角头像链接失败:', e)
+                                console.warn('[StatusTab] Lưu liên kết ảnh đại diện nhân vật chính thất bại:', e)
                             }
                         },
                         onExport: async () => {
                             if (E) try {
                                 await De('player-avatar.png', E)
                             } catch (e) {
-                                console.warn('[StatusTab] 导出主角头像失败:', e)
+                                console.warn('[StatusTab] Xuất ảnh đại diện nhân vật chính thất bại:', e)
                             }
                         },
                         onDelete: async () => {
                             try {
-                                await je(w, 'player', '主角'), f(''), g(!0)
+                                await je(w, 'player', 'Nhân vật chính'), f(''), g(!0)
                             } catch (e) {
-                                console.warn('[StatusTab] 移除主角头像失败:', e)
+                                console.warn('[StatusTab] Xóa ảnh đại diện Nhân Vật Chính thất bại:', e)
                             }
                         },
                         onReset: async () => {
@@ -15486,9 +15508,9 @@
                                     await ke('readwrite', async a => {
                                         await Se(a.delete(we(e, t, n)))
                                     })
-                                })(w, 'player', '主角'), f(''), g(!1)
+                                })(w, 'player', 'Nhân Vật Chính'), f(''), g(!1)
                             } catch (e) {
-                                console.warn('[StatusTab] 恢复默认主角头像失败:', e)
+                                console.warn('[StatusTab] Khôi phục ảnh đại diện Nhân Vật Chính mặc định thất bại:', e)
                             }
                         }
                     }), (0, i.jsx)(En, {
@@ -15511,12 +15533,12 @@
                     r(), l()
                 }, [r, l]);
                 const o = (0, u.useMemo)(() => {
-                    const e = Object.entries(s?.任务列表 ?? {}).filter(([, e]) => '已完成' !== (e.状态?.trim() || '')).length;
+                    const e = Object.entries(s?.QuestList ?? {}).filter(([, e]) => 'Đã hoàn thành' !== (e.Status?.trim() || '')).length;
                     return c.map(t => 'quests' === t.id ? {
                         ...t,
                         badge: e
                     } : t)
-                }, [s?.任务列表]);
+                }, [s?.QuestList]);
                 return (0, i.jsxs)(fe, {
                     children: [(0, i.jsx)(ce, {
                         onSettingsClick: () => {
@@ -15547,7 +15569,7 @@
                                 default:
                                     return (0, i.jsx)('div', {
                                         className: 'placeholder',
-                                        children: '未知页面'
+                                        children: 'Trang không xác định'
                                     })
                             }
                         })()
@@ -21856,18 +21878,18 @@
             color: var(--theme-text-primary)
         }
 
-        .QuestsTab-module__priority高--uv3gD {
+        .QuestsTab-module__priority_high--uv3gD {
             border-color: color-mix(in srgb, var(--theme-warning) 42%, var(--theme-card-border) 58%);
             background: color-mix(in srgb, var(--theme-warning) 18%, transparent);
             color: color-mix(in srgb, var(--theme-warning) 72%, var(--theme-text-primary) 28%)
         }
 
-        .QuestsTab-module__priority中--_lhUX {
+        .QuestsTab-module__priority_medium--_lhUX {
             border-color: color-mix(in srgb, var(--theme-primary-bg) 42%, var(--theme-card-border) 58%);
             background: color-mix(in srgb, var(--theme-primary-bg) 16%, transparent)
         }
 
-        .QuestsTab-module__priority低--AVM3s {
+        .QuestsTab-module__priority_low--AVM3s {
             opacity: .84
         }
 
