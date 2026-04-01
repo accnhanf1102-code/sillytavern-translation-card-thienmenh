@@ -1,5 +1,5 @@
 {
-    "consumables": [
+    "Tiêu Thụ": [
         {
             "name": "Lương khô nén đặc sản Cảng Vụ Tinh",
             "cost": 5,
@@ -42,8 +42,8 @@
             "rarity": "uncommon",
             "quantity": 5,
             "effect": {
-                "life_recovery": "Lập tức hồi phục 230 điểm HP",
-                "continuous_regeneration": "Hồi phục 150 điểm HP khi bắt đầu mỗi hiệp, duy trì trong 2 hiệp。"
+                "Hồi Phục": "Lập tức hồi phục 230 điểm HP",
+                "Hồi Phục Theo Thời Gian": "Hồi phục 150 điểm HP khi bắt đầu mỗi hiệp, duy trì trong 2 hiệp。"
             },
             "description": "Dược thủy đỏ tươi như than hồng đang cháy, hương thơm ngọt ngào của thảo dược nồng đậm hơn. Nó có thể làm ngọn lửa sinh mệnh bùng cháy trở lại, là vật phẩm thường trực trong hành trang của những mạo hiểm giả kỳ cựu。"
         },
@@ -60,8 +60,8 @@
             "rarity": "rare",
             "quantity": 5,
             "effect": {
-                "GreaterLifeRecovery": "Hồi phục ngay lập tức 680 điểm HP",
-                "Fortitude": "Thêm trạng thái [Kiên Định], giảm 12% sát thương nhận vào, duy trì 3 hiệp。"
+                "Hồi Phục Mạnh Mẽ": "Hồi phục ngay lập tức 680 điểm HP",
+                "Kiên Định": "Thêm trạng thái [Kiên Định], giảm 12% sát thương nhận vào, duy trì 3 hiệp。"
             },
             "description": "Trong suốt như hồng ngọc hóa lỏng, bên trong như có ngọn lửa đang tuôn trào. Sức mạnh sinh mệnh mạnh mẽ chứa đựng trong đó có thể nhanh chóng khâu lành những vết thương cận tử, kéo linh hồn trở về từ bờ vực cái chết。"
         },
@@ -76,7 +76,7 @@
             "rarity": "common",
             "quantity": 5,
             "effect": {
-                "weak_mana_recovery": "Khôi phục ngay lập tức 70 điểm MP。"
+                "Hồi Phục MP Sơ Cấp": "Khôi phục ngay lập tức 70 điểm MP。"
             },
             "description": "Trong chai là chất lỏng màu xanh nhạt dập dềnh, mang theo một chút hơi lạnh như bạc hà. Có thể khiến nguồn ma lực khô cạn một lần nữa gợn lên những gợn sóng yếu ớt nhất。"
         },
@@ -92,8 +92,8 @@
             "rarity": "uncommon",
             "quantity": 5,
             "effect": {
-                "mana_recovery": "Khôi phục ngay lập tức 230 điểm MP",
-                "continuous_mana_regen": "Mỗi khi bắt đầu hiệp khôi phục 150 điểm MP, duy trì trong 2 hiệp。"
+                "Hồi Phục MP": "Khôi phục ngay lập tức 230 điểm MP",
+                "Hồi Phục MP theo thời gian": "Mỗi khi bắt đầu hiệp khôi phục 150 điểm MP, duy trì trong 2 hiệp。"
             },
             "description": "Chất lỏng màu xanh thẳm xoay tròn trong chai, tựa như biển đêm không sao. Uống nó vào, năng lượng mát lạnh sẽ làm dịu đi sự nôn nóng của tinh thần, khiến pháp sư đã kiệt quệ một lần nữa tràn đầy sức mạnh。"
         },
@@ -110,8 +110,8 @@
             "rarity": "rare",
             "quantity": 5,
             "effect": {
-                "greater_mana_restoration": "Lập tức phục hồi 680 điểm MP",
-                "arcane_energy_saving": "Giảm 10% tiêu tốn MP của tất cả kỹ năng, duy trì 3 vòng。"
+                "Hồi Phục MP Cao Cấp": "Lập tức phục hồi 680 điểm MP",
+                "Giảm Tiêu Hao MP": "Giảm 10% tiêu tốn MP của tất cả kỹ năng, duy trì 3 vòng。"
             },
             "description": "Giống như bầu trời hóa lỏng, giữa sắc xanh thuần khiết lấp lánh những điểm sáng Áo thuật. Nó có thể khiến những thi pháp giả gần như kiệt sức một lần nữa cảm nhận được sự bao la của biển ma lực, từ đó ngâm xướng ra những câu chú mạnh mẽ hơn。"
         },
@@ -126,7 +126,7 @@
             "rarity": "common",
             "quantity": 5,
             "effect": {
-                "Weak_Vitality_Recovery": "Hồi phục ngay lập tức 70 điểm SP。"
+                "Hồi Phục Thể Lực Sơ Cấp": "Hồi phục ngay lập tức 70 điểm SP。"
             },
             "description": "Một loại đồ uống màu xanh lá nhạt hơi đục, tỏa ra mùi đất của cỏ xanh sau cơn mưa. Có thể mang lại sự thư giãn ngắn ngủi cho những cơ bắp mệt mỏi, khiến bước chân không còn nặng nề như vậy。"
         },
@@ -142,8 +142,8 @@
             "rarity": "uncommon",
             "quantity": 5,
             "effect": {
-                "Vitality_Recovery": "Hồi phục ngay lập tức 230 điểm SP",
-                "Continuous_Charging": "Mỗi khi bắt đầu hiệp đấu hồi phục 150 điểm SP, duy trì trong 2 hiệp。"
+                "Hồi Phục Thể Lực": "Hồi phục ngay lập tức 230 điểm SP",
+                "Hồi Liên Tục": "Mỗi khi bắt đầu hiệp đấu hồi phục 150 điểm SP, duy trì trong 2 hiệp。"
             },
             "description": "Chất lỏng màu xanh tươi như rêu rừng đầu hạ, mang theo mùi lá thông thanh khiết. Nó không chỉ có thể xua tan sự mệt mỏi hiện tại, mà còn cung cấp nguồn hoạt lực không ngừng, hỗ trợ chiến đấu bền bỉ hơn。"
         },
@@ -160,7 +160,7 @@
             "rarity": "rare",
             "quantity": 5,
             "effect": {
-                "Phục hồi sinh lực mạnh": "Lập tức phục hồi 680 điểm SP",
+                "Phục hồi thể lục mạnh": "Lập tức phục hồi 680 điểm SP",
                 "Tiết kiệm chiến kỹ": "Tiêu tốn SP của tất cả kỹ năng giảm 10%, duy trì 3 hiệp。"
             },
             "description": "Dường như ngưng tụ sức sống của cả khu rừng vào bên trong, lọ phỉ thúy hóa lỏng này tỏa ra ánh sáng của sinh mệnh. Uống nó vào, bạn sẽ cảm thấy tứ chi bách hài đều tràn đầy sức mạnh dùng không cạn, hai chữ mệt mỏi sẽ tạm thời bị xóa bỏ khỏi từ điển của bạn。"
@@ -178,7 +178,7 @@
             "rarity": "common",
             "quantity": 5,
             "effect": {
-                "weak_balanced_recovery": "Hồi phục ngay lập tức mỗi loại 25 điểm HP, MP, SP 。"
+                "Hồi Phục Toàn Diện Sơ Cấp": "Hồi phục ngay lập tức mỗi loại 25 điểm HP, MP, SP 。"
             },
             "description": "Một lọ chất lỏng tinh khiết không màu, tựa như sương sớm ngưng tụ, chỉ mang theo một làn hương cỏ xanh thanh khiết. Đây là Thánh Thủy được Giáo Đình ban phát cho các tu sĩ mới gia nhập, dạy cho họ sự cân bằng ban đầu của thân, tâm và linh hồn。"
         },
@@ -196,8 +196,8 @@
             "rarity": "uncommon",
             "quantity": 5,
             "effect": {
-                "balanced_recovery": "Hồi phục ngay lập tức mỗi loại 82 điểm HP, MP, SP",
-                "weak_calm": "Thêm trạng thái [Trấn Tĩnh Yếu]。"
+                "Hồi Phục Toàn Diện": "Hồi phục ngay lập tức mỗi loại 82 điểm HP, MP, SP",
+                "Trấn Tĩnh Sơ Cấp": "Thêm trạng thái [Trấn Tĩnh Sơ Cấp]。"
             },
             "description": "Trong chất lỏng tinh khiết tỏa ra vầng sáng màu trắng sữa dịu nhẹ, khi lắc nhẹ ánh sáng sẽ tăng cường trong chốc lát. Mùi hương giống như hơi thở thanh sạch của khu rừng sau cơn mưa, giúp người sử dụng cảm nhận được sự tĩnh lặng và hài hòa nội tại trong thời gian ngắn。"
         },
@@ -215,8 +215,8 @@
             "rarity": "rare",
             "quantity": 5,
             "effect": {
-                "PotentBalancedRecovery": "Hồi phục ngay lập tức mỗi loại 230 điểm HP, MP, SP",
-                "Calm": "Thêm trạng thái [Trấn Tĩnh]。"
+                "Hồi Phục Toàn Diện Cao Cấp": "Hồi phục ngay lập tức mỗi loại 230 điểm HP, MP, SP",
+                "Trấn Tĩnh": "Thêm trạng thái [Trấn Tĩnh]。"
             },
             "description": "Vật chất trong bình không còn là chất lỏng đơn thuần nữa, mà giống như ánh sáng trắng tinh khiết đang chảy. Mùi hương thánh khiết của nhang và hoa bách hợp trong thánh điện phả vào mặt, uống nó vào, giống như hòa quyện một mảnh hào quang thần thánh nhỏ vào bản thân, tẩy rửa mọi sự mất cân bằng。"
         },

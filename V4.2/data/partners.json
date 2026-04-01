@@ -3,7 +3,7 @@
     {
       "name": "Eilin",
       "cost": 100,
-      "lifeLevel": "Đệ nhất tầng cấp/Phổ thông tầng cấp",
+      "lifeLevel": "Đệ nhất Giai Vị/Phổ thông Giai Vị",
       "level": 4,
       "race": "Nhân tộc",
       "identity": [
@@ -62,7 +62,7 @@
     {
       "name": "Fina",
       "cost": 100,
-      "lifeLevel": "Đệ nhất tầng cấp/Phổ thông tầng cấp",
+      "lifeLevel": "Đệ nhất Giai Vị/Phổ thông Giai Vị",
       "level": 4,
       "race": "Tinh linh",
       "identity": [
@@ -135,7 +135,7 @@
     {
       "name": "Miko",
       "cost": 100,
-      "lifeLevel": "Đệ nhất tầng cấp/Phổ thông tầng cấp",
+      "lifeLevel": "Đệ nhất Giai Vị/Phổ thông Giai Vị",
       "level": 4,
       "race": "Thú tộc (Miêu tộc)",
       "identity": [
@@ -195,7 +195,7 @@
     {
       "name": "Luna",
       "cost": 100,
-      "lifeLevel": "Đệ nhất tầng cấp/Phổ thông tầng cấp",
+      "lifeLevel": "Đệ nhất Giai Vị/Phổ thông Giai Vị",
       "level": 4,
       "race": "Dực tộc",
       "identity": [
@@ -253,11 +253,11 @@
       ]
     }
   ],
-  "Đệ nhị tầng cấp": [
+  "Đệ nhị Giai Vị": [
     {
       "name": "Claire Ventrue",
       "cost": 250,
-      "lifeLevel": "Đệ nhị tầng cấp/Trung kiên tầng cấp",
+      "lifeLevel": "Đệ nhị Giai Vị/Trung kiên Giai Vị",
       "level": 8,
       "race": "Nhân tộc",
       "identity": [
@@ -317,7 +317,7 @@
     {
       "name": "Ilya Moonshadow",
       "cost": 250,
-      "lifeLevel": "Đệ nhị tầng cấp/Trung kiên tầng cấp",
+      "lifeLevel": "Đệ nhị Giai Vị/Trung kiên Giai Vị",
       "level": 8,
       "race": "Tinh linh",
       "identity": [
@@ -377,7 +377,7 @@
     {
       "name": "Fenrir",
       "cost": 250,
-      "lifeLevel": "Đệ nhị tầng cấp/Trung kiên tầng cấp",
+      "lifeLevel": "Đệ nhị Giai Vị/Trung kiên Giai Vị",
       "level": 8,
       "race": "Thú tộc (Lang tộc)",
       "identity": [
@@ -437,7 +437,7 @@
     {
       "name": "Seraphina",
       "cost": 250,
-      "lifeLevel": "Đệ nhị tầng cấp/Trung kiên tầng cấp",
+      "lifeLevel": "Đệ nhị Giai Vị/Trung kiên Giai Vị",
       "level": 8,
       "race": "Dực tộc",
       "identity": [
@@ -506,11 +506,11 @@
       ]
     }
   ],
-  "Đệ tam tầng cấp": [
+  "Đệ tam Giai Vị": [
     {
       "name": "Suigintou",
       "cost": 400,
-      "lifeLevel": "Đệ tam tầng cấp/Tinh anh tầng cấp",
+      "lifeLevel": "Đệ tam Giai Vị/Tinh anh Giai Vị",
       "level": 11,
       "race": "Người giả kim phỏng sinh",
       "identity": [
@@ -584,7 +584,7 @@
     {
       "name": "Celestine Aerylon",
       "cost": 400,
-      "lifeLevel": "Đệ tam tầng cấp/Tinh anh tầng cấp",
+      "lifeLevel": "Đệ tam Giai Vị/Tinh anh Giai Vị",
       "level": 10,
       "race": "Dực Nhân",
       "identity": [
@@ -639,7 +639,7 @@
           ],
           "rarity": "epic",
           "effect": {
-            "Tịnh hóa trạng thái xấu": "Mỗi ngày một lần. Xóa bỏ tất cả trạng thái xấu tạm thời như nguyền rủa, trúng độc, bệnh tật không quá Đệ tam tầng cấp (cấp Tinh anh) cho bạn."
+            "Tịnh hóa trạng thái xấu": "Mỗi ngày một lần. Xóa bỏ tất cả trạng thái xấu tạm thời như nguyền rủa, trúng độc, bệnh tật không quá Đệ tam Giai Vị (cấp Tinh anh) cho bạn."
           },
           "description": "Dùng tín ngưỡng thành kính dẫn tới thánh quang, gột rửa tất cả ô uế."
         },
@@ -661,7 +661,7 @@
     {
       "name": "Hinteria Platinum",
       "cost": 400,
-      "lifeLevel": "Đệ tam tầng cấp/Tinh anh tầng cấp",
+      "lifeLevel": "Đệ tam Giai Vị/Tinh anh Giai Vị",
       "level": 11,
       "race": "Thú tộc (Bán nhân mã)",
       "identity": [
@@ -737,7 +737,7 @@
     {
       "name": "Nephys",
       "cost": 400,
-      "lifeLevel": "Đệ tam tầng cấp/Tinh anh tầng cấp",
+      "lifeLevel": "Đệ tam Giai Vị/Tinh anh Giai Vị",
       "level": 11,
       "race": "Hải Uyên Long (Á long biển chủng)",
       "identity": [
@@ -800,7 +800,7 @@
     {
       "name": "Ignis",
       "cost": 400,
-      "lifeLevel": "Đệ tam tầng cấp/Tinh anh tầng cấp",
+      "lifeLevel": "Đệ tam Giai Vị/Tinh anh Giai Vị",
       "level": 11,
       "race": "Viêm Ngục Long (Á long lửa chủng)",
       "identity": [
