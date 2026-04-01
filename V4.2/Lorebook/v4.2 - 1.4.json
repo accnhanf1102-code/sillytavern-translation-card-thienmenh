@@ -1574,7 +1574,7 @@
         "55888": {
             "uid": 55888,
             "displayIndex": 27,
-            "comment": "Hệ Thống Vận Mệnh - Cha Cha Core (lili)",
+            "comment": "Hệ Thống Vận Mệnh- Cha Cha Core (lili)",
             "disable": true,
             "constant": true,
             "selective": false,
@@ -1930,7 +1930,7 @@
         "67023": {
             "uid": 67023,
             "displayIndex": 496,
-            "comment": "Hệ Thống Vận Mệnh - Alice Core",
+            "comment": "Hệ Thống Vận Mệnh- Alice Core",
             "disable": false,
             "constant": true,
             "selective": false,
@@ -2164,7 +2164,7 @@
         "80760": {
             "uid": 80760,
             "displayIndex": 33,
-            "comment": "Hệ Thống Vận Mệnh - Lõi Tóc Nâu (by_lili)",
+            "comment": "Hệ Thống Vận Mệnh- Lõi Tóc Nâu (by_lili)",
             "disable": true,
             "constant": true,
             "selective": false,
@@ -2984,7 +2984,7 @@
         "103662": {
             "uid": 103662,
             "displayIndex": 12,
-            "comment": "Hệ Thống Vận Mệnh - Core Hươu Cao Cổ (Ngưỡng Vọng Tinh Không)",
+            "comment": "Hệ Thống Vận Mệnh- Core Hươu Cao Cổ (Ngưỡng Vọng Tinh Không)",
             "disable": true,
             "constant": true,
             "selective": false,
@@ -3637,7 +3637,7 @@
         "121768": {
             "uid": 121768,
             "displayIndex": 24,
-            "comment": "Hệ Thống Vận Mệnh - Dalian Core (Tùy Phong Tiệm Biến)",
+            "comment": "Hệ Thống Vận Mệnh- Dalian Core (Tùy Phong Tiệm Biến)",
             "disable": true,
             "constant": true,
             "selective": false,
@@ -4215,7 +4215,7 @@
         "144497": {
             "uid": 144497,
             "displayIndex": 22,
-            "comment": "Hệ Thống Vận Mệnh - Lõi Trọng Vi (Ngân Thì La)",
+            "comment": "Hệ Thống Vận Mệnh- Lõi Trọng Vi (Ngân Thì La)",
             "disable": true,
             "constant": true,
             "selective": false,
@@ -5249,7 +5249,7 @@
         "188735": {
             "uid": 188735,
             "displayIndex": 15,
-            "comment": "Hệ Thống Vận Mệnh - Lilith Core (Tác giả FL)",
+            "comment": "Hệ Thống Vận Mệnh- Lilith Core (Tác giả FL)",
             "disable": true,
             "constant": true,
             "selective": false,
@@ -5609,7 +5609,7 @@
         "198170": {
             "uid": 198170,
             "displayIndex": 31,
-            "comment": "Hệ Thống Vận Mệnh - Aria Core (by Alpha Nào Đó)",
+            "comment": "Hệ Thống Vận Mệnh- Aria Core (by Alpha Nào Đó)",
             "disable": true,
             "constant": true,
             "selective": false,
@@ -8016,7 +8016,7 @@
         "275911": {
             "uid": 275911,
             "displayIndex": 13,
-            "comment": "Hệ Thống Vận Mệnh - Amiya Core (Hàm Ngư Mùa Thu)",
+            "comment": "Hệ Thống Vận Mệnh- Amiya Core (Hàm Ngư Mùa Thu)",
             "disable": true,
             "constant": true,
             "selective": false,
@@ -8751,7 +8751,7 @@
         "308888": {
             "uid": 308888,
             "displayIndex": 25,
-            "comment": "Hệ Thống Vận Mệnh - Nai Long Core (K1nn)",
+            "comment": "Hệ Thống Vận Mệnh- Nai Long Core (K1nn)",
             "disable": true,
             "constant": true,
             "selective": false,
@@ -9168,7 +9168,7 @@
         "320618": {
             "uid": 320618,
             "displayIndex": 17,
-            "comment": "Hệ Thống Vận Mệnh - Don Quixote Core (Thập Thất)",
+            "comment": "Hệ Thống Vận Mệnh- Don Quixote Core (Thập Thất)",
             "disable": true,
             "constant": true,
             "selective": false,
@@ -9536,7 +9536,7 @@
         "333093": {
             "uid": 333093,
             "displayIndex": 29,
-            "comment": "Hệ Thống Vận Mệnh - Abigail Core - Trong (Phong Kiến U Lãnh)",
+            "comment": "Hệ Thống Vận Mệnh- Abigail Core - Trong (Phong Kiến U Lãnh)",
             "disable": true,
             "constant": true,
             "selective": false,
@@ -10292,7 +10292,7 @@
         "358594": {
             "uid": 358594,
             "displayIndex": 28,
-            "comment": "Hệ Thống Vận Mệnh - Abigail Core - Ngoài (Phong Kiến U Lãnh)",
+            "comment": "Hệ Thống Vận Mệnh- Abigail Core - Ngoài (Phong Kiến U Lãnh)",
             "disable": true,
             "constant": true,
             "selective": false,
@@ -11068,7 +11068,7 @@
         "387664": {
             "uid": 387664,
             "displayIndex": 20,
-            "comment": "Hệ Thống Vận Mệnh - Willow Core (Ngân Thì La)",
+            "comment": "Hệ Thống Vận Mệnh- Willow Core (Ngân Thì La)",
             "disable": true,
             "constant": true,
             "selective": false,
@@ -12400,7 +12400,7 @@
         "442392": {
             "uid": 442392,
             "displayIndex": 21,
-            "comment": "Hệ Thống Vận Mệnh - Hắc Vi Core (Ngân Thì La)",
+            "comment": "Hệ Thống Vận Mệnh- Hắc Vi Core (Ngân Thì La)",
             "disable": true,
             "constant": true,
             "selective": false,
@@ -13495,7 +13495,7 @@
         "468087": {
             "uid": 468087,
             "displayIndex": 32,
-            "comment": "Hệ Thống Vận Mệnh - Otto Apocalypse (by_lili)",
+            "comment": "Hệ Thống Vận Mệnh- Otto Apocalypse (by_lili)",
             "disable": true,
             "constant": true,
             "selective": false,
@@ -13781,7 +13781,7 @@
         "476830": {
             "uid": 476830,
             "displayIndex": 23,
-            "comment": "Hệ Thống Vận Mệnh - Ancestor Core (Kính Mộng Huyễn)",
+            "comment": "Hệ Thống Vận Mệnh- Ancestor Core (Kính Mộng Huyễn)",
             "disable": true,
             "constant": true,
             "selective": false,
@@ -14214,7 +14214,7 @@
         "484654": {
             "uid": 484654,
             "displayIndex": 18,
-            "comment": "Hệ Thống Vận Mệnh - Core Gawain Cecil (lili)",
+            "comment": "Hệ Thống Vận Mệnh- Core Gawain Cecil (lili)",
             "disable": true,
             "constant": true,
             "selective": false,
@@ -18184,7 +18184,7 @@
         "593795": {
             "uid": 593795,
             "displayIndex": 14,
-            "comment": "Hệ Thống Vận Mệnh - Lily Core (Thanh Nghiên)",
+            "comment": "Hệ Thống Vận Mệnh- Lily Core (Thanh Nghiên)",
             "disable": false,
             "constant": true,
             "selective": false,
@@ -19719,7 +19719,7 @@
         "640309": {
             "uid": 640309,
             "displayIndex": 495,
-            "comment": "Hệ Thống Vận Mệnh - [DLC][Mở Rộng][Alice Core][!Vận Mệnh Rút Thẻ]",
+            "comment": "Hệ Thống Vận Mệnh- [DLC][Mở Rộng][Alice Core][!Vận Mệnh Rút Thẻ]",
             "disable": false,
             "constant": false,
             "selective": true,
@@ -24469,7 +24469,7 @@
         "772802": {
             "uid": 772802,
             "displayIndex": 11,
-            "comment": "Hệ Thống Vận Mệnh - Core Tiểu Dạ Oanh (fishfish)",
+            "comment": "Hệ Thống Vận Mệnh- Core Tiểu Dạ Oanh (fishfish)",
             "disable": true,
             "constant": true,
             "selective": false,
@@ -24993,7 +24993,7 @@
         "795027": {
             "uid": 795027,
             "displayIndex": 19,
-            "comment": "Hệ Thống Vận Mệnh - null Core (Chuỗi H)",
+            "comment": "Hệ Thống Vận Mệnh- null Core (Chuỗi H)",
             "disable": true,
             "constant": true,
             "selective": false,
@@ -25041,7 +25041,7 @@
         "800223": {
             "uid": 800223,
             "displayIndex": 16,
-            "comment": "Hệ Thống Vận Mệnh - Core UNN Studio (lili)",
+            "comment": "Hệ Thống Vận Mệnh- Core UNN Studio (lili)",
             "disable": true,
             "constant": true,
             "selective": false,
@@ -26015,7 +26015,7 @@
         "838265": {
             "uid": 838265,
             "displayIndex": 30,
-            "comment": "Hệ Thống Vận Mệnh - Reader Core (Angtuck)",
+            "comment": "Hệ Thống Vận Mệnh- Reader Core (Angtuck)",
             "disable": true,
             "constant": true,
             "selective": false,
@@ -28603,7 +28603,7 @@
         "940156": {
             "uid": 940156,
             "displayIndex": 26,
-            "comment": "Hệ Thống Vận Mệnh - Merlin Core (Bắc Du)",
+            "comment": "Hệ Thống Vận Mệnh- Merlin Core (Bắc Du)",
             "disable": true,
             "constant": true,
             "selective": false,
