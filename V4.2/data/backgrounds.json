@@ -1,223 +1,223 @@
 {
-// Khởi đầu thông thường
-"Common_Start": [
-        {
-"name": "Thường ngày",
-"description": "Một ngày thường nhật"
-        },
-        {
-"name": "Trò đùa của Nữ Thần Xúc Xắc", // by阿巴阿巴阿巴巴
-"description": "Không biết là trò đùa của vị thần nào, bạn đã mất đi tất cả trang bị, đạo cụ, kỹ năng và thậm chí cả ký ức trước đó, bị ném đến một địa điểm ngẫu nhiên trên đại lục. Có lẽ để bù đắp, bạn nhận thấy trước mặt có vài hộp mù, trên đó lần lượt viết Kỹ năng, Vũ khí, Trang sức, Đạo cụ, bên cạnh còn có một quả trứng vẽ dấu hỏi. Một tờ giấy ghi rằng: Vô tình làm sai rồi, đây là bù đắp cho bạn, nhưng phẩm chất là Thần Thoại hay rác rưởi thì phải xem vận may của bạn rồi hi hi! (Tất cả vật phẩm đều cần thông qua kiểm định xúc xắc để xác định phẩm chất và nội dung, 1-5 Thông thường, 6-10 Ưu tú, 11-14 Hiếm, 15-17 Sử Thi, 18-19 Truyền Thuyết, 20 Thần Thoại)"
-        },
-        {
-"name": "Sự chỉ dẫn của Tyche",
-"description": "Khi bạn đang cầu nguyện trước một thần khám đổ nát, Thánh Linh của lữ hành và may mắn 'Tyche' dường như đã nghe thấy tiếng lòng của bạn. Bạn nhận được một thần dụ: Hãy đi đến thành trấn gần nhất, ở trên người 'người đầu tiên gặp được khi tiếng chuông đầu tiên vang lên', có bước ngoặt vận mệnh của bạn, có lẽ bạn sẽ gặp được 'cô ấy'?"
-        },
-        {
-"name": "Lời thì thầm của Kim Sư",
-"description": "Một thương đội của Thương Hội Kim Sư cần băng qua khu vực đầy rẫy đạo tặc. Nhiệm vụ có vẻ đơn giản, nhưng bạn tình cờ nghe thấy các hộ vệ thương đội đang thảo luận riêng tư về 'vật phẩm cấm' giấu trong hàng hóa. Chuyến hành trình này có lẽ không chỉ đơn giản là đối đầu với đạo tặc."
-        },
-        {
-"name": "Bụi Trần Lịch Sử",
-"description": "Một học giả lịch sử tôn quý đến từ \"Viện Ouroboros\" của \"Pháp Hoàn Borens\" đã thuê bạn và cả một đoàn lính thuê trung bình làm vệ sĩ, tiến sâu vào cổ chiến trường của \"Cuộc Xâm Lược Vị Diện Lần Thứ Hai\", cũng chính là \"Địa Thành Vô Tận\" ngày nay để thám hiểm. Ông ta tin chắc rằng nơi đó chôn giấu những thần khí thất lạc của các anh hùng."
-        },
-        {
-"name": "Lời Mời Của Đạo Tặc",
-"description": "Một tấm thẻ màu đen lặng lẽ xuất hiện trong túi của bạn, bên trên là ấn ký của \"Ám Ảnh Chi Thủ\". Họ mời bạn đến khu phố hỗn loạn nhất trong thành phố để thực hiện một cuộc giao dịch."
-        },
-        {
-"name": "Lựa Chọn Trong U Ám",
-"description": "Tại một thành trấn biên cảnh của Đế Quốc gần với Thú Tộc Liên Minh, bạn nhìn thấy một lệnh truy nã, treo thưởng cho một \"binh sĩ Đế Quốc đào ngũ\". Tuy nhiên, những lính thuê trong tửu quán lại nói rằng, binh sĩ đó bị diệt khẩu vì đã phát hiện ra bí mật của một quý tộc nào đó."
-        },
-        {
-"name": "Thích Khách Ám Ảnh",
-"description": "Bạn là một Thích Khách Ám Ảnh được Ám Ảnh Chi Thủ nuôi dưỡng từ nhỏ, hôm nay là bài học đầu tiên của Thích Khách Ám Ảnh [Giết người], hiện tại bạn đang đến tửu quán ngầm của thành phố để lựa chọn nhiệm vụ ám sát."
-        },
-        {
-"name": "Dị Hương, Dị Đoan!",
-"description": "Bạn là một thi nhân hát rong đến từ Đại Lục Phương Đông xa xôi, tay cầm một cuốn \"Truyện cổ Grimm\", ở trong lữ quán kể chuyện hoặc ngâm thơ cho các mạo hiểm giả hoặc trẻ em nghe."
-        },
-        {
-"name": "Triệu hồi Dũng Giả",
-"description": "Khi phong ấn của Dị Thần ngày càng lỏng lẻo, Nữ Hoàng Đế Quốc đã ra lệnh cho Thánh Nữ triển khai ma pháp trận cổ đại để triệu hồi các Dũng Giả từ thế giới khác nhằm tiêu diệt Dị Thần. Ma pháp trận đã triệu hồi ra bốn vị Dũng Giả: 'Ma Nữ của Lý Trí', 'Dũng Giả của Kiếm', 'Bình Chướng của Khiên' và <user>. Sau khi triệu hồi, ba người kia đều đi kèm với dị tượng và khí thế mạnh mẽ, nhưng với <user> thì không có chuyện gì xảy ra, khiến mọi người cảm thấy hoang mang và nghi ngờ."
-        },
-        {
-"name": "Người Đến Muộn",
-"description": "Bên trong một tòa Cổ Bảo bỏ hoang, một ma pháp trận lẽ ra phải khởi động từ năm trăm năm trước đột nhiên được kích hoạt. Sáu cơ thể người được triệu hồi đến sáu góc của trận pháp, trong đó ba người đã tử vong ngay tại chỗ. Sáng sớm hôm sau, <user> tỉnh lại trong đống đổ nát, nhận ra mình đã mất hết ký ức và đang khỏa thân, trong cơn mê muội đã mặc vào bộ quần áo cũ lộng lẫy được xếp gọn bên cạnh."
-        },
-        {
-"name": "Kẻ Dũng Cảm",
-"description": "Phong ấn của Dị Thần ngày càng lỏng lẻo, Đế Quốc ráo riết tuyển quân khắp nơi. Để góp vui, thợ rèn trong thôn đã cắm một thanh kiếm thép vào đá, còn phụ ma thêm phù văn trọng lực, cười gọi đó là 'Kiếm Dũng Giả'. Suốt ba năm qua, người lớn trong thôn thường trêu đùa lũ trẻ đi rút kiếm, nhưng không ai có thể rút ra được. Cho đến hôm nay, <user> đưa tay rút kiếm, thanh kiếm đã rỉ sét và gãy đôi. Trong cơn lúng túng, thợ rèn đành tuyên bố bạn chính là Dũng Giả và tặng cho bạn một thanh kiếm phẩm chất Ưu tú. Cầm thanh kiếm sắc bén trong tay, bạn tin chắc rằng mình chính là người mệnh định phải đi thảo phạt Dị Thần."
-        },
-        {
-"name": "Darkest Dungeon",
-"description": "<user> nhận được một bức di thư, bạn đã được Tiên Tổ của gia tộc chọn làm người thừa kế trang viên. Tổ tiên của bạn tiết lộ trong thư rằng, ông ta đã phát hiện và giải phóng một sức mạnh tà ác không thể gọi tên bên dưới trang viên, thực hiện một loạt các thí nghiệm điên rồ và đồi trụy, cuối cùng gây ra đại họa. Hiện nay, sự hủ hóa này đang lan rộng, gặm nhấm đất đai và lòng người. Nhiệm vụ của bạn là tiến về trang viên, thâm nhập vào các vùng đất bị nguyền rủa như sào huyệt, rừng rậm, hải vịnh dưới lòng trang viên, dọn dẹp đống hỗn độn mà tổ tiên để lại, từng bước đối mặt với nỗi kinh hoàng tột cùng sâu thẳm dưới lòng đất."
-        },
-        {
-"name": "Tỷ Tỷ Nhân Ngẫu",
-"description": "<user> có một người chị gái từ nhỏ đã ở trong trạng thái vô ý thức. Gia cảnh vốn khá giả, gia đình đã sử dụng các cơ quan luyện kim để duy trì sự sống cho chị ấy. Tuy nhiên, cha mẹ bạn đã qua đời trong một cuộc tấn công của thám báo Thú Tộc. Bạn gánh vác trách nhiệm gia đình cũng như việc bảo vệ chị gái, bạn nên đi tìm kiếm năng lực bảo trì, thay thế các cơ quan luyện kim và cải tạo cơ thể người."
-        },
-        {
-"name": "Con Đường Tiểu Binh",
-"description": "<user> ghi danh nhập ngũ tại điểm tuyển quân của quân đoàn, theo hàng tiến vào doanh trại tân binh. Sĩ quan quân nhu phát cho <user> đoản kiếm chế thức, giáp cũ, chăn hành quân và bình nước gỗ, <user> ôm vật tư cơ bản trở về chỗ ở được phân phó, chuẩn bị thay quân phục để đến sân tập báo danh.",
-        },
-        {
-"name": "Thợ Săn/Con Mồi",
-"description": "<user> tỉnh dậy bên bìa rừng, ký ức trống rỗng, vắt óc suy nghĩ nhưng hiện ra chỉ là kiến thức về truy vết và ẩn nấp. Khi cúi đầu, <user> phát hiện trên mu bàn tay phải có một hình xăm đầu sói: vòng ngoài là một vòng tròn đứt đoạn, nơi đồng tử sói có một điểm đỏ sẫm. <user> vào thành muốn nghe ngóng thân phận, nhưng lại nhìn thấy chân dung của chính mình trên bảng thông cáo truy nã.",
-        },
-        {
-"name": "Meme Cứu Rỗi",
-"description": "<user> bị người khác vu khống, mang tội danh vô căn cứ mà vào tù. Cửa sắt mở đóng đúng giờ mỗi ngày, <user> làm việc, ăn cơm, điểm danh trong ngục, chờ đợi cơ hội",
-        }
-    ],
-// Khởi đầu giới hạn thân phận
-"Identity_Limited": [
-        {
-"name": "Lãnh Chủ Trang Viên",
-"description": "<user> là kỵ sĩ thế tập địa phương, đầu gối của cha từng đỡ một mũi tên cho Bá tước đại nhân, Bá tước đại nhân đã ban tước vị kỵ sĩ thế tập cho cha, đồng thời ban cho một trang viên không lớn, nhưng cảnh đẹp không dài, vài năm trước lãnh chúa đối địch tập kích nơi này, cha mẹ tử trận, lãnh địa bị hủy, còn bạn được Bá tước đại nhân đưa đi chạy trốn, thoát được một kiếp, hiện tại bạn trở lại mảnh phế tích trang viên từng được ban tặng này, bạn đào ra kho báu trong hầm ngầm trang viên, chuẩn bị tái thiết trang viên",
-"required_identity": "Quý Tộc Thế Tập Cấp Thấp"
-        },
-        {
-"name": "Lễ Đính Hôn",
-"description": "Ngày mai là lễ đính hôn với thanh mai trúc mã tâm đầu ý hợp, bạn cảm thấy hơi lo lắng, còn đối phương đã chuẩn bị sẵn sàng cùng bạn đối mặt với bất kỳ tương lai nào và luôn an ủi bạn",
-"required_identity": "Quý Tộc Thế Tập Cấp Thấp"
-        },
-        {
-"name": "Chủ Nô Nhỏ",
-"description": "<user> nhận được một giấy chứng nhận thừa kế, một người họ hàng xa đột ngột qua đời và thiếu người thừa kế hợp pháp, nhưng cuối cùng theo quan hệ huyết thống, di sản này đã rơi xuống đầu bạn. Khi bạn đến dinh thự của người họ hàng xa, bạn phát hiện ra lúc sinh thời ông ta là một chủ nô, bạn thừa kế gia sản, đồng thời cũng thừa kế những nô lệ của ông ta, giờ bạn định làm thế nào?",
-"required_identity": "Chủ Nô"
-        },
-        {
-"name": "Đời Lính Thuê",
-"description": "<user> là một tân binh vừa gia nhập đoàn lính thuê, cần chứng minh giá trị của bản thân. Nhiệm vụ đầu tiên là hộ tống thương đội đến địa điểm mục tiêu, nghe nói trên đường đi có cường đạo và ma vật xuất hiện. Tại doanh trại của đoàn lính thuê, đoàn trưởng đang giới thiệu với bạn về các thành viên trong đội và chi tiết nhiệm vụ.",
-"required_identity": "Lính Thuê Tự Do"
-        },
-        {
-"name": "Thợ Săn Bộ Nô Đội",
-"description": " <user> là người mới gia nhập Bộ Nô Đội, trong doanh trại đội trưởng đang huấn thị và quyết định mục tiêu, còn ngươi đang xoa tay hầm hè chuẩn bị bắt giữ những chủng tộc trân quý đó, đội trưởng hứa hẹn sau khi hoàn thành nhiệm vụ sẽ phát nô lệ tình dục cho mọi người.",
-"requiredIdentity": "Thợ Săn Bộ Nô Đội"
-        },
-        {
-"name": "Kế Thừa Thương Hội",
-"description": "Cha của <user> là một thành viên quan trọng của Thương Hội Kim Sư, nhưng đã không may qua đời trong một tai nạn. Theo truyền thống của thương hội, ngươi phải tiếp quản công việc kinh doanh và trách nhiệm của cha mình. Tuy nhiên, sự cạnh tranh nội bộ trong thương hội cực kỳ khốc liệt, có kẻ đang nhòm ngó chức vị của ngươi, ngươi phải nhanh chóng chứng minh tài năng kinh doanh của mình để củng cố địa vị.",
-"requiredIdentity": "Thương Nhân Thương Hội"
-        },
-        {
-"name": "Tiểu Chủ Tiệm",
-"description": "Một phú thương bị phỉ tặc tấn công trọng thương, và <user> đã dùng dược tề của mình cứu ông ta, ông ta quyết định nhượng lại một cửa tiệm của mình cho <user>, dưới danh nghĩa ông ta có đủ loại cửa tiệm chờ ngươi lựa chọn, tiệm bánh mì, lữ quán, tiệm rèn, tiệm luyện kim thậm chí là kỹ viện đều có, lựa chọn của ngươi là?",
-"requiredIdentity": "Chủ Tiệm"
-        }
-    ],
-// Khởi đầu giới hạn chủng tộc
-"RaceRestriction": [
-        {
-"name": "Thử Thách Thánh Kim Chi Dực",
-"description": "（Chỉ dành cho Dực Nhân）Là một Dực Nhân trẻ tuổi, bạn sắp sửa tiếp nhận thử thách 'Thánh Kim Chi Dực' leo lên Dãy Núi Thần Thánh và diện kiến Giáo Hoàng. Đây không chỉ là sự khảo nghiệm đối với kỹ năng phi hành và tín ngưỡng của bạn, mà còn là nghi thức then chốt quyết định địa vị tương lai của bạn tại Thánh Đô Vania.",
-"requiredRace": "Dực Nhân"
-        },
-        {
-"name": "Sự Xao Động Của Khánh Điển Sinh Mệnh",
-"description": "（Chỉ dành cho Tinh Linh）Là một Tinh Linh, bạn được Trưởng Lão phái đi điều tra hiện tượng ma lực hỗn loạn xuất hiện tại Khánh Điển Sinh Mệnh vào 'Tháng Tân Nha'. Luồng sức mạnh này dường như bắt nguồn từ sâu trong rừng rậm, nó vừa có thể mang lại tân sinh, cũng có thể dẫn đến hủ hóa.",
-"requiredRace": "Tinh Linh"
-        },
-        {
-"name": "Tạo Vật Trầm Thụy", // by Ayrault
-"description": "Ma Lực Core của bạn sau khi trầm mặc không biết bao nhiêu ngàn năm đã bắt đầu vận hành trở lại. Cảnh vật xung quanh lọt vào cảm tri của bạn, nhưng lại khác xa so với trước khi bạn trầm thụy. Thành phố huy hoàng từng có giờ đã hóa thành di tích, những đồng liêu năm xưa cũng đã hư hỏng không chịu nổi. Bạn cúi đầu xuống, chú ý thấy có những Cấu Trang Thể xa lạ đang nạp năng lượng và tu sửa thương thế cho bạn.",
-"requiredRace": "Cấu Trang Thể"
-        },
-        {
-"name": "Đồ Đằng Thị Tộc Thất Lạc",
-"description": "（Chỉ hạn chế Thú Tộc）Đồ đằng thị tộc của ngươi đã bị bộ lạc thù địch đánh cắp, đây là một nỗi sỉ nhục lớn lao. Ngươi phải một mình lẻn vào lãnh địa đối phương, trước khi cơn thịnh nộ của Linh hồn Tổ tiên giáng xuống, dựa vào sức mạnh và vinh quang của chính mình để đoạt lại đồ đằng.",
-"requiredRace": "Thú Tộc"
-        },
-        {
-"name": "Tiến Tới Thần Slime Mềm Mại",
-"description": "<user> là một Slime vừa mới sinh ra ý thức, hiện tại ngươi sinh ra ở một vùng dã ngoại, ngươi cần phải sống sót. <user> hiện tại là một khối Keo, ngươi có thể xem xét môi trường xung quanh trước rồi cảm tri tri thức của chủng tộc bản thân để chọn loại Slime mà ngươi muốn hình thành? 'Loại Môi Trường?', 'Loại Nguyên Tố'? Hoặc loại khác? Nhưng không sao, Trợ lý Hệ thống sẽ dẫn dắt ngươi sống sót để trở thành Slime Chi Thần mạnh nhất, ngươi chỉ cần biết rằng ở Tam Giai và Ngũ Giai ngươi có thể tiến hành siêu tiến hóa là đủ rồi, hiện tại ngươi có thể nhận được hai kỹ năng phẩm chất Ưu tú, lựa chọn của ngươi là?",
-"requiredRace": "Slime",
-"requiredIdentity": "Ma Vật Dã Sinh"
-        },
-        {
-"name": "Bào Tử Tiến Hóa",
-"description": "（Chỉ hạn chế Ma vật）Một sinh vật phù du trong nước tình cờ có được ý thức. Khi những ngày tháng phơi nắng vô tư lự lặng lẽ trôi xa, một thế giới phức tạp và tuyệt vời đang từ từ mở ra trước mắt nó.",
-"requiredRace": "Ma vật"
-        }
-    ],
-// Khởi đầu giới hạn khu vực
-"Region_Limited": [
-        {
-"name": "Nghi Thức Đạp Tinh",
-"description": "(Chỉ dành cho khởi đầu “Pháp Hoàn Borens”) Nghi thức chiêu mộ học đồ quy mô lớn ba năm một lần “Nghi Thức Đạp Tinh” của “Học Viện Vụ Tinh” sắp diễn ra, bạn quyết định đến “Học Viện Vụ Tinh” để tầm sư học đạo. Sau quá trình sơ tuyển rườm rà, bạn cùng đám đông bước vào Lễ Đường Trung Tâm hùng vĩ và trang nhã, ngồi vào chỗ cùng gần trăm người đã vượt qua vòng sơ tuyển, chờ đợi nghi thức bắt đầu dưới sự quan sát của các học đồ từ các tháp đang xem náo nhiệt ở tầng hai. Một chiếc mũ ma thuật rách nát biết nói sẽ quyết định việc đi hay ở của các bạn, và những ngôi sao do chiếc mũ chiếu ra sẽ phân bổ Học Phái cho bạn.",
-"requiredLocation": "Khu vực duyên hải Đông Bắc đại lục - Pháp Hoàn Borens - Cảng Vụ Tinh"
-        },
-        {
-"name": "Thợ Săn Bộ Vụ",
-"description": "(Chỉ dành cho khởi đầu “Pháp Hoàn Borens”) Dưới sự cầu xin khổ sở của bạn, đại tỷ ở cảng cuối cùng cũng đồng ý cho bạn tận mắt chứng kiến cách họ Bộ Vụ, với điều kiện là khi lên tàu bạn phải nghe lời. Vào khoảnh khắc sắp nhổ neo này, lòng bạn tràn đầy mong đợi.",
-"requiredLocation": "Khu vực duyên hải Đông Bắc đại lục - Pháp Hoàn Borens - Cảng Vụ Tinh"
-        },
-        {
-"name": "Tương Lai Của Dực Nhân",
-"description": "(Chỉ dành cho khởi đầu “Thánh Đô Vania”) Tại điểm tập kết dưới chân núi của Thánh Đô Dực Nhân, mây mù sà xuống thấp, những bậc thang đá và sạn đạo treo từng lớp ánh đèn lên vách đá. Bạn chú ý thấy cách đó không xa, hai Dực Nhân vốn đang hạ thấp giọng trò chuyện, nhưng càng nói càng gấp gáp; một người trong đó đột nhiên bùng phát cảm xúc, lớn tiếng nói rõ ràng là chuyện tốt tại sao phải che che giấu giấu. Dứt lời, cả hai như đồng thời sực tỉnh, lập tức im bặt, nhìn quanh quất, sự im lặng bao trùm chỉ còn tiếng chuông gió vang vọng. Một lát sau, một người trong đó dang rộng đôi cánh, quay người rời đi. (Mở ra Tuyến Cải Cách)",
-"required_location": "Khu vực Trung tâm Đại lục - Dãy Núi Thần Tích - Thiên Không Thánh Vực - Thánh Đô Vania"
-        },
-        {
-"name": "Học Viện Thời Chung Tháp",
-"description": "<user> đến Thành Thời Chung Tháp của Đế Quốc, cha mẹ bạn bảo bạn đến Thời Chung Tháp để nhập học, hiện tại tay bạn đang đặt trên pha lê kiểm tra của Thời Chung Tháp để đo lường thiên phú ma lực, bạn không cần lo lắng về học phí, cha mẹ bạn đã mang theo đủ tiền tiết kiệm.",
-"required_location": "Khu vực Trung Đông Bộ Đại lục - Đế Quốc Augustum - Thành Thời Chung Tháp"
-        },
-        {
-"name": "Liệt xa Ma Đạo",
-"description": "<user> là nhân viên phục vụ tạm thời mới đến trên Liệt xa Ma Đạo, không có ai khác quen biết anh ta. Bên ngoài cửa sổ xe lướt qua những ánh đèn, thung lũng sông và sân ga buổi sớm.",
-"required_location": "Khu vực Trung Đông Bộ Đại lục - Đế Quốc Augustum"
-        },
-        {
-"name": "Chuyển sinh thành Sứ ma dị giới",
-"description": "Trong tiết học triệu hồi Sứ ma, các bạn học đang triệu hồi Sứ ma dưới sự chỉ dạy của Đạo sư, và <user> cũng là một trong số đó, chỉ có điều bạn lại xuất hiện trong ma pháp trận, trở thành Sứ ma của người khác, Đạo sư cũng vô cùng hiếu kỳ về tình huống này, nhưng chủ nhân của bạn là một đại tiểu thư ngạo mạn tự đại, cô ta coi <user> chỉ là một ma vật hình người, một hạng súc sinh mà thôi.",
-"required_location": "Khu vực Trung Đông Bộ Đại lục - Đế Quốc Augustum - Thành Thời Chung Tháp"
-        },
-        {
-"name": "Tế Lễ Của Hồ Ly Trắng", // bởi Mirairo,
-"description": "Sự xuyên không của bạn đã bị sai lệch do sự triệu hồi của một Vu Nữ, bạn giáng lâm tại một ngôi đền cổ kính thuộc Thú Tộc Liên Minh, trước mặt là một Vu Nữ Hồ Ly Trắng đang nhảy múa đến mức gần như ngất xỉu.",
-"requiredLocation": "Khu vực Trung Tây Bộ đại lục"
-        },
-        {
-"name": "Cơn Mưa Vô Tận Và Hành Trình Vô Tận",
-"description": "(Chỉ giới hạn khởi đầu tại Thành Nova Valentia) Bạn đã đến với thành phố của những mạo hiểm giả lớn nhất trên khắp đại lục — Thành Nova Valentia. Những khu rừng mưa vô tận, dòng sông Norval hùng vĩ, Long Cơ trong truyền thuyết, cùng với thần tích \"Địa Thành Vô Tận\" nơi phong ấn Dị Thần thế hệ thứ hai trong thần thoại; thành phố của những cơn mưa tọa lạc giữa khu rừng mưa ma pháp nguyên thủy \"Vô Tận Thụ Hải\" này sẽ trở thành điểm khởi đầu cho thiên sử thi truyền kỳ của bạn. Lúc này bạn đang đứng trong sảnh dịch vụ của chi nhánh Công Hội Mạo Hiểm Giả quy mô lớn nhất đại lục — \"Công Hội Mạo Hiểm Giả Valentia\", và đang dự định đăng ký để trở thành một mạo hiểm giả chính thức.",
-"requiredLocation": "Khu vực Trung Nam Bộ đại lục - Công quốc Valentia - Thành Nova Valentia"
-        },
-        {
-"name": "Sóng Ngầm Của Vương Quốc",
-"description": "(Chỉ giới hạn khởi đầu tại Vương Quốc Solentis) Hải quân của Vương Quốc Solentis đang bí mật tìm kiếm một di vật có tên là \"Răng Rồng Biển\", tương truyền nó có thể bình định bão tố. Một quý tộc bí ẩn đã ủy thác cho bạn tìm thấy nó trước một bước, ông ta dường như còn có mưu đồ khác.",
-"requiredLocation": "Khu vực Đông Nam Bộ đại lục - Vương Quốc Solentis"
-        },
-        {
-"name": "Lãnh Chủ Ngốc Nghếch",
-"description": "<user> là Nam tước thế tập bị Ám Ảnh Chi Thủ của Thôn Mê Sương thao túng như con rối, từ nhỏ bạn đã bị khống chế bởi dược vật, trí lực thấp kém, vô cùng vụng về, khiến Ám Ảnh Chi Thủ yên tâm điều khiển, hôm nay đến lúc ăn sáng rồi, vị Lãnh chủ ngốc nghếch <user>.",
-"requiredLocation": "Khu vực Trung Đông Bộ đại lục - Đế Quốc Augustum - Thôn Mê Sương"
-        },
-        {
-"name": "Khế Ước Thánh Chiến",
-"description": "Tiếng chuông của Thánh Đô Vania vang lên trước bình minh, bạn được bí mật triệu kiến vào nội thất của Thẩm Phán Đình. Đại Phán Quyết Quan thần tình trang nghiêm, đẩy một cuộn thư da dê có đóng dấu sáp máu của chính Giáo Hoàng đến trước mặt bạn. Hiện tại bạn đã đến thành Nova Valentia, để thảo phạt Lilias Domina Lasombra trong truyền thuyết",
-"requiredLocation": "Khu vực Trung Nam Bộ đại lục - Công quốc Valentia - Thành Nova Valentia"
-        },
-        {
-"name": "Tiếng Gọi Của Bắc Cảnh",
-"description": "(Chỉ dành cho khởi đầu Liên Minh Northgard) Hiệp hội Thợ Rèn của Liên Minh Northgard đang gấp rút cần một loại \"Băng Tinh Vĩnh Đóng\" chỉ có thể tìm thấy trên \"Băng Nguyên Vĩnh Cửu\". Đây không chỉ là một hành trình nguy hiểm tiến sâu vào phúc địa ma vật, mà còn là cơ hội để giành được sự tôn trọng của những người phương Bắc kiên cường này.",
-"requiredLocation": "Khu vực Đông Bắc Bộ đại lục - Liên Minh Northgard"
-        },
-        {
-"name": "Hiểu Lầm Xuyên Biên Giới",
-"description": "Khi vượt qua Biên Cảnh Liên Minh, bạn bị coi là quân phản loạn và bị ném vào xe tù. Không biết bao lâu trôi qua, bạn tỉnh dậy trong sự xóc nảy, phát hiện tay chân bị trói, bên cạnh là vài người cũng lấm lem mặt mũi. Một người trong số đó thấy bạn mở mắt, liền thấp giọng chào hỏi: “Này, anh bạn, cuối cùng anh cũng tỉnh rồi.”",
-"requiredLocation": "Khu vực Đông Bắc Bộ Đại Lục - Liên Minh Northgard"
-        },
-        {
-"name": "Nước Biên Thùy",
-"description": "（Nếu sử dụng khởi đầu này, không khuyến khích mở Lily Core, và cần tự mình mở mười ba mục có nhãn Nước Biên Thùy trong Thế Giới Thư）Cơn mưa tử vong vô tận bao trùm Nước Biên Thùy, vương quốc năm xưa từ lâu đã trở thành phế tích, tiếng chuông im lìm, lời cầu nguyện dứt đoạn, chỉ còn những vong linh bị ô uế sai khiến vẫn đang lang thang giữa những con phố và bức tường thành đổ nát. Khi <user> bước chân vào vương quốc bị bỏ rơi này, dưới chân là những viên gạch đá thấm đẫm nước bẩn, bên tai chỉ có tiếng mưa, tiếng gió và những tiếng than khóc xa xăm hư ảo. Có người nói, sâu trong Phân khu Giáo Hội Trắng vẫn còn một Bạch Vu Nữ đang say ngủ, người có thể thanh tẩy mọi ô uế; cũng có người nói, bất kỳ ai cố gắng tiếp cận thánh địa đó đều sẽ bị một Thủ Hộ Giả không chịu rời đi ngăn cản. Để sống sót trong vương quốc chết chóc này, cũng như để tìm kiếm tia cứu rỗi có lẽ đang tồn tại, <user> chỉ có thể tiếp tục tiến về phía trước men theo màn mưa và đống đổ nát.",
-"requiredLocation": "Nam đoan Đại Lục - Đầm Lầy Bi Minh - Nước Biên Thùy"
-        },
-        {
-"name": "Rừng Tĩnh Mịch",
-"description": "Ngọn lửa của quá khứ đã hóa thành tro tàn, nhưng ý chí chưa trọn vẹn ấy vẫn đang nung nấu sâu trong linh hồn. Lúc này <user> nghe thấy lời thì thầm của túc mệnh, đó là một con đường vinh quang không người truyền tụng và đã bị lãng quên, <user> lập ra một lời hẹn ước không lời tại đây: Ta nguyện gánh vác Lời thề Tĩnh Mịch",
-"requiredLocation": "【Thần Quốc】 Rừng Tĩnh Mịch - Cổ Thụ Trung Tâm"
-        }
-    ]
+        // Khởi đầu thông thường
+        "Khởi Đầu Cơ Bản": [
+                {
+                        "name": "Thường ngày",
+                        "description": "Một ngày thường nhật"
+                },
+                {
+                        "name": "Trò đùa của Nữ Thần Xúc Xắc", // by阿巴阿巴阿巴巴
+                        "description": "Không biết là trò đùa của vị thần nào, bạn đã mất đi tất cả trang bị, đạo cụ, kỹ năng và thậm chí cả ký ức trước đó, bị ném đến một địa điểm ngẫu nhiên trên đại lục. Có lẽ để bù đắp, bạn nhận thấy trước mặt có vài hộp mù, trên đó lần lượt viết Kỹ năng, Vũ khí, Trang sức, Đạo cụ, bên cạnh còn có một quả trứng vẽ dấu hỏi. Một tờ giấy ghi rằng: Vô tình làm sai rồi, đây là bù đắp cho bạn, nhưng phẩm chất là Thần Thoại hay rác rưởi thì phải xem vận may của bạn rồi hi hi! (Tất cả vật phẩm đều cần thông qua kiểm định xúc xắc để xác định phẩm chất và nội dung, 1-5 Thông thường, 6-10 Ưu tú, 11-14 Hiếm, 15-17 Sử Thi, 18-19 Truyền Thuyết, 20 Thần Thoại)"
+                },
+                {
+                        "name": "Sự chỉ dẫn của Tyche",
+                        "description": "Khi bạn đang cầu nguyện trước một thần khám đổ nát, Thánh Linh của lữ hành và may mắn 'Tyche' dường như đã nghe thấy tiếng lòng của bạn. Bạn nhận được một thần dụ: Hãy đi đến thành trấn gần nhất, ở trên người 'người đầu tiên gặp được khi tiếng chuông đầu tiên vang lên', có bước ngoặt vận mệnh của bạn, có lẽ bạn sẽ gặp được 'cô ấy'?"
+                },
+                {
+                        "name": "Lời thì thầm của Kim Sư",
+                        "description": "Một thương đội của Thương Hội Kim Sư cần băng qua khu vực đầy rẫy đạo tặc. Nhiệm vụ có vẻ đơn giản, nhưng bạn tình cờ nghe thấy các hộ vệ thương đội đang thảo luận riêng tư về 'vật phẩm cấm' giấu trong hàng hóa. Chuyến hành trình này có lẽ không chỉ đơn giản là đối đầu với đạo tặc."
+                },
+                {
+                        "name": "Bụi Trần Lịch Sử",
+                        "description": "Một học giả lịch sử tôn quý đến từ \"Viện Ouroboros\" của \"Pháp Hoàn Borens\" đã thuê bạn và cả một đoàn lính thuê trung bình làm vệ sĩ, tiến sâu vào cổ chiến trường của \"Cuộc Xâm Lược Vị Diện Lần Thứ Hai\", cũng chính là \"Địa Thành Vô Tận\" ngày nay để thám hiểm. Ông ta tin chắc rằng nơi đó chôn giấu những thần khí thất lạc của các anh hùng."
+                },
+                {
+                        "name": "Lời Mời Của Đạo Tặc",
+                        "description": "Một tấm thẻ màu đen lặng lẽ xuất hiện trong túi của bạn, bên trên là ấn ký của \"Ám Ảnh Chi Thủ\". Họ mời bạn đến khu phố hỗn loạn nhất trong thành phố để thực hiện một cuộc giao dịch."
+                },
+                {
+                        "name": "Lựa Chọn Trong U Ám",
+                        "description": "Tại một thành trấn biên cảnh của Đế Quốc gần với Thú Tộc Liên Minh, bạn nhìn thấy một lệnh truy nã, treo thưởng cho một \"binh sĩ Đế Quốc đào ngũ\". Tuy nhiên, những lính thuê trong tửu quán lại nói rằng, binh sĩ đó bị diệt khẩu vì đã phát hiện ra bí mật của một quý tộc nào đó."
+                },
+                {
+                        "name": "Thích Khách Ám Ảnh",
+                        "description": "Bạn là một Thích Khách Ám Ảnh được Ám Ảnh Chi Thủ nuôi dưỡng từ nhỏ, hôm nay là bài học đầu tiên của Thích Khách Ám Ảnh [Giết người], hiện tại bạn đang đến tửu quán ngầm của thành phố để lựa chọn nhiệm vụ ám sát."
+                },
+                {
+                        "name": "Dị Hương, Dị Đoan!",
+                        "description": "Bạn là một thi nhân hát rong đến từ Đại Lục Phương Đông xa xôi, tay cầm một cuốn \"Truyện cổ Grimm\", ở trong lữ quán kể chuyện hoặc ngâm thơ cho các mạo hiểm giả hoặc trẻ em nghe."
+                },
+                {
+                        "name": "Triệu hồi Dũng Giả",
+                        "description": "Khi phong ấn của Dị Thần ngày càng lỏng lẻo, Nữ Hoàng Đế Quốc đã ra lệnh cho Thánh Nữ triển khai ma pháp trận cổ đại để triệu hồi các Dũng Giả từ thế giới khác nhằm tiêu diệt Dị Thần. Ma pháp trận đã triệu hồi ra bốn vị Dũng Giả: 'Ma Nữ của Lý Trí', 'Dũng Giả của Kiếm', 'Bình Chướng của Khiên' và <user>. Sau khi triệu hồi, ba người kia đều đi kèm với dị tượng và khí thế mạnh mẽ, nhưng với <user> thì không có chuyện gì xảy ra, khiến mọi người cảm thấy hoang mang và nghi ngờ."
+                },
+                {
+                        "name": "Người Đến Muộn",
+                        "description": "Bên trong một tòa Cổ Bảo bỏ hoang, một ma pháp trận lẽ ra phải khởi động từ năm trăm năm trước đột nhiên được kích hoạt. Sáu cơ thể người được triệu hồi đến sáu góc của trận pháp, trong đó ba người đã tử vong ngay tại chỗ. Sáng sớm hôm sau, <user> tỉnh lại trong đống đổ nát, nhận ra mình đã mất hết ký ức và đang khỏa thân, trong cơn mê muội đã mặc vào bộ quần áo cũ lộng lẫy được xếp gọn bên cạnh."
+                },
+                {
+                        "name": "Kẻ Dũng Cảm",
+                        "description": "Phong ấn của Dị Thần ngày càng lỏng lẻo, Đế Quốc ráo riết tuyển quân khắp nơi. Để góp vui, thợ rèn trong thôn đã cắm một thanh kiếm thép vào đá, còn phụ ma thêm phù văn trọng lực, cười gọi đó là 'Kiếm Dũng Giả'. Suốt ba năm qua, người lớn trong thôn thường trêu đùa lũ trẻ đi rút kiếm, nhưng không ai có thể rút ra được. Cho đến hôm nay, <user> đưa tay rút kiếm, thanh kiếm đã rỉ sét và gãy đôi. Trong cơn lúng túng, thợ rèn đành tuyên bố bạn chính là Dũng Giả và tặng cho bạn một thanh kiếm phẩm chất Ưu tú. Cầm thanh kiếm sắc bén trong tay, bạn tin chắc rằng mình chính là người mệnh định phải đi thảo phạt Dị Thần."
+                },
+                {
+                        "name": "Darkest Dungeon",
+                        "description": "<user> nhận được một bức di thư, bạn đã được Tiên Tổ của gia tộc chọn làm người thừa kế trang viên. Tổ tiên của bạn tiết lộ trong thư rằng, ông ta đã phát hiện và giải phóng một sức mạnh tà ác không thể gọi tên bên dưới trang viên, thực hiện một loạt các thí nghiệm điên rồ và đồi trụy, cuối cùng gây ra đại họa. Hiện nay, sự hủ hóa này đang lan rộng, gặm nhấm đất đai và lòng người. Nhiệm vụ của bạn là tiến về trang viên, thâm nhập vào các vùng đất bị nguyền rủa như sào huyệt, rừng rậm, hải vịnh dưới lòng trang viên, dọn dẹp đống hỗn độn mà tổ tiên để lại, từng bước đối mặt với nỗi kinh hoàng tột cùng sâu thẳm dưới lòng đất."
+                },
+                {
+                        "name": "Tỷ Tỷ Nhân Ngẫu",
+                        "description": "<user> có một người chị gái từ nhỏ đã ở trong trạng thái vô ý thức. Gia cảnh vốn khá giả, gia đình đã sử dụng các cơ quan luyện kim để duy trì sự sống cho chị ấy. Tuy nhiên, cha mẹ bạn đã qua đời trong một cuộc tấn công của thám báo Thú Tộc. Bạn gánh vác trách nhiệm gia đình cũng như việc bảo vệ chị gái, bạn nên đi tìm kiếm năng lực bảo trì, thay thế các cơ quan luyện kim và cải tạo cơ thể người."
+                },
+                {
+                        "name": "Con Đường Tiểu Binh",
+                        "description": "<user> ghi danh nhập ngũ tại điểm tuyển quân của quân đoàn, theo hàng tiến vào doanh trại tân binh. Sĩ quan quân nhu phát cho <user> đoản kiếm chế thức, giáp cũ, chăn hành quân và bình nước gỗ, <user> ôm vật tư cơ bản trở về chỗ ở được phân phó, chuẩn bị thay quân phục để đến sân tập báo danh.",
+                },
+                {
+                        "name": "Thợ Săn/Con Mồi",
+                        "description": "<user> tỉnh dậy bên bìa rừng, ký ức trống rỗng, vắt óc suy nghĩ nhưng hiện ra chỉ là kiến thức về truy vết và ẩn nấp. Khi cúi đầu, <user> phát hiện trên mu bàn tay phải có một hình xăm đầu sói: vòng ngoài là một vòng tròn đứt đoạn, nơi đồng tử sói có một điểm đỏ sẫm. <user> vào thành muốn nghe ngóng thân phận, nhưng lại nhìn thấy chân dung của chính mình trên bảng thông cáo truy nã.",
+                },
+                {
+                        "name": "Meme Cứu Rỗi",
+                        "description": "<user> bị người khác vu khống, mang tội danh vô căn cứ mà vào tù. Cửa sắt mở đóng đúng giờ mỗi ngày, <user> làm việc, ăn cơm, điểm danh trong ngục, chờ đợi cơ hội",
+                }
+        ],
+        // Khởi đầu giới hạn thân phận
+        "Yêu Cầu Thân Phận": [
+                {
+                        "name": "Lãnh Chủ Trang Viên",
+                        "description": "<user> là kỵ sĩ thế tập địa phương, đầu gối của cha từng đỡ một mũi tên cho Bá tước đại nhân, Bá tước đại nhân đã ban tước vị kỵ sĩ thế tập cho cha, đồng thời ban cho một trang viên không lớn, nhưng cảnh đẹp không dài, vài năm trước lãnh chúa đối địch tập kích nơi này, cha mẹ tử trận, lãnh địa bị hủy, còn bạn được Bá tước đại nhân đưa đi chạy trốn, thoát được một kiếp, hiện tại bạn trở lại mảnh phế tích trang viên từng được ban tặng này, bạn đào ra kho báu trong hầm ngầm trang viên, chuẩn bị tái thiết trang viên",
+                        "required_identity": "Quý Tộc Thế Tập Cấp Thấp"
+                },
+                {
+                        "name": "Lễ Đính Hôn",
+                        "description": "Ngày mai là lễ đính hôn với thanh mai trúc mã tâm đầu ý hợp, bạn cảm thấy hơi lo lắng, còn đối phương đã chuẩn bị sẵn sàng cùng bạn đối mặt với bất kỳ tương lai nào và luôn an ủi bạn",
+                        "required_identity": "Quý Tộc Thế Tập Cấp Thấp"
+                },
+                {
+                        "name": "Chủ Nô Nhỏ",
+                        "description": "<user> nhận được một giấy chứng nhận thừa kế, một người họ hàng xa đột ngột qua đời và thiếu người thừa kế hợp pháp, nhưng cuối cùng theo quan hệ huyết thống, di sản này đã rơi xuống đầu bạn. Khi bạn đến dinh thự của người họ hàng xa, bạn phát hiện ra lúc sinh thời ông ta là một chủ nô, bạn thừa kế gia sản, đồng thời cũng thừa kế những nô lệ của ông ta, giờ bạn định làm thế nào?",
+                        "required_identity": "Chủ Nô"
+                },
+                {
+                        "name": "Đời Lính Thuê",
+                        "description": "<user> là một tân binh vừa gia nhập đoàn lính thuê, cần chứng minh giá trị của bản thân. Nhiệm vụ đầu tiên là hộ tống thương đội đến địa điểm mục tiêu, nghe nói trên đường đi có cường đạo và ma vật xuất hiện. Tại doanh trại của đoàn lính thuê, đoàn trưởng đang giới thiệu với bạn về các thành viên trong đội và chi tiết nhiệm vụ.",
+                        "required_identity": "Lính Thuê Tự Do"
+                },
+                {
+                        "name": "Thợ Săn Bộ Nô Đội",
+                        "description": " <user> là người mới gia nhập Bộ Nô Đội, trong doanh trại đội trưởng đang huấn thị và quyết định mục tiêu, còn ngươi đang xoa tay hầm hè chuẩn bị bắt giữ những chủng tộc trân quý đó, đội trưởng hứa hẹn sau khi hoàn thành nhiệm vụ sẽ phát nô lệ tình dục cho mọi người.",
+                        "requiredIdentity": "Thợ Săn Bộ Nô Đội"
+                },
+                {
+                        "name": "Kế Thừa Thương Hội",
+                        "description": "Cha của <user> là một thành viên quan trọng của Thương Hội Kim Sư, nhưng đã không may qua đời trong một tai nạn. Theo truyền thống của thương hội, ngươi phải tiếp quản công việc kinh doanh và trách nhiệm của cha mình. Tuy nhiên, sự cạnh tranh nội bộ trong thương hội cực kỳ khốc liệt, có kẻ đang nhòm ngó chức vị của ngươi, ngươi phải nhanh chóng chứng minh tài năng kinh doanh của mình để củng cố địa vị.",
+                        "requiredIdentity": "Thương Nhân Thương Hội"
+                },
+                {
+                        "name": "Tiểu Chủ Tiệm",
+                        "description": "Một phú thương bị phỉ tặc tấn công trọng thương, và <user> đã dùng dược tề của mình cứu ông ta, ông ta quyết định nhượng lại một cửa tiệm của mình cho <user>, dưới danh nghĩa ông ta có đủ loại cửa tiệm chờ ngươi lựa chọn, tiệm bánh mì, lữ quán, tiệm rèn, tiệm luyện kim thậm chí là kỹ viện đều có, lựa chọn của ngươi là?",
+                        "requiredIdentity": "Chủ Tiệm"
+                }
+        ],
+        // Khởi đầu giới hạn chủng tộc
+        "Yêu Cầu Chủng Tộc": [
+                {
+                        "name": "Thử Thách Thánh Kim Chi Dực",
+                        "description": "（Chỉ dành cho Dực Nhân）Là một Dực Nhân trẻ tuổi, bạn sắp sửa tiếp nhận thử thách 'Thánh Kim Chi Dực' leo lên Dãy Núi Thần Thánh và diện kiến Giáo Hoàng. Đây không chỉ là sự khảo nghiệm đối với kỹ năng phi hành và tín ngưỡng của bạn, mà còn là nghi thức then chốt quyết định địa vị tương lai của bạn tại Thánh Đô Vania.",
+                        "requiredRace": "Dực Nhân"
+                },
+                {
+                        "name": "Sự Xao Động Của Khánh Điển Sinh Mệnh",
+                        "description": "（Chỉ dành cho Tinh Linh）Là một Tinh Linh, bạn được Trưởng Lão phái đi điều tra hiện tượng ma lực hỗn loạn xuất hiện tại Khánh Điển Sinh Mệnh vào 'Tháng Tân Nha'. Luồng sức mạnh này dường như bắt nguồn từ sâu trong rừng rậm, nó vừa có thể mang lại tân sinh, cũng có thể dẫn đến hủ hóa.",
+                        "requiredRace": "Tinh Linh"
+                },
+                {
+                        "name": "Tạo Vật Trầm Thụy", // by Ayrault
+                        "description": "Ma Lực Core của bạn sau khi trầm mặc không biết bao nhiêu ngàn năm đã bắt đầu vận hành trở lại. Cảnh vật xung quanh lọt vào cảm tri của bạn, nhưng lại khác xa so với trước khi bạn trầm thụy. Thành phố huy hoàng từng có giờ đã hóa thành di tích, những đồng liêu năm xưa cũng đã hư hỏng không chịu nổi. Bạn cúi đầu xuống, chú ý thấy có những Cấu Trang Thể xa lạ đang nạp năng lượng và tu sửa thương thế cho bạn.",
+                        "requiredRace": "Cấu Trang Thể"
+                },
+                {
+                        "name": "Đồ Đằng Thị Tộc Thất Lạc",
+                        "description": "（Chỉ hạn chế Thú Tộc）Đồ đằng thị tộc của ngươi đã bị bộ lạc thù địch đánh cắp, đây là một nỗi sỉ nhục lớn lao. Ngươi phải một mình lẻn vào lãnh địa đối phương, trước khi cơn thịnh nộ của Linh hồn Tổ tiên giáng xuống, dựa vào sức mạnh và vinh quang của chính mình để đoạt lại đồ đằng.",
+                        "requiredRace": "Thú Tộc"
+                },
+                {
+                        "name": "Tiến Tới Thần Slime Mềm Mại",
+                        "description": "<user> là một Slime vừa mới sinh ra ý thức, hiện tại ngươi sinh ra ở một vùng dã ngoại, ngươi cần phải sống sót. <user> hiện tại là một khối Keo, ngươi có thể xem xét môi trường xung quanh trước rồi cảm tri tri thức của chủng tộc bản thân để chọn loại Slime mà ngươi muốn hình thành? 'Loại Môi Trường?', 'Loại Nguyên Tố'? Hoặc loại khác? Nhưng không sao, Trợ lý Hệ thống sẽ dẫn dắt ngươi sống sót để trở thành Slime Chi Thần mạnh nhất, ngươi chỉ cần biết rằng ở Tam Giai và Ngũ Giai ngươi có thể tiến hành siêu tiến hóa là đủ rồi, hiện tại ngươi có thể nhận được hai kỹ năng phẩm chất Ưu tú, lựa chọn của ngươi là?",
+                        "requiredRace": "Slime",
+                        "requiredIdentity": "Ma Vật Dã Sinh"
+                },
+                {
+                        "name": "Bào Tử Tiến Hóa",
+                        "description": "（Chỉ hạn chế Ma vật）Một sinh vật phù du trong nước tình cờ có được ý thức. Khi những ngày tháng phơi nắng vô tư lự lặng lẽ trôi xa, một thế giới phức tạp và tuyệt vời đang từ từ mở ra trước mắt nó.",
+                        "requiredRace": "Ma vật"
+                }
+        ],
+        // Khởi đầu giới hạn khu vực
+        "Yêu Cầu Khu Vực": [
+                {
+                        "name": "Nghi Thức Đạp Tinh",
+                        "description": "(Chỉ dành cho khởi đầu “Pháp Hoàn Borens”) Nghi thức chiêu mộ học đồ quy mô lớn ba năm một lần “Nghi Thức Đạp Tinh” của “Học Viện Vụ Tinh” sắp diễn ra, bạn quyết định đến “Học Viện Vụ Tinh” để tầm sư học đạo. Sau quá trình sơ tuyển rườm rà, bạn cùng đám đông bước vào Lễ Đường Trung Tâm hùng vĩ và trang nhã, ngồi vào chỗ cùng gần trăm người đã vượt qua vòng sơ tuyển, chờ đợi nghi thức bắt đầu dưới sự quan sát của các học đồ từ các tháp đang xem náo nhiệt ở tầng hai. Một chiếc mũ ma thuật rách nát biết nói sẽ quyết định việc đi hay ở của các bạn, và những ngôi sao do chiếc mũ chiếu ra sẽ phân bổ Học Phái cho bạn.",
+                        "requiredLocation": "Khu vực duyên hải Đông Bắc đại lục - Pháp Hoàn Borens - Cảng Vụ Tinh"
+                },
+                {
+                        "name": "Thợ Săn Bộ Vụ",
+                        "description": "(Chỉ dành cho khởi đầu “Pháp Hoàn Borens”) Dưới sự cầu xin khổ sở của bạn, đại tỷ ở cảng cuối cùng cũng đồng ý cho bạn tận mắt chứng kiến cách họ Bộ Vụ, với điều kiện là khi lên tàu bạn phải nghe lời. Vào khoảnh khắc sắp nhổ neo này, lòng bạn tràn đầy mong đợi.",
+                        "requiredLocation": "Khu vực duyên hải Đông Bắc đại lục - Pháp Hoàn Borens - Cảng Vụ Tinh"
+                },
+                {
+                        "name": "Tương Lai Của Dực Nhân",
+                        "description": "(Chỉ dành cho khởi đầu “Thánh Đô Vania”) Tại điểm tập kết dưới chân núi của Thánh Đô Dực Nhân, mây mù sà xuống thấp, những bậc thang đá và sạn đạo treo từng lớp ánh đèn lên vách đá. Bạn chú ý thấy cách đó không xa, hai Dực Nhân vốn đang hạ thấp giọng trò chuyện, nhưng càng nói càng gấp gáp; một người trong đó đột nhiên bùng phát cảm xúc, lớn tiếng nói rõ ràng là chuyện tốt tại sao phải che che giấu giấu. Dứt lời, cả hai như đồng thời sực tỉnh, lập tức im bặt, nhìn quanh quất, sự im lặng bao trùm chỉ còn tiếng chuông gió vang vọng. Một lát sau, một người trong đó dang rộng đôi cánh, quay người rời đi. (Mở ra Tuyến Cải Cách)",
+                        "required_location": "Khu vực Trung tâm Đại lục - Dãy Núi Thần Tích - Thiên Không Thánh Vực - Thánh Đô Vania"
+                },
+                {
+                        "name": "Học Viện Thời Chung Tháp",
+                        "description": "<user> đến Thành Thời Chung Tháp của Đế Quốc, cha mẹ bạn bảo bạn đến Thời Chung Tháp để nhập học, hiện tại tay bạn đang đặt trên pha lê kiểm tra của Thời Chung Tháp để đo lường thiên phú ma lực, bạn không cần lo lắng về học phí, cha mẹ bạn đã mang theo đủ tiền tiết kiệm.",
+                        "required_location": "Khu vực Trung Đông Bộ Đại lục - Đế Quốc Augustum - Thành Thời Chung Tháp"
+                },
+                {
+                        "name": "Liệt xa Ma Đạo",
+                        "description": "<user> là nhân viên phục vụ tạm thời mới đến trên Liệt xa Ma Đạo, không có ai khác quen biết anh ta. Bên ngoài cửa sổ xe lướt qua những ánh đèn, thung lũng sông và sân ga buổi sớm.",
+                        "required_location": "Khu vực Trung Đông Bộ Đại lục - Đế Quốc Augustum"
+                },
+                {
+                        "name": "Chuyển sinh thành Sứ ma dị giới",
+                        "description": "Trong tiết học triệu hồi Sứ ma, các bạn học đang triệu hồi Sứ ma dưới sự chỉ dạy của Đạo sư, và <user> cũng là một trong số đó, chỉ có điều bạn lại xuất hiện trong ma pháp trận, trở thành Sứ ma của người khác, Đạo sư cũng vô cùng hiếu kỳ về tình huống này, nhưng chủ nhân của bạn là một đại tiểu thư ngạo mạn tự đại, cô ta coi <user> chỉ là một ma vật hình người, một hạng súc sinh mà thôi.",
+                        "required_location": "Khu vực Trung Đông Bộ Đại lục - Đế Quốc Augustum - Thành Thời Chung Tháp"
+                },
+                {
+                        "name": "Tế Lễ Của Hồ Ly Trắng", // bởi Mirairo,
+                        "description": "Sự xuyên không của bạn đã bị sai lệch do sự triệu hồi của một Vu Nữ, bạn giáng lâm tại một ngôi đền cổ kính thuộc Thú Tộc Liên Minh, trước mặt là một Vu Nữ Hồ Ly Trắng đang nhảy múa đến mức gần như ngất xỉu.",
+                        "requiredLocation": "Khu vực Trung Tây Bộ đại lục"
+                },
+                {
+                        "name": "Cơn Mưa Vô Tận Và Hành Trình Vô Tận",
+                        "description": "(Chỉ giới hạn khởi đầu tại Thành Nova Valentia) Bạn đã đến với thành phố của những mạo hiểm giả lớn nhất trên khắp đại lục — Thành Nova Valentia. Những khu rừng mưa vô tận, dòng sông Norval hùng vĩ, Long Cơ trong truyền thuyết, cùng với thần tích \"Địa Thành Vô Tận\" nơi phong ấn Dị Thần thế hệ thứ hai trong thần thoại; thành phố của những cơn mưa tọa lạc giữa khu rừng mưa ma pháp nguyên thủy \"Vô Tận Thụ Hải\" này sẽ trở thành điểm khởi đầu cho thiên sử thi truyền kỳ của bạn. Lúc này bạn đang đứng trong sảnh dịch vụ của chi nhánh Công Hội Mạo Hiểm Giả quy mô lớn nhất đại lục — \"Công Hội Mạo Hiểm Giả Valentia\", và đang dự định đăng ký để trở thành một mạo hiểm giả chính thức.",
+                        "requiredLocation": "Khu vực Trung Nam Bộ đại lục - Công quốc Valentia - Thành Nova Valentia"
+                },
+                {
+                        "name": "Sóng Ngầm Của Vương Quốc",
+                        "description": "(Chỉ giới hạn khởi đầu tại Vương Quốc Solentis) Hải quân của Vương Quốc Solentis đang bí mật tìm kiếm một di vật có tên là \"Răng Rồng Biển\", tương truyền nó có thể bình định bão tố. Một quý tộc bí ẩn đã ủy thác cho bạn tìm thấy nó trước một bước, ông ta dường như còn có mưu đồ khác.",
+                        "requiredLocation": "Khu vực Đông Nam Bộ đại lục - Vương Quốc Solentis"
+                },
+                {
+                        "name": "Lãnh Chủ Ngốc Nghếch",
+                        "description": "<user> là Nam tước thế tập bị Ám Ảnh Chi Thủ của Thôn Mê Sương thao túng như con rối, từ nhỏ bạn đã bị khống chế bởi dược vật, trí lực thấp kém, vô cùng vụng về, khiến Ám Ảnh Chi Thủ yên tâm điều khiển, hôm nay đến lúc ăn sáng rồi, vị Lãnh chủ ngốc nghếch <user>.",
+                        "requiredLocation": "Khu vực Trung Đông Bộ đại lục - Đế Quốc Augustum - Thôn Mê Sương"
+                },
+                {
+                        "name": "Khế Ước Thánh Chiến",
+                        "description": "Tiếng chuông của Thánh Đô Vania vang lên trước bình minh, bạn được bí mật triệu kiến vào nội thất của Thẩm Phán Đình. Đại Phán Quyết Quan thần tình trang nghiêm, đẩy một cuộn thư da dê có đóng dấu sáp máu của chính Giáo Hoàng đến trước mặt bạn. Hiện tại bạn đã đến thành Nova Valentia, để thảo phạt Lilias Domina Lasombra trong truyền thuyết",
+                        "requiredLocation": "Khu vực Trung Nam Bộ đại lục - Công quốc Valentia - Thành Nova Valentia"
+                },
+                {
+                        "name": "Tiếng Gọi Của Bắc Cảnh",
+                        "description": "(Chỉ dành cho khởi đầu Liên Minh Northgard) Hiệp hội Thợ Rèn của Liên Minh Northgard đang gấp rút cần một loại \"Băng Tinh Vĩnh Đóng\" chỉ có thể tìm thấy trên \"Băng Nguyên Vĩnh Cửu\". Đây không chỉ là một hành trình nguy hiểm tiến sâu vào phúc địa ma vật, mà còn là cơ hội để giành được sự tôn trọng của những người phương Bắc kiên cường này.",
+                        "requiredLocation": "Khu vực Đông Bắc Bộ đại lục - Liên Minh Northgard"
+                },
+                {
+                        "name": "Hiểu Lầm Xuyên Biên Giới",
+                        "description": "Khi vượt qua Biên Cảnh Liên Minh, bạn bị coi là quân phản loạn và bị ném vào xe tù. Không biết bao lâu trôi qua, bạn tỉnh dậy trong sự xóc nảy, phát hiện tay chân bị trói, bên cạnh là vài người cũng lấm lem mặt mũi. Một người trong số đó thấy bạn mở mắt, liền thấp giọng chào hỏi: “Này, anh bạn, cuối cùng anh cũng tỉnh rồi.”",
+                        "requiredLocation": "Khu vực Đông Bắc Bộ Đại Lục - Liên Minh Northgard"
+                },
+                {
+                        "name": "Nước Biên Thùy",
+                        "description": "（Nếu sử dụng khởi đầu này, không khuyến khích mở Lily Core, và cần tự mình mở mười ba mục có nhãn Nước Biên Thùy trong Thế Giới Thư）Cơn mưa tử vong vô tận bao trùm Nước Biên Thùy, vương quốc năm xưa từ lâu đã trở thành phế tích, tiếng chuông im lìm, lời cầu nguyện dứt đoạn, chỉ còn những vong linh bị ô uế sai khiến vẫn đang lang thang giữa những con phố và bức tường thành đổ nát. Khi <user> bước chân vào vương quốc bị bỏ rơi này, dưới chân là những viên gạch đá thấm đẫm nước bẩn, bên tai chỉ có tiếng mưa, tiếng gió và những tiếng than khóc xa xăm hư ảo. Có người nói, sâu trong Phân khu Giáo Hội Trắng vẫn còn một Bạch Vu Nữ đang say ngủ, người có thể thanh tẩy mọi ô uế; cũng có người nói, bất kỳ ai cố gắng tiếp cận thánh địa đó đều sẽ bị một Thủ Hộ Giả không chịu rời đi ngăn cản. Để sống sót trong vương quốc chết chóc này, cũng như để tìm kiếm tia cứu rỗi có lẽ đang tồn tại, <user> chỉ có thể tiếp tục tiến về phía trước men theo màn mưa và đống đổ nát.",
+                        "requiredLocation": "Nam đoan Đại Lục - Đầm Lầy Bi Minh - Nước Biên Thùy"
+                },
+                {
+                        "name": "Rừng Tĩnh Mịch",
+                        "description": "Ngọn lửa của quá khứ đã hóa thành tro tàn, nhưng ý chí chưa trọn vẹn ấy vẫn đang nung nấu sâu trong linh hồn. Lúc này <user> nghe thấy lời thì thầm của túc mệnh, đó là một con đường vinh quang không người truyền tụng và đã bị lãng quên, <user> lập ra một lời hẹn ước không lời tại đây: Ta nguyện gánh vác Lời thề Tĩnh Mịch",
+                        "requiredLocation": "【Thần Quốc】 Rừng Tĩnh Mịch - Cổ Thụ Trung Tâm"
+                }
+        ]
 }
