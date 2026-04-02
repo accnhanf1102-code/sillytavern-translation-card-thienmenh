@@ -11,7 +11,7 @@
             "rarity": "common",
             "quantity": 20,
             "effect": {
-                "satiety": "Sau khi sử dụng, có thể đáp ứng nhu cầu thực phẩm trong một ngày của một người trưởng thành。"
+                "No Đủ": "Sau khi sử dụng, có thể đáp ứng nhu cầu thực phẩm trong một ngày của một người trưởng thành。"
             },
             "description": "Một loại bánh quy được chế tạo từ sự kết hợp giữa ma pháp và luyện kim thuật, hương vị như bìa các-tông cứng, nhưng năng lượng dồi dào。"
         },
@@ -26,7 +26,7 @@
             "rarity": "common",
             "quantity": 5,
             "effect": {
-                "weak_life_recovery": "Lập tức hồi phục 70 điểm HP。"
+                "Hồi Phục Sinh Mệnh Yếu": "Lập tức hồi phục 70 điểm HP。"
             },
             "description": "Một lọ chất lỏng màu đỏ xỉn, ngửi thấy có mùi ngọt của thảo dược. Sức sống nó chứa đựng như ngọn nến trước gió, chỉ có thể mang lại sự an ủi cơ bản nhất cho những mạo hiểm giả đang hấp hối。"
         },
@@ -290,8 +290,8 @@
             "rarity": "uncommon",
             "quantity": 3,
             "effect": {
-                "self_aphrodisiac": "Thêm trạng thái [Kích dục]",
-                "area_seduction": "Gây trạng thái [Mê hoặc yếu] cho những người trong phạm vi 1 mét xung quanh]。"
+                "Tự Thân Tình Dục": "Thêm trạng thái [Kích dục]",
+                "Mê Hoặc Phạm Vi": "Gây trạng thái [Mê hoặc yếu] cho những người trong phạm vi 1 mét xung quanh]。"
             },
             "description": "Chất lỏng màu hồng đào rực rỡ sóng sánh trong chai, sau khi mở nắp, hương thơm nồng nàn hòa quyện giữa hoa hồng và xạ hương sẽ lan tỏa. Mùi hương này sẽ lặng lẽ lay động dây cót tâm hồn, làm tan biến những phòng bị kiên cố nhất。"
         },
@@ -307,8 +307,8 @@
             "rarity": "rare",
             "quantity": 2,
             "effect": {
-                "special_aphrodisiac": "Gán [Kích Dục Đặc Hiệu]",
-                "powerful_area_seduction": "Đối với người trong phạm vi 1m xung quanh gán [Dụ Hoặc]。"
+                "Mê Tình Đặc Biệt": "Gán [Kích Dục Đặc Hiệu]",
+                "Đại Diện Mê Hoặc": "Đối với người trong phạm vi 1m xung quanh gán [Dụ Hoặc]。"
             },
             "description": "Giống như bảo ngọc màu hồng đang lưu động, bản thân chất lỏng tỏa ra ánh vi quang đầy mê hoặc. Hương thơm đó không còn là hoa quả phàm trần, mà giống như một loại hơi thở đến từ chính dục vọng, có thể khiến ý chí kiên định nhất cũng phải chìm đắm。"
         },
@@ -324,8 +324,8 @@
             "rarity": "uncommon",
             "quantity": 3,
             "effect": {
-                "frenzy": "Gán [Cuồng Nhiệt], tăng 8% sát thương gây ra, khi tấn công gây thêm 150 điểm sát thương năng lượng, duy trì cho đến 1 hiệp sau khi tấn công",
-                "side_effect": "Sau khi hiệu quả kết thúc, chịu 200 điểm sát thương cố định。"
+                "Cuồng Loạn": "Gán [Cuồng Nhiệt], tăng 8% sát thương gây ra, khi tấn công gây thêm 150 điểm sát thương năng lượng, duy trì cho đến 1 hiệp sau khi tấn công",
+                "Tác Dụng Phụ": "Sau khi hiệu quả kết thúc, chịu 200 điểm sát thương cố định。"
             },
             "description": "Trong bình là chất lỏng màu vàng óng ánh, ấm áp đang luân chuyển, tựa như mặt trời mới mọc. Uống nó vào, trái tim sẽ đập mạnh dữ dội, máu huyết như đang bùng cháy, mang lại sức mạnh mạnh mẽ nhưng ngắn ngủi, cũng mang lại cảm giác bỏng rát tất yếu。"
         },
@@ -341,8 +341,8 @@
             "rarity": "rare",
             "quantity": 2,
             "effect": {
-                "special_frenzy_effect": "Thêm [Cuồng Nhiệt Đặc Hiệu], gây sát thương tăng 12%, khi tấn công gây thêm 420 điểm sát thương năng lượng, duy trì cho đến 2 hiệp sau khi tấn công",
-                "overdraft": "Sau khi hiệu quả kết thúc, tất cả tiêu tốn tài nguyên tăng 10%, duy trì 2 hiệp。"
+                "Hiệu Ứng Cuồng Loạn Đặc Biệt": "Thêm [Cuồng Nhiệt Đặc Hiệu], gây sát thương tăng 12%, khi tấn công gây thêm 420 điểm sát thương năng lượng, duy trì cho đến 2 hiệp sau khi tấn công",
+                "Thấu Chi": "Sau khi hiệu quả kết thúc, tất cả tiêu tốn tài nguyên tăng 10%, duy trì 2 hiệp。"
             },
             "description": "Tựa như vàng ròng nóng chảy đang cuộn trào trong bình, tỏa ra hơi thở nóng rực. Đây là ngọn lửa lấy sinh mệnh lực làm nhiên liệu, nó sẽ thấu chi tương lai của bạn, chỉ để đổi lấy sự rực rỡ chói lọi của khoảnh khắc này。"
         },
@@ -358,8 +358,8 @@
             "rarity": "uncommon",
             "quantity": 3,
             "effect": {
-                "Analgesic": "Thêm [Trấn Thống]",
-                "TranquilHealing": "Mỗi hiệp bắt đầu hồi phục 200 điểm HP, duy trì 2 hiệp。"
+                "Trấn Thống (Giảm Đau)": "Thêm [Trấn Thống]",
+                "Trị Liệu Tĩnh Lặng": "Mỗi hiệp bắt đầu hồi phục 200 điểm HP, duy trì 2 hiệp。"
             },
             "description": "Nhũ dịch đặc sệt tỏa ra hào quang dịu nhẹ, có mùi giống như sữa ấm và hoa oải hương. Uống nó vào, một luồng ấm áp sẽ lan tỏa khắp cơ thể, biến những cơn đau nhức nhối thành cảm giác tê dại âm ỉ。"
         },
@@ -374,8 +374,8 @@
             "rarity": "rare",
             "quantity": 2,
             "effect": {
-                "special_analgesia": "Gán [Giảm Đau Đặc Hiệu]",
-                "purifying_healing": "Loại bỏ một hiệu ứng [Debuff], mỗi khi bắt đầu hiệp hồi phục 420 điểm HP, duy trì 2 hiệp。"
+                "Trấn Thống Đặc Biệt": "Gán [Giảm Đau Đặc Hiệu]",
+                "Thanh Tẩy Trị Liệu": "Loại bỏ một hiệu ứng [Debuff], mỗi khi bắt đầu hiệp hồi phục 420 điểm HP, duy trì 2 hiệp。"
             },
             "description": "Chất lỏng luân chuyển ánh quang như lớp vỏ bên trong của xà cừ, tỏa ra hương đàn hương và nhũ hương khiến lòng người an tĩnh. Nó không chỉ có thể làm tê liệt nỗi đau xác thịt, mà còn có thể dịu dàng xóa đi những lời nguyền độc ác đeo bám không thôi。"
         },
@@ -392,8 +392,8 @@
             "rarity": "uncommon",
             "quantity": 3,
             "effect": {
-                "dispel": "Loại bỏ một [Debuff] có phẩm chất [Ưu tú] trở xuống]",
-                "living_spring_blessing": "Mỗi khi bắt đầu hiệp hồi phục mỗi loại 90 điểm MP, SP, duy trì 2 hiệp。"
+                "Giải Thuật (Xua Tan)": "Loại bỏ một [Debuff] có phẩm chất [Ưu tú] trở xuống]",
+                "Chúc Phúc Suối Nguồn": "Mỗi khi bắt đầu hiệp hồi phục mỗi loại 90 điểm MP, SP, duy trì 2 hiệp。"
             },
             "description": "Trong chất lỏng màu xanh lá cây tươi sáng lơ lửng những bọt khí nhỏ li ti, giống như suối nguồn trong rừng. Sau khi uống, một luồng thanh lưu sẽ gột rửa cơ thể, mang đi những độc tố và ác ý yếu ớt, khiến người ta cảm thấy một sự thư thái。"
         },
@@ -426,8 +426,8 @@
             "rarity": "uncommon",
             "quantity": 5,
             "effect": {
-                "night_vision": "Thêm [Dạ Thị]",
-                "darkness_insight": "Bỏ qua [Debuff] trúng đích của môi trường [U ám], duy trì 2 hiệp。"
+                "Dạ Nhãn (Mắt Đêm)": "Thêm [Dạ Thị]",
+                "Thấu Thị Bóng Tối": "Bỏ qua [Debuff] trúng đích của môi trường [U ám], duy trì 2 hiệp。"
             },
             "description": "Trong chất lỏng màu cam đậm hơn, dường như có những hạt cát vàng đang trôi nổi. Sau khi uống, đồng tử của bạn sẽ biến thành đồng tử dọc, có thể nhìn rõ mọi thứ ngay cả trong bóng tối mờ ảo, duy trì tầm nhìn rõ nét trong thời gian ngắn。"
         },
@@ -443,8 +443,8 @@
             "rarity": "rare",
             "quantity": 5,
             "effect": {
-                "SeeThrough": "Thêm [Thấu Thị]",
-                "PrecisionLock": "Hiệu đính Accuracy +2, duy trì 3 hiệp。"
+                "Thấu Thị (Nhìn Thấu)": "Thêm [Thấu Thị]",
+                "Định Vị Chuẩn Xác": "Hiệu đính Accuracy +2, duy trì 3 hiệp。"
             },
             "description": "Chất lỏng giống như hổ phách nóng chảy, ở giữa có một điểm kim quang như đồng tử của mèo. Uống nó vào, đôi mắt của bạn sẽ có thể nhìn thấu những che chắn nhân tạo hoặc tự nhiên, khóa chặt con mồi trong tầm nhìn sâu nhất。"
         },
@@ -460,8 +460,8 @@
             "rarity": "uncommon",
             "quantity": 5,
             "effect": {
-                "diving": "Đính kèm [Lặn]",
-                "water_breathing": "Bỏ qua sát thương [Ngạt Thở] của môi trường [Dưới Nước], duy trì 2 hiệp。"
+                "Tiềm Thủy (Lặn)": "Đính kèm [Lặn]",
+                "Tị Thủy Thuật": "Bỏ qua sát thương [Ngạt Thở] của môi trường [Dưới Nước], duy trì 2 hiệp。"
             },
             "description": "Trong lọ dược tề màu xanh lục đậm có những bong bóng nhỏ li ti lơ lửng, uống nó vào, phổi của bạn sẽ cảm thấy một sự mát lạnh, giống như thực sự có thể lấy không khí từ dưới nước như loài cá, tạm thời thoát khỏi nỗi sợ hãi bị đuối nước。"
         },
@@ -477,8 +477,8 @@
             "rarity": "rare",
             "quantity": 5,
             "effect": {
-                "deep_sea_diving": "Đính kèm [Lặn Biển]",
-                "deep_sea_breathing": "Bỏ qua sát thương [Ngạt Thở], duy trì 3 hiệp。"
+                "Thâm Hải Tiềm Hành": "Đính kèm [Lặn Biển]",
+                "Tị Thủy Thuật": "Bỏ qua sát thương [Ngạt Thở], duy trì 3 hiệp。"
             },
             "description": "Dược tề có màu xanh hải tảo đậm đặc, giống như thực vật không được chiếu sáng dưới biển sâu. Sau khi uống, bạn sẽ cảm thấy cơ thể hòa làm một với dòng nước, có thể tự do hô hấp trong sông biển。"
         },
@@ -494,7 +494,7 @@
             "rarity": "uncommon",
             "quantity": 2,
             "effect": {
-                "Alchemy_Explosion": "Gây 250 điểm sát thương năng lượng trong phạm vi bán kính 2 mét quanh mục tiêu。"
+                "Linh Dược Bộc Phá": "Gây 250 điểm sát thương năng lượng trong phạm vi bán kính 2 mét quanh mục tiêu。"
             },
             "description": "Bom hình cầu màu đen được điều chế từ nhiều loại nguyên liệu cực mạnh。"
         },
@@ -510,8 +510,8 @@
             "rarity": "rare",
             "quantity": 2,
             "effect": {
-                "alchemical_explosion": "Gây 700 điểm sát thương năng lượng cho mục tiêu trong bán kính 3m。",
-                "shock_blast": "Sau khi trúng đích tiến hành một lần đối kháng (DC16 Thể chất), thất bại thì Trúng đích -2, duy trì hai hiệp。"
+                "Linh Dược Bộc Phá": "Gây 700 điểm sát thương năng lượng cho mục tiêu trong bán kính 3m。",
+                "Chân Động Bộc Phá": "Sau khi trúng đích tiến hành một lần đối kháng (DC16 Thể chất), thất bại thì Trúng đích -2, duy trì hai hiệp。"
             },
             "description": "Một quả bom hình cầu màu đồng thau được điều chế từ nhiều loại vật liệu mạnh và sử dụng ma pháp trận để tăng cường hiệu quả。"
         },
@@ -559,7 +559,7 @@
             "rarity": "uncommon",
             "quantity": 1,
             "effect": {
-                "misfortune_haunting": "Kết quả 3 lần kiểm định d20 tiếp theo của người uống -3"
+                "Vận Rủi Ám Quẻ": "Kết quả 3 lần kiểm định d20 tiếp theo của người uống -3"
             },
             "description": "Sản phẩm của luyện kim thất bại, thường được dùng để ám toán đối thủ. Thân bình có dán nhãn đầu lâu。"
         },
@@ -575,7 +575,7 @@
             "rarity": "uncommon",
             "quantity": 1,
             "effect": {
-                "Fearless": "Miễn dịch hiệu quả sợ hãi trong vòng 1 giờ sau khi uống, kiểm định tinh thần +2"
+                "Vô Úy (Không Sợ Hãi)": "Miễn dịch hiệu quả sợ hãi trong vòng 1 giờ sau khi uống, kiểm định tinh thần +2"
             },
             "description": "Sau khi uống sẽ cảm thấy nhiệt huyết sôi trào, giống như có thể tay không xé xác Cự Long。"
         },
@@ -591,7 +591,7 @@
             "rarity": "rare",
             "quantity": 1,
             "effect": {
-                "BodySizeReduction": "Vóc dáng thu nhỏ còn 1/4 so với ban đầu sau khi uống, duy trì 1 giờ"
+                "Thu Thân Thuật": "Vóc dáng thu nhỏ còn 1/4 so với ban đầu sau khi uống, duy trì 1 giờ"
             },
             "description": "Cùng mẫu với Alice, thích hợp để khám phá không gian hẹp hoặc trốn tránh sự truy đuổi。"
         },
@@ -607,7 +607,7 @@
             "rarity": "rare",
             "quantity": 1,
             "effect": {
-                "body_size_increase": "Sau khi uống, vóc dáng tăng lên gấp 2 lần so với ban đầu, duy trì trong 1 giờ, kiểm định Lực +3"
+                "Cự Thân Thuật": "Sau khi uống, vóc dáng tăng lên gấp 2 lần so với ban đầu, duy trì trong 1 giờ, kiểm định Lực +3"
             },
             "description": "Giúp bạn tức khắc biến thành người khổng lồ, nhưng quần áo có thể bị rách。"
         },
@@ -623,7 +623,7 @@
             "rarity": "rare",
             "quantity": 1,
             "effect": {
-                "floating_key": "Sau khi uống có thể trôi nổi trên không trung, duy trì 10 phút, có thể tự do điều khiển độ cao và phương hướng"
+                "Phù Không Ấn Ký": "Sau khi uống có thể trôi nổi trên không trung, duy trì 10 phút, có thể tự do điều khiển độ cao và phương hướng"
             },
             "description": "Một lựa chọn nhẹ nhàng hơn so với Phi Hành Thuật, sẽ không khiến bạn bay quá cao rồi rơi chết。"
         },
@@ -639,7 +639,7 @@
             "rarity": "rare",
             "quantity": 1,
             "effect": {
-                "Invisibility": "Sau khi uống cơ thể trở nên trong suốt, duy trì 30 phút, kiểm định tiên công +5"
+                "Độn Thuật Vô Hình": "Sau khi uống cơ thể trở nên trong suốt, duy trì 30 phút, kiểm định tiên công +5"
             },
             "description": "Hiệu quả ẩn thân hoàn mỹ, nhưng bóng và dấu chân của bạn vẫn tồn tại。"
         },
@@ -655,7 +655,7 @@
             "rarity": "rare",
             "quantity": 1,
             "effect": {
-                "Stoneskin": "Sau khi uống da dẻ cứng hóa như đá, giảm trừ sát thương vật lý 30%, duy trì 10 phút"
+                "Thạch Cơ (Da Đá)": "Sau khi uống da dẻ cứng hóa như đá, giảm trừ sát thương vật lý 30%, duy trì 10 phút"
             },
             "description": "Khiến da của bạn cứng như nham thạch, nhưng tốc độ di chuyển sẽ giảm nhẹ。"
         },
@@ -671,7 +671,7 @@
             "rarity": "uncommon",
             "quantity": 2,
             "effect": {
-                "underwater_breathing": "Sau khi uống có thể tự do thở dưới nước, duy trì 1 giờ"
+                "Thủy Hạ Hô Hấp": "Sau khi uống có thể tự do thở dưới nước, duy trì 1 giờ"
             },
             "description": "Hai bên cổ sẽ tạm thời mọc ra mang cá, mặc dù trông hơi kỳ lạ。"
         },
@@ -708,22 +708,22 @@
             "Description": "Vật dụng thiết yếu của gián điệp và kẻ lừa đảo, cũng là trợ thủ đắc lực cho những trò đùa。"
         }
     ],
-    "TarotCards": [
+    "Bài Tarot": [
         {
             "name": "The Fool-N",
             "cost": 22,
             "type": "Vật phẩm tiêu hao",
             "tag": [
-                "Tarot",
+                "Bài Tarot",
                 "Sao chép",
                 "Phân giải"
             ],
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "Tarot": "Chọn một trong hai hiệu quả sau để phát động",
-                "Upright": "Chọn một vật phẩm, nhận được bản sao tạm thời của nó, duy trì 22 giờ",
-                "Reversed": "Chọn một vật phẩm, hoàn nguyên nó thành một phần nguyên liệu thô"
+                "Bài Tarot": "Chọn một trong hai hiệu quả sau để phát động",
+                "Chính Vị": "Chọn một vật phẩm, nhận được bản sao tạm thời của nó, duy trì 22 giờ",
+                "Nghịch Chuyển": "Chọn một vật phẩm, hoàn nguyên nó thành một phần nguyên liệu thô"
             },
             "description": "Mặt bài vẽ một lữ hành giả đang bước tới vách đá, hành nang trống rỗng. Nó tỏa ra một hơi thở hỗn độn, làm mờ đi ranh giới giữa 'tồn tại' và 'hư vô', vừa có thể thông qua ký ức để hiện thực hóa hư ảnh của vật phẩm, vừa có thể hoàn nguyên vật chất vốn dĩ nguyên vẹn về lại lớp bụi ban sơ。"
         },
@@ -732,16 +732,16 @@
             "cost": 77,
             "type": "Vật phẩm tiêu hao",
             "tag": [
-                "Bài Tarot",
+                "Bài Bài Tarot",
                 "Buff",
                 "Debuff"
             ],
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "tarot": "Chọn một trong hai hiệu ứng sau để kích hoạt",
-                "upright": "Triển khai Lĩnh vực Ma lực kéo dài 4 hiệp, khi tất cả hiệu ứng ma pháp trong vòng 100 mét kích hoạt, tiêu tốn MP giảm 75%",
-                "reversed": "Triển khai Lĩnh vực Cấm ma kéo dài 4 hiệp, khi tất cả hiệu ứng ma pháp trong vòng 100 mét kích hoạt, cần tiến hành thêm một lần kiểm định mới có thể kích hoạt bình thường"
+                "Tarot": "Chọn một trong hai hiệu ứng sau để kích hoạt",
+                "Chính Vị": "Triển khai Lĩnh vực Ma lực kéo dài 4 hiệp, khi tất cả hiệu ứng ma pháp trong vòng 100 mét kích hoạt, tiêu tốn MP giảm 75%",
+                "Nghịch Đảo": "Triển khai Lĩnh vực Cấm ma kéo dài 4 hiệp, khi tất cả hiệu ứng ma pháp trong vòng 100 mét kích hoạt, cần tiến hành thêm một lần kiểm định mới có thể kích hoạt bình thường"
             },
             "description": "Nhà ảo thuật trên mặt bài một tay chỉ trời, điều khiển sự cân bằng của bốn yếu tố. Xung quanh lá bài được bao quanh bởi những gợn sóng pháp lực có thể nhìn thấy bằng mắt thường, tượng trưng cho sự kiểm soát tuyệt đối đối với ma lực — bạn có thể thông qua nó để khiến ma lực chảy trôi mượt mà như nước suối, hoặc cắt đứt hoàn toàn sự kết nối giữa khu vực này với cội nguồn ma pháp。"
         },
@@ -750,15 +750,15 @@
             "cost": 77,
             "Type": "Vật phẩm tiêu hao",
             "tag": [
-                "Thẻ Tarot",
+                "Thẻ Bài Tarot",
                 "Dự Ngôn"
             ],
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "Tarot": "Chọn một trong hai hiệu quả sau để kích hoạt",
-                "Upright": "Sau khi sử dụng, chọn một mục tiêu, trong đầu sẽ phát một đoạn phim về tương lai của mục tiêu đó",
-                "Reversed": "Sau khi sử dụng, chọn một mục tiêu, trong đầu sẽ phát một đoạn phim về quá khứ của mục tiêu đó"
+                "Bài Tarot": "Chọn một trong hai hiệu quả sau để kích hoạt",
+                "Chính Vị": "Sau khi sử dụng, chọn một mục tiêu, trong đầu sẽ phát một đoạn phim về tương lai của mục tiêu đó",
+                "Nghịch Chuyển": "Sau khi sử dụng, chọn một mục tiêu, trong đầu sẽ phát một đoạn phim về quá khứ của mục tiêu đó"
             },
             "Description": "Nữ Đại Tư Tế ngồi giữa hai cột đá đen trắng, cuộn giấy trên tay có tên là 《TORA》. Lá bài này mang lại cảm giác lạnh lẽo khi chạm vào, như thể kết nối với dòng sông thời gian dài đằng đẵng. Sử dụng nó trong lúc thiền định, bạn sẽ có thể nhìn trộm một góc của bức màn vận mệnh, dù đó là ảo ảnh chưa xảy ra hay sự thật đã bị lãng quên。"
         },
@@ -767,15 +767,15 @@
             "cost": 77,
             "Type": "Vật phẩm tiêu hao",
             "tag": [
-                "Thẻ Tarot",
+                "Thẻ Bài Tarot",
                 "Trưởng thành"
             ],
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "Tarot": "Chọn một trong hai hiệu quả sau đây để kích hoạt",
-                "Upright": "Triệu hồi vài luồng ánh sáng, khiến thực vật trong phạm vi 30 mét nhanh chóng chín muồi",
-                "Reversed": "Triệu hồi vài luồng ánh sáng, khiến thực vật trong phạm vi 30 mét liên tục sinh trưởng đến khi khô héo"
+                "Bài Tarot": "Chọn một trong hai hiệu quả sau đây để kích hoạt",
+                "Chính Vị": "Triệu hồi vài luồng ánh sáng, khiến thực vật trong phạm vi 30 mét nhanh chóng chín muồi",
+                "Nghịch Chuyển": "Triệu hồi vài luồng ánh sáng, khiến thực vật trong phạm vi 30 mét liên tục sinh trưởng đến khi khô héo"
             },
             "description": "Mặt bài tràn đầy hơi thở của ngũ cốc phong nhiêu và rừng rậm. Nó là sự ban tặng của đại tự nhiên, chứa đựng sinh mệnh lực cực hạn. Sức mạnh này có thể thúc đẩy vạn vật đi tới đỉnh cao của sự chín muồi, nhưng nếu khuynh chú quá mức, sinh mệnh sẽ nhanh chóng thấu chi trong sự sinh trưởng điên cuồng, đi tới khô kiệt。"
         },
@@ -784,16 +784,16 @@
             "cost": 77,
             "type": "Vật phẩm tiêu hao",
             "tag": [
-                "Thẻ Tarot",
+                "Thẻ Bài Tarot",
                 "Buff",
                 "Phòng hộ"
             ],
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "Tarot": "Chọn một trong hai hiệu quả sau để kích hoạt",
-                "Upright": "Triển khai lập trường thủ hộ kéo dài 4 hiệp, trong thời gian này đơn vị có thể đi ra nhưng không thể đi vào",
-                "Reversed": "Triển khai lập trường thủ hộ kéo dài 4 hiệp, trong thời gian này đơn vị có thể đi vào nhưng không thể đi ra"
+                "Bài Tarot": "Chọn một trong hai hiệu quả sau để kích hoạt",
+                "Chính Vị": "Triển khai lập trường thủ hộ kéo dài 4 hiệp, trong thời gian này đơn vị có thể đi ra nhưng không thể đi vào",
+                "Nghịch Chuyển": "Triển khai lập trường thủ hộ kéo dài 4 hiệp, trong thời gian này đơn vị có thể đi vào nhưng không thể đi ra"
             },
             "description": "Ngai vàng bằng đá cứng cáp tượng trưng cho trật tự không thể lay chuyển. Lá bài này đại diện cho \"Cương vực\" và \"Quy tắc\" tuyệt đối. Khi kích hoạt, không gian sẽ bị cưỡng chế phân chia thành \"Vương thổ\" và \"Man hoang\", bạn có thể quyết định là cự tuyệt kẻ địch ngoài ngàn dặm, hay là giam cầm con mồi trong lồng sắt。"
         },
@@ -802,16 +802,16 @@
             "cost": 77,
             "type": "Vật phẩm tiêu hao",
             "tag": [
-                "Thẻ Tarot",
+                "Thẻ Bài Tarot",
                 "Debuff",
                 "Tẩy não"
             ],
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "Tarot": "Chọn một trong hai hiệu quả sau để kích hoạt",
-                "upright": "Chọn một mục tiêu, ảnh hưởng vĩnh viễn đến tư tưởng của đối tượng, khiến tính cách thiên về lý tính",
-                "reversed": "Chọn một mục tiêu, khiến câu nói tiếp theo của đối tượng mang hiệu quả tẩy não"
+                "Bài Tarot": "Chọn một trong hai hiệu quả sau để kích hoạt",
+                "Chính Vị": "Chọn một mục tiêu, ảnh hưởng vĩnh viễn đến tư tưởng của đối tượng, khiến tính cách thiên về lý tính",
+                "Nghịch Đảo": "Chọn một mục tiêu, khiến câu nói tiếp theo của đối tượng mang hiệu quả tẩy não"
             },
             "description": "Dưới vương miện ba tầng là khuôn mặt nghiêm nghị, tay phải giơ lên tư thế tượng trưng cho sự chúc phúc. Lá bài này mang theo cảm giác áp bức tinh thần nặng nề, đại diện cho sự ràng buộc của truyền thống và giáo điều. Nó vừa có thể ban cho con người lý tính tuyệt đối thông qua sự huấn thị thần thánh, vừa có thể cấy vào những ám thị không thể kháng cự thông qua những lời lẽ cuồng nhiệt。"
         },
@@ -820,16 +820,16 @@
             "cost": 77,
             "type": "Vật phẩm tiêu hao",
             "tag": [
-                "Thẻ Tarot",
+                "Thẻ Bài Tarot",
                 "Buff",
                 "Debuff"
             ],
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "tarot": "Chọn một trong hai hiệu quả sau đây để kích hoạt",
-                "upright": "Chọn hai mục tiêu, khiến hai mục tiêu này cùng tiến vào trạng thái “Đọc tâm”, duy trì trong 6 giờ",
-                "Reverse_Position": "Chọn hai mục tiêu, khiến hai mục tiêu này cùng rơi vào trạng thái 'Mê Hoặc', duy trì 6 giờ"
+                "Tarot": "Chọn một trong hai hiệu quả sau đây để kích hoạt",
+                "Chính Vị": "Chọn hai mục tiêu, khiến hai mục tiêu này cùng tiến vào trạng thái “Đọc tâm”, duy trì trong 6 giờ",
+                "Nghịch Chuyển Vị Trí": "Chọn hai mục tiêu, khiến hai mục tiêu này cùng rơi vào trạng thái 'Mê Hoặc', duy trì 6 giờ"
             },
             "description": "Thiên sứ trên tầng mây cúi nhìn nam nữ trong Vườn Địa Đàng. Lá bài này khi sử dụng sẽ phát ra nhịp điệu như nhịp tim. Nó là cây cầu kết nối hai linh hồn, vừa có thể mang lại sự thấu hiểu và cộng hưởng không chút giữ lại, vừa có thể dệt nên sức hút chí mạng, khiến người ta lạc lối trong vòng xoáy dục vọng。"
         },
@@ -838,15 +838,15 @@
             "cost": 77,
             "type": "Vật phẩm tiêu hao",
             "tag": [
-                "Bài Tarot",
+                "Bài Bài Tarot",
                 "Sát thương"
             ],
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "Tarot": "Chọn một trong hai hiệu quả sau đây để kích hoạt",
-                "Upright_Position": "Chọn năm mục tiêu, gây cho chúng 700 điểm sát thương cố định",
-                "Reverse_Position": "Gây 700 điểm sát thương cố định lên tất cả mục tiêu trên sân (không phân biệt địch ta), lặp lại ba lần"
+                "Bài Tarot": "Chọn một trong hai hiệu quả sau đây để kích hoạt",
+                "Vị Trí Chính Diện": "Chọn năm mục tiêu, gây cho chúng 700 điểm sát thương cố định",
+                "Nghịch Chuyển Vị Trí": "Gây 700 điểm sát thương cố định lên tất cả mục tiêu trên sân (không phân biệt địch ta), lặp lại ba lần"
             },
             "description": "Một vị vua khoác chiến giáp đang điều khiển chiến xa, phía trước là hai con nhân sư đen trắng đang kéo dây cương. Lá bài này tỏa ra chiến ý rực cháy và tiếng gầm rú của sắt thép, vừa có thể tập trung sức mạnh nghiền nát kẻ địch chỉ định, cũng có thể vì mất kiểm soát mà hóa thành cơn bão hủy diệt không phân biệt, biến chiến trường thành đất cháy。"
         },
@@ -855,16 +855,16 @@
             "cost": 77,
             "type": "Vật phẩm tiêu hao",
             "tag": [
-                "Bài Tarot",
+                "Bài Bài Tarot",
                 "Buff",
                 "Debuff"
             ],
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "tarot": "Chọn một trong hai hiệu quả sau để phát động",
-                "upright": "Chọn một mục tiêu, khiến trạng thái tinh thần của đối tượng thăng tiến, tất cả kiểm định tinh thần nhận được hiệu đính +2, duy trì 8 giờ",
-                "reversed": "Chọn một mục tiêu, khiến trạng thái tinh thần của đối tượng hạ thấp, tất cả kiểm định tinh thần nhận được hiệu đính -2, duy trì 8 giờ"
+                "Tarot": "Chọn một trong hai hiệu quả sau để phát động",
+                "Chính Vị": "Chọn một mục tiêu, khiến trạng thái tinh thần của đối tượng thăng tiến, tất cả kiểm định tinh thần nhận được hiệu đính +2, duy trì 8 giờ",
+                "Nghịch Đảo": "Chọn một mục tiêu, khiến trạng thái tinh thần của đối tượng hạ thấp, tất cả kiểm định tinh thần nhận được hiệu đính -2, duy trì 8 giờ"
             },
             "description": "Người phụ nữ yếu đuối nhẹ nhàng vuốt ve đầu sư tử, tượng trưng cho sự dẻo dai nội tại 'lấy nhu thắng cương'. Lá bài này chứa đựng dao động tinh thần mạnh mẽ, có thể ban cho người sử dụng ý chí thép vượt xa nhục thể, cũng có thể thông qua sự tan rã ở tầng diện tâm lý, khiến chiến sĩ hung mãnh nhất trở nên yếu ớt không chịu nổi。"
         },
@@ -873,16 +873,16 @@
             "cost": 77,
             "type": "Vật phẩm tiêu hao",
             "tag": [
-                "Bài Tarot",
+                "Bài Bài Tarot",
                 "Buff",
                 "Hồi phục"
             ],
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "Tarot": "Chọn một trong hai hiệu quả sau để kích hoạt",
-                "Upright": "Chọn một khu vực nhỏ, khiến nó tiến vào trạng thái “Ẩn Nấp”, không thể bị bên ngoài phát giác, duy trì 9 giờ",
-                "Reversed": "Chọn một mục tiêu, khiến thời gian duy trì còn lại, số tầng cộng dồn và số lần còn lại của tất cả trạng thái tạm thời của mục tiêu đó trở về không"
+                "Bài Tarot": "Chọn một trong hai hiệu quả sau để kích hoạt",
+                "Chính Vị": "Chọn một khu vực nhỏ, khiến nó tiến vào trạng thái “Ẩn Nấp”, không thể bị bên ngoài phát giác, duy trì 9 giờ",
+                "Nghịch Chuyển": "Chọn một mục tiêu, khiến thời gian duy trì còn lại, số tầng cộng dồn và số lần còn lại của tất cả trạng thái tạm thời của mục tiêu đó trở về không"
             },
             "description": "Một vị lão giả cầm đèn lồng đứng trên đỉnh núi tuyết, cách xa sự ồn ào của thế tục. Lá bài này mang một ma lực “thu liễm”, nó có thể tạo ra một nơi lánh đời không bị thế giới quan sát, hoặc cưỡng chế tước đoạt tất cả các trạng thái phức tạp đính kèm trên cơ thể, để sự vật trở về với sự cô độc và bản chân nguyên thủy nhất。"
         },
@@ -891,16 +891,16 @@
             "cost": 77,
             "type": "Vật phẩm tiêu hao",
             "tag": [
-                "Thẻ Bài Tarot",
+                "Thẻ Bài Bài Tarot",
                 "Buff",
                 "Debuff"
             ],
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "Tarot": "Chọn một trong hai hiệu quả sau đây để kích hoạt",
-                "Upright": "Chọn một mục tiêu, khiến lần kiểm định liên quan đến xác suất tiếp theo của mục tiêu đó nhận được hiệu đính +10",
-                "Reversed": "Chọn một mục tiêu, khiến lần kiểm định liên quan đến xác suất tiếp theo của mục tiêu đó nhận được hiệu đính -10"
+                "Bài Tarot": "Chọn một trong hai hiệu quả sau đây để kích hoạt",
+                "Chính Vị": "Chọn một mục tiêu, khiến lần kiểm định liên quan đến xác suất tiếp theo của mục tiêu đó nhận được hiệu đính +10",
+                "Nghịch Chuyển": "Chọn một mục tiêu, khiến lần kiểm định liên quan đến xác suất tiếp theo của mục tiêu đó nhận được hiệu đính -10"
             },
             "description": "Trên chiếc vòng quay khổng lồ khắc đầy các ký hiệu luyện kim, Sphinx ở trên đỉnh cao đang chú mục vào mọi thứ. Nhìn chằm chằm vào lá bài này lâu sẽ khiến người ta cảm thấy chóng mặt, như thể nhìn thấy vô số khả năng của tương lai. Khẽ xoay chuyển nó, bạn có thể lay động những sợi tơ nhân quả, mang lại vận may kỳ tích hoặc vận rủi không thể tránh khỏi。"
         },
@@ -909,7 +909,7 @@
             "cost": 77,
             "type": "Vật phẩm tiêu hao",
             "tag": [
-                "Thẻ Bài Tarot",
+                "Thẻ Bài Bài Tarot",
                 "HP",
                 "MP",
                 "SP",
@@ -918,9 +918,9 @@
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "Tarot": "Chọn một trong hai hiệu quả sau đây để phát động",
-                "Upright": "Chọn một mục tiêu, khiến tài nguyên cơ bản (HP, MP, SP) của nó trở thành 50% giới hạn tối đa%",
-                "Reversed": "Chọn một mục tiêu, khiến tài nguyên cơ bản (HP, MP, SP) đảo ngược thành giá trị đã tổn thất, giá trị biến động tài nguyên cơ bản không vượt quá 50% giới hạn tối đa%"
+                "Bài Tarot": "Chọn một trong hai hiệu quả sau đây để phát động",
+                "Chính Vị": "Chọn một mục tiêu, khiến tài nguyên cơ bản (HP, MP, SP) của nó trở thành 50% giới hạn tối đa%",
+                "Nghịch Chuyển": "Chọn một mục tiêu, khiến tài nguyên cơ bản (HP, MP, SP) đảo ngược thành giá trị đã tổn thất, giá trị biến động tài nguyên cơ bản không vượt quá 50% giới hạn tối đa%"
             },
             "description": "Thanh kiếm và thiên bình tượng trưng cho sự công chính và phán quyết tuyệt đối. Lá bài này không mang bất kỳ màu sắc cảm xúc nào, nó theo đuổi sự cân bằng toán học thuần túy. Cho dù là cưỡng chế 'hiệu đính' trạng thái thành một nửa trung dung, hay là đảo lộn khái niệm 'sở hữu' và 'mất đi', đều phụ thuộc vào định nghĩa của bạn về sự công bằng。"
         },
@@ -929,7 +929,7 @@
             "cost": 77,
             "type": "Vật phẩm tiêu hao",
             "tag": [
-                "Thẻ Tarot",
+                "Thẻ Bài Tarot",
                 "Buff",
                 "Debuff",
                 "Cái Giá",
@@ -938,9 +938,9 @@
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "Tarot": "Chọn một trong hai hiệu quả sau để kích hoạt",
-                "Upright": "Chọn một kỹ năng, sau đó tiến vào trạng thái 'Treo Ngược Trên Cây' trong chín ngày, trong thời gian này không thể thực hiện bất kỳ hành động nào, sau khi trạng thái kết thúc sẽ nâng phẩm chất của kỹ năng đã chọn lên một bậc",
-                "Reversed": "Chọn một mục tiêu, khiến giới hạn tài nguyên cơ bản (HP, MP, SP) của mục tiêu đó giảm vĩnh viễn 12%, sau đó trong mười hai giờ tiếp theo, liên tục hồi phục tài nguyên cơ bản (HP, MP, SP) và liên tục xóa bỏ mọi trạng thái bất thường"
+                "Bài Tarot": "Chọn một trong hai hiệu quả sau để kích hoạt",
+                "Chính Vị": "Chọn một kỹ năng, sau đó tiến vào trạng thái 'Treo Ngược Trên Cây' trong chín ngày, trong thời gian này không thể thực hiện bất kỳ hành động nào, sau khi trạng thái kết thúc sẽ nâng phẩm chất của kỹ năng đã chọn lên một bậc",
+                "Nghịch Chuyển": "Chọn một mục tiêu, khiến giới hạn tài nguyên cơ bản (HP, MP, SP) của mục tiêu đó giảm vĩnh viễn 12%, sau đó trong mười hai giờ tiếp theo, liên tục hồi phục tài nguyên cơ bản (HP, MP, SP) và liên tục xóa bỏ mọi trạng thái bất thường"
             },
             "description": "Người chịu nạn bị treo ngược, trên đầu tỏa ra hào quang trí tuệ. Lá bài này đại diện cho 'hy sinh' và 'trao đổi'. Thông qua sự tĩnh lặng và hiến tế trong thời gian dài, nó có thể đổi lấy sự giác ngộ ở chiều không gian cao hơn; hoặc thông qua việc hy sinh vĩnh viễn một phần tiềm năng, đổi lấy khả năng hồi phục gần như bất tử cho cơ thể trong thời gian ngắn。"
         },
@@ -949,7 +949,7 @@
             "cost": 77,
             "type": "Vật phẩm tiêu hao",
             "tag": [
-                "Thẻ Tarot",
+                "Thẻ Bài Tarot",
                 "Sát thương",
                 "Debuff",
                 "Phục sinh"
@@ -957,9 +957,9 @@
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "Tarot": "Chọn một trong hai hiệu quả dưới đây để phát động",
-                "Upright": "Chọn một mục tiêu, khiến nó tiêu biến 13% HP tối đa, nếu mục tiêu không vì sát thương này mà tử vong, thì vĩnh viễn giảm 13% giới hạn HP tối đa",
-                "Reversed": "Chọn một mục tiêu đã tử vong, nếu mục tiêu tử vong không quá 13 giờ, không phải chết vì già yếu, và không phải sinh vật bất tử, thì mục tiêu sẽ phục sinh với trạng thái HP đầy đủ, chữa lành mọi vết thương xác thịt, và khôi phục bất kỳ bộ phận cơ thể nào đã mất"
+                "Bài Tarot": "Chọn một trong hai hiệu quả dưới đây để phát động",
+                "Chính Vị": "Chọn một mục tiêu, khiến nó tiêu biến 13% HP tối đa, nếu mục tiêu không vì sát thương này mà tử vong, thì vĩnh viễn giảm 13% giới hạn HP tối đa",
+                "Nghịch Chuyển": "Chọn một mục tiêu đã tử vong, nếu mục tiêu tử vong không quá 13 giờ, không phải chết vì già yếu, và không phải sinh vật bất tử, thì mục tiêu sẽ phục sinh với trạng thái HP đầy đủ, chữa lành mọi vết thương xác thịt, và khôi phục bất kỳ bộ phận cơ thể nào đã mất"
             },
             "description": "Kỵ sĩ mặc giáp đen cưỡi ngựa trắng giẫm đạp đi qua, quốc vương và kẻ ăn xin đều không thể may mắn thoát khỏi. Lá bài này tỏa ra hơi thở tử vong khiến người ta nghẹt thở, nhưng cũng ẩn chứa hạt giống của sự tân sinh. Nó có thể trực tiếp thu hoạch Nguyên Chất Sinh Mệnh, cũng có thể nghịch chuyển ranh giới sinh tử, khiến người đã khuất từ bờ bên kia của Minh Hà trở về vẹn toàn。"
         },
@@ -968,16 +968,16 @@
             "cost": 77,
             "type": "Vật phẩm tiêu hao",
             "tag": [
-                "Thẻ bài Tarot",
+                "Thẻ bài Bài Tarot",
                 "Buff",
                 "Cái Giá"
             ],
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "Tarot": "Chọn một trong hai hiệu quả sau đây để kích hoạt",
-                "Upright": "Chọn một mục tiêu, khiến tiêu tốn kỹ năng của kẻ đó trở thành 14%, duy trì 7 hiệp",
-                "Reversed": "Chọn một mục tiêu, khiến kẻ đó mỗi hiệp nhận thêm một [Tấn Công] và [Hành Động] bổ sung, tiêu tốn kỹ năng tăng thêm 140%, duy trì 7 hiệp"
+                "Bài Tarot": "Chọn một trong hai hiệu quả sau đây để kích hoạt",
+                "Chính Vị": "Chọn một mục tiêu, khiến tiêu tốn kỹ năng của kẻ đó trở thành 14%, duy trì 7 hiệp",
+                "Nghịch Chuyển": "Chọn một mục tiêu, khiến kẻ đó mỗi hiệp nhận thêm một [Tấn Công] và [Hành Động] bổ sung, tiêu tốn kỹ năng tăng thêm 140%, duy trì 7 hiệp"
             },
             "description": "Thiên sứ rót nước giữa hai chiếc Thánh Chén, dòng nước dù đổ thế nào cũng không hề tràn ra. Lá bài này tượng trưng cho sự 'điều hòa' và 'chuyển hóa' của năng lượng. Bạn có thể chọn kỹ thuật tiết kiệm năng lượng cực hạn để đảm bảo tác chiến liên tục, hoặc phá vỡ sự cân bằng, dùng tiêu tốn gấp bội để đổi lấy tốc độ hành động vượt qua giới hạn。"
         },
@@ -986,16 +986,16 @@
             "cost": 77,
             "type": "Vật phẩm tiêu hao",
             "tag": [
-                "Thẻ Bài Tarot",
+                "Thẻ Bài Bài Tarot",
                 "Buff",
                 "Debuff"
             ],
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "Tarot": "Chọn một trong hai hiệu quả sau đây để kích hoạt",
-                "Upright": "Chọn một mục tiêu, kích phát ham muốn mãnh liệt trong lòng họ, duy trì 15 giờ",
-                "Reversed": "Chọn một mục tiêu, ảnh hưởng vĩnh viễn đến tư tưởng của họ, khiến tính cách thiên về cảm tính"
+                "Bài Tarot": "Chọn một trong hai hiệu quả sau đây để kích hoạt",
+                "Chính Vị": "Chọn một mục tiêu, kích phát ham muốn mãnh liệt trong lòng họ, duy trì 15 giờ",
+                "Nghịch Chuyển": "Chọn một mục tiêu, ảnh hưởng vĩnh viễn đến tư tưởng của họ, khiến tính cách thiên về cảm tính"
             },
             "description": "Ác quỷ khổng lồ ngồi xổm trên tảng đá vuông, xiềng xích lỏng lẻo quấn quanh cổ con người. Lá bài này khi chạm vào có cảm giác hơi nhờn và ấm nóng, nó thì thầm những lời cám dỗ, có thể tức thời thắp lên khát vọng nguyên thủy nhất sâu trong lòng sinh vật, hoặc vĩnh viễn tháo gỡ xiềng xích của lý trí, để cảm tính và xung động làm chủ linh hồn。"
         },
@@ -1004,16 +1004,16 @@
             "cost": 77,
             "type": "Vật phẩm tiêu hao",
             "tag": [
-                "Bài Tarot",
+                "Bài Bài Tarot",
                 "Sát thương",
                 "Phá hoại"
             ],
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "Tarot": "Chọn một trong hai hiệu quả sau đây để kích hoạt",
-                "Upright": "Triệu hồi một đạo lôi kích, phá hủy một món đạo cụ hoặc trang bị",
-                "Reversed": "Triệu hồi nhiều đạo lôi kích, xóa sạch địa hình trong bán kính 16 mét"
+                "Bài Tarot": "Chọn một trong hai hiệu quả sau đây để kích hoạt",
+                "Chính Vị": "Triệu hồi một đạo lôi kích, phá hủy một món đạo cụ hoặc trang bị",
+                "Nghịch Chuyển": "Triệu hồi nhiều đạo lôi kích, xóa sạch địa hình trong bán kính 16 mét"
             },
             "description": "Tia sét đánh trúng vương miện của tòa tháp cao, kẻ rơi xuống kinh hãi thốt lên trong ánh lửa. Lá bài này có mùi lưu huỳnh và ozone, đại diện cho \"tai họa\" và \"sụp đổ\" bất ngờ. Không gì có thể ngăn cản sức mạnh hủy diệt này, dù là đạo cụ ma pháp kiên cố hay mặt đất dưới chân vốn là nơi nương tựa để sinh tồn。"
         },
@@ -1022,16 +1022,16 @@
             "cost": 77,
             "type": "Vật phẩm tiêu hao",
             "tag": [
-                "Bài Tarot",
+                "Bài Bài Tarot",
                 "Buff",
                 "Debuff"
             ],
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "Tarot": "Chọn một trong hai hiệu quả sau để kích hoạt",
-                "Upright": "Chọn một mục tiêu, thanh tẩy tất cả trạng thái tiêu cực của mục tiêu đó",
-                "reversed": "Chọn một mục tiêu, khiến kẻ đó rơi vào ảo ảnh tuyệt đẹp, duy trì trong 17 giờ"
+                "Bài Tarot": "Chọn một trong hai hiệu quả sau để kích hoạt",
+                "Chính Vị": "Chọn một mục tiêu, thanh tẩy tất cả trạng thái tiêu cực của mục tiêu đó",
+                "Nghịch Đảo": "Chọn một mục tiêu, khiến kẻ đó rơi vào ảo ảnh tuyệt đẹp, duy trì trong 17 giờ"
             },
             "description": "Thiếu nữ khỏa thân dưới bầu trời sao đang đổ nước từ bình vào ao và mặt đất. Lá bài này lấp lánh ánh sáng dịu nhẹ và thánh khiết, tượng trưng cho hy vọng và cảm hứng. Năng lượng thuần khiết của nó có thể tẩy rửa mọi lời nguyền ô uế, cũng có thể dệt nên những ảo cảnh quá đỗi tốt đẹp, khiến con người chìm đắm trong sự an ninh giả tạo mà không muốn tỉnh lại。"
         },
@@ -1040,15 +1040,15 @@
             "cost": 77,
             "type": "Vật phẩm tiêu hao",
             "tag": [
-                "Bài Tarot",
+                "Bài Bài Tarot",
                 "Buff"
             ],
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "tarot": "Chọn một trong hai hiệu quả sau đây để kích hoạt",
-                "upright": "Chọn một mục tiêu, khiến lời nói của kẻ đó không thể phân biệt thật giả, duy trì trong 18 giờ",
-                "reversed": "Chọn một mục tiêu, khiến kẻ đó có thể phân biệt thật giả của sự vật, duy trì trong 18 giờ"
+                "Tarot": "Chọn một trong hai hiệu quả sau đây để kích hoạt",
+                "Chính Vị": "Chọn một mục tiêu, khiến lời nói của kẻ đó không thể phân biệt thật giả, duy trì trong 18 giờ",
+                "Nghịch Đảo": "Chọn một mục tiêu, khiến kẻ đó có thể phân biệt thật giả của sự vật, duy trì trong 18 giờ"
             },
             "description": "Dưới ánh trăng, chó và sói sủa vang bầu trời, một con tôm hùm bò ra từ dưới nước. Cảnh tượng này không ngừng vặn vẹo biến hình nơi rìa tầm mắt. Lá bài này chi phối 'ảo giác' và 'tiềm thức', nó có thể bao phủ lên ngôn ngữ một lớp sương mù không thể nhìn thấu, cũng có thể ban cho bạn đôi mắt nhìn thấu sự thật duy nhất trong màn sương。"
         },
@@ -1057,15 +1057,15 @@
             "cost": 77,
             "type": "Vật phẩm tiêu hao",
             "tag": [
-                "Bài Tarot",
+                "Bài Bài Tarot",
                 "Buff"
             ],
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "tarot_key": "Chọn một trong hai hiệu quả sau đây để kích hoạt",
-                "upright_key": "Chọn một mục tiêu, khiến tất cả kiểm định của nó nhận được hiệu đính từ +1~+7 từ thấp đến cao, tổng cộng bảy lần",
-                "reversed_key": "Chọn một mục tiêu, khiến tất cả kiểm định của nó nhận được hiệu đính từ +1~+7 từ cao đến thấp, tổng cộng bảy lần"
+                "Tarot Cốt Lõi": "Chọn một trong hai hiệu quả sau đây để kích hoạt",
+                "Chính Vị Cốt Lõi": "Chọn một mục tiêu, khiến tất cả kiểm định của nó nhận được hiệu đính từ +1~+7 từ thấp đến cao, tổng cộng bảy lần",
+                "Nghịch Đảo Cốt Lõi": "Chọn một mục tiêu, khiến tất cả kiểm định của nó nhận được hiệu đính từ +1~+7 từ cao đến thấp, tổng cộng bảy lần"
             },
             "description": "Đứa trẻ cưỡi ngựa trắng reo hò dưới mặt trời khổng lồ. Lá bài này tỏa ra hơi nóng bỏng rẫy, tượng trưng cho sự thành công và sức sống thuần khiết. Nó giống như quỹ đạo của mặt trời mọc và lặn, có thể ban tặng sự gia trì mạnh mẽ như mặt trời ban trưa cho hành động, hoặc để vận may giảm dần theo ánh hoàng hôn cho đến khi trở lại bình lặng。"
         },
@@ -1074,16 +1074,16 @@
             "cost": 77,
             "type": "Vật phẩm tiêu hao",
             "tag": [
-                "Bài Tarot",
+                "Bài Bài Tarot",
                 "Buff",
                 "Debuff"
             ],
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "Tarot": "Chọn một trong hai hiệu quả sau đây để kích hoạt",
-                "Upright": "Chọn một mục tiêu, độ nhạy cảm tăng 100%, duy trì trong 20 giờ",
-                "Reversed": "Chọn một mục tiêu, độ nhạy cảm giảm 50%, duy trì trong 20 giờ"
+                "Bài Tarot": "Chọn một trong hai hiệu quả sau đây để kích hoạt",
+                "Chính Vị": "Chọn một mục tiêu, độ nhạy cảm tăng 100%, duy trì trong 20 giờ",
+                "Nghịch Chuyển": "Chọn một mục tiêu, độ nhạy cảm giảm 50%, duy trì trong 20 giờ"
             },
             "description": "Thiên sứ thổi vang chiếc tù và của ngày tận thế, những người chết lần lượt đứng dậy từ quan tài. Tiếng tù và này dường như có thể xuyên thấu linh hồn, mang lại sự \"Thức Tỉnh\" tuyệt đối. Nó có thể nâng cao độ nhạy bén của các giác quan đến cực hạn, cảm nhận từng chút gió thổi cỏ lay; hoặc thông qua việc làm tê liệt cảm tri, ban cho nhục thân sự xá miễn đối với đau đớn。"
         },
@@ -1092,21 +1092,21 @@
             "cost": 77,
             "type": "Vật phẩm tiêu hao",
             "tag": [
-                "Bài Tarot",
+                "Bài Bài Tarot",
                 "Buff",
                 "Debuff"
             ],
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "tarot_key": "Chọn một trong hai hiệu quả sau để phát động",
-                "upright_position": "Chọn một mục tiêu, bốn lần kiểm định tiếp theo nhận được hiệu đính +14",
-                "reversed_position": "Chọn một mục tiêu, ba lần kiểm định tiếp theo nhận được hiệu đính -7"
+                "Tarot Cốt Lõi": "Chọn một trong hai hiệu quả sau để phát động",
+                "Chính Vị Vị Trí": "Chọn một mục tiêu, bốn lần kiểm định tiếp theo nhận được hiệu đính +14",
+                "Nghịch Đảo Vị Trí": "Chọn một mục tiêu, ba lần kiểm định tiếp theo nhận được hiệu đính -7"
             },
             "description": "Vũ công được bao quanh bởi vòng hoa Nguyệt Quế tay cầm Ma Trượng, bốn góc được trấn giữ bởi các Thánh Thú của bốn nguyên tố. Lá bài này nặng trĩu, như thể gánh vác trọng lượng của cả một thế giới hoàn chỉnh. Nó là điểm kết thúc của hành trình, tượng trưng cho sự \"đạt thành\" và \"viên mãn\" hoàn hảo, vừa có thể ban tặng lời chúc phúc cấp cao nhất của Vận Mệnh, cũng có thể giáng xuống lời nguyền nặng nề khi thế giới từ chối bạn。"
         }
     ],
-    "books_key": [
+    "Sách": [
         {
             "name": "Hướng dẫn cho khách đi nhờ xe ở Astaria",
             "cost": 150,
@@ -1518,7 +1518,7 @@
             "description": "Cuốn kỳ thư dạy các sinh vật Vong Linh cách bảo dưỡng cơ thể, tràn đầy sự hài hước đen tối。"
         }
     ],
-    "Mysterious_Person_Items": [
+    "Kỷ vật của Kẻ Vô Danh": [
         {
             "name": "Ngân Thược",
             "cost": 6666,
@@ -1532,9 +1532,9 @@
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "OpenGate": "Có thể mở ra một cánh cửa không tồn tại trong thực tại, tạm thời kết nối các căn phòng bị đóng kín, những con đường bị thất lạc hoặc không gian bị chiết điệp; nhận được +3 hiệu đính khi thực hiện các kiểm định liên quan đến lộ trình, mê cung, phong ấn",
-                "Transgressor": "Người sở hữu có thể cảm tri được quá khứ và tương lai chồng lấp trong thời gian ngắn, nhận được +3 hiệu đính khi thực hiện các kiểm định liên quan đến dự ngôn, truy vết hoặc cảm tri không gian, nhưng sẽ tạm thời mất đi khả năng phán đoán chính xác về dòng chảy thời gian hiện tại",
-                "YogGaze": "Mỗi lần sử dụng đều cần thực hiện một lần kiểm định tinh thần, nếu thất bại sẽ nhận được [Hồi Hưởng Bên Ngoài Cánh Cửa] hoặc trạng thái tinh thần dị thường tương tự; nếu sử dụng liên tục, có thể bị sự tồn tại ở phía bên kia cánh cửa cảm tri ngược lại"
+                "Khai Môn (Mở Cổng)": "Có thể mở ra một cánh cửa không tồn tại trong thực tại, tạm thời kết nối các căn phòng bị đóng kín, những con đường bị thất lạc hoặc không gian bị chiết điệp; nhận được +3 hiệu đính khi thực hiện các kiểm định liên quan đến lộ trình, mê cung, phong ấn",
+                "Kẻ Vượt Giới": "Người sở hữu có thể cảm tri được quá khứ và tương lai chồng lấp trong thời gian ngắn, nhận được +3 hiệu đính khi thực hiện các kiểm định liên quan đến dự ngôn, truy vết hoặc cảm tri không gian, nhưng sẽ tạm thời mất đi khả năng phán đoán chính xác về dòng chảy thời gian hiện tại",
+                "Ánh Nhìn Của Yog": "Mỗi lần sử dụng đều cần thực hiện một lần kiểm định tinh thần, nếu thất bại sẽ nhận được [Hồi Hưởng Bên Ngoài Cánh Cửa] hoặc trạng thái tinh thần dị thường tương tự; nếu sử dụng liên tục, có thể bị sự tồn tại ở phía bên kia cánh cửa cảm tri ngược lại"
             },
             "description": "Một chiếc chìa khóa bạc cổ phát ra ánh sáng trắng lạnh lẽo, răng khía không tương ứng với bất kỳ ổ khóa phàm trần nào. Nó không dùng để mở cửa, mà dùng để chứng minh rằng trên thế gian này chưa từng tồn tại thứ gì thực sự bị khóa chết。"
         },
@@ -1552,9 +1552,9 @@
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "children_of_the_forest": "Sau khi hiến tế huyết nhục, nhũ dịch hoặc hạt giống lên thánh tượng, có thể triệu hồi một Hắc Sơn Dương Ấu Duệ, Thú Kỳ Biến hoặc Thực Vật Ô Uế tạm thời ở gần đó để chiến đấu cho người sở hữu hoặc canh giữ khu vực",
-                "eldritch_abundance": "Khiến thực vật, nấm và các mô huyết nhục xung quanh tiến vào trạng thái tăng sinh mãnh liệt bất thường; dược thảo, hoa màu và nguyên liệu sinh thể sẽ sinh sôi nhanh chóng, nhưng có xác suất mọc ra các cơ quan, sừng hoặc miệng không nên tồn tại",
-                "mother_goddess_mark": "Sau khi sử dụng, người sở hữu nhận được khả năng hồi phục sinh mệnh và tăng kháng tính bất thường trong thời gian ngắn, nhưng sẽ bị buộc phải chịu đựng phản phệ của sự tăng sinh mất kiểm soát: bề mặt cơ thể mọc ra các vết sẹo hình dấu chân thú, lớp sừng nhỏ và các tuyến bất thường, liên tục mất HP trong vòng 24 giờ, đồng thời dễ trở thành mục tiêu ưu tiên tấn công hoặc ký sinh của Hắc Sơn Dương Ấu Duệ, bào tử ký sinh và các sinh mệnh kỳ biến khác"
+                "Đứa Con Của Rừng Già": "Sau khi hiến tế huyết nhục, nhũ dịch hoặc hạt giống lên thánh tượng, có thể triệu hồi một Hắc Sơn Dương Ấu Duệ, Thú Kỳ Biến hoặc Thực Vật Ô Uế tạm thời ở gần đó để chiến đấu cho người sở hữu hoặc canh giữ khu vực",
+                "Tà Thần Trù Phú": "Khiến thực vật, nấm và các mô huyết nhục xung quanh tiến vào trạng thái tăng sinh mãnh liệt bất thường; dược thảo, hoa màu và nguyên liệu sinh thể sẽ sinh sôi nhanh chóng, nhưng có xác suất mọc ra các cơ quan, sừng hoặc miệng không nên tồn tại",
+                "Ấn Ký Mẫu Thần": "Sau khi sử dụng, người sở hữu nhận được khả năng hồi phục sinh mệnh và tăng kháng tính bất thường trong thời gian ngắn, nhưng sẽ bị buộc phải chịu đựng phản phệ của sự tăng sinh mất kiểm soát: bề mặt cơ thể mọc ra các vết sẹo hình dấu chân thú, lớp sừng nhỏ và các tuyến bất thường, liên tục mất HP trong vòng 24 giờ, đồng thời dễ trở thành mục tiêu ưu tiên tấn công hoặc ký sinh của Hắc Sơn Dương Ấu Duệ, bào tử ký sinh và các sinh mệnh kỳ biến khác"
             },
             "description": "Một bức tượng thánh nhỏ được điêu khắc từ sự kết hợp giữa gỗ đen, bột xương và mỡ đông đặc, đường nét giống như một con dê núi mẹ đang cúi người sinh con. Chỉ cần lại gần, có thể nghe thấy từ sâu trong rừng rậm dường như có vô số con non đang bú mớm và ngọ nguậy。"
         },
@@ -1591,9 +1591,9 @@
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "Forbidden_Lore": "Sau khi đọc có thể nhận được tri thức liên quan đến Cựu Nhật Chi Phối Giả, Ngoại Thần, Ma Pháp Nghi Lễ và sự tồn tại của dị giới; nhận được +4 hiệu đính khi thực hiện kiểm định liên quan đến Thần Bí Học, Tà Giáo, Ngôn Ngữ Cổ Đại",
-                "Profane_Ritual": "Có thể dùng làm môi giới cốt lõi cho thuật Tử Linh cao giai và nghi lễ triệu hồi dị giới, hỗ trợ triệu hồi vong hồn, bộc dịch bất tịnh hoặc thiết lập liên kết ngắn ngủi với vật thể không thể gọi tên",
-                "Sanity_Cost": "Mỗi lần đọc sâu đều sẽ chịu xung kích tinh thần, lập tức chịu một lần kiểm định tinh thần độ khó cao; khi thất bại sẽ rơi vào một trong các trạng thái sợ hãi, hoang tưởng, ảo thính hoặc vặn vẹo nhận thức vĩnh viễn"
+                "Cấm Kỵ Bí Truyền": "Sau khi đọc có thể nhận được tri thức liên quan đến Cựu Nhật Chi Phối Giả, Ngoại Thần, Ma Pháp Nghi Lễ và sự tồn tại của dị giới; nhận được +4 hiệu đính khi thực hiện kiểm định liên quan đến Thần Bí Học, Tà Giáo, Ngôn Ngữ Cổ Đại",
+                "Nghi Thức Uế Tạp": "Có thể dùng làm môi giới cốt lõi cho thuật Tử Linh cao giai và nghi lễ triệu hồi dị giới, hỗ trợ triệu hồi vong hồn, bộc dịch bất tịnh hoặc thiết lập liên kết ngắn ngủi với vật thể không thể gọi tên",
+                "Tiêu Hao Thần Trí": "Mỗi lần đọc sâu đều sẽ chịu xung kích tinh thần, lập tức chịu một lần kiểm định tinh thần độ khó cao; khi thất bại sẽ rơi vào một trong các trạng thái sợ hãi, hoang tưởng, ảo thính hoặc vặn vẹo nhận thức vĩnh viễn"
             },
             "description": "Một điển tịch khinh nhờn được đóng bằng da người và mực không xác định, truyền thuyết do thi nhân điên Abdul Alhazred viết ra. Những gì ghi chép trong sách không phải là Tử Linh Thuật đơn thuần, mà là kiến thức đáng sợ đủ để khiến người đọc thấu hiểu chân tướng vũ trụ và vì thế mà phát cuồng。"
         },
@@ -1610,8 +1610,8 @@
             "rarity": "only",
             "quantity": 47,
             "effect": {
-                "Universal_Healing": "Một viên thuốc sau khi uống trong vòng hai giờ có thể chữa lành hiệu quả tất cả bệnh tật, thời gian cụ thể tùy thuộc vào loại bệnh và mức độ nghiêm trọng của đối tượng. Ngoài bệnh tật, nó còn có thể chữa lành tất cả các hiệu ứng tiêu cực",
-                "Non_Renewable": "Vì người chế tạo và phương pháp chế tạo đều chưa biết, đồng thời thành phần hiệu quả của viên thuốc không thể đo lường, nên loại thuốc này không thể tổng hợp lại lần nữa. Dùng một viên mất một viên"
+                "Phổ Thế Trị Liệu": "Một viên thuốc sau khi uống trong vòng hai giờ có thể chữa lành hiệu quả tất cả bệnh tật, thời gian cụ thể tùy thuộc vào loại bệnh và mức độ nghiêm trọng của đối tượng. Ngoài bệnh tật, nó còn có thể chữa lành tất cả các hiệu ứng tiêu cực",
+                "Tài Nguyên Duy Nhất": "Vì người chế tạo và phương pháp chế tạo đều chưa biết, đồng thời thành phần hiệu quả của viên thuốc không thể đo lường, nên loại thuốc này không thể tổng hợp lại lần nữa. Dùng một viên mất một viên"
             },
             "description": "Tên gọi chung của nhiều viên thuốc màu đỏ được bảo quản trong một chai nhựa màu đỏ.\nGhi chú: Loại thuốc này không dùng để chữa chứng say rượu！"
         },
@@ -1627,10 +1627,10 @@
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "miracle_healing": "Uống nước ấm ngâm cành cây, lập tức loại bỏ một trạng thái tiêu cực loại bệnh tật, và hồi phục 1200 điểm HP. Nếu mục tiêu có tổn thương tạng phủ, hồi phục thêm 300 điểm HP",
-                "tissue_replacement": "Trong quá trình chữa trị sẽ dùng mô nấm nhầy thay thế bộ phận bị bệnh, nhận được [Thanh Trừ Bệnh Táo], lần kiểm định Thể chất tiếp theo +2, và DC liên quan -2",
-                "addictiveness": "Sau khi hiệu quả kết thúc nhận được [Ỷ Lại], nếu trong vòng 24 giờ không tiếp xúc lại với sản phẩm từ cây này, kiểm định Tinh thần -3",
-                "immune_disorder": "Sử dụng liên tục sẽ dẫn đến mất cân bằng hệ miễn dịch, lần kiểm định Thể chất tiếp theo -4, và hiệu quả trị liệu nhận được giảm 20%"
+                "Thần Tích Trị Liệu": "Uống nước ấm ngâm cành cây, lập tức loại bỏ một trạng thái tiêu cực loại bệnh tật, và hồi phục 1200 điểm HP. Nếu mục tiêu có tổn thương tạng phủ, hồi phục thêm 300 điểm HP",
+                "Tế Bào Hoán Đổi": "Trong quá trình chữa trị sẽ dùng mô nấm nhầy thay thế bộ phận bị bệnh, nhận được [Thanh Trừ Bệnh Táo], lần kiểm định Thể chất tiếp theo +2, và DC liên quan -2",
+                "Tính Gây Nghiện": "Sau khi hiệu quả kết thúc nhận được [Ỷ Lại], nếu trong vòng 24 giờ không tiếp xúc lại với sản phẩm từ cây này, kiểm định Tinh thần -3",
+                "Rối Loạn Miễn Dịch": "Sử dụng liên tục sẽ dẫn đến mất cân bằng hệ miễn dịch, lần kiểm định Thể chất tiếp theo -4, và hiệu quả trị liệu nhận được giảm 20%"
             },
             "description": "Một khối hợp thể nấm nhầy dạng cây màu trắng xám, thân cây phân nhánh như mạch máu phổi, rễ như lòng bàn tay bán trong suốt, chất lỏng màu đỏ sẫm. Nó có thể mang lại sự trị liệu gần như kỳ tích, nhưng cái giá phải trả là sự lệ thuộc mãnh liệt và hậu quả nghiêm trọng。"
         },
@@ -1646,8 +1646,8 @@
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "BloodProtection": "Khi người sở hữu chịu sát thương chí tử, Hoa Hồng Đỏ sẽ thay thế một lần tử vong; sau khi hiệu quả kích hoạt, Hoa Hồng Đỏ sẽ héo tàn, mất đi toàn bộ hiệu quả và không thể kích hoạt lại lần nữa",
-                "CurseMark": "Nếu Hoa Hồng Đỏ bị vứt bỏ hoặc tặng đi, người sở hữu trong 72 giờ tiếp theo tất cả kiểm định -2, và không thể nhận được bất kỳ giá trị cộng thêm nào"
+                "Huyết Mạch Hộ Trì": "Khi người sở hữu chịu sát thương chí tử, Hoa Hồng Đỏ sẽ thay thế một lần tử vong; sau khi hiệu quả kích hoạt, Hoa Hồng Đỏ sẽ héo tàn, mất đi toàn bộ hiệu quả và không thể kích hoạt lại lần nữa",
+                "Trớ Chú Ấn Ký": "Nếu Hoa Hồng Đỏ bị vứt bỏ hoặc tặng đi, người sở hữu trong 72 giờ tiếp theo tất cả kiểm định -2, và không thể nhận được bất kỳ giá trị cộng thêm nào"
             },
             "description": "Đóa hoa hồng đỏ tươi không rõ nguồn gốc, sâu trong cánh hoa dường như vẫn còn sót lại hơi ấm cơ thể yếu ớt. Khi được bảo quản nguyên vẹn, nó có thể đỡ thay bạn một đòn đánh chí tử của vận mệnh。"
         },
@@ -1682,9 +1682,9 @@
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "dreamwalk_record": "Người sở hữu sau một giấc ngủ trọn vẹn, có thể tiến vào trạng thái [Mộng Hành] kéo dài 1 giờ: kiểm định Mẫn +2, kiểm định Trí +1, DC liên quan Khám phá -2",
-                "dream_realm_echo": "Sau khi tiến vào trạng thái [Mộng Hành] lần đầu tiên, kiểm định Tinh đầu tiên trong ngày hôm nay +2",
-                "nightmare_erosion": "Nếu đọc liên tục hơn ba lần trong vòng 24 giờ, sẽ nhận [Mộng Yểm Quấn Thân] trong 24 giờ: kiểm định Tinh -5, kiểm định Trí -2, DC của tất cả kiểm định +2, và không thể thông qua ngủ để hồi phục các trạng thái tiêu cực loại Tinh thần"
+                "Mộng Du Ký Lục": "Người sở hữu sau một giấc ngủ trọn vẹn, có thể tiến vào trạng thái [Mộng Hành] kéo dài 1 giờ: kiểm định Mẫn +2, kiểm định Trí +1, DC liên quan Khám phá -2",
+                "Hồi Ức Mộng Cảnh": "Sau khi tiến vào trạng thái [Mộng Hành] lần đầu tiên, kiểm định Tinh đầu tiên trong ngày hôm nay +2",
+                "Ác Mộng Xâm Thực": "Nếu đọc liên tục hơn ba lần trong vòng 24 giờ, sẽ nhận [Mộng Yểm Quấn Thân] trong 24 giờ: kiểm định Tinh -5, kiểm định Trí -2, DC của tất cả kiểm định +2, và không thể thông qua ngủ để hồi phục các trạng thái tiêu cực loại Tinh thần"
             },
             "description": "Một cuốn nhật ký viết tay không có chữ ký, mép giấy như bị hơi ẩm thấm qua. Chữ viết lúc thì ngay ngắn lúc thì lộn xộn, giống như đang vật lộn lặp đi lặp lại giữa mộng và tỉnh. Đọc lâu, bạn sẽ nghi ngờ liệu mình có đang bước vào giấc mơ của người khác hay không。"
         },
@@ -1700,11 +1700,11 @@
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "RecordOfAllThings": "Cuốn sách này ghi chép lại toàn bộ lịch sử kể từ khi sáng thế, tất cả các sự kiện đã xảy ra trong quá khứ đều được khắc ghi trên các trang sách dưới dạng văn bản, và nội dung sẽ tự động cập nhật theo thời gian",
-                "HistoryRewriting": "Xé bỏ một trang nào đó trong sách, sự kiện lịch sử được ghi lại trên trang đó sẽ bị xóa bỏ khỏi hiện thực, như thể chưa từng xảy ra; viết nội dung mới lên trang sách, những gì được viết sẽ trở thành sự thật lịch sử đã định, hiện thực sẽ thay đổi theo đó, và tất cả ký ức tồn tại cũng sẽ được viết lại để thích ứng với lịch sử mới",
-                "MemoryImmunity": "Vào khoảnh khắc lịch sử bị cải viết, những thực thể đang tiếp xúc với sử thư sẽ không bị ảnh hưởng bởi sự thay đổi lịch sử, giữ lại toàn bộ ký ức trước khi cải viết, do đó có thể nhận thức được thế giới đã bị giả mạo",
-                "HistoryCorrection": "Các trang sách bị xé đi sẽ không biến mất, chỉ cần đặt chúng trở lại vị trí cũ là có thể khôi phục lịch sử đã bị xóa bỏ; tương tự, xóa bỏ hoặc ghi đè lên những dòng chữ đã giả mạo cũng có thể hiệu đính lịch sử trở lại diện mạo ban đầu",
-                "CausalityConstraint": "Cải viết lịch sử sẽ gây ra phản ứng dây chuyền, kéo theo vô số sợi dây nhân quả. Quy mô cải viết càng lớn, chấn động nhân quả gây ra càng kịch liệt, có thể tạo ra những hậu quả mà người cải viết không lường trước được"
+                "Vạn Vật Ký Lục": "Cuốn sách này ghi chép lại toàn bộ lịch sử kể từ khi sáng thế, tất cả các sự kiện đã xảy ra trong quá khứ đều được khắc ghi trên các trang sách dưới dạng văn bản, và nội dung sẽ tự động cập nhật theo thời gian",
+                "Khởi Viết Sử Sách": "Xé bỏ một trang nào đó trong sách, sự kiện lịch sử được ghi lại trên trang đó sẽ bị xóa bỏ khỏi hiện thực, như thể chưa từng xảy ra; viết nội dung mới lên trang sách, những gì được viết sẽ trở thành sự thật lịch sử đã định, hiện thực sẽ thay đổi theo đó, và tất cả ký ức tồn tại cũng sẽ được viết lại để thích ứng với lịch sử mới",
+                "Ký Ức Miễn Dịch": "Vào khoảnh khắc lịch sử bị cải viết, những thực thể đang tiếp xúc với sử thư sẽ không bị ảnh hưởng bởi sự thay đổi lịch sử, giữ lại toàn bộ ký ức trước khi cải viết, do đó có thể nhận thức được thế giới đã bị giả mạo",
+                "Tu Chính Lịch Sử": "Các trang sách bị xé đi sẽ không biến mất, chỉ cần đặt chúng trở lại vị trí cũ là có thể khôi phục lịch sử đã bị xóa bỏ; tương tự, xóa bỏ hoặc ghi đè lên những dòng chữ đã giả mạo cũng có thể hiệu đính lịch sử trở lại diện mạo ban đầu",
+                "Nhân Quả Phong Ấn": "Cải viết lịch sử sẽ gây ra phản ứng dây chuyền, kéo theo vô số sợi dây nhân quả. Quy mô cải viết càng lớn, chấn động nhân quả gây ra càng kịch liệt, có thể tạo ra những hậu quả mà người cải viết không lường trước được"
             },
             "description": "Một cuốn cổ thư nặng nề đến khó tin, bìa sách được khắc bằng những ký tự chưa biết: 「Ký thư ký sử, ký sử ký thực」. Mở nó ra, vô số ký tự tuôn trào như dòng nước, ghi lại từng khoảnh khắc của thế giới từ khi sinh ra cho đến lúc này. Trong truyền thuyết, những dòng chữ được viết trên cuốn sách này chính là sự thật — cải viết ký tự, chính là cải viết bản thân lịch sử。"
         },
@@ -1723,14 +1723,14 @@
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "InkPageParade": "Lật mở trang sách, từ kẽ chữ phóng ra các tùy tùng quái đản ngưng tụ từ tàn hưởng truyện cổ tích: Cô Bé Quàng Khăn Đỏ cực độ khát máu, thị nữ bưng táo độc, tân nương tro tàn xách giày thủy tinh, hoặc nhân ngư không lời đi trên mũi dao; tư thái của chúng phụ thuộc vào chương hiện tại lật đến",
-                "FinalActScenery": "Lấy khu vực xung quanh người sử dụng làm sân khấu, hiện thực sẽ bị phủ lên một lớp bố cảnh truyện cổ tích đầy ác ý: phố xá mọc ra tháp thoi dệt và tường vi đen, rừng cây hóa thành mê cung đói khát dẫn đến nhà kẹo, sảnh tiệc chuyển đổi giữa vũ hội và hình trường; địa hình, vật che chắn và lối đi trong khu vực đều được phán định lại theo cảnh truyện cổ tích hiện tại",
-                "FableDistortion": "Sinh linh trong cảnh này sẽ dần bị phân bổ vào thân phận và vận mệnh trong truyện cổ tích, bắt đầu tin rằng táo nhất định có độc, nửa đêm nhất định sẽ mất đi tên họ, mỗi ước nguyện đều phải trả giá bằng xương máu; kẻ có tinh thần càng bạc nhược càng dễ coi những quy tắc này là kiến thức thực tế. Người sử dụng không bị ảnh hưởng"
+                "Mặc Trang Diễu Hành": "Lật mở trang sách, từ kẽ chữ phóng ra các tùy tùng quái đản ngưng tụ từ tàn hưởng truyện cổ tích: Cô Bé Quàng Khăn Đỏ cực độ khát máu, thị nữ bưng táo độc, tân nương tro tàn xách giày thủy tinh, hoặc nhân ngư không lời đi trên mũi dao; tư thái của chúng phụ thuộc vào chương hiện tại lật đến",
+                "Màn Diễn Cuối Cùng": "Lấy khu vực xung quanh người sử dụng làm sân khấu, hiện thực sẽ bị phủ lên một lớp bố cảnh truyện cổ tích đầy ác ý: phố xá mọc ra tháp thoi dệt và tường vi đen, rừng cây hóa thành mê cung đói khát dẫn đến nhà kẹo, sảnh tiệc chuyển đổi giữa vũ hội và hình trường; địa hình, vật che chắn và lối đi trong khu vực đều được phán định lại theo cảnh truyện cổ tích hiện tại",
+                "Ngụ Ngôn Sai Lệch": "Sinh linh trong cảnh này sẽ dần bị phân bổ vào thân phận và vận mệnh trong truyện cổ tích, bắt đầu tin rằng táo nhất định có độc, nửa đêm nhất định sẽ mất đi tên họ, mỗi ước nguyện đều phải trả giá bằng xương máu; kẻ có tinh thần càng bạc nhược càng dễ coi những quy tắc này là kiến thức thực tế. Người sử dụng không bị ảnh hưởng"
             },
             "description": "Một cuốn sách tranh màu đen mỏng bất thường, giữa các trang kẹp hoa hồng khô, nửa que diêm và vảy nhân ngư. Tranh minh họa khi không có người chú ý sẽ biến thành mũ trùm đỏ nhỏ máu, Bạch Tuyết đang ngủ say và xe bí ngô nứt vỡ. Nó không chỉ kể chuyện, mà là kéo thế giới xung quanh vào một sân khấu truyện cổ tích bị nguyền rủa。"
         }
     ],
-    "Other": [
+    "Khác": [
         {
             "name": "Aria Của Song Tử Tinh",
             "cost": 0,
@@ -1742,7 +1742,7 @@
             "rarity": "only",
             "quantity": 1,
             "effect": {
-                "Destiny_Revelation": "Sau khi đọc sẽ có chuyện kỳ diệu xảy ra"
+                "Thiên Cơ Hiển Lộ": "Sau khi đọc sẽ có chuyện kỳ diệu xảy ra"
             },
             "description": "Một cuốn sách cổ với bìa là ánh sáng vụn vỡ của Song Tử Tinh, trên bìa chạm nổi một đôi tinh văn đan xen, chính giữa khắc dòng chữ hoa màu bạc —— \"Hậu cung đi chết đi”"
         },
@@ -1757,7 +1757,7 @@
             "rarity": "uncommon",
             "quantity": 1,
             "effect": {
-                "Mark_Unknown": "Sau khi sử dụng, một địa điểm chưa biết có thể chứa kho báu hoặc bí mật sẽ được đánh dấu trên bản đồ thế giới của bạn。"
+                "Ấn Ký Vô Danh": "Sau khi sử dụng, một địa điểm chưa biết có thể chứa kho báu hoặc bí mật sẽ được đánh dấu trên bản đồ thế giới của bạn。"
             },
             "description": "Được làm từ một loại da không xác định, vết mực trên đó đã bị nhòe, dường như ẩn chứa một bí mật đã bị lãng quên。"
         },
@@ -1785,7 +1785,7 @@
             "rarity": "uncommon",
             "quantity": 1,
             "effect": {
-                "QuickBuild": "Sau khi sử dụng, có thể tự động dựng một lều chống thấm nước và chống cháy cho 3 người nghỉ ngơi trong vòng 1 phút. Sử dụng lại có thể thu hồi nó。"
+                "Thần Tốc Xây Dựng": "Sau khi sử dụng, có thể tự động dựng một lều chống thấm nước và chống cháy cho 3 người nghỉ ngơi trong vòng 1 phút. Sử dụng lại có thể thu hồi nó。"
             },
             "description": "Một chiếc túi da trông có vẻ tầm thường, nhưng lại áp dụng công nghệ mở rộng không gian, là người bạn đồng hành tuyệt vời cho những chuyến du hành dã ngoại。"
         },
@@ -1800,7 +1800,7 @@
             "rarity": "uncommon",
             "quantity": 1,
             "effect": {
-                "UnlockAdvantage": "Khi thực hiện kiểm định mở khóa đối với các loại khóa phi ma pháp, nhận được +10 ưu thế. Không có tác dụng với khóa ma pháp。"
+                "Khai Mở Thiên Thời": "Khi thực hiện kiểm định mở khóa đối với các loại khóa phi ma pháp, nhận được +10 ưu thế. Không có tác dụng với khóa ma pháp。"
             },
             "description": "Cấu trúc răng cưa của chiếc chìa khóa này dường như không ngừng thay đổi một cách tinh vi, như thể có thể thích ứng với bất kỳ loại lõi khóa nào。"
         },
@@ -1815,7 +1815,7 @@
             "rarity": "uncommon",
             "quantity": 1,
             "effect": {
-                "voice_mimicry": "Sau khi đeo, có thể tiêu tốn 10MP, khiến giọng nói của bạn mô phỏng hoàn hảo một loại giọng nói bạn từng nghe thấy trong vòng 1 giờ tới。"
+                "Mô Phỏng Thanh Âm": "Sau khi đeo, có thể tiêu tốn 10MP, khiến giọng nói của bạn mô phỏng hoàn hảo một loại giọng nói bạn từng nghe thấy trong vòng 1 giờ tới。"
             },
             "description_key": "Một chiếc nơ thắt cổ màu đen bình thường, những viên đá huy thạch nhỏ xíu khảm trên đó mới là bí mật của nó, nó có thể nắm bắt và tái cấu trúc ma lực của âm thanh。"
         },
@@ -1830,8 +1830,8 @@
             "rarity": "rare",
             "quantity": 1,
             "effect": {
-                "multi_function": "Dùng để hội tụ ánh sáng phát quang, nhóm lửa lọc nước, có thể lấy ra các loại dao, công cụ, dụng cụ và dụng cụ nhà bếp, thích hợp cho các tình cảnh thu thập, săn bắn, nấu nướng, mổ xẻ, sửa chữa, cắm trại",
-                "Production_Bonus": "Nhận được +4 giá trị cộng thêm khi [Sản xuất。"
+                "Đa Dạng Công Năng": "Dùng để hội tụ ánh sáng phát quang, nhóm lửa lọc nước, có thể lấy ra các loại dao, công cụ, dụng cụ và dụng cụ nhà bếp, thích hợp cho các tình cảnh thu thập, săn bắn, nấu nướng, mổ xẻ, sửa chữa, cắm trại",
+                "Tăng Ích Sản Xuất": "Nhận được +4 giá trị cộng thêm khi [Sản xuất。"
             },
             "description": "Hộp pha lê tím nhạt ôn nhuận, xoa nhẹ và truyền ma lực vào là có thể đáp ứng nhu cầu trong hành trình, vừa là dụng cụ tùy thân vừa là người bạn đồng hành đáng tin cậy。"
         },
@@ -1846,8 +1846,8 @@
             "rarity": "rare",
             "quantity": 1,
             "effect": {
-                "Daily_Maintenance": "Có thể lấy ra sữa tắm, sữa dưỡng da, tinh dầu dưỡng tóc (định mức 3 phần mỗi ngày）",
-                "Aromatherapy_Maintenance": "Vật phẩm bên trong có thể loại bỏ mọi vết bẩn và mùi lạ, bảo dưỡng làn da và mái tóc, không dễ bám bụi bẩn。"
+                "Nhật Thường Dưỡng Hộ": "Có thể lấy ra sữa tắm, sữa dưỡng da, tinh dầu dưỡng tóc (định mức 3 phần mỗi ngày）",
+                "Hương Liệu Dưỡng Nghiệm": "Vật phẩm bên trong có thể loại bỏ mọi vết bẩn và mùi lạ, bảo dưỡng làn da và mái tóc, không dễ bám bụi bẩn。"
             },
             "description": "Túi thơm dệt từ lụa bán trong suốt và chỉ bạc, biến tinh túy thảo mộc thành sản phẩm bảo dưỡng như sương mai, luôn giữ cho thân tâm sạch sẽ và thơm ngát。"
         },
@@ -1863,8 +1863,8 @@
             "rarity": "uncommon",
             "quantity": 1,
             "effect": {
-                "advantage_key": "Nhận được +1 giá trị cộng thêm khi [Luyện kim。",
-                "included_items_key": "Bao gồm một bộ thiết bị và nguyên liệu luyện kim cơ bản, có thể chế tác dược tề và đạo cụ。"
+                "Thiên Thời Cốt Lõi": "Nhận được +1 giá trị cộng thêm khi [Luyện kim。",
+                "Vật Phẩm Cốt Lõi Kèm Theo": "Bao gồm một bộ thiết bị và nguyên liệu luyện kim cơ bản, có thể chế tác dược tề và đạo cụ。"
             },
             "description_key": "Cốc mỏ, ống nghiệm, cối giã và một đống chai lọ hũ nút, đây là điểm khởi đầu trên con đường luyện kim。"
         },
@@ -1880,7 +1880,7 @@
             "rarity": "uncommon",
             "quantity": 1,
             "effect": {
-                "batch_alchemy": "Khi luyện chế dược tề [Luyện Kim] trong [Sản xuất hàng loạt], mỗi 10 phần dược tề tiêu tốn 1 phần thời gian, nhưng vẫn tiêu tốn 10 phần ma lực。"
+                "Luyện Dược Hàng Loạt": "Khi luyện chế dược tề [Luyện Kim] trong [Sản xuất hàng loạt], mỗi 10 phần dược tề tiêu tốn 1 phần thời gian, nhưng vẫn tiêu tốn 10 phần ma lực。"
             },
             "description": "Cái vạc lớn có thành mỏng và được đánh bóng như gương, có thể luyện chế nhiều phần dược tề cùng một lúc。"
         },
@@ -1897,7 +1897,7 @@
             "rarity": "rare",
             "quantity": 1,
             "effect": {
-                "Advantage": "Nhận được +2 giá trị cộng thêm khi [Luyện Kim。"
+                "Thiên Thời Địa Lợi": "Nhận được +2 giá trị cộng thêm khi [Luyện Kim。"
             },
             "description": "Một bộ công cụ Luyện Kim và Phụ Ma tinh xảo, các dụng cụ làm từ pha lê có thể đảm bảo tối đa độ thuần khiết của Ma Lực, những phù văn trên dao khắc phụ ma lấp lánh vi quang, bản thân bộ công cụ này đã là một tác phẩm nghệ thuật。"
         },
@@ -1913,8 +1913,8 @@
             "rarity": "uncommon",
             "quantity": 1,
             "effect": {
-                "Advantage": "Nhận được +1 giá trị cộng thêm khi [Rèn Đúc。",
-                "IncludedItems": "Bao gồm một bộ công cụ và nguyên liệu Rèn Đúc cơ bản, có thể dùng để chế tác và bảo trì Trang bị。"
+                "Thiên Thời Địa Lợi": "Nhận được +1 giá trị cộng thêm khi [Rèn Đúc。",
+                "Vật Phẩm Kèm Theo": "Bao gồm một bộ công cụ và nguyên liệu Rèn Đúc cơ bản, có thể dùng để chế tác và bảo trì Trang bị。"
             },
             "description": "Một chiếc búa sắt vừa tay, một chiếc tạp dề da chắc chắn, tiếng gõ nhịp nhàng là khúc ca tuyệt vời nhất của người thợ thủ công。"
         },
@@ -1930,7 +1930,7 @@
             "rarity": "rare",
             "quantity": 1,
             "effect": {
-                "Advantage": "Nhận được +2 giá trị cộng thêm khi [Rèn Đúc。"
+                "Thiên Thời Địa Lợi": "Nhận được +2 giá trị cộng thêm khi [Rèn Đúc。"
             },
             "description": "Bao gồm một bộ dụng cụ rèn đúc tinh xảo, bể tôi nhiệt độ ổn định, ống thổi khí tự động điều chỉnh sức gió, bộ dụng cụ này giúp công việc rèn đúc nặng nhọc trở nên chính xác và hiệu quả。"
         },
@@ -1946,7 +1946,7 @@
             "rarity": "uncommon",
             "quantity": 1,
             "effect": {
-                "advantage_key": "Nhận thêm +1 giá trị cộng thêm khi [Nấu Nướng], thời gian sản xuất giảm 20%。"
+                "Thiên Thời Cốt Lõi": "Nhận thêm +1 giá trị cộng thêm khi [Nấu Nướng], thời gian sản xuất giảm 20%。"
             },
             "description": "Một bộ dụng cụ nhà bếp được chế tác tinh xảo, bao gồm nồi, bát, gáo, chậu, thớt, dao bếp, v.v。"
         },
@@ -1962,7 +1962,7 @@
             "rarity": "rare",
             "quantity": 1,
             "effect": {
-                "advantage_key": "Nhận thêm +2 giá trị cộng thêm khi [May Vá。",
+                "Thiên Thời Cốt Lõi": "Nhận thêm +2 giá trị cộng thêm khi [May Vá。",
                 "Gia Tốc Sản Xuất": "Thời gian sản xuất giảm 30%, khi sử dụng cần tiêu tốn 40 MP。"
             },
             "description": "Máy may ma đạo dân dụng do Hiệp Hội Ma Pháp nghiên cứu chế tạo, có thể rút ngắn đáng kể thời gian chế tác của các quý phu nhân。"
@@ -2026,8 +2026,8 @@
             "rarity": "rare",
             "quantity": 1,
             "effect": {
-                "included_items": "Bao gồm toàn bộ công cụ và vật tư cần thiết để sinh tồn dã ngoại。",
-                "check_advantage": "Khi sử dụng bộ đồ này để thu thập hoặc cắm trại, các kiểm định liên quan sẽ nhận được +2 ưu thế。"
+                "Vật Phẩm Kèm Theo": "Bao gồm toàn bộ công cụ và vật tư cần thiết để sinh tồn dã ngoại。",
+                "Kiểm Định Thiên Thời": "Khi sử dụng bộ đồ này để thu thập hoặc cắm trại, các kiểm định liên quan sẽ nhận được +2 ưu thế。"
             },
             "description": "Từ đốn củi, khai thác mỏ đến nấu nướng, khâu vá, chiếc ba lô này có tất cả mọi thứ, đủ để khiến những chuyên gia sinh tồn khó tính nhất cũng phải gật đầu khen ngợi。"
         },
@@ -2043,8 +2043,8 @@
             "rarity": "epic",
             "quantity": 1,
             "effect": {
-                "core_component": "Linh kiện cốt lõi dùng để chế tác Khôi Lỗi Luyện Kim phẩm chất Sử Thi hoặc Truyền Thuyết。",
-                "powerful_power": "Có thể cung cấp nguồn động lực mạnh mẽ cho khôi lỗi。"
+                "Linh Kiện Cốt Lõi": "Linh kiện cốt lõi dùng để chế tác Khôi Lỗi Luyện Kim phẩm chất Sử Thi hoặc Truyền Thuyết。",
+                "Thần Lực Cường Đại": "Có thể cung cấp nguồn động lực mạnh mẽ cho khôi lỗi。"
             },
             "description": "Một trái tim kim loại vẫn đang đập chậm rãi, bên trong phong ấn năng lượng mạnh mẽ và kỹ nghệ thất truyền của Ma Tượng cổ đại。"
         },
@@ -2059,7 +2059,7 @@
             "rarity": "epic",
             "quantity": 1,
             "effect": {
-                "Remote_Communication": "Tiêu tốn 200 MP, có thể tiến hành một lần giao tiếp ma pháp từ xa với một mục tiêu mà bạn quen thuộc, duy trì 10 phút。"
+                "Viễn Trình Truyền Tin": "Tiêu tốn 200 MP, có thể tiến hành một lần giao tiếp ma pháp từ xa với một mục tiêu mà bạn quen thuộc, duy trì 10 phút。"
             },
             "description": "Tinh thể ma pháp màu đỏ thẫm hình trái tim có thể nắm gọn trong lòng bàn tay. Tương truyền nó được ngưng kết từ nỗi nhớ nhung chí tử không đổi của một đôi tình nhân, có thể vượt qua ngàn non muôn nước để truyền tải âm thanh và hình ảnh của nhau。"
         },
@@ -2075,7 +2075,7 @@
             "rarity": "epic",
             "quantity": 1,
             "effect": {
-                "Good_Natured_Prank": "Tiêu tốn 50 FP, chỉ định một mục tiêu. Mục tiêu cần thực hiện một lần kiểm định đối kháng tinh thần, nếu thất bại sẽ gặp phải một hiệu ứng trêu chọc vô hại nhưng ngượng ngùng (như vấp ngã trên mặt đất bằng, nói lắp, v.v.), duy trì 1 phút。"
+                "Trò Đùa Lành Tính": "Tiêu tốn 50 FP, chỉ định một mục tiêu. Mục tiêu cần thực hiện một lần kiểm định đối kháng tinh thần, nếu thất bại sẽ gặp phải một hiệu ứng trêu chọc vô hại nhưng ngượng ngùng (như vấp ngã trên mặt đất bằng, nói lắp, v.v.), duy trì 1 phút。"
             },
             "description": "Một bộ bài huyễn hoặc vẽ hình chú hề hài hước, nó dệt những sợi tơ vận mệnh thành những trò đùa nhỏ, mang lại tiếng cười (đơn phương) cho thế giới。"
         },
@@ -2091,8 +2091,8 @@
             "rarity": "legendary",
             "quantity": 1,
             "effect": {
-                "check_bonus": "Khi sở hữu vật này, tất cả các kiểm định (d20) liên quan đến xác suất, kết quả sẽ nhận được +1 giá trị cộng thêm。",
-                "lucky_journey": "Khi tiến hành hành trình dài hoặc khám phá khu vực chưa biết, có tỷ lệ cao hơn kích hoạt các sự kiện ngẫu nhiên tích cực。"
+                "Thưởng Kiểm Định": "Khi sở hữu vật này, tất cả các kiểm định (d20) liên quan đến xác suất, kết quả sẽ nhận được +1 giá trị cộng thêm。",
+                "Hành Trình May Mắn": "Khi tiến hành hành trình dài hoặc khám phá khu vực chưa biết, có tỷ lệ cao hơn kích hoạt các sự kiện ngẫu nhiên tích cực。"
             },
             "description": "Một viên xúc xắc cổ phác được điêu khắc từ xương thú, các điểm số của nó dường như sẽ phát sáng nhẹ theo nhịp tim của người sở hữu. Nó là tín vật mà Nữ Thần May Mắn vô tình đánh rơi nhân gian, là bùa hộ mệnh mà các mạo hiểm giả mơ ước bấy lâu。"
         },
@@ -2107,8 +2107,8 @@
             "rarity": "legendary",
             "quantity": 1,
             "effect": {
-                "ownership_certificate": "Chứng minh bạn sở hữu quyền sở hữu bất động sản tại số 13 phố Vụ Vũ, Khu Dân Cư, Thành Nova Valentia。",
-                "stable_income": "Bất động sản này là một chung cư 3 tầng thông thường, có thể cung cấp cho bạn thu nhập tiền thuê định kỳ。"
+                "Chứng Thư Sở Hữu": "Chứng minh bạn sở hữu quyền sở hữu bất động sản tại số 13 phố Vụ Vũ, Khu Dân Cư, Thành Nova Valentia。",
+                "Thu Nhập Ổn Định": "Bất động sản này là một chung cư 3 tầng thông thường, có thể cung cấp cho bạn thu nhập tiền thuê định kỳ。"
             },
             "description": "Một khế ước ma pháp được công chứng bởi tòa thị chính thành phố, trên giấy da dê có đính kèm ấn ký ma lực của thị trưởng, là minh chứng cho việc bạn sở hữu một 'mái ấm' giữa đô thị phồn hoa。"
         },
@@ -2124,9 +2124,9 @@
             "rarity": "legendary",
             "quantity": 1,
             "effect": {
-                "mobile_base": "Nền tảng phù không hình vuông xa xỉ do Cảng Vụ Tinh sản xuất và bán ra ngoài, diện tích khoảng 600 mét vuông, lõi động lực Ma Tinh, có thể bay lơ lửng khoảng 1 mét và tự do di chuyển hàng hải。",
-                "luxury_residence": "Đã xây dựng biệt thự đơn lập hai tầng sang trọng bằng cấu trúc gạch đá trên đó。",
-                "free_modification": "Có thể tự sửa đổi bố cục bên trong biệt thự (tại đây tự sửa đổi các phòng nội bộ/bố trí/trang hoàng/mở rộng công xưởng theo nhu cầu)。"
+                "Căn Cứ Di Động": "Nền tảng phù không hình vuông xa xỉ do Cảng Vụ Tinh sản xuất và bán ra ngoài, diện tích khoảng 600 mét vuông, lõi động lực Ma Tinh, có thể bay lơ lửng khoảng 1 mét và tự do di chuyển hàng hải。",
+                "Hào Hoa Cư Diễm": "Đã xây dựng biệt thự đơn lập hai tầng sang trọng bằng cấu trúc gạch đá trên đó。",
+                "Tự Do Cải Tạo": "Có thể tự sửa đổi bố cục bên trong biệt thự (tại đây tự sửa đổi các phòng nội bộ/bố trí/trang hoàng/mở rộng công xưởng theo nhu cầu)。"
             },
             "description": "Một hòn đảo di động thuộc về riêng bạn, là biểu tượng tối thượng của sự giàu có và sức mạnh ma pháp, cho phép bạn đặt ngôi nhà của mình ở bất kỳ góc nào trên thế giới。"
         },
@@ -2143,8 +2143,8 @@
             "rarity": "legendary",
             "quantity": 1,
             "effect": {
-                "MultiFunctionalAirship": "Phi thuyền đa năng hạng trung mẫu đặc trang mới do Cảng Vụ Tinh sản xuất và bán ra ngoài. Kích thước: Tổng chiều dài 42m/Sải cánh 28m. Core: Lò động lực Ether \"Trái Tim Tịch Tĩnh\". Tốc độ hành trình: 150km/h. Trần bay tối đa: 30,000m. Phi hành đoàn tiêu chuẩn: 1 người (Core thao tác tự động thông minh). Sức chứa tối đa: 8 người. Bố cục nội thất: 1 phòng ngủ chính thoải mái, 3 phòng ngủ khách đôi tiêu chuẩn, 1 phòng khách/phòng ăn đa năng, 2 phòng tắm tiêu chuẩn (có bồn tắm luyện kim), 1 nhà bếp trung bình, 1 công xưởng đa năng nhỏ (tích hợp đài luyện kim/đài rèn/đài phụ ma), 1 hành lang ngắm cảnh trong nhà ở mũi tàu。",
-                "SpecialPerformance": "Hiệu suất cân bằng, kết hợp giữa tốc độ, sự thoải mái và tính đa năng. Trang bị hệ thống \"Hàng Hải Tĩnh Mặc\", có thể né tránh dò tìm ma pháp một cách hiệu quả. Core thao tác thông minh và công xưởng đa năng giúp nâng cao đáng kể khả năng tự duy trì trong những chuyến hành trình dài。"
+                "Phi Thuyền Đa Năng": "Phi thuyền đa năng hạng trung mẫu đặc trang mới do Cảng Vụ Tinh sản xuất và bán ra ngoài. Kích thước: Tổng chiều dài 42m/Sải cánh 28m. Core: Lò động lực Ether \"Trái Tim Tịch Tĩnh\". Tốc độ hành trình: 150km/h. Trần bay tối đa: 30,000m. Phi hành đoàn tiêu chuẩn: 1 người (Core thao tác tự động thông minh). Sức chứa tối đa: 8 người. Bố cục nội thất: 1 phòng ngủ chính thoải mái, 3 phòng ngủ khách đôi tiêu chuẩn, 1 phòng khách/phòng ăn đa năng, 2 phòng tắm tiêu chuẩn (có bồn tắm luyện kim), 1 nhà bếp trung bình, 1 công xưởng đa năng nhỏ (tích hợp đài luyện kim/đài rèn/đài phụ ma), 1 hành lang ngắm cảnh trong nhà ở mũi tàu。",
+                "Biểu Diễn Đặc Biệt": "Hiệu suất cân bằng, kết hợp giữa tốc độ, sự thoải mái và tính đa năng. Trang bị hệ thống \"Hàng Hải Tĩnh Mặc\", có thể né tránh dò tìm ma pháp một cách hiệu quả. Core thao tác thông minh và công xưởng đa năng giúp nâng cao đáng kể khả năng tự duy trì trong những chuyến hành trình dài。"
             },
             "description": "Thân tàu hình khí động học lướt qua biển mây, lõi động lực tĩnh lặng giúp nó hành trình như một bóng ma. Đây không chỉ là phương tiện giao thông, mà còn là một pháo đài không trung với đầy đủ chức năng。"
         },
@@ -2160,10 +2160,10 @@
             "rarity": "mythic",
             "quantity": 1,
             "effect": {
-                "SpiritLiquidGeneration": "Một chiếc bình nhỏ như ngọc phỉ thúy, mỗi lần có thể truyền vào 50% MP tối đa để tạo ra linh dịch。",
-                "Plant_Catalysis": "Linh dịch có thể khiến thực vật sinh trưởng nhanh chóng, đối với ma vật hệ thực vật và các tồn tại liên quan đến thực vật cũng có hiệu quả tích cực cực mạnh, ngay cả thực vật cần ngàn năm để trưởng thành cũng có thể trưởng thành trong vòng Một Tuần。",
-                "Lethal_Poison": "Linh dịch là độc dược chí mạng đối với động vật。",
-                "Effect_Limitation": "Và không thể vượt qua Giai Vị hiện tại của người sử dụng, có hiệu lực đối với ma vật thực vật và nguyên liệu có Giai Vị và Phẩm chất cao hơn。"
+                "Linh Dịch Ngưng Tụ": "Một chiếc bình nhỏ như ngọc phỉ thúy, mỗi lần có thể truyền vào 50% MP tối đa để tạo ra linh dịch。",
+                "Thảo Mộc Xúc Tác": "Linh dịch có thể khiến thực vật sinh trưởng nhanh chóng, đối với ma vật hệ thực vật và các tồn tại liên quan đến thực vật cũng có hiệu quả tích cực cực mạnh, ngay cả thực vật cần ngàn năm để trưởng thành cũng có thể trưởng thành trong vòng Một Tuần。",
+                "Kịch Độc Chí Mạng": "Linh dịch là độc dược chí mạng đối với động vật。",
+                "Hiệu Quả Hạn Chế": "Và không thể vượt qua Giai Vị hiện tại của người sử dụng, có hiệu lực đối với ma vật thực vật và nguyên liệu có Giai Vị và Phẩm chất cao hơn。"
             },
             "description": "Chiếc bình nhỏ màu xanh bí ẩn, không rõ lai lịch"
         },
@@ -2178,7 +2178,7 @@
             "rarity": "mythic",
             "quantity": 1,
             "effect": {
-                "Proof_of_Ownership": "Bạn nhận được quyền sở hữu năm sản nghiệp lớn (trang viên, mỏ quặng, xưởng rượu, nông trường, mục trường) gần thành Nova Valentia, cung cấp cho bạn nguồn thu nhập tài sản khổng lồ và ổn định。"
+                "Chứng Chỉ Sở Hữu": "Bạn nhận được quyền sở hữu năm sản nghiệp lớn (trang viên, mỏ quặng, xưởng rượu, nông trường, mục trường) gần thành Nova Valentia, cung cấp cho bạn nguồn thu nhập tài sản khổng lồ và ổn định。"
             },
             "description": "Những cái tên được liệt kê trên bản Khế Ước này đại diện cho mệnh mạch kinh tế của một thành phố. Nắm giữ nó, tài sản của bạn sẽ dồi dào như dòng sông chảy mãi không ngừng。"
         },
@@ -2194,7 +2194,7 @@
             "rarity": "mythic",
             "quantity": 1,
             "effect": {
-                "foundation_of_nation_key": "Tiêu tốn khế ước này, có thể thành lập một quốc gia mới được pháp tắc thế giới công nhận trên bất kỳ mảnh đất vô chủ nào, và tự động tạo ra tuyến nhiệm vụ kiến quốc。"
+                "Quốc Cơ Ấn Ký": "Tiêu tốn khế ước này, có thể thành lập một quốc gia mới được pháp tắc thế giới công nhận trên bất kỳ mảnh đất vô chủ nào, và tự động tạo ra tuyến nhiệm vụ kiến quốc。"
             },
             "description_key": "Một tờ khế ước cổ xưa được chư thần chứng giám, viết bằng mực pháp tắc. Nó ban cho phàm nhân tư cách thực thi quyền bính sáng thế, là khởi đầu của con đường đế vương。"
         },
@@ -2211,9 +2211,9 @@
             "rarity": "mythic",
             "quantity": 1,
             "effect": {
-                "unlock_ability": "Mở khóa năng lực [Luyện Kim Khởi Nguyên。",
-                "origin_refinement": "Bạn có thể không cần nhờ vào bất kỳ công cụ nào, không cần bất kỳ bản vẽ hay lam đồ nào, thông qua tiêu tốn tài nguyên bản thân (60% của một trong ba chỉ số HP, MP, SP) để chế tác, cải tạo hoặc nghiên cứu phát triển bất kỳ vật phẩm nào không cao hơn Giai Vị Sinh Mệnh của bản thân。",
-                "over_tier_price": "Thao tác vượt giai vị sẽ dẫn đến việc ngẫu nhiên phải trả giá bằng một chi thể。"
+                "Khai Mở Năng Lực": "Mở khóa năng lực [Luyện Kim Khởi Nguyên。",
+                "Nguyên Sơ Thối Luyện": "Bạn có thể không cần nhờ vào bất kỳ công cụ nào, không cần bất kỳ bản vẽ hay lam đồ nào, thông qua tiêu tốn tài nguyên bản thân (60% của một trong ba chỉ số HP, MP, SP) để chế tác, cải tạo hoặc nghiên cứu phát triển bất kỳ vật phẩm nào không cao hơn Giai Vị Sinh Mệnh của bản thân。",
+                "Giá Trị Vượt Cấp": "Thao tác vượt giai vị sẽ dẫn đến việc ngẫu nhiên phải trả giá bằng một chi thể。"
             },
             "description": "Một phiến thạch bản màu xanh phỉ thúy không hề tồn tại trong thế giới vật chất, mà được khắc trực tiếp vào sâu trong linh hồn bạn. Nó ghi chép lại pháp tắc chí cao về sự sáng tạo và chuyển hóa vạn vật, là bản sao của chân lý cuối cùng mà các Luyện Kim Thuật Sư hằng tìm kiếm。"
         },
@@ -2229,7 +2229,7 @@
             "rarity": "common",
             "quantity": 1,
             "effect": {
-                "pointing_north": "Cán thìa luôn chỉ về hướng Bắc, nhưng chỉ có tác dụng khi bạn dùng nó để ăn cơm"
+                "Chỉ Nam Châm": "Cán thìa luôn chỉ về hướng Bắc, nhưng chỉ có tác dụng khi bạn dùng nó để ăn cơm"
             },
             "description": "Phát minh của một luyện kim thuật sư bị lạc đường, tính thực dụng còn nghi vấn。"
         },
@@ -2245,7 +2245,7 @@
             "rarity": "rare",
             "quantity": 1,
             "effect": {
-                "poisonous_tongue_evaluation": "Mỗi ngày có thể hỏi một lần \"ai đẹp nhất\", gương sẽ đưa ra đánh giá độc địa nhưng thành thật"
+                "Độc Thiệt Đánh Giá": "Mỗi ngày có thể hỏi một lần \"ai đẹp nhất\", gương sẽ đưa ra đánh giá độc địa nhưng thành thật"
             },
             "description": "Một chiếc gương ma thuật bị nguyền rủa, lời nhận xét của nó luôn khắc nghiệt nhưng rất chính xác。"
         },
@@ -2261,7 +2261,7 @@
             "rarity": "uncommon",
             "quantity": 1,
             "effect": {
-                "Rain_Summon": "Trong vòng 30 phút sau khi mở, chắc chắn sẽ có mưa trong vòng bán kính 100 mét"
+                "Triệu Vũ Thuật (Gọi Mưa)": "Trong vòng 30 phút sau khi mở, chắc chắn sẽ có mưa trong vòng bán kính 100 mét"
             },
             "description": "Một chiếc ô bị nguyền rủa, nó không phải dùng để che mưa mà là để gọi mưa。"
         },
@@ -2277,7 +2277,7 @@
             "rarity": "common",
             "quantity": 1,
             "effect": {
-                "hidden": "Khi bạn cần đến nó, nó luôn biến mất sâu trong túi của bạn"
+                "Ẩn Hình": "Khi bạn cần đến nó, nó luôn biến mất sâu trong túi của bạn"
             },
             "description": "Một chiếc chìa khóa bị nguyền rủa, minh chứng hoàn hảo cho sự tuyệt vọng của việc \"rõ ràng là nó ở ngay đây。"
         },
@@ -2293,7 +2293,7 @@
             "rarity": "uncommon",
             "quantity": 1,
             "effect": {
-                "auto_record": "Có thể tự động ghi lại những gì bạn nói, nhưng nét chữ nguệch ngoạc đến mức khó lòng nhận ra"
+                "Tự Động Ký Lục": "Có thể tự động ghi lại những gì bạn nói, nhưng nét chữ nguệch ngoạc đến mức khó lòng nhận ra"
             },
             "description": "Phúc âm của kẻ lười biếng, nhưng bạn có lẽ cần một người phiên dịch để đọc hiểu những gì nó viết。"
         },
@@ -2309,7 +2309,7 @@
             "rarity": "uncommon",
             "quantity": 1,
             "effect": {
-                "eternal_light": "Cây nến này sẽ không bao giờ cháy hết, nhưng cũng không thể bị thổi tắt"
+                "Vĩnh Hằng Chi Quang": "Cây nến này sẽ không bao giờ cháy hết, nhưng cũng không thể bị thổi tắt"
             },
             "description": "Công cụ chiếu sáng hoàn hảo, trừ khi bạn muốn đi ngủ。"
         },
@@ -2341,7 +2341,7 @@
             "rarity": "common",
             "quantity": 1,
             "effect": {
-                "AutoBoil": "Có thể tự động đun nước, nhưng sẽ không ngừng phàn nàn nước quá nhiều hoặc quá ít"
+                "Tự Động Linh Chuy": "Có thể tự động đun nước, nhưng sẽ không ngừng phàn nàn nước quá nhiều hoặc quá ít"
             },
             "description": "Một chiếc ấm trà ma pháp tính tình nóng nảy, tuy dễ dùng nhưng rất ồn ào。"
         },
@@ -2357,7 +2357,7 @@
             "rarity": "rare",
             "quantity": 1,
             "effect": {
-                "DreamRecord": "Khi ngủ trên đó, sẽ ghi lại giấc mơ của bạn, sau khi tỉnh dậy có thể phát lại"
+                "Mộng Cảnh Ký Lục": "Khi ngủ trên đó, sẽ ghi lại giấc mơ của bạn, sau khi tỉnh dậy có thể phát lại"
             },
             "description": "Có thể ôn lại mộng đẹp, nhưng cũng có thể ôn lại ác mộng。"
         },
@@ -2373,7 +2373,7 @@
             "rarity": "uncommon",
             "quantity": 1,
             "effect": {
-                "ConstantTemperature": "Chiếc chăn này luôn duy trì nhiệt độ thoải mái nhất"
+                "Hằng Ôn Bảo Trì": "Chiếc chăn này luôn duy trì nhiệt độ thoải mái nhất"
             },
             "description": "Người bạn đồng hành tuyệt vời nhất trong mùa đông, khiến người ta không muốn rời khỏi chăn。"
         },
@@ -2389,7 +2389,7 @@
             "rarity": "uncommon",
             "quantity": 1,
             "effect": {
-                "OneTouchStorage": "Có thể mở ra và thu lại chỉ bằng một chạm, nhưng thỉnh thoảng sẽ bị kẹp ngón tay"
+                "Nhất Khắc Thu Nạp": "Có thể mở ra và thu lại chỉ bằng một chạm, nhưng thỉnh thoảng sẽ bị kẹp ngón tay"
             },
             "description": "Giấc mơ của những người cắm trại, ngoại trừ mối nguy hiểm tiềm ẩn đó。"
         },
@@ -2405,12 +2405,12 @@
             "rarity": "uncommon",
             "quantity": 1,
             "effect": {
-                "PermanentDyeing": "Có thể nhuộm vĩnh viễn bất kỳ chất liệu nào, nhưng không thể tẩy sạch"
+                "Vĩnh Cửu Nhiễm Sắc": "Có thể nhuộm vĩnh viễn bất kỳ chất liệu nào, nhưng không thể tẩy sạch"
             },
             "description": "Hãy suy nghĩ kỹ trước khi dùng, vì không có thuốc hối hận đâu。"
         }
     ],
-    "Cursed_Items": [
+    "Nguyền Phẩm": [
         {
             "name": "Chiếc tất của kẻ xui xẻo",
             "cost": 5,
@@ -2423,7 +2423,7 @@
             "rarity": "common",
             "quantity": 1,
             "effect": {
-                "Curse": "Tất cả các kiểm định liên quan của người sở hữu -1"
+                "Trớ Chú": "Tất cả các kiểm định liên quan của người sở hữu -1"
             },
             "description": "Một chiếc tất luôn ướt sũng, tỏa ra mùi ẩm mốc. Nghe nói chủ nhân cũ của nó đã dẫm phải phân chó suốt ba năm liên tiếp。"
         },
@@ -2458,7 +2458,7 @@
             "description": "Củ hành tây này ngay cả khi không cắt ra cũng khiến người ta rơi lệ, dường như nó chứa đựng tất cả nỗi bi thương của thế gian。"
         }
     ],
-    "StrangeFood": [
+    "Độc Lạ Ẩm Thực": [
         {
             "name": "Thạch Biết Cử Động",
             "cost": 8,
@@ -2471,7 +2471,7 @@
             "rarity": "common",
             "quantity": 3,
             "effect": {
-                "Slippery": "Trong vòng 1 giờ sau khi ăn, cơ thể bạn trở nên trơn trượt bất thường, kiểm định né tránh -2, nhưng kiểm định tẩu thoát +2"
+                "Trơn Trượt": "Trong vòng 1 giờ sau khi ăn, cơ thể bạn trở nên trơn trượt bất thường, kiểm định né tránh -2, nhưng kiểm định tẩu thoát +2"
             },
             "description": "Món thạch làm từ khối keo Slime, không ngừng ngọ nguậy trên đĩa. Hương vị ngon đến bất ngờ。"
         },
@@ -2487,7 +2487,7 @@
             "rarity": "uncommon",
             "quantity": 2,
             "effect": {
-                "Bio_Light": "Trong vòng 4 giờ sau khi ăn, làn da của bạn sẽ phát ra huỳnh quang yếu, chiếu sáng xung quanh 2 mét"
+                "Sinh Mệnh Dự Quang": "Trong vòng 4 giờ sau khi ăn, làn da của bạn sẽ phát ra huỳnh quang yếu, chiếu sáng xung quanh 2 mét"
             },
             "description": "Được nấu từ nấm phát sáng trong hang động dưới lòng đất, sau khi uống bạn sẽ là một chiếc đèn đêm di động。"
         },
@@ -2503,7 +2503,7 @@
             "rarity": "uncommon",
             "quantity": 1,
             "effect": {
-                "Time_Perception": "Sau khi ăn, bạn có thể cảm nhận chính xác sự trôi qua của thời gian trong 24 giờ tới, sai số không quá 1 giây"
+                "Cảm Quan Thời Gian": "Sau khi ăn, bạn có thể cảm nhận chính xác sự trôi qua của thời gian trong 24 giờ tới, sai số không quá 1 giây"
             },
             "description": "Bánh mì ma pháp có nướng các con số đếm ngược trên bề mặt, mỗi giây các con số đều thay đổi。"
         },
@@ -2519,7 +2519,7 @@
             "rarity": "rare",
             "quantity": 1,
             "effect": {
-                "Memory_Recall": "Sau khi ăn, ngẫu nhiên ôn lại một đoạn ký ức đã bị lãng quên"
+                "Ký Ức Hồi Tưởng": "Sau khi ăn, ngẫu nhiên ôn lại một đoạn ký ức đã bị lãng quên"
             },
             "description": "Mỗi viên kẹo đều phong ấn hương vị của một đoạn ký ức, có thể là ngọt ngào, cũng có thể là cay đắng。"
         },
@@ -2535,12 +2535,12 @@
             "rarity": "rare",
             "quantity": 2,
             "effect": {
-                "forced_honesty": "Trong vòng 1 giờ sau khi ăn, bạn không thể nói dối, nhưng có thể chọn im lặng"
+                "Cưỡng Chế Chân Thực": "Trong vòng 1 giờ sau khi ăn, bạn không thể nói dối, nhưng có thể chọn im lặng"
             },
             "description": "Bánh quy được thêm cỏ chân ngôn khi nướng, khiến người ăn không tự chủ được mà nói ra lời thật lòng。"
         }
     ],
-    "prank_items": [
+    "Đồ Chơi Khăm": [
         {
             "name": "Dược Thủy Giả Chết",
             "cost": 25,
@@ -2553,7 +2553,7 @@
             "rarity": "uncommon",
             "quantity": 1,
             "effect": {
-                "fake_death_status": "Sau khi uống sẽ vào trạng thái giả chết trong 30 phút, dấu hiệu sinh tồn yếu đến mức khó lòng phát giác, có thể thức tỉnh bất cứ lúc nào"
+                "Trạng Thái Giả Chết": "Sau khi uống sẽ vào trạng thái giả chết trong 30 phút, dấu hiệu sinh tồn yếu đến mức khó lòng phát giác, có thể thức tỉnh bất cứ lúc nào"
             },
             "description": "Kiệt tác trêu chọc của luyện kim thuật sư, thường được dùng để trốn nợ hoặc hù dọa người thân bạn bè。"
         },
@@ -2569,7 +2569,7 @@
             "rarity": "common",
             "quantity": 5,
             "effect": {
-                "Random_Voice_Change": "Trong vòng 2 giờ sau khi sử dụng, giọng nói của bạn sẽ ngẫu nhiên biến thành giọng của một sinh vật nào đó"
+                "Biểu Diễn Giọng Nói": "Trong vòng 2 giờ sau khi sử dụng, giọng nói của bạn sẽ ngẫu nhiên biến thành giọng của một sinh vật nào đó"
             },
             "description": "Có thể khiến bạn nói chuyện giống như vịt, cũng có thể giống như Cự Long. Hoàn toàn ngẫu nhiên, không thể kiểm soát。"
         },
@@ -2601,7 +2601,7 @@
             "rarity": "uncommon",
             "quantity": 1,
             "effect": {
-                "invisible_writing": "Văn bản được viết bằng loại mực này chỉ có thể hiển thị dưới ánh sáng đặc biệt"
+                "Bí Thuật Vô Hình": "Văn bản được viết bằng loại mực này chỉ có thể hiển thị dưới ánh sáng đặc biệt"
             },
             "description": "Sự lựa chọn yêu thích của gián điệp và học sinh gian lận, cũng là lựa chọn lãng mạn cho thư tình。"
         },
@@ -2617,12 +2617,12 @@
             "rarity": "common",
             "quantity": 5,
             "effect": {
-                "non_stop_hiccups": "Trong vòng 30 phút sau khi ăn, cứ cách vài giây sẽ nấc cụt một lần, các kiểm định liên quan đến thi pháp -2"
+                "Nấc Cụt Liên Hồi": "Trong vòng 30 phút sau khi ăn, cứ cách vài giây sẽ nấc cụt một lần, các kiểm định liên quan đến thi pháp -2"
             },
             "description": "Kẹo ma thuật khiến người ta không thể ngừng lại, hiệu quả cực tốt khi sử dụng trong yến tiệc。"
         }
     ],
-    "adult_products": [
+    "Hàng Nóng": [
         {
             "name": "Nước hoa Mê Hoặc",
             "cost": 30,
@@ -2635,7 +2635,7 @@
             "rarity": "uncommon",
             "quantity": 1,
             "effect": {
-                "charisma_boost": "Trong vòng 2 giờ sau khi sử dụng, hảo cảm nhận thêm +5 khi giao tiếp với người khác giới"
+                "Tăng Phúc Mị Lực": "Trong vòng 2 giờ sau khi sử dụng, hảo cảm nhận thêm +5 khi giao tiếp với người khác giới"
             },
             "description": "Nước hoa được pha chế với Pheromone, khiến người ta không tự chủ được mà muốn lại gần bạn。"
         },
@@ -2665,12 +2665,12 @@
             "rarity": "uncommon",
             "quantity": 1,
             "effect": {
-                "Soft_Binding": "Có thể dùng để trói buộc, nhưng chất liệu mềm mại không gây sát thương, có thể dùng ma pháp để cởi bỏ"
+                "Nhu Tính Trói Buộc": "Có thể dùng để trói buộc, nhưng chất liệu mềm mại không gây sát thương, có thể dùng ma pháp để cởi bỏ"
             },
             "description": "Dải lụa ma pháp mềm mại, vừa có thể dùng để trang trí, cũng có thể dùng cho... mục đích khác。"
         }
     ],
-    "Pet_Supplies": [
+    "Thú Cưng": [
         {
             "name": "Đĩa bay không bao giờ mòn",
             "cost": 15,
@@ -2715,7 +2715,7 @@
             "rarity": "uncommon",
             "quantity": 1,
             "effect": {
-                "timed_feeding": "Tự động làm đầy thức ăn và nước uống vào thời gian cố định mỗi ngày"
+                "Định Thời Nuôi Dưỡng": "Tự động làm đầy thức ăn và nước uống vào thời gian cố định mỗi ngày"
             },
             "description": "Vật dụng thiết yếu cho người lười nuôi sủng vật, chỉ cần định kỳ bổ sung ma lực là được。"
         },
@@ -2731,12 +2731,12 @@
             "rarity": "uncommon",
             "quantity": 1,
             "effect": {
-                "remote_summon": "Rung chuông, thú cưng của bạn sẽ nghe thấy và biết vị trí của bạn, phạm vi hiệu lực 1 km"
+                "Viễn Trình Triệu Hồi": "Rung chuông, thú cưng của bạn sẽ nghe thấy và biết vị trí của bạn, phạm vi hiệu lực 1 km"
             },
             "description": "Không còn phải lo lắng thú cưng bị lạc nữa, trừ khi nó cố tình không muốn quay lại。"
         }
     ],
-    "musical_instruments": [
+    "Nhạc Cụ": [
         {
             "name": "Đàn Harp luôn lạc điệu",
             "cost": 12,
@@ -2749,7 +2749,7 @@
             "rarity": "common",
             "quantity": 1,
             "effect": {
-                "harsh_music": "Khi biểu diễn chắc chắn sẽ lạc điệu, người nghe cần vượt qua kiểm định ý chí nếu không sẽ cảm thấy khó chịu"
+                "Âm Thanh Chói Tai": "Khi biểu diễn chắc chắn sẽ lạc điệu, người nghe cần vượt qua kiểm định ý chí nếu không sẽ cảm thấy khó chịu"
             },
             "description": "Một cây đàn hạc bị nguyền rủa, âm sắc của nó có thể khiến người ôn hòa nhất cũng muốn đập nát nó。"
         },
@@ -2765,7 +2765,7 @@
             "rarity": "rare",
             "quantity": 1,
             "effect": {
-                "Lullaby": "Khi diễn tấu, sinh vật trong vòng 10 mét xung quanh cần vượt qua kiểm định tinh thần, thất bại sẽ rơi vào trạng thái ngủ say"
+                "Bài Ca Ru Ngủ": "Khi diễn tấu, sinh vật trong vòng 10 mét xung quanh cần vượt qua kiểm định tinh thần, thất bại sẽ rơi vào trạng thái ngủ say"
             },
             "description": "Giai điệu thổi ra có thể khiến người ta không tự chủ được mà buồn ngủ。"
         },
@@ -2781,7 +2781,7 @@
             "rarity": "rare",
             "quantity": 1,
             "effect": {
-                "Battle_Spirit_High": "Khi gõ, lực tấn công của đơn vị đồng minh +10%, duy trì 3 hiệp"
+                "Chiến Ý Sục Sôi": "Khi gõ, lực tấn công của đơn vị đồng minh +10%, duy trì 3 hiệp"
             },
             "description": "Tiếng trống có thể kích thích ý chí chiến đấu của chiến sĩ, khiến họ quên đi sợ hãi và mệt mỏi。"
         }

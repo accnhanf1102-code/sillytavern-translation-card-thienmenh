@@ -7442,7 +7442,6 @@
             },
             "description": "Tất cả về Kẻ Quan Sát"
         },
-        //Tấn công
         {
             "name": "Đả Kích",
             "cost": 20,
@@ -7769,7 +7768,6 @@
             },
             "description": "Ra chiêu với tư thế tập trung như một học giả, biến mỗi lần thực chiến thành cơ hội để tinh tiến bản thân hơn nữa"
         },
-        //Kỹ năng
         {
             "name": "Phòng ngự",
             "cost": 20,
@@ -8118,7 +8116,6 @@
             },
             "description": "Nén năng lượng đã đưa vào để tạo hình thành binh khí tạm thời, dùng tài nguyên để đổi lấy một thanh Diệt Trừ Chi Nhận chỉ sinh ra cho trận chiến này"
         },
-        //Năng lực
         {
             "name": "Mãnh Hổ Hạ Sơn",
             "cost": 100,
