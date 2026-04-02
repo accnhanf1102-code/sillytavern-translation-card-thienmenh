@@ -2899,7 +2899,7 @@
             "description": "Thông qua sự khổ luyện và thử thách nghiêm ngặt, ý chí của bạn kiên định như bàn thạch. Sự kiên cường về tinh thần này cũng phản hồi lại cơ thể, giúp bạn có thể chịu đựng nhiều đau đớn hơn và chống lại những thế lực tà ác đang cố gắng bóp méo tâm trí bạn。"
         }
     ],
-    "Mục sư": [
+    "Druid": [
         {
             "name": "Sự Vuốt Ve Của Tự Nhiên",
             "cost": 20,
@@ -2908,7 +2908,7 @@
                 "Tinh thần",
                 "Đơn thể",
                 "Trị liệu",
-                "Mục sư"
+                "Druid"
             ],
             "Loại": "Chủ động",
             "rarity": "common",
@@ -2926,7 +2926,7 @@
                 "Đơn thể",
                 "Sát thương",
                 "Uy lực: 50",
-                "Mục sư"
+                "Druid"
             ],
             "type": "Chủ động",
             "rarity": "common",
@@ -2943,7 +2943,7 @@
                 "Tinh thần",
                 "Bản thân",
                 "Buff",
-                "Mục sư"
+                "Druid"
             ],
             "type": "Chủ động",
             "rarity": "common",
@@ -2961,7 +2961,7 @@
                 "Đơn thể",
                 "Sát thương",
                 "Uy lực: 55",
-                "Mục sư"
+                "Druid"
             ],
             "type": "Chủ động",
             "rarity": "common",
@@ -2978,7 +2978,7 @@
                 "Tinh thần",
                 "Đơn thể",
                 "Trị liệu",
-                "Mục sư",
+                "Druid",
                 "Duy trì"
             ],
             "type": "Chủ động",
@@ -2998,7 +2998,7 @@
                 "Phạm vi:2",
                 "Sát thương",
                 "Uy lực: 130",
-                "Mục sư",
+                "Druid",
                 "Debuff"
             ],
             "type": "Chủ động",
@@ -3017,7 +3017,7 @@
                 "Thể",
                 "Bản Thân",
                 "Buff",
-                "Mục sư"
+                "Druid"
             ],
             "type": "Chủ Động",
             "rarity": "uncommon",
@@ -3035,7 +3035,7 @@
                 "Đơn thể",
                 "Sát thương",
                 "Uy lực: 160",
-                "Mục sư"
+                "Druid"
             ],
             "type": "Chủ động",
             "rarity": "uncommon",
@@ -3053,7 +3053,7 @@
                 "Tinh thần",
                 "Phạm vi: 5",
                 "Trị liệu",
-                "Mục sư",
+                "Druid",
                 "Buff"
             ],
             "type": "Chủ động",
@@ -3073,7 +3073,7 @@
                 "Đơn thể",
                 "Sát thương",
                 "Uy lực: 280",
-                "Mục sư",
+                "Druid",
                 "Debuff",
                 "Duy trì"
             ],
@@ -3092,7 +3092,7 @@
                 "Thể",
                 "Bản thân",
                 "Buff",
-                "Mục sư"
+                "Druid"
             ],
             "type": "Chủ động",
             "rarity": "rare",
@@ -3110,7 +3110,7 @@
                 "Đơn thể",
                 "Sát thương",
                 "Uy lực: 450",
-                "Mục sư",
+                "Druid",
                 "Duy trì"
             ],
             "Loại": "Chủ động",
@@ -3129,7 +3129,7 @@
                 "Thể",
                 "Bản thân",
                 "Buff",
-                "Mục sư",
+                "Druid",
                 "Biến thân"
             ],
             "type": "Chủ động",
@@ -3147,7 +3147,7 @@
                 "Mẫn",
                 "Bản thân",
                 "Buff",
-                "Mục sư",
+                "Druid",
                 "Biến thân"
             ],
             "type": "Chủ động",
@@ -3165,7 +3165,7 @@
                 "Tinh",
                 "Bản thân",
                 "Buff",
-                "Mục sư",
+                "Druid",
                 "Biến Thân"
             ],
             "type": "Chủ động",
@@ -3182,7 +3182,7 @@
                 "Tinh thần",
                 "Bản thân",
                 "Buff",
-                "Mục sư"
+                "Druid"
             ],
             "type": "Bị động",
             "rarity": "common",
@@ -3198,7 +3198,7 @@
                 "Thể",
                 "Bản thân",
                 "Buff",
-                "Mục sư"
+                "Druid"
             ],
             "type": "Bị động",
             "rarity": "common",
@@ -3214,7 +3214,7 @@
                 "Tinh thần",
                 "Bản thân",
                 "Buff",
-                "Mục sư"
+                "Druid"
             ],
             "type": "Bị động",
             "rarity": "uncommon",
@@ -3230,7 +3230,7 @@
                 "Tinh thần",
                 "Bản thân",
                 "Buff",
-                "Mục sư"
+                "Druid"
             ],
             "type": "Bị động",
             "rarity": "rare",
