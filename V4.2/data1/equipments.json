@@ -854,7 +854,7 @@
             "description": "Mũi thương khảm bảo thạch màu tím sẫm, có thể hấp thụ năng lượng linh hồn của người chết。"
         },
         {
-            "Name": "Trường mâu gỗ",
+            "name": "Trường mâu gỗ",
             "cost": 9,
             "Type": "Vũ khí",
             "tag": [
@@ -868,7 +868,7 @@
             "Description": "Một cây gậy gỗ vót nhọn, vũ khí đơn giản thường được dân binh sử dụng。"
         },
         {
-            "Name": "Đinh ba đánh cá",
+            "name": "Đinh ba đánh cá",
             "cost": 16,
             "Type": "Vũ khí",
             "tag": [
@@ -924,7 +924,7 @@
             "description": "Cây trường thương chuyên dụng để đột phá quân địch。"
         },
         {
-            "Name": "Xuyên Tâm Thương",
+            "name": "Xuyên Tâm Thương",
             "cost": 46,
             "Type": "Vũ khí",
             "tag": [
@@ -940,7 +940,7 @@
     ],
     "Vũ Khí Tầm Xa": [
         {
-            "Name": "Cung Ngắn Phức Hợp",
+            "name": "Cung Ngắn Phức Hợp",
             "cost": 11,
             "Type": "Vũ khí",
             "tag": [
@@ -1434,7 +1434,7 @@
             "description": "Lưỡi đao cong được chế tác từ tinh cương chất lượng cao, sở hữu đường cong hình trăng khuyết ưu mỹ, có thể tạo ra những vết thương gây chảy máu liên tục。"
         },
         {
-            "Name": "Đoản Kiếm Ảnh Kích",
+            "name": "Đoản Kiếm Ảnh Kích",
             "cost": 20,
             "Type": "Vũ khí",
             "tag": [
@@ -1448,7 +1448,7 @@
             "Description": "Đoản kiếm không phản quang được rèn từ hắc thiết, lưỡi dao mỏng nhẹ, có thể tăng nhẹ tỷ lệ gây ra đòn chí mạng。"
         },
         {
-            "Name": "Nguyệt Quang Song Nhẫn",
+            "name": "Nguyệt Quang Song Nhẫn",
             "cost": 38,
             "Type": "Vũ khí",
             "tag": [
@@ -2270,7 +2270,7 @@
             "description": "Mũ pháp sư chóp nhọn, có thể tăng cường trí lực và năng lực ma pháp của người đeo。"
         },
         {
-            "Name": "Mũ Trụ Chiến Sĩ",
+            "name": "Mũ Trụ Chiến Sĩ",
             "cost": 28,
             "Type": "Phòng Cụ",
             "tag": [
@@ -2284,7 +2284,7 @@
             "Description": "Mũ trụ bằng sắt dày nặng, có thể bảo vệ phần đầu một cách hiệu quả。"
         },
         {
-            "Name": "Mũ Nhọn Pháp Sư",
+            "name": "Mũ Nhọn Pháp Sư",
             "cost": 32,
             "Type": "Phòng Cụ",
             "tag": [
@@ -2665,7 +2665,7 @@
             "description": "Được ghép từ nhiều miếng giáp tinh cương, che phủ hoàn toàn bàn tay, có thể tăng đáng kể sức mạnh của những cú đấm。"
         },
         {
-            "Name": "Ủng Dài Lữ Hành",
+            "name": "Ủng Dài Lữ Hành",
             "cost": 19,
             "Type": "Phòng cụ",
             "tag": [
@@ -2679,7 +2679,7 @@
             "Description": "Ủng da cổ cao, đế giày bền bỉ chống mài mòn, giúp giảm bớt mệt mỏi khi đi đường dài。"
         },
         {
-            "Name": "Ủng Bản Giáp Khảm Thép",
+            "name": "Ủng Bản Giáp Khảm Thép",
             "cost": 21,
             "Type": "Phòng cụ",
             "tag": [
@@ -3085,7 +3085,7 @@
             "description": "Bộ đồ bó sát màu đen, được thiết kế chuyên dụng cho hành động ban đêm。"
         },
         {
-            "Name": "Tạp Dề Đầu Bếp",
+            "name": "Tạp Dề Đầu Bếp",
             "cost": 14,
             "Type": "Phòng cụ",
             "tag": [
@@ -3099,7 +3099,7 @@
             "Description": "Tạp dề làm việc của đầu bếp, dính đầy dấu vết của các loại nguyên liệu。"
         },
         {
-            "Name": "Hoa Phục Thi Nhân Hát Rong",
+            "name": "Hoa Phục Thi Nhân Hát Rong",
             "cost": 25,
             "Type": "Phòng cụ",
             "tag": [
@@ -3585,7 +3585,7 @@
             "Description": "Chiếc nhẫn bạc bình thường, thiết kế đơn giản không hoa văn, có thể dùng làm cơ sở để phụ ma hoặc làm tín vật。"
         },
         {
-            "Name": "Nhẫn Chuẩn Xác",
+            "name": "Nhẫn Chuẩn Xác",
             "cost": 18,
             "Type": "Trang sức",
             "tag": [
@@ -4605,7 +4605,7 @@
             "Description": "Tương truyền đây là biểu tượng cổ xưa được Thú Tộc chế tác qua nhiều thế hệ, có thể kháng lại các hiệu quả Lưu Huyết và Đóng Băng。"
         },
         {
-            "Name": "Trang Sức Sừng Nhỏ Lý Trí Thú Tộc",
+            "name": "Trang Sức Sừng Nhỏ Lý Trí Thú Tộc",
             "cost": 17,
             "Type": "Trang sức",
             "tag": [
@@ -5126,7 +5126,7 @@
             "description": "Hộ phù được chế tác theo hình ảnh bàn tay cầm ma pháp thư. Trí tuệ của các ma pháp sư qua các thời đại đã tạo nên vô số thư viện của Hiệp Hội Ma Pháp。"
         },
         {
-            "Name": "Dây Chuyền Bào Hống",
+            "name": "Dây Chuyền Bào Hống",
             "cost": 26,
             "Type": "Trang sức",
             "tag": [
@@ -5140,7 +5140,7 @@
             "Description": "Mặt dây chuyền bằng đồng được chế tác theo hình ảnh của Cự Nhân Gào Thét. Tương truyền tiếng gầm vang dội của Cự Nhân có thể phá hủy tự nhiên —— ví dụ như gây ra lở núi, hoặc triệu hồi bão tuyết。"
         },
         {
-            "Name": "Huy Hiệu Ma Kiếm",
+            "name": "Huy Hiệu Ma Kiếm",
             "cost": 28,
             "Type": "Trang sức",
             "tag": [
@@ -5406,7 +5406,7 @@
             "description": "Hộ phù được chế tác theo hình dáng nụ cười khi đang ngủ say của Thâm Miên Chi Chủ. Thâm Miên Chi Chủ đã ban cho Dung Nê một giấc ngủ say nồng, đó là sự an ninh vĩnh hằng。"
         },
         {
-            "Name": "Sự Hoan Hỷ Của Quyến Thuộc Hủ Bại",
+            "name": "Sự Hoan Hỷ Của Quyến Thuộc Hủ Bại",
             "cost": 26,
             "Type": "Trang sức",
             "tag": [
@@ -5420,7 +5420,7 @@
             "Description": "Hộ phù được chế tác theo hình dáng hoan hỷ của bầy côn trùng kịch độc. Hãy hiến dâng sự hủ bại cho Tinh Hồng Chi Chủ — hãy trở về bên cạnh những đứa con bị bỏ rơi như chúng ta。"
         },
         {
-            "Name": "Sự Hoan Hỷ Của Tiên Huyết Quân Vương",
+            "name": "Sự Hoan Hỷ Của Tiên Huyết Quân Vương",
             "cost": 26,
             "Type": "Trang sức",
             "tag": [
@@ -5494,7 +5494,7 @@
             "description": "Hộ phù làm bằng sắt rèn cổ đại có phù điêu Ma Long khổng lồ. Họa tiết Ma Long được xem là biểu tượng của việc kháng lại ma lực。"
         },
         {
-            "Name": "Huy Chương Đại Thuẫn Hỏa Long",
+            "name": "Huy Chương Đại Thuẫn Hỏa Long",
             "cost": 44,
             "Type": "Trang sức",
             "tag": [
@@ -5509,7 +5509,7 @@
             "Description": "Hộ phù làm bằng sắt rèn cổ đại có phù điêu Hỏa Long khổng lồ. Họa tiết Hỏa Long được xem là biểu tượng của sự kháng hỏa。"
         },
         {
-            "Name": "Huy Chương Đại Thuẫn Lôi Long",
+            "name": "Huy Chương Đại Thuẫn Lôi Long",
             "cost": 44,
             "Type": "Trang sức",
             "tag": [
