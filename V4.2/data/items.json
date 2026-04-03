@@ -1175,7 +1175,7 @@
             "description_key": "Mấy chữ “Dị Giới” trên bìa đối với độc giả mà nói chẳng có ý nghĩa gì, nhưng điều đó không ngăn cản nó trở thành một trong những ấn phẩm ngầm có lượng lưu thông lớn nhất đại lục"
         },
         {
-            "name_key": "Cấm Kỵ Và Lễ Nghi Toàn Chủng Tộc: Làm Thế Nào Để Tránh Bị Tộc Người Lùn Chặt Đầu Gối Trên Bàn Rượu",
+            "name": "Cấm Kỵ Và Lễ Nghi Toàn Chủng Tộc: Làm Thế Nào Để Tránh Bị Tộc Người Lùn Chặt Đầu Gối Trên Bàn Rượu",
             "cost": 60,
             "type_key": "Sách",
             "tag": [
@@ -1188,7 +1188,7 @@
             "description_key": "Hướng dẫn giao tiếp nghiêm túc, liệt kê chi tiết các khu vực cấm kỵ xã giao của các chủng tộc"
         },
         {
-            "name_key": "Nghệ Thuật Xử Lý Và Nấu Nướng Ma Vật: Từ Slime Đến Cự Long",
+            "name": "Nghệ Thuật Xử Lý Và Nấu Nướng Ma Vật: Từ Slime Đến Cự Long",
             "cost": 130,
             "type": "Sách",
             "tag": [
@@ -1279,7 +1279,7 @@
             "description_key": "Được đồng biên soạn bởi các học giả lớn, thu thập các loại ma vật thường gặp ở Astaria, ghi chép lại tập tính của ma vật, v.v"
         },
         {
-            "name_key": "Tôi Trở Thành Người Giàu Nhất Thế Giới Nhờ Nhặt Được Món Hời Ở Chợ Đen",
+            "name": "Tôi Trở Thành Người Giàu Nhất Thế Giới Nhờ Nhặt Được Món Hời Ở Chợ Đen",
             "cost": 30,
             "type_key": "Sách",
             "tag": [
@@ -1292,7 +1292,7 @@
             "description_key": "Ấn phẩm kỳ ảo lưu truyền tại các cảng mậu dịch lớn"
         },
         {
-            "name_key": "Cậu Bé May Mắn Và Chiếc Cốc Lửa",
+            "name": "Cậu Bé May Mắn Và Chiếc Cốc Lửa",
             "cost": 20,
             "type": "Sách",
             "tag": [
@@ -1409,7 +1409,7 @@
             "description_key": "Xoay quanh lịch sử di cư của người cao và Tộc Người Lùn, tranh chấp lãnh thổ và sự tan vỡ của Liên Minh, văn bản thiên về ký sự, kèm theo lượng lớn các cuộc phỏng vấn truyền miệng và niên biểu xung đột。"
         },
         {
-            "name_key": "Ma Vương mỗi năm đều bị đánh bại một lần, thật sự là vì gà sao？",
+            "name": "Ma Vương mỗi năm đều bị đánh bại một lần, thật sự là vì gà sao？",
             "cost": 45,
             "type_key": "Sách",
             "tag": [
@@ -1422,7 +1422,7 @@
             "description_key": "Tiếp cận từ tuyến tiếp tế, tự sự dư luận và tài chính vương quốc, nghi ngờ thần thoại anh hùng tất thắng, đưa ra giả thuyết rằng chiến tranh thảo phạt có thể là một bộ cơ chế trật tự được duy trì"
         },
         {
-            "name_key": "Cống ngầm, tìm mèo và cỏ lá bạc: Một trăm nhiệm vụ mạo hiểm giả tân thủ phải làm",
+            "name": "Cống ngầm, tìm mèo và cỏ lá bạc: Một trăm nhiệm vụ mạo hiểm giả tân thủ phải làm",
             "cost": 35,
             "type": "Sách",
             "tag": [
@@ -1820,7 +1820,7 @@
             "description_key": "Một chiếc nơ thắt cổ màu đen bình thường, những viên đá huy thạch nhỏ xíu khảm trên đó mới là bí mật của nó, nó có thể nắm bắt và tái cấu trúc ma lực của âm thanh。"
         },
         {
-            "name_key": "Hộp Tinh Thể Lữ Hành Gọn Nhẹ",
+            "name": "Hộp Tinh Thể Lữ Hành Gọn Nhẹ",
             "cost": 80,
             "type_key": "Khác",
             "tag": [
@@ -1869,7 +1869,7 @@
             "description_key": "Cốc mỏ, ống nghiệm, cối giã và một đống chai lọ hũ nút, đây là điểm khởi đầu trên con đường luyện kim。"
         },
         {
-            "name_key": "Vạc Luyện Kim",
+            "name": "Vạc Luyện Kim",
             "cost": 40,
             "type_key": "Khác",
             "tag": [
@@ -2183,7 +2183,7 @@
             "description": "Những cái tên được liệt kê trên bản Khế Ước này đại diện cho mệnh mạch kinh tế của một thành phố. Nắm giữ nó, tài sản của bạn sẽ dồi dào như dòng sông chảy mãi không ngừng。"
         },
         {
-            "name_key": "Khế Ước Kiến Quốc",
+            "name": "Khế Ước Kiến Quốc",
             "cost": 250,
             "type_key": "Khác",
             "tag": [
@@ -2199,7 +2199,7 @@
             "description_key": "Một tờ khế ước cổ xưa được chư thần chứng giám, viết bằng mực pháp tắc. Nó ban cho phàm nhân tư cách thực thi quyền bính sáng thế, là khởi đầu của con đường đế vương。"
         },
         {
-            "name_key": "Bảng Ngọc Bích - Giả",
+            "name": "Bảng Ngọc Bích - Giả",
             "cost": 250,
             "type_key": "Khác",
             "tag": [

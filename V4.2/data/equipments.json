@@ -101,7 +101,7 @@
             "description_key": "Thân kiếm cực mảnh được rèn từ thép bách luyện, chuôi kiếm mạ vàng và chạm khắc hoa văn, tốc độ đâm cực nhanh, khó lòng đỡ đòn。"
         },
         {
-            "name_key": "Kiếm Thủ Bán Trường Tốc Độ",
+            "name": "Kiếm Thủ Bán Trường Tốc Độ",
             "cost": 27,
             "type_key": "Vũ khí",
             "tag": [
@@ -1320,7 +1320,7 @@
             "description_key": "Nỏ được chế tác tinh xảo, độ chính xác cực cao。"
         },
         {
-            "name_key": "Liên Nỏ",
+            "name": "Liên Nỏ",
             "cost": 40,
             "type_key": "Vũ khí",
             "tag": [
@@ -1334,7 +1334,7 @@
             "description_key": "Thiết kế cơ quan đặc biệt, có thể bắn liên tục nhanh chóng。"
         },
         {
-            "name_key": "Bạo Liệt Nỏ",
+            "name": "Bạo Liệt Nỏ",
             "cost": 48,
             "type_key": "Vũ khí",
             "tag": [
@@ -1504,7 +1504,7 @@
             "description": "Dao găm bằng sắt bản rộng, có hộ thủ uốn cong hướng lên, chuyên dùng để đỡ đòn và phản công。"
         },
         {
-            "name_key": "Câu Đao",
+            "name": "Câu Đao",
             "cost": 7,
             "type_key": "Vũ khí",
             "tag": [
@@ -1518,7 +1518,7 @@
             "description_key": "Đao một lưỡi chuôi ngắn, mũi đao có một móc câu sắc bén, có thể móc kéo vũ khí hoặc giáp trụ của đối thủ。"
         },
         {
-            "name_key": "Đoản Kiếm Gỡ Đòn",
+            "name": "Đoản Kiếm Gỡ Đòn",
             "cost": 19,
             "type_key": "Vũ khí",
             "tag": [
@@ -3457,7 +3457,7 @@
             "description": "Khiên tròn trong suốt được rèn từ lõi băng của sông băng tầng sâu, thân khiên vô cùng cứng cáp, hàn khí tỏa ra bốn phía, có thể đóng băng đối phương trong thời gian ngắn。"
         },
         {
-            "name_key": "Khiên Phản Xạ Pháp Thuật",
+            "name": "Khiên Phản Xạ Pháp Thuật",
             "cost": 50,
             "type_key": "Phòng cụ",
             "tag": [
@@ -3471,7 +3471,7 @@
             "description_key": "Mặt khiên khảm tinh thể phản quang, có thể phản bật lại năng lượng ma pháp。"
         },
         {
-            "name_key": "Khiên Tròn Gai Nhọn",
+            "name": "Khiên Tròn Gai Nhọn",
             "cost": 44,
             "type_key": "Phòng cụ",
             "tag": [
@@ -4186,7 +4186,7 @@
             "description": "Tạo vật luyện kim tinh vi cấu thành từ ống kính bằng đồng thau và nhiều lớp thấu kính thủy tinh, có thể nâng cao đáng kể độ chính xác khi ngắm của vũ khí tầm xa。"
         },
         {
-            "name_key": "Mã Thứ Vũ Mẫn Nhẹn",
+            "name": "Mã Thứ Vũ Mẫn Nhẹn",
             "cost": 31,
             "type_key": "Trang sức",
             "tag": [
@@ -4200,7 +4200,7 @@
             "description_key": "Mã thứ bằng thép gắn vào gót giày, phần cuối được điểm xuyết bằng một chiếc lông Sư Thứu nhẹ nhàng, có thể nâng cao khả năng né tránh của người đeo。"
         },
         {
-            "name_key": "Chân Thỏ May Mắn",
+            "name": "Chân Thỏ May Mắn",
             "cost": 32,
             "type_key": "Trang sức",
             "tag": [
@@ -4343,7 +4343,7 @@
             "description_key": "Bảo thạch có thể gia tốc trưởng thành。"
         },
         {
-            "name_key": "Túi Kim Tệ",
+            "name": "Túi Kim Tệ",
             "cost": 30,
             "type_key": "Trang sức",
             "tag": [
@@ -4358,7 +4358,7 @@
     ],
     "Vũ Khí Bí Ẩn": [
         {
-            "name_key": "Mộc Kiếm Chống Cà Khịa",
+            "name": "Mộc Kiếm Chống Cà Khịa",
             "cost": 0,
             "type_key": "Vũ khí",
             "tag": [
