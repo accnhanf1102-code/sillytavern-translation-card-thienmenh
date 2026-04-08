@@ -1182,10 +1182,12 @@
                                         l = e.attributePoints[t];
                                     return `${a}(Cơ bản) + ${u}(Giai Vị) + ${l}(bổ sung) = ${a + u + l}`
                                 };
-                            c.push('【Thông tin Nhân Vật】'), c.push(`Họ tên: ${e.name}`), c.push(`Giới tính: ${s}`), c.push(`Tuổi: ${e.age} tuổi`), c.push(`Chủng tộc: ${i}`), c.push(`Thân phận: ${d}`), c.push(`Địa điểm khởi đầu: ${m}`), c.push(`Giai Vị Sinh Mệnh: ${S(e.level)}`), c.push(`Hạng: Lv.${e.level}`), c.push(''), c.push('【Thuộc tính Nhân vật】'), c.push(`Sức mạnh: ${p('Strength')}`), c.push(`Nhanh Nhẹn: ${p('Agility')}`), c.push(`Thể Chất: ${p('Constitution')}`), c.push(`Trí lực: ${p('Intelligence')}`), c.push(`Tinh thần: ${p('Spirit')}`), t.length > 0 && (c.push(''), c.push('【Danh sách Trang bị】'), t.forEach((e, a) => {
+                            c.push('【Thông tin Nhân Vật】'), c.push(`Họ tên: ${e.name}`), c.push(`Giới tính: ${s}`), c.push(`Tuổi: ${e.age} tuổi`), c.push(`Chủng tộc: ${i}`), c.push(`Thân phận: ${d}`), c.push(`Địa điểm khởi đầu: ${m}`), c.push(`Giai Vị Sinh Mệnh: ${S(e.level)}`), c.push(`Hạng: Lv.${e.level}`), c.push(''), c.push('【Thuộc tính Nhân vật】'), c.push(`Sức mạnh: ${p('Strength')}`), c.push(`Nhanh Nhẹn: ${p('Agility')}`), c.push(`Thể Chất: ${p('Constitution')}`), c.push(`Trí lực: ${p('Intelligence')}`), c.push(`Tinh thần: ${p('Spirit')}`);
+                            const h = _.filter(t, 'isCustom');
+                            h.length > 0 && (c.push(''), c.push('【Trang bị tùy chỉnh】'), h.forEach((e, a) => {
                                 c.push(`- Tên gọi: ${e.name}`), c.push(`  Loại hình: ${e.type}`), c.push(`  Phẩm chất: ${$e[e.rarity] || e.rarity}`), e.tag && e.tag.length > 0 && c.push(`  Nhãn: ${e.tag.join('、')}`), _.isEmpty(e.effect) || (c.push('  Hiệu quả:'), _.forEach(e.effect, (e, t) => {
                                     c.push(`    - ${t}: ${e}`)
-                                })), e.description && c.push(`  Mô tả: ${e.description}`), a < t.length - 1 && c.push('')
+                                })), e.description && c.push(`  Mô tả: ${e.description}`), a < h.length - 1 && c.push('')
                             }));
                             const v = _.filter(o, 'isCustom');
                             v.length > 0 && (c.push(''), c.push('【Đạo cụ tùy chỉnh】'), v.forEach((e, t) => {
@@ -1221,7 +1223,7 @@
                                 }))
                             })), l) {
                                 c.push(''), c.push('【Cốt truyện bắt đầu ban đầu】'), c.push(`${l.name}`);
-                                const e = '【Bắt đầu tùy chỉnh】' === l.name && r ? r : l.description;
+                                const e = '【Tùy chỉnh bắt đầu】' === l.name && r ? r : l.description;
                                 c.push(`Mô tả: ${e}`)
                             }
                             return `\`\`\`text\n${c.join('\n')}\n\`\`\`\n\n---\nDựa trên <status_current_variables> và nội dung trên, tạo một cốt truyện khởi đầu phù hợp với mô tả và bối cảnh!\n（Lưu ý: Khi tạo cốt truyện khởi đầu, trước tiên hãy kiểm tra xem nội dung trên có đầy đủ không, nếu không đầy đủ, phải tham khảo các thiết lập liên quan để hoàn thiện.）`
