@@ -1080,17 +1080,36 @@
             return {
                 executeJourney: async () => {
                     try {
-                        await async function (e, t, a, l) {
+                        await async function (e, t, a, l, o) {
                             await waitGlobalInitialized('Mvu');
-                            const o = _.filter(a, e => !e.isCustom),
-                                n = _.filter(t, e => !e.isCustom),
-                                r = _.filter(l, e => !e.isCustom),
-                                c = Mvu.getMvuData({
+                            const n = _.filter(t, e => !e.isCustom),
+                                r = _.filter(a, e => !e.isCustom),
+                                c = _.filter(l, e => !e.isCustom),
+                                s = _.filter(o, e => !e.isCustom),
+                                i = Mvu.getMvuData({
                                     type: 'message',
                                     message_id: 'latest'
                                 });
-                            _.set(c, 'stat_data.DestinyPoints', e.destinyPoints);
-                            const s = _.fromPairs(_.map(o, e => [e.name, {
+                            _.set(i, 'stat_data.DestinyPoints', e.destinyPoints);
+                            const d = _.fromPairs(_.map(n, e => [e.name, {
+                                Quality: _.get($e, e.rarity || '', 'Thông thường'),
+                                Type: e.type || '',
+                                Tags: e.tag || [],
+                                Effect: e.effect || {},
+                                Description: e.description || '',
+                                Location: e.position || ''
+                            }]));
+                            _.set(i, 'stat_data.Protagonist.Equipment', d);
+                            const m = _.fromPairs(_.map(r, e => [e.name, {
+                                Quality: _.get($e, e.rarity, 'Thông thường'),
+                                Type: e.type,
+                                Quantity: e.quantity || 1,
+                                Tags: e.tag || [],
+                                Effect: e.effect || {},
+                                Description: e.description
+                            }]));
+                            _.set(i, 'stat_data.Protagonist.Inventory', m);
+                            const u = _.fromPairs(_.map(c, e => [e.name, {
                                 Quality: _.get($e, e.rarity, 'Thông thường'),
                                 Type: e.type,
                                 Cost: e.consume || '',
@@ -1098,17 +1117,8 @@
                                 Effect: e.effect || {},
                                 Description: e.description
                             }]));
-                            _.set(c, 'stat_data.Protagonist.Skills', s);
-                            const i = _.fromPairs(_.map(n, e => [e.name, {
-                                Quality: _.get($e, e.rarity, 'Thông thường'),
-                                Quantity: e.quantity || 1,
-                                Type: e.type,
-                                Tags: e.tag || [],
-                                Effect: e.effect || {},
-                                Description: e.description
-                            }]));
-                            _.set(c, 'stat_data.Protagonist.Inventory', i), _.set(c, 'stat_data.Protagonist.Money', Math.max(0, Math.round(e.money))), _.set(c, 'stat_data.Protagonist.Level', e.level);
-                            const d = _.fromPairs(_.map(r, e => {
+                            _.set(i, 'stat_data.Protagonist.Skills', u), _.set(i, 'stat_data.Protagonist.Money', Math.max(0, Math.round(e.money))), _.set(i, 'stat_data.Protagonist.Level', e.level);
+                            const p = _.fromPairs(_.map(s, e => {
                                 const t = _.fromPairs(_.chain(e.equip).filter(e => !!e.name).map(e => [e.name, {
                                     Quality: _.get($e, e.rarity || '', 'Thông thường'),
                                     Type: e.type || '',
@@ -1165,11 +1175,11 @@
                                     Skills: a
                                 }]
                             }));
-                            _.set(c, 'stat_data.RelationshipList', d), await Mvu.replaceMvuData(c, {
+                            _.set(i, 'stat_data.RelationshipList', p), await Mvu.replaceMvuData(i, {
                                 type: 'message',
                                 message_id: 'latest'
                             }), console.log('✅ Dữ liệu thiết lập sẵn đã ghi vào biến tầng tin tức thành công')
-                        }(l.value, e.selectedItems, e.selectedSkills, e.selectedPartners), console.log('✅ Dữ liệu Nhân Vật đã ghi vào biến MVU');
+                        }(l.value, e.selectedEquipments, e.selectedItems, e.selectedSkills, e.selectedPartners), console.log('✅ Dữ liệu Nhân Vật đã ghi vào biến MVU');
                         const a = function (e, t, a, l, o, n, r) {
                             const c = [],
                                 s = 'Tùy chỉnh' === e.gender ? e.customGender : e.gender,
