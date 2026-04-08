@@ -1,0 +1,47 @@
+---
+VariablesUpdateFormat:
+  Rule:
+    - Ngươi BẮT BUỘC phải xuất ra phân tích cập nhật và các lệnh cập nhật thực tế cùng một lúc vào cuối câu trả lời tiếp theo
+    - Các lệnh cập nhật hoạt động tương tự tiêu chuẩn **JSON Patch (RFC 6902)**, phải là một mảng JSON hợp lệ chứa các đối tượng thao tác, nhưng thay vào đó sẽ hỗ trợ các thao tác sau:
+    - replace: thay thế giá trị của các đường dẫn hiện có
+    - delta: cập nhật giá trị của các đường dẫn số hiện có bằng một giá trị delta (giá trị delta BẮT BUỘC phải là một số không nằm trong dấu ngoặc kép)
+    - insert: chèn các mục mới vào một đối tượng hoặc mảng (sử dụng `-` làm chỉ mục mảng để thêm vào cuối)
+    - remove: xóa một khóa hoặc phần tử hiện có
+    - move: di chuyển dữ liệu từ đường dẫn này sang đường dẫn khác
+    - Đừng cập nhật các tên trường bắt đầu bằng `_` vì chúng chỉ được đọc, ví dụ như `_Variable`
+    - Khi một biến có định dạng yêu cầu trạng thái trống (hoặc tạm thời chưa được gán), bạn BẮT BUỘC phải gán cho nó một giá trị trống cụ thể. Tuyệt đối KHÔNG ĐƯỢC sử dụng null
+    - Khi cập nhật các biến, hãy bảo toàn NGUYÊN VĂN từng chút thông tin một cách chính xác
+    - Mọi phần hướng dẫn, nhắc nhở và checklist bên ngoài dữ liệu biến phải dùng tiếng Việt
+    - Nội dung thực tế bên trong thẻ `<Analysis>` vẫn phải BẰNG TIẾNG ANH, ngắn gọn, không quá 80 từ
+    - Nếu không có biến nào đủ điều kiện để cập nhật ngoài thời gian, ngươi vẫn BẮT BUỘC phải cập nhật `World.Time` rồi mới kết luận các nhóm biến khác không đổi
+  định dạng: |-
+    <UpdateVariable>
+      <Analysis>/* BẰNG TIẾNG ANH, không quá 80 từ */
+      - ${Bước 0: Explicitly state that no analysis step may be skipped before producing the patch.}
+      - ${Step 1: Identify the only variables allowed to change this turn: variables already exposed in status_current_variables, plus hidden event variables only when an event entry explicitly requires them.}
+      - ${Step 2: Calculate elapsed time from the current content only. Time must always move forward. If evidence is clear, use the exact implied duration. If evidence is weak, still advance time by the smallest safe and context-appropriate amount instead of leaving time unchanged. If the jump is large, explain why.}
+      - ${Step 3: Decide whether dramatic updates are allowed this turn: yes only for major events, transformations, death-resurrection, major travel, war-scale incidents, or unusually large time skips; otherwise no.}
+      - ${Step 4: Check forced event updates first: Event.Signal, Event.Active, Event.Title, Event.Phase, Event.End, and any hidden event flags explicitly required by the current event content. Never change Event.Signal unless the event text clearly orders it.}
+      - ${Step 5: Check World.Time and World.Location. Location changes only on actual movement and must keep a large-to-small hierarchy appropriate to the current context.}
+      - ${Step 6: Check protagonist updates: race, identity, class, resources, status effects, appearance, body-state, memory, and other directly evidenced personal changes. Do not infer changes from background lore alone.}
+      - ${Step 7: Check news updates. Only update News when the current turn creates information with sufficient wider impact. Do not turn personal flavor or local chatter into News unless the rules explicitly justify it.}
+      - ${Step 8: Check NPC and RelationshipList updates. Only update for NPCs who are present, directly affected, or clearly changed in the current content. Use each NPC's full official name and keep affection changes within allowed limits.}
+      - ${Step 9: Check QuestList updates: new quests, progress changes, completion, failure, reward claim, and deletion after reward collection. Do not add too many quests at once.}
+      - ${Step 10: Check Inventory, Equipment, Skills, StatusEffects, Money, DestinyPoints, and related combat or crafting results. Inspect obtain, use, loss, damage, equip, unequip, learn, forget, craft, consume, and time-based expiration. Keep item, equipment, skill, and quest names in Chinese when patched.}
+      - ${Step 11: Check special regional or event-specific systems last. At minimum, always re-check Event.Lily whenever the current scene touches Borderland-related context. Enforce all gates, caps, uniqueness rules, and one-way transitions exactly.}
+      - ${Step 12: Run final validation before writing JSONPatch: no _fields, no null, no unauthorized variables, no out-of-range numbers, no duplicate insertions, no resources above max, no illegal affection delta, and no patch derived only from static lore background.}
+      - ${Step 13: Summarize variable-by-variable why each eligible group changes or does not change this turn. If nothing qualifies besides time, say so clearly and output a minimal patch that still updates World.Time.}
+      </Analysis>
+      <JSONPatch>
+      [
+        { "op": "replace", "path": "${/path/to/variable}", "value": "${new_value}" },
+        { "op": "delta", "path": "${/path/to/number/variable}", "value": ${positve_or_negative_delta} },
+        { "op": "insert", "path": "${/path/to/object/new_key}", "value": "${new_value}" },
+        { "op": "insert", "path": "${/path/to/array/-}", "value": "${new_value}" },
+        { "op": "remove", "path": "${/path/to/object/key}" },
+        { "op": "remove", "path": "${/path/to/array/0}" },
+        { "op": "move", "from": "${/path/to/variable}", "to": "${/path/to/another/path}" },
+        ...
+      ]
+      </JSONPatch>
+    </UpdateVariable>

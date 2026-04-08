@@ -1,0 +1,31 @@
+---
+VariablesUpdateFormat:
+  Rule:
+    - Ngươi BẮT BUỘC phải xuất ra phân tích cập nhật và các lệnh cập nhật thực tế cùng một lúc vào cuối câu trả lời tiếp theo    
+    - Các lệnh cập nhật hoạt động tương tự tiêu chuẩn **JSON Patch (RFC 6902)**, phải là một mảng JSON hợp lệ chứa các đối tượng thao tác, nhưng thay vào đó sẽ hỗ trợ các thao tác sau:        
+    - replace: thay thế giá trị của các đường dẫn hiện có        
+    - delta: cập nhật giá trị của các đường dẫn số hiện có bằng một giá trị delta (giá trị delta BẮT BUỘC phải là một số không nằm trong dấu ngoặc kép)        
+    - insert: chèn các mục mới vào một đối tượng hoặc mảng (sử dụng `-` làm chỉ mục mảng để thêm vào cuối)        - remove        - di chuyển
+    - Đừng cập nhật các tên trường bắt đầu bằng `_` vì chúng chỉ được đọc, ví dụ như `_Variable`
+    - Khi một biến có định dạng yêu cầu trạng thái trống (hoặc tạm thời chưa được gán), bạn BẮT BUỘC phải gán cho nó một giá trị trống cụ thể. Tuyệt đối KHÔNG ĐƯỢC sử dụng null
+    - Khi cập nhật các biến, hãy bảo toàn NGUYÊN VĂN từng chút thông tin một cách chính xác
+  định dạng: |-
+    <UpdateVariable>
+      <Analysis>/* BẰNG TIẾNG ANH, không quá 80 từ */
+      - ${tính toán thời gian trôi qua: ...}
+      - ${quyết định xem có cho phép các cập nhật kịch tính hay không do đây là trường hợp đặc biệt hoặc thời gian trôi qua nhiều hơn bình thường: có/không}
+      - ${phân tích từng biến dựa trên `check` tương ứng, chỉ dựa vào nội dung hiện tại thay vì các tình tiết trước đó: ...}
+      </Analysis>
+      <JSONPatch>
+      [
+        { "op": "replace", "path": "${/path/to/variable}", "value": "${new_value}" },
+        { "op": "delta", "path": "${/path/to/number/variable}", "value": ${positve_or_negative_delta} },
+        { "op": "insert", "path": "${/path/to/object/new_key}", "value": "${new_value}" },
+        { "op": "insert", "path": "${/path/to/array/-}", "value": "${new_value}" },
+        { "op": "remove", "path": "${/path/to/object/key}" },
+        { "op": "remove", "path": "${/path/to/array/0}" },
+        { "op": "move", "from": "${/path/to/variable}", "to": "${/path/to/another/path}" },
+        ...
+      ]
+      </JSONPatch>
+    </UpdateVariable>

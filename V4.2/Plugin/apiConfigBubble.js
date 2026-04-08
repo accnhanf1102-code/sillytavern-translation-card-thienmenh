@@ -33,9 +33,9 @@
         apiUrl: 'https://api.openai.com/v1/chat/completions',
         apiKey: '',
         model: 'gpt-4o-mini',
-        maxTokens: 4096,
+        maxTokens: 65536,
         temperature: 0.1,
-        timeout: 60,
+        timeout: 120,
         retries: 2,
         maxWorkers: 5,
         maxGlobalRetries: 2
@@ -342,6 +342,11 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    box-sizing: border-box;
 }
 .acb-overlay.show {
     opacity: 1;
@@ -350,12 +355,10 @@
 
 /* Modal Panel */
 .acb-modal {
-    position: fixed;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%) scale(0.9);
+    position: relative;
     width: 420px;
-    max-width: calc(100vw - 32px);
-    max-height: calc(100vh - 60px);
+    max-width: 100%;
+    max-height: 100%;
     background: rgba(26, 26, 42, 0.96);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 20px;
@@ -363,10 +366,9 @@
         0 24px 80px rgba(0, 0, 0, 0.5),
         0 0 0 1px rgba(255, 255, 255, 0.05) inset,
         0 1px 0 rgba(255, 255, 255, 0.06) inset;
-    z-index: 10101;
     opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transform: scale(0.9);
     overflow-y: auto;
     overflow-x: hidden;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
@@ -386,8 +388,7 @@
 }
 .acb-modal.show {
     opacity: 1;
-    visibility: visible;
-    transform: translate(-50%, -50%) scale(1);
+    transform: scale(1);
 }
 
 /* Header */
@@ -617,15 +618,27 @@
     box-shadow: 0 0 6px rgba(34, 197, 94, 0.4);
 }
 
-/* Responsive */
-@media (max-width: 480px) {
-    .acb-modal {
-        width: calc(100vw - 24px);
-        border-radius: 16px;
+/* Responsive - viewport hẹp (width) hoặc thấp (height) -> chuyển sang mobile layout (fullscreen) */
+@media (max-width: 768px), (max-height: 768px) {
+    .acb-overlay {
+        padding: 0;
     }
-    .acb-header { padding: 16px 18px 10px; }
-    .acb-body { padding: 14px 18px 16px; }
-    .acb-footer { padding: 0 18px 16px; }
+    .acb-modal {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 100%;
+        max-height: 100% !important;
+        border-radius: 0;
+    }
+    .acb-header { padding: 20px 24px 16px; }
+    .acb-body { padding: 16px 24px 20px; }
+    .acb-footer { padding: 0 24px 20px; }
+    
+    /* Touch target optimization */
+    .acb-input, .acb-select { min-height: 44px; font-size: 16px; } /* font-size 16px prevents iOS zoom */
+    .acb-btn { min-height: 44px; font-size: 14px; }
+    .acb-group { margin-bottom: 20px; }
+    .acb-label { font-size: 13px; margin-bottom: 8px; }
 }
 </style>`;
 
@@ -652,7 +665,6 @@
         var overlay = parentDocument.createElement('div');
         overlay.id = MODAL_ID + '-overlay';
         overlay.className = 'acb-overlay';
-        parentDocument.body.appendChild(overlay);
 
         // Modal
         var modal = parentDocument.createElement('div');
@@ -731,7 +743,9 @@
             '<button class="acb-btn acb-btn-save" id="acb-save">Lưu cài đặt</button>' +
             '</div>';
 
-        parentDocument.body.appendChild(modal);
+        // Modal nằm BÊN TRONG overlay để flexbox centering hoạt động
+        overlay.appendChild(modal);
+        parentDocument.body.appendChild(overlay);
 
         // Bind events
         bindModalEvents(overlay, modal);

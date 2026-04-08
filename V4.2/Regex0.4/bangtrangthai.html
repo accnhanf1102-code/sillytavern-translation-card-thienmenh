@@ -9030,7 +9030,7 @@
             v = (e, t) => _.fromPairs(_.take(_.toPairs(e), t)),
             x = g.z.object({
                 Status: g.z.string().prefault(''),
-                Priority: g.z.enum(['Thấp', 'Trung bình', 'Cao']).prefault('Trung bình'),
+                Priority: g.z.enum(['Thấp', 'Trung Bình', 'Cao']).prefault('Trung Bình'),
                 Progress: g.z.string().prefault(''),
                 Details: g.z.string().prefault(''),
                 Goal: g.z.string().prefault(''),
@@ -14590,8 +14590,8 @@
                 value: 'Cao',
                 label: 'Cao'
             }, {
-                value: 'Trung',
-                label: 'Trung'
+                value: 'Trung Bình',
+                label: 'Trung Bình'
             }, {
                 value: 'Thấp',
                 label: 'Thấp'
