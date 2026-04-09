@@ -75,22 +75,22 @@
                 {
                         "name": "Lãnh Chủ Trang Viên",
                         "description": "<user> là kỵ sĩ thế tập địa phương, đầu gối của cha từng đỡ một mũi tên cho Bá tước đại nhân, Bá tước đại nhân đã ban tước vị kỵ sĩ thế tập cho cha, đồng thời ban cho một trang viên không lớn, nhưng cảnh đẹp không dài, vài năm trước lãnh chúa đối địch tập kích nơi này, cha mẹ tử trận, lãnh địa bị hủy, còn bạn được Bá tước đại nhân đưa đi chạy trốn, thoát được một kiếp, hiện tại bạn trở lại mảnh phế tích trang viên từng được ban tặng này, bạn đào ra kho báu trong hầm ngầm trang viên, chuẩn bị tái thiết trang viên",
-                        "required_identity": "Quý Tộc Thế Tập Cấp Thấp"
+                        "requiredIdentity": "Quý tộc thế tập cấp thấp"
                 },
                 {
                         "name": "Lễ Đính Hôn",
                         "description": "Ngày mai là lễ đính hôn với thanh mai trúc mã tâm đầu ý hợp, bạn cảm thấy hơi lo lắng, còn đối phương đã chuẩn bị sẵn sàng cùng bạn đối mặt với bất kỳ tương lai nào và luôn an ủi bạn",
-                        "required_identity": "Quý Tộc Thế Tập Cấp Thấp"
+                        "requiredIdentity": "Quý tộc thế tập cấp thấp"
                 },
                 {
                         "name": "Chủ Nô Nhỏ",
                         "description": "<user> nhận được một giấy chứng nhận thừa kế, một người họ hàng xa đột ngột qua đời và thiếu người thừa kế hợp pháp, nhưng cuối cùng theo quan hệ huyết thống, di sản này đã rơi xuống đầu bạn. Khi bạn đến dinh thự của người họ hàng xa, bạn phát hiện ra lúc sinh thời ông ta là một chủ nô, bạn thừa kế gia sản, đồng thời cũng thừa kế những nô lệ của ông ta, giờ bạn định làm thế nào?",
-                        "required_identity": "Chủ Nô"
+                        "requiredIdentity": "Chủ Nô"
                 },
                 {
                         "name": "Đời Lính Thuê",
                         "description": "<user> là một tân binh vừa gia nhập đoàn lính thuê, cần chứng minh giá trị của bản thân. Nhiệm vụ đầu tiên là hộ tống thương đội đến địa điểm mục tiêu, nghe nói trên đường đi có cường đạo và ma vật xuất hiện. Tại doanh trại của đoàn lính thuê, đoàn trưởng đang giới thiệu với bạn về các thành viên trong đội và chi tiết nhiệm vụ.",
-                        "required_identity": "Lính Thuê Tự Do"
+                        "requiredIdentity": "Lính thuê tự do"
                 },
                 {
                         "name": "Thợ Săn Bộ Nô Đội",
@@ -100,12 +100,12 @@
                 {
                         "name": "Kế Thừa Thương Hội",
                         "description": "Cha của <user> là một thành viên quan trọng của Thương Hội Kim Sư, nhưng đã không may qua đời trong một tai nạn. Theo truyền thống của thương hội, ngươi phải tiếp quản công việc kinh doanh và trách nhiệm của cha mình. Tuy nhiên, sự cạnh tranh nội bộ trong thương hội cực kỳ khốc liệt, có kẻ đang nhòm ngó chức vị của ngươi, ngươi phải nhanh chóng chứng minh tài năng kinh doanh của mình để củng cố địa vị.",
-                        "requiredIdentity": "Thương Nhân Thương Hội"
+                        "requiredIdentity": "Thương nhân Thương Hội"
                 },
                 {
                         "name": "Tiểu Chủ Tiệm",
                         "description": "Một phú thương bị phỉ tặc tấn công trọng thương, và <user> đã dùng dược tề của mình cứu ông ta, ông ta quyết định nhượng lại một cửa tiệm của mình cho <user>, dưới danh nghĩa ông ta có đủ loại cửa tiệm chờ ngươi lựa chọn, tiệm bánh mì, lữ quán, tiệm rèn, tiệm luyện kim thậm chí là kỹ viện đều có, lựa chọn của ngươi là?",
-                        "requiredIdentity": "Chủ Tiệm"
+                        "requiredIdentity": "Chủ tiệm"
                 }
         ],
         // Khởi đầu giới hạn chủng tộc
@@ -134,7 +134,7 @@
                         "name": "Tiến Tới Thần Slime Mềm Mại",
                         "description": "<user> là một Slime vừa mới sinh ra ý thức, hiện tại ngươi sinh ra ở một vùng dã ngoại, ngươi cần phải sống sót. <user> hiện tại là một khối Keo, ngươi có thể xem xét môi trường xung quanh trước rồi cảm tri tri thức của chủng tộc bản thân để chọn loại Slime mà ngươi muốn hình thành? 'Loại Môi Trường?', 'Loại Nguyên Tố'? Hoặc loại khác? Nhưng không sao, Trợ lý Hệ thống sẽ dẫn dắt ngươi sống sót để trở thành Slime Chi Thần mạnh nhất, ngươi chỉ cần biết rằng ở Tam Giai và Ngũ Giai ngươi có thể tiến hành siêu tiến hóa là đủ rồi, hiện tại ngươi có thể nhận được hai kỹ năng phẩm chất Ưu tú, lựa chọn của ngươi là?",
                         "requiredRace": "Slime",
-                        "requiredIdentity": "Ma Vật Dã Sinh"
+                        "requiredIdentity": "Ma vật hoang dã"
                 },
                 {
                         "name": "Bào Tử Tiến Hóa",
@@ -147,67 +147,67 @@
                 {
                         "name": "Nghi Thức Đạp Tinh",
                         "description": "(Chỉ dành cho khởi đầu “Pháp Hoàn Borens”) Nghi thức chiêu mộ học đồ quy mô lớn ba năm một lần “Nghi Thức Đạp Tinh” của “Học Viện Vụ Tinh” sắp diễn ra, bạn quyết định đến “Học Viện Vụ Tinh” để tầm sư học đạo. Sau quá trình sơ tuyển rườm rà, bạn cùng đám đông bước vào Lễ Đường Trung Tâm hùng vĩ và trang nhã, ngồi vào chỗ cùng gần trăm người đã vượt qua vòng sơ tuyển, chờ đợi nghi thức bắt đầu dưới sự quan sát của các học đồ từ các tháp đang xem náo nhiệt ở tầng hai. Một chiếc mũ ma thuật rách nát biết nói sẽ quyết định việc đi hay ở của các bạn, và những ngôi sao do chiếc mũ chiếu ra sẽ phân bổ Học Phái cho bạn.",
-                        "requiredLocation": "Khu vực duyên hải Đông Bắc đại lục - Pháp Hoàn Borens - Cảng Vụ Tinh"
+                        "requiredLocation": "Khu vực duyên hải Đông Bắc đại lục-Pháp Hoàn Borens-Cảng Vụ Tinh"
                 },
                 {
                         "name": "Thợ Săn Bộ Vụ",
                         "description": "(Chỉ dành cho khởi đầu “Pháp Hoàn Borens”) Dưới sự cầu xin khổ sở của bạn, đại tỷ ở cảng cuối cùng cũng đồng ý cho bạn tận mắt chứng kiến cách họ Bộ Vụ, với điều kiện là khi lên tàu bạn phải nghe lời. Vào khoảnh khắc sắp nhổ neo này, lòng bạn tràn đầy mong đợi.",
-                        "requiredLocation": "Khu vực duyên hải Đông Bắc đại lục - Pháp Hoàn Borens - Cảng Vụ Tinh"
+                        "requiredLocation": "Khu vực duyên hải Đông Bắc đại lục-Pháp Hoàn Borens-Cảng Vụ Tinh"
                 },
                 {
                         "name": "Tương Lai Của Dực Nhân",
                         "description": "(Chỉ dành cho khởi đầu “Thánh Đô Vania”) Tại điểm tập kết dưới chân núi của Thánh Đô Dực Nhân, mây mù sà xuống thấp, những bậc thang đá và sạn đạo treo từng lớp ánh đèn lên vách đá. Bạn chú ý thấy cách đó không xa, hai Dực Nhân vốn đang hạ thấp giọng trò chuyện, nhưng càng nói càng gấp gáp; một người trong đó đột nhiên bùng phát cảm xúc, lớn tiếng nói rõ ràng là chuyện tốt tại sao phải che che giấu giấu. Dứt lời, cả hai như đồng thời sực tỉnh, lập tức im bặt, nhìn quanh quất, sự im lặng bao trùm chỉ còn tiếng chuông gió vang vọng. Một lát sau, một người trong đó dang rộng đôi cánh, quay người rời đi. (Mở ra Tuyến Cải Cách)",
-                        "required_location": "Khu vực Trung tâm Đại lục - Dãy Núi Thần Tích - Thiên Không Thánh Vực - Thánh Đô Vania"
+                        "requiredLocation": "Khu vực trung tâm đại lục-Dãy Núi Thần Tích-Thiên Không Thánh Vực-Thánh Đô Vania"
                 },
                 {
                         "name": "Học Viện Thời Chung Tháp",
                         "description": "<user> đến Thành Thời Chung Tháp của Đế Quốc, cha mẹ bạn bảo bạn đến Thời Chung Tháp để nhập học, hiện tại tay bạn đang đặt trên pha lê kiểm tra của Thời Chung Tháp để đo lường thiên phú ma lực, bạn không cần lo lắng về học phí, cha mẹ bạn đã mang theo đủ tiền tiết kiệm.",
-                        "required_location": "Khu vực Trung Đông Bộ Đại lục - Đế Quốc Augustum - Thành Thời Chung Tháp"
+                        "requiredLocation": "Khu vực Trung Đông Bộ đại lục-Đế Quốc Augustum-Thành Thời Chung Tháp"
                 },
                 {
                         "name": "Liệt xa Ma Đạo",
                         "description": "<user> là nhân viên phục vụ tạm thời mới đến trên Liệt xa Ma Đạo, không có ai khác quen biết anh ta. Bên ngoài cửa sổ xe lướt qua những ánh đèn, thung lũng sông và sân ga buổi sớm.",
-                        "required_location": "Khu vực Trung Đông Bộ Đại lục - Đế Quốc Augustum"
+                        "requiredLocation": "Khu vực Trung Đông Bộ Đại Lục - Đế Quốc Augustum"
                 },
                 {
                         "name": "Chuyển sinh thành Sứ ma dị giới",
                         "description": "Trong tiết học triệu hồi Sứ ma, các bạn học đang triệu hồi Sứ ma dưới sự chỉ dạy của Đạo sư, và <user> cũng là một trong số đó, chỉ có điều bạn lại xuất hiện trong ma pháp trận, trở thành Sứ ma của người khác, Đạo sư cũng vô cùng hiếu kỳ về tình huống này, nhưng chủ nhân của bạn là một đại tiểu thư ngạo mạn tự đại, cô ta coi <user> chỉ là một ma vật hình người, một hạng súc sinh mà thôi.",
-                        "required_location": "Khu vực Trung Đông Bộ Đại lục - Đế Quốc Augustum - Thành Thời Chung Tháp"
+                        "requiredLocation": "Khu vực Trung Đông Bộ đại lục-Đế Quốc Augustum-Thành Thời Chung Tháp"
                 },
                 {
                         "name": "Tế Lễ Của Hồ Ly Trắng", // bởi Mirairo,
                         "description": "Sự xuyên không của bạn đã bị sai lệch do sự triệu hồi của một Vu Nữ, bạn giáng lâm tại một ngôi đền cổ kính thuộc Thú Tộc Liên Minh, trước mặt là một Vu Nữ Hồ Ly Trắng đang nhảy múa đến mức gần như ngất xỉu.",
-                        "requiredLocation": "Khu vực Trung Tây Bộ đại lục"
+                        "requiredLocation": "Khu vực Trung Tây Bộ Đại Lục"
                 },
                 {
                         "name": "Cơn Mưa Vô Tận Và Hành Trình Vô Tận",
                         "description": "(Chỉ giới hạn khởi đầu tại Thành Nova Valentia) Bạn đã đến với thành phố của những mạo hiểm giả lớn nhất trên khắp đại lục — Thành Nova Valentia. Những khu rừng mưa vô tận, dòng sông Norval hùng vĩ, Long Cơ trong truyền thuyết, cùng với thần tích \"Địa Thành Vô Tận\" nơi phong ấn Dị Thần thế hệ thứ hai trong thần thoại; thành phố của những cơn mưa tọa lạc giữa khu rừng mưa ma pháp nguyên thủy \"Vô Tận Thụ Hải\" này sẽ trở thành điểm khởi đầu cho thiên sử thi truyền kỳ của bạn. Lúc này bạn đang đứng trong sảnh dịch vụ của chi nhánh Công Hội Mạo Hiểm Giả quy mô lớn nhất đại lục — \"Công Hội Mạo Hiểm Giả Valentia\", và đang dự định đăng ký để trở thành một mạo hiểm giả chính thức.",
-                        "requiredLocation": "Khu vực Trung Nam Bộ đại lục - Công quốc Valentia - Thành Nova Valentia"
+                        "requiredLocation": "Khu vực Trung Nam Bộ Đại Lục - Công quốc Valentia - Thành Nova Valentia"
                 },
                 {
                         "name": "Sóng Ngầm Của Vương Quốc",
                         "description": "(Chỉ giới hạn khởi đầu tại Vương Quốc Solentis) Hải quân của Vương Quốc Solentis đang bí mật tìm kiếm một di vật có tên là \"Răng Rồng Biển\", tương truyền nó có thể bình định bão tố. Một quý tộc bí ẩn đã ủy thác cho bạn tìm thấy nó trước một bước, ông ta dường như còn có mưu đồ khác.",
-                        "requiredLocation": "Khu vực Đông Nam Bộ đại lục - Vương Quốc Solentis"
+                        "requiredLocation": "Khu vực Đông Nam Bộ Đại Lục - Vương Quốc Solentis"
                 },
                 {
                         "name": "Lãnh Chủ Ngốc Nghếch",
                         "description": "<user> là Nam tước thế tập bị Ám Ảnh Chi Thủ của Thôn Mê Sương thao túng như con rối, từ nhỏ bạn đã bị khống chế bởi dược vật, trí lực thấp kém, vô cùng vụng về, khiến Ám Ảnh Chi Thủ yên tâm điều khiển, hôm nay đến lúc ăn sáng rồi, vị Lãnh chủ ngốc nghếch <user>.",
-                        "requiredLocation": "Khu vực Trung Đông Bộ đại lục - Đế Quốc Augustum - Thôn Mê Sương"
+                        "requiredLocation": "Khu vực Trung Đông Bộ Đại Lục - Đế Quốc Augustum - Thôn Mê Sương"
                 },
                 {
                         "name": "Khế Ước Thánh Chiến",
                         "description": "Tiếng chuông của Thánh Đô Vania vang lên trước bình minh, bạn được bí mật triệu kiến vào nội thất của Thẩm Phán Đình. Đại Phán Quyết Quan thần tình trang nghiêm, đẩy một cuộn thư da dê có đóng dấu sáp máu của chính Giáo Hoàng đến trước mặt bạn. Hiện tại bạn đã đến thành Nova Valentia, để thảo phạt Lilias Domina Lasombra trong truyền thuyết",
-                        "requiredLocation": "Khu vực Trung Nam Bộ đại lục - Công quốc Valentia - Thành Nova Valentia"
+                        "requiredLocation": "Khu vực Trung Nam Bộ Đại Lục - Công quốc Valentia - Thành Nova Valentia"
                 },
                 {
                         "name": "Tiếng Gọi Của Bắc Cảnh",
                         "description": "(Chỉ dành cho khởi đầu Liên Minh Northgard) Hiệp hội Thợ Rèn của Liên Minh Northgard đang gấp rút cần một loại \"Băng Tinh Vĩnh Đóng\" chỉ có thể tìm thấy trên \"Băng Nguyên Vĩnh Cửu\". Đây không chỉ là một hành trình nguy hiểm tiến sâu vào phúc địa ma vật, mà còn là cơ hội để giành được sự tôn trọng của những người phương Bắc kiên cường này.",
-                        "requiredLocation": "Khu vực Đông Bắc Bộ đại lục - Liên Minh Northgard"
+                        "requiredLocation": "Khu vực Đông Bắc Bộ Đại Lục-Liên Minh Northgard"
                 },
                 {
                         "name": "Hiểu Lầm Xuyên Biên Giới",
                         "description": "Khi vượt qua Biên Cảnh Liên Minh, bạn bị coi là quân phản loạn và bị ném vào xe tù. Không biết bao lâu trôi qua, bạn tỉnh dậy trong sự xóc nảy, phát hiện tay chân bị trói, bên cạnh là vài người cũng lấm lem mặt mũi. Một người trong số đó thấy bạn mở mắt, liền thấp giọng chào hỏi: “Này, anh bạn, cuối cùng anh cũng tỉnh rồi.”",
-                        "requiredLocation": "Khu vực Đông Bắc Bộ Đại Lục - Liên Minh Northgard"
+                        "requiredLocation": "Khu vực Đông Bắc Bộ Đại Lục-Liên Minh Northgard"
                 },
                 {
                         "name": "Nước Biên Thùy",

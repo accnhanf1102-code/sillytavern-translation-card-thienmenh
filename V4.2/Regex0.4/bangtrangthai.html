@@ -9145,8 +9145,8 @@
                 StatusEffects: g.z.record(g.z.string(), N).prefault({}),
                 Inventory: g.z.record(g.z.string(), T).prefault({}).transform(e => _.pickBy(e, e => e.Quantity > 0)),
                 InnerThoughts: g.z.string().prefault(''),
-                Backstory: g.z.string().prefault('')
-            }).prefault({}).transform(e => _.pick(e, ['IsPresent', 'Race', 'Identity', 'Class', 'LifeTier', 'Personality', 'Likes', 'Appearance', 'Outfit', 'Level', 'Attributes', 'StatusEffects', 'Inventory', 'Equipment', 'Skills', 'AscensionStairway', 'DestinyContract', 'Affection', 'InnerThoughts', 'Backstory']))).prefault({}),
+                Background: g.z.string().prefault('')
+            }).prefault({}).transform(e => _.pick(e, ['IsPresent', 'Race', 'Identity', 'Class', 'LifeTier', 'Personality', 'Likes', 'Appearance', 'Outfit', 'Level', 'Attributes', 'StatusEffects', 'Inventory', 'Equipment', 'Skills', 'AscensionStairway', 'DestinyContract', 'Affection', 'InnerThoughts', 'Background']))).prefault({}),
             P = g.z.object({
                 Astaria_Express: g.z.object({
                     Faction_News: g.z.string().prefault(''),
@@ -12527,9 +12527,9 @@
                             children: [(n.InnerThoughts || t) && (0, i.jsx)('div', {
                                 className: jl,
                                 children: W('Lời lòng', `RelationshipList.${e}.InnerThoughts`, n.InnerThoughts, 'textarea', El, Ml, Dl)
-                            }), (n.Backstory || t) && (0, i.jsx)('div', {
+                            }), (n.Background || t) && (0, i.jsx)('div', {
                                 className: Pl,
-                                children: W('Câu Chuyện Bối Cảnh', `RelationshipList.${e}.Backstory`, n.Backstory, 'textarea', zl, Bl, Ll)
+                                children: W('Câu Chuyện Bối Cảnh', `RelationshipList.${e}.Background`, n.Background, 'textarea', zl, Bl, Ll)
                             })]
                         })]
                     }),
