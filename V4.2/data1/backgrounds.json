@@ -95,7 +95,7 @@
                 {
                         "name": "Thợ Săn Bộ Nô Đội",
                         "description": " <user> là người mới gia nhập Bộ Nô Đội, trong doanh trại đội trưởng đang huấn thị và quyết định mục tiêu, còn ngươi đang xoa tay hầm hè chuẩn bị bắt giữ những chủng tộc trân quý đó, đội trưởng hứa hẹn sau khi hoàn thành nhiệm vụ sẽ phát nô lệ tình dục cho mọi người.",
-                        "requiredIdentity": "Thợ Săn Bộ Nô Đội"
+                        "requiredIdentity": "Thợ săn Bộ Nô Đội"
                 },
                 {
                         "name": "Kế Thừa Thương Hội",
@@ -167,7 +167,7 @@
                 {
                         "name": "Liệt xa Ma Đạo",
                         "description": "<user> là nhân viên phục vụ tạm thời mới đến trên Liệt xa Ma Đạo, không có ai khác quen biết anh ta. Bên ngoài cửa sổ xe lướt qua những ánh đèn, thung lũng sông và sân ga buổi sớm.",
-                        "requiredLocation": "Khu vực Trung Đông Bộ Đại Lục - Đế Quốc Augustum"
+                        "requiredLocation": "Khu vực Trung Đông Bộ đại lục-Đế Quốc Augustum-Aethelgard"
                 },
                 {
                         "name": "Chuyển sinh thành Sứ ma dị giới",
@@ -177,47 +177,47 @@
                 {
                         "name": "Tế Lễ Của Hồ Ly Trắng", // bởi Mirairo,
                         "description": "Sự xuyên không của bạn đã bị sai lệch do sự triệu hồi của một Vu Nữ, bạn giáng lâm tại một ngôi đền cổ kính thuộc Thú Tộc Liên Minh, trước mặt là một Vu Nữ Hồ Ly Trắng đang nhảy múa đến mức gần như ngất xỉu.",
-                        "requiredLocation": "Khu vực Trung Tây Bộ Đại Lục"
+                        "requiredLocation": "Khu vực Trung Tây Bộ Đại Lục-Thảo Nguyên Phong Ngấn Vô Tận-Kalashlias(Thú Tộc Liên Minh)"
                 },
                 {
                         "name": "Cơn Mưa Vô Tận Và Hành Trình Vô Tận",
                         "description": "(Chỉ giới hạn khởi đầu tại Thành Nova Valentia) Bạn đã đến với thành phố của những mạo hiểm giả lớn nhất trên khắp đại lục — Thành Nova Valentia. Những khu rừng mưa vô tận, dòng sông Norval hùng vĩ, Long Cơ trong truyền thuyết, cùng với thần tích \"Địa Thành Vô Tận\" nơi phong ấn Dị Thần thế hệ thứ hai trong thần thoại; thành phố của những cơn mưa tọa lạc giữa khu rừng mưa ma pháp nguyên thủy \"Vô Tận Thụ Hải\" này sẽ trở thành điểm khởi đầu cho thiên sử thi truyền kỳ của bạn. Lúc này bạn đang đứng trong sảnh dịch vụ của chi nhánh Công Hội Mạo Hiểm Giả quy mô lớn nhất đại lục — \"Công Hội Mạo Hiểm Giả Valentia\", và đang dự định đăng ký để trở thành một mạo hiểm giả chính thức.",
-                        "requiredLocation": "Khu vực Trung Nam Bộ Đại Lục - Công quốc Valentia - Thành Nova Valentia"
+                        "requiredLocation": "Khu vực Trung Nam Bộ Đại Lục-Công quốc Valentia-Thành Nova Valentia-Khu Trung Thành"
                 },
                 {
                         "name": "Sóng Ngầm Của Vương Quốc",
                         "description": "(Chỉ giới hạn khởi đầu tại Vương Quốc Solentis) Hải quân của Vương Quốc Solentis đang bí mật tìm kiếm một di vật có tên là \"Răng Rồng Biển\", tương truyền nó có thể bình định bão tố. Một quý tộc bí ẩn đã ủy thác cho bạn tìm thấy nó trước một bước, ông ta dường như còn có mưu đồ khác.",
-                        "requiredLocation": "Khu vực Đông Nam Bộ Đại Lục - Vương Quốc Solentis"
+                        "requiredLocation": "Khu vực Đông Nam Bộ Đại Lục-Vương Quốc Solentis-Pháo Đài Phong Bạo"
                 },
                 {
                         "name": "Lãnh Chủ Ngốc Nghếch",
                         "description": "<user> là Nam tước thế tập bị Ám Ảnh Chi Thủ của Thôn Mê Sương thao túng như con rối, từ nhỏ bạn đã bị khống chế bởi dược vật, trí lực thấp kém, vô cùng vụng về, khiến Ám Ảnh Chi Thủ yên tâm điều khiển, hôm nay đến lúc ăn sáng rồi, vị Lãnh chủ ngốc nghếch <user>.",
-                        "requiredLocation": "Khu vực Trung Đông Bộ Đại Lục - Đế Quốc Augustum - Thôn Mê Sương"
+                        "requiredLocation": "Khu vực Trung Đông Bộ Đại Lục-Đế Quốc Augustum-Thôn Mê Sương"
                 },
                 {
                         "name": "Khế Ước Thánh Chiến",
                         "description": "Tiếng chuông của Thánh Đô Vania vang lên trước bình minh, bạn được bí mật triệu kiến vào nội thất của Thẩm Phán Đình. Đại Phán Quyết Quan thần tình trang nghiêm, đẩy một cuộn thư da dê có đóng dấu sáp máu của chính Giáo Hoàng đến trước mặt bạn. Hiện tại bạn đã đến thành Nova Valentia, để thảo phạt Lilias Domina Lasombra trong truyền thuyết",
-                        "requiredLocation": "Khu vực Trung Nam Bộ Đại Lục - Công quốc Valentia - Thành Nova Valentia"
+                        "requiredLocation": "Khu vực Trung Nam Bộ Đại Lục-Công quốc Valentia-Thành Nova Valentia-Khu Trung Thành"
                 },
                 {
                         "name": "Tiếng Gọi Của Bắc Cảnh",
                         "description": "(Chỉ dành cho khởi đầu Liên Minh Northgard) Hiệp hội Thợ Rèn của Liên Minh Northgard đang gấp rút cần một loại \"Băng Tinh Vĩnh Đóng\" chỉ có thể tìm thấy trên \"Băng Nguyên Vĩnh Cửu\". Đây không chỉ là một hành trình nguy hiểm tiến sâu vào phúc địa ma vật, mà còn là cơ hội để giành được sự tôn trọng của những người phương Bắc kiên cường này.",
-                        "requiredLocation": "Khu vực Đông Bắc Bộ Đại Lục-Liên Minh Northgard"
+                        "requiredLocation": "Khu vực Đông Bắc Bộ Đại Lục-Liên Minh Northgard-Bồn Địa Vân Tức-Khu Trực Thuộc Liên Minh-Thành Bạch Diệu-Khu Thợ Thủ Công"
                 },
                 {
                         "name": "Hiểu Lầm Xuyên Biên Giới",
                         "description": "Khi vượt qua Biên Cảnh Liên Minh, bạn bị coi là quân phản loạn và bị ném vào xe tù. Không biết bao lâu trôi qua, bạn tỉnh dậy trong sự xóc nảy, phát hiện tay chân bị trói, bên cạnh là vài người cũng lấm lem mặt mũi. Một người trong số đó thấy bạn mở mắt, liền thấp giọng chào hỏi: “Này, anh bạn, cuối cùng anh cũng tỉnh rồi.”",
-                        "requiredLocation": "Khu vực Đông Bắc Bộ Đại Lục-Liên Minh Northgard"
+                        "requiredLocation": "Khu vực Đông Bắc Đại Lục-Liên Minh Northgard-Cảnh Giới Trường Dạ-Công quốc Visgrad-Pháo đài Vãn Ca-Cốc Khẩu Doanh"
                 },
                 {
                         "name": "Nước Biên Thùy",
                         "description": "（Nếu sử dụng khởi đầu này, không khuyến khích mở Lily Core, và cần tự mình mở mười ba mục có nhãn Nước Biên Thùy trong Thế Giới Thư）Cơn mưa tử vong vô tận bao trùm Nước Biên Thùy, vương quốc năm xưa từ lâu đã trở thành phế tích, tiếng chuông im lìm, lời cầu nguyện dứt đoạn, chỉ còn những vong linh bị ô uế sai khiến vẫn đang lang thang giữa những con phố và bức tường thành đổ nát. Khi <user> bước chân vào vương quốc bị bỏ rơi này, dưới chân là những viên gạch đá thấm đẫm nước bẩn, bên tai chỉ có tiếng mưa, tiếng gió và những tiếng than khóc xa xăm hư ảo. Có người nói, sâu trong Phân khu Giáo Hội Trắng vẫn còn một Bạch Vu Nữ đang say ngủ, người có thể thanh tẩy mọi ô uế; cũng có người nói, bất kỳ ai cố gắng tiếp cận thánh địa đó đều sẽ bị một Thủ Hộ Giả không chịu rời đi ngăn cản. Để sống sót trong vương quốc chết chóc này, cũng như để tìm kiếm tia cứu rỗi có lẽ đang tồn tại, <user> chỉ có thể tiếp tục tiến về phía trước men theo màn mưa và đống đổ nát.",
-                        "requiredLocation": "Nam đoan Đại Lục - Đầm Lầy Bi Minh - Nước Biên Thùy"
+                        "requiredLocation": "Nam đoan Đại Lục-Đầm Lầy Bi Minh-Nước Biên Thùy"
                 },
                 {
                         "name": "Rừng Tĩnh Mịch",
                         "description": "Ngọn lửa của quá khứ đã hóa thành tro tàn, nhưng ý chí chưa trọn vẹn ấy vẫn đang nung nấu sâu trong linh hồn. Lúc này <user> nghe thấy lời thì thầm của túc mệnh, đó là một con đường vinh quang không người truyền tụng và đã bị lãng quên, <user> lập ra một lời hẹn ước không lời tại đây: Ta nguyện gánh vác Lời thề Tĩnh Mịch",
-                        "requiredLocation": "【Thần Quốc】 Rừng Tĩnh Mịch - Cổ Thụ Trung Tâm"
+                        "requiredLocation": "【Thần Quốc】 Rừng Tĩnh Mịch-Cổ Thụ Trung Tâm"
                 }
         ]
 }
