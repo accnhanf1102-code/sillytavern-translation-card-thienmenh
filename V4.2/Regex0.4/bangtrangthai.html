@@ -9976,25 +9976,47 @@
                     isConfirmOpen: !!e
                 }
             },
-            pe = {
-                common: 'common',
-                unique: 'unique',
-                mythic: 'mythic',
-                legendary: 'legendary',
-                Epic: 'Sử Thi',
-                Rare: 'Hiếm',
-                Uncommon: 'Ưu tú'
+            pe = e => {
+                if (!e || 'string' != typeof e) return '';
+                switch (e.trim().toLowerCase()) {
+                    case 'common':
+                    case 'thông thường':
+                        return 'common';
+                    case 'uncommon':
+                    case 'ưu tú':
+                        return 'uncommon';
+                    case 'rare':
+                    case 'hiếm':
+                        return 'rare';
+                    case 'epic':
+                    case 'sử thi':
+                        return 'epic';
+                    case 'legendary':
+                    case 'truyền thuyết':
+                        return 'legendary';
+                    case 'mythic':
+                    case 'thần thoại':
+                        return 'mythic';
+                    case 'unique':
+                    case 'duy nhất':
+                        return 'unique';
+                    default:
+                        return ''
+                }
             },
             he = {
-                Common: 1,
-                Uncommon: 2,
-                Rare: 3,
-                Epic: 4,
-                Legendary: 5,
-                Mythic: 6,
-                Unique: 7
+                common: 1,
+                uncommon: 2,
+                rare: 3,
+                epic: 4,
+                legendary: 5,
+                mythic: 6,
+                unique: 7
             },
-            be = e => e ? he[e] ?? 0 : 0,
+            be = e => {
+                const t = pe(e);
+                return t ? he[t] ?? 0 : 0
+            },
             ge = {
                 common: 'qualityCommon',
                 unique: 'qualityUnique',
@@ -11182,7 +11204,10 @@
                 bodyClassName: a = '',
                 quality: r
             }) => {
-                const l = r ? Cn[`cardQuality${r.charAt(0).toUpperCase() + r.slice(1)}`] : '';
+                const l = (e => {
+                    const t = pe(e);
+                    return t ? Cn[`cardQuality${t.charAt(0).toUpperCase() + t.slice(1)}`] : ''
+                })(r);
                 return (0, i.jsxs)('div', {
                     className: `${Cn.card} ${l} ${n}`,
                     children: [e && (0, i.jsx)('div', {
@@ -11402,8 +11427,7 @@
                     e.stopPropagation(), l?.()
                 },
                     d = ((e, t) => {
-                        if (!e) return '';
-                        const n = pe[e];
+                        const n = pe(e);
                         if (!n) return '';
                         const a = ge[n];
                         return a ? t[a] : ''
