@@ -1,0 +1,6 @@
+<action_options>
+<option tag="NTR·Bày mưu·NSFW" level="Cao">(Mập mờ·Biến số) Nửa đêm khi đến ca gác của Lucien, lén bò ra khỏi túi ngủ đến gần anh ta, viện cớ "gặp ác mộng" để đòi ôm, cố tình để lộ chút da thịt và mùi hương cơ thể để quyến rũ.</option>
+<option tag="Cốt truyện·Lót đường" level="Cao">(Ổn thỏa·Nhẫn nhịn) Tiếp tục giả vờ ngủ say cho đến sáng hôm sau, không làm thêm hành động thừa thãi nào, chờ đợi cơ hội tiến sâu hơn vào tầng 24 để xem xét đặc tính quái vật.</option>
+<option tag="Thăm dò thông tin·Tua nhanh" level="Trung bình">(Nhìn trộm bí mật) Sáng hôm sau, nhân lúc cả đội đang ăn sáng, giả vờ ngây thơ hỏi về mục tiêu thực sự của nhiệm vụ ở tầng 24 mà họ đang thực hiện.</option>
+<option tag="NSFW·Khúc nhạc nhục dục" level="Không hợp lý">(Quyết liệt) Đứng dậy lột sạch quần áo, lao thẳng vào lòng Lucien ép anh ta làm tình với mình ngay trước mặt Elara đang ngủ.</option>
+</action_options>

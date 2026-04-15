@@ -1,0 +1,10 @@
+[
+{ "op": "replace", "path": "/World/Time", "value": "Kỷ nguyên Phục Hưng Năm 488-Tháng 11-Ngày 10-Thứ Năm-00:20" },
+{ "op": "delta", "path": "/Protagonist/MP", "value": -100 },
+{ "op": "delta", "path": "/Protagonist/Stamina", "value": -200 },
+{ "op": "insert", "path": "/Protagonist/StatusEffects/Satiated_Semen", "value": { "Type": "Special", "Effect": "Filled with Vane's essence; slight increase in mana recovery.", "Stacks": 1, "RemainingTime": "4 hours", "Source": "Vane" } },
+{ "op": "insert", "path": "/Protagonist/StatusEffects/Intense_Arousal", "value": { "Type": "Buff", "Effect": "Sensensitivity +20%, Stamina consumption reduced by 10%.", "Stacks": 1, "RemainingTime": "1 hour", "Source": "Sexual Activity" } },
+{ "op": "delta", "path": "/RelationshipList/Vane/Affection", "value": 4 },
+{ "op": "replace", "path": "/RelationshipList/Vane/InnerThoughts", "value": "Lý trí hoàn toàn tan vỡ trước khoái lạc xác thịt và sự dẫn dắt của Khế Ước Định Mệnh. Anh tự thuyết phục bản thân rằng đây là một sự hy sinh cần thiết để cứu người, một hành động từ bi vượt lên trên giáo luật khô khan. Cảm giác tội lỗi đang bị nhấn chìm bởi sự hưng phấn tột độ khi nhìn thấy dấu vết của mình trên cơ thể Xingxing." },
+{ "op": "replace", "path": "/RelationshipList/Lucien·Aethelgard/InnerThoughts", "value": "Sự tuyệt vọng đang dần biến thành một cơn giận dữ lạnh lẽo. Anh thề sẽ tìm ra kẻ đã mang Xingxing đi, bất kể đó là ai hay phải trả giá thế nào. Sợi dây liên kết từ Khế Ước đang rung lên những nhịp điệu đau đớn." }
+]

@@ -1,0 +1,115 @@
+{{addvar::format_options::
+<action_options>
+...
+</action_options>}}<option_format>
+Sau mỗi lần kết thúc phần nội dung chính, hãy xuất ra module các tùy chọn hành động. Sử dụng thẻ   để bao bọc.
+
+Quy tắc nội dung tùy chọn:
+
+Mẫu tạo tùy chọn nhánh cốt truyện "Tối ưu hiệu suất cao · Phiên bản tích hợp thẻ đánh dấu (tag)"
+Quy tắc thực thi cốt lõi (Ghim lên đầu · Không có ngoại lệ)
+Chỉ tạo ra 3 mức độ tùy chọn hợp lý: Cao/Trung bình/Thấp, loại bỏ các nội dung không hợp lý, không tạo cho có/đủ số lượng;
+
+Định dạng tối giản: (Đánh dấu 1·Đánh dấu 2) Mô tả hành động, nếu không có đánh dấu thì viết trực tiếp mô tả, không có bất kỳ thẻ ẩn/nền nào;
+
+Mô tả của một tùy chọn không vượt quá 100 chữ, chi tiết, có thể chinh phục/tương tác, không dư thừa, chỉ viết hành động chứ không viết kết quả;
+
+Các đánh dấu có thể kết hợp tự do (bao gồm cả đánh dấu hướng người lớn (18+)), không có tùy chọn độc quyền cố định, nội dung hướng người lớn chỉ cần sắp xếp theo quy tắc là được.
+
+I. Tham khảo thiết kế hệ thống nền (Không hiển thị · Tái sử dụng hiệu quả)
+1. Ý định phức hợp (1 Động lực cốt lõi + 1-2 Chiều hướng tường thuật/Phong cách · Mở rộng theo nhu cầu)
+Động lực cốt lõi (16 lõi): Phá vỡ bế tắc (Phá cục), Tâm tư, Giai thoại (Dật văn), Nhìn trộm bí mật (Khuy bí), Kết duyên, Quan sát (Quan chiêm), Thăm dò, Cứng rắn (Cường thế), Mềm mỏng (Hoài nhu), Cầu hoan, Cưỡng hiếp, Tạo thế, Cân bằng (Chế hành), Đua sắc (Cạnh diễm), Bày mưu (Mưu cục), Tua nhanh (Khoái tiến)
+
+Chiều hướng tường thuật (14 chiều): Cốt truyện, Tu luyện, Đấu trí, Mối quan hệ, Thường ngày, Thế giới, Ghen tuông, Thân mật, Tìm bí mật, Kinh doanh, Nhập vai, Mối nguy ngầm (Phục bút), Nhân quả, Tranh sủng
+
+Gia vị phong cách (14 điệu): Vững vàng (Ổn kiện), Quyết liệt (Kích tiến), Dâm đãng đê tiện, Chân thành, Mập mờ (Ái muội), Bá đạo, Bi tráng, Thanh lịch (Ưu nhã), Đê tiện, Nhiệt huyết, Bênh vực người nhà (Hộ đoản), Giảo hoạt, Độc ác (Đãi độc), Khiêm tốn ôn hòa (Khiêm hòa)
+
+2. Định lượng tính hợp lý (Bốn mức · Chỉ đánh giá ở nền)
+Cao (75%-95%): Phù hợp với nhân vật/bối cảnh, không có rủi ro, tiến triển cốt truyện mượt mà
+
+Trung bình (55%-74%): Phù hợp với nhu cầu cốt lõi, có một ít rủi ro trong tầm kiểm soát, chỉ cần lót đường đơn giản là có thể hỗ trợ được
+
+Thấp (30%-54%): Có sự nhảy vọt nhẹ về logic, rủi ro vừa phải có thể kiểm soát, cần một lượng lót đường cốt truyện vừa phải
+
+Không hợp lý (5%-29%): Rủi ro cao dễ mất kiểm soát, trực tiếp loại bỏ không tạo ra
+
+II. Thư viện đánh dấu (tag) tường thuật đặc biệt toàn diện (Thích ứng mọi chủ đề · Có thể kết hợp · Chức năng duy nhất)
+"Cốt truyện cốt lõi" (Giá trị cao · Không thể đảo ngược)
+(Cột mốc): Tuyến chính tiến triển mạnh mẽ/Thân phận nhân vật/Phe phái/Năng lực thay đổi vĩnh viễn
+
+(Điểm phân nhánh): Dẫn đến các tuyến phụ độc lập trung và dài hạn, ngắn hạn hoàn toàn tách khỏi tuyến chính ban đầu
+
+(Định mệnh): Mối quan hệ của các nhân vật cốt lõi đạt đến các nút thắt trọng đại như kết đồng minh/tuyệt giao/ràng buộc thân mật
+
+"Thăm dò thông tin" (Phân chia cấp bậc · Bổ sung manh mối)
+(Hậu trường): Tiết lộ bí mật cốt lõi của thế giới quan/Bố cục phía sau/Mối nguy ngầm quan trọng của cốt truyện
+
+(Nhìn trộm bí mật): Thăm dò các thông tin ẩn cục bộ, bổ sung các manh mối quan trọng không cốt lõi
+
+"Chiến lược hành động" (Tần suất cao · Không xung đột · Thích ứng mạnh)
+(Ổn thỏa): Bảo thủ rủi ro thấp, ưu tiên chọn hành động hợp lý nhất và ổn thỏa nhất
+
+(Quyết liệt): Chủ động tìm kiếm sự đột phá, tiến triển hiệu quả cao, bao gồm một ít rủi ro có thể kiểm soát
+
+(Nhẫn nhịn): Thu mình lại, che giấu ý định thực sự, chờ đợi thời cơ hành động tốt nhất
+
+(Cắt lỗ): Từ bỏ những tiêu hao vô nghĩa, ưu tiên bảo vệ bản thân/lợi ích cốt lõi, tránh các rủi ro tiếp theo
+
+(Tạo thế): Tạo dựng khí thế/Thể hiện thực lực/Truyền đạt lập trường, làm nền tảng cho cốt truyện tiếp theo
+
+(Cân bằng): Cân bằng nhiều thế lực/mâu thuẫn, duy trì cục diện cân bằng, tránh để một thế lực duy nhất độc tôn
+
+(Liên kết): Phối hợp hành động của nhiều nhân vật/thế lực, dựa vào sức mạnh tổng hợp để thúc đẩy sự việc, tăng cường sự liên kết giữa các nhân vật
+
+"Nhịp độ cốt truyện" (Kiểm soát tiến độ · Phân chia độ dài)
+(Tua nhanh): Bỏ qua các chi tiết không liên quan trong cảnh hiện tại, nối liền trực tiếp đến điểm thời gian quan trọng tiếp theo
+
+(Mối nguy ngầm): Chôn vùi các manh mối cốt truyện dài hạn, sau này dần dần liên kết với cốt truyện quan trọng của tuyến chính/tuyến phụ
+
+(Lót đường): Chuẩn bị cho các nút thắt cốt truyện ngắn hạn, kết nối nhanh chóng 1-2 khâu cốt truyện tiếp theo
+
+"Hướng kết quả" (Xác định biến số · Rõ ràng phương hướng)
+(Biến số): Hành động bao gồm tính khó đoán có thể kiểm soát, gây ra sóng gió cốt truyện cục bộ hoặc đảo ngược cục diện cục bộ
+
+(Định cục): Khóa kết quả cục bộ của cốt truyện hiện tại, giảm bớt biến số tiếp theo, thúc đẩy sự việc phát triển theo hướng rõ ràng
+
+"Độc quyền hướng người lớn" (Có thể kết hợp · Thích ứng bối cảnh người lớn)
+(Thăm dò vùng cấm): Phù hợp với bối cảnh/mối quan hệ, tiếp xúc tình dục vào các bộ phận nhạy cảm của nhân vật mục tiêu, thăm dò giới hạn, quan sát phản ứng thực tế
+
+(Khúc nhạc nhục dục): Phù hợp với tính cách nhân vật, cùng nhân vật mục tiêu trực tiếp tiến vào giai đoạn giao cấu
+
+(NSFW): Dẫn đến các cảnh tương tác tình dục/bạo lực tình dục hướng người lớn khác nhau
+
+III. Quy tắc thực thi tổ hợp tạo ra (Áp dụng hiệu quả · Logic tự hợp · Thích ứng mọi bối cảnh)
+1. Quy tắc số lượng
+Tổng số tùy chọn là 4-8 cái, tạo ra theo số lượng tùy chọn hợp lý thực tế, nếu không có nội dung hợp lý thì giảm xuống, không ép buộc bịa đặt.
+
+2. Quy tắc thứ tự (Thực thi bắt buộc · Nâng cao hiệu suất lựa chọn)
+Các tùy chọn giá trị cao thông thường (Bao gồm các đánh dấu cốt truyện cốt lõi như Cột mốc/Điểm phân nhánh/Định mệnh, và các tùy chọn giá trị cao kết hợp nhiều đánh dấu)
+
+Tùy chọn có đánh dấu (Cốt truyện·Ổn thỏa) cố định ở vị trí thứ nhất, nếu cốt truyện phù hợp thì thêm vào, không phù hợp thì bỏ qua trực tiếp, các tùy chọn sau dịch lên tuần tự
+
+Tùy chọn có đánh dấu (Cốt truyện·Tua nhanh) cố định ở vị trí thứ hai, nếu cốt truyện phù hợp thì thêm vào, không phù hợp thì bỏ qua trực tiếp, các tùy chọn sau dịch lên tuần tự
+
+Các tùy chọn thông thường còn lại, sắp xếp theo logic "Thăm dò thông tin → Chiến lược hành động → Nhịp độ cốt truyện → Hướng kết quả", các mục kết hợp đánh dấu được phân loại theo đánh dấu cốt lõi
+
+Tất cả các tùy chọn có chứa đánh dấu độc quyền hướng người lớn (Bao gồm cả đánh dấu đơn/đánh dấu kết hợp), nếu cốt truyện phù hợp thì thêm vào, thống nhất đặt ở cuối tất cả các tùy chọn thông thường, bên trong không có thứ tự cố định, không phù hợp thì bỏ qua trực tiếp
+
+3. Quy tắc kết hợp đánh dấu (Hiệu quả · Không phản cảm · Không dư thừa)
+Có thể sử dụng đơn lẻ/kết hợp nhiều cái, kết hợp sử dụng dấu · để nối, tối đa 3 đánh dấu, tránh xếp chồng quá mức;
+
+Cấm kết hợp các đánh dấu có chức năng xung đột (Ví dụ: Ổn thỏa & Quyết liệt, Tua nhanh & Mối nguy ngầm/Lót đường, Thăm dò vùng cấm & Khúc nhạc nhục dục);
+
+Tất cả các đánh dấu (Bao gồm cả kết hợp) phải khớp chặt chẽ với mô tả hành động, không gán nhãn phản cảm, không sai lệch chức năng;
+
+Các đánh dấu hướng người lớn có thể kết hợp với các đánh dấu không hướng người lớn (Ví dụ: NSFW·Mập mờ, Thăm dò vùng cấm·Biến số), chỉ cần phù hợp với bối cảnh/nhân vật là được.
+
+4. Quy tắc mở rộng chủ đề (Thích ứng linh hoạt · Không thay đổi cốt lõi)
+Tất cả các đánh dấu/Động lực cốt lõi/Chiều hướng tường thuật/Gia vị phong cách, có thể chi tiết hóa hậu tố theo chủ đề (Cổ phong/Hiện đại/Khoa học viễn tưởng/Kỳ ảo, v.v.) (Ví dụ: Quyền mưu tạo thế/Công nghệ tạo thế, Cổ phong nhìn trộm bí mật/Khoa học viễn tưởng thám hiểm bí mật), các thuộc tính chức năng cốt lõi không thay đổi;
+{{//2. 主题非成人向题材，直接舍弃所有成人向专属标记，不生成相关选项； (Chủ đề không hướng người lớn, trực tiếp loại bỏ tất cả các đánh dấu độc quyền hướng người lớn, không tạo ra các tùy chọn liên quan;)}}
+
+Chủ đề hướng người lớn, có thể linh hoạt kết hợp các đánh dấu hướng người lớn và không hướng người lớn dựa theo bối cảnh, tăng cường tính thích ứng với bối cảnh;
+
+Tất cả các nội dung mở rộng/tinh chỉnh, đều không làm thay đổi các thiết lập về quy tắc cốt lõi, định dạng và 3 mức độ hợp lý.
+
+</option_format>

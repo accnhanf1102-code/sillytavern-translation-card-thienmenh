@@ -1,0 +1,1128 @@
+{
+  "Event": {
+    "Active": false,
+    "Title": "",
+    "Phase": "",
+    "End": false,
+    "CompletedEvents": [
+      "Đã hoàn thành sự kiện Endless_Dungeon_Adventure"
+    ],
+    "Signal": []
+  },
+  "World": {
+    "Time": "Kỷ nguyên Phục Hưng Năm 488-Tháng 11-Ngày 10-Thứ Năm-00:20",
+    "Location": "Hư Hải-Astaria-Địa Thành Vô Tận-Khu vực III · Quặng Hầm Tinh Hạch-Tầng 30"
+  },
+  "QuestList": {},
+  "Protagonist": {
+    "Race": "Ma Tộc",
+    "Identity": [
+      "Ma Vương"
+    ],
+    "Class": [],
+    "LifeTier": "Cấp độ 2/Trung kiên",
+    "Level": 6,
+    "TotalExperience": 3098,
+    "ExpRequired": 3840,
+    "AdventurerRank": "Chưa phân hạng",
+    "AttributePoints": 2,
+    "Attributes": {
+      "Strength": 5,
+      "Agility": 6,
+      "Constitution": 5,
+      "Intelligence": 12,
+      "Spirit": 8
+    },
+    "MaxHP": 2431,
+    "HP": 2431,
+    "MaxMP": 4300,
+    "MP": 4200,
+    "MaxStamina": 1125,
+    "Stamina": 725,
+    "StatusEffects": {},
+    "Money": 0,
+    "Inventory": {
+      "Một trăm công dụng của Slime: Từ dầu gội đến keo xây dựng": {
+        "Quality": "Ưu tú",
+        "Type": "Sách",
+        "Quantity": 1,
+        "Tags": [
+          "Sách",
+          "Mẹo nhỏ"
+        ],
+        "Effect": {},
+        "Description": "Cuốn cẩm nang mẹo nhỏ thực dụng được đại chúng vô cùng yêu thích. Ghi chép chi tiết các phương pháp chuyển hóa nguyên liệu Slime thành các loại vật phẩm thay thế giá rẻ, từ dầu xả tóc đến keo xây dựng, không gì là không có"
+      },
+      "Ma Vương mỗi năm đều bị đánh bại một lần, thật sự là vì gà sao？": {
+        "Quality": "Ưu tú",
+        "Type": "",
+        "Quantity": 1,
+        "Tags": [
+          "Sách",
+          "Bình luận"
+        ],
+        "Effect": {},
+        "Description": ""
+      },
+      "Bộ Ấm Trà Tiện Lợi Bằng Gỗ Mun": {
+        "Quality": "Ưu tú",
+        "Type": "Vật phẩm khác",
+        "Quantity": 1,
+        "Tags": [
+          "Vật dụng"
+        ],
+        "Effect": {},
+        "Description": "Một bộ ấm trà nhỏ gọn, nước bên trong luôn giữ được độ ấm vừa phải."
+      },
+      "Vòng Cổ Ren Của Succubus": {
+        "Quality": "Hiếm",
+        "Type": "Trang sức",
+        "Quantity": 1,
+        "Tags": [
+          "Vòng cổ",
+          "NSFW"
+        ],
+        "Effect": {
+          "Tăng nhạy cảm": "Tăng độ nhạy cảm của da thịt lên 20% khi đeo."
+        },
+        "Description": "Chiếc vòng cổ ren đen có khả năng tăng độ nhạy cảm của da thịt lên 20% khi đeo."
+      },
+      "Ma Trượng Chấn Động Hình Xúc Tu": {
+        "Quality": "Sử Thi",
+        "Type": "Vật phẩm NSFW",
+        "Quantity": 1,
+        "Tags": [
+          "Đồ chơi"
+        ],
+        "Effect": {
+          "Cực khoái": "Tăng 50% cảm giác cực khoái."
+        },
+        "Description": "Đạo cụ tự thỏa mãn với ba cấp độ chấn động, làm từ vật liệu mềm dẻo đặc biệt, có khả năng kháng nước và tự làm sạch. Tăng 50% cảm giác cực khoái."
+      },
+      "Loa Phóng Thanh Gỗ Sồi": {
+        "Quality": "Ưu tú",
+        "Type": "Đạo cụ giao tiếp",
+        "Quantity": 1,
+        "Tags": [
+          "Đạo cụ"
+        ],
+        "Effect": {},
+        "Description": "Một chiếc nón cụt bằng gỗ sồi. Khuyếch đại giọng nói của người sử dụng lên gấp năm lần. Rất thích hợp để chỉ huy chiến trường hoặc chửi bới từ xa."
+      },
+      "Hắc Chi Hồn Của Kẻ Bất Hạnh": {
+        "Quality": "Thông thường",
+        "Type": "Vật phẩm tiêu hao",
+        "Quantity": 1,
+        "Tags": [
+          "Linh hồn",
+          "Tiêu hao"
+        ],
+        "Effect": {
+          "Hấp thụ": "Sử dụng để nhận được một lượng nhỏ FP"
+        },
+        "Description": "Khối linh hồn đen kịt rớt ra sau khi tử vong, chứa đựng những oán niệm mỏng manh."
+      },
+      "Hắc Chi Hồn": {
+        "Quality": "Ưu tú",
+        "Type": "Vật phẩm tiêu hao",
+        "Quantity": 2,
+        "Tags": [
+          "Linh hồn",
+          "Tài nguyên"
+        ],
+        "Effect": {
+          "Hấp thụ": "Sử dụng để nhận được 1000 FP (Điểm Vận Mệnh)"
+        },
+        "Description": "Một khối linh hồn màu đen ngòm rơi ra sau khi Li Xingxing tử vong. Chứa đựng năng lượng vận mệnh, có thể chuyển hóa thành FP."
+      },
+      "Huyết Long Nhận · Bán Nguyệt": {
+        "Quality": "Hiếm",
+        "Type": "Vũ khí",
+        "Quantity": 1,
+        "Tags": [
+          "Tấn công: 180",
+          "Hỏa hệ",
+          "Huyết mạch"
+        ],
+        "Effect": {
+          "Huyết Nham Trảm": "Các đòn tấn công bằng vũ khí này gây sát thương vật lý kèm theo 30% sát thương hỏa hệ bổ sung.",
+          "Hoạt Tính Cổ Long": "Lưỡi kiếm mang theo sinh cơ tà dị. Bằng cách truyền MP vào chuôi kiếm, người sử dụng có thể điều khiển thanh kiếm lơ lửng và tự động tấn công kẻ địch trong bán kính 3 mét quanh bản thân, không cần cầm nắm trực tiếp. Tiêu tốn 20 MP mỗi hiệp duy trì."
+        },
+        "Description": "Thanh katana nứt nẻ đã được dung hợp với máu Cổ Long thông qua thuật luyện kim cực đoan. Vỏ kiếm bị thiêu rụi, để lộ lưỡi thép nay đã nhuốm màu đỏ sậm. Những đường vân như mạch máu chạy dọc thân kiếm, thỉnh thoảng lại tỏa ra nhiệt lượng rực rỡ và nhịp đập yếu ớt. Nó không còn là một công cụ vô tri, mà là một sinh thể khát máu luôn sẵn sàng cắn xé."
+      },
+      "Sách Truyện Cổ Tích Của Kiếm Sĩ Dị Vực": {
+        "Quality": "Hiếm",
+        "Type": "Sách Truyện Cổ Tích",
+        "Quantity": 1,
+        "Tags": [
+          "Sách",
+          "Triệu hồi"
+        ],
+        "Effect": {
+          "Summon_Dream_Spirit": "Triệu hồi Mộng Linh Thorne (Lv.11) hỗ trợ chiến đấu."
+        },
+        "Description": "Bên trong giam giữ linh hồn của Thorne, một kiếm sĩ lang thang đến từ vùng đất xa xôi. Anh ta mang theo ngọn lửa của sự bất khuất và thanh kiếm vân đỏ luôn khao khát máu tươi."
+      },
+      "Phược Ma Chi Thược · III": {
+        "Quality": "Hiếm",
+        "Type": "Đạo cụ",
+        "Quantity": 1,
+        "Tags": [
+          "Chìa khóa",
+          "Nhiệm vụ"
+        ],
+        "Effect": {
+          "Mở khóa": "Dùng để mở cổng dẫn xuống tầng 31 của Địa Thành Vô Tận"
+        },
+        "Description": "Một chiếc chìa khóa to bằng bàn tay làm từ kim loại xám đen, trên chuôi có khắc những ký tự cổ đại hình ngọn lửa. Rơi ra từ cơ thể Nham Cự Ma."
+      }
+    },
+    "Equipment": {
+      "Ma Đạo Thư Tập Sự": {
+        "Quality": "Ưu tú",
+        "Type": "Vũ khí",
+        "Tags": [
+          "Ma Đạo Thư",
+          "Tấn công: 65"
+        ],
+        "Effect": {
+          "Lần Thi Triển Đầu Tiên Trong Ngày": "Khi thi triển kỹ năng phẩm chất [Thông thường] lần đầu tiên mỗi ngày, không tiêu tốn MP。"
+        },
+        "Description": "Bìa da cứng, góc sách bọc đồng thau, ghi chép vài pháp thuật cơ bản, giúp ghi nhớ pháp thuật。",
+        "Location": "Trang bị (Cầm tay)"
+      },
+      "Găng tay Pháp sư": {
+        "Quality": "Ưu tú",
+        "Type": "Phòng cụ",
+        "Tags": [
+          "Găng tay",
+          "Phòng ngự (Phần tay): 110"
+        ],
+        "Effect": {
+          "Ngâm Xướng": "Kiểm định tiên công của các hành động liên quan đến thi pháp +1, thi pháp sẽ không bị gián đoạn。"
+        },
+        "Description": "Găng tay lụa mềm mại, thuận tiện cho các thủ ấn thi pháp。",
+        "Location": ""
+      },
+      "Giày Tốc Độ": {
+        "Quality": "Hiếm",
+        "Type": "Phòng cụ",
+        "Tags": [
+          "Giày",
+          "Phòng ngự (Phần chân): 160"
+        ],
+        "Effect": {
+          "Nhanh Nhẹn": "Tiên công +3, Né tránh +2。"
+        },
+        "Description": "Đôi ủng nhẹ nhàng, giúp người mang di chuyển như gió。",
+        "Location": ""
+      },
+      "Kẹp Tóc Mảnh Kính Của Lọ Lem": {
+        "Quality": "Thông thường",
+        "Type": "Trang sức",
+        "Tags": [
+          "Kẹp tóc"
+        ],
+        "Effect": {},
+        "Description": "Một chiếc kẹp tóc làm từ mảnh thủy tinh sắc nhọn, không có tác dụng gì ngoài việc dễ làm xước tay.",
+        "Location": "Trang bị (Đầu)"
+      },
+      "Tất Đùi Tơ Tằm Vĩnh Cửu": {
+        "Quality": "Sử Thi",
+        "Type": "Phòng cụ",
+        "Tags": [
+          "Tất",
+          "Phòng ngự: 220"
+        ],
+        "Effect": {
+          "Né tránh": "Tăng 10% Né tránh.",
+          "Đặc tính": "Không bao giờ bị rách hay bẩn, tự động điều chỉnh nhiệt độ."
+        },
+        "Description": "Đôi tất đùi màu đen làm từ tơ nhện ma thuật, không bao giờ bị rách hay bẩn, tự động điều chỉnh nhiệt độ. Tăng 10% Né tránh.",
+        "Location": "Trang bị (Chân)"
+      },
+      "Mặt Dây Chuyền Lệ Tinh": {
+        "Quality": "Hiếm",
+        "Type": "Trang sức",
+        "Tags": [
+          "Vòng cổ",
+          "Tài nguyên",
+          "Hiếm"
+        ],
+        "Effect": {
+          "Deep_Mana_Well": "Tài nguyên MP: +750"
+        },
+        "Description": "Một viên đá quý hình giọt nước tỏa ra ánh sáng dịu nhẹ. Tương truyền đây là nước mắt của một tinh linh đã hóa đá vì chờ đợi.",
+        "Location": "Trang bị (Cổ)"
+      },
+      "Quần Lót Ren Đen Của Huyết Tộc": {
+        "Quality": "Hiếm",
+        "Type": "Phòng cụ",
+        "Tags": [
+          "Ma pháp",
+          "Mê hoặc",
+          "Huyết tộc",
+          "Tài nguyên"
+        ],
+        "Effect": {
+          "Mê Hoặc Yếu Ớt": "Khi vô tình để lộ, nếu d20>=15, mục tiêu sẽ bị rơi vào trạng thái [Mê hoặc] trong 1 hiệp.",
+          "Huyết Khí Dưỡng Thân": "Giới hạn HP +500."
+        },
+        "Description": "Được chế tác bởi thợ may của các gia tộc Huyết Tộc. Họa tiết ren mạng nhện tinh xảo ẩn chứa ma lực huyết sắc, tác động nhẹ đến tâm trí người nhìn. Vải cực mỏng nhưng bền bỉ, mang lại cảm giác lạnh lẽo đầy kích thích và tăng cường sức hút cá nhân một cách kỳ lạ.",
+        "Location": "Trang bị (Hạ bộ)"
+      },
+      "Váy Petticoat Bụi Nghĩa Trang": {
+        "Quality": "Hiếm",
+        "Type": "Phòng cụ",
+        "Tags": [
+          "Vật lý",
+          "Trang phục",
+          "Thể",
+          "Phòng ngự (Phần chân): 0"
+        ],
+        "Effect": {
+          "Né tránh": "Kiểm định Né tránh +2",
+          "Tài nguyên": "Giới hạn HP +600"
+        },
+        "Description": "Chiếc váy lót Petticoat nhiều tầng giúp tạo độ phồng hoàn hảo cho các bộ váy Lolita. Vải của nó được ngâm trong dung dịch chiết xuất từ bụi nghĩa trang và nước thánh bị vấy bẩn, tạo ra một lớp màng bảo vệ vô hình chống lại các đòn tấn công vật lý. Mỗi khi người mặc di chuyển, chiếc váy phát ra những tiếng sột soạt như tiếng lá khô trên mộ phần. Lớp bụi ma pháp bám trên váy có khả năng làm chệch hướng các đòn tấn công tầm xa, khiến kẻ địch khó lòng nhắm trúng người mặc. Đây là một kiệt tác của các thợ may đại sư tại Thành Nova Valentia.",
+        "Location": "Trang bị (Chân)"
+      }
+    },
+    "Skills": {
+      "Kẻ Thu Hoạch Linh Hồn": {
+        "Quality": "Hiếm",
+        "Type": "",
+        "Cost": "",
+        "Tags": [
+          "Tinh",
+          "Bản thân",
+          "Buff",
+          "Tử Linh"
+        ],
+        "Effect": {
+          "Thu Hồi Pháp Lực": "Mỗi khi một sinh vật [Triệu Hồi] vong linh của bạn bị tiêu diệt, hồi phục cho bạn lượng MP bằng 10% giá trị HP tối đa của nó。"
+        },
+        "Description": "Sự hủy diệt của hầu bộc không phải là kết thúc. Bạn đã học được cách thu hồi năng lượng linh hồn còn sót lại ngay khoảnh khắc chúng tan biến, và chuyển hóa nó thành pháp lực của chính mình。"
+      },
+      "Hấp Thụ Sinh Mệnh": {
+        "Quality": "Thông thường",
+        "Type": "Chủ động",
+        "Cost": "Hành động: 50 MP",
+        "Tags": [
+          "Tinh thần",
+          "Bản thân",
+          "Trị liệu",
+          "Tử Linh"
+        ],
+        "Effect": {
+          "Tự Trị Liệu": "Hồi phục 50 điểm HP cho bản thân。"
+        },
+        "Description": "Hấp thụ năng lượng yếu ớt từ tử khí xung quanh để chữa lành vết thương của bản thân。"
+      },
+      "Tụ Tinh Hội Thần": {
+        "Quality": "Hiếm",
+        "Type": "Chủ động",
+        "Cost": "Hành động: 200MP",
+        "Tags": [
+          "Tinh",
+          "Bản thân",
+          "Buff",
+          "Chức năng"
+        ],
+        "Effect": {
+          "Giá trị cộng thêm kiểm định": "Khiến cho lần kiểm định [Sản Xuất Chế Tác] bất kỳ tiếp theo của bạn nhận được +4 giá trị cộng thêm。"
+        },
+        "Description": "Tập trung toàn bộ tâm trí, một khoảnh khắc phúc chí tâm linh khiến bạn nhìn thấu hình thái hoàn mỹ của tác phẩm, lần ra tay tiếp theo sẽ như có thần trợ giúp。"
+      },
+      "Thệ Ước Của Lucien·Aethelgard": {
+        "Quality": "Duy Nhất",
+        "Type": "Bị động",
+        "Cost": "Không",
+        "Tags": [
+          "Khế Ước",
+          "Bản thân",
+          "Định Mệnh"
+        ],
+        "Effect": {
+          "Ngân Phong Gia Trì": "Khi di chuyển, tăng 10% tốc độ hành động và 5% né tránh.",
+          "Vận Mệnh Đan Xen": "Luôn cảm nhận được vị trí và trạng thái cơ bản của Lucien trong phạm vi 1km.",
+          "Ái Ý Tiềm Hành": "Mọi hành động tương tác thân mật với Lucien đều nhận được +2 hiệu đính hảo cảm."
+        },
+        "Description": "\"Một cơn gió lạ đã thổi vào trái tim kỵ sĩ, buộc chặt vận mệnh của anh ta vào bóng tối ngọt ngào.\" (Cấp độ hiện tại: Lv.1)"
+      },
+      "Triệu Hồi Vong Linh · Kỵ Sĩ Không Đầu Kael": {
+        "Quality": "Hiếm",
+        "Type": "Chủ động",
+        "Cost": "Hành động: 150 MP",
+        "Tags": [
+          "Trí lực",
+          "Bản thân",
+          "Triệu hồi",
+          "Duy trì",
+          "Truyện Cổ Tích"
+        ],
+        "Effect": {
+          "Triệu hồi Kỵ Sĩ Không Đầu": "Triệu hồi vong linh Kael (mất đầu) chiến đấu cho bạn, duy trì trong 3 hiệp. Cấp độ bằng với cấp độ của người thi triển + 2 (Tối đa bằng cấp độ của Kael khi còn sống - Lv.5).",
+          "Kiếm Thuật Vong Niệm": "Kế thừa một phần sức mạnh của Kael, đòn tấn công vật lý của Kỵ Sĩ có khả năng gây [Chảy Máu] nhẹ.",
+          "Mục Tiêu Đẫm Máu": "Kỵ Sĩ Không Đầu tự động trở thành mục tiêu ưu tiên của kẻ địch trong phạm vi gần, độ cứng cáp tăng 15% DR."
+        },
+        "Description": "Chàng kỵ sĩ mất đầu ôm lấy quả bí ngô rực lửa thay cho thủ cấp, vung thanh kiếm rỉ sét để bảo vệ người chủ nhân đã ruồng bỏ mình. Lời thề vẫn còn, nhưng hình hài đã mục nát."
+      },
+      "Thệ Ước Của Elio": {
+        "Quality": "Duy Nhất",
+        "Type": "Bị động",
+        "Cost": "Không",
+        "Tags": [
+          "Khế Ước",
+          "Bản thân",
+          "Định Mệnh"
+        ],
+        "Effect": {
+          "Luyện Kim Phụ Trợ": "Khi ở gần Elio, tỷ lệ thành công khi chế tác Luyện Kim tăng 10%.",
+          "Vận Mệnh Đan Xen": "Luôn cảm nhận được vị trí và trạng thái cơ bản của Elio trong phạm vi 1km.",
+          "Ái Ý Tiềm Hành": "Mọi hành động tương tác thân mật với Elio đều nhận được +2 hiệu đính hảo cảm."
+        },
+        "Description": "\"Một khế ước được lập ra trong bóng tối, trói buộc vận mệnh của chàng luyện kim thuật sư trẻ tuổi vào tay Tử Linh Sư.\" (Cấp độ hiện tại: Lv.1)"
+      },
+      "Triệu Hồi Huyết Nhục Đồ Tể": {
+        "Quality": "Sử Thi",
+        "Type": "Chủ động",
+        "Cost": "Hành động: 1200 MP",
+        "Tags": [
+          "Lực lượng",
+          "Môi Trường",
+          "Chức năng",
+          "Tử Linh",
+          "Triệu hồi",
+          "Uy lực: 1200",
+          "Bạo thực"
+        ],
+        "Effect": {
+          "Triệu Hồi Đồ Tể": "Triệu hồi một [Huyết Nhục Đồ Tể] cấp độ 8 chiến đấu cho bạn. Nó không chỉ sở hữu bộ khung xương kiên cố mà còn được bao bọc bởi những khối cơ bắp tà ác có khả năng tự phục hồi. Duy trì cho đến khi kết thúc chiến đấu hoặc bị tiêu diệt.",
+          "Mùi Máu Cuồng Loạn": "Các đòn tấn công vật lý của Đồ Tể có 20% xác suất gây hiệu ứng [Ăn Mòn] lên giáp của mục tiêu.",
+          "Thôn Phệ Xác Chết": "Đồ Tể có thể ăn thịt xác chết của kẻ địch vừa bị hạ gục để hồi phục 20% HP tối đa của bản thân ngay trong trận chiến."
+        },
+        "Description": "Một cỗ máy xay thịt thực sự được lai tạo giữa bộ xương khổng lồ và ma lực vực thẳm. Nó không biết đau đớn, chỉ biết tuân theo lệnh chủ nhân để xé xác kẻ thù."
+      },
+      "Triệu Hồi Oán Linh": {
+        "Quality": "Hiếm",
+        "Type": "Chủ động",
+        "Cost": "Hành động: 200 MP",
+        "Tags": [
+          "Tinh",
+          "Đơn thể",
+          "Triệu hồi"
+        ],
+        "Effect": {
+          "Cơ chế đặc thù": "Triệu hồi 1 Oán Linh (Cấp bằng người triệu hồi) có khả năng xuyên thấu vật lý",
+          "Ám ảnh": "Mục tiêu bị giảm 15% kháng tinh thần trong 3 hiệp"
+        },
+        "Description": "Gọi lên một linh hồn đầy oán hận để ám ảnh kẻ thù. Oán linh có thể đi xuyên qua các vật thể và tấn công trực tiếp vào tâm trí."
+      },
+      "Thệ Ước Của Vane": {
+        "Quality": "Duy Nhất",
+        "Type": "Bị động",
+        "Cost": "Không",
+        "Tags": [
+          "Khế Ước",
+          "Bản thân",
+          "Định Mệnh"
+        ],
+        "Effect": {
+          "Quang Minh Tí Hộ": "Tăng 10% kháng tính đối với các hiệu ứng tiêu cực và sát thương hắc ám.",
+          "Vận Mệnh Đan Xen": "Luôn cảm nhận được vị trí và trạng thái cơ bản của Vane trong phạm vi 1km.",
+          "Ái Ý Tiềm Hành": "Mọi hành động tương tác thân mật với Vane đều nhận được +2 hiệu đính hảo cảm."
+        },
+        "Description": "\"Sợi chỉ đỏ của vận mệnh đã trói buộc vị Thẩm phán quan quang minh lẫm liệt vào bóng tối ngọt ngào.\" (Cấp độ hiện tại: Lv.1)"
+      }
+    },
+    "AscensionStairway": {
+      "IsEnabled": false,
+      "Elements": {},
+      "Authorities": {},
+      "Laws": {},
+      "Godhood": "",
+      "Divine_Kingdom": {
+        "Name": "",
+        "Description": ""
+      }
+    }
+  },
+  "DestinyPoints": 11906,
+  "RelationshipList": {
+    "Kael": {
+      "IsPresent": true,
+      "Race": "Nhân loại",
+      "Identity": [
+        "Mạo hiểm giả"
+      ],
+      "Class": [
+        "Kiếm sĩ"
+      ],
+      "LifeTier": "Nhị Giai",
+      "Personality": "Kiên nghị, kiệm lời, trầm ổn, hành động dứt khoát.",
+      "Likes": "Bảo dưỡng vũ khí, hoàn thành nhiệm vụ.",
+      "Appearance": "Thanh niên cao lớn, khuôn mặt góc cạnh, sống mũi cao, mái tóc màu hạt dẻ hơi rối bù, đôi mắt màu xanh lục bảo sắc bén.",
+      "Outfit": "Mặc bộ áo giáp da sờn cũ, bên hông đeo trường kiếm (đã cởi áo choàng).",
+      "Level": 5,
+      "Attributes": {
+        "Strength": 10,
+        "Agility": 8,
+        "Constitution": 10,
+        "Intelligence": 5,
+        "Spirit": 6
+      },
+      "StatusEffects": {},
+      "Inventory": {},
+      "Equipment": {
+        "Trường kiếm": {
+          "Quality": "Ưu tú",
+          "Type": "Vũ khí",
+          "Tags": [
+            "Kiếm",
+            "Tấn công: 50"
+          ],
+          "Effect": {
+            "Sắc bén": "Tăng nhẹ sát thương vật lý"
+          },
+          "Description": "Thanh trường kiếm được bảo dưỡng cẩn thận.",
+          "Location": "Trang bị"
+        },
+        "Áo giáp da": {
+          "Quality": "Ưu tú",
+          "Type": "Phòng cụ",
+          "Tags": [
+            "Giáp da",
+            "Phòng ngự: 60"
+          ],
+          "Effect": {
+            "Bền bỉ": "Giảm nhẹ sát thương vật lý"
+          },
+          "Description": "Bộ áo giáp da sờn cũ nhưng chắc chắn.",
+          "Location": "Trang bị"
+        }
+      },
+      "Skills": {},
+      "AscensionStairway": {
+        "IsEnabled": false,
+        "Elements": {},
+        "Authorities": {},
+        "Laws": {},
+        "Godhood": "",
+        "Divine_Kingdom": {
+          "Name": "",
+          "Description": ""
+        }
+      },
+      "DestinyContract": true,
+      "Affection": 20,
+      "InnerThoughts": "Linh hồn đã tan biến sau khi bị chém đứt.",
+      "Background": "Một mạo hiểm giả Nhị Giai đang thám hiểm Địa Thành Vô Tận, tình cờ chạm trán Ma Vương cấp 1 và bị trói buộc bởi Khế Ước Định Mệnh. Đã tử vong do bị Ám Ảnh Thứ Khách tấn công."
+    },
+    "Lucien·Aethelgard": {
+      "IsPresent": false,
+      "Race": "Nhân loại",
+      "Identity": [
+        "Đội trưởng tổ đội Ngân Phong",
+        "Quý tộc sa cơ"
+      ],
+      "Class": [
+        "Kiếm sĩ gió"
+      ],
+      "LifeTier": "Nhị Giai",
+      "Personality": "WOaGz(S): Thân cận và bộc trực mạnh mẽ, luôn chủ động bảo vệ người yếu thế. Tính cách kiên nghị và có phần cố chấp với lý tưởng công lý của mình. Ổn định cao.",
+      "Likes": "Rèn luyện kiếm thuật dưới ánh trăng, các món ăn cay của Elara, bảo dưỡng thanh kiếm gia bảo.",
+      "Appearance": "Nam thanh niên 21 tuổi, cao 1m82. Mái tóc màu bạch kim rực rỡ và đôi mắt màu hổ phách sắc sảo. Đường nét khuôn mặt thanh tú, nam tính với sống mũi cao. Cơ thể săn chắc, đôi bàn tay thon dài có kén mỏng do cầm kiếm lâu năm.",
+      "Outfit": "Nửa thân trên trần trụi, lộ ra những vết sẹo mờ. Áo choàng đã nhường cho Li Xingxing, áo giáp và áo sơ mi đang được phơi khô bên đống lửa. Mặc quần dài và ủng da.",
+      "Level": 8,
+      "Attributes": {
+        "Strength": 10,
+        "Agility": 10,
+        "Constitution": 5,
+        "Intelligence": 3,
+        "Spirit": 4
+      },
+      "StatusEffects": {},
+      "Inventory": {},
+      "Equipment": {
+        "Ngân Dực": {
+          "Quality": "Ưu tú",
+          "Type": "Vũ khí",
+          "Tags": [
+            "Kiếm",
+            "Tấn công: 80"
+          ],
+          "Effect": {
+            "Sắc bén": "Tăng sát thương vật lý"
+          },
+          "Description": "Thanh trường kiếm gia bảo của gia tộc Aethelgard.",
+          "Location": "Trang bị (Cầm tay)"
+        }
+      },
+      "Skills": {},
+      "AscensionStairway": {
+        "IsEnabled": false,
+        "Elements": {},
+        "Authorities": {},
+        "Laws": {},
+        "Godhood": "",
+        "Divine_Kingdom": {
+          "Name": "",
+          "Description": ""
+        }
+      },
+      "DestinyContract": true,
+      "Affection": 90,
+      "InnerThoughts": "Sự tuyệt vọng đang dần biến thành một cơn giận dữ lạnh lẽo. Anh thề sẽ tìm ra kẻ đã mang Xingxing đi, bất kể đó là ai hay phải trả giá thế nào. Sợi dây liên kết từ Khế Ước đang rung lên những nhịp điệu đau đớn.",
+      "Background": "Con trai thứ của gia tộc Aethelgard ở Đế quốc. Sau khi gia tộc bị gán tội phản quốc, anh mang theo thanh kiếm gia bảo đi lưu lạc. Gặp gỡ và yêu Elara trong một lần thực hiện nhiệm vụ tại Solentis. Hiện đang nỗ lực thăng hạng mạo hiểm giả để xóa sạch vết nhơ cho dòng tộc."
+    },
+    "Elara·Sunfire": {
+      "IsPresent": false,
+      "Race": "Nhân loại",
+      "Identity": [
+        "Bạn gái của Lucien",
+        "Pháp sư hỏa hệ"
+      ],
+      "Class": [
+        "Pháp sư"
+      ],
+      "LifeTier": "Nhị Giai",
+      "Personality": "DhaGz(S): Sơ cách và thâm tàng, luôn cảnh giác với người ngoài nhưng lại rất nồng cháy và chiếm hữu đối với người mình yêu thương. Quyết đoán và mạnh mẽ.",
+      "Likes": "Rượu vang đỏ, những buổi tối yên tĩnh bên Lucien, đốt cháy những thứ cản đường.",
+      "Appearance": "Nữ giới 22 tuổi, cao 1m70. Mái tóc đỏ rực rỡ như lửa được búi cao. Đôi mắt xanh lá cây sắc sảo và quyến rũ. Thân hình đầy đặn với những đường cong bốc lửa. Cơ quan sinh dục có lớp lông mu màu đỏ thưa thớt, môi âm hộ hồng hào và nhỏ nhắn.",
+      "Outfit": "Áo lót da màu đỏ thẫm bó sát, khoác bên ngoài là tấm choàng mỏng bán trong suốt. Váy da ngắn xẻ tà cao, mang tất lưới đen và ủng cao cổ. Đeo vòng cổ khảm hồng ngọc ma pháp.",
+      "Level": 7,
+      "Attributes": {
+        "Strength": 3,
+        "Agility": 4,
+        "Constitution": 4,
+        "Intelligence": 10,
+        "Spirit": 9
+      },
+      "StatusEffects": {},
+      "Inventory": {},
+      "Equipment": {
+        "Gậy phép Hỏa hệ": {
+          "Quality": "Ưu tú",
+          "Type": "Vũ khí",
+          "Tags": [
+            "Gậy phép",
+            "Tấn công: 40"
+          ],
+          "Effect": {
+            "Tăng cường Hỏa": "Tăng sát thương phép thuật hệ Hỏa"
+          },
+          "Description": "Cây gậy phép tỏa ra nhiệt lượng nhàn nhạt.",
+          "Location": "Trang bị (Cầm tay)"
+        }
+      },
+      "Skills": {},
+      "AscensionStairway": {
+        "IsEnabled": false,
+        "Elements": {},
+        "Authorities": {},
+        "Laws": {},
+        "Godhood": "",
+        "Divine_Kingdom": {
+          "Name": "",
+          "Description": ""
+        }
+      },
+      "DestinyContract": false,
+      "Affection": -28,
+      "InnerThoughts": "Vừa hối hận vì khoảnh khắc do dự có thể đã giết chết Lucien, vừa điên cuồng căm hận Li Xingxing vì đã đẩy mọi chuyện đến bước đường này.",
+      "Background": "Sinh ra trong một gia đình thương nhân ở Sahla nhưng bỏ trốn vì bị ép gả cho một tên béo ú. Cô gia nhập công hội mạo hiểm giả và gặp Lucien. Hai người đã đồng hành cùng nhau hơn hai năm và là một cặp đôi nổi tiếng trong khu vực."
+    },
+    "Silas": {
+      "IsPresent": false,
+      "Race": "Nhân loại",
+      "Identity": [
+        "Thành viên tổ đội Ngân Phong",
+        "Chiến binh"
+      ],
+      "Class": [
+        "Chiến binh"
+      ],
+      "LifeTier": "Nhị Giai",
+      "Personality": "Cục cằn, ít nói nhưng rất đáng tin cậy và luôn bảo vệ đồng đội.",
+      "Likes": "Uống bia, rèn luyện thể lực, bảo dưỡng khiên.",
+      "Appearance": "Người đàn ông to lớn, vạm vỡ, khuôn mặt có vài vết sẹo mờ.",
+      "Outfit": "Mặc bộ giáp nặng nề, mang theo một tấm khiên khổng lồ.",
+      "Level": 7,
+      "Attributes": {
+        "Strength": 12,
+        "Agility": 6,
+        "Constitution": 12,
+        "Intelligence": 3,
+        "Spirit": 4
+      },
+      "StatusEffects": {},
+      "Inventory": {},
+      "Equipment": {
+        "Khiên Tháp Bằng Sắt": {
+          "Quality": "Ưu tú",
+          "Type": "Phòng cụ",
+          "Tags": [
+            "Khiên",
+            "Phòng ngự: 100"
+          ],
+          "Effect": {
+            "Chắn đòn": "Giảm sát thương vật lý nhận vào"
+          },
+          "Description": "Một tấm khiên to bằng cái bàn, vô cùng nặng nề và chắc chắn.",
+          "Location": "Trang bị (Cầm tay)"
+        }
+      },
+      "Skills": {},
+      "AscensionStairway": {
+        "IsEnabled": false,
+        "Elements": {},
+        "Authorities": {},
+        "Laws": {},
+        "Godhood": "",
+        "Divine_Kingdom": {
+          "Name": "",
+          "Description": ""
+        }
+      },
+      "DestinyContract": false,
+      "Affection": 10,
+      "InnerThoughts": "Cảm thấy hơi ngại ngùng khi phải canh gác cho cô gái nhỏ đi vệ sinh, nhưng vẫn làm tròn trách nhiệm.",
+      "Background": "Chiến binh tiên phong của tổ đội Ngân Phong, luôn là tấm khiên vững chắc cho cả đội."
+    },
+    "Elio": {
+      "IsPresent": false,
+      "Race": "Nhân loại",
+      "Identity": [
+        "Luyện Kim Thuật Sư",
+        "Mạo hiểm giả lạc đoàn"
+      ],
+      "Class": [
+        "Luyện Kim Thuật Sư"
+      ],
+      "LifeTier": "Nhị Giai",
+      "Personality": "dOlRz(A): Hơi giữ khoảng cách ban đầu nhưng dễ bộc lộ cảm xúc khi hoảng sợ, hành động có phần chậm chạp luống cuống, dễ thỏa hiệp khi gặp kẻ mạnh, dễ uốn nắn.",
+      "Likes": "Nấm Lân Tinh, nghiên cứu luyện kim, sự an toàn.",
+      "Appearance": "Thiếu niên khoảng 17-18 tuổi, cao khoảng 1m65, vóc dáng gầy gò. Mái tóc màu hạt dẻ hơi xoăn rối bù xù, đôi mắt màu xanh hồ nước, đuôi mắt hơi cụp mang nét nhút nhát (hệ cún con).",
+      "Outfit": "Mặc áo choàng dài lùng thùng xắn tay áo, thắt lưng da quấn quanh eo đựng nhiều lọ thuốc, trên trán đeo kính bảo hộ to đùng. Áo choàng bị rách một mảng do chuột cắn. Đang lóng ngóng cài lại thắt lưng sau khi bị trêu chọc.",
+      "Level": 5,
+      "Attributes": {
+        "Strength": 4,
+        "Agility": 6,
+        "Constitution": 5,
+        "Intelligence": 10,
+        "Spirit": 6
+      },
+      "StatusEffects": {},
+      "Inventory": {
+        "Bình Axit Nhỏ": {
+          "Quality": "Thông thường",
+          "Type": "Vật phẩm tiêu hao",
+          "Quantity": 2,
+          "Tags": [
+            "Tiêu hao",
+            "Sát thương"
+          ],
+          "Effect": {
+            "Sát thương": "Gây sát thương ăn mòn nhẹ"
+          },
+          "Description": "Bình thủy tinh chứa axit yếu."
+        },
+        "Bình Khói Cay": {
+          "Quality": "Thông thường",
+          "Type": "Vật phẩm tiêu hao",
+          "Quantity": 1,
+          "Tags": [
+            "Tiêu hao",
+            "Khống chế"
+          ],
+          "Effect": {
+            "Mù lòa": "Gây ho và giảm tầm nhìn trong thời gian ngắn"
+          },
+          "Description": "Bình tạo khói cay."
+        }
+      },
+      "Equipment": {
+        "Áo Choàng Luyện Kim": {
+          "Quality": "Thông thường",
+          "Type": "Phòng cụ",
+          "Tags": [
+            "Áo choàng",
+            "Phòng ngự: 20"
+          ],
+          "Effect": {
+            "Kháng hóa chất": "Giảm nhẹ sát thương từ hóa chất"
+          },
+          "Description": "Áo choàng dài lùng thùng, đã bị chuột cắn rách một mảng.",
+          "Location": "Trang bị (Thân)"
+        },
+        "Kính Bảo Hộ": {
+          "Quality": "Thông thường",
+          "Type": "Trang sức",
+          "Tags": [
+            "Kính",
+            "Phòng ngự: 5"
+          ],
+          "Effect": {
+            "Bảo vệ mắt": "Chống bụi và khói"
+          },
+          "Description": "Kính bảo hộ to đùng thường dùng trong phòng thí nghiệm.",
+          "Location": "Trang bị (Đầu)"
+        },
+        "Thanh Katana Bị Nứt (Moonveil Replica)": {
+          "Quality": "Hiếm",
+          "Type": "Vũ khí",
+          "Tags": [
+            "Kiếm",
+            "Tấn công: 120"
+          ],
+          "Effect": {
+            "Sát thương": "Tăng nhẹ sát thương vật lý và pháp thuật."
+          },
+          "Description": "Một thanh katana có lưỡi kiếm màu lam nhạt, đã bị nứt một đường dài. Tăng nhẹ sát thương vật lý và pháp thuật.",
+          "Location": "Không gian lưu trữ"
+        }
+      },
+      "Skills": {},
+      "AscensionStairway": {
+        "IsEnabled": false,
+        "Elements": {},
+        "Authorities": {},
+        "Laws": {},
+        "Godhood": "",
+        "Divine_Kingdom": {
+          "Name": "",
+          "Description": ""
+        }
+      },
+      "DestinyContract": true,
+      "Affection": 53,
+      "InnerThoughts": "Cảm thấy vô cùng xấu hổ, áy náy và lúng túng khi bị Li Xingxing trêu chọc và bắt ép lau chùi, mặc lại quần lót cho cô. Ngoan ngoãn vâng lời nhưng trong lòng rối bời.",
+      "Background": "Một Luyện Kim Thuật Sư trẻ tuổi, vì không có tiền mua nguyên liệu nên phải tự mình xuống tầng 23 tìm Nấm Lân Tinh để làm bài tốt nghiệp, không may đụng độ bầy Hắc Ám Cự Thử."
+    },
+    "Kaelen": {
+      "IsPresent": false,
+      "Race": "Nhân loại",
+      "Identity": [
+        "Mạo hiểm giả",
+        "Đạo tặc"
+      ],
+      "Class": [
+        "Đạo tặc"
+      ],
+      "LifeTier": "Nhị Giai",
+      "Personality": "Cảnh giác, hoang dã, thực dụng nhưng dễ bị tác động bởi dục vọng khi mất cảnh giác.",
+      "Likes": "Sinh tồn, tiền bạc, phụ nữ đẹp.",
+      "Appearance": "Nam thanh niên, tóc xám tro cắt ngắn bết mồ hôi, khuôn mặt góc cạnh hoang dã, có vết sẹo mờ vắt ngang sống mũi, đôi mắt xám tro sắc lẹm.",
+      "Outfit": "Trần truồng.",
+      "Level": 7,
+      "Attributes": {
+        "Strength": 8,
+        "Agility": 12,
+        "Constitution": 7,
+        "Intelligence": 5,
+        "Spirit": 6
+      },
+      "StatusEffects": {},
+      "Inventory": {},
+      "Equipment": {
+        "Đoản kiếm": {
+          "Quality": "Ưu tú",
+          "Type": "Vũ khí",
+          "Tags": [
+            "Kiếm",
+            "Tấn công: 60"
+          ],
+          "Effect": {
+            "Sắc bén": "Tăng sát thương vật lý"
+          },
+          "Description": "Thanh đoản kiếm sắc bén của đạo tặc.",
+          "Location": "Trang bị (Cầm tay)"
+        },
+        "Áo giáp da đen": {
+          "Quality": "Ưu tú",
+          "Type": "Phòng cụ",
+          "Tags": [
+            "Giáp da",
+            "Phòng ngự: 70"
+          ],
+          "Effect": {
+            "Nhẹ nhàng": "Không cản trở di chuyển"
+          },
+          "Description": "Áo giáp da màu đen bó sát, một bên tay áo bị rách tươm.",
+          "Location": "Trang bị (Thân)"
+        }
+      },
+      "Skills": {},
+      "AscensionStairway": {
+        "IsEnabled": false,
+        "Elements": {},
+        "Authorities": {},
+        "Laws": {},
+        "Godhood": "",
+        "Divine_Kingdom": {
+          "Name": "",
+          "Description": ""
+        }
+      },
+      "DestinyContract": false,
+      "Affection": -50,
+      "InnerThoughts": "Cảm thấy nhục nhã, phẫn hận và tuyệt vọng tột cùng khi ý thức hoàn toàn tỉnh táo nhưng cơ thể lại bị cưỡng chế thực hiện hành vi đồi bại với kẻ thù, thậm chí phải liếm tinh dịch và hứng chịu nước tiểu của cô ta.",
+      "Background": "Một đạo tặc đi lẻ ở tầng 23, bị thương sau một cuộc chiến và đang trốn trong hầm mỏ bỏ hoang để trị thương thì gặp Li Xingxing."
+    },
+    "Aveline Dawnbreaker": {
+      "IsPresent": false,
+      "Race": "Nhân loại",
+      "Identity": [
+        "Kỵ sĩ"
+      ],
+      "Class": [
+        "Kỵ sĩ"
+      ],
+      "LifeTier": "Nhị Giai",
+      "Personality": "Kiên nghị, dũng cảm, không dễ dàng bỏ cuộc dù trong hoàn cảnh tuyệt vọng.",
+      "Likes": "Bảo vệ kẻ yếu, hoàn thành nhiệm vụ.",
+      "Appearance": "Nữ giới, mái tóc màu vàng kim xõa tung, đôi mắt xanh lam sắc bén và kiên nghị.",
+      "Outfit": "Mặc bộ giáp bạc bị móp méo, áo choàng trắng nhuốm máu.",
+      "Level": 6,
+      "Attributes": {
+        "Strength": 8,
+        "Agility": 7,
+        "Constitution": 8,
+        "Intelligence": 4,
+        "Spirit": 5
+      },
+      "StatusEffects": {},
+      "Inventory": {},
+      "Equipment": {
+        "Kiếm bản rộng": {
+          "Quality": "Ưu tú",
+          "Type": "Vũ khí",
+          "Tags": [
+            "Kiếm",
+            "Tấn công: 60"
+          ],
+          "Effect": {},
+          "Description": "Thanh kiếm bản rộng tiêu chuẩn của kỵ sĩ, đã bị văng ra xa.",
+          "Location": "Rơi trên đất"
+        },
+        "Giáp bạc": {
+          "Quality": "Ưu tú",
+          "Type": "Phòng cụ",
+          "Tags": [
+            "Giáp nặng",
+            "Phòng ngự: 80"
+          ],
+          "Effect": {},
+          "Description": "Bộ giáp bạc sáng loáng nhưng phần vai phải đã bị móp méo nghiêm trọng.",
+          "Location": "Trang bị"
+        }
+      },
+      "Skills": {},
+      "AscensionStairway": {
+        "IsEnabled": false,
+        "Elements": {},
+        "Authorities": {},
+        "Laws": {},
+        "Godhood": "",
+        "Divine_Kingdom": {
+          "Name": "",
+          "Description": ""
+        }
+      },
+      "DestinyContract": false,
+      "Affection": -5,
+      "InnerThoughts": "Tâm trí mờ mịt, hoàn toàn bị chi phối bởi dục vọng và sự phục tùng tuyệt đối đối với Li Xingxing, dù ghê tởm mùi vị dơ bẩn nhưng cơ thể lại khao khát được đụng chạm.",
+      "Background": "Một nữ kỵ sĩ đang thực hiện nhiệm vụ tại Địa Thành Vô Tận thì bị quái vật mạnh mẽ truy đuổi và trọng thương."
+    },
+    "Thorne": {
+      "IsPresent": false,
+      "Race": "Nhân loại",
+      "Identity": [
+        "Kiếm Sĩ Dị Vực"
+      ],
+      "Class": [
+        "Kiếm Sĩ"
+      ],
+      "LifeTier": "Tam Giai",
+      "Personality": "Kiên cường, sát ý bùng nổ, ý chí chiến đấu mãnh liệt.",
+      "Likes": "Chiến đấu, sức mạnh.",
+      "Appearance": "Chàng trai tóc xanh đen, cơ bắp cuồn cuộn, đôi mắt xám tro.",
+      "Outfit": "Giáp da.",
+      "Level": 11,
+      "Attributes": {
+        "Strength": 18,
+        "Agility": 12,
+        "Constitution": 14,
+        "Intelligence": 6,
+        "Spirit": 8
+      },
+      "StatusEffects": {},
+      "Inventory": {},
+      "Equipment": {
+        "Cự Kiếm Vân Đỏ": {
+          "Quality": "Hiếm",
+          "Type": "Vũ khí",
+          "Tags": [
+            "Kiếm",
+            "Hỏa hệ"
+          ],
+          "Effect": {},
+          "Description": "Thanh cự kiếm vân đỏ, thiên về bùng nổ sát thương vật lý và nhiệt lượng.",
+          "Location": "Trang bị (Cầm tay)"
+        }
+      },
+      "Skills": {},
+      "AscensionStairway": {
+        "IsEnabled": false,
+        "Elements": {},
+        "Authorities": {},
+        "Laws": {},
+        "Godhood": "",
+        "Divine_Kingdom": {
+          "Name": "",
+          "Description": ""
+        }
+      },
+      "DestinyContract": false,
+      "Affection": -25,
+      "InnerThoughts": "Cảm thấy nhục nhã, bối rối và một loại cảm xúc kỳ lạ khó gọi tên đan xen trong lòng sau khi bị Li Xingxing trêu chọc, cố tình để lộ nội y và ép buộc phải nhìn cô đi tiểu.",
+      "Background": "Một kiếm sĩ Tam Giai sở hữu kiếm kỹ hỏa hệ hiếm gặp, đang chiến đấu sinh tử trong Địa Thành Vô Tận."
+    },
+    "Vane": {
+      "IsPresent": true,
+      "Race": "Nhân loại",
+      "Identity": [
+        "Dị Đoan Thẩm Phán Quan"
+      ],
+      "Class": [
+        "Thần quan"
+      ],
+      "LifeTier": "Tam Giai",
+      "Personality": "Nghiêm ngặt, thánh mẫu, cấm dục, luôn muốn bảo vệ người yếu.",
+      "Likes": "Quang minh, trật tự, sự thuần khiết.",
+      "Appearance": "Nam giới, tóc vàng nhạt, da trắng, khuôn mặt góc cạnh thanh tú, cơ ngực săn chắc.",
+      "Outfit": "Áo choàng dài màu trắng viền vàng (rách tươm, dính máu).",
+      "Level": 10,
+      "Attributes": {
+        "Strength": 12,
+        "Agility": 10,
+        "Constitution": 12,
+        "Intelligence": 15,
+        "Spirit": 18
+      },
+      "StatusEffects": {},
+      "Inventory": {},
+      "Equipment": {
+        "Kiếm Thập Tự": {
+          "Quality": "Hiếm",
+          "Type": "Vũ khí",
+          "Tags": [
+            "Kiếm",
+            "Quang Minh"
+          ],
+          "Effect": {
+            "Thánh Quang": "Gây thêm sát thương Quang Minh"
+          },
+          "Description": "Thanh kiếm dài với hộ thủ hình thập tự giá của Thẩm phán quan.",
+          "Location": "Trang bị (Cầm tay)"
+        }
+      },
+      "Skills": {},
+      "AscensionStairway": {
+        "IsEnabled": false,
+        "Elements": {},
+        "Authorities": {},
+        "Laws": {},
+        "Godhood": "",
+        "Divine_Kingdom": {
+          "Name": "",
+          "Description": ""
+        }
+      },
+      "DestinyContract": true,
+      "Affection": 80,
+      "InnerThoughts": "Lý trí hoàn toàn tan vỡ trước khoái lạc xác thịt và sự dẫn dắt của Khế Ước Định Mệnh. Anh tự thuyết phục bản thân rằng đây là một sự hy sinh cần thiết để cứu người, một hành động từ bi vượt lên trên giáo luật khô khan. Cảm giác tội lỗi đang bị nhấn chìm bởi sự hưng phấn tột độ khi nhìn thấy dấu vết của mình trên cơ thể Xingxing.",
+      "Background": "Dị Đoan Thẩm Phán Quan của Thánh Đô Vania, cực kỳ ghét Vong Linh và Ma tộc. Bị thương nặng sau trận chiến với Tinh Hạch Tri Chu."
+    },
+    "Abigail": {
+      "IsPresent": false,
+      "Race": "Nhân loại",
+      "Identity": [
+        "Tu sĩ",
+        "Cộng sự của Vane"
+      ],
+      "Class": [
+        "Tu sĩ"
+      ],
+      "LifeTier": "Tam Giai",
+      "Personality": "DhAgZ(A)",
+      "Likes": "Vane, sự cứu rỗi, thánh ca",
+      "Appearance": "Nữ tu sĩ trẻ tuổi, tóc vàng tết bím, mắt xanh lam, vẻ mặt lo âu.",
+      "Outfit": "",
+      "Level": 9,
+      "Attributes": {
+        "Strength": 6,
+        "Agility": 8,
+        "Constitution": 8,
+        "Intelligence": 14,
+        "Spirit": 0
+      },
+      "StatusEffects": {},
+      "Inventory": {},
+      "Equipment": {
+        "Thánh Nhãn Dẫn Lối": {
+          "Quality": "Hiếm",
+          "Type": "Thần khí",
+          "Tags": [
+            "Thánh vật",
+            "Dẫn đường"
+          ],
+          "Effect": {
+            "Dẫn lối": "Chỉ hướng đến mục tiêu có dấu ấn ma lực tương đồng"
+          },
+          "Description": "Viên ngọc tỏa ánh sáng vàng kim.",
+          "Location": "Trang bị"
+        }
+      },
+      "Skills": {},
+      "AscensionStairway": {
+        "IsEnabled": false,
+        "Elements": {},
+        "Authorities": {},
+        "Laws": {},
+        "Godhood": "",
+        "Divine_Kingdom": {
+          "Name": "",
+          "Description": ""
+        }
+      },
+      "DestinyContract": false,
+      "Affection": 0,
+      "InnerThoughts": "Quyết tâm tìm lại Vane, lo sợ anh đã gặp chuyện chẳng lành.",
+      "Background": "Cộng sự của Vane tại Thánh Đô Vania, thầm yêu anh và đang liều mình xuống Địa Thành để tìm kiếm."
+    }
+  },
+  "News": {
+    "Astaria_Express": {
+      "Faction_News": "Giáo hội Vania đã cử thêm các đội cứu hộ tinh nhuệ vào Địa Thành Vô Tận sau khi các dấu vết của Thẩm phán quan Vane được phát hiện tại tầng 30.",
+      "Sovereign_Tracks": "Một số mạo hiểm giả báo cáo đã nhìn thấy ánh sáng thánh khiết lóe lên ở tầng 30 của Địa Thành, nghi ngờ là dấu vết của một Thần quan cấp cao.",
+      "Military_Operations": "Đội tuần tra của Công quốc Valentia đã phong tỏa một số lối vào tầng sâu của Địa Thành do sự gia tăng đột biến của quái vật.",
+      "Economic_Arteries": "Giá của các loại dược liệu giải độc và hồi phục tăng vọt tại các khu chợ đen gần Địa Thành Vô Tận.",
+      "Disaster_Warnings": "Cảnh báo về sự bất ổn định của các luồng ma lực tại khu vực Quặng Hầm Tinh Hạch, có thể gây ra những vụ nổ tinh thạch ngầm."
+    },
+    "Tavern_Message_Board": {
+      "High_Rewards": "Giáo hội Vania treo thưởng 20000G cho bất kỳ thông tin xác thực nào về tình trạng hiện tại của Thẩm Phán Quan Vane.",
+      "Adventure_Discoveries": "Tin đồn về một 'Ma nữ hồng khói' đang giam giữ các anh hùng trong hốc đá tầng 30 lan truyền mạnh mẽ trong giới mạo hiểm giả.",
+      "MonsterAbnormality": "Bầy Tinh Hạch Tri Chu ở tầng 30 dường như đang tránh xa một khu vực nhất định, không rõ nguyên nhân.",
+      "WantedCriminal": "Truy nã một nữ ma tộc bị tình nghi đã bắt cóc và giam giữ trái phép các mạo hiểm giả nam tại Địa Thành.",
+      "TreasureRumors": "Có tin đồn rằng thanh Kiếm Thập Tự của Vane đã bị đánh rơi ở đâu đó trong Quặng Hầm Tinh Hạch."
+    },
+    "AfternoonTeaParty": {
+      "SocialAnecdotes": "Giới quý tộc đang xôn xao bàn tán về việc một Thẩm phán quan nổi tiếng cấm dục lại biến mất cùng một cô gái bí ẩn.",
+      "FarSight": "Lucien vẫn đang lang thang ở các tầng trên của Địa Thành, đôi mắt hằn lên những tia máu vì thiếu ngủ và lo lắng tột độ.",
+      "DestinyRipples": "Một nữ tu sĩ trẻ tuổi mang theo thánh vật đang tiến vào Địa Thành với quyết tâm tìm lại vị Thẩm phán quan đáng kính.",
+      "EncounterOmen": "Một cuộc hội ngộ đầy kịch tính sắp diễn ra giữa ánh sáng thánh khiết và bóng tối của sự cám dỗ tại một hốc đá ẩm ướt."
+    }
+  }
+}
