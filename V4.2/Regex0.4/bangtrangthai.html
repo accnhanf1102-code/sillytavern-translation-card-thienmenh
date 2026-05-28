@@ -9050,7 +9050,7 @@
                 Cost: g.z.string().prefault('')
             }).transform(e => _.pick(e, ['Quality', 'Type', 'Cost', 'Tags', 'Effect', 'Description'])),
             N = g.z.object({
-                Type: g.z.enum(['Buff', 'Debuff', 'Đặc thù']).prefault('Buff'),
+                Type: g.z.enum(['Buff', 'Debuff', 'Special']).prefault('Buff'),
                 Effect: g.z.string().prefault(''),
                 Stacks: g.z.coerce.number().prefault(1),
                 RemainingTime: g.z.string().prefault(''),
@@ -9122,7 +9122,7 @@
                 AttributePoints: g.z.coerce.number().prefault(0),
                 Inventory: g.z.record(g.z.string(), T).prefault({}).transform(e => _.pickBy(e, e => e.Quantity > 0)),
                 Money: g.z.coerce.number().prefault(0).transform(Math.round),
-                StatusEffects: g.z.record(g.z.string(), N).prefault({})
+                StatusEffect: g.z.record(g.z.string(), N).prefault({})
             }).prefault({}).transform(e => {
                 const t = {
                     ...e,
@@ -9131,7 +9131,7 @@
                     MP: _.clamp(e.MP, 0, e.MaxMP),
                     Stamina: _.clamp(e.Stamina, 0, e.MaxStamina)
                 };
-                return _.pick(t, ['Race', 'Identity', 'Class', 'LifeTier', 'Level', 'TotalExperience', 'ExpRequired', 'AdventurerRank', 'AttributePoints', 'Attributes', 'MaxHP', 'HP', 'MaxMP', 'MP', 'MaxStamina', 'Stamina', 'StatusEffects', 'Money', 'Inventory', 'Equipment', 'Skills', 'AscensionStairway'])
+                return _.pick(t, ['Race', 'Identity', 'Class', 'LifeTier', 'Level', 'TotalExperience', 'ExpRequired', 'AdventurerRank', 'AttributePoints', 'Attributes', 'MaxHP', 'HP', 'MaxMP', 'MP', 'MaxStamina', 'Stamina', 'StatusEffect', 'Money', 'Inventory', 'Equipment', 'Skills', 'AscensionStairway'])
             }),
             D = g.z.record(g.z.string(), g.z.object({
                 ...E.shape,
@@ -9142,11 +9142,11 @@
                 Outfit: g.z.string().prefault(''),
                 DestinyContract: g.z.boolean().prefault(!1),
                 Affection: y(0, -100, 100),
-                StatusEffects: g.z.record(g.z.string(), N).prefault({}),
+                StatusEffect: g.z.record(g.z.string(), N).prefault({}),
                 Inventory: g.z.record(g.z.string(), T).prefault({}).transform(e => _.pickBy(e, e => e.Quantity > 0)),
                 InnerThoughts: g.z.string().prefault(''),
                 Background: g.z.string().prefault('')
-            }).prefault({}).transform(e => _.pick(e, ['IsPresent', 'Race', 'Identity', 'Class', 'LifeTier', 'Personality', 'Likes', 'Appearance', 'Outfit', 'Level', 'Attributes', 'StatusEffects', 'Inventory', 'Equipment', 'Skills', 'AscensionStairway', 'DestinyContract', 'Affection', 'InnerThoughts', 'Background']))).prefault({}),
+            }).prefault({}).transform(e => _.pick(e, ['IsPresent', 'Race', 'Identity', 'Class', 'LifeTier', 'Personality', 'Likes', 'Appearance', 'Outfit', 'Level', 'Attributes', 'StatusEffect', 'Inventory', 'Equipment', 'Skills', 'AscensionStairway', 'DestinyContract', 'Affection', 'InnerThoughts', 'Background']))).prefault({}),
             P = g.z.object({
                 Astaria_Express: g.z.object({
                     Faction_News: g.z.string().prefault(''),
@@ -11768,8 +11768,8 @@
                 label: 'Debuff',
                 value: 'Debuff'
             }, {
-                label: 'Đặc thù',
-                value: 'Đặc thù'
+                label: 'Special',
+                value: 'Special'
             }],
             Ra = ({
                 effects: e,
@@ -12294,11 +12294,11 @@
                         }), (0, i.jsx)(Ra, {
                             effects: e ?? {},
                             editEnabled: t,
-                            pathPrefix: `RelationshipList.${n}.StatusEffects`,
+                            pathPrefix: `RelationshipList.${n}.StatusEffect`,
                             emptyText: 'Trống',
                             onDelete: e => a({
                                 type: 'Trạng thái hiệu quả',
-                                path: `RelationshipList.${n}.StatusEffects.${e}`,
+                                path: `RelationshipList.${n}.StatusEffect.${e}`,
                                 name: e
                             })
                         })]
@@ -12348,7 +12348,7 @@
                         })]
                     }),
                     te = e => {
-                        const t = e.StatusEffects ?? {};
+                        const t = e.StatusEffect ?? {};
                         return (0, i.jsx)('div', {
                             className: xr,
                             children: (0, i.jsx)(Ra, {
@@ -12535,7 +12535,7 @@
                                 children: [W('Tính cách', `RelationshipList.${e}.Personality`, n.Personality, 'textarea', il, ol, ul), W('Yêu thích', `RelationshipList.${e}.Likes`, n.Likes, 'textarea', il, ol, ul)]
                             })]
                         }), 'status' === T && (0, i.jsxs)(i.Fragment, {
-                            children: [J(n.StatusEffects, e), n.AscensionStairway?.IsEnabled && (0, i.jsxs)('div', {
+                            children: [J(n.StatusEffect, e), n.AscensionStairway?.IsEnabled && (0, i.jsxs)('div', {
                                 className: Fl,
                                 children: [(0, i.jsx)('div', {
                                     className: Al,
@@ -12831,7 +12831,7 @@
                 id: 'inventory',
                 label: 'Hành trang',
                 icon: 'fa-solid fa-box',
-                filterKey: 'Loại hình',
+                filterKey: 'Type',
                 pathPrefix: 'Protagonist.Inventory',
                 dataKey: 'Inventory',
                 itemCategory: 'Item'
@@ -12839,7 +12839,7 @@
                 id: 'Equipment',
                 label: 'Trang bị',
                 icon: 'fa-solid fa-shield',
-                filterKey: 'Loại hình',
+                filterKey: 'Type',
                 pathPrefix: 'Protagonist.Equipment',
                 dataKey: 'Equipment',
                 itemCategory: 'Equipment'
@@ -12847,7 +12847,7 @@
                 id: 'Skills',
                 label: 'Kỹ năng',
                 icon: 'fa-solid fa-wand-magic-sparkles',
-                filterKey: 'Loại hình',
+                filterKey: 'Type',
                 pathPrefix: 'Protagonist.Skills',
                 dataKey: 'Skills',
                 itemCategory: 'Skill'
@@ -12875,19 +12875,12 @@
                     v = e => us.find(t => t.id === e),
                     x = e => {
                         const t = us.find(t => t.id === e);
-                        return t?.filterKey ?? 'Loại hình'
+                        return t?.filterKey ?? 'Type'
                     },
                     w = v(d),
                     k = (0, u.useMemo)(() => (e => {
                         const t = v(e);
                         const data = ye(y, t.dataKey || t.label);
-                        console.log('%c DEBUG CATEGORY DATA ', 'background: #222; color: #bada55', {
-                            category: e,
-                            label: t.label,
-                            dataKey: t.dataKey,
-                            itemsCount: Object.keys(data || {}).length,
-                            rawData: data
-                        });
                         return data;
                     })(d), [d, y.Skills, y.Equipment, y.Inventory]),
                     S = h ? v(h.categoryId) : null;
@@ -14437,16 +14430,36 @@
                 emptyCardBody: 'NewsTab-module__emptyCardBody--GbsWh',
                 emptyHint: 'NewsTab-module__emptyHint--LCk5q'
             },
+            _newsTitleVi = {
+                Faction_News: 'Bản Tin Thế Cục',
+                Sovereign_Tracks: 'Bám Sát Bá Chủ',
+                Military_Operations: 'Hành Động Quân Sự',
+                Economic_Arteries: 'Mạch Kinh Tế',
+                Disaster_Warnings: 'Thiên Tai Cảnh Báo',
+                High_Rewards: 'Hiền Thưởng Trọng Kim',
+                Adventure_Discoveries: 'Phát Hiện Phiêu Lưu',
+                MonsterAbnormality: 'Ma Vật Dị Biến',
+                WantedCriminal: 'Tội Phạm Truy Nã',
+                TreasureRumors: 'Tin Đồn Bảo Vật',
+                SocialAnecdotes: 'Giai Thoại Giang Hồ',
+                FarSight: 'Viễn Kiến Thiên Cơ',
+                DestinyRipples: 'Gợn Sóng Định Mệnh',
+                EncounterOmen: 'Kỳ Ngộ Điềm Báo'
+            },
+            _viTitle = e => _newsTitleVi[e] ?? e.replace(/_/g, ' '),
             Fo = [{
                 key: 'Astaria_Express',
+                label: 'Nhật báo Astaria',
                 icon: 'fa-solid fa-newspaper',
                 colorClassName: 'categoryAccentNews'
             }, {
                 key: 'Tavern_Message_Board',
+                label: 'Bản Tin Quán Rượu',
                 icon: 'fa-solid fa-clipboard',
                 colorClassName: 'categoryAccentBoard'
             }, {
                 key: 'AfternoonTeaParty',
+                label: 'Tiệc Trà Buổi Chiều',
                 icon: 'fa-solid fa-mug-hot',
                 colorClassName: 'categoryAccentTea'
             }],
@@ -14461,6 +14474,7 @@
                     const t = Hn().get(n, e.key, {});
                     return Hn().entries(t).filter(([, e]) => Boolean(e?.trim())).map(([t, n]) => ({
                         categoryKey: e.key,
+                        categoryLabel: e.label,
                         icon: e.icon,
                         colorClassName: e.colorClassName,
                         title: t,
@@ -14494,13 +14508,13 @@
                                         children: [(0, i.jsx)('i', {
                                             className: e.icon
                                         }), (0, i.jsx)('span', {
-                                            children: e.categoryKey
+                                            children: e.categoryLabel ?? e.categoryKey
                                         })]
                                     })
                                 }), (0, i.jsx)('div', {
                                     className: Lo.newsFeedTitleRow,
                                     children: (0, i.jsx)(On, {
-                                        text: e.title,
+                                        text: _viTitle(e.title),
                                         className: Lo.newsFeedTitle,
                                         as: 'span'
                                     })
@@ -14581,34 +14595,34 @@
             },
             $o = 'Tất cả',
             Ro = [{
-                key: 'status',
+                key: 'Status',
                 label: 'Trạng thái',
                 type: 'text'
             }, {
-                key: 'priority',
+                key: 'Priority',
                 label: 'Mức độ ưu tiên',
                 type: 'select'
             }, {
-                key: 'progress',
+                key: 'Progress',
                 label: 'Tiến triển',
                 type: 'textarea'
             }, {
-                key: 'details',
+                key: 'Details',
                 label: 'Chi tiết',
                 type: 'textarea'
             }, {
-                key: 'goal',
+                key: 'Goal',
                 label: 'Mục tiêu',
                 type: 'textarea'
             }, {
-                key: 'reward',
+                key: 'Reward',
                 label: 'Phần thưởng',
                 type: 'textarea'
             }],
             Oo = {
-                High: 0,
-                Medium: 1,
-                Low: 2
+                'Cao': 0,
+                'Trung Bình': 1,
+                'Thấp': 2
             },
             qo = [{
                 value: 'Cao',
@@ -14645,7 +14659,7 @@
                                     className: Io.questStatusBadge,
                                     children: t.Status
                                 }) : null, t.Priority ? (0, i.jsx)('span', {
-                                    className: `${Io.questPriorityBadge} ${Io[`priority${t.Priority}`] ?? ''}`.trim(),
+                                    className: `${Io.questPriorityBadge} ${({'Cao':Io.priority_high,'Trung Bình':Io.priority_medium,'Thấp':Io.priority_low})[t.Priority] ?? ''}`.trim(),
                                     children: t.Priority
                                 }) : null]
                             })]
@@ -14701,7 +14715,7 @@
                             l = `${a}.${e}`;
                         return n ? 'Priority' === e ? (0, i.jsx)(en, {
                             path: l,
-                            value: r || 'Trung',
+                            value: r || 'Trung Bình',
                             type: 'select',
                             selectConfig: {
                                 options: qo
@@ -14763,10 +14777,10 @@
                 const w = x.includes(d) ? d : $o,
                     k = (0, u.useMemo)(() => {
                         const e = w === $o ? v : v.filter(([, e]) => (e.Status?.trim() || '') === w);
-                        return Hn().orderBy(e, [([, e]) => Oo[e.Priority ?? 'Trung'] ?? 99, ([e]) => e.toLowerCase()], ['asc', 'asc'])
+                        return Hn().orderBy(e, [([, e]) => Oo[e.Priority ?? 'Trung Bình'] ?? 99, ([e]) => e.toLowerCase()], ['asc', 'asc'])
                     }, [w, v]),
                     S = (0, u.useMemo)(() => x.reduce((e, t) => t === $o ? (e[t] = v.length, e) : (e[t] = v.filter(([, e]) => (e.Status?.trim() || '') === t).length, e), {}), [v, x]),
-                    N = (0, u.useMemo)(() => Hn().orderBy(v, [([, e]) => Oo[e.Priority ?? 'Trung'] ?? 99, ([e]) => e.toLowerCase()], ['asc', 'asc']), [v]),
+                    N = (0, u.useMemo)(() => Hn().orderBy(v, [([, e]) => Oo[e.Priority ?? 'Trung Bình'] ?? 99, ([e]) => e.toLowerCase()], ['asc', 'asc']), [v]),
                     T = (0, u.useMemo)(() => h ? v.find(([e]) => e === h) ?? null : null, [h, v]);
                 (0, u.useEffect)(() => {
                     if (!h) return void Ie(c, '');
@@ -15147,7 +15161,7 @@
                     const n = t ?? e.defaultValue ?? '';
                     return '' === n ? 'Không' : e.prefix ? `${e.prefix}${n}` : n
                 },
-                    S = x.StatusEffects ?? {},
+                    S = x.StatusEffect ?? {},
                     N = {
                         total: Object.entries(S).length
                     },
@@ -15335,13 +15349,7 @@
                                 children: [Wu.map(e => {
                                     const n = _.get(x, e.currentKey, 0),
                                         a = _.get(x, e.maxKey, 0);
-                                    console.log('%c DEBUG VIEWER MODE ', 'background: #0000ff; color: #ffffff; font-weight: bold;', {
-                                        label: e.label,
-                                        currentKey: e.currentKey,
-                                        n: n,
-                                        a: a,
-                                        x_data: x
-                                    });
+
                                     return (0, i.jsx)(ra, {
                                         label: e.label,
                                         current: n,
@@ -15455,10 +15463,10 @@
                         children: (0, i.jsx)(Ra, {
                             effects: S,
                             editEnabled: t,
-                            pathPrefix: 'Protagonist.StatusEffects',
+                            pathPrefix: 'Protagonist.StatusEffect',
                             onDelete: e => a({
                                 type: 'Trạng thái hiệu quả',
-                                path: `Protagonist.StatusEffects.${e}`,
+                                path: `Protagonist.StatusEffect.${e}`,
                                 name: e
                             })
                         })
@@ -15532,7 +15540,7 @@
                                     await ke('readwrite', async a => {
                                         await Se(a.delete(we(e, t, n)))
                                     })
-                                })(w, 'player', 'Nhân Vật Chính'), f(''), g(!1)
+                                })(w, 'player', 'Nhân vật chính'), f(''), g(!1)
                             } catch (e) {
                                 console.warn('[StatusTab] Khôi phục ảnh đại diện Nhân Vật Chính mặc định thất bại:', e)
                             }
@@ -21463,13 +21471,13 @@
             align-items: center;
             gap: 6px;
             max-width: 100%;
-            padding: 4px 10px;
+            padding: 5px 10px;
             border: 1px solid color-mix(in srgb, currentColor 16%, transparent);
             border-radius: 999px;
             background: color-mix(in srgb, currentColor 10%, transparent);
             font-size: 10px;
             font-weight: 600;
-            line-height: 1;
+            line-height: 1.3;
             text-transform: uppercase;
             letter-spacing: .4px
         }
