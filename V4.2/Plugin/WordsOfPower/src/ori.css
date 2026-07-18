@@ -1,0 +1,130 @@
+ [v-cloak] {
+            display: none !important;
+        }
+        /* 魔法书星空主题变量 */
+        :root {
+            --magic-book-bg: #162032;        /* 调浅的星空暗蓝底色 */
+            --magic-book-edge: #0f172a;      /* 边缘颜色 */
+            --magic-book-spine: #1e293b;     /* 书脊中轴线 */
+            --magic-book-text: #f8fafc;      /* 更加明亮的文字主色 */
+            --magic-bookmark-bg: #2563eb;    /* 书签底色提亮 */
+            --magic-bookmark-active: #60a5fa;/* 激活状态更加显眼 */
+        }
+
+        /* 滚动条美化 */
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: rgba(15, 23, 42, 0.5); border-radius: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(59, 130, 246, 0.4); border-radius: 4px; border: 1px solid rgba(15, 23, 42, 0.8); }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: rgba(59, 130, 246, 0.8); }
+
+        /* 动画设定 */
+        .fade-enter-active, .fade-leave-active { transition: opacity 0.3s ease; }
+        .fade-enter-from, .fade-leave-to { opacity: 0; }
+        .book-open-enter-active { animation: bookOpen 0.5s cubic-bezier(0.25, 1, 0.5, 1) forwards; }
+        .book-open-leave-active { animation: bookClose 0.3s cubic-bezier(0.25, 1, 0.5, 1) forwards; }
+
+        @keyframes bookOpen {
+            0% { transform: scale(0.9) translateY(30px) perspective(1200px) rotateX(15deg); opacity: 0; }
+            100% { transform: scale(1) translateY(0) perspective(1200px) rotateX(0deg); opacity: 1; }
+        }
+        @keyframes bookClose {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(0.95) translateY(20px); opacity: 0; }
+        }
+
+        /* 魔法书主体拟物样式 */
+        .magic-book-container {
+            background: linear-gradient(to right, var(--magic-book-edge) 0%, var(--magic-book-bg) 5%, var(--magic-book-bg) 49%, var(--magic-book-spine) 50%, var(--magic-book-bg) 51%, var(--magic-book-bg) 95%, var(--magic-book-edge) 100%);
+            box-shadow: 
+                inset 0 0 40px rgba(30, 58, 138, 0.3),   /* 内部幽蓝荧光 */
+                0 25px 50px -12px rgba(0, 0, 0, 0.9),    /* 厚重视觉大阴影 */
+                0 0 0 1px rgba(59, 130, 246, 0.3);       /* 极细微光边框 */
+            border-radius: 12px 24px 24px 12px;
+            color: var(--magic-book-text);
+        }
+        
+        /* 隐秘的星轨底纹 */
+        .magic-book-container::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(rgba(255,255,255,0.8) 1px, transparent 1px), radial-gradient(rgba(255,255,255,0.4) 1px, transparent 1px);
+            background-size: 60px 60px, 30px 30px;
+            background-position: 0 0, 15px 15px;
+            opacity: 0.03;
+            pointer-events: none;
+            border-radius: inherit;
+        }
+
+        /* 中轴线 */
+        .magic-book-container::after {
+            content: '';
+            position: absolute;
+            top: 2%; bottom: 2%; left: 50%;
+            width: 2px;
+            background: rgba(199, 210, 254, 0.05);
+            box-shadow: 1px 0 5px rgba(59, 130, 246, 0.4), -1px 0 5px rgba(0,0,0,0.8);
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        /* 书签导航 */
+        .bookmark-tab {
+            writing-mode: vertical-rl;
+            letter-spacing: 0.2em;
+            background: var(--magic-bookmark-bg);
+            color: rgba(255,255,255,0.8);
+            padding: 20px 8px;
+            border-radius: 0 12px 12px 0;
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-left: none;
+            box-shadow: 4px 4px 15px rgba(0,0,0,0.4), inset 2px 0 5px rgba(255,255,255,0.1);
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            cursor: pointer;
+            position: relative;
+            left: 0;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+        }
+        .bookmark-tab:hover {
+            background: var(--magic-bookmark-active);
+            color: white;
+            left: 8px;
+        }
+        .bookmark-tab.active {
+            background: #2563eb; 
+            color: white;
+            left: 12px;
+            font-weight: bold;
+            box-shadow: 6px 6px 20px rgba(0,0,0,0.5), inset 2px 0 5px rgba(255,255,255,0.2);
+            border-color: #60a5fa;
+        }
+        .bookmark-close {
+            background: #450a0a !important;
+            border-color: #7f1d1d !important;
+            color: #fca5a5 !important;
+        }
+        .bookmark-close:hover {
+            background: #7f1d1d !important;
+            border-color: #ef4444 !important;
+            color: white !important;
+        }
+        /* 替换掉原来的 .magic-input-base 及其 @apply */
+        .magic-input-base {
+            width: 100%;
+            background-color: rgba(10, 15, 29, 0.6);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 0.25rem;
+            padding: 0.375rem 0.75rem;
+            font-size: 0.875rem;
+            color: #dbeafe;
+            transition: all 0.3s;
+            box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+        }
+        .magic-input-base::placeholder {
+            color: rgba(37, 99, 235, 0.5);
+        }
+        .magic-input-base:focus {
+            outline: none;
+            border-color: #60a5fa;
+            box-shadow: 0 0 0 1px #60a5fa, inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+        }

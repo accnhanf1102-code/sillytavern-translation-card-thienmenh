@@ -368,6 +368,57 @@
                 "Huyết Khí Hộ Thể": "12% sát thương gây ra sẽ chuyển hóa thành lá chắn tương đương, có thể cộng dồn。"
             },
             "description": "Thân kiếm có màu đỏ như máu, có thể hút lấy sinh lực của kẻ thù。"
+        },
+        {
+            "name": "Thái đao Palermo",
+            "cost": 60,
+            "type": "Vũ khí",
+            "tag": [
+                "Thái đao",
+                "Tấn công: 250"
+            ],
+            "rarity": "epic",
+            "effect": {
+                "Xử lý": "Sát thương gây ra cho [Mục tiêu săn bắn] tăng 30%, khi dùng kỹ năng chủ động tiêu diệt kẻ địch, kích hoạt [Giải thể]",
+                "Giải thể": "Các kẻ địch khác xung quanh cần tiến hành kiểm tra ý chí, nếu thất bại sẽ rơi vào trạng thái [Sợ hãi], duy trì 1 hiệp",
+                "Thợ săn": "Nếu kẻ địch bị giải thể là [Mục tiêu săn bắn], hiệu ứng sợ hãi tăng gấp đôi, đồng thời hồi phục 1 viên [Đạn gia tốc]",
+                "Nỗi nhục của gia tộc Bernatley": "Mỗi khi tiêu hao 1 viên [Đạn gia tốc], giúp bản thân tăng 10% tỷ lệ bạo kích"
+            },
+            "description": "Thái đao màu vàng với tay cầm màu đỏ, hơi ngắn hơn thái đao bình thường, cầm bằng một tay"
+        },
+        {
+            "name": "Liệp đao Palermo",
+            "cost": 60,
+            "type": "Vũ khí",
+            "tag": [
+                "Liệp đao",
+                "Đạn gia tốc",
+                "Tấn công: 400"
+            ],
+            "rarity": "epic",
+            "effect": {
+                "Đạn gia tốc": "Thông qua việc kích nổ [Đạn gia tốc], tại khoảnh khắc chém/đâm sẽ tạo ra lực đẩy bùng nổ, cường hóa cực lớn uy lực, đồng thời giải phóng ngọn lửa thiêu đốt kẻ địch. Mỗi lần sử dụng cần tiêu hao 1 viên [Đạn gia tốc]. [Đạn gia tốc] có thể được nạp lại vào những lúc tạm nghỉ giữa các trận chiến, mang theo tối đa 3 viên",
+                "Thời khắc săn bắn": "Khóa chặt một kẻ địch. Sau khi gây sát thương cho một kẻ địch, kẻ địch đó bị đánh dấu là [Mục tiêu săn bắn], duy trì cho đến khi kết thúc trận chiến hoặc mục tiêu tử vong",
+                "Thợ săn": "Tất cả sát thương gây ra cho [Mục tiêu săn bắn] tăng 20%, đồng thời mỗi khi tấn công thêm một lần, sát thương tăng thêm 2% (Tối đa 10%)",
+                "Nỗi nhục của gia tộc Bernatley": "Mỗi khi tiêu hao 1 viên [Đạn gia tốc], giúp bản thân tăng 10% tỷ lệ bạo kích"
+            },
+            "description": "Liệp đao (Dao đi săn) màu vàng, lưỡi dao giống như được chắp vá tạo thành, tay cầm là hộ thủ hình vuông màu đỏ. Chỗ nối giữa tay cầm và lưỡi kiếm có cấu trúc hộp đạn, dùng để nạp \"Đạn gia tốc\""
+        },
+        {
+            "name": "Kiếm Palermo",
+            "cost": 60,
+            "type": "Vũ khí",
+            "tag": [
+                "Liễu Kiếm",
+                "Tấn công: 200"
+            ],
+            "rarity": "epic",
+            "effect": {
+                "Tư thế lung lay sắp đổ": "Khóa chặt một kẻ địch, sau khi gây sát thương cho một kẻ địch, gắn thêm [Cao trào quyết đấu] cho kẻ địch đó (Tối đa 7 tầng)",
+                "Cao trào quyết đấu": "Nếu trên người mục tiêu có [Cao trào quyết đấu], sát thương gây ra cho mục tiêu +10%, sát thương phải chịu từ mục tiêu -10%",
+                "Dấu ấn săn bắn": "Dựa theo số tầng [Cao trào quyết đấu] trên người mục tiêu, mỗi tầng khiến kiểm tra độ chính xác khi tấn công mục tiêu +1"
+            },
+            "description": "Liệp đao màu vàng, trên thân kiếm khắc tầng tầng lớp lớp những đường vân hình học tam giác, giống như được chắp vá tạo thành, nhưng đường vân là khắc cạn, không khảm nạm bất kỳ bảo thạch hay phù văn nào."
         }
     ],
     "Rìu": [
@@ -4065,6 +4116,22 @@
                 "Kháng Băng": "Sát thương Băng Sương nhận vào -30%。"
             },
             "description": "Hộ phù có thể chống lại sát thương Băng Sương。"
+        },
+        {
+            "name": "Con mắt của Odin",
+            "cost": 125,
+            "type": "Trang sức",
+            "tag": [
+                "Tiên Tri",
+                "Mắt Phải"
+            ],
+            "rarity": "legendary",
+            "effect": {
+                "Tương lai được gia tốc": "Có 50% xác suất né tránh hoàn toàn bất kỳ đòn tấn công nào (bao gồm cả tấn công phạm vi), đòn tấn công tiếp theo sau khi né tránh được tăng 30% tỷ lệ bạo kích",
+                "Mắt tiên tri": "Kiểm tra né tránh trong chiến đấu +7",
+                "Quá tải": "Sau khi kích hoạt [Mắt tiên tri], Con mắt của Odin sẽ bị \"quá nhiệt\", hiệu ứng [Mắt tiên tri] sẽ mất hiệu lực trong 1 hiệp"
+            },
+            "description": "Nghĩa nhãn (mắt giả) màu đỏ, gần như không có gì khác biệt so với nhãn cầu của người thật. Khi khởi động, trong đồng tử sẽ nổi lên những đường vân sáng hình học, phát ra ánh sáng đỏ mờ nhạt. Sử dụng liên tục sẽ khiến nhãn cầu phát nhiệt, sử dụng quá độ sẽ dẫn đến đau đầu, thậm chí là mù lòa tạm thời."
         }
     ],
     "Vật Phẩm Không Gian": [
@@ -4446,6 +4513,30 @@
                 "Tinh Thông Thụy Trảm": "[Bị động] Tăng mạnh bội suất sát thương đầu tiên gây ra cho kẻ địch đang trong trạng thái ngủ say"
             },
             "description": "Thanh cự kiếm được rèn từ Nghịch Lân và lân phiến cứng của Hoàng Hắc Long - kẻ có thể thao túng vạn loại thuộc tính, thân kiếm tỏa ra u quang màu đỏ tím bất tường, chỉ riêng việc vung nó đã đòi hỏi cánh tay có sức mạnh vượt xa người thường"
+        },
+        {
+            "name": "Song Xà Trượng",
+            "cost": 850,
+            "type": "Vũ khí",
+            "tag": [
+                "Vũ khí biến hình",
+                "Tấn công: 1200"
+            ],
+            "rarity": "unique",
+            "effect": {
+                "Điều khiển chỉ lệnh": "Vũ khí này mỗi khi bản thân [Tấn công], đều sẽ ngẫu nhiên biến đổi thành một trong số (Rìu tay, Dùi, Kiếm tay rưỡi, Thứ kiếm, Búa tạ, Đại kiếm, Trường thương, Kiếm roi, Lưỡi hái, Nĩa thìa), và các loại vũ khí khác nhau sẽ mang theo hiệu ứng đặc biệt.",
+                "Không thể dự đoán": "Khi tấn công, khiến né tránh của kẻ địch -10, và độ chính xác của bản thân -5.",
+                "Rìu tay": "Khi trúng đích, khiến bản thân tăng 2 tầng [Hô hấp pháp], tối đa 99 tầng. Mỗi lần tấn công đều có xác suất bằng (số tầng [Hô hấp pháp] × 5%) khiến sát thương gây ra của đòn tấn công này ×2. Khi kết thúc mỗi hiệp giảm một tầng [Hô hấp pháp].",
+                "Dùi": "Khi trúng đích, khiến mục tiêu tăng 2 tầng [Trầm luân], tối đa 10 tầng. Kẻ địch khi tiến hành tấn công có xác suất bằng (số tầng [Trầm luân] × 10%) tấn công thất bại. Khi kết thúc mỗi hiệp giảm một tầng [Trầm luân].",
+                "Kiếm tay rưỡi": "Sát thương cuối cùng do vũ khí này gây ra ×1.1, khi trúng đích, khiến bản thân nhận 1 tầng [Tăng 10% lực tấn công] vào lúc kết thúc hiệp, duy trì 2 hiệp.",
+                "Liễu Kiếm": "Sát thương cuối cùng do vũ khí này gây ra ×1.1, khi trúng đích, khiến kẻ địch nhận 1 tầng [Dễ vỡ], mục tiêu mang trạng thái [Dễ vỡ] chịu sát thương ×1.25.",
+                "Búa tạ": "Sát thương cuối cùng do vũ khí này gây ra ×1.1, khi trúng đích, khiến kẻ địch nhận 3 tầng [Chấn động], tối đa 12 tầng, mỗi tầng [Chấn động] khiến đơn vị địch -1 hiệu chỉnh né tránh.",
+                "Đại kiếm": "Sát thương cuối cùng do vũ khí này gây ra ×1.2, khi trúng đích, khiến bản thân nhận 4 tầng [Hô hấp pháp].",
+                "Kiếm roi": "Sát thương cuối cùng do vũ khí này gây ra ×1.2, khi trúng đích, thi triển 2 tầng [Dễ vỡ] lên kẻ địch.",
+                "Lưỡi hái": "Sát thương cuối cùng do vũ khí này gây ra ×1.3, chắc chắn trúng đích, mức đánh giá bảo hiểm là 2.0 (Siêu bạo kích).",
+                "Nĩa thìa": "Sát thương cuối cùng do vũ khí này gây ra ×0.1, đồng thời độ chính xác của bản thân giảm thêm -10."
+            },
+            "description": "Ngoại hình là một cây bút máy màu vàng, bên trong chứa một loại mực giống như kim loại, có thể thay đổi hình dạng và khối lượng của nó. Không chỉ kẻ địch không thể dự đoán đòn tấn công của người sử dụng, mà ngay cả bản thân người sử dụng cũng không biết lần tới nó sẽ biến thành hình thái gì."
         }
     ],
     "Hệ thống Linh Phù Elden Mở Rộng": [
