@@ -1405,7 +1405,7 @@ function useWordForge(Vue, characterData, uiState, dbVersion, toastUI) {
         // 获取数据源：技能或背包 (兼容键名为 'backpack' 或对应的常量)
         const dataSource = extractState.targetType === 'skill'
             ? (characterData.protagonist.data[K.SKILLS] || {})
-            : (characterData.protagonist.data[K.BACKPACK] || characterData.protagonist.data['背包'] || {});
+            : (characterData.protagonist.data[K.BACKPACK] || characterData.protagonist.data['Inventory'] || {});
 
         const rawList = Object.keys(dataSource).map(key => ({ name: key, data: dataSource[key] }));
 

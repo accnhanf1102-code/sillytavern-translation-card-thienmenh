@@ -1,0 +1,427 @@
+```
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Spread Reader</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&display=swap');
+        :root {
+            --tarot-bg: #140c21;
+            --tarot-panel: rgba(30, 18, 48, 0.95);
+            --tarot-gold: #cba153;
+            --tarot-gold-dim: #8b6e34;
+            --tarot-text: #e0d5f0;
+            --tarot-glow: rgba(203, 161, 83, 0.4);
+            --card-width: 100px;
+            --card-height: 160px;
+        }
+
+        .tarot-spread-wrapper {
+            position: relative;
+            background: linear-gradient(180deg, var(--tarot-bg) 0%, #0a0512 100%);
+            border: 1px solid var(--tarot-gold-dim);
+            border-radius: 8px;
+            padding: 24px;
+            margin: 20px 0;
+            color: var(--tarot-text);
+            font-family: "Crimson Pro", "Georgia", "PingFang SC", serif;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), inset 0 0 20px rgba(139, 110, 52, 0.15);
+        }
+
+        /* 顶部神秘学 SVG 装饰线 */
+        .tarot-divider {
+            width: 100%;
+            height: 20px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 20' preserveAspectRatio='xMidYMid slice'%3E%3Cpath d='M0 10 L80 10 L90 5 L100 15 L110 5 L120 10 L200 10' stroke='%23cba153' stroke-width='1' fill='none'/%3E%3Ccircle cx='100' cy='10' r='3' fill='%23cba153'/%3E%3C/svg%3E") no-repeat center;
+            margin: 10px 0 20px 0;
+        }
+
+        /* 牌阵区域 */
+        .tarot-cards-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 30px;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        /* 单张卡牌容器与 3D 翻转设定 */
+        .tarot-card-scene {
+            width: var(--card-width);
+            height: var(--card-height);
+            perspective: 1000px;
+        }
+
+        .tarot-card {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transform-style: preserve-3d;
+            cursor: pointer;
+        }
+
+        .tarot-card.is-flipped {
+            transform: rotateY(180deg);
+        }
+
+        /* 牌面与牌背通用样式 */
+        .tarot-card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 6px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+            border: 1px solid var(--tarot-gold-dim);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* SVG 牌背设计 */
+        .tarot-card-back {
+            background-color: #1a1025;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 160' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='4' y='4' width='92' height='152' fill='none' stroke='%238b6e34' stroke-width='1'/%3E%3Cpath d='M50 20 L80 80 L50 140 L20 80 Z' fill='none' stroke='%23cba153' stroke-width='0.5'/%3E%3Ccircle cx='50' cy='80' r='15' fill='none' stroke='%23cba153' stroke-width='1'/%3E%3Ccircle cx='50' cy='80' r='2' fill='%23cba153'/%3E%3Cpath d='M50 65 L50 95 M35 80 L65 80' stroke='%23cba153' stroke-width='0.5'/%3E%3C/svg%3E");
+            background-size: cover;
+        }
+
+        /* 牌面信息 */
+        .tarot-card-front {
+            background: linear-gradient(135deg, #2a1b3d 0%, #170c24 100%);
+            transform: rotateY(180deg);
+            padding: 10px;
+            text-align: center;
+        }
+
+        .tarot-card-position {
+            font-size: 0.8em;
+            color: var(--tarot-gold-dim);
+            margin-bottom: 8px;
+        }
+
+        .tarot-card-name {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: var(--tarot-gold);
+            text-shadow: 0 0 5px var(--tarot-glow);
+        }
+
+        .tarot-card-reversed {
+            font-size: 0.8em;
+            color: #b33939;
+            margin-top: 5px;
+            letter-spacing: 2px;
+        }
+
+        /* 解读文本区域 */
+        .tarot-reading-section {
+            background: var(--tarot-panel);
+            border: 1px solid rgba(203, 161, 83, 0.3);
+            border-radius: 6px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+
+        .tarot-reading-title {
+            color: var(--tarot-gold);
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+        }
+
+        .tarot-reading-title::before {
+            content: "✦";
+            margin-right: 6px;
+            font-size: 0.8em;
+        }
+
+        .tarot-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .tarot-list li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .tarot-list li::before {
+            content: "◇";
+            position: absolute;
+            left: 0;
+            color: var(--tarot-gold-dim);
+        }
+
+        /* Purge 净化按钮 */
+        .tarot-footer {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+        }
+
+        .tarot-btn-purge {
+            background: transparent;
+            border: 1px solid var(--tarot-gold-dim);
+            color: var(--tarot-gold);
+            padding: 6px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: inherit;
+            transition: all 0.3s;
+            font-size: 0.9em;
+        }
+
+        .tarot-btn-purge:hover {
+            background: rgba(203, 161, 83, 0.1);
+            box-shadow: 0 0 10px var(--tarot-glow);
+        }
+
+        /* 隐藏原始数据块 */
+        .tarot-raw-data {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tarot-spread-wrapper">
+        <pre class="tarot-raw-data">
+
+        $1
+
+    </pre>
+
+        <div class="tarot-render-container"></div>
+    </div>
+
+    <script>
+
+        const DB_PATH = {
+            KEY: {
+                EVENT: "Event"
+            }
+        };
+        const K = DB_PATH.KEY;
+        const TarotRenderer = {
+            // 简易 YAML 解析器
+            parseData(rawText) {
+                const lastId = typeof getCurrentMessageId === "function" ? getCurrentMessageId() : -1;
+                //console.log("当前楼层", lastId);
+                const data = {
+                    question: "",
+                    cards: [],
+                    tendency: '',
+                    interpretations: [],
+                    overall: '',
+                    start_floor: lastId
+                };
+
+                const lines = rawText.trim().split('\n').map(l => l.trim());
+                let currentSection = '';
+
+                lines.forEach(line => {
+                    if (!line) return;
+
+                    if (line.startsWith('Kết Quả Bói Toán:')) currentSection = 'cards';
+                    else if (line.startsWith("Câu hỏi:")) {
+                        currentSection = 'question';
+                        data.question = line.replace('Câu hỏi:', '').trim();
+                    }
+                    else if (line.startsWith('Khuynh hướng tổng thể:')) {
+                        currentSection = 'tendency';
+                        data.tendency = line.replace('Khuynh hướng tổng thể:', '').trim();
+                    }
+                    else if (line.startsWith('Giải mã từng lá bài:')) currentSection = 'interpretations';
+                    else if (line.startsWith('Giải mã tổng thể:')) {
+                        currentSection = 'overall';
+                        data.overall = line.replace('Giải mã tổng thể:', '').trim();
+                    }
+                    else if (line.startsWith('-')) {
+                        const content = line.substring(1).trim();
+                        if (currentSection === 'cards') {
+                            // 解析: 过去-0-愚者(正位) -> { pos: '过去', name: '0-愚者', orientation: '正位' }
+                            const match = content.match(/^([^-]+)-(.+?)(?:\((Thuận|Nghịch)\))?$/);
+                            if (match) {
+                                data.cards.push({
+                                    pos: match[1],
+                                    name: match[2],
+                                    orientation: match[3] || 'Thuận'
+                                });
+                            }
+                        } else if (currentSection === 'interpretations') {
+                            data.interpretations.push(content);
+                        }
+                    }
+                });
+                return data;
+            },
+
+            buildHTML(data) {
+                // 构建卡牌 HTML
+                const cardsHTML = data.cards.map((card, index) => `
+          <div class="tarot-card-scene" style="animation-delay: ${index * 0.2}s">
+            <div class="tarot-card">
+              <div class="tarot-card-face tarot-card-back"></div>
+              <div class="tarot-card-face tarot-card-front">
+                <div class="tarot-card-position">${card.pos}</div>
+                <div class="tarot-card-name">${card.name}</div>
+                <div class="tarot-card-reversed">${card.orientation}</div>
+              </div>
+            </div>
+          </div>
+        `).join('');
+
+                // 构建解读列表 HTML
+                const interpretationsHTML = data.interpretations.map(text => `<li>${text}</li>`).join('');
+
+                return `
+          <div class="tarot-divider"></div>
+          <div class="tarot-cards-container">
+            ${cardsHTML}
+          </div>
+
+          <div class="tarot-reading-section">
+            <div class="tarot-reading-title">Câu hỏi</div>
+            <div>${data.question}</div>
+          </div>
+          
+          <div class="tarot-reading-section">
+            <div class="tarot-reading-title">Khuynh hướng tổng thể</div>
+            <div>${data.tendency}</div>
+          </div>
+
+          <div class="tarot-reading-section">
+            <div class="tarot-reading-title">Giải mã từng lá bài</div>
+            <ul class="tarot-list">
+              ${interpretationsHTML}
+            </ul>
+          </div>
+
+          <div class="tarot-reading-section">
+            <div class="tarot-reading-title">Giải mã tổng thể</div>
+            <div>${data.overall}</div>
+          </div>
+
+          <div class="tarot-footer">
+            <button class="tarot-btn-purge" title="Lưu lịch sử vào biến">Lưu ✦ Lịch Sử</button>
+          </div>
+        `;
+            },
+
+            init() {
+                document.querySelectorAll('.tarot-spread-wrapper').forEach(wrapper => {
+                    // 防止重复渲染
+                    if (wrapper.dataset.rendered === 'true') return;
+
+                    const rawDataEl = wrapper.querySelector('.tarot-raw-data');
+                    const renderContainer = wrapper.querySelector('.tarot-render-container');
+
+                    if (!rawDataEl || !renderContainer) return;
+
+                    const parsedData = this.parseData(rawDataEl.textContent);
+                    renderContainer.innerHTML = this.buildHTML(parsedData);
+
+                    // 绑定 Purge 事件 (必须手动点击才清空) 改为记录
+                    const purgeBtn = renderContainer.querySelector('.tarot-btn-purge');
+                    purgeBtn.addEventListener('click', () => {
+
+                        console.log("当前数据", parsedData);
+                        const ranId = "tarot_" + Date.now();
+                        const findMvu = () => {
+                            if (typeof window.Mvu !== 'undefined') return window.Mvu;
+                            if (window.parent && typeof window.parent.Mvu !== 'undefined') return window.parent.Mvu;
+                            return null;
+                        };
+                        let mvuApi = findMvu();
+                        const tarotData = mvuApi.getMvuData({ type: 'message' }).stat_data?.[K.EVENT]?.Vera?.['Kết Quả Bói Toán'];
+                        let shouldAdd = true;
+                        let reason = ""
+                        if (tarotData) {
+                            Object.values(tarotData).forEach((val) => {
+                                if (shouldAdd === false) return;
+                                if (val.question === parsedData.question) {
+                                    shouldAdd = false;
+                                    reason = "Đã tồn tại kết quả bói toán cho câu hỏi này";
+                                }
+                            });
+                        }
+                        if (shouldAdd) {
+                            const basePath = "stat_data";
+                            const eventK = K.EVENT;
+                            insertOrAssignVariables({
+                                [basePath]: {
+                                    [eventK]: {
+                                        Vera: {
+                                            "Kết Quả Bói Toán": {
+                                                [ranId]: parsedData
+                                            }
+                                        }
+                                    }
+                                }
+                            }, { type: 'message' });
+                            toastr.info("Đã lưu");
+                        } else {
+                            alert(reason);
+                        }
+
+                        /*
+                        renderContainer.innerHTML = `
+                          <div class="tarot-divider"></div>
+                          <div style="text-align:center; padding: 40px; color: #8b6e34;">
+                            ✦ 桌面已净化，牌阵已归位 ✦
+                          </div>
+                        `;
+                        */
+                    });
+
+                    // 自动执行翻牌动画
+                    setTimeout(() => {
+                        renderContainer.querySelectorAll('.tarot-card').forEach((card, index) => {
+                            setTimeout(() => {
+                                card.classList.add('is-flipped');
+                            }, index * 400); // 逐张翻开
+                        });
+                    }, 500);
+
+                    wrapper.dataset.rendered = 'true';
+                });
+            }
+        };
+
+        window.addEventListener('DOMContentLoaded', () => {
+            TarotRenderer.init();
+        });
+
+        // /<TarotSpread\s+action="draw">\s*([\s\S]*?)\s*<\/TarotSpread>/g
+        /*
+    <TarotSpread action="draw">
+    问题: 未来的运势
+    占卜结果: 
+      - 过去-0-愚者(正位)
+      - 现在-1-魔术师(逆位)
+      - 未来-2-女祭司(正位)
+    整体倾向: 在混乱与未知的变局中，寻找内在直觉的指引。
+    单独解读:
+      - 过去：愚者象征你曾带着无畏的勇气开启了一段旅程，不受世俗束缚。
+      - 现在：魔术师逆位暗示当前你可能感到资源受限，或者沟通与行动出现了阻碍。
+      - 未来：女祭司表示你需要静下心来，倾听潜意识的声音，答案藏在平静之中。
+    整体解读: 过去的冒险虽然带来了现在的混乱与力不从心，但只要你停止向外索求，转而向内觉察，便能重新掌握命运的丝线。
+    </TarotSpread>
+        */
+    </script>
+</body>
+
+</html>
+```

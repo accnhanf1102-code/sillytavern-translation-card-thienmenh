@@ -1,0 +1,634 @@
+```
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vera Bảng Chiêm Tinh (Bản nâng cấp)</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Crimson+Pro:wght@400;600&family=Lora:wght@400;600&family=Philosopher:wght@400;700&family=Playfair+Display:wght@400;600&display=swap');
+        :root {
+            --primary-bg: #0b1021;
+            --panel-bg: rgba(18, 28, 55, 0.9);
+            --border-color: #3a5082;
+            --text-color: #e2e8f0;
+            --highlight-gold: #d4af37;
+            --accent-blue: #5b7fcc;
+        }
+
+        .vera-dialogue-wrapper {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            background: linear-gradient(135deg, rgba(11, 16, 33, 0.95) 0%, rgba(23, 36, 69, 0.95) 100%);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            /* 整体改为更硬朗的微圆角矩形 */
+            padding: 10px;
+            margin: 20px 0;
+            color: var(--text-color);
+            font-family: "Georgia", "PingFang SC", serif;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6), inset 0 0 15px rgba(91, 127, 204, 0.15);
+            overflow: hidden;
+            /* 防止背景图案溢出 */
+        }
+
+        /* SVG 动态星盘背景 */
+        .vera-astrolabe-bg {
+            position: absolute;
+            right: -40px;
+            bottom: -50px;
+            width: 180px;
+            height: 180px;
+            opacity: 0.15;
+            pointer-events: none;
+            /* 纯手写 SVG 星盘图案，无需外部图片 */
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='50' cy='50' r='45' stroke='%23d4af37' stroke-width='1.5' fill='none' stroke-dasharray='4 4'/%3E%3Ccircle cx='50' cy='50' r='32' stroke='%23d4af37' stroke-width='1' fill='none'/%3E%3Cpath d='M50 5 L50 95 M5 50 L95 50 M18 18 L82 82 M18 82 L82 18' stroke='%23d4af37' stroke-width='0.5'/%3E%3Cpolygon points='50,15 60,40 85,50 60,60 50,85 40,60 15,50 40,40' stroke='%23d4af37' stroke-width='1' fill='none'/%3E%3Ccircle cx='50' cy='50' r='8' stroke='%23d4af37' stroke-width='1' fill='none'/%3E%3C/svg%3E") no-repeat center center;
+            background-size: contain;
+            /* 修改：使用 steps(120) 代替 linear
+      解释：在 30秒 内只计算和渲染 120 次。
+      相当于把帧率从 60 FPS 强行降到了 4 FPS (120步 / 30秒 = 4帧/秒)。
+      这极大地解放了性能，并增加了一种古董星盘的机械齿轮跳动感。
+    */
+            animation: astrolabe-spin 30s steps(30) infinite;
+            z-index: 0;
+            /* 仅保留 will-change 提示浏览器新建 GPU 图层 */
+            will-change: transform;
+        }
+
+        /* 2. 动画类：在动画的起点和终点都严格补齐 translateZ(0) 和 rotate() */
+        @keyframes astrolabe-spin {
+            0% {
+                transform: translateZ(0) rotate(0deg);
+            }
+
+            100% {
+                transform: translateZ(0) rotate(360deg);
+            }
+        }
+
+        /* 头像区域：放大且改为方形 */
+        .vera-avatar-container {
+            flex-shrink: 0;
+            margin-right: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .vera-avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 8px;
+            /* 方形圆角 */
+            border: 2px solid var(--highlight-gold);
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.25), 0 0 0 1px rgba(91, 127, 204, 0.5) inset;
+            background-color: #121c37;
+        }
+
+        /* 头像四角的装饰锚点 */
+        .vera-avatar-container::before,
+        .vera-avatar-container::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            border: 1px solid var(--highlight-gold);
+            background: var(--primary-bg);
+        }
+
+        .vera-avatar-container::before {
+            top: -4px;
+            left: -4px;
+        }
+
+        .vera-avatar-container::after {
+            bottom: 10px;
+            right: -4px;
+        }
+
+        /* 对话内容区域 */
+        .vera-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            z-index: 1;
+        }
+
+        .vera-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+            padding-bottom: 6px;
+        }
+
+        /* 修改：使用 CSS 变量动态接收颜色 */
+        .vera-name {
+            font-size: 1.15em;
+            font-weight: bold;
+            letter-spacing: 2px;
+            transition: color 0.3s ease;
+            color: var(--mood-color, var(--highlight-gold));
+            /* 使用变量，默认占星金 */
+            text-shadow: 0 0 8px currentColor;
+        }
+
+        .vera-star-btn {
+            cursor: pointer;
+            font-size: 1.3em;
+            color: var(--accent-blue);
+            transition: transform 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28), color 0.3s;
+            user-select: none;
+            text-shadow: 0 0 5px rgba(91, 127, 204, 0.5);
+        }
+
+        .vera-star-btn:hover {
+            transform: rotate(90deg) scale(1.2);
+            color: var(--highlight-gold);
+        }
+
+        /* 修改：增加内边距让文本向中间靠拢 */
+        .vera-text {
+            font-size: 1em;
+            line-height: 1.7;
+            word-break: break-all;
+            color: #f1f5f9;
+            /* 修改：将左右内边距从 24px 增加到 32px，防止文本和符号粘连 */
+            padding: 10px 32px;
+            position: relative;
+        }
+
+        /* 新增：利用伪元素自动添加彩色「」符号 */
+        .vera-text::before,
+        .vera-text::after {
+            color: var(--mood-color, var(--highlight-gold));
+            /* 符号颜色跟随mood */
+            font-weight: bolder;
+            font-size: 1.2em;
+            position: absolute;
+            /* 使用绝对定位让符号包围文本块 */
+            /* 新增：利用微小的同色文字阴影，强制在视觉上加粗符号的笔画 */
+            text-shadow: 0 0 1px currentColor, 0 0 1px currentColor;
+        }
+
+        .vera-text::before {
+            content: "「";
+            font-weight: bolder;
+            top: 6px;
+            left: 8px;
+        }
+
+        .vera-text::after {
+            content: "」";
+            font-weight: bolder;
+            bottom: 6px;
+            right: 8px;
+        }
+
+        /* 配置面板 */
+        .vera-config-panel {
+            display: none;
+            position: absolute;
+            top: 55px;
+            right: 20px;
+            width: 440px;
+            max-width: 90vw;
+            background: var(--panel-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 55, 0.5);
+            border-radius: 6px;
+            padding: 16px;
+            z-index: 10;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+            font-size: 0.9em;
+        }
+
+        .vera-config-panel.active {
+            display: block;
+            animation: fadeIn 0.2s ease-out;
+        }
+
+        .vera-config-item {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .vera-config-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .vera-config-item select,
+        .vera-config-item input[type="checkbox"] {
+            background: var(--primary-bg);
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 4px 8px;
+            outline: none;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px) scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .vera-avatar {
+                width: 100px;
+                height: 100px;
+            }
+
+            .vera-dialogue-wrapper {
+                padding: 15px;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+  <div class="vera-dialogue-wrapper" data-form="红月" data-mood="诱惑">
+    <div class="vera-astrolabe-bg"></div> <div class="vera-avatar-container">
+      <img class="vera-avatar" src="" alt="avatar" />
+    </div>
+    <div class="vera-content">
+      <div class="vera-header">
+        <span class="vera-name">Vera ✦ <span class="vera-form-display">红月</span></span>
+        <span class="vera-star-btn" title="Cài đặt lõi hệ thống">&#10022;</span>
+      </div>
+      <div class="vera-text">
+        Ngươi đang mong chờ điều gì sao? Kết quả chiêm tinh chưa chắc đã như ngươi mong muốn đâu...Ngươi đang mong chờ điều gì sao? Kết quả chiêm tinh chưa chắc đã như ngươi mong muốn đâu...
+        Ngươi đang mong chờ điều gì sao? Kết quả chiêm tinh chưa chắc đã như ngươi mong muốn đâu...
+        Ngươi đang mong chờ điều gì sao? Kết quả chiêm tinh chưa chắc đã như ngươi mong muốn đâu...
+        Ngươi đang mong chờ điều gì sao? Kết quả chiêm tinh chưa chắc đã như ngươi mong muốn đâu...
+        Ngươi đang mong chờ điều gì sao? Kết quả chiêm tinh chưa chắc đã như ngươi mong muốn đâu...
+      </div>
+    </div>
+    
+    <div class="vera-config-panel">
+      <div class="vera-config-item">
+        <label>Khóa hệ thống</label>
+        <input type="checkbox" class="vera-lock-checkbox">
+      </div>
+      <div class="vera-config-item">
+        <label>Hình thái</label>
+        <select class="vera-form-select">
+          <option value="银月">Ngân Nguyệt (Silver)</option>
+          <option value="红月">Hồng Nguyệt (Crimson)</option>
+          <option value="黄月">Hoàng Nguyệt (Amber)</option>
+        </select>
+      </div>
+    <div class="vera-config-item">
+                <label>Phông chữ</label>
+                <select class="vera-font-select">
+                    <option value="Cormorant Garamond">Cormorant Garamond</option>
+                    <option value="Playfair Display">Playfair Display</option>
+                    <option value="Crimson Pro">Crimson Pro</option>
+                    <option value="Lora">Lora</option>
+                    <option value="Philosopher">Philosopher</option>
+                </select>
+            </div>
+        </div>
+  </div>
+
+  <div class="vera-dialogue-wrapper" data-form="银月" data-mood="神秘">
+    <div class="vera-astrolabe-bg"></div>
+    <div class="vera-avatar-container">
+      <img class="vera-avatar" src="" alt="avatar" />
+    </div>
+    <div class="vera-content">
+      <div class="vera-header">
+        <span class="vera-name">Vera ✦ <span class="vera-form-display">银月</span></span>
+        <span class="vera-star-btn" title="Cài đặt lõi hệ thống">&#10022;</span>
+      </div>
+      <div class="vera-text">
+            Quỹ đạo vận mệnh đã hiển hiện, Thời Chi Môn đang mở ra cho bạn.
+      </div>
+    </div>
+    
+    <div class="vera-config-panel">
+      <div class="vera-config-item">
+        <label>Khóa hệ thống</label>
+        <input type="checkbox" class="vera-lock-checkbox">
+      </div>
+      <div class="vera-config-item">
+        <label>Hình thái</label>
+        <select class="vera-form-select">
+          <option value="银月">Ngân Nguyệt (Silver)</option>
+          <option value="红月">Hồng Nguyệt (Crimson)</option>
+          <option value="黄月">Hoàng Nguyệt (Amber)</option>
+        </select>
+      </div>
+    <div class="vera-config-item">
+                <label>Phông chữ</label>
+                <select class="vera-font-select">
+                    <option value="Cormorant Garamond">Cormorant Garamond</option>
+                    <option value="Playfair Display">Playfair Display</option>
+                    <option value="Crimson Pro">Crimson Pro</option>
+                    <option value="Lora">Lora</option>
+                    <option value="Philosopher">Philosopher</option>
+                </select>
+            </div>
+        </div>
+  </div>
+-->
+    <div class="vera-dialogue-wrapper" data-form="$1" data-mood="$2">
+        <div class="vera-astrolabe-bg"></div>
+        <div class="vera-avatar-container">
+            <img class="vera-avatar" src="" alt="avatar" />
+        </div>
+        <div class="vera-content">
+            <div class="vera-header">
+                <span class="vera-name">Vera ✦ <span class="vera-form-display">"$1"</span></span>
+                <span class="vera-star-btn" title="Cài đặt lõi hệ thống">&#10022;</span>
+            </div>
+            <div class="vera-text">$3</div>
+        </div>
+
+        <div class="vera-config-panel">
+            <div class="vera-config-item">
+                <label>Khóa hệ thống</label>
+                <input type="checkbox" class="vera-lock-checkbox">
+            </div>
+            <div class="vera-config-item">
+                <label>Hình thái</label>
+                <select class="vera-form-select">
+                    <option value="银月">Ngân Nguyệt (Silver)</option>
+                    <option value="红月">Hồng Nguyệt (Crimson)</option>
+                    <option value="黄月">Hoàng Nguyệt (Amber)</option>
+                </select>
+            </div>
+            <div class="vera-config-item">
+                <label>Phông chữ</label>
+                <select class="vera-font-select">
+                    <option value="Cormorant Garamond">Cormorant Garamond</option>
+                    <option value="Playfair Display">Playfair Display</option>
+                    <option value="Crimson Pro">Crimson Pro</option>
+                    <option value="Lora">Lora</option>
+                    <option value="Philosopher">Philosopher</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        const IS_LOCAL = true;
+        const prefix = "core_vera";
+
+        // --- 1. 情绪色彩配置字典 ---
+        const MoodColors = {
+            '神秘': '#9b59b6', // 深紫
+            '微笑': '#81ecec', // 青绿
+            '慵懒': '#b2bec3', // 灰蓝
+            '诱惑': '#ff7675', // 粉红
+            '狂热': '#d63031', // 鲜红
+            '戏谑': '#fdcb6e', // 橙黄
+            '虚无': '#dfe6e9', // 灰白
+            '嫌弃': '#a29bfe', // 淡紫
+            '愉悦': '#ffeaa7', // 明黄
+            '期待': '#55efc4', // 亮绿
+            '惊讶': '#00cec9', // 青色
+            '疑惑': '#6c5ce7', // 靛蓝
+            '默认': '#d4af37'  // 占星金
+        };
+        const picUrlConfig = {
+            "银月": {
+                '微笑': "",
+                '慵懒': '#b2bec3', // 灰蓝
+                '诱惑': '#ff7675', // 粉红
+                '狂热': '#d63031', // 鲜红
+                '虚无': '#dfe6e9', // 灰白
+                '嫌弃': '#a29bfe', // 淡紫
+                '疑惑': '#6c5ce7', // 靛蓝
+            },
+            "黄月": {
+                '微笑': "",
+                '慵懒': '#b2bec3', // 灰蓝
+                '诱惑': '#ff7675', // 粉红
+                '狂热': '#d63031', // 鲜红
+                '虚无': '#dfe6e9', // 灰白
+                '嫌弃': '#a29bfe', // 淡紫
+                '疑惑': '#6c5ce7', // 靛蓝
+            },
+            "红月": {
+                '神秘': '#9b59b6', // 深紫
+                '微笑': "",
+                '慵懒': '#b2bec3', // 灰蓝
+                '诱惑': '#ff7675', // 粉红
+                '狂热': '#d63031', // 鲜红
+                '虚无': '#dfe6e9', // 灰白
+                '嫌弃': '#a29bfe', // 淡紫
+                '疑惑': '#6c5ce7', // 靛蓝
+            }
+        };
+        // 1. 内存中的持久化状态管理
+        const VeraConfigStore = {
+            state: {
+                isLocked: false,
+                currentForm: '银月',
+                currentFont: 'Cormorant Garamond'
+            },
+            load() {
+                // 后续如果需要真正的持久化（如 localStorage），可在这里实现
+                //const saved = localStorage.getItem('vera_config');
+                // if(saved) this.state = JSON.parse(saved);
+                const saved = typeof getVariables === "function" ? getVariables({ type: 'chat' }).Vera?.state : null;
+                if (saved) {
+                    this.state = saved;
+                    if (!this.state.currentFont) this.state.currentFont = 'Cormorant Garamond';
+                } else {
+                    if (typeof insertOrAssignVariables === "function")
+                        insertOrAssignVariables({ Vera: { state: { isLocked: false, currentForm: "银月", currentFont: "Cormorant Garamond" } } }, { type: 'chat' });
+                }
+            },
+            save() {
+                // localStorage.setItem('vera_config', JSON.stringify(this.state));
+                //console.log("配置已保存在内存中:", this.state);
+                if (typeof insertOrAssignVariables === "function")
+                    insertOrAssignVariables({ Vera: { state: this.state } }, { type: 'chat' });
+                // 配置更新后，刷新页面上所有对话框的渲染
+                VeraRenderer.syncPanels();
+            }
+        };
+
+        class CreateUserMessageInputer {
+            constructor() {
+            }
+            sendMessage(content, send = false) {
+                console.log(content);
+            }
+        }
+
+        const messageInputer = new CreateUserMessageInputer();
+
+        
+        const FORM_MAP = {
+            'Ngân Nguyệt': '银月',
+            'Hồng Nguyệt': '红月',
+            'Hoàng Nguyệt': '黄月'
+        };
+        const FORM_DISPLAY_MAP = {
+            '银月': 'Ngân Nguyệt',
+            '红月': 'Hồng Nguyệt',
+            '黄月': 'Hoàng Nguyệt'
+        };
+
+        // 2. 核心渲染与图像链接生成逻辑
+        const VeraRenderer = {
+            validForms: ['银月', '红月', '黄月'],
+            validMoods: Object.keys(MoodColors),
+
+            // 图像链接生成器
+            getAvatarUrl(form, mood) {
+                let finalForm = this.validForms.includes(form) ? form : '银月';
+                let finalMood = this.validMoods.includes(mood) ? mood : '微笑';
+                console.log("最终形态", finalForm, finalMood);
+                if (!IS_LOCAL) return picUrlConfig[finalForm][finalMood];
+                // 判定配置面板覆盖逻辑
+                /*
+                if (VeraConfigStore.state.isLocked) {
+                  finalForm = VeraConfigStore.state.currentForm;
+                }
+                */
+                // 目前配置为本地前缀，后续可以平滑更改为网络 URL
+                const basePath = "asset/image/avatar";
+                console.log("路径", `${prefix}/${basePath}/${finalForm}-${finalMood}.png`);
+                return `${prefix}/${basePath}/${finalForm}-${finalMood}.png`;
+            },
+
+            // 获取最终应该显示的形态文字
+            getDisplayForm(form) {
+                let internalForm = form;
+                if (VeraConfigStore.state.isLocked) {
+                    internalForm = VeraConfigStore.state.currentForm;
+                } else {
+                    let mapped = FORM_MAP[form] || form;
+                    internalForm = this.validForms.includes(mapped) ? mapped : '银月';
+                }
+                return FORM_DISPLAY_MAP[internalForm] || internalForm;
+            },
+
+            // 初始化所有对话框
+            initAll() {
+
+                VeraConfigStore.load();
+                document.querySelectorAll('.vera-dialogue-wrapper').forEach(wrapper => {
+                    const rawForm = wrapper.getAttribute('data-form');
+                    const rawMood = wrapper.getAttribute('data-mood');
+
+                    const internalForm = FORM_MAP[rawForm] || rawForm;
+                    const finalForm = this.validForms.includes(internalForm) ? internalForm : '银月';
+                    const finalMood = this.validMoods.includes(rawMood) ? rawMood : '微笑';
+
+                    // 设置头像
+                    const imgEl = wrapper.querySelector('.vera-avatar');
+                    if (imgEl) {
+                        imgEl.src = this.getAvatarUrl(finalForm, finalMood);
+                    }
+
+                    // 设置文本和颜色
+                    const nameEl = wrapper.querySelector('.vera-name');
+                    const formTextEl = wrapper.querySelector('.vera-form-display');
+
+                    if (formTextEl) formTextEl.textContent = FORM_DISPLAY_MAP[finalForm] || finalForm;
+
+                    // 获取情绪颜色，并将该颜色作为 CSS 变量赋予整个 wrapper 容器
+                    const targetColor = MoodColors[finalMood] || MoodColors['默认'];
+                    wrapper.style.setProperty('--mood-color', targetColor);
+
+                    // 初始化面板事件
+                    this.bindPanelEvents(wrapper);
+                });
+
+                // 初始化面板数值
+                this.syncPanels();
+            },
+
+            // 绑定每个面板的交互
+            bindPanelEvents(wrapper) {
+                const starBtn = wrapper.querySelector('.vera-star-btn');
+                const panel = wrapper.querySelector('.vera-config-panel');
+                const lockCheckbox = wrapper.querySelector('.vera-lock-checkbox');
+                const formSelect = wrapper.querySelector('.vera-form-select');
+                const fontSelect = wrapper.querySelector('.vera-font-select');
+
+                // 星星点击事件
+                starBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    document.querySelectorAll('.vera-config-panel.active').forEach(p => {
+                        if (p !== panel) p.classList.remove('active');
+                    });
+                    panel.classList.toggle('active');
+                });
+
+                // 监听修改并保存到全局 Store
+                lockCheckbox.addEventListener('change', (e) => {
+                    VeraConfigStore.state.isLocked = e.target.checked;
+                    VeraConfigStore.save();
+                });
+
+                formSelect.addEventListener('change', (e) => {
+                    VeraConfigStore.state.currentForm = e.target.value;
+                    VeraConfigStore.save();
+                });
+
+                if (fontSelect) {
+                    fontSelect.addEventListener('change', (e) => {
+                        VeraConfigStore.state.currentFont = e.target.value;
+                        VeraConfigStore.save();
+                    });
+                }
+            },
+
+            // 仅同步各个对话框中的下拉框和复选框状态，不改变已经渲染的头像
+            syncPanels() {
+                document.querySelectorAll('.vera-dialogue-wrapper').forEach(wrapper => {
+                    const lockCheckbox = wrapper.querySelector('.vera-lock-checkbox');
+                    const formSelect = wrapper.querySelector('.vera-form-select');
+                    if (lockCheckbox) lockCheckbox.checked = VeraConfigStore.state.isLocked;
+                    if (formSelect) formSelect.value = VeraConfigStore.state.currentForm;
+                    const fontSelect = wrapper.querySelector('.vera-font-select');
+                    if (fontSelect) fontSelect.value = VeraConfigStore.state.currentFont || "Cormorant Garamond";
+                    // Cập nhật font cho toàn bộ wrapper
+                    wrapper.style.fontFamily = `"${VeraConfigStore.state.currentFont || 'Cormorant Garamond'}", "Georgia", "PingFang SC", serif`;
+                });
+            }
+        };
+
+        // 全局点击关闭面板
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.vera-config-panel') && !e.target.closest('.vera-star-btn')) {
+                document.querySelectorAll('.vera-config-panel.active').forEach(p => {
+                    p.classList.remove('active');
+                });
+            }
+        });
+
+        // 页面加载完成后执行首次渲染
+        window.addEventListener('DOMContentLoaded', () => {
+            VeraRenderer.initAll();
+        });
+        ///<Vera\s+form="([^"]*)"\s+mood="([^"]*)">\s*([\s\S]*?)\s*<\/Vera>/g
+        //# sourceURL=my_core_vera.js
+    </script>
+</body>
+
+</html>
+```

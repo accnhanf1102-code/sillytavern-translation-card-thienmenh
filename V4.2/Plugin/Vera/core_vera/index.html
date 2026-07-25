@@ -1,0 +1,2905 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue 3 交互式 3D 卡片</title>
+    <script src="./src/vue.global.js"></script>
+
+    <style>
+        /* 基础页面样式 */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #121212;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        #app {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* === 卡片核心变量 === */
+        :root {
+            --card-width: 320px;
+            --card-height: 460px;
+            --primary-color: #d4af37;
+            /* 卡片主题色：金色 */
+        }
+
+        /* === 3D 容器 === */
+        /* 修改: 移除绝对宽高，采用自适应和最大值限制 */
+        .card-container {
+            /* 初始限制大小，等图片加载后会动态应用 aspect-ratio  max-width: 90vw; max-height: 85vh;*/
+
+            perspective: 1200px;
+            cursor: pointer;
+            /* 居中对齐内容 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* === 倾斜层 (由 JS 动态控制) === */
+        .card-tilt {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            will-change: transform;
+            /* 开启硬件加速，保证丝滑 */
+        }
+
+        /* 翻转层：独立于倾斜层，确保关闭 3D 时也能工作 */
+        .card-flip {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+        }
+
+        .card-flip.is-flipped {
+            transform: rotateY(180deg);
+        }
+
+        /* === 卡片正反面通用样式 === */
+        /* 修改: 正面与背面现在仅用于包裹图片 */
+        .card-face {
+            position: absolute;
+            inset: 0;
+            backface-visibility: hidden;
+            border-radius: 12px;
+            /* 塔罗牌圆角通常较小 */
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            background-color: transparent;
+            background-color: #121212;
+            /* 给牌面一个基础底色 */
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            /* 保证图片不畸形 */
+            display: block;
+        }
+
+        /* === 正面视觉设计 === */
+        .face-front {
+            background: linear-gradient(135deg, #2a2a35 0%, #1a1a24 100%);
+            display: flex;
+            flex-direction: column;
+            padding: 24px;
+            box-sizing: border-box;
+            color: white;
+        }
+
+        .card-header {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 12px;
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        .card-type {
+            font-size: 12px;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .card-image-placeholder {
+            flex: 1;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 14px;
+        }
+
+        .card-description {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #a0a0b0;
+        }
+
+        /* 背面容器：居中显示 SVG */
+        .face-back {
+            transform: rotateY(180deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* 添加一些深邃的背景渐变和暗纹 */
+            background: radial-gradient(circle at 50% 50%, #1a1a24 0%, #0d0d12 100%);
+            border: 2px solid #d4af37;
+        }
+
+        .back-logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 4px solid var(--primary-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 20px;
+            background-color: #121212;
+        }
+
+        /* 修改: 七彩全息反光层 (Holographic Foil Effect) */
+        .glare {
+            position: absolute;
+            inset: 0;
+            /* 七彩渐变带，模拟光栅效果 */
+            /* 极窄的高光带，模拟锋利的折射光 */
+            background: linear-gradient(105deg,
+                    transparent 35%,
+                    rgba(255, 100, 100, 0.15) 43%,
+                    rgba(255, 255, 100, 0.15) 46%,
+                    rgba(100, 255, 100, 0.15) 49%,
+                    rgba(100, 255, 255, 0.15) 52%,
+                    rgba(100, 100, 255, 0.15) 55%,
+                    transparent 63%);
+            /* 放大背景尺寸以便于移动 */
+            background-size: 300% 300%;
+            mix-blend-mode: color-dodge;
+            /* 使用颜色减淡以防止覆盖原图黑色部分 */
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.4s ease;
+            z-index: 10;
+        }
+
+        /* 外部控制面板样式 */
+        .controls-panel {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: rgba(30, 30, 30, 0.8);
+            padding: 15px;
+            border-radius: 8px;
+            color: white;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* ==========================================
+        新增: 悬浮球、主面板、概览视图样式
+        ========================================== */
+        .floating-sphere {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            /* 深空蓝到青蓝的渐变 */
+            background: radial-gradient(circle at 30% 30%, #00f0ff, #0051ff, #0a0a2a);
+            box-shadow: 0 4px 15px rgba(0, 81, 255, 0.6), inset 0 -4px 10px rgba(0, 0, 0, 0.5);
+            cursor: grab;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            text-shadow: 0 0 5px #00f0ff;
+            font-weight: bold;
+            user-select: none;
+            touch-action: none;
+        }
+
+        .floating-sphere:active {
+            cursor: grabbing;
+        }
+
+        /* 修改: 主面板边缘与阴影转为蓝色系 */
+        .main-window {
+            position: fixed;
+            inset: 5vh 5vw;
+            background: rgba(10, 10, 20, 0.95);
+            /* 更深的星空黑 */
+            border: 1px solid rgba(0, 150, 255, 0.4);
+            border-radius: 16px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 20, 50, 0.9), 0 0 20px rgba(0, 150, 255, 0.1) inset;
+        }
+
+        .window-header {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-bottom: 1px solid rgba(0, 150, 255, 0.2);
+        }
+
+        .tabs button {
+            background: transparent;
+            color: #aaa;
+            border: none;
+            font-size: 16px;
+            margin-right: 20px;
+            cursor: pointer;
+            padding-bottom: 5px;
+        }
+
+        .tabs button.active {
+            color: #00f0ff;
+            border-bottom: 2px solid #00f0ff;
+        }
+
+        .close-btn {
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .window-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+        }
+
+        /* 概览网格 */
+        .overview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 25px;
+        }
+
+        .thumbnail-card {
+            display: flex;
+            flex-direction: column;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .thumbnail-img {
+            width: 100%;
+            aspect-ratio: 1 / 1.5;
+            object-fit: cover;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            background: #000;
+        }
+
+        .thumbnail-img:hover {
+            transform: scale(1.05) translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 150, 255, 0.4);
+        }
+
+        .card-controls {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .card-controls select {
+            background: #222;
+            color: #fff;
+            border: 1px solid #444;
+            border-radius: 4px;
+            padding: 4px;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+            color: white;
+        }
+
+        .pagination button {
+            background: #333;
+            color: white;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .pagination button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* 详情弹窗 (接管原本的舞台全屏显示) */
+        .detail-modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 2000;
+            display: flex;
+        }
+
+        /* ==========================================
+        新增: 遮罩层与总览控制栏样式
+        ========================================== */
+        .main-backdrop {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            z-index: 999;
+        }
+
+        .overview-controls-bar {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            color: #fff;
+            background: rgba(0, 150, 255, 0.1);
+            padding: 12px 18px;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 150, 255, 0.2);
+            font-size: 14px;
+        }
+
+        /* ==========================================
+   新增: 详情面板控制栏折叠样式
+   ========================================== */
+        .detail-controls-wrapper {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 2010;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .controls-toggle-btn {
+            background: rgba(0, 150, 255, 0.1);
+            border: 1px solid rgba(0, 150, 255, 0.4);
+            color: #00f0ff;
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            backdrop-filter: blur(4px);
+            transition: all 0.3s;
+        }
+
+        .controls-toggle-btn:hover {
+            background: rgba(0, 150, 255, 0.3);
+            box-shadow: 0 0 10px rgba(0, 150, 255, 0.4);
+        }
+
+        .detail-controls-panel {
+            background: rgba(10, 10, 20, 0.9);
+            border: 1px solid rgba(0, 150, 255, 0.3);
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            color: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+        }
+
+        /* ==========================================
+   修改: 占卜面板响应式布局 (适配小屏)
+   ========================================== */
+        .divination-board {
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 允许在小屏幕上向下滚动，而不是隐藏截断 */
+            justify-content: flex-start;
+            padding-top: 30px;
+            padding-bottom: 50px;
+            overflow-y: auto;
+        }
+
+        /* 幽暗的背景层 */
+        .divination-bg {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.5;
+            /* 调低亮度作为背景 */
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* 控制台栏 */
+        .divination-controls {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            flex-wrap: wrap;
+            /* 核心：允许控制项自动换行 */
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 30px;
+            background: rgba(0, 20, 40, 0.7);
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 150, 255, 0.4);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(8px);
+            width: 90%;
+            /* 防止在大屏上拉得太长，在小屏上留出边距 */
+            max-width: 800px;
+        }
+
+        .divination-controls select,
+        .divination-controls input {
+            background: rgba(10, 10, 20, 0.8);
+            color: #00f0ff;
+            border: 1px solid rgba(0, 150, 255, 0.5);
+            border-radius: 6px;
+            padding: 6px 12px;
+            max-width: 100%;
+            /* 防止输入框撑破屏幕 */
+        }
+
+        .divination-btn {
+            background: rgba(0, 150, 255, 0.2);
+            color: #fff;
+            border: 1px solid #00f0ff;
+            padding: 3px 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .divination-btn:hover {
+            background: rgba(0, 150, 255, 0.5);
+            box-shadow: 0 0 10px #00f0ff;
+        }
+
+        .divination-btn-danger {
+            border-color: #ff4444;
+            color: #ff4444;
+        }
+
+        .divination-btn-danger:hover {
+            background: rgba(255, 68, 68, 0.2);
+            box-shadow: 0 0 10px #ff4444;
+        }
+
+        /* ==========================================
+   修改: 占卜台牌面大小样式
+   ========================================== */
+        .spread-slots {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            gap: 5vw;
+            /* 从固定的 40px 改为动态视口宽度，防止大牌重叠 */
+            flex-wrap: wrap;
+            /* 屏幕较窄时允许换行 */
+            justify-content: center;
+        }
+
+        .slot-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .slot-label {
+            color: #00f0ff;
+            font-size: 16px;
+            letter-spacing: 2px;
+            text-shadow: 0 0 5px rgba(0, 150, 255, 0.5);
+        }
+
+        .slot-frame {
+            /* 从 180px 改为响应式大小，显著放大牌面 */
+            width: 18vw;
+            max-width: 280px;
+            min-width: 180px;
+
+            aspect-ratio: 1 / 1.5;
+            border: 2px dashed rgba(0, 150, 255, 0.2);
+            border-radius: 12px;
+            position: relative;
+            perspective: 1000px;
+        }
+
+        /* 抽牌与翻转动画 */
+        .divi-card {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.8s cubic-bezier(0.4, 0.2, 0.2, 1);
+        }
+
+        .divi-card.is-flipped {
+            transform: rotateY(180deg);
+        }
+
+        .divi-face {
+            position: absolute;
+            inset: 0;
+            backface-visibility: hidden;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(0, 150, 255, 0.3);
+            overflow: hidden;
+        }
+
+        /* 牌背复用样式 */
+        .divi-back {
+            background: radial-gradient(circle at 50% 50%, #1a1a24 0%, #0d0d12 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 牌面样式 (包含逆位旋转) */
+        .divi-front {
+            transform: rotateY(180deg);
+            background: #000;
+        }
+
+        .divi-front img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .is-reversed img {
+            transform: rotateZ(180deg);
+        }
+
+        /* 逆位图像翻转 */
+
+        /* 进场动画 */
+        .deal-enter-active {
+            transition: all 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        .deal-enter-from {
+            opacity: 0;
+            transform: translateY(100px) scale(0.5);
+        }
+
+        .deal-enter-to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        /* 美化版悬浮寓意框 */
+        .meaning-tooltip {
+            position: absolute;
+            bottom: -90px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 220px;
+            background: rgba(5, 10, 20, 0.9);
+            border: 1px solid rgba(0, 150, 255, 0.6);
+            padding: 12px;
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8), 0 0 15px rgba(0, 150, 255, 0.2) inset;
+            color: #ddd;
+            font-size: 13px;
+            line-height: 1.5;
+            text-align: center;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s;
+            z-index: 20;
+        }
+
+        .meaning-tooltip .title {
+            color: #00f0ff;
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .slot-frame:hover .meaning-tooltip {
+            opacity: 1;
+        }
+
+
+
+        /* ==========================================
+           新增: 占卜历史记录模态框样式 (神秘学风格)
+           ========================================== */
+        .divi-history-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(5, 5, 15, 0.85);
+            backdrop-filter: blur(8px);
+            z-index: 50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .divi-history-content {
+            background: linear-gradient(180deg, rgba(15, 15, 30, 0.95), rgba(5, 5, 15, 0.95));
+            border: 1px solid rgba(138, 43, 226, 0.5); /* 神秘紫边框 */
+            border-radius: 12px;
+            width: 100%;
+            max-width: 800px;
+            max-height: 90%;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 0 40px rgba(138, 43, 226, 0.2), inset 0 0 20px rgba(0, 150, 255, 0.1);
+        }
+
+        .divi-history-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 25px;
+            border-bottom: 1px solid rgba(138, 43, 226, 0.3);
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 12px 12px 0 0;
+        }
+
+        .divi-history-title {
+            color: #d4af37;
+            font-size: 20px;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+            margin: 0;
+        }
+
+        .divi-history-body {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(138, 43, 226, 0.5) rgba(10, 10, 20, 0.3);
+        }
+
+        /* 针对 Webkit 内核的滚动条微调 */
+        .divi-history-body::-webkit-scrollbar { width: 6px; }
+        .divi-history-body::-webkit-scrollbar-track { background: rgba(10, 10, 20, 0.3); }
+        .divi-history-body::-webkit-scrollbar-thumb { background: rgba(138, 43, 226, 0.4); border-radius: 4px; }
+        
+        /* 修改: 为占卜历史卡片添加相对定位，以便定位右上角删除键 */
+        .divi-history-card {
+            position: relative; /* 新增 */
+            background: rgba(20, 20, 40, 0.6);
+            border: 1px solid rgba(0, 150, 255, 0.2);
+            border-left: 3px solid #8a2be2;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            transition: all 0.3s;
+        }
+
+        .divi-history-card:hover {
+            box-shadow: 0 5px 15px rgba(138, 43, 226, 0.2);
+            border-color: rgba(138, 43, 226, 0.5);
+        }
+
+        .divi-h-question {
+            color: #00f0ff;
+            font-size: 16px;
+            margin-bottom: 12px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .divi-h-cards {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+
+        .divi-h-card-item {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 13px;
+            color: #ddd;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .divi-h-tendency {
+            color: #d4af37;
+            font-size: 14px;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        .divi-h-interpretations {
+            color: #aaa;
+            font-size: 13px;
+            line-height: 1.6;
+            margin-bottom: 12px;
+            padding-left: 10px;
+            border-left: 2px dashed rgba(255, 255, 255, 0.1);
+        }
+
+        .divi-h-overall {
+            background: rgba(138, 43, 226, 0.1);
+            padding: 12px;
+            border-radius: 6px;
+            color: #eee;
+            font-size: 14px;
+            line-height: 1.5;
+            border: 1px dashed rgba(138, 43, 226, 0.3);
+        }
+
+        /* ==========================================
+   新增: 时间之门 (厚重、历史感) 样式
+   ========================================== */
+        .timegate-board {
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            color: #e0d6c8;
+            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+            /* 古典衬线体 */
+            overflow: hidden;
+        }
+
+        .tg-bg {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.45;
+            z-index: 0;
+            pointer-events: none;
+            /* 2. 减弱复古滤镜的强度，让原图细节更清晰，稍微压暗防止刺眼 */
+            filter: sepia(0.2) contrast(1.1) brightness(0.8);
+        }
+
+        .tg-header {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: linear-gradient(to right, rgba(20, 15, 10, 0.9), rgba(40, 30, 20, 0.7), rgba(20, 15, 10, 0.9));
+            border-bottom: 2px solid #8a755d;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+        }
+
+        .tg-title {
+            font-size: 24px;
+            color: #d4af37;
+            letter-spacing: 4px;
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+            margin: 0;
+        }
+
+        .tg-refresh-btn {
+            background: rgba(138, 117, 93, 0.2);
+            color: #d4af37;
+            border: 1px solid #8a755d;
+            padding: 8px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .tg-refresh-btn:hover {
+            background: rgba(212, 175, 55, 0.2);
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+        }
+
+        .tg-refresh-btn:disabled {
+            opacity: 0.5;
+            cursor: wait;
+        }
+
+        /* 响应式布局：小屏上下，大屏左右 */
+        .tg-layout {
+            position: relative;
+            z-index: 10;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        @media (min-width: 900px) {
+            .tg-layout {
+                flex-direction: row;
+                overflow-y: hidden;
+            }
+        }
+
+        .tg-pane {
+            flex: 1;
+            /* 3. 降低面板自身底色的不透明度，从 0.85 降至 0.6 */
+            background: rgba(20, 15, 12, 0.6);
+            border: 1px solid #5c4b37;
+            border-radius: 8px;
+            box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.8), 0 10px 20px rgba(0, 0, 0, 0.6);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+
+        }
+
+        .tg-pane-right {
+            flex: 0.8;
+        }
+
+        /* 历史记录稍微窄一点 */
+
+        .tg-pane-title {
+            text-align: center;
+            padding: 12px;
+            background: rgba(0, 0, 0, 0.6);
+            border-bottom: 1px dashed #5c4b37;
+            color: #cda776;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+
+        .tg-content-scroll {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            scrollbar-width: thin;
+            scrollbar-color: #5c4b37 #140f0c;
+        }
+
+        /* 节点详情排版 */
+        .tg-section {
+            margin-bottom: 25px;
+        }
+
+        .tg-section-title {
+            color: #d4af37;
+            font-size: 16px;
+            border-left: 3px solid #d4af37;
+            padding-left: 10px;
+            margin-bottom: 15px;
+        }
+
+        .tg-kv {
+            display: flex;
+            margin-bottom: 8px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .tg-k {
+            color: #e0be98;
+            width: 100px;
+            flex-shrink: 0;
+        }
+
+        .tg-v {
+            color: #e0d6c8;
+        }
+
+        .tg-log-day {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(138, 117, 93, 0.3);
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+
+        .tg-log-title {
+            color: #cda776;
+            margin-bottom: 8px;
+            font-style: italic;
+        }
+
+        .tg-list {
+            margin: 0;
+            padding-left: 20px;
+            color: #bbb;
+            font-size: 13.5px;
+        }
+
+        .tg-list li {
+            margin-bottom: 5px;
+        }
+
+        .tg-butterfly {
+            color: #9a8c98;
+            margin-top: 8px;
+            border-top: 1px dashed #444;
+            padding-top: 8px;
+        }
+
+        /* 历史节点缩略卡片 */
+        .tg-history-card {
+            background: linear-gradient(135deg, rgba(30, 25, 20, 0.9), rgba(15, 12, 10, 0.9));
+            border: 1px solid #5c4b37;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .tg-history-card:hover {
+            border-color: #d4af37;
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.15);
+            transform: translateX(5px);
+        }
+
+        .tg-history-card::before {
+            content: '📜';
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            opacity: 0.5;
+            font-size: 24px;
+        }
+
+        /* 历史详情模态框 */
+        .tg-modal-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(4px);
+            z-index: 50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .tg-modal-content {
+            background: rgba(20, 15, 12, 0.95);
+            border: 2px solid #8a755d;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 800px;
+            max-height: 90%;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
+        }
+
+        .tg-modal-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background: none;
+            border: none;
+            color: #8a755d;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        .tg-modal-close:hover {
+            color: #d4af37;
+        }
+
+        /* 新增: 统一的右上角删除按钮样式 */
+        .tg-delete-btn, .divi-delete-btn {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: transparent;
+            border: none;
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 18px;
+            cursor: pointer;
+            line-height: 1;
+            padding: 2px 6px;
+            border-radius: 4px;
+            transition: all 0.2s;
+            z-index: 10; /* 确保层级在卡片装饰图标之上 */
+        }
+        .tg-delete-btn:hover, .divi-delete-btn:hover {
+            color: #ff4444;
+            background: rgba(255, 68, 68, 0.15);
+        }
+
+        /* ==========================================
+   新增: 历史档案显隐控制按钮样式
+   ========================================== */
+        .tg-visibility-toggle {
+            position: absolute;
+            bottom: 12px;
+            right: 15px;
+            background: rgba(20, 15, 12, 0.8);
+            border: 1px solid #5c4b37;
+            color: #8a755d;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            cursor: pointer;
+            z-index: 2;
+            /* 确保层级高于卡片本身，避免被覆盖 */
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .tg-visibility-toggle:hover {
+            color: #d4af37;
+            border-color: #d4af37;
+        }
+
+        .tg-visibility-toggle.is-visible {
+            color: #d4af37;
+            border-color: #d4af37;
+            background: rgba(212, 175, 55, 0.1);
+            box-shadow: 0 0 8px rgba(212, 175, 55, 0.2);
+        }
+
+
+        /* ==========================================
+   新增: 全局与面板自定义滚动条 (幽蓝风格)
+   ========================================== */
+
+        /* 针对 Firefox 的标准属性 */
+        .window-content,
+        .divination-board {
+            scrollbar-width: thin;
+            scrollbar-color: rgba(0, 150, 255, 0.5) rgba(10, 10, 20, 0.3);
+        }
+
+        /* 针对 Webkit 内核 (Chrome, Safari, Edge) 的自定义样式 */
+        .window-content::-webkit-scrollbar,
+        .divination-board::-webkit-scrollbar {
+            width: 6px;
+            /* 滚动条宽度 */
+            height: 6px;
+            /* 横向滚动条高度（如果有） */
+        }
+
+        /* 滚动条轨道 (背景) */
+        .window-content::-webkit-scrollbar-track,
+        .divination-board::-webkit-scrollbar-track {
+            background: rgba(10, 10, 20, 0.3);
+            /* 极暗的深蓝色背景 */
+            border-radius: 4px;
+        }
+
+        /* 滚动条滑块 */
+        .window-content::-webkit-scrollbar-thumb,
+        .divination-board::-webkit-scrollbar-thumb {
+            background: rgba(0, 150, 255, 0.4);
+            /* 半透明幽蓝 */
+            border-radius: 4px;
+            border: 1px solid rgba(0, 150, 255, 0.2);
+            /* 细微的发光边框 */
+        }
+
+        /* 鼠标悬浮在滑块上的效果 */
+        .window-content::-webkit-scrollbar-thumb:hover,
+        .divination-board::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 150, 255, 0.8);
+            /* 提亮 */
+            box-shadow: 0 0 8px rgba(0, 150, 255, 0.6);
+            /* 增加辉光 */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="app">
+        <interactive-card></interactive-card>
+    </div>
+
+    <script>
+        const { createApp, ref, computed } = Vue;
+
+        // ==========================================
+        // 新增: 塔罗牌配置与资源提供类
+        // ==========================================
+        // 定义系统支持的风格（前缀）
+        const stylesConfig = [
+            { id: 'default', name: '经典风格 (无前缀)', tag: '' },
+            { id: 'alt', name: '异画风格 (带前缀)', tag: '-' } // 你可以将 'alt-' 替换为你实际使用的前缀，如 'special-' 或 '-' 
+        ];
+        const tarotConfig = [
+            {
+                number: '00',
+                name: '愚者',
+                variations: { default: 1, alt: 2 }, // 经典款有3张，异画款有2张
+                meanings: { upright: '新的开始、天真、自发性、冒险', reversed: '鲁莽、冒险过度、错失良机' }
+            },
+            {
+                number: '01',
+                name: '魔术师',
+                variations: { default: 2, alt: 2 },
+                meanings: { upright: '显化、资源、力量、创造力', reversed: '操控、计划不周、潜能未发挥' }
+            },
+            {
+                number: '02',
+                name: '女祭司',
+                variations: { default: 3, alt: 3 },
+                meanings: { upright: '直觉、潜意识、神秘、内心声音', reversed: '隐藏的秘密、脱离直觉、表面现象' }
+            },
+            {
+                number: '03',
+                name: '女皇',
+                variations: { default: 1, alt: 1 },
+                meanings: { upright: '新的开始、天真、自发性、冒险', reversed: '鲁莽、冒险过度、错失良机' }
+            },
+            {
+                number: '04',
+                name: '皇帝',
+                variations: { default: 2, alt: 2 },
+                meanings: { upright: '新的开始、天真、自发性、冒险', reversed: '鲁莽、冒险过度、错失良机' }
+            },
+            {
+                number: '05',
+                name: '教皇',
+                variations: { default: 2, alt: 1 },
+                meanings: { upright: '新的开始、天真、自发性、冒险', reversed: '鲁莽、冒险过度、错失良机' }
+            },
+            {
+                number: '06',
+                name: '恋人',
+                variations: { default: 1, alt: 2 },
+                meanings: { upright: '新的开始、天真、自发性、冒险', reversed: '鲁莽、冒险过度、错失良机' }
+            },
+            {
+                number: '07',
+                name: '战车',
+                variations: { default: 2 },
+                meanings: { upright: '新的开始、天真、自发性、冒险', reversed: '鲁莽、冒险过度、错失良机' }
+            },
+            {
+                number: '08',
+                name: '力量',
+                variations: { default: 1, alt: 1 },
+                meanings: { upright: '新的开始、天真、自发性、冒险', reversed: '鲁莽、冒险过度、错失良机' }
+            },
+            {
+                number: '09',
+                name: '隐士',
+                variations: { default: 1, alt: 2 },
+                meanings: { upright: '新的开始、天真、自发性、冒险', reversed: '鲁莽、冒险过度、错失良机' }
+            },
+            {
+                number: '10',
+                name: '命运之轮',
+                variations: { default: 1, alt: 2 },
+                meanings: { upright: '新的开始、天真、自发性、冒险', reversed: '鲁莽、冒险过度、错失良机' }
+            },
+            {
+                number: '11',
+                name: '正义',
+                variations: { default: 2, alt: 1 },
+                meanings: { upright: '新的开始、天真、自发性、冒险', reversed: '鲁莽、冒险过度、错失良机' }
+            },
+            {
+                number: '12',
+                name: '倒吊人',
+                variations: { default: 2, alt: 1 },
+                meanings: { upright: '新的开始、天真、自发性、冒险', reversed: '鲁莽、冒险过度、错失良机' }
+            },
+            {
+                number: '13',
+                name: '死神',
+                variations: { default: 1, alt: 2 },
+                meanings: { upright: '新的开始、天真、自发性、冒险', reversed: '鲁莽、冒险过度、错失良机' }
+            },
+            {
+                number: '14',
+                name: '节制',
+                variations: { default: 1, alt: 1 },
+                meanings: { upright: '新的开始、天真、自发性、冒险', reversed: '鲁莽、冒险过度、错失良机' }
+            },
+            {
+                number: '15',
+                name: '魔鬼',
+                variations: { default: 2, alt: 3 },
+                meanings: { upright: '新的开始、天真、自发性、冒险', reversed: '鲁莽、冒险过度、错失良机' }
+            },
+            {
+                number: '16',
+                name: '高塔',
+                variations: { default: 2, alt: 1 },
+                meanings: { upright: '新的开始、天真、自发性、冒险', reversed: '鲁莽、冒险过度、错失良机' }
+            },
+            {
+                number: '17',
+                name: '星星',
+                variations: { default: 2, alt: 2 },
+                meanings: { upright: '新的开始、天真、自发性、冒险', reversed: '鲁莽、冒险过度、错失良机' }
+            },
+            {
+                number: '18',
+                name: '月亮',
+                variations: { default: 2, alt: 1 },
+                meanings: { upright: '新的开始、天真、自发性、冒险', reversed: '鲁莽、冒险过度、错失良机' }
+            },
+            {
+                number: '19',
+                name: '太阳',
+                variations: { default: 2, alt: 2 },
+                meanings: { upright: '新的开始、天真、自发性、冒险', reversed: '鲁莽、冒险过度、错失良机' }
+            },
+            {
+                number: '20',
+                name: '审判',
+                variations: { default: 2, alt: 2 },
+                meanings: { upright: '新的开始、天真、自发性、冒险', reversed: '鲁莽、冒险过度、错失良机' }
+            },
+            {
+                number: '21',
+                name: '世界',
+                variations: { default: 1, alt: 2 },
+                meanings: { upright: '新的开始、天真、自发性、冒险', reversed: '鲁莽、冒险过度、错失良机' }
+            },
+            {
+                number: '22',
+                name: '核心',
+                variations: { default: 11 }
+            },
+
+        ];
+
+        // 占卜面板背景图配置 (请替换为实际路径)
+        const DIVINATION_BG_URL = 'asset/image/divination-bg.jpg';
+
+        // 提取共享的 SVG 卡背字符串 (保持原样，方便在两个组件复用)
+        const CARD_BACK_SVG = `
+        <svg viewBox="0 0 100 150" style="width: 80%; height: auto; opacity: 0.8;">
+            <rect x="5" y="5" width="90" height="140" fill="none" stroke="#d4af37" stroke-width="0.5"/>
+            <rect x="8" y="8" width="84" height="134" fill="none" stroke="#d4af37" stroke-width="0.2"/>
+            <path d="M50 15 A10 10 0 1 1 50 35 A12 12 0 1 0 50 15" fill="#d4af37" />
+            <path d="M50 135 A10 10 0 1 0 50 115 A12 12 0 1 1 50 135" fill="#d4af37" />
+            <g transform="translate(50, 75)">
+            <circle cx="0" cy="0" r="28" fill="none" stroke="#d4af37" stroke-width="0.3"/>
+            <circle cx="0" cy="0" r="25" fill="none" stroke="#d4af37" stroke-width="0.8"/>
+            <circle cx="0" cy="0" r="18" fill="none" stroke="#d4af37" stroke-width="0.3"/>
+            <path d="M0 -22 L3 -6 L22 0 L3 6 L0 22 L-3 6 L-22 0 L-3 -6 Z" fill="none" stroke="#d4af37" stroke-width="0.5"/>
+            <path d="M-15 -15 L-4 -4 L0 -10 Z M15 -15 L4 -4 L0 -10 Z M15 15 L4 4 L0 10 Z M-15 15 L-4 4 L0 10 Z" fill="#d4af37" opacity="0.5"/>
+            <polygon points="0,-12 12,0 0,12 -12,0" fill="none" stroke="#d4af37" stroke-width="0.5"/>
+            <circle cx="0" cy="0" r="4" fill="#d4af37"/>
+            </g>
+            <line x1="50" y1="35" x2="50" y2="47" stroke="#d4af37" stroke-width="0.5" />
+            <line x1="50" y1="103" x2="50" y2="115" stroke="#d4af37" stroke-width="0.5" />
+        </svg>
+        `;
+
+
+        class TarotImageProvider {
+            constructor(basePath = 'asset/image/') {
+                this.basePath = basePath;
+            }
+
+            // 生成路径规则: [标记]-序号-名称-编号.png
+            getUrl(card, variantIndex, tag = '') {
+                if (!card) return '';
+                // 编号补零，例如 1 -> '01'
+                const varStr = String(variantIndex).padStart(2, '0');
+                return `${this.basePath}${tag}${card.number}-${card.name}-${varStr}.png`;
+            }
+        }
+
+        const imageProvider = new TarotImageProvider();
+
+
+        // ==========================================
+        // 新增: Vera 状态存储与时间之门 Mock 数据
+        // ==========================================
+        const VeraConfigStore = {
+            state: {
+                isLocked: false,
+                currentForm: '银月' // 模拟当前形态
+            },
+            load() { /* 模拟加载 */ },
+            save() { /* 模拟保存 */ }
+        };
+
+        // 各种形态对应的背景图池 (请根据实际情况配置路径)
+        const TIMEGATE_BG_CONFIG = {
+            '银月': ['asset/image/background/silver-moon-1.png', 'asset/image/background/silver-moon-2.png'],
+            '暗月': ['asset/image/background/dark-moon-1.jpg'],
+            'default': ['asset/image/background/default-bg.jpg']
+        };
+
+        const DB_PATH = {
+            KEY: {
+                EVENT: "事件"
+            }
+        };
+        const K = DB_PATH.KEY;
+
+        class VeraDataManager {
+            constructor() { 
+                this.veraData = {
+                    "占卜结果": {},
+                    "时间之门": {
+                        "当前节点": null,
+                        "历史节点": {}
+                    }
+                };
+                this.tarotPath = `stat_data.${K.EVENT}.Vera.占卜结果`;
+                this.timeGatePath = `stat_data.${K.EVENT}.Vera.时间之门.历史节点`;
+                this.veraDataPath = `stat_data.${K.EVENT}.Vera`;
+            }
+
+           findMvu() {
+                if (typeof window.Mvu !== 'undefined') return window.Mvu;
+                if (window.parent && typeof window.parent.Mvu !== 'undefined') return window.parent.Mvu;
+                return null;
+            };
+
+            async tryFindMvuApi() {
+                return null;
+                const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+                let retries = 0;
+                let mvuApi = this.findMvu();
+                while (!mvuApi) {
+                    if (retries > 60) { // 延长超时时间到 30秒 (60*500ms)
+                        alert("链接超时，请检查mvu脚本是否存在");
+                        return;
+                    }
+
+                    await wait(500);
+                    retries++;
+                    mvuApi = findMvu(); // 再次尝试查找
+                }
+                return mvuApi;
+            }
+
+            async refreshData(){
+                const fetch = await this.fetchData();
+                if(fetch) this.veraData = fetch;
+            }
+
+            // 新增: 占卜记录删除占位函数
+            deleteTarotRecord(id) {
+                if (this.veraData["占卜结果"][id]) {
+                    delete this.veraData["占卜结果"][id];
+                    if(typeof updateVariablesWith === "function"){
+                        updateVariablesWith(vars => {
+                            _.unset(vars, `${this.tarotPath}.${id}`);
+                            return vars;
+                        }, { type: 'message' });
+                    }
+                    
+                    console.log(`[数据管理] 已成功从本地内存删除占卜历史: ${id}`);
+                }
+            }
+
+            // 新增: 时间之门历史节点删除占位函数
+            deleteTimeGateHistoryNode(id) {
+                if (this.veraData["时间之门"]["历史节点"][id]) {
+                    delete this.veraData["时间之门"]["历史节点"][id];
+                    if(typeof updateVariablesWith === "function"){
+                        updateVariablesWith(vars => {
+                            _.unset(vars, `${this.timeGatePath}.${id}`);
+                            return vars;
+                        }, { type: 'message' });
+                    }
+                    console.log(`[数据管理] 已成功从本地内存删除时间之门节点: ${id}`);
+                }
+            }
+
+            // 模拟异步拉取数据
+            async fetchData() {
+                if(typeof getVariables === "function") {
+                    const vera = _.get(getVariables({type: 'message'}), this.veraDataPath);
+                    if(vera) this.veraData = vera;
+                }
+                
+                /*
+                const a = new Promise(resolve => {
+                    setTimeout(() => {
+                        resolve({
+                            "占卜结果": {
+                                "tarot_11121321": {
+                                    "question": "接下来一段时间是否顺利",
+                                    "cards": [
+                                        {
+                                            "pos": "[过去] ",
+                                            "name": " 11 正义 ",
+                                            "orientation": "正位"
+                                        },
+                                        {
+                                            "pos": "现在",
+                                            "name": "1-魔术师",
+                                            "orientation": "逆位"
+                                        },
+                                        {
+                                            "pos": "未来",
+                                            "name": "2-女祭司",
+                                            "orientation": "正位"
+                                        }
+                                    ],
+                                    "tendency": "在混乱与未知的变局中，寻找内在直觉的指引。",
+                                    "interpretations": [
+                                        "过去：愚者象征你曾带着无畏的勇气开启了一段旅程，不受世俗束缚。",
+                                        "现在：魔术师逆位暗示当前你可能感到资源受限，或者沟通与行动出现了阻碍。",
+                                        "未来：女祭司表示你需要静下心来，倾听潜意识的声音，答案藏在平静之中。"
+                                    ],
+                                    "overall": "过去的冒险虽然带来了现在的混乱与力不从心，但只要你停止向外索求，转而向内觉察，便能重新掌握命运的丝线。",
+                                    "start_floor": 10,
+                                },
+                                "tarot_111213sdas21": {
+                                    "question": "接下来一段时间是否顺利",
+                                    "cards": [
+                                        {
+                                            "pos": "[过去] ",
+                                            "name": " 11 正义 ",
+                                            "orientation": "正位"
+                                        },
+                                        {
+                                            "pos": "现在",
+                                            "name": "1-魔术师",
+                                            "orientation": "逆位"
+                                        },
+                                        {
+                                            "pos": "未来",
+                                            "name": "2-女祭司",
+                                            "orientation": "正位"
+                                        }
+                                    ],
+                                    "tendency": "在混乱与未知的变局中，寻找内在直觉的指引。",
+                                    "interpretations": [
+                                        "过去：愚者象征你曾带着无畏的勇气开启了一段旅程，不受世俗束缚。",
+                                        "现在：魔术师逆位暗示当前你可能感到资源受限，或者沟通与行动出现了阻碍。",
+                                        "未来：女祭司表示你需要静下心来，倾听潜意识的声音，答案藏在平静之中。"
+                                    ],
+                                    "overall": "过去的冒险虽然带来了现在的混乱与力不从心，但只要你停止向外索求，转而向内觉察，便能重新掌握命运的丝线。",
+                                    "start_floor": 12,
+                                },
+                                "tarot_11121sgasg321": {
+                                    "question": "接下来一段时间是否顺利",
+                                    "cards": [
+                                        {
+                                            "pos": "[过去] ",
+                                            "name": " 11 正义 ",
+                                            "orientation": "正位"
+                                        },
+                                        {
+                                            "pos": "现在",
+                                            "name": "1-魔术师",
+                                            "orientation": "逆位"
+                                        },
+                                        {
+                                            "pos": "未来",
+                                            "name": "2-女祭司",
+                                            "orientation": "正位"
+                                        }
+                                    ],
+                                    "tendency": "在混乱与未知的变局中，寻找内在直觉的指引。",
+                                    "interpretations": [
+                                        "过去：愚者象征你曾带着无畏的勇气开启了一段旅程，不受世俗束缚。",
+                                        "现在：魔术师逆位暗示当前你可能感到资源受限，或者沟通与行动出现了阻碍。",
+                                        "未来：女祭司表示你需要静下心来，倾听潜意识的声音，答案藏在平静之中。"
+                                    ],
+                                    "overall": "过去的冒险虽然带来了现在的混乱与力不从心，但只要你停止向外索求，转而向内觉察，便能重新掌握命运的丝线。",
+                                    "start_floor": 101,
+                                },
+                                "tarot_11sgas121321": {
+                                    "question": "接下来一段时间是否顺利",
+                                    "cards": [
+                                        {
+                                            "pos": "[过去] ",
+                                            "name": " 11 正义 ",
+                                            "orientation": "正位"
+                                        },
+                                        {
+                                            "pos": "现在",
+                                            "name": "1-魔术师",
+                                            "orientation": "逆位"
+                                        },
+                                        {
+                                            "pos": "未来",
+                                            "name": "2-女祭司",
+                                            "orientation": "正位"
+                                        }
+                                    ],
+                                    "tendency": "在混乱与未知的变局中，寻找内在直觉的指引。",
+                                    "interpretations": [
+                                        "过去：愚者象征你曾带着无畏的勇气开启了一段旅程，不受世俗束缚。",
+                                        "现在：魔术师逆位暗示当前你可能感到资源受限，或者沟通与行动出现了阻碍。",
+                                        "未来：女祭司表示你需要静下心来，倾听潜意识的声音，答案藏在平静之中。"
+                                    ],
+                                    "overall": "过去的冒险虽然带来了现在的混乱与力不从心，但只要你停止向外索求，转而向内觉察，便能重新掌握命运的丝线。",
+                                    "start_floor": 1011,
+                                },
+                            },
+                            "时间之门": {
+                                "当前节点": null,
+                                "历史节点": {
+                                    "gate_history_01": {
+                                        "id": "gate_history_01",
+                                        "status": "finished",
+                                        "meta_info": {
+                                            "entry_type": "定向",
+                                            "difficulty": "极难",
+                                            "participants": ["<user>", "维拉"]
+                                        },
+                                        "timeline_info": {
+                                            "real_world_entry_time": "公园222年3月11日",
+                                            "target_historical_time": "神陨纪元末期",
+                                            "target_location": "星辰塔顶"
+                                        },
+                                        "historical_context": {
+                                            "background": "诸神黄昏的前夕",
+                                            "core_conflict": "星辰法师的背叛",
+                                            "original_trajectory": "星辰塔倒塌，魔法网络断裂"
+                                        },
+                                        "exploration_state": { "days_elapsed": 5 },
+                                        "narrative_log": [
+                                            {
+                                                "day": 5,
+                                                "actions_taken": ["在塔顶与大星术师对峙", "强行修改了法阵的底层符文"],
+                                                "butterfly_effects": ["魔法网络得以保留30%的冗余", "星辰法师遭到反噬被放逐"]
+                                            }
+                                        ],
+                                        "settlement": {
+                                            "items_retrieved": ["黯淡的星辰核心", "残破的施法者手套"],
+                                            "reality_shifts": ["现世的魔法学徒多了一门《古代符文修正学》必修课"]
+                                        }
+                                    }
+                                }
+                            }
+                        });
+                    }, 600); // 模拟网络延迟
+                });
+                return a;
+                */
+            }
+        }
+
+        const veraDataAPI = new VeraDataManager();
+
+        // ==========================================
+        // 修改: 处理倾斜核心逻辑 (加入 3D 开关与闪卡光栅计算)
+        // ==========================================
+        function useCardTilt(options = { maxRotation: 15 }) {
+            const cardRef = ref(null);
+            const rotateX = ref(0);
+            const rotateY = ref(0);
+            const isHovering = ref(false);
+            // 新增：动态效果开关
+            const isDynamicEnabled = ref(true);
+
+            // 反光层的 background-position (模拟全息闪卡在固定光源下的移动)
+            const bgPosX = ref(50);
+            const bgPosY = ref(50);
+
+            // 抽离核心计算逻辑
+            const calculateTilt = (clientX, clientY) => {
+                if (!cardRef.value || !isDynamicEnabled.value) return;
+                isHovering.value = true;
+
+                const rect = cardRef.value.getBoundingClientRect();
+                const x = clientX - rect.left;
+                const y = clientY - rect.top;
+
+                const xRatio = (x / rect.width) - 0.5;
+                const yRatio = (y / rect.height) - 0.5;
+
+                rotateY.value = xRatio * 2 * options.maxRotation;
+                rotateX.value = -yRatio * 2 * options.maxRotation;
+
+                bgPosX.value = 50 + (rotateY.value * 3);
+                bgPosY.value = 50 - (rotateX.value * 3);
+            };
+
+            const handleMouseMove = (e) => calculateTilt(e.clientX, e.clientY);
+
+            // 新增: 处理触摸滑动
+            const handleTouchMove = (e) => {
+                // 阻止默认行为（防止在卡片上滑动时整个页面跟着滚）
+                e.preventDefault();
+                calculateTilt(e.touches[0].clientX, e.touches[0].clientY);
+            };
+
+            const handleMouseLeave = () => {
+                isHovering.value = false;
+                rotateX.value = 0;
+                rotateY.value = 0;
+                bgPosX.value = 50;
+                bgPosY.value = 50;
+            };
+
+            return {
+                cardRef, rotateX, rotateY, isHovering, isDynamicEnabled,
+                bgPosX, bgPosY, handleMouseMove, handleMouseLeave, handleTouchMove
+            };
+        }
+
+        // ==========================================
+        // 新增: 拖拽与缩放组合式函数
+        // ==========================================
+        function usePanZoom() {
+            const scale = ref(1);
+            const panX = ref(0);
+            const panY = ref(0);
+
+            let isDragging = false;
+            let startX = 0, startY = 0;
+
+            // 新增：降频控制变量
+            let lastWheelTime = 0;
+            // 目标帧率：30 帧/秒 (可以改为 1000/45 来达到 45 帧)
+            const THROTTLE_INTERVAL = 1000 / 30;
+
+            const onWheel = (e) => {
+                e.preventDefault();
+
+                const now = Date.now();
+                // 如果距离上一次处理的时间小于我们的间隔，直接抛弃这次微小的滚动
+                if (now - lastWheelTime < THROTTLE_INTERVAL) {
+                    return;
+                }
+                lastWheelTime = now;
+
+                window.requestAnimationFrame(() => {
+                    // 在下一帧渲染前统一计算并更新 Vue 的响应式数据
+                    scale.value -= e.deltaY * 0.002;
+                    scale.value = Math.min(Math.max(0.5, scale.value), 4);
+                });
+
+            };
+
+            const onPointerDown = (e) => {
+                if (e.button === 1 || e.pointerType === 'touch') { // 鼠标中键按下
+                    // 避免在手机上点击按钮时触发拖拽
+                    if (e.target.tagName.toLowerCase() === 'button' || e.target.tagName.toLowerCase() === 'select') return;
+                    e.preventDefault();
+                    isDragging = true;
+                    startX = e.clientX - panX.value;
+                    startY = e.clientY - panY.value;
+                    document.body.style.cursor = 'grabbing';
+                }
+            };
+
+            const onPointerMove = (e) => {
+                if (!isDragging) return;
+                panX.value = e.clientX - startX;
+                panY.value = e.clientY - startY;
+            };
+
+            const onPointerUp = () => {
+                if (isDragging) {
+                    isDragging = false;
+                    document.body.style.cursor = 'default';
+                }
+            };
+
+            // 全局挂载以保证拖拽流畅
+            window.addEventListener('pointermove', onPointerMove);
+            window.addEventListener('pointerup', onPointerUp);
+
+            // 新增：重置视图方法
+            const reset = () => {
+                scale.value = 1;
+                panX.value = 0;
+                panY.value = 0;
+            };
+
+            return { scale, panX, panY, onWheel, onPointerDown, reset };
+        }
+
+        // ==========================================
+        // 新增: 悬浮球拖拽逻辑
+        // ==========================================
+        function useDraggableSphere() {
+            const x = Vue.ref(window.innerWidth - 80);
+            const y = Vue.ref(window.innerHeight - 80);
+            let startX = 0, startY = 0, initialX = 0, initialY = 0;
+            let isDragging = false;
+            let hasMoved = false; // 用于区分点击和拖拽
+
+            // 读取本地存储
+            const savedPos = localStorage.getItem('spherePosition');
+            if (savedPos) {
+                const pos = JSON.parse(savedPos);
+                x.value = Math.min(pos.x, window.innerWidth - 60);
+                y.value = Math.min(pos.y, window.innerHeight - 60);
+            }
+
+            const onPointerDown = (e) => {
+                isDragging = true;
+                hasMoved = false;
+                startX = e.clientX;
+                startY = e.clientY;
+                initialX = x.value;
+                initialY = y.value;
+                document.addEventListener('pointermove', onPointerMove);
+                document.addEventListener('pointerup', onPointerUp);
+            };
+
+            const onPointerMove = (e) => {
+                if (!isDragging) return;
+                const dx = e.clientX - startX;
+                const dy = e.clientY - startY;
+
+                if (Math.abs(dx) > 3 || Math.abs(dy) > 3) hasMoved = true;
+
+                // 边界限制
+                x.value = Math.max(0, Math.min(initialX + dx, window.innerWidth - 60));
+                y.value = Math.max(0, Math.min(initialY + dy, window.innerHeight - 60));
+            };
+
+            const onPointerUp = (e) => {
+                isDragging = false;
+                document.removeEventListener('pointermove', onPointerMove);
+                document.removeEventListener('pointerup', onPointerUp);
+                if (hasMoved) {
+                    localStorage.setItem('spherePosition', JSON.stringify({ x: x.value, y: y.value }));
+                }
+            };
+
+            return { x, y, onPointerDown, checkClick: () => !hasMoved };
+        }
+
+        // ==========================================
+        // 修改: 全局卡片配置状态中心 (加入数据同步与容错处理)
+        // ==========================================
+        const savedConfigsString = localStorage.getItem('tarotGlobalConfigs');
+        const parsedConfigs = savedConfigsString ? JSON.parse(savedConfigsString) : {};
+
+        // 动态构建初始配置，以最新的 tarotConfig 长度为准
+        const initialConfigs = {};
+        tarotConfig.forEach((card, index) => {
+            // 核心容错：尝试读取缓存，如果读不到 (例如新增了卡牌)，则提供 fallback 默认值
+            initialConfigs[index] = parsedConfigs[index] || {
+                styleId: 'default',
+                variation: 1
+            };
+        });
+
+        // 将安全合并后的配置转化为响应式对象
+        const globalCardConfigs = Vue.reactive(initialConfigs);
+
+        // Vue3 深度监听：只要有任何卡牌款式被修改，自动写入 LocalStorage
+        Vue.watch(globalCardConfigs, (newVal) => {
+            localStorage.setItem('tarotGlobalConfigs', JSON.stringify(newVal));
+        }, { deep: true });
+        // ==========================================
+        // 模块 2: 卡片组件 (Component)
+        // ==========================================
+        const InteractiveCard = {
+            // 接收外部传入的卡片 URL 属性
+            props: ['imgSrc', 'isDynamic', 'zoomScale'],
+            template: `
+                <div 
+                class="card-container" 
+                ref="cardRef"
+                :style="dynamicBoundsStyle"
+                @mousemove="handleMouseMove"
+                @mouseleave="handleMouseLeave"
+
+                @touchmove="handleTouchMove"
+                @touchend="handleMouseLeave"
+                @click="toggleFlip"
+                >
+                <div class="card-tilt" :style="tiltStyle">
+                    
+                    <div class="card-flip" :class="{ 'is-flipped': isFlipped }">
+                    
+                    <div class="card-face face-front">
+                        <img :src="imgSrc" class="card-image" @load="handleImageLoad" alt="Tarot Card Front" />
+                        <div class="glare" :style="glareStyle"></div>
+                    </div>
+                    
+                    <div class="card-face face-back">
+                        <div class="glare" :style="glareStyle"></div>
+                        <svg viewBox="0 0 100 150" style="width: 80%; height: auto; opacity: 0.8;">
+                        <rect x="5" y="5" width="90" height="140" fill="none" stroke="#d4af37" stroke-width="0.5"/>
+                        <rect x="8" y="8" width="84" height="134" fill="none" stroke="#d4af37" stroke-width="0.2"/>
+                        
+                        <path d="M50 15 A10 10 0 1 1 50 35 A12 12 0 1 0 50 15" fill="#d4af37" />
+                        <path d="M50 135 A10 10 0 1 0 50 115 A12 12 0 1 1 50 135" fill="#d4af37" />
+                        
+                        <g transform="translate(50, 75)">
+                            <circle cx="0" cy="0" r="28" fill="none" stroke="#d4af37" stroke-width="0.3"/>
+                            <circle cx="0" cy="0" r="25" fill="none" stroke="#d4af37" stroke-width="0.8"/>
+                            <circle cx="0" cy="0" r="18" fill="none" stroke="#d4af37" stroke-width="0.3"/>
+                            
+                            <path d="M0 -22 L3 -6 L22 0 L3 6 L0 22 L-3 6 L-22 0 L-3 -6 Z" fill="none" stroke="#d4af37" stroke-width="0.5"/>
+                            <path d="M-15 -15 L-4 -4 L0 -10 Z M15 -15 L4 -4 L0 -10 Z M15 15 L4 4 L0 10 Z M-15 15 L-4 4 L0 10 Z" fill="#d4af37" opacity="0.5"/>
+                            
+                            <polygon points="0,-12 12,0 0,12 -12,0" fill="none" stroke="#d4af37" stroke-width="0.5"/>
+                            <circle cx="0" cy="0" r="4" fill="#d4af37"/>
+                        </g>
+                        
+                        <line x1="50" y1="35" x2="50" y2="47" stroke="#d4af37" stroke-width="0.5" />
+                        <line x1="50" y1="103" x2="50" y2="115" stroke="#d4af37" stroke-width="0.5" />
+                        </svg>
+                    </div>
+
+                    </div>
+                </div>
+                </div>
+            
+            `,
+            setup(props) {
+                // 使用抽离出的逻辑
+                const {
+                    cardRef, rotateX, rotateY, isHovering, bgPosX, bgPosY,
+                    isDynamicEnabled, handleMouseMove, handleMouseLeave, handleTouchMove
+                } = useCardTilt({ maxRotation: 18 });
+
+                // 同步外部 3D 开关状态
+                Vue.watchEffect(() => { isDynamicEnabled.value = props.isDynamic; });
+                // 新增：翻面逻辑
+                const isFlipped = Vue.ref(false);
+                const toggleFlip = () => {
+                    isFlipped.value = !isFlipped.value;
+                };
+
+                // 解决问题 1: 监听图片链接变化，强制翻回正面
+                Vue.watch(() => props.imgSrc, () => {
+                    isFlipped.value = false;
+                });
+
+                // 图片自适应宽高比逻辑
+                const aspectRatio = ref(null);
+                const handleImageLoad = (e) => {
+                    const img = e.target;
+                    aspectRatio.value = img.naturalWidth / img.naturalHeight;
+                };
+
+                // 解决问题 2: 将 scale 乘以基础视口高度 (80vh)，抛弃 CSS Transform Scale
+                const dynamicBoundsStyle = Vue.computed(() => {
+                    const currentScale = props.zoomScale || 1;
+                    const baseHeight = 80 * currentScale; // 动态计算真实布局高度
+
+                    if (!aspectRatio.value) return { height: `${baseHeight}vh`, width: '320px' };
+                    return {
+                        height: `${baseHeight}vh`,
+                        aspectRatio: aspectRatio.value
+                    };
+                });
+
+                const tiltStyle = computed(() => ({
+                    transform: props.isDynamic ? `rotateX(${rotateX.value}deg) rotateY(${rotateY.value}deg)` : 'none',
+                    transition: isHovering.value ? 'none' : 'transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1)'
+                }));
+
+                const glareStyle = Vue.computed(() => ({
+                    // 为了让极窄的光条能快速扫过整个卡面，我们把 bgPosX/Y 的乘数适度放大
+                    backgroundPosition: `${bgPosX.value}% ${bgPosY.value}%`,
+                    // 降低最大不透明度，让效果更加内敛
+                    opacity: (isHovering.value && props.isDynamic) ? 0.6 : 0
+                }));
+                return {
+                    cardRef, isFlipped, toggleFlip,
+                    handleTouchMove,
+                    handleMouseMove,
+                    handleMouseLeave,
+                    tiltStyle,
+                    glareStyle,
+                    handleImageLoad, dynamicBoundsStyle
+                };
+            }
+        };
+
+
+        // ==========================================
+        // 新增: 独立详情弹窗模块 (拆分自原 app.setup)
+        // ==========================================
+        const CardDetailModal = {
+            components: { InteractiveCard },
+            props: ['cardIndex', 'initialStyleId', 'initialVariation', 'initial3dEnabled'],
+            emits: ['close'],
+            template: `
+    <div class="detail-modal">
+      
+      <div class="detail-controls-wrapper">
+        <button class="controls-toggle-btn" @click="isControlsOpen = !isControlsOpen">
+          {{ isControlsOpen ? '收起面板' : '⚙️ 样式设置 (ESC 退出)' }}
+        </button>
+        
+        <div class="detail-controls-panel" v-show="isControlsOpen">
+          <button @click="$emit('close')" style="background:rgba(0,150,255,0.2); color:#00f0ff; border:1px solid #00f0ff; padding:6px 12px; cursor:pointer; border-radius:4px;">← 返回总览</button>
+          
+          <label style="cursor: pointer;">
+            <input type="checkbox" v-model="enable3D" /> 启用 3D 与闪卡效果
+          </label>
+          
+          <label>临时切换风格 (不保存):</label>
+          <select v-model="localStyleId" style="background:#222; color:#fff; border:1px solid #444; padding:4px;">
+            <option v-for="style in availableStyles" :key="style.id" :value="style.id">{{ style.name }}</option>
+          </select>
+          
+          <label>临时切换款式 (不保存):</label>
+          <select v-model="localVariation" style="background:#222; color:#fff; border:1px solid #444; padding:4px;">
+            <option v-for="v in currentMaxVariations" :key="v" :value="v">款式 {{ v }}</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="stage" @wheel.prevent="onWheel" @pointerdown="onPointerDown" :style="stageStyle">
+        <interactive-card :img-src="currentImgUrl" :is-dynamic="enable3D" :zoom-scale="scale" />
+      </div>
+    </div>
+  `,
+            setup(props, { emit }) {
+                const config = tarotConfig;
+                const styles = stylesConfig;
+                const enable3D = Vue.ref(props.initial3dEnabled);
+                // 新增: 控制面板默认折叠
+                const isControlsOpen = Vue.ref(true);
+
+                // 初始化临时状态
+                const localStyleId = Vue.ref(props.initialStyleId);
+                const localVariation = Vue.ref(props.initialVariation);
+
+                const { scale, panX, panY, onWheel, onPointerDown, reset: resetPanZoom } = usePanZoom();
+
+                // 补充: 在 CardDetailModal 的 stage 样式中加入 touch-action: none; 
+                // 这会告诉浏览器，这个区域不要进行原生的页面滚动缩放，交由 JS 处理。
+                const stageStyle = Vue.computed(() => ({
+                    transform: `translate(${panX.value}px, ${panY.value}px)`,
+                    width: '100vw', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center',
+                    touchAction: 'none'
+                }));
+
+                const targetCard = Vue.computed(() => config[props.cardIndex]);
+
+                // 新增: 为当前详情牌计算可用的风格列表
+                const availableStyles = Vue.computed(() => {
+                    const cardVariations = targetCard.value.variations;
+                    return styles.filter(style => cardVariations[style.id] && cardVariations[style.id] > 0);
+                });
+
+                // 容错: 监听 targetCard (虽然详情页目前不涉及切牌，但保留这层响应式逻辑更健壮)
+                Vue.watch(availableStyles, (newAvailable) => {
+                    // 如果当前选中的风格不在可用列表中，强制重置为可用的第一个风格
+                    if (!newAvailable.find(s => s.id === localStyleId.value)) {
+                        localStyleId.value = newAvailable[0].id;
+                    }
+                });
+
+                const currentStyleTag = Vue.computed(() => {
+                    const style = styles.find(s => s.id === localStyleId.value);
+                    return style ? style.tag : '';
+                });
+
+                const currentMaxVariations = Vue.computed(() => targetCard.value.variations[localStyleId.value] || 1);
+
+                Vue.watch(currentMaxVariations, (newMax) => {
+                    if (localVariation.value > newMax) localVariation.value = 1;
+                });
+
+                const currentImgUrl = Vue.computed(() => {
+                    return imageProvider.getUrl(targetCard.value, localVariation.value, currentStyleTag.value);
+                });
+
+                Vue.watch(currentImgUrl, () => resetPanZoom());
+
+                // 新增: ESC 快捷键监听
+                const handleKeydown = (e) => {
+                    const key = e.key.toLowerCase();
+                    if (key === 'escape') emit('close');
+                    // 2. W / S 切换风格 (向下/向上遍历 availableStyles 数组)
+                    if (key === 'w' || key === 's') {
+                        if (availableStyles.value.length > 1) {
+                            const currentIndex = availableStyles.value.findIndex(style => style.id === localStyleId.value);
+                            let nextIndex;
+
+                            if (key === 's') {
+                                // S: 下一个风格 (超出回到底部)
+                                nextIndex = (currentIndex + 1) % availableStyles.value.length;
+                            } else {
+                                // W: 上一个风格 (低于0回到顶部)
+                                nextIndex = (currentIndex - 1 + availableStyles.value.length) % availableStyles.value.length;
+                            }
+
+                            localStyleId.value = availableStyles.value[nextIndex].id;
+                        }
+                    }
+
+                    // 3. A / D 切换款式
+                    if (key === 'a' || key === 'd') {
+                        const max = currentMaxVariations.value;
+                        if (max > 1) {
+                            if (key === 'd') {
+                                // D: 增大，超出最大值重置为 1
+                                localVariation.value = localVariation.value >= max ? 1 : localVariation.value + 1;
+                            } else {
+                                // A: 减小，低于 1 回到最大值
+                                localVariation.value = localVariation.value <= 1 ? max : localVariation.value - 1;
+                            }
+                        }
+                    }
+                };
+
+                Vue.onMounted(() => {
+                    window.addEventListener('keydown', handleKeydown);
+                });
+
+                Vue.onUnmounted(() => {
+                    window.removeEventListener('keydown', handleKeydown);
+                });
+
+                return {
+                    styles, enable3D, localStyleId, localVariation,
+                    availableStyles, currentMaxVariations,
+                    currentImgUrl, onWheel, onPointerDown, stageStyle, scale,
+                    isControlsOpen
+                };
+            }
+        };
+
+        // ==========================================
+        // 新增: 卡片总览页面模块
+        // ==========================================
+        const CardOverview = {
+            // 接收外部传入的全局 3D 状态并允许双向绑定更新
+            props: ['global3dEnabled'],
+            emits: ['preview', 'update:global3dEnabled'],
+            template: `
+    <div style="height: 100%; display: flex; flex-direction: column;">
+      
+      <div class="overview-controls-bar">
+        <label style="cursor: pointer;">
+          <input type="checkbox" :checked="global3dEnabled" @change="$emit('update:global3dEnabled', $event.target.checked)" /> 
+          进入卡片详情时默认开启 3D / 闪卡
+        </label>
+        <label style="cursor: pointer;">
+          <input type="checkbox" v-model="showCardControls" /> 
+          显示牌面款式配置框 (开启后可调整)
+        </label>
+      </div>
+
+      <div class="overview-grid" ref="gridRef">
+        <div class="thumbnail-card" v-for="item in pagedCards" :key="item.index">
+          <img 
+            :src="getThumbUrl(item.index)" 
+            class="thumbnail-img" 
+            loading="lazy" 
+            decoding="async"
+            @click="$emit('preview', item.index)" 
+          />
+          
+          <div class="card-controls" v-show="showCardControls">
+            <div style="font-size: 12px; color: #00f0ff; text-align: center;">{{ item.card.number }} - {{ item.card.name }}</div>
+            <select v-model="globalConfigs[item.index].styleId" @change="onStyleChange(item.index)">
+              <option v-for="s in getAvailableStyles(item.index)" :key="s.id" :value="s.id">{{ s.name }}</option>
+            </select>
+            <select v-model="globalConfigs[item.index].variation">
+              <option v-for="v in getMaxVar(item.index)" :value="v">款式 {{ v }}</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination">
+        <button :disabled="currentPage === 1" @click="currentPage--">上一页</button>
+        <span>{{ currentPage }} / {{ totalPages }}</span>
+        <button :disabled="currentPage === totalPages" @click="currentPage++">下一页</button>
+      </div>
+      
+      </div>
+  `,
+            setup() {
+                const currentPage = Vue.ref(1);
+                // 修改: 将每页数量从常量改为响应式变量，默认先给个 10
+                const itemsPerPage = Vue.ref(10);
+                const gridRef = Vue.ref(null);
+                const totalPages = Vue.computed(() => Math.ceil(tarotConfig.length / itemsPerPage.value));
+
+                // 新增: 款式控制框显示状态 (默认隐藏保证美观)
+                const showCardControls = Vue.ref(false);
+
+                // 附带真实索引的卡片列表，方便分页后依然能对应全局配置的 Index
+                const mappedCards = tarotConfig.map((card, index) => ({ card, index }));
+                const pagedCards = Vue.computed(() => {
+                    const start = (currentPage.value - 1) * itemsPerPage.value;
+                    return mappedCards.slice(start, start + itemsPerPage.value);
+                });
+
+                // 新增: 动态计算某张牌实际可用的风格选项
+                const getAvailableStyles = (idx) => {
+                    const cardVariations = tarotConfig[idx].variations;
+                    // 遍历所有注册在 stylesConfig 里的风格字典，只返回配置数量大于 0 的风格
+                    return stylesConfig.filter(style => cardVariations[style.id] && cardVariations[style.id] > 0);
+                };
+
+                const getMaxVar = (idx) => {
+                    const conf = globalCardConfigs[idx];
+                    return tarotConfig[idx].variations[conf.styleId] || 1;
+                };
+
+                const onStyleChange = (idx) => {
+                    const max = getMaxVar(idx);
+                    if (globalCardConfigs[idx].variation > max) {
+                        globalCardConfigs[idx].variation = 1;
+                    }
+                };
+
+                const getThumbUrl = (idx) => {
+                    const conf = globalCardConfigs[idx];
+                    const tag = stylesConfig.find(s => s.id === conf.styleId).tag;
+                    return imageProvider.getUrl(tarotConfig[idx], conf.variation, tag);
+                };
+
+                // ==========================================
+                // 新增: 1. 动态计算每页填满两行的数量
+                // ==========================================
+                const calculateItemsPerPage = () => {
+                    if (!gridRef.value) return;
+                    const containerWidth = gridRef.value.clientWidth;
+                    // 这里的 180 是你在 CSS minmax(180px, 1fr) 中定义的最小列宽，25 是 gap 间距
+                    const colWidth = 200;
+                    const gap = 25;
+
+                    // 数学推算: N * colWidth + (N - 1) * gap <= containerWidth
+                    let cols = Math.floor((containerWidth + gap) / (colWidth + gap));
+                    if (cols < 1) cols = 1;
+
+                    // 强制每页显示 两行 的数量
+                    itemsPerPage.value = cols * 2;
+                };
+
+                let resizeObserver;
+                Vue.onMounted(() => {
+                    // 使用 ResizeObserver 监听网格容器的宽度变化 (比如窗口拉伸、手机横竖屏切换)
+                    resizeObserver = new ResizeObserver(calculateItemsPerPage);
+                    if (gridRef.value) {
+                        resizeObserver.observe(gridRef.value);
+                    }
+                });
+                Vue.onUnmounted(() => {
+                    if (resizeObserver) resizeObserver.disconnect();
+                });
+
+                // 容错: 当改变窗口大小导致总页数变少时，防止当前页码越界
+                Vue.watch(totalPages, (newTotal) => {
+                    if (currentPage.value > newTotal && newTotal > 0) {
+                        currentPage.value = newTotal;
+                    }
+                });
+
+                // ==========================================
+                // 新增: 2. 预加载相邻页面的图片缓冲逻辑
+                // ==========================================
+                const preloadPageImages = (pageNum) => {
+                    if (pageNum < 1 || pageNum > totalPages.value) return;
+                    const start = (pageNum - 1) * itemsPerPage.value;
+                    const cardsToPreload = mappedCards.slice(start, start + itemsPerPage.value);
+
+                    // 偷偷在后台利用 JS 的 Image 对象发起请求，浏览器会自动将它们存入内存缓存
+                    cardsToPreload.forEach(item => {
+                        const url = getThumbUrl(item.index);
+                        const img = new Image();
+                        img.src = url;
+                    });
+                };
+
+                // 监听页码和每页数量的变化，自动预加载上一页和下一页
+                Vue.watch([currentPage, itemsPerPage], () => {
+                    // 延迟一点点执行，让出主线程优先渲染当前页面的 DOM
+                    setTimeout(() => {
+                        preloadPageImages(currentPage.value + 1); // 预加载下一页
+                        preloadPageImages(currentPage.value - 1); // 预加载上一页
+                    }, 200);
+                }, { immediate: true });
+
+                return {
+                    // 新增: 款式控制框显示状态 (默认隐藏保证美观)
+                    gridRef,
+                    showCardControls,
+                    stylesConfig, globalConfigs: globalCardConfigs,
+                    currentPage, totalPages, pagedCards,
+                    getMaxVar, onStyleChange, getThumbUrl, getAvailableStyles
+                };
+            }
+        };
+
+
+        // ==========================================
+        // 新增: 塔罗占卜模拟面板模块
+        // ==========================================
+
+        // 1. 将状态提取到组件外部 (闭包作用域)。
+        // 这样每次打开/关闭主面板 (组件挂载/卸载) 时，依然操作同一份内存数据。
+        const divi_isDrawing = Vue.ref(false);
+        const divi_selectedSpreadMode = Vue.ref('time');
+        const divi_customLabels = Vue.ref(['位置 1', '位置 2', '位置 3']);
+        const divi_drawnCards = Vue.ref([null, null, null]);
+        // 新增：用于记录占卜所问的事项，保证切换页面不丢失
+        const divi_question = Vue.ref('');
+
+        const DivinationBoard = {
+            template: `
+    <div class="divination-board">
+      <div class="divination-bg" :style="{ backgroundImage: 'url(' + bgUrl + ')' }"></div>
+      
+      <div class="divination-controls">
+
+        <input 
+            v-model="question" 
+            type="text" 
+            placeholder="在此输入你心中的迷惘..." 
+            style="flex: 1; min-width: 170px;" 
+            :disabled="isDrawing"
+        />
+        <select v-model="selectedSpreadMode" :disabled="isDrawing">
+          <option value="time">过去 - 现在 - 未来</option>
+          <option value="action">问题 - 阻碍 - 建议</option>
+          <option value="custom">自定义含义...</option>
+        </select>
+        
+        <template v-if="selectedSpreadMode === 'custom'">
+          <input v-model="customLabels[0]" placeholder="位 1" style="width:70px;" :disabled="isDrawing"/>
+          <input v-model="customLabels[1]" placeholder="位 2" style="width:70px;" :disabled="isDrawing"/>
+          <input v-model="customLabels[2]" placeholder="位 3" style="width:70px;" :disabled="isDrawing"/>
+        </template>
+        
+        <button class="divination-btn" @click="drawCards" :disabled="isDrawing">🔮 抽取命途</button>
+        <button class="divination-btn divination-btn-danger" @click="resetBoard" :disabled="isDrawing">↺ 肃清</button>
+        <button class="divination-btn" style="border-color: #8a2be2; color: #d4af37;" @click="openHistory" :disabled="isDrawing">📜 命运回溯</button>
+      </div>
+
+      <div class="spread-slots">
+        <div class="slot-container" v-for="(slot, index) in 3" :key="index">
+          <div class="slot-label">{{ currentLabels[index] }}</div>
+          
+          <div class="slot-frame">
+            <transition name="deal">
+              <div 
+                v-if="drawnCards[index] && drawnCards[index].show" 
+                class="divi-card" 
+                :class="{ 'is-flipped': drawnCards[index].flipped }"
+              >
+                <div class="divi-face divi-back" v-html="cardBackSvg"></div>
+                
+                <div class="divi-face divi-front" :class="{ 'is-reversed': drawnCards[index].isReversed }">
+                  <img :src="drawnCards[index].imgUrl" />
+                </div>
+              </div>
+            </transition>
+            
+            <div class="meaning-tooltip" v-if="drawnCards[index] && drawnCards[index].flipped">
+              <div class="title">
+                {{ drawnCards[index].card.name }} 
+                ({{ drawnCards[index].isReversed ? '逆位' : '正位' }})
+              </div>
+              <div class="desc">
+                {{ drawnCards[index].isReversed ? drawnCards[index].card.meanings.reversed : drawnCards[index].card.meanings.upright }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+            <div class="divi-history-overlay" v-if="showHistoryModal" @click.self="showHistoryModal = false">
+        <div class="divi-history-content">
+          <div class="divi-history-header">
+            <h3 class="divi-history-title">阿卡夏档案 · 命途残卷</h3>
+            <div>
+              <button class="tg-refresh-btn" style="margin-right: 15px;" @click="fetchHistory" :disabled="isLoadingHistory">
+                {{ isLoadingHistory ? '灵视共鸣中...' : '重新接驳记忆' }}
+              </button>
+              <button class="tg-modal-close" style="position: relative; top: 0; right: 0;" @click="showHistoryModal = false">×</button>
+            </div>
+          </div>
+          <div class="divi-history-body">
+            <div v-if="historyRecords.length === 0 && !isLoadingHistory" style="text-align: center; color: #666; margin-top: 50px;">
+              [虚空之中，尚未留下任何观测痕迹]
+            </div>
+            
+            <div class="divi-history-card" v-for="record in historyRecords" :key="record.id">
+              <button class="divi-delete-btn" @click.stop="deleteRecord(record.id)">×</button>
+              
+              <div class="divi-h-question"><span>✦</span> 探求之事：{{ record.question }}</div>
+            
+              
+              <div class="divi-h-cards">
+                <div class="divi-h-card-item" v-for="(card, i) in record.cards" :key="i">
+                  <span style="color: #00f0ff;">{{ card.pos.trim() }}</span>: {{ card.name.trim() }} 
+                  <span :style="{ color: card.orientation === '逆位' ? '#ff6b6b' : '#a8d5e2' }">({{ card.orientation }})</span>
+                </div>
+              </div>
+
+              <div class="divi-h-tendency">命运走向：{{ record.tendency }}</div>
+              <div class="divi-h-tendency">开始时间：{{ record.start_floor }} 楼</div>
+              
+              <div class="divi-h-interpretations">
+                <div v-for="(interp, i) in record.interpretations" :key="i">{{ interp }}</div>
+              </div>
+              
+              <div class="divi-h-overall">
+                <strong>高我神谕：</strong>{{ record.overall }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `,
+ 
+         setup() {
+                const bgUrl = Vue.ref(DIVINATION_BG_URL);
+                const cardBackSvg = Vue.ref(CARD_BACK_SVG);
+
+                // 牌阵定义
+                const selectedSpreadMode = Vue.ref('time');
+                const spreadLabels = {
+                    time: ['过去', '现在', '未来'],
+                    action: ['问题', '阻碍', '建议']
+                };
+
+                const currentLabels = Vue.computed(() => {
+                    return divi_selectedSpreadMode.value === 'custom'
+                        ? divi_customLabels.value
+                        : spreadLabels[divi_selectedSpreadMode.value];
+                });
+
+                const resetBoard = () => {
+                    divi_drawnCards.value = [null, null, null];
+                };
+
+                // ==========================================
+                // 新增: 历史记录状态与数据抓取逻辑
+                // ==========================================
+                const showHistoryModal = Vue.ref(false);
+                const isLoadingHistory = Vue.ref(false);
+                const historyRecords = Vue.ref([]);
+
+                const fetchHistory = async () => {
+                    if (isLoadingHistory.value) return;
+                    isLoadingHistory.value = true;
+                    try {
+                        await veraDataAPI.refreshData();
+                        const rawData = veraDataAPI.veraData;
+                        const divinationResults = rawData["占卜结果"] || {};
+                        // 将对象转为数组以便于遍历
+                        historyRecords.value = Object.entries(divinationResults).map(([id, record]) => ({
+                            id,
+                            ...record
+                        }));
+                    } catch (err) {
+                        console.error("占卜残卷接驳失败:", err);
+                    } finally {
+                        isLoadingHistory.value = false;
+                    }
+                };
+                // 新增: 删除记录函数
+                const deleteRecord = (id) => {
+                    veraDataAPI.deleteTarotRecord(id); // 调用底层删除
+                    historyRecords.value = historyRecords.value.filter(r => r.id !== id); // 同步刷新前端列表
+                };
+
+                const openHistory = () => {
+                    showHistoryModal.value = true;
+                    fetchHistory();
+                };
+
+                const drawCards = () => {
+                    if (divi_isDrawing.value) return;
+                    divi_isDrawing.value = true;
+                    resetBoard();
+
+                    // 1. 筛选大阿尔卡纳 (00 - 21) 并打乱
+                    const majorArcana = tarotConfig.filter(c => parseInt(c.number) <= 21);
+                    const shuffled = [...majorArcana].sort(() => Math.random() - 0.5);
+                    const selected = shuffled.slice(0, 3);
+
+                    // 2. 映射结果，绑定全局款式配置，并随机正逆位
+                    const result = selected.map((card) => {
+                        // 查找在总览面板中的全局配置(如果被修改过)
+                        const globalIdx = tarotConfig.findIndex(c => c.number === card.number);
+                        const config = globalCardConfigs[globalIdx];
+                        const tag = stylesConfig.find(s => s.id === config.styleId).tag;
+                        const imgUrl = imageProvider.getUrl(card, config.variation, tag);
+
+                        return {
+                            card,
+                            imgUrl,
+                            isReversed: Math.random() > 0.65,
+                            show: false,
+                            flipped: false
+                        };
+                    });
+
+                    // 3. 缓动动画发牌 (间隔 300ms 出现一张牌)
+                    result.forEach((item, index) => {
+                        setTimeout(() => {
+                            divi_drawnCards.value[index] = item;
+                            setTimeout(() => { divi_drawnCards.value[index].show = true; }, 50);
+                        }, index * 300);
+                    });
+
+                    // 4. 缓动动画翻牌 (发完最后一张牌后，间隔 400ms 依次翻开)
+                    const flipStartTime = result.length * 300 + 400;
+                    result.forEach((_, index) => {
+                        setTimeout(() => {
+                            divi_drawnCards.value[index].flipped = true;
+                        }, flipStartTime + (index * 400));
+                    });
+
+                    // 5. 动画完全结束后，解锁按钮并在控制台打印
+                    setTimeout(() => {
+                        divi_isDrawing.value = false;
+                        console.log("=== 命途抽选结果 ===");
+                        // 新增：如果用户输入了问题，则将其打印在最前面
+                        if (divi_question.value.trim() !== '') {
+                            console.log(`[探求之事] - ${divi_question.value}`);
+                            console.log("--------------------");
+                        }
+                        result.forEach((res, i) => {
+                            console.log(`[${currentLabels.value[i]}] - ${res.card.number} ${res.card.name} (${res.isReversed ? '逆位' : '正位'})`);
+                        });
+                        console.log("====================");
+                    }, flipStartTime + (result.length * 400));
+                };
+
+                return {
+                    bgUrl, cardBackSvg,
+                    isDrawing: divi_isDrawing,
+                    selectedSpreadMode: divi_selectedSpreadMode,
+                    customLabels: divi_customLabels,
+                    drawnCards: divi_drawnCards,
+                    question: divi_question,
+                    currentLabels, drawCards, resetBoard,
+                    // 新增导出历史记录相关的 ref 与方法
+                    showHistoryModal, isLoadingHistory, historyRecords,
+                    fetchHistory, openHistory,
+
+                    deleteRecord
+                };
+            }
+        };
+
+
+        // ==========================================
+        // 新增: 时间之门渲染组件 (TimeGateBoard)
+        // ==========================================
+
+        // 局部复用的详情渲染模板 (因为当前节点和历史节点的详细结构一致)
+        const NodeDetailTemplate = `
+  <div v-if="node" class="tg-node-detail">
+    <div class="tg-section">
+      <div class="tg-section-title">档案基准</div>
+      <div class="tg-kv"><div class="tg-k">记录编号:</div><div class="tg-v">{{ node.id }}</div></div>
+      <div class="tg-kv"><div class="tg-k">危险评级:</div><div class="tg-v" style="color: #ff6b6b;">{{ node.meta_info.difficulty }}</div></div>
+      <div class="tg-kv"><div class="tg-k">同行干涉者:</div><div class="tg-v">{{ node.meta_info.participants.join(', ') }}</div></div>
+    </div>
+    
+    <div class="tg-section">
+      <div class="tg-section-title">时空锚点</div>
+      <div class="tg-kv"><div class="tg-k">现实切入点:</div><div class="tg-v">{{ node.timeline_info.real_world_entry_time }}</div></div>
+      <div class="tg-kv"><div class="tg-k">目标纪元:</div><div class="tg-v" style="color: #cda776;">{{ node.timeline_info.target_historical_time }}</div></div>
+      <div class="tg-kv"><div class="tg-k">降落坐标:</div><div class="tg-v">{{ node.timeline_info.target_location }}</div></div>
+    </div>
+
+    <div class="tg-section">
+      <div class="tg-section-title">历史弦论背景</div>
+      <div class="tg-kv"><div class="tg-k">时代切片:</div><div class="tg-v">{{ node.historical_context.background }}</div></div>
+      <div class="tg-kv"><div class="tg-k">核心冲突:</div><div class="tg-v">{{ node.historical_context.core_conflict }}</div></div>
+      <div class="tg-kv"><div class="tg-k">原始收束线:</div><div class="tg-v" style="color: #aaa;">{{ node.historical_context.original_trajectory }}</div></div>
+    </div>
+
+    <div class="tg-section" v-if="node.narrative_log && node.narrative_log.length > 0">
+      <div class="tg-section-title">观测与干涉日志 (已流逝 {{ node.exploration_state.days_elapsed }} 日)</div>
+      <div class="tg-log-day" v-for="log in node.narrative_log" :key="log.day">
+        <div class="tg-log-title">第 {{ log.day }} 日</div>
+        <ul class="tg-list">
+          <li v-for="(action, i) in log.actions_taken" :key="'a'+i">{{ action }}</li>
+        </ul>
+        <div class="tg-butterfly">
+          <span style="color:#d4af37;">[蝴蝶效应]</span>
+          <ul class="tg-list" style="margin-top: 5px;">
+            <li v-for="(effect, i) in log.butterfly_effects" :key="'e'+i">{{ effect }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="tg-section" v-if="node.settlement">
+      <div class="tg-section-title">因果律结算</div>
+      <div class="tg-kv"><div class="tg-k">物质提取:</div>
+        <div class="tg-v">
+          <ul class="tg-list" style="padding-left: 0; list-style-position: inside;">
+            <li v-for="(item, i) in node.settlement.items_retrieved" :key="'i'+i" style="color: #a8d5e2;">{{ item }}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tg-kv"><div class="tg-k">现实偏移:</div>
+        <div class="tg-v">
+          <ul class="tg-list" style="padding-left: 0; list-style-position: inside;">
+            <li v-for="(shift, i) in node.settlement.reality_shifts" :key="'s'+i" style="color: #d88c9a;">{{ shift }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+`;
+
+        const TimeGateBoard = {
+            template: `
+    <div class="timegate-board">
+      <div class="tg-bg" :style="{ backgroundImage: 'url(' + currentBg + ')' }"></div>
+      
+      <div class="tg-header">
+        <h2 class="tg-title">时间之门枢纽</h2>
+        <button class="tg-refresh-btn" @click="fetchData" :disabled="isLoading">
+          {{ isLoading ? '时空共鸣中...' : '重新接驳数据' }}
+        </button>
+      </div>
+
+      <div class="tg-layout">
+        <div class="tg-pane">
+          <div class="tg-pane-title">当前激活节点</div>
+          <div class="tg-content-scroll">
+            <template v-if="currentNode">
+              <node-detail-view :node="currentNode" />
+            </template>
+            <div v-else style="text-align: center; color: #666; margin-top: 50px; display: flex; flex-direction: column; align-items: center; gap: 20px;">
+                <div style="font-style: italic;">[门处于沉睡状态，暂无进行中的干涉任务]</div>
+                
+                <button 
+                    class="tg-refresh-btn" 
+                    style="border-color: #00f0ff; color: #00f0ff; background: rgba(0, 240, 255, 0.05); padding: 10px 25px; font-size: 15px;"
+                    onmouseover="this.style.boxShadow='0 0 15px rgba(0, 240, 255, 0.4)'; this.style.background='rgba(0, 240, 255, 0.15)'"
+                    onmouseout="this.style.boxShadow='none'; this.style.background='rgba(0, 240, 255, 0.05)'"
+                    @click="openTimeGate"
+                >
+                    🌌 开启时间之门
+                </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tg-pane tg-pane-right">
+          <div class="tg-pane-title">历史残卷归档</div>
+          <div class="tg-content-scroll">
+            <div v-if="historyNodes.length === 0" style="text-align: center; color: #666; margin-top: 50px;">
+              [尚未有成功收束的历史记录]
+            </div>
+            
+            <div 
+            class="tg-history-card" 
+                v-for="hNode in historyNodes" 
+                :key="hNode.id"
+                @click="selectedHistoryNode = hNode"
+            >
+                <button class="tg-delete-btn" @click.stop="deleteHistoryNode(hNode.id)">×</button>
+                <div style="font-size: 16px; color: #cda776; margin-bottom: 8px;">
+                    {{ hNode.timeline_info.target_historical_time }}
+                </div>
+                <div style="font-size: 13px; color: #aaa; margin-bottom: 4px;">
+                    降落点：{{ hNode.timeline_info.target_location }}
+                </div>
+                <div style="font-size: 13px; display: flex; justify-content: flex-start; gap: 30px; padding-right: 80px;">
+                    <span style="color: #ff6b6b;">难度: {{ hNode.meta_info.difficulty }}</span>
+                    <span style="color: #8a755d;">参与者: {{ hNode.meta_info.participants.join(', ') }}</span>
+                </div>
+                
+                <button 
+                    class="tg-visibility-toggle" 
+                    :class="{ 'is-visible': archiveVisibility[hNode.id] !== false }"
+                    @click.stop="toggleVisibility(hNode.id)"
+                >
+                    {{ archiveVisibility[hNode.id] !== false ? '👁 展示中' : '去展示' }}
+                </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tg-modal-overlay" v-if="selectedHistoryNode" @click.self="selectedHistoryNode = null">
+        <div class="tg-modal-content">
+          <button class="tg-modal-close" @click="selectedHistoryNode = null">×</button>
+          <div class="tg-pane-title" style="border-radius: 8px 8px 0 0;">归档详情查阅</div>
+          <div class="tg-content-scroll">
+            <node-detail-view :node="selectedHistoryNode" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  `,
+            components: {
+                // 注册内部渲染组件
+                'node-detail-view': {
+                    props: ['node'],
+                    template: NodeDetailTemplate
+                }
+            },
+            setup() {
+                const isLoading = Vue.ref(false);
+                const currentNode = Vue.ref(null);
+                const historyNodes = Vue.ref([]);
+                const selectedHistoryNode = Vue.ref(null);
+                const currentBg = Vue.ref('');
+
+                // ==========================================
+                // 新增: 历史档案展示状态持久化逻辑
+                // ==========================================
+                const savedVisibility = localStorage.getItem('timeGate_archiveVisibility');
+                // 默认状态为 true (展示)，未记录的节点也视作展示
+                const archiveVisibility = Vue.reactive(savedVisibility ? JSON.parse(savedVisibility) : {});
+
+                Vue.watch(archiveVisibility, (newVal) => {
+                    localStorage.setItem('timeGate_archiveVisibility', JSON.stringify(newVal));
+                }, { deep: true });
+
+                const toggleVisibility = (id) => {
+                    if (archiveVisibility[id] === undefined) {
+                        archiveVisibility[id] = false; // 首次点击，从默认 true 变为 false
+                    } else {
+                        archiveVisibility[id] = !archiveVisibility[id];
+                    }
+                };
+
+                // 根据 Vera 形态抽取背景
+                const updateBackground = () => {
+                    const form = VeraConfigStore.state.currentForm || 'default';
+                    const bgList = TIMEGATE_BG_CONFIG[form] || TIMEGATE_BG_CONFIG['default'];
+                    // 随机抽取一张
+                    const randomBg = bgList[Math.floor(Math.random() * bgList.length)];
+                    currentBg.value = randomBg;
+                };
+
+                const fetchData = async () => {
+                    if (isLoading.value) return;
+                    isLoading.value = true;
+                    updateBackground(); // 每次刷新数据时同步刷新背景
+
+                    try {
+                        await veraDataAPI.refreshData();
+                        const rawData = veraDataAPI.veraData;
+                        const gateData = rawData["时间之门"];
+
+                        currentNode.value = gateData["当前节点"] || null;
+
+                        // 将历史节点对象转化为数组以便循环
+                        const historyObj = gateData["历史节点"] || {};
+                        historyNodes.value = Object.values(historyObj).sort((a, b) => {
+                            // 简单的按进入时间倒序排
+                            return new Date(b.timeline_info.real_world_entry_time) - new Date(a.timeline_info.real_world_entry_time);
+                        });
+
+                    } catch (err) {
+                        console.error("时间之门数据接驳失败:", err);
+                    } finally {
+                        isLoading.value = false;
+                    }
+                };
+
+                // 新增: 删除历史节点函数
+                const deleteHistoryNode = (id) => {
+                    veraDataAPI.deleteTimeGateHistoryNode(id); // 调用底层删除
+                    historyNodes.value = historyNodes.value.filter(node => node.id !== id); // 同步刷新前端列表
+                    
+                    // 容错：如果当前正打开着该节点的详情弹窗，则顺便关闭弹窗
+                    if (selectedHistoryNode.value && selectedHistoryNode.value.id === id) {
+                        selectedHistoryNode.value = null;
+                    }
+                };
+
+                // ==========================================
+                // 新增: 开启时间之门函数
+                // ==========================================
+                const openTimeGate = () => {
+                    // 这里构造你想要发送给后端的 Prompt
+                    const promptPayload = {
+                        action: "open_gate",
+                        timestamp: Date.now(),
+                        prompt: "请求开启新的时间之门节点，启动随机历史干涉任务。请生成初始历史背景与降落坐标。"
+                    };
+
+                    // 暂时打印到控制台
+                    console.log("【时空枢纽指令发送】:", JSON.stringify(promptPayload, null, 2));
+
+                    // TODO: 之后在这里替换为真实的 API 请求，请求成功后可以调用 fetchData() 刷新页面
+                };
+
+                // 初始加载
+                Vue.onMounted(() => {
+                    VeraConfigStore.load(); // 模拟加载状态
+                    fetchData();
+                });
+
+                return {
+                    isLoading, fetchData, currentBg,
+                    currentNode, historyNodes, selectedHistoryNode,
+                    archiveVisibility, toggleVisibility,
+                    openTimeGate,
+                    deleteHistoryNode
+                };
+            }
+        };
+
+
+        // ==========================================
+        // 模块 3: 初始化 Vue 实例
+        // ==========================================
+        const app = createApp({
+            components: { CardOverview, CardDetailModal, DivinationBoard, TimeGateBoard },
+            template: `
+
+                <div class="main-backdrop" v-if="isPanelOpen" @click="isPanelOpen = false"></div>
+                <div 
+                    v-show="!isPanelOpen"
+                    class="floating-sphere"
+                    :style="{ left: sphereX + 'px', top: sphereY + 'px' }"
+                    @pointerdown.stop.prevent="onSphereDown"
+                    @pointerup="onSphereUp"
+                    @click.stop.prevent
+                >
+                V
+                </div>
+
+                <div class="main-window" v-if="isPanelOpen">
+                <div class="window-header">
+                    <div class="tabs">
+                    <button :class="{ active: activeTab === 'divination' }" @click="activeTab = 'divination'">塔罗占卜</button>
+                    <button :class="{ active: activeTab === 'overview' }" @click="activeTab = 'overview'">卡牌总览</button>
+                    <button :class="{ active: activeTab === 'timegate' }" @click="activeTab = 'timegate'">时间之门</button>
+                    <button :class="{ active: activeTab === 'config' }" @click="activeTab = 'config'">配置项</button>
+                    </div>
+                    <button class="close-btn" @click="isPanelOpen = false">×</button>
+                </div>
+                
+                <div class="window-content">
+                    <div v-if="activeTab === 'placeholder'" style="color: #aaa; text-align: center; margin-top: 50px;">
+                    <h2>系统核心占位</h2>
+                    <p>此面板预留给后续系统扩展...</p>
+                    </div>
+
+                    <div v-if="activeTab === 'divination'" style="height: 100%;">
+                        <divination-board />
+                    </div>
+                    
+                    <card-overview 
+                        v-if="activeTab === 'overview'" 
+                        v-model:global3dEnabled="global3dEnabled"
+                        @preview="openPreview" 
+                    />
+
+                    <div v-if="activeTab === 'timegate'" style="height: 100%;">
+                        <time-gate-board />
+                    </div>
+                </div>
+                </div>
+
+                <card-detail-modal 
+                v-if="previewCardIndex !== null"
+                :card-index="previewCardIndex"
+                :initial-style-id="previewStyleId"
+                :initial-variation="previewVariation"
+                :initial-3d-enabled="global3dEnabled"
+                @close="previewCardIndex = null"
+                />
+            `,
+
+            setup() {
+                const isPanelOpen = Vue.ref(false);
+                const activeTab = Vue.ref('divination'); // 默认打开总览页
+                // 新增: 全局 3D 状态持久化 (控制详情页初始是否具有 3D 效果)
+                const saved3D = localStorage.getItem('tarotGlobal3D');
+                const global3dEnabled = Vue.ref(saved3D !== null ? JSON.parse(saved3D) : true);
+
+                // 监听变化并存储
+                Vue.watch(global3dEnabled, (val) => {
+                    localStorage.setItem('tarotGlobal3D', JSON.stringify(val));
+                });
+
+                // 悬浮球逻辑
+                const {
+                    x: sphereX, y: sphereY,
+                    onPointerDown: onSphereDown, checkClick
+                } = useDraggableSphere();
+
+                const onSphereUp = (e) => {
+                    // 只有当没有发生实质性拖拽时，才认为是点击事件，打开面板
+                    if (checkClick()) {
+                        isPanelOpen.value = true;
+                    }
+                };
+                // 新增: 处理主面板的全局 ESC 事件 (解决层级冲突)
+                const handleGlobalEsc = (e) => {
+                    if (e.key === 'Escape') {
+                        // 【核心拦截】如果详情弹窗正在显示，说明用户是想关弹窗，主面板不作为
+                        if (previewCardIndex.value !== null) {
+                            return;
+                        }
+
+                        // 否则，如果主面板开着，关闭主面板
+                        if (isPanelOpen.value) {
+                            isPanelOpen.value = false;
+                        }
+                    }
+                };
+
+                // 在根组件挂载时监听全局键盘事件
+                Vue.onMounted(() => {
+                    window.addEventListener('keydown', handleGlobalEsc);
+                });
+
+                Vue.onUnmounted(() => {
+                    window.removeEventListener('keydown', handleGlobalEsc);
+                });
+
+                // 预览弹窗逻辑
+                const previewCardIndex = Vue.ref(null);
+                const previewStyleId = Vue.ref('');
+                const previewVariation = Vue.ref(1);
+
+                const openPreview = (index) => {
+                    previewCardIndex.value = index;
+                    // 提取该卡片在总览中配置的全局状态，传递给弹窗作为初始状态
+                    previewStyleId.value = globalCardConfigs[index].styleId;
+                    previewVariation.value = globalCardConfigs[index].variation;
+                };
+
+                return {
+                    isPanelOpen, activeTab,
+                    global3dEnabled,
+                    sphereX, sphereY, onSphereDown, onSphereUp,
+                    previewCardIndex, previewStyleId, previewVariation, openPreview
+                };
+            }
+
+        });
+
+        app.mount('#app');
+    </script>
+</body>
+
+</html>

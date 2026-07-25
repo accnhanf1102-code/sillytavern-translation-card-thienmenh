@@ -1,0 +1,702 @@
+```
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thời Chi Môn - Bảng Ghi Chép</title>
+    <style>
+        /* 基础变量定义 */
+        :root {
+            --tg-bg: #0d1117;
+            --tg-panel: rgba(22, 27, 34, 0.85);
+            --tg-text: #c9d1d9;
+            --tg-text-muted: #8b949e;
+
+            /* 默认主题色 (Init) - 时空幽蓝 */
+            --theme-color: #58a6ff;
+            --theme-glow: rgba(88, 166, 255, 0.3);
+            --theme-border: #1f6feb;
+        }
+
+        /* 动态主题色 */
+        .tg-wrapper[data-type="active"] {
+            /* 探索中 (Active) - 琥珀流金 */
+            --theme-color: #d2a8ff;
+            /* 替换为时空扰动的紫粉色更合适，或者琥珀色 e3b341 */
+            --theme-color: #e3b341;
+            --theme-glow: rgba(227, 179, 65, 0.3);
+            --theme-border: #9e6a03;
+        }
+
+        .tg-wrapper[data-type="finish"] {
+            /* 结算 (Finish) - 现实坍塌紫 */
+            --theme-color: #d2a8ff;
+            --theme-glow: rgba(210, 168, 255, 0.3);
+            --theme-border: #8957e5;
+        }
+
+        .tg-wrapper {
+            position: relative;
+            background: linear-gradient(180deg, var(--tg-bg) 0%, #010409 100%);
+            border: 1px solid var(--theme-border);
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            color: var(--tg-text);
+            font-family: "Cascadia Code", "Consolas", "PingFang SC", sans-serif;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8), inset 0 0 20px var(--theme-glow);
+            overflow: hidden;
+        }
+
+        /* SVG 装饰背景 (统一使用齿轮和刻度盘元素) */
+        .tg-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            opacity: 0.05;
+            pointer-events: none;
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='50' cy='50' r='48' fill='none' stroke='%23ffffff' stroke-width='1' stroke-dasharray='2 4'/%3E%3Ccircle cx='50' cy='50' r='38' fill='none' stroke='%23ffffff' stroke-width='0.5'/%3E%3Cpath d='M50 10 L50 90 M10 50 L90 50 M22 22 L78 78 M22 78 L78 22' stroke='%23ffffff' stroke-width='0.5'/%3E%3Ccircle cx='50' cy='50' r='10' fill='none' stroke='%23ffffff' stroke-width='2'/%3E%3C/svg%3E") no-repeat center;
+            background-size: contain;
+            animation: tg-spin 60s steps(30) infinite;
+        }
+
+        @keyframes tg-spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* 头部标题区域 */
+        .tg-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--theme-border);
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+        }
+
+        .tg-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: var(--theme-color);
+            letter-spacing: 2px;
+            text-shadow: 0 0 8px var(--theme-glow);
+            display: flex;
+            align-items: center;
+        }
+
+        .tg-title::before {
+            content: "◈";
+            margin-right: 8px;
+            font-size: 1.2em;
+        }
+
+        /* 数据网格布局 */
+        .tg-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .tg-kv-box {
+            background: var(--tg-panel);
+            border-left: 3px solid var(--theme-color);
+            padding: 10px 14px;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .tg-key {
+            font-size: 0.85em;
+            color: var(--tg-text-muted);
+            margin-bottom: 4px;
+            text-transform: uppercase;
+        }
+
+        .tg-value {
+            font-size: 1.05em;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        /* 列表区域样式 */
+        .tg-section {
+            margin-bottom: 20px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 6px;
+            padding: 16px;
+        }
+
+        .tg-section-title {
+            color: var(--theme-color);
+            font-weight: bold;
+            margin-bottom: 12px;
+            font-size: 1em;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+            padding-bottom: 6px;
+        }
+
+        .tg-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .tg-list li {
+            position: relative;
+            padding-left: 18px;
+            margin-bottom: 8px;
+            line-height: 1.6;
+            color: #e6edf3;
+        }
+
+        .tg-list li::before {
+            content: "⊛";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--theme-color);
+            font-size: 0.9em;
+        }
+
+        /* 文本段落块 */
+        .tg-text-block {
+            line-height: 1.7;
+            color: #e6edf3;
+        }
+
+        /* 底部操作区 */
+        .tg-footer {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 16px;
+        }
+
+        .tg-save-hint {
+            font-size: 0.85em;
+            color: var(--tg-text-muted);
+            margin-right: 16px;
+            font-style: italic;
+        }
+
+        .tg-btn-save {
+            background: transparent;
+            border: 1px solid var(--theme-color);
+            color: var(--theme-color);
+            padding: 8px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        .tg-btn-save:hover {
+            background: var(--theme-glow);
+            box-shadow: 0 0 15px var(--theme-glow);
+            color: #fff;
+        }
+
+        .tg-btn-save.saved {
+            background: var(--theme-color);
+            color: var(--tg-bg);
+            border-color: var(--theme-color);
+        }
+
+        /* 隐藏原始数据 */
+        .tg-raw {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="chat-container"></div>
+
+    <script>
+
+        const DB_PATH = {
+            KEY: {
+                EVENT: "Event"
+            }
+        };
+        const K = DB_PATH.KEY;
+        const TimeGateDataManager = {
+            veraData: null,
+            init: async function () {
+                const findMvu = () => {
+                    if (typeof window.Mvu !== 'undefined') return window.Mvu;
+                    if (window.parent && typeof window.parent.Mvu !== 'undefined') return window.parent.Mvu;
+                    return null;
+                };
+                // 1. 定义一个简单的等待函数
+                const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+                let retries = 0;
+                let mvuApi = findMvu();
+                while (!mvuApi) {
+                    if (retries > 60) { // 延长超时时间到 30秒 (60*500ms)
+                        alert("Hết thời gian kết nối, vui lòng kiểm tra xem script mvu có tồn tại không");
+                        return;
+                    }
+
+                    await wait(500);
+                    retries++;
+                    mvuApi = findMvu(); // 再次尝试查找
+                }
+                const timeGate = mvuApi.getMvuData({ type: 'message' }).stat_data?.[K.EVENT]?.Vera?.['Thời Chi Môn']
+                this.veraData = timeGate ? { 'Thời Chi Môn': timeGate }
+                    : {
+                        'Thời Chi Môn': {
+                            'Nút Hiện Tại': null,
+                            'Nút Lịch Sử': {}
+                        }
+                    };
+            },
+
+            fetchData() {
+                const findMvu = () => {
+                    if (typeof window.Mvu !== 'undefined') return window.Mvu;
+                    if (window.parent && typeof window.parent.Mvu !== 'undefined') return window.parent.Mvu;
+                    return null;
+                };
+                let mvuApi = findMvu();
+                const timeGate = mvuApi.getMvuData({ type: 'message' }).stat_data?.[K.EVENT]?.Vera?.['Thời Chi Môn']
+                //console.log("读取数据",timeGate);
+                this.veraData = timeGate ? { 'Thời Chi Môn': timeGate }
+                    : {
+                        'Thời Chi Môn': {
+                            'Nút Hiện Tại': null,
+                            'Nút Lịch Sử': {}
+                        }
+                    };
+            },
+
+            save() {
+                const basePath = "stat_data";
+                const eventK = K.EVENT;
+                if (typeof insertOrAssignVariables === "function")
+                    insertOrAssignVariables({ [basePath]: { [eventK]: { Vera: this.veraData } } }, { type: 'message' });
+            },
+
+
+        };
+
+        /**
+         * Chế độ xử lý 1: Tạo bản sao (Khởi tạo)
+         */
+        function handleInit(data) {
+            TimeGateDataManager.fetchData();
+            const Vera = TimeGateDataManager.veraData;
+            if (Vera['Thời Chi Môn']['Nút Hiện Tại'] !== null) {
+                if (!confirm("[TimeGate] Cảnh báo: Hiện tại đã có Nút Thời Chi Môn đang tiến hành, có muốn bắt buộc ghi đè không?")) {
+                    console.log("[TimeGate] Thao tác bị hủy: Người dùng đã hủy việc ghi đè nút.");
+                    throw new Error("USER_CANCELLED");
+                }
+            }
+
+            // 生成唯一 ID
+            const nodeId = 'gate_' + Date.now() + '_' + Math.floor(Math.random() * 1000);
+
+            // 构建并挂载完整的单次记录数据结构
+            Vera['Thời Chi Môn']['Nút Hiện Tại'] = {
+                id: nodeId,
+                status: "active",
+                meta_info: {
+                    entry_type: data["Phương thức tiến vào"] || "未知",
+                    difficulty: data["Độ khó"] || "未知",
+                    participants: ensureArray(data["Người tham gia"])
+                },
+                timeline_info: {
+                    real_world_entry_time: data["Thời gian hiện thực"] || "",
+                    target_historical_time: data["Thời gian lịch sử"] || "",
+                    target_location: data["Vị trí đáp xuống"] || "",
+                    // 锁定区间可根据 target_historical_time 由额外脚本解析生成，此处预留
+                    locked_period: { start: "", end: "" }
+                },
+                historical_context: {
+                    background: data["Bối cảnh thời đại"] || "",
+                    core_conflict: data["Cốt lõi điểm nút"] || "",
+                    original_trajectory: data["Hướng đi lịch sử"] || ""
+                },
+                exploration_state: {
+                    days_elapsed: 0
+                },
+                // narrative_log 改为数组对象，以天数为维度记录
+                narrative_log: [],
+                settlement: {
+                    items_retrieved: [],
+                    reality_shifts: []
+                }
+            };
+
+            TimeGateDataManager.save();
+
+            console.log(`[TimeGate] Phó bản đã được tạo, ID: ${nodeId}`, Vera['Thời Chi Môn']['Nút Hiện Tại']);
+        }
+
+        /**
+         * Chế độ xử lý 2: Số ngày trải qua (Active)
+         */
+        function handleActive(data) {
+            TimeGateDataManager.fetchData();
+            const Vera = TimeGateDataManager.veraData;
+            const currentNode = Vera['Thời Chi Môn']['Nút Hiện Tại'];
+            if (!currentNode) {
+                throw new Error("Không phát hiện Nút Thời Chi Môn nào đang tiến hành, không thể ghi lại hành động.");
+            }
+
+            const currentDay = parseInt(data["Số ngày hiện tại"]) || (currentNode.exploration_state.days_elapsed + 1);
+
+            // 组合当天的行动与效应，推入 narrative_log 数组
+            const dailyRecord = {
+                day: currentDay,
+                actions_taken: ensureArray(data["Hành động then chốt"]),
+                butterfly_effects: ensureArray(data["Hiệu ứng cánh bướm"])
+            };
+
+            // 修改点：检查当前天数是否已存在记录
+            const existingRecordIndex = currentNode.narrative_log.findIndex(log => log.day === currentDay);
+
+            if (existingRecordIndex !== -1) {
+                if (!confirm(`[TimeGate] Cảnh báo: Ngày thứ ${currentDay} đã có ghi chép, có muốn ghi đè/thêm vào không?`)) {
+                    console.log(`[TimeGate] Thao tác bị hủy: Người dùng đã hủy việc ghi đè ghi chép ngày thứ ${currentDay}.`);
+                    throw new Error("USER_CANCELLED");
+                }
+                if (confirm("Chọn Ghi đè/Thêm vào, Có: Ghi đè, Không: Thêm vào")) {
+                    currentNode.narrative_log[existingRecordIndex] = dailyRecord;
+                } else {
+                    currentNode.narrative_log[existingRecordIndex].actions_taken.push(...dailyRecord.actions_taken);
+                    currentNode.narrative_log[existingRecordIndex].butterfly_effects.push(...dailyRecord.butterfly_effects);
+                }
+                // 确认覆盖
+
+            } else {
+                // 不存在，正常推入
+                currentNode.narrative_log.push(dailyRecord);
+            }
+
+            // 只有在保存成功后才更新总天数，避免取消操作污染数据
+            currentNode.exploration_state.days_elapsed = Math.max(currentNode.exploration_state.days_elapsed, currentDay);
+
+            TimeGateDataManager.save();
+            console.log(`[TimeGate] Ghi chép ngày thứ ${currentDay} đã được cập nhật:`, dailyRecord);
+        }
+
+        /**
+         * Chế độ xử lý 3: Tổng kết cuối cùng (Finish)
+         */
+        function handleFinish(data) {
+            TimeGateDataManager.fetchData();
+            const Vera = TimeGateDataManager.veraData;
+            const currentNode = Vera['Thời Chi Môn']['Nút Hiện Tại'];
+            if (!currentNode) {
+                throw new Error("Không phát hiện Nút Thời Chi Môn nào đang tiến hành, không thể tổng kết.");
+            }
+
+            const nodeId = currentNode.id;
+
+            // 修改点：检查历史节点中是否已存在相同的 ID
+            if (Vera['Thời Chi Môn']['Nút Lịch Sử'] && Vera['Thời Chi Môn']['Nút Lịch Sử'][nodeId]) {
+                if (!confirm(`[TimeGate] Cảnh báo: Đã có ghi chép tổng kết cho ID ${nodeId}, có muốn ghi đè không?`)) {
+                    console.log(`[TimeGate] Thao tác bị hủy: Người dùng đã hủy việc ghi đè tổng kết nút.`);
+                    throw new Error("USER_CANCELLED");
+                }
+            } else if (Vera['Thời Chi Môn']['Nút Lịch Sử'] && Object.values(Vera['Thời Chi Môn']['Nút Lịch Sử']).some(
+                (v) => {
+                    return (v.timeline_info.target_historical_time === currentNode.timeline_info.target_historical_time)
+                        && (v.timeline_info.real_world_entry_time === currentNode.timeline_info.real_world_entry_time)
+                }
+            )) {
+                if (!confirm(`[TimeGate] Cảnh báo: Có vẻ đã tồn tại một bản ghi lịch sử tương tự, bạn có muốn tiếp tục ghi đè không?`)) {
+                    console.log(`[TimeGate] Thao tác bị hủy: Người dùng đã hủy việc ghi đè tổng kết nút.`);
+                    throw new Error("USER_CANCELLED");
+                }
+            }
+
+            // 写入结算数据
+            currentNode.settlement.items_retrieved = ensureArray(data["Vật phẩm mang theo"]);
+            currentNode.settlement.reality_shifts = ensureArray(data["Thay đổi hiện thực"]);
+            currentNode.status = "finished";
+            if (currentNode.narrative_log.length > 1) {
+                const sorted_logs = currentNode.narrative_log.sort(function (a, b) {
+                    return a.day - b.day
+                });
+                //console.log(sorted_logs);
+                currentNode.narrative_log = sorted_logs;
+            }
+
+            // 转移到历史记录中 (持久化存储的源头)
+            if (!Vera['Thời Chi Môn']['Nút Lịch Sử']) Vera['Thời Chi Môn']['Nút Lịch Sử'] = {}; // 确保初始化防报错
+            Vera['Thời Chi Môn']['Nút Lịch Sử'][nodeId] = JSON.parse(JSON.stringify(currentNode)); // 深拷贝切断引用
+
+            // 清理当前节点
+            Vera['Thời Chi Môn']['Nút Hiện Tại'] = null;
+            TimeGateDataManager.save();
+
+            console.log(`[TimeGate] Nút ${nodeId} đã tổng kết và lưu trữ。`, Vera['Thời Chi Môn']['Nút Lịch Sử'][nodeId]);
+        }
+
+
+        /* =====================================================================
+         * Hàm công cụ hỗ trợ
+         * ===================================================================== */
+
+        /**
+         * Trình phân tích cú pháp YAML an toàn hạng nhẹ (chuyên xử lý cặp key-value và danh sách mảng)
+         */
+        function parseSimpleYAML(text) {
+            const lines = text.split('\n');
+            const result = {};
+            let currentKey = null;
+
+            for (let line of lines) {
+                // 去除右侧空格，保留左侧缩进以便后续判断（如果需要）
+                line = line.trimEnd();
+                const trimmedLine = line.trim();
+
+                if (!trimmedLine) continue; // Bỏ qua dòng trống
+
+                // 判断是否为数组项: 以 "- " 开头
+                if (trimmedLine.startsWith('- ')) {
+                    if (currentKey) {
+                        if (!Array.isArray(result[currentKey])) {
+                            // 如果该键还不是数组，但遇到了数组项，则将其转换为数组
+                            result[currentKey] = result[currentKey] ? [result[currentKey]] : [];
+                        }
+                        // 提取 "- " 之后的内容
+                        const arrayItem = trimmedLine.replace(/^-\s*/, '').trim();
+                        result[currentKey].push(arrayItem);
+                    }
+                    continue;
+                }
+
+                // 判断是否为键值对: "Key: Value" 或 "Key:"
+                const match = trimmedLine.match(/^([^:]+):\s*(.*)$/);
+                if (match) {
+                    const key = match[1].trim();
+                    const value = match[2].trim();
+                    currentKey = key;
+
+                    if (value) {
+                        result[key] = value;
+                    } else {
+                        result[key] = []; // 遇到空值，预留为数组
+                    }
+                }
+            }
+            return result;
+        }
+
+        /**
+         * 确保返回值为数组，增强健壮性
+         */
+        function ensureArray(val) {
+            if (!val) return [];
+            if (Array.isArray(val)) return val;
+            return [val]; // 如果 AI 漏写了 "-" 导致解析成单行字符串，强制包装为数组
+        }
+
+        // ==========================================
+        // 渲染器核心逻辑
+        // ==========================================
+        const TimeGateRenderer = {
+
+            // 生成 KV 小方块
+            buildKV(key, value) {
+                if (!value) return '';
+                return `
+          <div class="tg-kv-box">
+            <div class="tg-key">${key}</div>
+            <div class="tg-value">${value}</div>
+          </div>
+        `;
+            },
+
+            // 生成列表区块
+            buildList(title, items) {
+                const arr = window.ensureArray(items);
+                if (arr.length === 0) return '';
+                const listHTML = arr.map(item => `<li>${item}</li>`).join('');
+                return `
+          <div class="tg-section">
+            <div class="tg-section-title">${title}</div>
+            <ul class="tg-list">${listHTML}</ul>
+          </div>
+        `;
+            },
+
+            // 生成文本区块
+            buildText(title, text) {
+                if (!text || typeof text !== 'string') return '';
+                return `
+          <div class="tg-section">
+            <div class="tg-section-title">${title}</div>
+            <div class="tg-text-block">${text}</div>
+          </div>
+        `;
+            },
+
+            // 根据 Type 组装 HTML
+            generateInnerHTML(type, data, rawText) {
+                let content = '';
+                let titleName = '';
+
+                if (type === 'init') {
+                    titleName = "Xác lập Tọa độ Thời không (INIT)";
+                    content += `
+            <div class="tg-grid">
+              ${this.buildKV('Độ khó', data['Độ khó'])}
+              ${this.buildKV('Phương thức tiến vào', data['Phương thức tiến vào'])}
+              ${this.buildKV('Thời gian hiện thực', data['Thời gian hiện thực'])}
+              ${this.buildKV('Thời gian lịch sử', data['Thời gian lịch sử'])}
+              ${this.buildKV('Vị trí đáp xuống', data['Vị trí đáp xuống'])}
+            </div>
+            ${this.buildList('Người tham gia', data['Người tham gia'])}
+            ${this.buildText('Bối cảnh thời đại', data['Bối cảnh thời đại'])}
+            ${this.buildText('Cốt lõi điểm nút', data['Cốt lõi điểm nút'])}
+            ${this.buildText('Hướng đi lịch sử', data['Hướng đi lịch sử'])}
+          `;
+                }
+                else if (type === 'active') {
+                    titleName = `Ghi chép Quan sát Dị tượng (ACTIVE) - DAY ${data['Số ngày hiện tại'] || '?'}`;
+                    content += `
+            ${this.buildList('Hành động then chốt', data['Hành động then chốt'])}
+            ${this.buildList('Hiệu ứng cánh bướm', data['Hiệu ứng cánh bướm'])}
+          `;
+                }
+                else if (type === 'finish') {
+                    titleName = "Tổng kết Tái cấu trúc Thế giới tuyến (FINISH)";
+                    content += `
+            ${this.buildList('Vật phẩm mang theo', data['Vật phẩm mang theo'])}
+            ${this.buildList('Thay đổi hiện thực', data['Thay đổi hiện thực'])}
+          `;
+                }
+
+                return `
+          <div class="tg-header">
+            <div class="tg-title">${titleName}</div>
+          </div>
+          <div class="tg-body">
+            ${content}
+          </div>
+          <div class="tg-footer">
+            <span class="tg-save-hint">Vui lòng đối chiếu ghi chép quan sát, sau khi xác nhận không có lỗi hãy cố định vào thiết bị đầu cuối cục bộ...</span>
+            <button class="tg-btn-save" data-type="${type}">✦ Lưu trữ cố định</button>
+          </div>
+        `;
+            },
+
+            // 绑定持久化保存按钮
+            bindSave(btn, type, data) {
+                btn.addEventListener('click', () => {
+                    try {
+
+                        switch (type) {
+                            case 'init':
+                                handleInit(data);
+                                break;
+                            case 'active':
+                                handleActive(data);
+                                break;
+                            case 'finish':
+                                handleFinish(data);
+                                break;
+                        }
+
+                        // UI 反馈
+                        btn.textContent = "✔ Đã cố định";
+                        btn.classList.add('saved');
+                        btn.disabled = true;
+                        btn.previousElementSibling.textContent = "Ghi chép này đã được lưu trữ.";
+
+                        console.log(`[TimeGate] ${type} Nút đã được lưu trữ lâu dài:`, data);
+                    } catch (e) {
+                        if (e.message === "USER_CANCELLED") return;
+                        console.error("Lưu thất bại", e);
+                        btn.textContent = "✖ Lưu thất bại";
+                    }
+
+                    // 占位函数：保存到 localStorage
+                    /*
+                    try {
+                        const history = JSON.parse(localStorage.getItem('VeraTimeGateHistory') || '[]');
+                        history.push({
+                            id: 'gate_' + Date.now(),
+                            type: type,
+                            timestamp: new Date().toISOString(),
+                            data: data
+                        });
+                        localStorage.setItem('VeraTimeGateHistory', JSON.stringify(history));
+
+                        // UI 反馈
+                        btn.textContent = "✔ Đã cố định";
+                        btn.classList.add('saved');
+                        btn.disabled = true;
+                        btn.previousElementSibling.textContent = "该记录已被阿卡夏网络记录。";
+
+                        console.log(`[TimeGate] ${type} Nút đã được lưu trữ lâu dài:`, data);
+                    } catch (e) {
+                        console.error("Lưu thất bại", e);
+                        btn.textContent = "✖ Lưu thất bại";
+                    }
+                    */
+                });
+            }
+        };
+
+        // ==========================================
+        // 3. 核心流：解析正则并动态创建 DOM
+        // ==========================================
+        function parseAndRenderTimeGate() {
+            const container = document.getElementById('chat-container');
+            const regex = /<TimeGate\s+type\s*=\s*["']?(init|active|finish)["']?>([\s\S]*?)<\/TimeGate>/g;
+            let match;
+
+            const type = "$1";
+            const yamlContent = `$2`;
+
+            // 解析 YAML
+            const parsedData = parseSimpleYAML(yamlContent);
+
+            // 动态创建外层包装器
+            const wrapper = document.createElement('div');
+            wrapper.className = 'tg-wrapper';
+            wrapper.setAttribute('data-type', type); // 这个属性决定了 CSS 主题色！
+
+            // 注入内部 HTML
+            wrapper.innerHTML = TimeGateRenderer.generateInnerHTML(type, parsedData);
+
+            // 绑定持久化事件
+            const saveBtn = wrapper.querySelector('.tg-btn-save');
+            if (saveBtn) {
+                TimeGateRenderer.bindSave(saveBtn, type, parsedData);
+            }
+
+            // 追加到页面聊天容器中
+            container.appendChild(wrapper);
+
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            parseAndRenderTimeGate();
+            TimeGateDataManager.init();
+        });
+        //# sourceURL=my_core_time_gate.js
+    </script>
+</body>
+
+</html>
+```
