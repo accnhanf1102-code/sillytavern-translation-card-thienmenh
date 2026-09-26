@@ -1,0 +1,2431 @@
+[
+    {
+        "id": "marker-1769056290750-23280d",
+        "name": "Đế Quốc Augustim",
+        "group": "Đế Quốc",
+        "description": "Bá quyền vĩnh hằng dưới tàn dương vạn giới: \"Chúng ta không cầu xin thần linh rủ lòng thương xót, cũng chẳng cậy nhờ ân huệ của tự nhiên. Từng tấc cương thổ của Augustim đều được đoạt lấy từ tay thế giới bằng lưỡi kiếm sắc bén. Dưới ánh mắt dõi nhìn của Nữ Hoàng bệ hạ, nhu nhược là tội nguyên duy nhất, còn chinh phục mới là sự tôn kính tối cao.\"\n\nTrên bình nguyên bao la nơi bờ đông đại lục, lá cờ sư thứu hai đầu của Đế Quốc Augustim là sắc màu duy nhất được phép tung bay trong gió — sắc vàng tượng trưng cho biển lúa mạch ngút ngàn cùng khối tài phú vô tận của Thành Kim Cốc, còn sắc thắm thẫm đỏ lại là minh chứng cho dòng máu thiết huyết mà Ironforge đã đổ ra để bảo vệ trật tự. Là bá chủ nắm giữ quân lực hùng cường bậc nhất nền văn minh nhân loại đương thời, tự thân Đế Quốc đã là một bức thành lũy kiên cố bất khả xâm phạm. Tại thủ đô Aethergard — \"Thành Phố Huy Quang\", vị thống trị tối cao cấp bậc sáu, Nữ Hoàng Violetta · Maxim · Augusta, dùng uy quyền không thể nghi ngờ của mình để định đoạt số phận của sáu đại gia tộc cổ xưa như Hohenberg và Ba Lưu. Nơi đây, luật pháp cho phép ngươi cầu nguyện với bất kỳ vị thần nào, nhưng thanh kiếm cùng lòng trung thành của ngươi phải vĩnh viễn thuộc về Đế Quốc. Trước tiếng gầm thét từ Liên Minh Thú Tộc Kalashlias nơi tây cảnh, cùng bóng ma tăm tối lưu lại từ cuộc xâm lăng vị diện, Augustim phô bày một phong thái thực tế đến mức khiến kẻ khác phải run rẩy và cường thế tột cùng — Đế Quốc không cầu được yêu mến, chỉ đòi hỏi sự phục tùng tuyệt đối.",
+        "icon": "fa-solid fa-flag",
+        "color": "#000000",
+        "position": {
+            "nx": 0.520953677344,
+            "ny": 0.524679302774
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/xvfs6x.png"
+        ]
+    },
+    {
+        "id": "marker-1769056415092-127f9c",
+        "name": "Kalashlias",
+        "group": "Liên Minh Thú Tộc",
+        "description": "Linh hồn gầm thét của thảo nguyên phong ngân:\n\"Kẻ Augustim dùng tường đá giam cầm đất đai, người Vania kiêu ngạo từ tầng mây rủ mắt nhìn xuống, duy chỉ có chúng ta, dõi theo dấu chân của Tuần Thiên Cự Thú, tự do rong ruổi khắp cõi đại địa này.\"\n\nChiếm cứ dải Thảo Nguyên Vô Tận Phong Ngân bao la nơi trung tây đại lục cùng thánh địa Thiên Kính Hồ, Kalashlias là một liên bang du mục hùng mạnh được kết thành bởi bảy đại thị tộc Thú Nhân cổ xưa. Lá cờ của họ phần phật tung bay trong cuồng phong — nền cờ mang sắc \"thiên thanh\" tượng trưng cho linh hồn tự do, vương vãi sắc \"huyết hồng\" khắc ghi sự tàn khốc của sinh tồn, và chính giữa là dấu móng khổng lồ của \"Tuần Thiên Cự Thú\" như lời tuyên ngôn rằng họ mới chính là những người thừa kế chính thống nhất của mảnh đất này.\n\nTại nơi đây, các vị bá chủ cùng Hội đồng Liên minh cùng duy trì một thế cân bằng vừa thô mộc vừa thiêng liêng: sự dũng mãnh tột bực và trí tuệ của Lang Tộc, sức mạnh hung hãn dữ dội của Hùng Tộc, sự kiêu hãnh và tốc độ phi như gió của Bán Nhân Mã, hòa quyện cùng nguyên tố lực huyền bí của Vinh Nguyên Tộc. Họ chẳng phải phường man tộc khát máu như Đế Quốc rêu rao, mà là những chiến binh cao quý coi trọng Huyết Thệ Minh Ước hơn cả tính mạng. Vì sinh tồn, họ dám xung phong đương đầu với thiết kỵ ngút trời của Đế Quốc Augustim nơi phương đông; vì đức tin, họ chẳng ngại giương cung phục hận nhắm thẳng vào tử địch ngự trị chót vót trên chín tầng mây — Thánh Đô Dực Dân Vania. Đối với những người con của Kalashlias, cái chết chưa bao giờ là sự kết thúc, mà là khúc khải hoàn vinh quang để linh hồn trở về hội ngộ cùng Tiên Tổ Chi Hồn.",
+        "icon": "fa-solid fa-flag",
+        "color": "#ffcc66",
+        "position": {
+            "nx": 0.23986405208,
+            "ny": 0.575857520097
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/1p3t8n.png"
+        ]
+    },
+    {
+        "id": "marker-1769056380399-32cef0",
+        "name": "Liên Minh Northgard",
+        "group": "Liên Minh Công Quốc",
+        "description": "Huynh Đệ Hội Sương Lang nơi miền cực lẫm:\n\"Đám quý tộc yếu đuối phương nam bọc thân trong lụa là gấm vóc, còn chúng ta dùng sương giá tuyết hàn để rèn giũa cốt tủy. Tại nơi này, không có quyền trượng của hoàng đế, chỉ có năm lưỡi chiến phủ giao nhau — một khi ma triều từ Vĩnh Đống Băng Nguyên trỗi dậy càn quét, hãy khắc cốt ghi tâm minh ước của chúng ta: Sói đơn độc sẽ chết, bầy sói sẽ trường sinh.\"\n\nLiên Minh Northgard không phải là một vương quốc thống nhất, mà là một phòng tuyến vĩ đại được đúc kết từ gang thép, băng tuyết và lời thề huyết thệ. Tọa lạc tại chốn cực bắc của đại lục, liên minh được hợp thành từ năm công quốc độc lập, trong đó có Skoll và Nordheim. Hoàn cảnh khắc nghiệt tột cùng nơi đây đã tôi luyện nên tính cách kiên cường và thực tế của người Northgard. Dưới lá cờ in hình \"Đầu Tuyết Lang và Chiến Phủ Giao Nhau\", năm vị đại công tước cùng tề tựu quanh bàn tròn tại thủ đô Thành Sương Thiết để định đoạt đại sự.\n\nSo với những lễ nghi phiền toái chốn đế quốc, người Northgard trao trọn niềm tin cho lưỡi kiếm sắc bén trong tay và những chiến hữu kề vai sát cánh. Dù cũng tôn sùng Tứ Thánh Linh, nhưng trên tế đàn của họ thường cung phụng đầu lâu của những bậc tiên tổ đã anh dũng ngã xuống nơi sa trường. Để chống lại lũ Sương Cự Nhân cuồng bạo cùng những đợt triều ma vật gầm rú tràn về từ Vĩnh Đống Băng Nguyên phía bắc, năm công quốc với cá tính dị biệt đã gác lại mọi ân oán xưa cũ để kết nên \"Sương Lang Minh Ước\" thiêng liêng. Vào mỗi đêm Tiết Nghênh Đông, những đống lửa trại của Northgard lại bốc cháy rực rỡ nối liền thành một dải dài vô tận — đó chính là ngọn hải đăng rạng rỡ và sau cùng của văn minh nhân loại giữa màn đêm tăm tối nơi cực bắc.",
+        "icon": "fa-solid fa-flag",
+        "color": "#ffffff",
+        "position": {
+            "nx": 0.635257703228,
+            "ny": 0.397746848608
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/sshwvp.png"
+        ]
+    },
+    {
+        "id": "marker-1769069516461-f95214",
+        "name": "Liên Bang Sahra",
+        "group": "Liên Bang Sa Mạc",
+        "description": "Nhật thực song tử nơi Sa Hải Xích Kim:\n\"Những đứa trẻ của đế quốc mong mỏi sự rủ lòng thương của thần linh, nhưng tại Sahra, chúng ta chỉ tin vào đòn bẩy, bánh răng cùng một tương lai đã được tính toán chuẩn xác. Tại nơi này, hoặc là ngươi trở thành kẻ xoay vần bánh răng, hoặc là ngươi sẽ hóa thành hạt bụi bị bánh răng nghiền nát tan tành.\"\n\nTọa lạc nơi miền nam đại lục, Liên Bang Sahra là một vành đai văn minh thành bang được dựng xây giữa lòng hoang mạc vô tận. Không lấy ma pháp làm sở trường, liên bang lại dựa vào kỹ nghệ phi ma pháp siêu việt tột đỉnh đại lục để khai phá nên một cương vực vừa mong manh vừa phồn hoa tráng lệ giữa Sa Hải Xích Kim. Dưới lá cờ \"Thái Dương Hoàng Kim\", sắc vàng rực rỡ tượng trưng cho vầng thái dương thiêu đốt cùng khối tài phú vô tận, còn sắc xanh lục lại biểu trưng cho nguồn nước sinh mệnh quý giá và những ốc đảo được duy trì nhờ kỳ tích công nghệ.\n\nĐây là một nền văn minh phức tạp mang hình bóng \"song thủ, song tâm\". Ngoài sáng, thủ đô Azhar dưới sự cai trị của Gia Tộc Faris phô diễn cảnh tượng huy hoàng tráng lệ được đắp xây từ tiếng thở dài của hàng vạn nô lệ cùng những phép tính toán chuẩn xác đến rợn ngời của giới công trình sư; trong tối, một thủ đô khác — thành phố bóng đêm Alamut, lại nằm dưới trướng thủ lĩnh cấp bậc sáu Hassan-i Sabbah, nắm giữ mạng lưới tình báo và thích sát tinh nhuệ đỉnh tiêm bậc nhất đại lục. Phong cách hành xử của Sahra vô cùng thực tế và tàn nhẫn: \"Kẻ mạnh sinh tồn, kẻ yếu đào thải, tài phú vi tôn\". Nơi đây, khoa học kỹ nghệ không phải công cụ cứu rỗi chúng sinh, mà là lưỡi kiếm sắc bén nhất ngự trị trong tay tầng lớp thống trị.",
+        "icon": "fa-solid fa-flag",
+        "color": "#ffd43b",
+        "position": {
+            "nx": 0.534448663801,
+            "ny": 0.742112888442
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/x6c9dq.png"
+        ]
+    },
+    {
+        "id": "marker-1772184942291-b0031e",
+        "name": "Vương Đình Lucentia",
+        "group": "Nhị Nguyên Vương Đình",
+        "description": "Trường ca thương khung dưới vương miện song huy: \"Lũ phàm nhân đoản mệnh mải miết đuổi theo vinh hoa thoảng qua như chớp mắt, hao phí từng khắc quang âm ít ỏi trong bùn lầy và đao binh khói lửa. Trong khi ấy, những vì tinh tú cùng Thế Giới Thụ đã lặng lẽ dõi mắt trông nhìn hàng ngàn kỷ nguyên tuần hoàn sinh diệt nơi đây. Dưới vương miện thất giác tinh, Kim Phụng vỗ cánh giữ yên bờ cõi đại lục, Ngân Diệp tươi tốt kế thừa mạch nguồn của tự nhiên. Hãy thu lại ánh nhìn thiển cận và cuồng vọng thô lậu, chúng ta gánh vác lời thề vĩnh hằng che chở cho Astaria. Bất kể cuồng đào gầm thét dữ dội nhường nào, vực thẳm tối tăm gặm nhấm ra sao, chỉ cần tinh huy bất diệt, thánh mộc trường thanh, thì vinh quang chính thống sẽ chẳng bao giờ phai nhạt.\"\n\nNgự trị nơi bán đảo phía nam đại lục, Lucentia là cái nôi văn minh cổ xưa nhất của Astaria. Trên mảnh đất trù phú được dệt nên bởi bình nguyên trung ương, biển cây u tịch cùng non nước hùng vĩ, Cung Đình Phượng Hoàng Vương do tuyển cử lập ra nắm giữ quân chính và khai thác cương thổ, còn Cung Đình Vĩnh Hằng Nữ Vương thế tập truyền thừa lại cai quản lễ pháp cùng tinh tượng; cả hai cùng ngự trị song song giữa đỉnh vàng và điện bạc của thủ đô Lutetia; đồng thời, các Mộc Tinh Linh tại Thánh Vực Thế Giới Thụ nương tựa theo minh ước cổ xưa để tự trị cộng sinh, tạo nên cảnh tượng kỳ tích \"Bạch thạch cùng hoạt mộc cộng vinh\". Từ Mệnh Tuyền ăn sâu vào lòng địa mạch tại Elvenheim, đến ngọn hải đăng ma pháp ngày đêm không tắt ở Cảng Bạch Diễm, cho tới Đài Quan Tinh Thiên Khung vươn thẳng tới tinh quỹ tại Tinh Thần Nhai, từng tấc đất của vương đình đều cuồn cuộn chảy trôi ma lực thuần khiết cùng trật tự uy nghiêm. Những kỵ sĩ cự long xé gió tuần trời cùng đoàn Hải Tuần Long Hạm rẽ sóng tuần du cấu thành nên trường thành chiến lược bảo vệ hải quyền và cương giới đại lục của Lucentia. Thần dân vương đình lấy kỹ nghệ ma đạo trứ danh, chiến công hiển hách cùng sự hiến dâng cho tự nhiên làm nền móng phẩm trật, hành xử uy nghiêm trầm mặc của một \"Đấng Che Chở\" trước cõi thế gian. Dẫu cho những kẻ phản trắc tại Quần Đảo Ám Lan cùng hạm đội Hắc Phương Chu nơi hải ngoại vẫn mang đến bóng mây nội chiến dằng dặc suốt ngàn năm, vùng biển phương nam cũng luôn bị lũ giặc bắt nô lệ Sahra dòm ngó, nhưng Vương Đình Lucentia vẫn sừng sững ngạo nghễ ngự trên đỉnh đầu ngọn sóng. Đối với nhân gian phàm tục, nơi đây không chỉ là thánh điện của huyết mạch viễn cổ và tri thức áo thuật uyên thâm, mà còn là ngọn hải đăng văn minh vĩ đại cùng đài bia bất hủ ngự trị trên vòm trời phương nam, vĩnh viễn chẳng thể vượt qua.",
+        "icon": "fa-solid fa-flag",
+        "color": "#63e6be",
+        "position": {
+            "nx": 0.191699553,
+            "ny": 0.795232014
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1768939468928-814f03",
+        "name": "Vania",
+        "group": "Thành Bang Siêu Khổng Lồ",
+        "description": "Đôi cánh trật tự nơi thánh vực đỉnh mây:\n\"Quân vương nơi trần thế mải tranh đoạt quyền bính trong bùn đất, man tộc chốn hoang nguyên chỉ biết gầm thét giữa cát bụi lầm than. Còn chúng ta, sinh ra nơi đỉnh cao cực cảnh, tắm mình dưới phép thanh tẩy của ánh sáng sơ nguyên. Dưới ánh mắt dõi nhìn của Huy Hoàng Nữ Thần, Thánh Văn không chỉ là hình bóng phản chiếu của sức mạnh, mà còn là chứng tích sắt đá cho sự thuần khiết của linh hồn. Hãy thu lại lòng tham phàm tục của ngươi, tại nơi này, duy chỉ có lễ chế tuyệt đối cùng đôi cánh trắng tinh khôi mới có thể chạm tới chân lý của thần dụ.\"\n\nNgự trị chót vót trên đỉnh \"Thiên Không Thánh Vực\" thuộc Thần Tích Quần Sơn, Vania là thần quyền giáo quốc Dực Dân duy nhất trên toàn đại lục, đồng thời là hạch tâm tuyệt đối của tín ngưỡng thờ phụng Huy Hoàng Nữ Thần. Huy hiệu của giáo quốc — đôi cánh trắng che chở chén thánh hoàng kim — tượng trưng cho nền tảng lập quốc: Thuần khiết, trật tự và thần dụ vĩnh hằng. Trong tòa thành lễ chế phương thẳng đứng được bao bọc bởi biển mây và vách đá cheo leo, những đài địa bằng đá trắng cùng mái vòm viền kim văn xếp tầng lớp điệp trùng, từ sân cất hạ cánh xưởng chế tác nơi ngoại hoàn cho tới Đại Thánh Điện chốn thánh vực phù đảo, từng tấc không gian đều nghiêm ngặt tuân thủ phẩm trật của thần quyền.\n\nNơi đây, Giáo Hoàng và Thánh Nữ nắm giữ uy quyền chí cao vô thượng, còn Thánh Dực Kỵ Sĩ Đoàn — lực lượng vũ trang không chiến hùng mạnh nhất đại lục — ngày đêm canh giữ vùng trời bất khả xâm phạm này. Thần dân Vania lấy sự thành thực giữ trọn lời thề làm vinh dự, địa vị của họ gắn liền mật thiết với độ tinh thuần của \"Thánh Văn\" cùng độ thuần khiết của đôi cánh. Dẫu thời gian gần đây nội bộ ngầm cuộn sóng trào, nhưng trước mắt thế gian, nơi đây vẫn là tòa thánh đô bất lạc sừng sững nhìn xuống muôn loài chúng sinh. Bất kể là những tín đồ hành hương đang hèn mọn ngước nhìn từ Sơn Cước Tụ Tập Địa dưới chân núi, hay những tư tế cấp cao nơi sảnh nghị sự nội hoàn, thảy đều tin tưởng sâu sắc rằng chỉ có nghi thức chí thành mới có thể chạm thấu thần minh. Đối với cõi phàm trần, Vania không đơn thuần là một quốc gia, nó còn là vệt hào quang thuần khiết, thiêng liêng và kiêu hãnh ngự trị trên đỉnh đầu vạn vật.",
+        "icon": "fa-solid fa-flag",
+        "color": "#ffd43b",
+        "position": {
+            "nx": 0.405745603589,
+            "ny": 0.500271840971
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/7qh8f4.png",
+            "https://wsrv.nl/?url=files.catbox.moe/lh07jr.png",
+            "https://wsrv.nl/?url=files.catbox.moe/5ivxx1.png",
+            "https://wsrv.nl/?url=files.catbox.moe/huyl0f.png",
+            "https://wsrv.nl/?url=files.catbox.moe/sf7hhv.png"
+        ]
+    },
+    {
+        "id": "marker-1768974048453-c893f3",
+        "name": "Công Quốc Valentia",
+        "group": "Thành Bang Siêu Khổng Lồ / Pháo Đài / Công Quốc",
+        "description": "Kẻ trấn thủ miệng vực thẳm:\n\"Khi khắp nơi trên thế giới đang chìm vào giấc ngủ êm đềm dưới ánh dương, thì người Valentia đang siết chặt cự chuy, đóng đinh lối ra của địa ngục trong bóng đêm tăm tối. Chúng ta cho phép ngươi tới đây tìm kiếm tài phú, danh vọng và rượu ngon, nhưng hãy nhớ kỹ: sau lưng ngươi là ánh sáng văn minh, còn dưới chân ngươi chính là vực sâu vạn trượng.\"\n\nCông Quốc Valentia trỗi dậy không phải nhờ đất đai phì nhiêu hay những tuyến đường giao thương thuận lợi; tự thân sự tồn tại của nó đã là một phong ấn vĩ đại. Đóng vai trò là \"đầu cầu tiền tiêu\" trấn áp và phong ấn lối ra của giao điểm vị diện, lá cờ khắc họa **\"Địa thành và Cự chuy\"** đại diện cho sức mạnh trấn áp bất khả kháng cự. Nơi đây là tiền đồn xa xôi nhất của đế quốc, cũng là cửa ải đầu tiên và kiên cố nhất ngăn chặn ma vật dị giới tràn vào cõi hiện thế.\n\nThủ đô Thành Nova · Valentia là một \"Thành Phố Mạo Hiểm Giả\" tràn ngập hơi thở mâu thuẫn. Phía sau những bức tường thành cao ngất, do ảnh hưởng lâu dài từ sự giao thoa vị diện, bầu không khí luôn đặc quánh những đợt sóng ma lực xao động cuồng bạo. Dưới sự thống trị bằng bàn tay sắt của Nữ vương Valentia (đỉnh phong cấp bậc năm), nơi đây duy trì một trật tự nghiêm khắc đến mức tàn khốc. Không có chỗ cho những trò đấu đá chính trị quý tộc phức tạp, nơi đây chỉ tôn sùng vũ lực tuyệt đối của Gia Tộc Valentia. Đây là điểm dừng chân cuối cùng của những kẻ liều mạng cùng các bậc anh hùng, cũng là thánh địa Mecca cho những mạo hiểm giả khao khát đổi đời chỉ sau một đêm — bởi lẽ cửa vào địa thành nguy hiểm nhất toàn đại lục, nằm ngay bên dưới ngai vàng của Nữ vương.",
+        "icon": "fa-solid fa-flag",
+        "color": "#845ef7",
+        "position": {
+            "nx": 0.446709900809465,
+            "ny": 0.6793379164115434
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/qt2i6x.png",
+            "https://wsrv.nl/?url=files.catbox.moe/td98v2.png",
+            "https://wsrv.nl/?url=files.catbox.moe/wnp26q.png",
+            "https://wsrv.nl/?url=files.catbox.moe/j9ua9z.png",
+            "https://wsrv.nl/?url=files.catbox.moe/li0n4t.png",
+            "https://wsrv.nl/?url=files.catbox.moe/3angg5.png",
+            "https://wsrv.nl/?url=files.catbox.moe/fd1xxl.png",
+            "https://wsrv.nl/?url=files.catbox.moe/aq226c.png",
+            "https://wsrv.nl/?url=files.catbox.moe/w08pna.png",
+            "https://wsrv.nl/?url=files.catbox.moe/pm07rs.png"
+        ]
+    },
+    {
+        "id": "marker-1777521143212-8bf819",
+        "name": "Pháp Hoàn Borens",
+        "group": "Thành Bang Siêu Khổng Lồ / Học Viện Ma Pháp",
+        "description": "Kẻ thủ vọng dưới tinh quỹ: \"Chúng ta leo lên đỉnh cao chẳng phải để lánh đời, cũng chẳng vì tranh đoạt quyền bính mà tề tựu. Khi vết nứt giao thoa vị diện lần đầu tiên lan tràn khắp cõi đại địa, chúng ta đã lập lời thề: Thế giới này tuyệt đối không thể sụp đổ trong sự ngu muội. Pháp Hoàn Borens sừng sững ngự trên tầng mây, lấy thân xác phàm nhân để đo đạc và vẽ nên ranh giới pháp tắc vô hình của vạn vật. Nơi đây, chân lý chính là trách nhiệm, quan trắc chính là bảo hộ.\"\n\nTọa lạc chót vót ở độ cao sáu ngàn mét trên vùng trời duyên hải đông bắc đại lục, Pháp Hoàn Borens là thánh sở pháp sư được kiến lập giữa ánh tàn dương của cuộc chiến tranh vị diện lần thứ nhất. Nơi đây là một đầu mối quan trắc vận hành chuẩn xác tuyệt luân, với hạch tâm \"Công Lý Thánh Cầu\" tựa như một con mắt thần vĩnh viễn không bao giờ khép lại, thời khắc hiệu chuẩn độ lệch thứ nguyên giữa vị diện Astaria và Hư Hải. Các pháp sư thuộc ba viện Nhật Miện, Nguyệt Duy và Ouroboros đã rũ bỏ mọi tranh chấp hồng trần, ngày đêm quan sát quỹ đạo tinh tú, truy cầu chiếc chìa khóa chân lý đủ sức chống đỡ thảm họa kế tiếp. Dư huy của pháp lý từ chín tầng trời rủ xuống, hóa thành mạch đập sinh tồn của cõi phàm trần. Cảng Vụ Tinh với dáng vẻ thực tế và tràn trề nhựa sống đã trở thành cánh cổng kết nối pháp hoàn với thế gian. Đô thành quanh năm chìm trong mưa tuyết và ánh lân tinh phù văn lấp lánh này là nơi giao hội giữa kỹ nghệ và dã tâm. Lớp \"Tam Sắc Hải Vụ\" lắng đọng từ các thí nghiệm được những kẻ thu sương vớt lên trọn vẹn giữa muôn trùng sóng gió, qua bàn tay của các thuật sĩ luyện kim cô đọng ánh linh quang bất định thành những tinh thạch nuôi dưỡng thành phố vận hành. Học Viện Vụ Tinh tọa lạc tại đây với tôn chỉ \"Tâm trí chế ngự huyền bí\", tựa như một lò luyện không ngừng dung nạp nhân tài khắp nơi trên thế giới, mài giũa những linh hồn có triển vọng xé toạc tầng mây bước vào thánh điện của pháp hoàn. Cứ mỗi độ tháng mười hai, khi pháp hoàn cắt đứt mọi liên lạc với ngoại giới để bước vào chu kỳ phong bế quan trắc, cực quang do Công Lý Thánh Cầu kích hoạt sẽ rủ xuống như bức rèm lụa bao phủ trọn vẹn vòm trời. Phía dưới, Cảng Vụ Tinh cũng sẽ đón chào đại lễ \"Tinh Quỹ Tế\" long trọng — trong đêm hội pháo hoa ngày cuối cùng của lễ hội, muôn ngàn đóa hoa lửa rực rỡ vút bay vào đêm đông lạnh giá, đan xen cộng hưởng cùng cực quang trên trời cao. Giờ khắc ấy, sự huyên náo của cõi phàm và chân lý nơi thiên không khẽ cúi đầu chào nhau, như niềm an ủi vỗ về những tâm hồn đã ròng rã suốt một năm trời canh giữ thế giới giữa màn sương mờ mịt.",
+        "icon": "fa-solid fa-flag",
+        "color": "#000000",
+        "position": {
+            "nx": 0.6875304995345767,
+            "ny": 0.5817372793643449
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/3x1ifs.png",
+            "https://wsrv.nl/?url=files.catbox.moe/di0b4b.png",
+            "https://wsrv.nl/?url=files.catbox.moe/d8teyc.png",
+            "https://wsrv.nl/?url=files.catbox.moe/89evc3.png",
+            "https://wsrv.nl/?url=files.catbox.moe/uc5912.png",
+            "https://wsrv.nl/?url=files.catbox.moe/b4tjot.png",
+            "https://wsrv.nl/?url=files.catbox.moe/d8cv0k.png",
+            "https://wsrv.nl/?url=files.catbox.moe/n184aa.png",
+            "https://wsrv.nl/?url=files.catbox.moe/0jb1u0.png"
+        ]
+    },
+    {
+        "id": "marker-1777521347476-e0ad30",
+        "name": "Vương Quốc Solentis",
+        "group": "Vương Quốc",
+        "description": "Thủy triều không ngủ và tiếng gọi của dục vọng:\n\"Kẻ Augustim chết vì vinh quang, người Thú Nhân chết vì tiên tổ, còn tại Solentis, chúng ta chỉ sống vì niềm vui sướng và khoái lạc. Chừng nào tiền vàng còn leng keng vang vọng, thì ánh đèn màu rực rỡ sẽ vĩnh viễn không bao giờ tàn phai.\"\n\nTọa lạc nơi bờ biển đông nam đại lục, Vương Quốc Solentis là quốc độ kỳ dị nhất, mang dáng dấp gần gũi nhất với \"văn minh hiện đại\". Tại nơi này, màn đêm buông xuống không đồng nghĩa với tăm tối, mà báo hiệu bàn cờ bạc tại Vịnh Trân Châu vừa mới xoay tròn, chợ đen của Thành Ngân Phàm vừa mới mở cửa. Nơi nào huy hiệu \"Mỹ Nhân Ngư quấn quanh Đinh Ba Vàng\" tung bay, nơi ấy bầu không khí vĩnh viễn phảng phất phong vị hỗn tạp của muối biển nồng nàn, hương nước hoa ngào ngạt cùng mùi tiền bạc quyến rũ.\n\nĐây là một \"quân chủ quốc song hạch\" do nhân loại và hải tộc cùng chung tay thống trị. Ngự trị trên Vương Tọa Triều Tịch tại thủ đô là Nữ hoàng Anastasia · Florence · Solentis với nhan sắc diễm lệ khuynh thành. Là một cường giả cấp bậc sáu mang trong mình một nửa huyết thống nhân ngư, tự thân nàng đã là biểu tượng vĩ đại nhất của quốc gia này: Nguy hiểm, mê hoặc và dung nạp vạn tượng. Tại Solentis, giáo điều vô cùng giản đơn mà bộc trực: \"Vạn vật đều có thể giao dịch, dục vọng chính là tự do.\" Nơi đây không có luật pháp hà khắc, chẳng có luân lý tuyệt đối; nếu ngươi cảm thấy thống khổ hay bị trói buộc, điều đó chỉ chứng minh một điều: những con chip trên tay ngươi vẫn còn quá ít ỏi.",
+        "icon": "fa-solid fa-flag",
+        "color": "#4dabf7",
+        "position": {
+            "nx": 0.678610940286,
+            "ny": 0.803222298094
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/a2kr2f.png"
+        ]
+    },
+    {
+        "id": "marker-1786638350808-b64ea9",
+        "name": "Đế Quốc Vong Linh",
+        "group": "Vong Linh / Vị Diện",
+        "description": "Lấy khai thác vị diện cùng hệ thống vong linh ma pháp làm hạch tâm, duy trì các cứ điểm tiền tiêu nơi thế giới chính.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.474850713774,
+            "ny": 0.907928367994
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1769427055385-23e64c",
+        "name": "Biên Thùy Chi Quốc",
+        "group": "Nội Dung DLC / Thành Bang Khổng Lồ / Di Tích / Khu Vực Nguy Hiểm Trung Bình (☆☆☆)",
+        "description": "Nếu lý trí của ngươi may mắn sống sót vượt qua tiếng sấm rền rĩ của lôi lâm cùng những lời thì thầm ma quái trong sương mù, ngươi sẽ đặt chân đến vùng đất chết chóc ngập tràn u ám vĩnh hằng nơi phương nam — \"Biên Thùy Chi Quốc\". Đây là một phế tích khổng lồ rộng tới năm mươi vạn kilomet vuông, nơi một cơn \"Mưa Ô Uế\" không bao giờ dứt đã bẻ cong hoàn toàn thời không và pháp tắc. Tại chốn này, mưa không còn là ân huệ của sự sống, mà là độc dược của ký ức: Nó bào mòn vật chất, đóng băng nỗi đau, biến người sống thành những xác sống cuồng loạn mất hết lý trí, và đày đọa kẻ chết hóa thành những quái vật ngập tràn oán niệm. Từ cơn điên loạn tương đối \"bình yên\" nơi Thôn Huyền Nhai ở ngoại vi, cho đến sự dị biến đan xen giữa ma pháp và tự nhiên trong rừng ma nữ ở tầng giữa, rồi chạm tới bóng tối thăm thẳm không đáy của vương thành nơi tầng sâu, mỗi một bước tiến vào đều là một nhát dao xẻo từng mảnh nhận thức. Và nơi tận cùng của muôn vàn hủ bại ấy, Ô Uế Chi Vương đang ngự trị tại tầng sâu nhất của hiện thực, dây dưa cộng sinh cùng vận mệnh bi kịch của Bạch Vu Nữ, mòn mỏi chờ đợi một kẻ có thể chấm dứt cơn ác mộng diệt vong dài đằng đẵng này.",
+        "icon": "fa-solid fa-city",
+        "color": "#845ef7",
+        "position": {
+            "nx": 0.3420753242708851,
+            "ny": 0.9027562622783062
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/21hceo.png",
+            "https://wsrv.nl/?url=files.catbox.moe/mbi8io.jpg",
+            "https://wsrv.nl/?url=files.catbox.moe/2dodfn.jpg",
+            "https://wsrv.nl/?url=files.catbox.moe/hziiyk.jpg",
+            "https://wsrv.nl/?url=files.catbox.moe/8py4oy.png",
+            "https://wsrv.nl/?url=files.catbox.moe/ze5r5l.jpg"
+        ]
+    },
+    {
+        "id": "marker-1779550424219-b229b0",
+        "name": "Bắc Hải Đống Kết",
+        "group": "Hải Dương / Nguy Hiểm Cao",
+        "description": "Vùng biển quanh năm giá lạnh thấu xương, băng trôi hiểm trở trùng điệp, là nơi hội tụ của những xoáy nước hung hiểm, tuyến hải trình phá băng cùng hải huống cực kỳ nguy nan.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.421839086838,
+            "ny": 0.253165565745
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550456697-9babac",
+        "name": "Khu Tuyến Hàng Hải Đông",
+        "group": "Tuyến Hàng Hải",
+        "description": "Tuyến hàng hải huyết mạch dùng để lưu thông các phương tiện vượt biển xuyên vương quốc và liên bang, kết nối những hải điểm trọng yếu trên đại dương.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.667293632292,
+            "ny": 0.687301096642
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550471237-1376c7",
+        "name": "Tỉnh Aethenia",
+        "group": "Hành Tỉnh",
+        "description": "Hành tỉnh tôn quý nơi đặt thủ đô cùng trung tâm lễ chế tối cao của vương triều.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.526645806292,
+            "ny": 0.52720216091
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550481260-c71a9e",
+        "name": "Tỉnh Viridis",
+        "group": "Hành Tỉnh / Nông Nghiệp",
+        "description": "Vùng đất phì nhiêu với bình nguyên bao la và mạng lưới sông ngòi chằng chịt, gánh vác trọng trách cung ứng lương thực huyết mạch cho toàn cương vực.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.56614421976,
+            "ny": 0.539292010204
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550493693-c8695a",
+        "name": "Tỉnh Hồng Khâu",
+        "group": "Hành Tỉnh",
+        "description": "Hành tỉnh trù phú với những dải đất rừng bạt ngàn, phát triển mạnh mẽ về chăn nuôi gia súc và canh tác nông nghiệp.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.615465026664,
+            "ny": 0.526835824202
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550504342-ab167b",
+        "name": "Tỉnh Solair",
+        "group": "Hành Tỉnh / Ven Biển",
+        "description": "Trọng trấn ven biển đảm trách tuyến phòng thủ cận hải kiên cố và là trụ cột nâng đỡ mạng lưới mậu dịch phồn thịnh.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.60856847494,
+            "ny": 0.636010821322
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550526198-4f0e06",
+        "name": "Tỉnh Trì Nguyên",
+        "group": "Hành Tỉnh / Tiền Tuyến",
+        "description": "Tiền tuyến quân sự sinh tử then chốt, ngày đêm sừng sững đối đầu trực diện với Liên Minh Thú Tộc.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.433019866465,
+            "ny": 0.587285070669
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550535182-3e6261",
+        "name": "Tỉnh Bích Sương",
+        "group": "Hành Tỉnh / Vùng Núi",
+        "description": "Vùng đất khô lạnh khắc nghiệt với những rặng núi sương phủ, ẩn giấu nguồn tài nguyên khoáng sản trù phú dồi dào.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.489028232299,
+            "ny": 0.44733589494
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550554213-e4ba9f",
+        "name": "Tỉnh Thần Chung",
+        "group": "Hành Tỉnh / Đầm Lầy",
+        "description": "Hành tỉnh trù phú tài nguyên đầm lầy và rừng mưa nhiệt đới u tịch, nơi các hoạt động ma đạo cùng luyện kim thuật diễn ra vô cùng sôi động.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.477742965842,
+            "ny": 0.611464735715
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1768996037327-30fd69",
+        "name": "Aethergard",
+        "group": "Thành Bang Khổng Lồ",
+        "description": "Nếu ngươi khao khát chiêm ngưỡng kỳ tích vắt ngang trời cao, ngươi nhất định phải tìm đến thủ đô của đế quốc — \"Thành Phố Huy Quang\" Aethergard. Tương truyền, vị hoàng đế sơ đại từng dùng trọn vẹn một khối ma pháp thủy tinh nguyên vẹn để đục đẽo nên Bạch Kim Củng Kiều tráng lệ. Đó không đơn thuần là một công trình kiến trúc, mà là một cỗ khí cụ thần quyền chuẩn xác tuyệt luân: Cứ mỗi độ bình minh ló rạng, luồng dương quang đầu tiên sẽ xuyên qua vòm cầu trong suốt, rọi thẳng chuẩn xác lên ngai vàng ngự dưới đỉnh tháp hoàng cung vút tận trời mây; thần dân muôn phương tin rằng đó chính là thái dương đang cúi đầu nghiêng mình trước đấng thống trị tối cao. Và trong đại lễ \"Tiết Song Sư Thứu\" rực rỡ, uy nghiêm ấy sẽ chạm tới đỉnh điểm — Hoàng đế bệ hạ sẽ ngự giá tuần du thương khung cùng bầy sư thứu hai đầu thuần chủng dực dực bay kèm, dõng dạc tuyên cáo trước toàn cõi đại lục về quyền bính chí cao bất khả xâm phạm của Đế Quốc.",
+        "icon": "fa-solid fa-city",
+        "color": "#000000",
+        "position": {
+            "nx": 0.523835249611,
+            "ny": 0.546848610711
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/sk9fom.png",
+            "https://wsrv.nl/?url=files.catbox.moe/vz75p4.png",
+            "https://wsrv.nl/?url=files.catbox.moe/y93pzm.png",
+            "https://wsrv.nl/?url=files.catbox.moe/wclssh.png",
+            "https://wsrv.nl/?url=files.catbox.moe/xo7cjh.png",
+            "https://wsrv.nl/?url=files.catbox.moe/023yu0.png",
+            "https://wsrv.nl/?url=files.catbox.moe/whe9tz.png"
+        ]
+    },
+    {
+        "id": "marker-1768995991158-bae653",
+        "name": "Bạch Thạch Tu Đạo Viện",
+        "group": "Thôn Làng Lớn",
+        "description": "Về phía bắc của Aethergard, khi những mái vòm hoàng kim rực rỡ của thủ đô dần khuất bóng nơi chân trời, ngươi sẽ đặt chân tới một thôn làng thanh bình mang tên \"Bạch Thạch\". Nơi đây không có tiếng rống gầm của bầy sư thứu, duy chỉ có một tòa tu đạo viện mộc mạc sừng sững trên sườn đồi thoai thoải, tĩnh lặng trông xuống cõi hồng trần. Khác với hoàng cung được chạm trổ tinh xảo xa hoa, Bạch Thạch Tu Đạo Viện được đắp xây từ những phiến đá xám trắng thô ráp, khe tường phủ đầy những thảm rêu xanh kiên cường. Đây là chốn quy túc của những cựu binh đế quốc giải ngũ cùng các bậc khổ hạnh tăng, họ thường kể cho lữ khách qua đường nghe ngụ ngôn cổ xưa về phiến đá nền móng của tu đạo viện — như lời nhắc nhở thế gian rằng, bên ngoài vạn trượng hào quang rực rỡ của Aethergard, vẫn còn một cách sống khác giữa cuộc đời.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#000000",
+        "position": {
+            "nx": 0.531750336764,
+            "ny": 0.492606235079
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/hicdto.png"
+        ]
+    },
+    {
+        "id": "marker-1768995856860-0a5300",
+        "name": "Thành Kim Cốc",
+        "group": "Thành Bang Lớn",
+        "description": "Nếu ngươi muốn tận mắt chứng kiến thế nào là phú túc chân chính, nhất định phải ghé thăm Thành Kim Cốc nơi phương đông. Tòa đô thành được ôm ấp bởi biển lúa mạch vàng óng ả bất tận này không chỉ cung cấp những ổ bánh mì tinh tế nhất trên bàn ăn của các quý phu nhân đế quốc, mà còn sừng sững những \"Kim Tuệ Lương Thương\" đồ sộ tựa non cao, tích trữ sản lượng vụ mùa đủ để nuôi sống toàn đế quốc suốt mười năm ròng. Trên những dòng vận hà tấp nập, thuyền bè qua lại nhiều như cá diếc sang sông; giữa những khúc ca mùa màng bội thu, người chèo thuyền ngân nga tín điều đáng tự hào nhất của giới thương nhân: Chỉ cần kho thóc của Thành Kim Cốc chưa vơi, thì thiên quân vạn mã của đế quốc sẽ vĩnh viễn không bao giờ phải chịu đói khát, và vinh quang hoàng thất cũng sẽ chẳng khi nào lụi tàn — đó mới chính là điểm tựa vững chãi hơn cả vàng ròng.",
+        "icon": "fa-solid fa-city",
+        "color": "#000000",
+        "position": {
+            "nx": 0.562151477071,
+            "ny": 0.555048028506
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/ulcasg.png",
+            "https://wsrv.nl/?url=files.catbox.moe/yjt01h.png",
+            "https://wsrv.nl/?url=files.catbox.moe/a0ipg3.png",
+            "https://wsrv.nl/?url=files.catbox.moe/t0zn0u.png"
+        ]
+    },
+    {
+        "id": "marker-1768995818797-cf18d4",
+        "name": "Trấn Phong Xa",
+        "group": "Thị Trấn",
+        "description": "Rảo bước qua Trấn Phong Xa, ngươi không chỉ nên chiêm ngưỡng những cối xay gió khổng lồ ngày đêm quay cuồng tựa những gã khổng lồ không biết mỏi mệt, mà còn phải để tâm tới danh xưng độc đáo của chúng — mỗi một cối xay nơi đây đều được đặt theo tên của một thiếu nữ kiều diễm. Ấy là bởi những bậc thầy ủ rượu địa phương luôn tin rằng ngọn gió mang linh hồn và xúc cảm, chỉ khi dịu dàng trân quý tựa như đối đãi với tình nhân, nó mới nghiền ra hương thơm thuần khiết đậm đà nhất từ những hạt mạch vàng ươm. Đến chốn này, ngươi nhất định phải thưởng thức thứ mạch tửu trong truyền thuyết, nó không chỉ dung hòa hơi ấm của ánh dương, đất mẹ và ngọn gió nhẹ xua tan mỏi mệt phong trần, mà còn ẩn giấu một nét dã tính độc nhất vô nhị: Tương truyền thứ rượu tuyệt hảo nhất luôn được ủ vào ngày nắng đầu tiên sau cơn giông bão, bởi thế trong dư vị ngọt ngào nơi cuống họng, vẫn còn vương vấn một tia cay nồng tê tái của sấm sét.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#000000",
+        "position": {
+            "nx": 0.5913820199643719,
+            "ny": 0.5645932495000443
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/23dr4u.png",
+            "https://wsrv.nl/?url=files.catbox.moe/nvil36.png",
+            "https://wsrv.nl/?url=files.catbox.moe/vjq48z.png"
+        ]
+    },
+    {
+        "id": "marker-1768996224821-2cec8b",
+        "name": "Trấn Hồng Diệp",
+        "group": "Thị Trấn",
+        "description": "Nếu ví Aethergard là bộ não của đế quốc, Ironforge là nắm đấm thép, thì Trấn Hồng Diệp nép mình giữa hai bờ chính là trái tim đa cảm và đập từng nhịp thổn thức của cả bờ cõi. Nằm trên lộ trình huyết mạch nối liền hoàng đô huy hoàng với tây cảnh thép gai, nơi đây có rặng phong cổ thụ trải dài mười dặm ngút ngàn. Cứ mỗi độ thu muộn, trời đất rực cháy trong biển lá đỏ tựa ngọn lửa thiêu, nhuộm bầu trời và mặt đất thành một sắc phi hồng thê lương diễm lệ. Đối với những người lính lên đường nhập ngũ chốn tây cảnh, sắc phong đỏ như máu ấy là cái ngoái nhìn dịu dàng cuối cùng trước khi từ biệt chốn phồn hoa đô hội; còn đối với những cựu binh trở về từ lằn ranh sinh tử nơi tiền tuyến, tiếng lá phong xào xạc trong gió thu chính là lời chào đón đầu tiên gột rửa sạch mùi khói súng cùng vị rỉ sét đao binh để đưa họ tái ngộ nhân gian.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#000000",
+        "position": {
+            "nx": 0.475984905838,
+            "ny": 0.550002246266
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/jdj0z7.png",
+            "https://wsrv.nl/?url=files.catbox.moe/vythte.png"
+        ]
+    },
+    {
+        "id": "marker-1768995917274-6085f3",
+        "name": "Ironforge",
+        "group": "Thành Bang Lớn / Pháo Đài",
+        "description": "Khi nô đùa, những đứa trẻ của đế quốc luôn tranh nhau đóng vai tướng quân của Ironforge, bởi lẽ trong tâm khảm thế nhân, tòa cứ điểm ngự trị nơi tây cảnh này tuyệt nhiên không phải một thành phố tầm thường, mà là một cỗ chiến xa bất tận, là nắm đấm thép cứng rắn vung trọn vào mặt quân thù. Nơi đây sở hữu những bức tường thành hùng vĩ đủ sức chống đỡ long tức của cự long cùng những lò cao nung chảy cực kim; thợ mỏ vừa ngân nga những khúc ca cổ xưa vừa vung cuốc chim, biến từng nhát búa thành viên đá nền móng cản bước binh phong Thú Tộc; còn các thợ rèn trong pháo đài thì kiêu hãnh tuyên bố rằng thứ họ đúc nên chưa từng là đao kiếm phàm tục, mà chính là ý chí kiên định bất khả lay chuyển của Đế Quốc — từng nhát búa tạ giáng xuống đều mang theo cơn thịnh nộ ngút trời của Nữ Hoàng bệ hạ trút lên đầu nghịch tặc.",
+        "icon": "fa-solid fa-landmark",
+        "color": "#000000",
+        "position": {
+            "nx": 0.412748187313,
+            "ny": 0.547718257622
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/jk6sd3.png",
+            "https://wsrv.nl/?url=files.catbox.moe/0gto0k.png",
+            "https://wsrv.nl/?url=files.catbox.moe/q82pa7.png",
+            "https://wsrv.nl/?url=files.catbox.moe/lryz7b.png",
+            "https://wsrv.nl/?url=files.catbox.moe/m095nq.png"
+        ]
+    },
+    {
+        "id": "marker-1768995707882-51595a",
+        "name": "Cảng Độ Nha",
+        "group": "Thị Trấn",
+        "description": "Tại Cảng Độ Nha, luật pháp chỉ là tờ giấy vụn dành cho kẻ nghèo hèn, còn tiền vàng mới là tấm thông hành duy nhất. Ban ngày, nơi đây trông chỉ như một cảng cá tấp nập vương mùi tanh mặn của biển cả; thế nhưng một khi màn đêm buông xuống, nó xé toạc lớp ngụy trang để hóa thân thành thiên đường của phường buôn lậu và con buôn tình báo. Lũ \"độ nha\" nơi đây tuyệt nhiên chẳng phải loài chim tầm thường, chúng là những sứ giả có cánh biết bay, là những gián điệp biết nói, ẩn nấp trong từng góc khuất bóng tối để thu thập con bài mặc cả cho chủ nhân. Lão thủy thủ già trong tửu quán sẽ ghé sát tai ngươi thì thầm rằng, chỉ cần trả đủ giá, ở chốn này không có tin tức nào là không mua được: Từ tư tình của đại tướng quân đế quốc, bản đồ kho báu của hải tặc vương, cho đến những bí mật cấm kỵ về thần linh, thảy đều có thể tìm thấy kẻ bán tại bến cảng nơi tình báo còn đắt đỏ hơn vàng ròng này.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#000000",
+        "position": {
+            "nx": 0.637199588405,
+            "ny": 0.692063742185
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/vlrlfj.png",
+            "https://wsrv.nl/?url=files.catbox.moe/k8y9we.png",
+            "https://wsrv.nl/?url=files.catbox.moe/dyddng.png"
+        ]
+    },
+    {
+        "id": "marker-1768996284404-f8a7f0",
+        "name": "Thôn Mê Vụ",
+        "group": "Thôn Làng",
+        "description": "Bản đồ đế quốc chỉ đánh dấu Thôn Mê Vụ chìm sâu nơi đầm lầy nam cảnh như một tiền đồn trú quân bình thường, nhưng những cựu binh dày dạn sương gió sẽ cảnh cáo ngươi chớ để dáng vẻ rách nát hoang tàn ấy đánh lừa — màn sương dày đặc quỷ dị nơi đây thậm chí có thể nuốt chửng cả bóng hình của một con người. Giữa ban ngày, nó có lẽ chỉ là một tiêu trạm biên ải tầm thường; nhưng khi bóng đêm ập xuống, nơi đây lại biến thành thánh địa ngoài vòng pháp luật của các ma nữ và thương nhân chợ đen. Những người phụ nữ với đôi mắt sáng quắc trong thôn chào bán các loại thảo dược, vừa là thần dược cứu mạng, vừa là kịch độc có thể biến ngươi thành phân bón cho đầm lầy trong câm lặng; và chủ quán trọ sẽ hạ giọng bảo ngươi rằng, dưới lớp sương mù bao phủ, chỉ cần ngươi dám mở lời, ngươi có thể mua được tất thảy mọi thứ từng bị giáo hội nghiêm cấm.",
+        "icon": "fa-solid fa-city",
+        "color": "#845ef7",
+        "position": {
+            "nx": 0.4220575510216393,
+            "ny": 0.7198653896215623
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/et1z7r.png",
+            "https://wsrv.nl/?url=files.catbox.moe/whjlk8.png"
+        ]
+    },
+    {
+        "id": "marker-1777656079469-64fcce",
+        "name": "Thành Sương Lâm",
+        "group": "Thành Bang Lớn",
+        "description": "",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#000000",
+        "position": {
+            "nx": 0.488577104168,
+            "ny": 0.429218353872
+        }
+    },
+    {
+        "id": "marker-1777522038788-fe15dd",
+        "name": "Trấn Ngân Khê",
+        "group": "Thị Trấn",
+        "description": "Giới quý tộc đế quốc lấy việc đeo trang sức của Trấn Ngân Khê làm niềm kiêu hãnh tột bực, bởi lẽ thợ kim hoàn nơi đây chưa bao giờ dùng đến khuôn đúc, họ kiên định tin rằng mỗi một món ngân khí lấp lánh ánh trăng và thì thầm cùng tinh tú đều phải sở hữu một linh hồn độc nhất vô nhị. Thế nhưng, khi ngươi thực sự bước chân vào thánh địa nghệ thuật này, ngươi sẽ phát hiện ra cái giá đáng sợ đằng sau: Ngay cả cây cỏ trong rừng cũng đã bị ăn mòn, ánh lên sắc tro bạc chết chóc quái đản; dòng sông nhỏ từng trong vắt chảy qua thị trấn nay lại lấp lánh ánh quang bất tường do bùn lắng kim loại nặng tích tụ. Trước sự thật ấy, những người thợ thủ công chỉ biết ngậm chặt miệng im lặng, họ cặm cụi mài giũa những kiệt tác khiến người đời tranh đoạt trên mảnh đất đang lụi tàn dần từng ngày, như thể chỉ cần ánh bạc đủ chói lọi, nó có thể che đậy tất thảy tội lỗi đã bị độc hại phía sau.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#000000",
+        "position": {
+            "nx": 0.468547550787,
+            "ny": 0.46199025213
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/itugsq.png",
+            "https://wsrv.nl/?url=files.catbox.moe/wclx1t.png",
+            "https://wsrv.nl/?url=files.catbox.moe/myh49c.png"
+        ]
+    },
+    {
+        "id": "marker-1777657197117-1779e8",
+        "name": "Trấn Thánh Nhật",
+        "group": "Thành Bang Cỡ Vừa",
+        "description": "",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#000000",
+        "position": {
+            "nx": 0.43197492163,
+            "ny": 0.504121539532
+        }
+    },
+    {
+        "id": "marker-1777657103430-1c70b9",
+        "name": "Trấn Băng Nga",
+        "group": "Thị Trấn Nhỏ",
+        "description": "",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#000000",
+        "position": {
+            "nx": 0.518495297806,
+            "ny": 0.385787554494
+        }
+    },
+    {
+        "id": "marker-1773508467457-d6e31b",
+        "name": "Thương Thuyền",
+        "group": "Phương Tiện",
+        "description": "Thương thuyền đế quốc đang rẽ sóng dong buồm ngoài khơi xa...",
+        "icon": "fa-solid fa-campground",
+        "color": "#000000",
+        "position": {
+            "nx": 0.6605769237112736,
+            "ny": 0.6294920221139648
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/nk0jdf.png",
+            "https://wsrv.nl/?url=files.catbox.moe/bxfz42.png",
+            "https://wsrv.nl/?url=files.catbox.moe/hs2u0c.png",
+            "https://wsrv.nl/?url=files.catbox.moe/pck9kx.png"
+        ]
+    },
+    {
+        "id": "marker-1768943869382-90d5d6",
+        "name": "Thấp Địa Thiên Kính Hồ",
+        "group": "Vùng Đất Ngập Nước / Khu Vực Nguy Hiểm Thấp (☆☆)",
+        "description": "Nếu ghé thăm Thấp Địa Thiên Kính Hồ, ngươi sẽ được chiêm ngưỡng mạng lưới sông ngòi đan xen chằng chịt tựa những sợi tơ bạc do chính tay thần linh dệt nên, còn hồ nước ngự ở trung tâm, trong lời kể của các shaman Thú Tộc, không chỉ là mặt nước đơn thuần, mà chính là \"con mắt của thảo nguyên\". Vào những ngày quang đãng nhất, mặt hồ phản chiếu bầu trời cao vút, mặt đất bao la cùng linh hồn của các bậc tiên tổ; ấu thú mới chào đời được ngâm mình dưới dòng nước để nhận lấy phúc lành và sự kiên cường; thế nhưng, khi đàn chim di cư bay về phương nam khuấy động từng gợn sóng lăn tăn, tấm gương thần trang nghiêm ấy lại vỡ òa thành muôn vàn mảnh bạc lấp lánh — đúng như lời người đánh cá từng nói, trong mỗi một mảnh gương vỡ, đều phản chiếu một thế giới hoàn toàn khác biệt.",
+        "icon": "fa-solid fa-tree",
+        "color": "#ffcc66",
+        "position": {
+            "nx": 0.1311477370897613,
+            "ny": 0.68712430238069
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/zyzmiz.png",
+            "https://wsrv.nl/?url=files.catbox.moe/6zv68m.png",
+            "https://wsrv.nl/?url=files.catbox.moe/wm1qcm.png"
+        ]
+    },
+    {
+        "id": "marker-1768943637180-f0dfaa",
+        "name": "Thảo Nguyên Hằng Phong",
+        "group": "Thảo Nguyên / Khu Vực Nguy Hiểm Thấp (☆)",
+        "description": "Tiến bước về phía đông, ngươi sẽ đặt chân vào biển xanh ngắt nơi ngọn gió thổi từ tận cùng thế giới không bao giờ dứt — Thảo Nguyên Hằng Phong. Nơi đây không chỉ là mục trường của những kỵ sĩ dũng mãnh nhất Thú Tộc, mà còn là vùng đất luân hồi của sinh và tử: Người sống thuần dưỡng lục hành điểu và sư thứu để đua tài cùng cuồng phong, khi phát động xung phong tựa như cơn bão táp di động khiến thám mã đế quốc kinh hồn bạt vía; còn khi sinh mệnh chấm dứt, người ta sẽ rải tro cốt vào thênh thang trời đất, vững tin rằng linh hồn của tiên tổ sẽ cưỡi cùng ngọn gió này mà bay về nơi quy túc vinh quang.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#ffcc66",
+        "position": {
+            "nx": 0.322675029312,
+            "ny": 0.538925639954
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/gbe758.png",
+            "https://wsrv.nl/?url=files.catbox.moe/nexvw4.png"
+        ]
+    },
+    {
+        "id": "marker-1768943577938-7f1659",
+        "name": "Phong Ngữ Thảo Nguyên",
+        "group": "Thảo Nguyên / Khu Vực Nguy Hiểm Thấp (☆)",
+        "description": "Những đứa trẻ Thú Tộc lớn lên trên Phong Ngữ Thảo Nguyên, từ đầu tiên chúng bập bẹ học được thường không phải là \"Mẹ\", mà là \"Gió\". Bởi lẽ cỏ cây nơi này chưa từng câm lặng — khi làn gió nhẹ lướt qua, chúng bắt đầu cất lời thì thầm: Trong gió không chỉ vương vấn mùi hương của kẻ thù phương xa cùng tín hiệu kết minh tuyên chiến giữa các thị tộc, mà còn kể về cuộc săn sư thứu ngày hôm qua và đại lễ tế tự ngày mai; đúng như lời shaman từng bảo, chỉ cần ngươi cúi mình kề sát mặt đất lắng nghe khúc hòa tấu giữa gió và cỏ, ngươi sẽ thấu tỏ mọi bí mật ẩn giấu trên thảo nguyên này.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#ffcc66",
+        "position": {
+            "nx": 0.198328115051,
+            "ny": 0.620257386924
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/467ci9.png",
+            "https://wsrv.nl/?url=files.catbox.moe/ft4d00.png",
+            "https://wsrv.nl/?url=files.catbox.moe/7xieoe.png"
+        ]
+    },
+    {
+        "id": "marker-1779550568612-843190",
+        "name": "Bạo Phong Sa Mạc",
+        "group": "Sa Mạc",
+        "description": "Vùng đất hoang mạc ngự trị của Tuần Thiên Vương Đình, ẩn chứa trữ lượng ma khoáng cùng ma tinh trù phú dồi dào.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.239080472127,
+            "ny": 0.543321982329
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1768944410246-123761",
+        "name": "Sơn Mạch Long Tích",
+        "group": "Sơn Mạch / Khu Vực Nguy Hiểm Cao (☆☆☆☆)",
+        "description": "Khi ngươi rong ruổi mãi về phía tây cho đến lúc gió biển bắt đầu mang theo mùi lưu huỳnh nồng nặc đến nghẹt thở, ấy là khi ngươi đã chạm tới rặng hỏa sơn điệp trùng mà ngay cả những chiến binh quả cảm nhất cũng coi là cấm địa — Sơn Mạch Long Tích. Tại nơi đó, phi long và á long ken đặc như bầy quạ đậu kín các đỉnh núi chọc trời, từng luồng liệt diễm chúng phun ra trở thành cột hải đăng duy nhất dẫn đường; chớ để những vỉa khoáng thạch thấm đẫm long huyết lấp lánh ma lực trên vách đá mê hoặc, bởi bên cạnh mỗi viên bảo thạch đều có song túc phi long khát máu đang rình rập. Và đúng như truyền thuyết run rẩy của cư dân bản địa: Cả dãy sơn mạch này thực chất là một con viễn cổ cự long đang say ngủ, và mỗi cơn địa chấn làm rung chuyển đất trời dưới chân ngươi, chẳng qua chỉ là một cái trở mình của nó trong giấc mộng dài.",
+        "icon": "fa-solid fa-mountain",
+        "color": "#ffcc66",
+        "position": {
+            "nx": 0.0457549746964967,
+            "ny": 0.5730384846220894
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/7nu4zv.png",
+            "https://wsrv.nl/?url=files.catbox.moe/3hvups.png",
+            "https://wsrv.nl/?url=files.catbox.moe/vhxz6x.png"
+        ]
+    },
+    {
+        "id": "marker-1768942992686-069292",
+        "name": "Phóng Trục Chi Địa",
+        "group": "Hoang Nguyên / Khu Vực Nguy Hiểm Trung Bình (☆☆☆)",
+        "description": "Kẹp giữa Thảo Nguyên Vô Tận Phong Ngân và vùng đất đóng băng nơi bắc cảnh, là một dải Phóng Trục Chi Địa bị các bản đồ văn minh để trống như một khoảng trắng vô định. Nơi đây không có vương trượng của quốc vương, chẳng có luật pháp của đế quốc, duy chỉ có một thiết luật cổ xưa ngự trị: \"Kẻ mạnh vi tôn\". Những Thú Nhân bị lưu đày, những cự nhân lang thang cùng bầy tội phạm đào vong cùng nhau dệt nên mạch đập hỗn loạn mà tự do cuồng phóng của mảnh đất này — và khi màn đêm buông xuống, ảo ảnh khổng lồ rực cháy trên bầu trời tựa như dấu ấn chiến đấu của các cự nhân viễn cổ đang dõi mắt nhìn xuống mái nhà hoang dã cuối cùng này.\n（Hiện tại khu vực này chưa được thu thập vào Thế Giới Thư, xin mời các user thỏa sức tưởng tượng）",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#ffcc66",
+        "position": {
+            "nx": 0.21347225076328818,
+            "ny": 0.33321519362832264
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/x24he6.png",
+            "https://wsrv.nl/?url=files.catbox.moe/a938p2.png",
+            "https://wsrv.nl/?url=files.catbox.moe/mly9l3.png"
+        ]
+    },
+    {
+        "id": "marker-1768943353169-3c85b0",
+        "name": "Ẩn Phong Quan",
+        "group": "Pháo Đài / Quan Ải",
+        "description": "Muốn dấn thân tới vùng đất man hoang phương bắc, tất phải vượt qua Ẩn Phong Quan — một ải khẩu tự nhiên hiểm trở được đẽo gọt qua hàng ngàn vạn năm cuồng phong rít gào. Lãnh đội thương đoàn lão luyện sẽ cho ngươi xem lớp cát bụi bám trên đầu ngón tay: Đất phương nam vẫn còn thoang thoảng hương thơm cỏ nội, trong khi đất phương bắc đã lạnh buốt vị sỏi đá cùng xương cốt cổ xưa. Nơi đây không chỉ là bia mộ ranh giới giữa sinh và tử, mà còn là chiến trường của gió: Những luồng khí lưu rít gào như quỷ khóc nơi hẻm núi sẽ xé nát linh hồn của những kẻ nhu nhược, duy chỉ có những chiến binh mang ý chí sắt đá kiên cường nhất mới có thể bình an vô sự sải bước qua.",
+        "icon": "fa-solid fa-campground",
+        "color": "#ffcc66",
+        "position": {
+            "nx": 0.215465007531,
+            "ny": 0.401174635412
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/x945mj.png",
+            "https://wsrv.nl/?url=files.catbox.moe/unb4sr.png",
+            "https://wsrv.nl/?url=files.catbox.moe/rzo67j.png"
+        ]
+    },
+    {
+        "id": "marker-1768945804379-1f107d",
+        "name": "Tuần Thiên Cự Thú / Tuần Thiên Vương Đình",
+        "group": "Thành Bang Khổng Lồ",
+        "description": "Lời đồn đại trên các thương lộ thường quá đỗi nghèo nàn, ngươi ngỡ rằng vương đình của Thú Tộc chỉ là một tòa thành trì cố định? Không, nó được dựng xây ngay trên lưng của một ngọn núi sống mang tên \"Tuần Thiên Cự Thú\" — đây là một dải cương thổ lang bạt phiêu du giữa Bạo Phong Sa Mạc, nơi sống lưng cự thú kỳ tích tuôn trào suối ngọt, cỏ cây tốt tươi đâm chồi, tự thành một phương thiên địa huyền diệu. Khi mặt đất rung chuyển dữ dội và nơi đường chân trời xa xôi hiện ra bóng hình tòa thành lũy nguy nga đang di chuyển, ấy là lúc nó đang tuần du; thần dân dõi bước theo nó son sắt tin rằng, chỉ cần cự thú còn sải bước, thì vinh quang của Thú Tộc sẽ vĩnh viễn không bao giờ sụp đổ.",
+        "icon": "fa-solid fa-landmark",
+        "color": "#ffcc66",
+        "position": {
+            "nx": 0.237199594384,
+            "ny": 0.557976322748
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/7k6kdm.png",
+            "https://wsrv.nl/?url=files.catbox.moe/ecx1rd.png",
+            "https://wsrv.nl/?url=files.catbox.moe/75i1sk.png",
+            "https://wsrv.nl/?url=files.catbox.moe/pyid0e.png",
+            "https://wsrv.nl/?url=files.catbox.moe/uz40x8.png"
+        ]
+    },
+    {
+        "id": "marker-1768949153910-83f615",
+        "name": "Hồ Thú Trảo",
+        "group": "Hồ",
+        "description": "Hồ Thú Trảo đáng yêu đó nha meo~",
+        "icon": "fa-solid fa-water",
+        "color": "#ffcc66",
+        "position": {
+            "nx": 0.285475443299,
+            "ny": 0.649199731053
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/b7ciih.png"
+        ]
+    },
+    {
+        "id": "marker-1777657168223-dec30b",
+        "name": "Thành Thạch Toán",
+        "group": "Thành Bang Cỡ Vừa",
+        "description": "",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#ffcc66",
+        "position": {
+            "nx": 0.377226119806,
+            "ny": 0.507428296201
+        }
+    },
+    {
+        "id": "marker-1768941806514-3042f2",
+        "name": "Vĩnh Đống Băng Nguyên (Bắc)",
+        "group": "Băng Nguyên / Khu Vực Cực Kỳ Nguy Hiểm (☆☆☆☆☆)",
+        "description": "Ngươi ngỡ rằng cái rét thấu xương của Vĩnh Đống Băng Nguyên tự nhiên sinh ra đã như vậy? Không, những thi nhân viễn xứ truyền tụng một sự thật nơi cực bắc chỉ tồn tại trong các truyền thuyết điên cuồng — Vịnh Sương Long Cơ đang say ngủ ẩn mình nơi tầng sâu băng xuyên vạn cổ bất hóa, thế giới hoang vu không một bóng sinh linh này thực chất chính là cảnh mộng của nàng: Từng hơi thở của nàng hóa thành những trận bão tuyết cuồng nộ càn quét bắc cảnh, còn tiếng thì thầm không bao giờ dứt trong mộng cảnh ấy không chỉ kiến tạo nên cái lạnh tột cùng, mà còn là khúc dạo đầu cho ngày tàn của vạn vật.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#ffffff",
+        "position": {
+            "nx": 0.389550704717,
+            "ny": 0.206271624415
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/2t462a.png",
+            "https://wsrv.nl/?url=files.catbox.moe/pc4qpk.png",
+            "https://wsrv.nl/?url=files.catbox.moe/0rzvoh.png",
+            "https://wsrv.nl/?url=files.catbox.moe/bzc9p6.png",
+            "https://wsrv.nl/?url=files.catbox.moe/rx00ja.png"
+        ]
+    },
+    {
+        "id": "marker-1768941471930-da8d23",
+        "name": "Vĩnh Đống Băng Nguyên (Nam)",
+        "group": "Băng Nguyên / Khu Vực Nguy Hiểm Cao (☆☆☆☆)",
+        "description": "Nơi rìa nam của Vĩnh Đống Băng Nguyên, những du hiệp Northgard coi dải đất đóng băng phủ đầy rêu phong kiên cường ấy là đấu trường thí luyện của lễ trưởng thành, bởi lẽ kẻ nào có thể một mình chống chọi qua mùa đông giá rét đồng nghĩa với việc đã chiến thắng băng giá, đủ tư cách mang huy ký của thị tộc; thế nhưng, nỗi kinh hoàng chân chính lại ẩn nấp nơi cõi đại lục cô độc xa xăm hơn về phía bắc — tương truyền chưa từng có người sống nào đặt chân tới tận cùng nơi đó, duy chỉ có những thủy thủ phát điên còn sống sót mang về cơn ác mộng nơi rìa thế giới: Nơi ấy chỉ có một vòng cự thạch trận thượng cổ lặng lẽ xoay vần, cùng một vầng thái dương lạnh lẽo nhợt nhạt treo lơ lửng nơi chân trời, vĩnh viễn không bao giờ lặn xuống.",
+        "icon": "fa-solid fa-skull-crossbones",
+        "color": "#ffffff",
+        "position": {
+            "nx": 0.448136031303,
+            "ny": 0.286644280047
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/jhpvi9.png",
+            "https://wsrv.nl/?url=files.catbox.moe/jkcr2k.png",
+            "https://wsrv.nl/?url=files.catbox.moe/iqj20w.png"
+        ]
+    },
+    {
+        "id": "marker-1773556309955-16d422",
+        "name": "Vành Đai Đê Ngữ Châm Diệp Lâm",
+        "group": "Rừng / Khu Vực Nguy Hiểm Thấp (☆☆)",
+        "description": "Khi dấn thân qua Vành Đai Đê Ngữ Châm Diệp Lâm, ngay cả những thợ săn lão luyện nhất cũng nín thở giữ sự im lặng tuyệt đối, không dám kinh động đến những rặng thông khổng lồ chịu lạnh đang rì rào to nhỏ. Các shaman quả quyết rằng tiếng thì thầm mô phỏng giọng người trong gió là do các cổ thụ lâm tinh đang ngâm nga vãng sự của đế quốc cùng bí mật của băng nguyên; khúc ca viễn cổ mê hoặc lòng người ấy đồng thời cũng là lớp ngụy trang chết chóc — dưới mỗi gốc đại thụ đều có thể đang ẩn giấu lũ hùng quái khát máu say ngủ, và bất kỳ tiếng động bất cẩn nào của ngươi khi say mê lắng nghe cũng sẽ trở thành hồi kèn đánh thức cơn thịnh nộ của chúng.",
+        "icon": "fa-solid fa-tree",
+        "color": "#ffffff",
+        "position": {
+            "nx": 0.482145187614,
+            "ny": 0.301014703956
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/b11mxp.png",
+            "https://wsrv.nl/?url=files.catbox.moe/6qdcf9.png",
+            "https://wsrv.nl/?url=files.catbox.moe/enzdff.png",
+            "https://wsrv.nl/?url=files.catbox.moe/tnxppm.png"
+        ]
+    },
+    {
+        "id": "marker-1768940112408-ea60d4",
+        "name": "Băng Tích Toái Miện",
+        "group": "Sơn Mạch / Khu Vực Nguy Hiểm Cao (☆☆☆☆)",
+        "description": "Tương truyền Băng Tích Toái Miện chính là chiếc vương miện vỡ nát của viễn cổ Băng Sương Cự Nhân chi vương, nhưng trong mắt những người ải nhân Northgard, đây lại chính là bộ khung xương của thế giới — nơi sâu thẳm trong tinh thể vĩnh đống ngưng kết bông tuyết đầu tiên từ thuở hồng hoang sáng thế, từng nhát búa giáng vào vách đá đều là cuộc đối thoại xuyên qua huyết nhục đất mẹ với sơn hồn cổ xưa. Rặng sơn mạch này ngăn cách hoàn toàn sự ồn ào náo nhiệt của phàm trần với sự tịch mịch chết chóc của băng nguyên; khi vượt qua nó, ngươi sẽ cảm nhận từng tia ấm áp của quá khứ bị bóc tách từng tấc một, duy chỉ có những linh hồn kiên định nhất mới có thể đặt chân sang bờ bên kia mà không bị đóng băng vĩnh viễn.",
+        "icon": "fa-solid fa-mountain",
+        "color": "#ffffff",
+        "position": {
+            "nx": 0.5487975007837483,
+            "ny": 0.37736879878982443
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/48w2zh.png",
+            "https://wsrv.nl/?url=files.catbox.moe/ys7kab.png",
+            "https://wsrv.nl/?url=files.catbox.moe/ulxsjp.png"
+        ]
+    },
+    {
+        "id": "marker-1779550613859-607532",
+        "name": "Trường Dạ Chi Cảnh",
+        "group": "Địa Khối",
+        "description": "Vùng đất nối liền với các cứ điểm tiền tuyến trọng yếu như Trường Viên Vĩnh Dạ và Pháo Đài Vãn Ca.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.55966563449,
+            "ny": 0.313248453492
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550622121-463399",
+        "name": "Vân Tức Bồn Địa",
+        "group": "Địa Khối",
+        "description": "Khu vực bồn địa hạch tâm nơi phân bố Thành Bạch Diệu cùng quần thể các cơ sở học thuật uyên bác.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.574921630094,
+            "ny": 0.386520294993
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550629054-697112",
+        "name": "Rừng Sương Diệp",
+        "group": "Địa Khối / Rừng",
+        "description": "Vùng rừng xanh ngát nơi Thành Lâm Ca tọa lạc, tiếp giáp và đan xen cùng nhiều địa khối lân cận.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.60229886333,
+            "ny": 0.423156179582
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550636546-919785",
+        "name": "Vụ Tùng Hải Ngạn",
+        "group": "Địa Khối / Bờ Biển",
+        "description": "Bờ vịnh cảng biển hạch tâm nối liền Nội Thương Bạch Hải với sâu thẳm lục địa nội địa.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.651619670234,
+            "ny": 0.395679257755
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550646262-153705",
+        "name": "Ốc Thổ Lưu Kim",
+        "group": "Địa Khối / Bình Nguyên",
+        "description": "Mảnh đất phì nhiêu nối liền Bán Đảo Phong Thiết, nơi quần tụ trù phú của các thị trấn cùng khu vực canh tác nông nghiệp.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.681086754874,
+            "ny": 0.482506365612
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550652786-7d8529",
+        "name": "Bán Đảo Phong Thiết",
+        "group": "Địa Khối / Bán Đảo",
+        "description": "Dải bán đảo chiến lược nơi phân bố các trọng trấn Cảng Bạch, Cảng Sương Kính, Pháo Đài Phong Thiết cùng Pháo Đài Long Hống.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.687356328217,
+            "ny": 0.35025074292
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1773556106854-a81c7f",
+        "name": "Nội Thương Bạch Hải",
+        "group": "Nội Hải",
+        "description": "Vùng thủy vực hạch tâm có hải vận tấp nập nhất và hải huống ôn hòa nhất toàn liên minh.\nVào những buổi hoàng hôn mùa hạ, phóng tầm mắt từ bến cảng Lẫm Phong Độ ra xa, tàn dương rực rỡ dát lên mặt biển xám trắng một lớp màu hổ phách ấm áp — một trong những tuyệt cảnh được thủy thủ bắc cảnh đồng lòng tôn vinh.",
+        "icon": "fa-solid fa-water",
+        "color": "#ffffff",
+        "position": {
+            "nx": 0.680459795626,
+            "ny": 0.41069997681
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/qf17rq.png",
+            "https://wsrv.nl/?url=files.catbox.moe/n2alx0.png",
+            "https://wsrv.nl/?url=files.catbox.moe/vewgrv.png"
+        ]
+    },
+    {
+        "id": "marker-1773502646366-e0dd74",
+        "name": "Trường Viên Vĩnh Dạ",
+        "group": "Tường Thành Khổng Lồ / Phòng Tuyến",
+        "description": "Tại nơi này, từng hơi thở cũng có thể bị đóng băng vụn nát.\n\nCái gọi là \"Trường Viên Vĩnh Dạ\", thực chất chỉ là một hàng đinh ghim rướm máu được nhân loại dùng hắc diệu thạch cùng cốt thép luyện kim cắm chặt nơi rìa đất bị Đấng Sáng Tạo ruồng bỏ. Nó không phải kỳ tích vĩ đại, mà là một vết sẹo sâu hoắm chạm tới tận xương tủy, cưỡng ép khâu liền giấc mộng ấm áp của người sống với cái lạnh thấu xương của cõi chết.\n\nTrong mỗi đài phong hỏa cách nhau năm cây số, tiếng tời rít ken két của những cỗ trọng nỗ vang vọng giữa phong tuyết, ấy là tiếng đàn cầm duy nhất của những kẻ thủ thành. Tại nơi đây, danh dự còn rẻ mạt hơn vụn băng. Ngươi là liệp binh tinh anh của Visgrad, hay kẻ mang trọng tội đang thoi thóp giãy giụa trong hầm mỏ để thục tội? Giờ phút \"Bạch Sương Chi Triều\" cuộn trào, thảy đều chẳng có chút phân biệt. Các ngươi đều chỉ là \"những miếng thịt đông treo trên tường\", là chiếc đinh tán bé nhỏ tầm thường nhất nhưng cũng không thể thiếu vắng trên phòng tuyến này.\n\nNhững cựu binh thường bảo nhau, nếu trong đêm trường cực dạ ngươi nghe thấy tiếng phụ nữ thì thào, ấy là \"Đông Chi Mẫu\" đang đòi lấy linh hồn ngươi; nhưng nếu ngươi nghe thấy tiếng va đập trầm đục, nhịp nhàng từ sâu dưới nền móng — chớ sợ, đó là Trúc Tường Giả Magnus đang ở đó.\n\nLão già đã trút hơi thở cuối cùng vào ngày công trình hoàn tất ấy, đến nay vẫn chưa hề chợp mắt. Lão đang vung vẩy cây búa sắt vĩnh cửu, nện từng nhát, từng nhát một vào những kẽ nứt vô hình trong mắt trần, để chắp vá cho thế giới đang thoi thóp hơi tàn này một viên gạch mang tên \"khí phách\".\n\n\"Đắp đá trên băng, để cự tuyệt màn đêm. Nếu trường viên sụp đổ, chúng ta chính là bức tường thành cuối cùng.\"",
+        "icon": "fa-solid fa-landmark",
+        "color": "#ffffff",
+        "position": {
+            "nx": 0.547126449537,
+            "ny": 0.297128666663
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/tiicb4.png",
+            "https://wsrv.nl/?url=files.catbox.moe/8kgpwo.png",
+            "https://wsrv.nl/?url=files.catbox.moe/9swo46.png",
+            "https://wsrv.nl/?url=files.catbox.moe/go6ptk.png"
+        ]
+    },
+    {
+        "id": "marker-1773500393193-5410cb",
+        "name": "Pháo Đài Vãn Ca",
+        "group": "Thành Bang Lớn / Pháo Đài",
+        "description": "Trong kẽ nứt đen ngòm xé toạc mặt đất của Băng Tích Toái Miện, phong tuyết chẳng phải kẻ thống trị duy nhất. Khi ngươi cắn răng đội cơn bão tuyết trắng xóa đủ sức lột da xẻ thịt để tiến sâu vào hẻm núi, thứ đầu tiên ngươi cảm nhận được chính là một sự chấn động trầm đục, nhịp nhàng và gần như điên loạn.\n\nĐó chính là mạch đập của Pháo Đài Vãn Ca.\n\nNó tựa như một chiếc nêm thép khổng lồ bị man lực đóng chặt vào vùng đất đóng băng vùng cực, toàn bộ thành phố bám theo vách đá dựng đứng trèo ngược lên cao, quần thể kiến trúc bằng hắc diệu thạch ẩn hiện mờ ảo mà dữ tợn giữa làn hơi nước mịt mù. Nơi đây không có hoa viên, chẳng có cánh chim trời, duy chỉ có ánh lửa đỏ sẫm không bao giờ tắt của Khu Đoạn Lô, nhuộm bầu trời phía trên hẻm núi tựa như một thanh sắt nung hỏng.\n\nĐối với người ngoài, nơi đây là luyện ngục; nhưng với người Visgrad, mùi lưu huỳnh nồng nặc phun trào từ địa nhiệt mới là bằng chứng cho thấy họ vẫn đang sống.\n\nNgươi sẽ bắt gặp những khoáng vụ quan vội vã trong làn sương mù dày đặc của Phường Nhiệt Tuyền, hay chạm trán những liệp binh mang thương tích trở về dưới bóng tối của Hắc Quán Đài. Thế nhưng, linh hồn chân chính của tòa thành này lại bị khóa chặt nơi Vãn Ca Điện sâu hun hút phía tây. Tại nơi ấy, ánh nến chập chờn soi tỏ cả một vách đá thênh thang khắc kín những cái tên chi chít. Không có văn bia mộ chí, chẳng có tiểu sử cuộc đời, duy chỉ có những linh hồn đã tan biến giữa phong tuyết thét gào.\n\nCả tòa thành tựa như một cỗ máy nghiền khổng lồ, nuốt trọn thuế kim của các quốc gia cùng hàn thiết vùng cực, để rồi vô số thợ thủ công đổ mồ hôi như mưa rèn đúc nên những lưỡi kiếm sắc bén bảo vệ nền văn minh. Những tiếng búa nện ngày đêm không nghỉ vang vọng, chồng chéo trong hẻm núi thênh thang, cuối cùng hội tụ thành một hồi ngân dài trầm thấp tựa tiếng nấc nghẹn ngào.\n\nCó lẽ đó chính là nguồn gốc tên gọi của tòa thành: Nó không khóc thương người đã khuất, mà trên mảnh đất đóng băng vĩnh cửu này, nó dùng sắt thép và lửa đỏ để gõ vang khúc chiến ca bất khuất cho từng sinh mệnh vẫn chưa lụi tàn.",
+        "icon": "fa-solid fa-city",
+        "color": "#ffffff",
+        "position": {
+            "nx": 0.5669714105345833,
+            "ny": 0.32556697870561624
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/qsh5ei.png",
+            "https://wsrv.nl/?url=files.catbox.moe/hd2hfr.png",
+            "https://wsrv.nl/?url=files.catbox.moe/xxbt6v.png",
+            "https://wsrv.nl/?url=files.catbox.moe/q479o6.png",
+            "https://wsrv.nl/?url=files.catbox.moe/vjq3jh.png",
+            "https://wsrv.nl/?url=files.catbox.moe/de9vma.png"
+        ]
+    },
+    {
+        "id": "marker-1768942534772-0ef584",
+        "name": "Thành Bạch Diệu",
+        "group": "Thành Bang Khổng Lồ",
+        "description": "Nơi bắc cảnh, người đời bảo rằng Thành Bạch Diệu không đơn thuần được dựng xây trong lòng núi, mà tự thân nó chính là trái tim của ngọn núi — tường thành là xương sườn của dãy sơn mạch, còn lò luyện khổng lồ ngày đêm rực lửa chính là nhịp đập thổn thức của nó. Ngươi phải nhẫn nhịn cái lạnh cắt da cắt thịt trên bề mặt rặng núi, mới có thể tiến sâu vào chốn phúc địa dưới lòng đất được hơi ấm hun đúc như mùa xuân; giữa ngọn lửa thiêu và tiếng gầm rú rung chuyển, từng nhát búa của các thợ rèn không chỉ đúc nên gang thép và lòng dũng cảm để chống lại bóng tối, mà còn dệt nên nhịp đập kiên cường bất khuất nhất của toàn cõi bắc cảnh.",
+        "icon": "fa-solid fa-city",
+        "color": "#ffffff",
+        "position": {
+            "nx": 0.5666181524905566,
+            "ny": 0.4095217326209676
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/q5ac6o.png",
+            "https://wsrv.nl/?url=files.catbox.moe/q762j8.png",
+            "https://wsrv.nl/?url=files.catbox.moe/zj646d.png",
+            "https://wsrv.nl/?url=files.catbox.moe/q6zyey.png"
+        ]
+    },
+    {
+        "id": "marker-1768942487243-748761",
+        "name": "Thành Lâm Ca",
+        "group": "Thị Trấn",
+        "description": "Dõi theo hương thơm ngát của gỗ thông và rượu mật, ngươi sẽ đặt chân tới thị trấn cự mộc Thành Lâm Ca. Mỗi một mái nhà nơi đây đều được đẵn từ cành nhánh của những cổ thụ từng chứng kiến trăm mùa tuyết trắng, tựa như chốn cư ngụ của các cự nhân, còn những phù văn cổ xưa khắc trên xà nhà chính là sự tôn kính tối cao của người tiều phu dâng lên linh hồn của cây cối. Lưỡi rìu của những cư dân hào sảng nơi đây có thể bửa đôi thứ thiết mộc rắn chắc nhất, tiếng ca của họ có thể xua tan mùa đông băng giá dài đằng đẵng; và khi đêm thanh vắng, ngươi thậm chí có thể lắng nghe thấy những thớ gỗ đang say ngủ khẽ cất tiếng thở dài, hòa cùng ánh lửa lò sưởi kể lại những câu chuyện cổ xưa của núi rừng.",
+        "icon": "fa-solid fa-city",
+        "color": "#ffffff",
+        "position": {
+            "nx": 0.606227914191176,
+            "ny": 0.4355174909194823
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/3z2kna.png",
+            "https://wsrv.nl/?url=files.catbox.moe/wans1g.png",
+            "https://wsrv.nl/?url=files.catbox.moe/xi4ree.png"
+        ]
+    },
+    {
+        "id": "marker-1768941994656-3a3630",
+        "name": "Trấn Hôi Nham",
+        "group": "Thành Bang Nhỏ / Pháo Đài",
+        "description": "Nếu lòng ngươi hướng về bắc cảnh, tất phải băng qua Trấn Hôi Nham — bức tường thành màu xám sừng sững ấy không chỉ là ải quan địa lý, mà là lằn ranh đứt gãy giữa hai thế giới: Ngoài tường là ngọn gió ấm áp, hương lúa mạch cùng sự phồn hoa êm dịu của đế quốc, còn trong tường lại là mảnh đất đóng băng cứng như sắt thép cùng ngọn gió lạnh thô ráp. Khi các thương nhân phương nam bước qua cánh cổng này, họ không chỉ vô thức túm chặt cổ áo vì luồng không khí biến đổi đột ngột, mà ngay cả nụ cười khách sáo nơi khóe môi cũng lập tức bị đông cứng; tại chốn này, chỉ có cái gật đầu trầm mặc nhưng đầy sức nặng của những trượng phu bắc cảnh mới là thứ ngôn ngữ thông hành đáng tin cậy nhất.",
+        "icon": "fa-solid fa-landmark",
+        "color": "#ffffff",
+        "position": {
+            "nx": 0.6424854203677077,
+            "ny": 0.5001814753872446
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/mgzkzf.png",
+            "https://wsrv.nl/?url=files.catbox.moe/25fikm.png"
+        ]
+    },
+    {
+        "id": "marker-1773494569116-4c7e09",
+        "name": "Ambergard",
+        "group": "Thành Bang Lớn",
+        "description": "Nơi bắc cảnh, chẳng phải mọi sức mạnh đều bắt nguồn từ sắt thép lạnh lùng cứng nhắc. Khi bước vào Ambergard, thứ đầu tiên xộc thẳng vào lồng ngực ngươi là hương mạch nha nồng nàn đến mức quánh đặc, lập tức khơi dậy cơn thèm khát nơi cuống họng. Nơi đây, những đợt sóng vàng của đồng lúa mạch bên bờ Sông Kim Tuệ tựa như hải triều thực thụ, từng đợt từng đợt vỗ vào chân tường thành. Không có vẻ tiêu điều tàn khốc nơi biên cương, nơi đây chỉ tràn ngập cảm giác an tâm trĩu nặng, thậm chí có phần ngạo mạn khi các kho thóc đều đầy ắp.\n\nChớ để đám bợm rượu mặt đỏ bừng đang hát ca ầm ĩ nơi Khu Nhưỡng Phường đánh lừa. Trong Đại Sảnh Giao Dịch Cốc Vật thuộc Khu Mạch Thị, từng nét bút lông vũ lướt trên giấy dưới mái vòm đá đều định đoạt sự no ấm của cả đại lục trong mùa tới. Mạng lưới quyền lực được giới thương nhân đan dệt bằng ngũ cốc và khế ước nơi này còn kiên cố và dẻo dai hơn nhiều so với chiến giáp của các tướng quân.\n\nCòn về thùng thánh tửu trong truyền thuyết của \"Ngày Thành Lập Liên Minh\", mọi xưởng ủ rượu lâu đời đều khăng khăng nhận mình mới là người thừa kế hợp pháp của một lít rượu quý cuối cùng còn sót lại. Nếu không muốn châm ngòi cho một cuộc hỗn chiến lan rộng khắp toàn thành trong quán rượu, tốt nhất hãy ngậm miệng lại, an ổn thưởng thức hớp mạch tửu dung hòa ánh dương, đất mẹ và hơi ấm ngọn gió trong ly — đó chính là sự vỗ về hào phóng nhất mà Ambergard ban tặng cho những kẻ lãng du.",
+        "icon": "fa-solid fa-city",
+        "color": "#ffffff",
+        "position": {
+            "nx": 0.696708057484,
+            "ny": 0.503681173725
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/tskoz7.png",
+            "https://wsrv.nl/?url=files.catbox.moe/ovugl2.png",
+            "https://wsrv.nl/?url=files.catbox.moe/b3yii4.png",
+            "https://wsrv.nl/?url=files.catbox.moe/mfb89h.png"
+        ]
+    },
+    {
+        "id": "marker-1768942749317-c2a268",
+        "name": "Pháo Đài Phong Thiết",
+        "group": "Pháo Đài",
+        "description": "Pháo Đài Phong Thiết trấn giữ nơi sơn ải hiểm trở cheo leo, tôn xưng cuồng phong làm vị lãnh chúa vĩnh hằng. Những hộ vệ thương đoàn dày dạn kinh nghiệm sẽ cảnh cáo ngươi rằng, ngọn gió nơi ấy không chỉ là luồng khí lưu đơn thuần, mà là cỗ chiến chuy nện chan chát vào khiên chắn, là tảng đá mài mài giũa ý chí sắc bén; chính vì lẽ đó, bài học vỡ lòng của các vệ sĩ nơi này chưa từng là kiếm thuật, mà là học cách cắm rễ sâu giữa tiếng thét gào của bão tố, cho tới khi ý chí của họ sừng sững bất động tựa rặng sơn mạch phía sau — tại chốn này, ngay cả khúc ca dao bên nôi cũng là những hồi chiến hống bất khuất.",
+        "icon": "fa-solid fa-landmark",
+        "color": "#ffffff",
+        "position": {
+            "nx": 0.7115948734629434,
+            "ny": 0.395947862833261
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/1ujgvq.png",
+            "https://wsrv.nl/?url=files.catbox.moe/4ji6yu.png",
+            "https://wsrv.nl/?url=files.catbox.moe/3hdsjz.png",
+            "https://wsrv.nl/?url=files.catbox.moe/uktk63.png",
+            "https://wsrv.nl/?url=files.catbox.moe/emtvfa.png",
+            "https://wsrv.nl/?url=files.catbox.moe/fgxbo9.png",
+            "https://wsrv.nl/?url=files.catbox.moe/ou7c6s.png"
+        ]
+    },
+    {
+        "id": "marker-1773498903260-6f2de8",
+        "name": "Pháo Đài Long Hống",
+        "group": "Thành Bang Cỡ Vừa / Thánh Địa Long Duệ",
+        "description": "Đừng tin vào những lời xảo ngôn trên bản đồ bảo rằng Pháo Đài Long Hống chỉ là một tiền tiêu trạm nhỏ bé. Khi ngươi trèo lên lưng chừng núi của Thiên Vẫn Chi Quán, ngươi sẽ kinh hãi nhận ra toàn bộ tường thành bằng hắc diệu thạch thực chất được khâu vá chắp nối ngay trên tàn hài khổng lồ của một đầu thượng cổ cự long. Làn mây mù lưu huỳnh bốc lên ngùn ngụt từ địa nhiệt chính là oán khí ngút trời chưa tan của nó, và mỗi cơn rung chuyển của núi lửa dưới chân ngươi, chẳng qua là tiếng gầm thét không cam lòng của vị quân vương đã băng hà trong giấc mộng thiên thu.\n\nTrong pháo đài nửa người nửa thần này, búa sắt của các lân tượng không đơn thuần là rèn đúc, họ đang mượn độc hỏa của địa mạch để bóc tách sự ngạo mạn của long cốt, cưỡng ép nhào nặn nó hòa vào sắt thép phàm trần. Cho dù ngươi có thắng được chén rượu kính nể của lũ Long Duệ kiêu kỳ tại Long Hầu Cạnh Kỹ Trường, thì trong đêm khuya thanh vắng cũng tuyệt đối đừng tò mò nhìn trộm vào thánh sở nghi thức bị nghiêm lệnh cấm nhập — tại nơi ấy, chính không khí cũng là những lưỡi kiếm mang độc. Đúng như lời những cựu binh từng nói, tiếng gầm long hống chân chính chưa từng cần đến cổ họng. Trong bóng tối sâu thẳm nhất, mỗi một tiếng sấm rền mà ngươi nghe thấy, đều là dư âm của các thần linh thượng cổ đang cố gắng nghiền nát linh hồn phàm nhân.",
+        "icon": "fa-solid fa-landmark",
+        "color": "#ffffff",
+        "position": {
+            "nx": 0.6873504961974676,
+            "ny": 0.320273810531469
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/bah6ds.png",
+            "https://wsrv.nl/?url=files.catbox.moe/msryth.png",
+            "https://wsrv.nl/?url=files.catbox.moe/p1q5o2.png",
+            "https://wsrv.nl/?url=files.catbox.moe/guqwq7.png"
+        ]
+    },
+    {
+        "id": "marker-1773497409404-ca6d9c",
+        "name": "Cảng Sương Kính",
+        "group": "Thành Bang Lớn / Quân Cảng",
+        "description": "Dong buồm tiến vào Hải Hiệp Lang Hầu, bão táp lập tức bị vách đá núi lửa cưỡng ép chặt đứt, thay vào đó là một sự chấn động xuyên thấu tận tủy xương — ấy là tiếng ầm vang khi hàng vạn chiếc đinh tán tại Cảng Sương Kính cùng lúc găm vào thớ gỗ thiết mộc; từng nhịp thở của đô thành này đều mang theo mùi mạt cưa khét đắng và vị lạnh buốt của hàn thiết. Tại nơi đây, linh hồn của rừng già bị cưa xẻ thành sống thuyền, rồi dưới bóng râm u tối của các đại xưởng thuyền, chúng được tái tạo thành những quái vật mang tên \"Chiến Tranh\".\n\nSợi xích \"Hải Uyên Tỏa Liên\" ầm ầm trồi lên từ đáy nước, thô ráp và to lớn tựa như long tích bị lôi ra từ biển sâu, giữa tiếng thét gào rít rống của Giảo Hợp Song Tháp mà cưỡng chế kéo lê dòng người và dục vọng hàng hóa nối liền hai bờ. Dẫu trong đêm cực dạ tĩnh mịch nhất, cũng chớ dại dột nhìn thẳng vào mặt nước phẳng lặng như gương. Những lão thợ thủ công sẽ bảo với ngươi rằng, trong bóng hình phản chiếu lạnh thấu tâm can ấy đang lượn lờ những chiến hạm khổng lồ chưa từng xuất thế, ấy là biển cả đang diễn tập trước sự hủy diệt của tương lai. Đúng như tín điều của Cảng Sương Kính: Họ chẳng đơn thuần đóng tàu, mà là đang lôi kéo dã tâm của cả một thời đại từ ảo ảnh trong gương ghim chặt vào biển băng hiện thực này.",
+        "icon": "fa-solid fa-city",
+        "color": "#ffffff",
+        "position": {
+            "nx": 0.6622697918290844,
+            "ny": 0.34014539727448295
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/17p09d.png",
+            "https://wsrv.nl/?url=files.catbox.moe/8rk6th.png",
+            "https://wsrv.nl/?url=files.catbox.moe/ehpuu4.png",
+            "https://wsrv.nl/?url=files.catbox.moe/62t0xp.png",
+            "https://wsrv.nl/?url=files.catbox.moe/if5jko.png",
+            "https://wsrv.nl/?url=files.catbox.moe/qj2xkv.png",
+            "https://wsrv.nl/?url=files.catbox.moe/unwk2k.png"
+        ]
+    },
+    {
+        "id": "marker-1768942812526-184e63",
+        "name": "Cảng Bạch",
+        "group": "Cảng Biển",
+        "description": "Muốn tìm kiếm tài phú chốn bắc cảnh, ngươi nhất định phải tìm về Cảng Bạch. Tại nơi ấy, những chiếc thuyền phá băng được đúc từ gang thép và xương sườn cự thú, với mũi thuyền nhọn hoắt tựa nanh vuốt xé toạc không phải ngọn sóng, mà là cả một đại dương đóng băng. Trên cầu cảng, các thuyền trưởng khải hoàn trở về tấp nập giao dịch da hải long cùng túi mực cự ô tặc đoạt lấy từ vực sâu, bầu không khí vĩnh viễn phảng phất mùi tanh mặn, rượu mạnh cay nồng cùng hương tiền bạc quyến rũ — đúng như lời các thủy thủ ngâm nga, mỗi lần biển băng đóng giá là một bữa tiệc thịnh soạn dành riêng cho những kẻ quả cảm, và khúc hải ca bi tráng hơn cả phong tuyết chính là điệu nhạc đệm duy nhất cho bữa tiệc này.",
+        "icon": "fa-solid fa-city",
+        "color": "#ffffff",
+        "position": {
+            "nx": 0.683756071236,
+            "ny": 0.249795496765
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/u59p2f.png",
+            "https://wsrv.nl/?url=files.catbox.moe/set7mb.png",
+            "https://wsrv.nl/?url=files.catbox.moe/mvc4yu.png"
+        ]
+    },
+    {
+        "id": "marker-1773497245882-4b06d8",
+        "name": "Lẫm Phong Độ",
+        "group": "Thành Bang Lớn / Cảng Biển",
+        "description": "Màn sương chiều lướt qua ngọn sóng của Nội Thương Bạch Hải, mặt biển màu xám trắng trong nửa canh giờ ngắn ngủi ấy được ánh hoàng hôn vỡ vụn tôi luyện thành một sắc hổ phách quánh đặc và ấm áp. Có lẽ đó là khoảnh khắc hiếm hoi mà những thủy thủ bắc cảnh phiêu bạt nửa đời người chịu dừng chén rượu giữa hải trình băng giá dằng dặc để lặng ngắm trông theo.\n\nNơi đây là Lẫm Phong Độ, một đô thành hoàng kim ngự trị ngay trên yết hầu của Hải Hiệp Lang Hầu.\n\nKhác với sự tịch mịch hay tiêu điều nơi khác, chốn này vĩnh viễn huyên náo và ẩm ướt. Thứ đầu tiên ngươi nghe thấy tuyệt nhiên chẳng phải tiếng sóng biển tầm thường, mà là tiếng gầm rống trầm đục từ những cỗ tời hơi nước khổng lồ nơi sâu thẳm trong Giảo Hợp Song Tháp. Khi sợi xích Hải Uyên Tỏa Liên thô ráp tựa long tích, đẫm ướt nước biển rẽ sóng trồi lên, cưỡng ép kéo lê những chiếc phà khổng lồ chất đầy thiết mộc cùng khế ước thương thuyền vượt qua eo biển, ngươi sẽ cảm nhận được sự ngạo mạn tột cùng của nền văn minh cơ khí — ấy là sợi dây cương mà nhân loại tròng vào cổ đại dương giữa biển khơi cực bắc.\n\nGiữa các phường tác chế nơi hạ thành khu cùng những phiên chợ nổi không ngừng nghỉ tại Khu Phù Mộc, mùi muối biển tanh mặn, hương thiết mộc mới cưa cùng vị mạch tửu rẻ tiền nơi Tửu Quán Trọc Lưu bị ngọn gió biển nhào trộn đặc quánh. Nơi đây là trạm trung chuyển của dục vọng, cũng là bến đỗ bình yên cho những linh hồn mỏi mệt. Bất kể ngươi là bậc chóp bu thương hội rủng rỉnh tiền vàng hay kẻ lưu lạc nhặt nhạnh từng mảnh vảy cá nơi bến tàu ngư dân, Lẫm Phong Độ đều mở lòng đón nhận bằng một sự hào phóng gần như lãnh đạm.\n\nSự phồn hoa nơi này luôn mang theo cảm giác gấp gáp, tựa như một cơn cuồng hoan sau cùng trước khi bão tuyết ập đến. Giới quyền quý nơi thượng thành khu mải miết tính toán thuế quan và thặng dư dưới ánh tàn dương, trong khi đám phu phen hạ thành khu lại lặng lẽ vá víu những tấm lưới rách nát trong bóng tối.\n\nĐó chính là cốt cách sâu thẳm của Lẫm Phong Độ: Một giấc mộng ảo màu hổ phách bùng cháy bên bờ biển băng lạnh lẽo. Nó dùng kim tiền, mồ hôi và hơi nước, ngoan cường dựng nên một thế giới sôi sục hơi nóng bên bờ Thương Bạch Hải. Chừng nào sợi xích vắt ngang eo biển còn rung lên những hồi ngân vang, thì huyết mạch của bắc cảnh sẽ vĩnh viễn không bao giờ ngưng chảy.",
+        "icon": "fa-solid fa-city",
+        "color": "#ffffff",
+        "position": {
+            "nx": 0.647648921955,
+            "ny": 0.381757620102
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/in1obf.png",
+            "https://wsrv.nl/?url=files.catbox.moe/td6dmu.png",
+            "https://wsrv.nl/?url=files.catbox.moe/i8f2ow.png",
+            "https://wsrv.nl/?url=files.catbox.moe/v4f5h5.png"
+        ]
+    },
+    {
+        "id": "marker-1773508008871-b0006d",
+        "name": "Thuyền Nội Hải Bắc Cảnh",
+        "group": "Phương Tiện",
+        "description": "Chiếc ma đạo thuyền đang lướt sóng hành trình giữa màn đêm tịch mịch...",
+        "icon": "fa-solid fa-campground",
+        "color": "#ffffff",
+        "position": {
+            "nx": 0.637270205161837,
+            "ny": 0.29628575557564263
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/zwetuh.png",
+            "https://wsrv.nl/?url=files.catbox.moe/ng6kaz.png",
+            "https://wsrv.nl/?url=files.catbox.moe/hmgwnz.png",
+            "https://wsrv.nl/?url=files.catbox.moe/0sveiy.png"
+        ]
+    },
+    {
+        "id": "marker-1773508744114-29b3df",
+        "name": "Thuyền Phá Băng",
+        "group": "Phương Tiện Quân Sự",
+        "description": "Chiếc ma đạo phá băng hạm đang phóng ra chùm quang thúc rực lửa xé toạc băng dày...",
+        "icon": "fa-solid fa-campground",
+        "color": "#ffffff",
+        "position": {
+            "nx": 0.610001552952,
+            "ny": 0.229112156062
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/dg2582.png",
+            "https://wsrv.nl/?url=files.catbox.moe/jqbqph.png"
+        ]
+    },
+    {
+        "id": "marker-1773508320165-949424",
+        "name": "Ma Đạo Chiến Thuyền",
+        "group": "Phương Tiện Quân Sự",
+        "description": "Chiến hạm Solentis uy dũng đang tuần tra rẽ sóng canh giữ hải cương...",
+        "icon": "fa-solid fa-campground",
+        "color": "#4dabf7",
+        "position": {
+            "nx": 0.6668148172891954,
+            "ny": 0.8385923775859881
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/qbemj0.png",
+            "https://wsrv.nl/?url=files.catbox.moe/bq22b8.png",
+            "https://wsrv.nl/?url=files.catbox.moe/1fsql1.png"
+        ]
+    },
+    {
+        "id": "marker-1768940939145-919fbe",
+        "name": "Cự Đại Toàn Qua",
+        "group": "Hải Dương / Khu Vực ???",
+        "description": "Giữa hai dải băng nguyên nơi phương bắc đại lục, biển cả mở to một con mắt vĩnh viễn không bao giờ nhắm lại — những thủy thủ run rẩy coi đó là \"Cổ Họng Biển Sâu\" nuốt chửng thuyền bè cùng năm tháng, tin chắc rằng tâm điểm của xoáy nước thông thẳng tới vương quốc của những kẻ chết đuối; thế nhưng trên hải đồ của các học giả Pháp Hoàn Borens, vùng cấm địa mang tên \"Thiên Khung Qua Lưu\" này lại chẳng hề dẫn tới vực sâu, mà là một nấc thang ma pháp đứt gãy, chảy ngược dòng vươn thẳng tới tận trời cao.",
+        "icon": "fa-solid fa-water",
+        "color": "#ffffff",
+        "position": {
+            "nx": 0.3572920602548394,
+            "ny": 0.37654547750693806
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/0k5lco.png",
+            "https://wsrv.nl/?url=files.catbox.moe/sc6rrf.png",
+            "https://wsrv.nl/?url=files.catbox.moe/j3olof.png"
+        ]
+    },
+    {
+        "id": "marker-1786638299494-7f045c",
+        "name": "Khu Thành Bang Ốc Đảo",
+        "group": "Khu Vực",
+        "description": "Khu vực quần tụ sầm uất các trung tâm thương nghiệp, công nghiệp cùng chính trị đầu não của liên bang.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.513154662381,
+            "ny": 0.700378396673
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1768982049780-82e8a0",
+        "name": "Sa Hải Xích Kim",
+        "group": "Sa Mạc / Khu Vực Nguy Hiểm Cao (☆☆☆☆)",
+        "description": "Đặt chân vào Sa Hải Xích Kim, ngươi sẽ thấy mình lọt thỏm giữa một đại dương hoàng kim tĩnh lặng mà bao la ngút ngàn. Những thi nhân Sahra lãng mạn ngâm nga rằng cồn cát tựa sóng biển đông cứng giữa ban ngày chính là tàn hài của bầu trời rơi rụng, mỗi một hạt cát đều là một vì tinh tú vỡ vụn; thế nhưng, các bô lão trong thương đoàn sẽ vạch trần cho ngươi thấy một sự thật thê lương hơn — những hạt cát ấy cũng chính là gạch vụn sụp đổ từ vô số đế quốc cổ xưa. Trên mảnh đất nơi thái dương phô diễn uy quyền tuyệt đối, ốc đảo chỉ mở rộng cửa cho kẻ mạnh và bậc phú hào, nước cùng tri thức đắt đỏ hơn nhiều so với tính mạng; dẫu đêm về có tinh tú soi đường như hải đăng dẫn lối, nhưng bão cát vô tình rốt cuộc sẽ vùi lấp tất thảy những kẻ yếu đuối, chỉ lưu lại giá trị vĩnh hằng của vàng ròng.",
+        "icon": "fa-solid fa-skull-crossbones",
+        "color": "#ffd43b",
+        "position": {
+            "nx": 0.548749040985478,
+            "ny": 0.7601241104566433
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/ffrlti.png",
+            "https://wsrv.nl/?url=files.catbox.moe/25udam.png",
+            "https://wsrv.nl/?url=files.catbox.moe/shy9xd.png",
+            "https://wsrv.nl/?url=files.catbox.moe/55y5je.png"
+        ]
+    },
+    {
+        "id": "marker-1768981892363-697558",
+        "name": "Sơn Mạch Ưng",
+        "group": "Sơn Mạch / Khu Vực Nguy Hiểm Trung Bình (☆☆☆)",
+        "description": "Sơn Mạch Ưng tựa như một bức bình phong khổng lồ do thần linh buông xuống, lạnh lùng chia cắt Đầm Lầy Bi Minh phương nam với Sa Hải Xích Kim phương bắc. Giới thương nhân Sahra tôn xưng rặng núi này là thần bảo hộ tài phú, chẳng phải vì trong núi ẩn chứa kho báu, mà bởi đường núi hiểm trở hẹp hơn cả lưỡi dao, ngoại trừ những con sơn dương thoăn thoắt cùng bầy hùng ưng trên đỉnh non, chỉ có những thám mã tinh nhuệ nhất mới có thể đặt chân qua. Thiên hiểm này không chỉ ngăn bước cừu địch phương bắc, mà còn che giấu con đường bí mật dẫn tới thủ phủ thích khách Alamut. Những kẻ may mắn vượt qua kể lại rằng, khi đứng trên sống núi tịch mịch vĩnh hằng, tai trái ngươi văng vẳng tiếng ai oán của vong linh, tai phải là lời thì thào của cát chảy, tựa như đang sải bước giữa lằn ranh của hai luyện ngục hoàn toàn khác biệt.",
+        "icon": "fa-solid fa-mountain",
+        "color": "#ffd43b",
+        "position": {
+            "nx": 0.5315383394955114,
+            "ny": 0.8192025244684922
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/cjg1ju.png",
+            "https://wsrv.nl/?url=files.catbox.moe/3d0w2o.png",
+            "https://wsrv.nl/?url=files.catbox.moe/93be6v.png",
+            "https://wsrv.nl/?url=files.catbox.moe/f0il04.png"
+        ]
+    },
+    {
+        "id": "marker-1779550665864-87f6e3",
+        "name": "Khu Hải Ngạn Phía Đông",
+        "group": "Khu Vực / Bờ Biển",
+        "description": "Vùng bờ biển tập trung các cảng khẩu sầm uất cùng quần thể các sản nghiệp kỹ thuật khai thác nguồn nước.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.583908071488,
+            "ny": 0.756176590528
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1768983118591-f06247",
+        "name": "Azhar",
+        "group": "Thành Bang Khổng Lồ",
+        "description": "Muốn tận mắt chứng kiến vinh quang và sự điên cuồng tột đỉnh nhất của nhân gian, ngươi nhất định phải ghé thăm Azhar — viên minh châu rực rỡ nhất giữa lòng sa mạc, một đô thành hưởng lạc được đắp xây hoàn toàn từ vàng ròng và dục vọng. Tại Liệt Dương Đại Giác Đấu Trường tráng lệ ngự giữa trung tâm thành phố, những trận tử chiến giữa anh hùng và cự thú chưa bao giờ ngưng nghỉ, tiếng hò reo vang dội tầng mây có thể truyền xa hàng dặm trường. Tại nơi này, máu tươi được coi là thứ mỹ tửu tuyệt hảo nhất, thi nhân dùng khúc ca đổi lấy vàng ròng, còn đấu sĩ dùng nhiệt huyết của kẻ thù để tự đội vương miện cho chính mình; đúng như tín ngưỡng của cư dân nơi đây, trên mảnh đất cuồng nhiệt này, chỉ có kẻ chiến thắng và kẻ biết tận hưởng lạc thú mới xứng đáng được người đời khắc ghi.",
+        "icon": "fa-solid fa-city",
+        "color": "#ffd43b",
+        "position": {
+            "nx": 0.527073225586,
+            "ny": 0.714936863192
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/zr8xrc.png",
+            "https://wsrv.nl/?url=files.catbox.moe/fj8vvi.png",
+            "https://wsrv.nl/?url=files.catbox.moe/mzqu4i.png"
+        ]
+    },
+    {
+        "id": "marker-1768983582686-592081",
+        "name": "Bait · Nar",
+        "group": "Thành Bang Lớn",
+        "description": "Ngươi có tin rằng không cần đến ma pháp vẫn có thể khiến sắt thép cất tiếng ca? Hãy đến Bait · Nar mà tận mắt chứng kiến. Là thánh địa học thuật của Liên Bang Sahra, địa vị của các học giả nơi đây sánh ngang với quân vương, thợ thủ công không ngước nhìn thần linh, chỉ tôn sùng sự ăn khớp chuẩn xác của bánh răng cùng chân lý tuyệt đối của các công thức luyện kim. Họ dùng dây cót chế tạo nên những tạo vật tinh xảo hơn cả phi long — từ những chú chim cơ khí biết tư duy, cho đến những khẩu hỏa thương đủ sức bắn thủng long lân. Các học giả kiêu hãnh tuyên bố rằng trái tim của \"Thành Phố Kỹ Thuật\" này tuyệt nhiên chẳng phải ma lực thủy tinh, mà chính là mái vòm hoàng kim khổng lồ kia, bởi lẽ kho tàng tri thức bao la tích trữ bên trong mới là động lực đích thực thúc đẩy toàn bộ liên bang sinh sôi bất tận.",
+        "icon": "fa-solid fa-city",
+        "color": "#ffd43b",
+        "position": {
+            "nx": 0.5156675427862842,
+            "ny": 0.6693823635362626
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/ajx004.png",
+            "https://wsrv.nl/?url=files.catbox.moe/vt8k8x.png",
+            "https://wsrv.nl/?url=files.catbox.moe/xsdkxv.png",
+            "https://wsrv.nl/?url=files.catbox.moe/otps33.png"
+        ]
+    },
+    {
+        "id": "marker-1768983840927-18ab8a",
+        "name": "Dar Suk",
+        "group": "Thành Bang Cỡ Vừa / Pháo Đài",
+        "description": "Những đứa trẻ trên sa mạc từ thuở lọt lòng đã thấu hiểu sâu sắc rằng, chiến sĩ của Dar Suk chính là thanh loan đao sắc bén nhất giữa sa hải. Bản thân thành phố này đã là một doanh trại quân đội khổng lồ, bầu không khí không vương hạt cát tầm thường mà nồng nặc mùi rỉ sét, mồ hôi cùng tiếng thở dài trĩu nặng của bầy nô lệ. Tại nơi đây, mỗi một đứa bé trai đều được tôi luyện thành cỗ máy giết chóc máu lạnh vô tình, họ coi việc xích xiềng tù binh chiến tranh là tài phú và vinh quang; đúng như lời những sĩ quan lạnh lùng từng nói — trên mảnh đất này, sức mạnh là chân lý duy nhất, nhu nhược là tội nguyên không thể tha thứ, còn từ bi chính là thứ độc dược chết người nhất chốn sa mạc.",
+        "icon": "fa-solid fa-city",
+        "color": "#ffd43b",
+        "position": {
+            "nx": 0.4819698364135333,
+            "ny": 0.7325802175983005
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/fqd9a1.png",
+            "https://wsrv.nl/?url=files.catbox.moe/lke8xb.png",
+            "https://wsrv.nl/?url=files.catbox.moe/y2jt1i.png",
+            "https://wsrv.nl/?url=files.catbox.moe/8u7b1y.png"
+        ]
+    },
+    {
+        "id": "marker-1768985206879-59c5f9",
+        "name": "Alamut",
+        "group": "Thành Bang Nhỏ",
+        "description": "Những thích khách dẫu không có tổ quốc, nhưng lại sở hữu một thủ đô mang tên Alamut. Tòa \"Thành Phố Bóng Đêm\" ẩn giấu nơi thung lũng sâu thẳm của Sơn Mạch Ưng này bị ngoại giới kiêng dè xem như kẻ chủ tể thao túng thực sự phía sau bức màn của Liên Bang Sahra. Trên những con phố tịch mịch chết chóc, ngươi sẽ vĩnh viễn không bao giờ nghe thấy tiếng cười đùa của trẻ thơ, duy chỉ có âm thanh rợn người của đá mài lưỡi dao sắc lạnh vang vọng. Nơi đây vận hành những giao dịch tàn khốc nhất thế gian: Một đồng tiền rơi của ngươi ở nơi nào đó, có thể chính là một bản tử khế được ký kết tại chốn này; và vị giáo đoàn tông sư trong truyền thuyết thậm chí có thể hiện thân đoạt mạng từ bất kỳ góc khuất bóng tối nào trên cõi đời, tựa như ngọn gió sa mạc vô hình và đoạt mệnh nhất, hiện diện khắp nơi mà lại bặt vô tung tích.",
+        "icon": "fa-solid fa-city",
+        "color": "#ffd43b",
+        "position": {
+            "nx": 0.49128415364372513,
+            "ny": 0.7931118791405793
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/gibint.png",
+            "https://wsrv.nl/?url=files.catbox.moe/o21a3i.png",
+            "https://wsrv.nl/?url=files.catbox.moe/1aq2uk.png"
+        ]
+    },
+    {
+        "id": "marker-1777656006218-bfac83",
+        "name": "Cảng Bahar",
+        "group": "",
+        "description": "",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#ffd43b",
+        "position": {
+            "nx": 0.579780558027,
+            "ny": 0.772648246596
+        }
+    },
+    {
+        "id": "marker-1772184901177-0e9750",
+        "name": "Khu Vực Sơn Lâm Phía Đông",
+        "group": "Địa Khu",
+        "description": "Vùng núi non rậm rạp và u tịch nhất toàn cõi, là cội nguồn của đức tin Tinh Linh cùng những truyền thống ngàn đời; những dãy núi điệp trùng, thung lũng sâu thẳm cùng đại thụ chọc trời cùng ôm trọn lấy Thế Giới Thụ tạo thành một biển rừng bạt ngàn vô tận.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#63e6be",
+        "position": {
+            "nx": 0.24767457018223138,
+            "ny": 0.7706308495778632
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1772184753189-367158",
+        "name": "Vành Đai Biên Giới Phía Bắc",
+        "group": "Địa Khu",
+        "description": "Trải dài với những cánh rừng thưa, trảng cỏ ẩm ướt cùng các dải đồi rải rác, đóng vai trò là vành đai đệm chuyển tiếp từ Thấp Địa Thiên Kính Hồ tiến sâu vào lục địa.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#63e6be",
+        "position": {
+            "nx": 0.197603077071,
+            "ny": 0.752885926057
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1772184723280-624a75",
+        "name": "Thước Lộ Lâm Gian",
+        "group": "Rừng / Khu Vực Nguy Hiểm Trung Bình (☆☆☆)",
+        "description": "Nơi rìa đông bắc của Trái Tim Phỉ Thúy, tiếp giáp với Thụ Hải Vô Tận, chính là chốn biến ảo khôn lường mang tên \"Thước Lộ Lâm Gian\". Đây là nét hoa mỹ ngẫu hứng của văn minh Tinh Linh, một khúc nhạc mê hoặc do Quang Xí Yêu Tinh cùng chính mẹ tự nhiên tùy hứng tấu nên. Đặt chân tới chốn này, ngươi buộc phải từ bỏ mọi định nghĩa về \"con đường\", bởi lẽ làn sương mù thất sắc vây quanh sẽ biến ảo theo từng xúc cảm trong lòng ngươi, còn lối mòn giữa rừng sẽ sinh ra hay biến mất tùy thuộc vào thiện niệm hay lòng tham của chính ngươi. Các yêu tinh sẽ bảo với ngươi rằng, khu rừng này chưa từng có hình thái cố định, nó chỉ là một tấm gương chân thực, phản chiếu và hiện thực hóa cảnh sắc sâu thẳm nơi linh hồn ngươi — kẻ hào sảng sẽ thấy muôn hoa trải thảm dẫn lối, người hiền hòa sẽ nghe chim chóc cất tiếng hót tiêu dao chỉ đường; còn kẻ lòng dạ khó lường sẽ vĩnh viễn bị giam cầm trong những ảo tượng vô tận do chính tâm ma của mình sinh ra.",
+        "icon": "fa-solid fa-tree",
+        "color": "#63e6be",
+        "position": {
+            "nx": 0.2680875519375308,
+            "ny": 0.7425535461613836
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/iaoa42.png",
+            "https://wsrv.nl/?url=files.catbox.moe/l0uyaq.png",
+            "https://wsrv.nl/?url=files.catbox.moe/yshpw0.png",
+            "https://wsrv.nl/?url=files.catbox.moe/oufc7c.png"
+        ]
+    },
+    {
+        "id": "marker-1772184417034-363377",
+        "name": "Khu Vực Bình Nguyên Trung Ương",
+        "group": "Địa Khu",
+        "description": "Dải đất bằng phẳng liên tục và rộng lớn nhất toàn cõi, cây cối phân bố thành từng mảng tự nhiên, là khu vực quy tụ đông đúc nhất về dân cư, mạng lưới đường sá cùng các hoạt động canh tác nông nghiệp trù phú.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#63e6be",
+        "position": {
+            "nx": 0.19196611847768597,
+            "ny": 0.852001299256664
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1772184690854-a1d5b9",
+        "name": "Hải Hiệp Phía Tây",
+        "group": "Địa Khu",
+        "description": "Địa hình chủ yếu là núi thấp, đồi bát úp và những vạt rừng thưa bạt ngàn, thoải dốc thu hẹp dần từ bình nguyên trung ương hướng ra bờ biển, là dải chuyển tiếp yết hầu từ nội địa hướng thẳng ra hải hiệp phía tây.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#63e6be",
+        "position": {
+            "nx": 0.15800837700041326,
+            "ny": 0.8372066720423366
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1772184433207-96261a",
+        "name": "Lutetia",
+        "group": "Thành Phố Siêu Khổng Lồ",
+        "description": "Bình minh xé toạc đỉnh vàng, ấy là nửa khắc của Phượng Hoàng Vương; hoàng hôn buông lơi điện bạc, lại đến lượt Vĩnh Hằng Nữ Vương thắp đèn. Ngươi bảo ngươi từng đặt chân tới Lutetia, thực ra ngươi mới chỉ biết đến một nửa của nó; nửa còn lại, khi cùng một vầng trăng khuyết treo cao, đã khoác lên mình một diện mạo hoàn toàn khác biệt.",
+        "icon": "fa-solid fa-landmark",
+        "color": "#63e6be",
+        "position": {
+            "nx": 0.192704483048,
+            "ny": 0.827
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1768969422690-d24ed4",
+        "name": "Sông Noir",
+        "group": "Trường Hà",
+        "description": "Là dòng sông mẹ chung của Thụ Hải Vô Tận và miền nam đại lục, Sông Noir tựa như một bản sử thi cuộn chảy: Khởi nguồn từ tầng sâu biển rừng ngập tràn ma lực, thượng nguồn của nó nuôi dưỡng thảm thực vật ma pháp kỳ dị; khi chảy qua trung du, những loài cá quý với lớp vảy óng ánh như bảo thạch tung tăng bơi lội giữa bóng hình phản chiếu của dải bình nguyên trù phú, tựa hồ chứng kiến sự chuyển mình rực rỡ của các nền văn minh đôi bờ; thế nhưng khi dòng nước cuồn cuộn đổ về hạ du, làn sóng trong veo dần trở nên đục ngầu và nhuốm màu bi thương — những mạo hiểm giả thở dài bảo rằng, ấy là bởi con sông đã gánh vác quá nhiều quá khứ thăng trầm nặng trĩu của các đế chế suy tàn, đang xuôi dòng không thể vãn hồi về phía vương quốc tịch mịch của những kẻ đã khuất.",
+        "icon": "fa-solid fa-water",
+        "color": "#845ef7",
+        "position": {
+            "nx": 0.371643688592,
+            "ny": 0.717748562354
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/8pcb30.png",
+            "https://wsrv.nl/?url=files.catbox.moe/90z81o.png",
+            "https://wsrv.nl/?url=files.catbox.moe/utjv0j.png",
+            "https://wsrv.nl/?url=files.catbox.moe/25tg7h.png"
+        ]
+    },
+    {
+        "id": "marker-1768970247787-a1c1e5",
+        "name": "Thụ Hải Vô Tận",
+        "group": "Rừng Mưa Siêu Khổng Lồ / Khu Vực Mạo Hiểm",
+        "description": "Thụ Hải Vô Tận là kho báu trù phú nhất, cũng là một bức họa chân thực khác của địa ngục, là cổ họng xanh ngắt dẫn lối tới vực thẳm. Mảnh đất từng thấm đẫm máu tươi trong Đệ Nhị Thứ Dị Thần Chiến Tranh này nay bị bao phủ bởi mộng cảnh ẩm lạnh của \"Uyên Mạch Long Cơ\" — từ tầng ngoài là những vùng trũng nấm độc giăng đầy, đến tầng giữa chôn vùi các phòng thí nghiệm cấm kỵ của cự long và khủng long, cho tới tận cùng sâu thẳm nơi sấm sét cuồng loạn gầm vang của Vĩnh Tịch Lôi Lâm, muôn ngàn mạo hiểm giả đã dấn thân tới đây truy cầu ánh huy hoàng của các di tích cổ xưa, để rồi rốt cuộc chỉ hóa thành thêm một bộ hài cốt câm lặng trong tòa \"Vô Tận Thâm Uyên Địa Thành\" đã bị phong ấn.",
+        "icon": "fa-solid fa-tree",
+        "color": "#845ef7",
+        "position": {
+            "nx": 0.371786860164,
+            "ny": 0.814061345869
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/fw1nuv.png",
+            "https://wsrv.nl/?url=files.catbox.moe/a8tg4h.png",
+            "https://wsrv.nl/?url=files.catbox.moe/m092lv.png",
+            "https://wsrv.nl/?url=files.catbox.moe/2tl7ar.png",
+            "https://wsrv.nl/?url=files.catbox.moe/4oz09v.png"
+        ]
+    },
+    {
+        "id": "marker-1768972307560-8d5b24",
+        "name": "Mật Lâm Vĩnh Tịch",
+        "group": "Rừng / Khu Vực Cực Kỳ Nguy Hiểm (☆☆☆☆☆)",
+        "description": "Nơi sâu thẳm nhất của Thụ Hải Vô Tận, có một vùng cấm địa mang tên Mật Lâm Vĩnh Tịch. Nơi ấy, mưa bão cuồng nộ đủ sức xuyên thủng chiến giáp, và sấm sét sẽ điên cuồng săn đuổi mọi sinh linh còn sống sót. Tương truyền, Uyên Mạch Long Cơ đang say ngủ ngay giữa trung tâm bão táp này, chính mộng cảnh bi thương của nàng đã hóa thành những giọt lệ tuôn trào không bao giờ cạn của cả cánh rừng mưa.\nNhững mạo hiểm giả tiến sâu vào lòng Thụ Hải Vô Tận sẽ bắt gặp một khu rừng vĩnh viễn bị lôi đình bao phủ, đó chính là Mật Lâm Vĩnh Tịch. Người ta kể rằng mỗi hơi thở của Uyên Mạch Long Cơ đều hóa thành bão mưa xối xả, còn tiếng nỉ non trong mộng của nàng chính là sấm rền bất tận. Không một sinh linh nào dám bén mảng lại gần, bởi lẽ nơi ấy là cõi mộng của một cổ long.",
+        "icon": "fa-solid fa-skull-crossbones",
+        "color": "#845ef7",
+        "position": {
+            "nx": 0.31645557505945854,
+            "ny": 0.8735564329151265
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/ztx3vg.png",
+            "https://wsrv.nl/?url=files.catbox.moe/sey3cy.png",
+            "https://wsrv.nl/?url=files.catbox.moe/7qruei.png"
+        ]
+    },
+    {
+        "id": "marker-1768977901762-6939ae",
+        "name": "Trấn Hắc Chiểu",
+        "group": "Thị Trấn / Thông Đạo",
+        "description": "Nếu ngươi khao khát phát tài chỉ sau một đêm, hoặc muốn hoàn toàn bốc hơi khỏi cõi trần gian, Trấn Hắc Chiểu chính là chốn duy nhất để tìm đến. Thị trấn quái đản này một nửa ngâm mình trong dòng nước đầm lầy âm u ẩm ướt, nửa kia lại oằn mình hứng chịu sự bào mòn của phong sa khô khốc, sừng sững trấn giữ hoàn hảo giữa lằn ranh đầm lầy và hoang mạc. Tại nơi đây, các mạo hiểm giả một tay trao đổi nấm kịch độc của thụ hải, một tay nhận lấy khoáng thạch quý hiếm của sa mạc, tựa như đang sang tay hai số mệnh hoàn toàn tương phản. Còn về con đường ngầm trong truyền thuyết xuyên qua Sơn Mạch Ưng thông thẳng tới sa hải, điều đó hoàn toàn có thật — với điều kiện tiên quyết là ngươi phải trả nổi tấm vé đắt đỏ, và có đủ phúc mạng để sống sót bước lên con thuyền u linh vượt sang bờ bên kia.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#845ef7",
+        "position": {
+            "nx": 0.42611306650428943,
+            "ny": 0.8187694606122635
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/13bzwo.png",
+            "https://wsrv.nl/?url=files.catbox.moe/xcs1ml.png",
+            "https://wsrv.nl/?url=files.catbox.moe/q49hur.png",
+            "https://wsrv.nl/?url=files.catbox.moe/92d2wx.png",
+            "https://wsrv.nl/?url=files.catbox.moe/52tyb5.png"
+        ]
+    },
+    {
+        "id": "marker-1768974579146-b900f9",
+        "name": "Tiền Tiêu Trạm Đệ Nhất",
+        "group": "Pháo Đài",
+        "description": "Những thương nhân tiếp tế tiến về Tiền Tiêu Trạm Đệ Nhất chẳng bao giờ mở miệng cười đùa, hàng hóa trên xe của họ một nửa là đoản kiếm, một nửa là vải liệm, bởi họ thấu hiểu sâu sắc mình đang tiến về bờ đê kiên cố cuối cùng của nhân loại: Ba trạm tiền tiêu huynh đệ từng tồn tại trước đây thảy đều đã bị biển xanh đói khát nuốt chửng giữa tiếng gầm rống của ma vật, nay duy chỉ còn nó tựa như một chiếc đinh sắt ngoan cường cắm chặt nơi rìa thụ hải; trên những vách tường thành loang lổ ấy, mỗi một cái tên được khắc sâu đều thuộc về một anh hùng đã khuất, và anh linh của họ dường như vẫn đang lặng thầm canh giữ phòng tuyến chao đảo này giữa muôn trùng bão tố.",
+        "icon": "fa-solid fa-campground",
+        "color": "#845ef7",
+        "position": {
+            "nx": 0.43509032492595406,
+            "ny": 0.7613314648344839
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/vriuh5.png",
+            "https://wsrv.nl/?url=files.catbox.moe/dod2hw.png"
+        ]
+    },
+    {
+        "id": "marker-1768976672653-c086c3",
+        "name": "Cứ Điểm Hắc Sắc",
+        "group": "Doanh Địa",
+        "description": "Những thợ săn tiến sâu vào lòng thụ hải chỉ dám qua đêm tại \"Cứ Điểm Hắc Sắc\". Đây là một góc đất được bao bọc bởi những loài thực vật đen tuyền tựa mực tàu, tường gỗ từng bị long tức thiêu đốt cháy sém, trong không khí phảng phất mùi than củi quyện cùng hơi thở thâm uyên như có như không. Kỳ lạ thay, ma vật nơi này im ắng lạ thường, tựa hồ bị một nỗi kinh hoàng thâm sâu hơn trấn áp đến mức không dám cất tiếng — thế nhưng sự tĩnh mịch chết chóc ấy lại trở thành nỗi giày vò khủng khiếp nhất. Đêm về, trò tiêu khiển duy nhất của các thợ săn là cá cược: Xem ai có thể trụ lại lâu nhất ngoài cứ điểm mà không bị cảm giác áp bức nghẹt thở cùng những âm thanh ma quái thi thoảng xé toạc màn đêm dọa cho hồn xiêu phách lạc.",
+        "icon": "fa-solid fa-campground",
+        "color": "#845ef7",
+        "position": {
+            "nx": 0.4195460577847385,
+            "ny": 0.7530658266018703
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/w7ojlk.png",
+            "https://wsrv.nl/?url=files.catbox.moe/l04x7h.png",
+            "https://wsrv.nl/?url=files.catbox.moe/ur5guw.png",
+            "https://wsrv.nl/?url=files.catbox.moe/9pnwlr.png"
+        ]
+    },
+    {
+        "id": "marker-1768976727334-1cd2fc",
+        "name": "Cứ Điểm Bạch Sắc",
+        "group": "Doanh Địa",
+        "description": "Đối diện từ xa với Cứ Điểm Hắc Sắc là \"Cứ Điểm Bạch Sắc\" ngập tràn ánh sáng dịu dàng tựa như bước ra từ truyện cổ tích. Tương truyền từng có bậc thánh giả ngã xuống nơi đây, nguồn sức mạnh tàn dư của người đã thanh tẩy mảnh đất, khiến những thảm rêu phát quang rọi đường dẫn lối, và dòng suối trong vắt giữa rừng xoa dịu những vết thương chí mạng. Thế nhưng, tuyệt đối đừng để dáng vẻ thánh khiết ấy mê hoặc — những thuật sĩ luyện kim trong cứ điểm sẽ cười khẩy bảo ngươi rằng, cánh rừng mọc đầy nấm phát sáng cùng những đóa hoa biết hát này thực chất là một bẫy săn mồi chết chóc nhất: Vẻ đẹp mỹ miều cùng thần tích tột cùng nơi đây chẳng qua chỉ là miếng mồi ngon dụ dỗ con mồi dấn sâu vào cạm bẫy, hệt như những lọ thuốc giải độc đắt đỏ trong tay họ vậy, tuy rực rỡ và đắt giá, nhưng lại là vật phẩm tất yếu duy nhất giúp ngươi sống sót giữa câu chuyện cổ tích đoạt mệnh này.",
+        "icon": "fa-solid fa-campground",
+        "color": "#845ef7",
+        "position": {
+            "nx": 0.4043930949920056,
+            "ny": 0.8090830919858792
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/1bsf0y.png",
+            "https://wsrv.nl/?url=files.catbox.moe/nbwvyg.png"
+        ]
+    },
+    {
+        "id": "marker-1768978982132-8ddf82",
+        "name": "Sinh Thái Bình",
+        "group": "Khu Vực Nguy Hiểm Cao (☆☆☆☆)",
+        "description": "Nơi sâu thẳm nhất của Thụ Hải Vô Tận, ẩn giấu một khu rừng bí mật được gọi là \"Sinh Thái Bình\". Lần đầu đặt chân tới đây, ngươi sẽ ngỡ mình lạc vào bảng pha màu bị Đấng Sáng Thế đánh đổ: Những loài dương xỉ viễn cổ cao hơn cả tường thành che rợp bóng trời, những con cự tích mang thân xác đồ sộ tựa ngôi nhà lừng lững di chuyển giữa rừng già, vạn vật đều to lớn, nguyên sơ và bùng nổ sức sống dã tính đến nghẹt thở. Thế nhưng, cảnh tượng tráng lệ này chẳng phải tuyệt tác của thiên nhiên, mà là di sản điên cuồng của một luyện kim thuật sĩ quá cố từng ôm mộng đóng vai thần linh — những cự thú kia thực chất là loài khủng long viễn cổ được hồi sinh nhờ cấm thuật. Trong bãi thử nghiệm khép kín này, ma lực đậm đặc đến mức có thể khiến vết thương chí mạng lành lại trong chớp mắt, song cũng vận hành theo quy luật tàn khốc nhất: Một khi loài sinh vật được tạo ra trở nên quá hùng mạnh làm phá vỡ thế cân bằng, \"thần phạt\" vô tình từ Đấng Sáng Tạo sẽ giáng xuống, gột rửa và tái lập lại tất thảy.",
+        "icon": "fa-solid fa-skull-crossbones",
+        "color": "#845ef7",
+        "position": {
+            "nx": 0.34642337551417035,
+            "ny": 0.8253653511743352
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/widk0j.png",
+            "https://wsrv.nl/?url=files.catbox.moe/6tscd4.png",
+            "https://wsrv.nl/?url=files.catbox.moe/g4ejrq.png",
+            "https://wsrv.nl/?url=files.catbox.moe/tgmslk.png",
+            "https://wsrv.nl/?url=files.catbox.moe/dj90oj.png",
+            "https://wsrv.nl/?url=files.catbox.moe/6gs1q5.png",
+            "https://wsrv.nl/?url=files.catbox.moe/91d6x3.png",
+            "https://wsrv.nl/?url=files.catbox.moe/k5cnuf.png"
+        ]
+    },
+    {
+        "id": "marker-1768971431768-0a8a13",
+        "name": "Đầm Lầy Bi Minh",
+        "group": "Đầm Lầy / Khu Vực Nguy Hiểm Cao (☆☆☆☆)",
+        "description": "Tuyệt đối đừng dại dột đặt chân vào Đầm Lầy Bi Minh nơi cực nam đại lục, đó là vùng cấm địa tử vong mà ngay cả những dũng sĩ can trường nhất cũng phải né tránh. Truyền thuyết kể rằng nơi đây từng là một trạch quốc trù phú, chỉ vì ngàn năm trước một cổ quốc trong cơn tuyệt vọng đã mở toang cánh cửa cấm kỵ, khiến phồn hoa ngày cũ hóa thành cơn ác mộng của ngày hôm nay: Từng bọt khí lục bục sủi lên giữa đầm lầy đều là tiếng thở dài cuối cùng của những người lính trận vong; tại nơi này, hơi thở của người sống bị coi là một tội lỗi, và ngọn ma trơi lập lòe bừng sáng trong màn đêm u tối chỉ dẫn đường cho kẻ lạc lối bước vào con đường vĩnh miên không lối về.",
+        "icon": "fa-solid fa-water",
+        "color": "#845ef7",
+        "position": {
+            "nx": 0.45751018515121433,
+            "ny": 0.8387198658452015
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/8d77ei.png",
+            "https://wsrv.nl/?url=files.catbox.moe/xl1vmd.png",
+            "https://wsrv.nl/?url=files.catbox.moe/rd0xk3.png",
+            "https://wsrv.nl/?url=files.catbox.moe/lgc19g.png",
+            "https://wsrv.nl/?url=files.catbox.moe/68wa51.png"
+        ]
+    },
+    {
+        "id": "marker-1768981415224-be3abb",
+        "name": "Hài Cốt Chi Đô",
+        "group": "Di Tích Khổng Lồ / Khu Vực Cực Kỳ Nguy Hiểm (☆☆☆☆☆)",
+        "description": "Chớ bao giờ mang lòng hiếu kỳ dấn thân tìm kiếm Đô Thành Hài Hưởng nơi sâu thẳm nhất của Đầm Lầy Bi Minh, ấy tuyệt nhiên chẳng phải mạo hiểm, mà là sự báng bổ trần trụi. Tòa thành được đắp xây từ muôn vàn xương trắng rợn ngợp này vẫn sừng sững ngự trị trong phong ấn tử khí, nó vừa là vết nhơ sỉ nhục của một vương quốc cổ xưa bị phản bội tàn khốc, vừa là tiền đồn vinh quang của Đế Quốc Vong Linh ngày nay. Những pháp sư từng xé toạc vị diện thuở trước đến nay vẫn đang lầm rầm tụng niệm, chú ngữ khiến \"Cánh Cửa Vong Giả\" ngẫu nhiên khai mở khắp thành, khiến ngươi ngỡ như có thể thoáng thấy ảo ảnh người xưa trở về — nhưng hãy luôn luôn cảnh giác, đó chỉ là mồi nhử săn mồi, những pháp sư kia đang khao khát chờ đợi kẻ xâm nhập kế tiếp để luyện hóa thành thần dân mới của vương quốc vĩnh hằng này.",
+        "icon": "fa-solid fa-city",
+        "color": "#845ef7",
+        "position": {
+            "nx": 0.47452577118849865,
+            "ny": 0.9135815190035894
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/qpmzz6.png",
+            "https://wsrv.nl/?url=files.catbox.moe/0sdkzj.png",
+            "https://wsrv.nl/?url=files.catbox.moe/74lt6y.png",
+            "https://wsrv.nl/?url=files.catbox.moe/cnabpi.png",
+            "https://wsrv.nl/?url=files.catbox.moe/26z79x.png",
+            "https://wsrv.nl/?url=files.catbox.moe/agmlv8.png",
+            "https://wsrv.nl/?url=files.catbox.moe/o8kmjj.png"
+        ]
+    },
+    {
+        "id": "marker-1768993858350-2fc04d",
+        "name": "Quần Đảo Toái Tinh",
+        "group": "Khu Vực Cực Kỳ Nguy Hiểm",
+        "description": "Khi thuyền của ngươi rẽ sóng dong buồm về vùng biển phía đông, ngươi sẽ chạm trán cấm địa huyền bí mang tên \"Quần Đảo Toái Tinh\". Những nhà hàng hải của Solentis luôn nhắc về nơi này với niềm kính sợ sâu sắc, bởi lẽ giữa phế tích từng thuộc về một nền văn minh hải dương sánh ngang thần minh này, người ta không tìm thấy bất kỳ vết tích cháy xém nào của chiến tranh đao binh. Mọi dấu vết đều chỉ ra rằng, dường như mới một khắc trước họ còn đang tổ chức đại lễ tế tự tưng bừng, thì ngay giây sau, toàn bộ nền văn minh cùng thần linh mà họ tôn phụng đã bị một sức mạnh không thể diễn tả bằng lời xóa sổ triệt để khỏi thế gian. Giờ đây, giữa những bức tường đổ nát hoa lệ mà tịch mịch, chỉ có tiếng thì thầm của người chết cùng tiếng gầm rống của cự thú vang vọng không ngớt, như vẫn đang tuyệt vọng kiếm tìm câu trả lời: Cơn mạt nhật đưa tất thảy về con số không trong chớp mắt ấy, rốt cuộc bắt nguồn từ phương nào?",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#4dabf7",
+        "position": {
+            "nx": 0.8224423599656926,
+            "ny": 0.6746924008268577
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/p4v9f6.png",
+            "https://wsrv.nl/?url=files.catbox.moe/aln92a.png",
+            "https://wsrv.nl/?url=files.catbox.moe/uti1eo.png",
+            "https://wsrv.nl/?url=files.catbox.moe/uz11ch.png",
+            "https://wsrv.nl/?url=files.catbox.moe/g1rgo3.png"
+        ]
+    },
+    {
+        "id": "marker-1773509117763-1a2220",
+        "name": "Tuyệt Vọng Chi Sào",
+        "group": "Khu Vực ??? (☆☆☆☆☆☆)",
+        "description": "Khi quyền trượng đủ sức lật đổ cả một vương quốc bị nhiệt độ ngàn độ nung chảy méo mó biến dạng, hóa thành dòng dung dịch màu vàng sẫm lặng lẽ trượt dài theo vách đá, thì thứ gọi là giá trị của văn minh đã hoàn tất màn hạ màn cuối cùng tại Tuyệt Vọng Chi Sào. Vàng ròng và nham thạch nơi này đạt được một sự bình đẳng đầy hoang đường, chúng không còn là biểu tượng của quyền bính tối thượng, mà chỉ tồn tại như một thứ vật chất quánh đặc, chậm chạp và nhan nhản khắp nơi, đập từng nhịp uể oải dưới lớp tro núi lửa tầng tầng lớp lớp rơi rụng.\n\nSự hủy diệt tĩnh mịch ấy được chứng kiến bởi tro tàn đen đúa của hàng vạn đồ long giả. Những vị anh hùng từng được sử thi ca tụng, nay chẳng qua chỉ là những ký hiệu than hóa chen chúc trong làn sương mù lưu huỳnh nghẹt thở; tư thế xung phong chưa trọn vẹn thuở sinh tiền của họ vĩnh viễn đóng băng thành lời giễu cợt cay đắng nhất dành cho dã tâm phàm nhân. Tại nơi đây, bầu không khí kịch độc tước đoạt mọi khả năng tự sự, duy chỉ có loài hỏa thằn lằn lượn lờ trong bóng tối thiêu đốt, lạnh lùng ngắm nhìn những ý chí từng được thần thánh hóa bị chuẩn xác nghiền vụn thành nắm tro tàn hèn mọn nhất trước ngày chung yên tuyệt đối.\n\nNơi đây không có tiếng gầm rống, nó chỉ dùng từng giọt nước vàng ròng nhỏ giọt kia, chuẩn xác đo lường sức nặng hư vô sau cùng của mọi lòng tham cùng giấc mộng anh hùng nơi rìa thế giới. Khi tia ý chí sinh mệnh cuối cùng bị sự tịch mịch màu xám chì nuốt chửng, thứ còn lại duy nhất chỉ là một khoảng trắng dằng dặc và thiêu đốt về sự chung tàn.",
+        "icon": "fa-solid fa-skull-crossbones",
+        "color": "#ff6b6b",
+        "position": {
+            "nx": 0.05265291939620553,
+            "ny": 0.8274698018753531
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/6xkr2l.png",
+            "https://wsrv.nl/?url=files.catbox.moe/p0dc6e.png",
+            "https://wsrv.nl/?url=files.catbox.moe/ozhj3q.png",
+            "https://wsrv.nl/?url=files.catbox.moe/oo30qx.png",
+            "https://wsrv.nl/?url=files.catbox.moe/f5n3k5.png",
+            "https://wsrv.nl/?url=files.catbox.moe/h2zzzz.png",
+            "https://wsrv.nl/?url=files.catbox.moe/3xoi0f.png",
+            "https://wsrv.nl/?url=files.catbox.moe/ooi2lw.png"
+        ]
+    },
+    {
+        "id": "marker-1779550690854-995876",
+        "name": "Khu Hạch Tâm Ngân Nguyệt Loan",
+        "group": "Khu Vực",
+        "description": "Vùng bờ vịnh hạch tâm nơi quy tụ thủ đô hoa lệ cùng mạng lưới các hải điểm mậu dịch giá trị cao nhất vương quốc.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.635945689043,
+            "ny": 0.76167197657
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550697790-5f5d74",
+        "name": "Phòng Tuyến Nộ Đào Hải Hiệp",
+        "group": "Khu Vực / Phòng Tuyến",
+        "description": "Tuyến phòng thủ biển trùng điệp đá ngầm hiểm trở, lấy quần thể yếu sái Pháo Đài Phong Bạo làm hạch tâm phòng ngự kiên cố.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.606687578064,
+            "ny": 0.886966778339
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1777521447615-1bcbfc",
+        "name": "Đại Bình Nguyên Xung Tích",
+        "group": "Bình Nguyên / Khu Vực Nguy Hiểm Thấp (☆)",
+        "description": "Người Solentis thường bông đùa rằng, từng tấc bùn đất trên dải Đại Bình Nguyên Xung Tích bao la ấy còn đắt đỏ hơn cả vàng ròng, bởi lẽ chỉ có nó mới đơm hoa kết trái ra thứ lương thực nuôi sống toàn thể con dân vương quốc. Mỗi lần Sông Noir dâng tràn nước lũ không phải là tai ương, mà là phép thanh tẩy rót tràn sinh cơ vào lòng đất mẹ; chính vì lẽ đó, những người nông phu nơi đây hiếm hoi không tôn sùng Hải Dương Nữ Thần của đế quốc, mà đứng sừng sững bên bờ ruộng, cất cao khúc tán ca dâng lên mảnh đất dưới chân cùng dòng sông êm đềm cuộn chảy. Trong mắt họ, sự trù phú sinh sôi bất tận của dải bình nguyên này chính là món của hồi môn mộc mạc nhất nhưng cũng vô giá nhất mà vị thần sông cổ xưa trao tặng cho đế quốc đại dương.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#4dabf7",
+        "position": {
+            "nx": 0.6148055271987666,
+            "ny": 0.8302843043956499
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/8ozsgt.png",
+            "https://wsrv.nl/?url=files.catbox.moe/cm92of.png",
+            "https://wsrv.nl/?url=files.catbox.moe/x9u4rt.png",
+            "https://wsrv.nl/?url=files.catbox.moe/caecca.png",
+            "https://wsrv.nl/?url=files.catbox.moe/g4e629.png"
+        ]
+    },
+    {
+        "id": "marker-1779550704560-b0ed34",
+        "name": "Khu Ngoại Hải Đảo Liên",
+        "group": "Khu Vực / Chuỗi Đảo",
+        "description": "Vùng chuỗi đảo ngoài khơi nơi cùng tồn tại các vùng nuôi cấy trân châu trứ danh, tiền tiêu canh phòng biển cả và những hải phận hiểm trở khôn lường.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.772204819443,
+            "ny": 0.756176590528
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1768993756385-25995a",
+        "name": "Vịnh Trân Châu",
+        "group": "Thành Bang Lớn",
+        "description": "Tại sòng bạc không ngủ \"Vịnh Trân Châu\" ngự trên vỏ sò khổng lồ, những tay chia bài luôn nở nụ cười hoàn mỹ không tì vết mà bảo với ngươi rằng: Nơi đây, vận may là vị chân thần duy nhất. Sự xa hoa lộng lẫy chốn này đủ sức khiến muôn ngàn tinh tú phải lu mờ ảm đạm, còn dục vọng cuộn trào cuồng bạo thậm chí có thể khiến vực thẳm sâu hoắm cũng phải run rẩy. Trên bàn cược không đáy này, ngươi có thể thắng trọn cả một công quốc chỉ sau một đêm, nhưng cũng có thể thua sạch cả linh hồn mình ngay giây tiếp theo — suy cho cùng, đối với những con bạc điên cuồng, từ tương lai của một cá nhân cho tới vận mệnh của cả một quốc gia, chẳng có thứ gì là không thể mang ra làm con chip để dốc túi đặt cược một phen.",
+        "icon": "fa-solid fa-city",
+        "color": "#4dabf7",
+        "position": {
+            "nx": 0.682131699709,
+            "ny": 0.742254940296
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/zt8afj.png",
+            "https://wsrv.nl/?url=files.catbox.moe/gl1d2k.png",
+            "https://wsrv.nl/?url=files.catbox.moe/5ymmlh.png"
+        ]
+    },
+    {
+        "id": "marker-1768989762859-96c527",
+        "name": "Pháo Đài Phong Bạo",
+        "group": "Pháo Đài",
+        "description": "Ngay cả những tên hải tặc liều mạng bị vô địch hạm đội truy đuổi đến bước đường cùng cũng thà đâm đầu vào sào huyệt của hải quái, chứ tuyệt đối không dám bén mảng tới gần \"Pháo Đài Phong Bạo\" nửa bước. Bức tường thành sống được xưng tụng là bất lạc của Solentis này tuyệt nhiên chẳng phải gạch đá chết chóc, mà được kiến tạo từ vô số rạn san hô khổng lồ không ngừng sinh sôi theo từng tiếng gầm rú của bão táp. Nó tựa như một đầu cự thú thực sự thuần phục được thiên tai, ẩn mình giữa muôn trùng sóng dữ — một khi tiếng tù và trên đỉnh yếu sái rền vang xé toạc chân trời, ngay cả sấm sét thiên không cũng phải vâng lệnh mở lối cho nó, và đại ma pháp trận thượng cổ được kích hoạt sẽ dâng lên những ngọn sóng thần cuồng bạo nuốt chửng cả hạm đội; ấy là lời cảnh cáo tử vong tàn khốc nhất mà vương quốc gửi tới mọi kẻ thù trên đại dương.",
+        "icon": "fa-solid fa-landmark",
+        "color": "#4dabf7",
+        "position": {
+            "nx": 0.6165291750361598,
+            "ny": 0.8939409254252506
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/zpxtyv.png",
+            "https://wsrv.nl/?url=files.catbox.moe/z8h3a8.png",
+            "https://wsrv.nl/?url=files.catbox.moe/slf9qb.png",
+            "https://wsrv.nl/?url=files.catbox.moe/f7syn0.png",
+            "https://wsrv.nl/?url=files.catbox.moe/b7m6tg.png",
+            "https://wsrv.nl/?url=files.catbox.moe/542t80.png"
+        ]
+    },
+    {
+        "id": "marker-1777521744373-f0a11a",
+        "name": "Vương Tọa Triều Tịch",
+        "group": "Thành Bang Khổng Lồ",
+        "description": "Các thuyền trưởng viễn dương khi nhắc tới thủ đô của Vương Quốc Solentis — \"Vương Tọa Triều Tịch\", trong giọng nói luôn vương vấn niềm kính sợ khôn nguôi. Đó là một thành phố không bao giờ chìm được dựng xây ngay trên bộ hài cốt khổng lồ của một đầu viễn cổ hải long, tựa như một thần tích nửa nổi nửa chìm bồng bềnh trên mặt biển: Phía trên mặt nước là cung điện nhân loại tắm mình trong ánh dương hoàng kim cùng những dòng vận hà tấp nập; phía dưới làn sóng biếc lại là mê cung san hô sâu thẳm u huyền thuộc về giới quý tộc nhân ngư. Nhịp đập của toàn bộ thành phố bắt nguồn từ một trái tim ma pháp không ngừng hấp thụ sức mạnh của muôn trùng hải lưu, nó duy trì thế cân bằng vi diệu giữa lục địa và biển sâu, biến kỳ cảnh cộng sinh giữa nhân loại và hải tộc thành một vở kịch hoa lệ vĩnh viễn không bao giờ hạ màn.",
+        "icon": "fa-solid fa-city",
+        "color": "#4dabf7",
+        "position": {
+            "nx": 0.6628409230426033,
+            "ny": 0.8604179294022227
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/86yvsv.png",
+            "https://wsrv.nl/?url=files.catbox.moe/7biiou.png",
+            "https://wsrv.nl/?url=files.catbox.moe/0nbabl.png",
+            "https://wsrv.nl/?url=files.catbox.moe/z8se4z.png"
+        ]
+    },
+    {
+        "id": "marker-1777521617362-692901",
+        "name": "Thành Ngân Phàm",
+        "group": "Thành Bang Lớn",
+        "description": "Những tay chân của Thương Hội Kim Sư luôn tự hào vỗ ngực tuyên bố với ngươi rằng: \"Mỗi một đồng tiền trên cõi đời này, trong đời chí ít cũng sẽ ghé thăm Thành Ngân Phàm một lần.\" Ấy tuyệt nhiên chẳng phải lời khoác lác — dưới sự dẫn lối của ngọn hải đăng thâu đêm suốt sáng, bến cảng tựa như rừng thép rậm rạp ngày đêm nuốt nhả dục vọng của cả thế giới, trong không khí vĩnh viễn phảng phất vị muối biển, hương gia vị nồng nàn cùng tiếng huyên náo của hàng trăm thứ ngôn ngữ. Tại nơi này, tài phú không đơn thuần là dòng sông cuộn chảy, mà là tấm thông hành ngự trị trên mọi quy tắc: Luật pháp khoan dung tột bực với kẻ giàu sang, chỉ cần ngươi trả đủ thuế má, bất kể là nô lệ, thần khí hay thậm chí là trứng rồng, thảy đều có thể tìm thấy kẻ mua tại bến cảng nơi tiếng tiền vàng leng keng va chạm không bao giờ dứt.",
+        "icon": "fa-solid fa-city",
+        "color": "#4dabf7",
+        "position": {
+            "nx": 0.6286985778448126,
+            "ny": 0.7710861064357105
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/y7qbcz.png",
+            "https://wsrv.nl/?url=files.catbox.moe/93l1s2.png",
+            "https://wsrv.nl/?url=files.catbox.moe/90ebua.png",
+            "https://wsrv.nl/?url=files.catbox.moe/8ilk7n.png",
+            "https://wsrv.nl/?url=files.catbox.moe/o2s98n.png"
+        ]
+    },
+    {
+        "id": "marker-1777521578323-639e90",
+        "name": "Trấn Lưu Ly",
+        "group": "Thị Trấn",
+        "description": "Những thi nhân hữu duyên ghé thăm Trấn Lưu Ly từng để lại lời cảm thán thế này: Mỗi một công trình nơi đây chẳng phải gạch đá phàm tục, mà được đắp xây từ thứ thủy tinh triều tịch trong vắt long lanh — hay đúng hơn là \"ánh dương ngưng kết cùng tiếng thở dài của thủy triều\". Dưới ánh nắng chói chang, thị trấn khúc xạ muôn vàn ảo ảnh thất sắc; và mỗi khi triều dâng, kỳ tích liền giáng lâm: Cả thị trấn tựa như chìm sâu xuống đáy biển hòa làm một với làn sóng biếc, ngân vang theo nhịp điệu của trùng khơi tựa khúc đồng ca trong trẻo của chuông gió pha lê. Giờ khắc ấy, nơi đây không còn là một công trình kiên cố, mà là một giấc mộng huyền ảo mong manh, là bài thơ tình tha thiết nhất mà biển cả gửi gắm đến đất liền.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#4dabf7",
+        "position": {
+            "nx": 0.6259590490605512,
+            "ny": 0.8002454473711363
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/ra6648.png",
+            "https://wsrv.nl/?url=files.catbox.moe/7ccwpb.png",
+            "https://wsrv.nl/?url=files.catbox.moe/re7kb5.png"
+        ]
+    },
+    {
+        "id": "marker-1777521668263-fb6d2c",
+        "name": "Cảng Hương Phân",
+        "group": "Thị Trấn",
+        "description": "Nếu rảo bước qua Cảng Hương Phân, hãy luôn luôn cẩn trọng với từng hơi thở của chính mình — bầu không khí nơi ấy vĩnh viễn ngập tràn thứ hương thơm ngọt ngào huyễn hoặc lòng người, mỗi một làn hương đều đáng giá ngàn vàng, nhưng cũng ẩn giấu sát cơ đoạt mệnh. Ánh mắt của những lữ khách trở về luôn đờ đẫn mê man, bởi tại chốn này có thể mua được mọi mùi hương trên cõi thế gian: Dù là hương thơm mái tóc của thiếu nữ mối tình đầu, mùi khói súng của một trận chiến đã bị lãng quên, hay một giấc mộng tuyệt mỹ chưa từng tồn tại. Thế nhưng hãy khắc cốt ghi tâm, chớ dại đắm chìm trong đó, bởi có những hương liệu đưa ngươi vào giấc mộng êm đềm, nhưng cũng có thứ hương độc khiến ngươi lặng lẽ táng mạng trong cơn cực lạc, để rồi vĩnh viễn lãng quên lối về giữa làn hương rực rỡ ấy.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#4dabf7",
+        "position": {
+            "nx": 0.598668847287,
+            "ny": 0.813014677757
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/p7cec1.png",
+            "https://wsrv.nl/?url=files.catbox.moe/9e1l92.png",
+            "https://wsrv.nl/?url=files.catbox.moe/kk0eks.png"
+        ]
+    },
+    {
+        "id": "marker-1777521706718-d3d8e1",
+        "name": "Đập Trấn Hải",
+        "group": "Đập Nước / Pháo Đài",
+        "description": "Sừng sững nơi cửa biển của Sông Noir, Đập Trấn Hải từ lâu đã vượt xa ý nghĩa của một pháo đài phòng thủ đơn thuần; nó là một bức trường thành vĩ đại được đúc kết từ ma pháp và sắt thép, kiêu hãnh thuần phục \"Hải Hiệp Nộ Đào\" từng cuồng bạo hung hãn trở thành vùng nội hồ phẳng lặng của vương quốc. Những lính gác kiêu hãnh tuyên bố rằng cấu trúc khổng lồ này tượng trưng cho ý chí con người chinh phục sức mạnh vĩ đại của tự nhiên — khi cửa cống đại áp khổng lồ ầm ầm mở ra, tựa như cự thần say ngủ vừa hé mở con mắt độc nhãn phán xét, ngay cả hạm đội đế quốc hùng mạnh nhất trần gian cũng chỉ đành thu buồm nép mình, cúi đầu xưng thần dưới ánh nhìn nghẹt thở ấy.",
+        "icon": "fa-solid fa-landmark",
+        "color": "#4dabf7",
+        "position": {
+            "nx": 0.5888033068088281,
+            "ny": 0.8789245193649599
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/wfmqon.png"
+        ]
+    },
+    {
+        "id": "marker-1773508195300-f99ed3",
+        "name": "Khách Thuyền Ma Đạo",
+        "group": "Phương Tiện",
+        "description": "Chiếc khách thuyền ma đạo đang rẽ sóng dong buồm hướng về Vịnh Trân Châu...",
+        "icon": "fa-solid fa-campground",
+        "color": "#000000",
+        "position": {
+            "nx": 0.6551943824790989,
+            "ny": 0.706561786125402
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/cpj0vj.png"
+        ]
+    },
+    {
+        "id": "marker-1777521963058-a2e63f",
+        "name": "Tiểu Ốc Tuyết Hạ",
+        "group": "Cứ Điểm",
+        "description": "Nơi sâu thẳm trong rừng bạch dương bạt ngàn của bắc cảnh, căn tiểu ốc này tựa như một hạt dẻ bị tuyết trắng lãng quên. Nơi đây không có con đường nào dẫn ra ngoại giới, chỉ có tốc độ phong tuyết vùi lấp từng dấu chân người. Cánh cửa gỗ thông dày cộp nhốt chặt ngọn gió lạnh gào thét cùng những nhiễu nhương nhân thế bên ngoài, lớp tuyết dày trên mái nhà ép bớt mọi huyên náo của cõi đời. Khi màn đêm buông xuống, ánh nến màu cam ấm áp le lói qua khung cửa sổ chính là hơi ấm và văn minh duy nhất trong vòng trăm dặm quanh đây. Tại chốn này, thời gian tựa như đóng băng, ngươi chỉ nghe thấy tiếng củi khô nổ lách tách trong lò sưởi, cùng nhịp tim đập đều đặn, rành rọt của chính mình.",
+        "icon": "fa-solid fa-campground",
+        "color": "#ffffff",
+        "position": {
+            "nx": 0.466875665838,
+            "ny": 0.36673690524
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/dvfmol.png",
+            "https://wsrv.nl/?url=files.catbox.moe/zhyzsu.png",
+            "https://wsrv.nl/?url=files.catbox.moe/p6q95k.png"
+        ]
+    },
+    {
+        "id": "marker-1777655552996-848579",
+        "name": "Bibila",
+        "group": "Văn Minh Khép Kín / Khu Vực Nguy Hiểm Thấp (☆)",
+        "description": "Khu vực này hiện tại Thế Giới Thư chưa miêu tả chi tiết, nếu muốn khám phá khu vực này:\nTừ khóa gợi ý tham khảo như sau: Đây là một nơi tựa như chốn thế ngoại đào nguyên, phía bắc có đại liệt cốc, hai phía đông tây được bao bọc bởi núi cao và hồ lớn. Cư dân bản địa sống trong trạng thái tự cung tự cấp.\nDo địa thế khép kín, nơi đây có thể nảy sinh những tập tục hoặc văn hóa độc đáo riêng biệt, khi chơi user có thể thỏa sức tưởng tượng.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#ffcc66",
+        "position": {
+            "nx": 0.305747134409,
+            "ny": 0.446603179596
+        }
+    },
+    {
+        "id": "marker-1777655905722-ce301b",
+        "name": "Cự Long Chi Tỉnh",
+        "group": "Thông Đạo / Khu Vực Cực Kỳ Nguy Hiểm (☆☆☆☆☆)",
+        "description": "Đường hầm thông đạo kết nối với Titan Vị Diện, nơi chủng tộc cự long bước qua để giáng lâm xuống cõi trần gian.",
+        "icon": "fa-solid fa-skull-crossbones",
+        "color": "#ff6b6b",
+        "position": {
+            "nx": 0.11123822292207086,
+            "ny": 0.8890007673352076
+        }
+    },
+    {
+        "id": "marker-1768944641014-9531d1",
+        "name": "Long Miên Chi Địa",
+        "group": "Khu Vực Cực Kỳ Nguy Hiểm (☆☆☆☆☆)",
+        "description": "Những thợ mỏ tại Sơn Mạch Long Tích luôn giữ kín như bưng về ngọn núi lửa còn hoạt động mang tên \"Long Miên Chi Địa\" ngự ở trung tâm, bởi lẽ tương truyền Diệu Nhật Long Cơ đang say ngủ ngay giữa trái tim dung nham nóng bỏng của nó. Mộng cảnh rực cháy tựa liệt nhật của nàng không chỉ khiến lửa núi lửa ngàn năm không tắt, mà còn nhuộm đẫm linh hồn của muôn loài vạn vật — mỗi khi nàng trở mình trong giấc mộng khiến mặt đất rung chuyển, những mạch khoáng sâu trong lòng núi lại đập từng nhịp rạo rực như huyết quản bằng vàng ròng, và những sinh linh sinh sôi nảy nở trên mảnh đất này cũng nhờ sự cộng hưởng thiêng liêng ấy mà mang trong mình dòng máu rực lửa, sinh ra kiêu hãnh, chết đi tráng liệt.",
+        "icon": "fa-solid fa-skull-crossbones",
+        "color": "#ffcc66",
+        "position": {
+            "nx": 0.061881644367,
+            "ny": 0.439309961662
+        },
+        "imageUrls": [
+            "https://wsrv.nl/?url=files.catbox.moe/vkkjnu.png",
+            "https://wsrv.nl/?url=files.catbox.moe/gtj16v.png",
+            "https://wsrv.nl/?url=files.catbox.moe/v8qlku.png",
+            "https://wsrv.nl/?url=files.catbox.moe/c8koxc.png"
+        ]
+    },
+    {
+        "id": "marker-1779550715412-850acc",
+        "name": "Thánh Đô Vania",
+        "group": "Thánh Đô",
+        "description": "Thánh đô hạch tâm nơi quy tụ trật tự thần quyền tối cao cùng những hoạt động lễ chế trang nghiêm bậc nhất của Vania.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.401599298243,
+            "ny": 0.496117379388
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550727480-b65a2f",
+        "name": "Sơn Cước Tụ Tập Địa",
+        "group": "Tụ Tập Địa",
+        "description": "Trạm dừng chân mặt đất tấp nập của các tín đồ hành hương cùng những hoạt động tiếp tế hậu cần dưới chân thánh sơn.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.401331185651,
+            "ny": 0.521619612889
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550768205-456b9c",
+        "name": "Cảng Vụ Tinh",
+        "group": "Cảng Biển / Thành Bang",
+        "description": "Đầu mối cảng biển sầm uất kết nối giao thương đối ngoại cùng những chuyến hải trình học thuật của Pháp Hoàn.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.665407447383,
+            "ny": 0.550002246266
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550777818-f180ca",
+        "name": "Xu Nữu Borens",
+        "group": "Xu Nữu",
+        "description": "Tiêu điểm trung tâm phụ trách điều phối quản trị cùng các thí nghiệm luân phiên giữa ba học viện của Pháp Hoàn.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.687983306598,
+            "ny": 0.572630696709
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550790404-34b05b",
+        "name": "Trấn Bạch Thạch",
+        "group": "Thị Trấn",
+        "description": "Thị trấn con người thanh bình tọa lạc ngay phía bắc của vành đai thủ đô vương triều.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.535348117126,
+            "ny": 0.496705958413
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550800072-4e9f4b",
+        "name": "Thành Mộ Lâm",
+        "group": "Thành Bang",
+        "description": "Đô thành phồn thịnh giữ vai trò trung tâm thu gom và luân chuyển tài nguyên nông lâm nghiệp trù phú.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.617972844521,
+            "ny": 0.544421042767
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550516447-e34f37",
+        "name": "Thành Thúy Đình",
+        "group": "Thành Bang",
+        "description": "Đô thành duyên hải đông nam sầm uất, đóng vai trò trụ cột nông thương và nâng đỡ mạng lưới mậu dịch biển.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.599568300613,
+            "ny": 0.648080003086
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550809352-aa6b2f",
+        "name": "Thành Tháp Đồng Hồ",
+        "group": "Thành Bang",
+        "description": "Đô thành trung tâm nghiên cứu ma đạo cùng giáo dục đỉnh tiêm ngự trị nơi tây nam đại lục.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.466666673044,
+            "ny": 0.632713572926
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550815314-9fc130",
+        "name": "Vương Quốc Thiên Sương",
+        "group": "Vương Quốc",
+        "description": "Chính thể thủ hộ truyền thống ngàn đời, sừng sững bao bọc và che chở toàn cõi hoang nguyên tuyết trắng Phong Khấp Tuyết Nguyên.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.225078374689,
+            "ny": 0.47627825584
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550825047-3be02e",
+        "name": "Thành Cự Hùng",
+        "group": "Thành Bang",
+        "description": "Tòa cứ thành hiểm yếu kiên cố bậc nhất của các bộ tộc Thú Nhân sinh tồn nơi băng nguyên giá lạnh.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.238035540446,
+            "ny": 0.486902674446
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550839642-7f6179",
+        "name": "Vinh Nguyên Vương Triều",
+        "group": "Vương Triều",
+        "description": "Thế lực vương triều Thú Tộc cổ xưa uy hùng, sừng sững trường tồn và tiếp nối mạch nguồn suốt hàng ngàn năm lịch sử.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.141063142229,
+            "ny": 0.680493672378
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550844345-f6d379",
+        "name": "Long Uyên Kinh",
+        "group": "Thành Bang",
+        "description": "Đô thành hạch tâm hoa lệ, trái tim đầu não của chính quyền đầm lầy ngập nước.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.142737725237,
+            "ny": 0.687667433351
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550849910-3b0edf",
+        "name": "Vương Quốc Thử Tộc",
+        "group": "Vương Quốc",
+        "description": "Chính thể Thú Tộc kiên cường nơi tiền tuyến sinh tử, ngày đêm kiên dũng đối đầu trực diện trước bước tiến xâm lăng của đế quốc.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.352761298981,
+            "ny": 0.528557570689
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550854883-95a4b4",
+        "name": "Thành Phong Tín Tử",
+        "group": "Thành Bang",
+        "description": "Một trong những đô thành hạch tâm trù phú và rực rỡ bậc nhất ngự giữa lòng vương quốc thảo nguyên bao la.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.339393955338,
+            "ny": 0.558342692998
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550869533-89acac",
+        "name": "Thương Bạch Hải",
+        "group": "Hải Vực",
+        "description": "Vùng hải phận hạch tâm ngự tại trung tâm bản đồ cương thổ liên minh, phân tách rạch ròi thành hai cõi Nội Hải và Ngoại Hải.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.616091985912,
+            "ny": 0.301891344698
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550878775-fa2811",
+        "name": "Ngoại Thương Bạch Hải",
+        "group": "Hải Vực",
+        "description": "Vùng biển sóng gầm nối liền hải phận ngoài khơi bắc cảnh với các tuyến hải trình thông thương tiến sâu vào biển nội địa.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.620978511721,
+            "ny": 0.262942225281
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550887683-7f378e",
+        "name": "Đại Học Lẫm Đông",
+        "group": "Học Viện",
+        "description": "Thánh điện giáo dục và nghiên cứu ma đạo uyên bác, tọa lạc giữa cảnh sắc tĩnh mịch thanh u của Vân Tức Bồn Địa.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.563636363636,
+            "ny": 0.399709204725
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550894269-df3e30",
+        "name": "Chư Vương Lăng Tẩm",
+        "group": "Di Tích",
+        "description": "Thánh địa lăng tẩm trang nghiêm cổ kính, nơi gửi gắm muôn vàn giá trị tưởng niệm lịch sử bi tráng cùng những nghi thức vương quyền thiêng liêng.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.558620689655,
+            "ny": 0.38835207916
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550906730-ecb028",
+        "name": "Cerelia",
+        "group": "Khu Tự Trị",
+        "description": "Vùng đất duyên hải phồn hoa rực rỡ, nơi mang đậm dấu ấn văn hóa độc lập cùng muôn vàn sắc thái giải trí náo nhiệt không ngủ.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.768123785226,
+            "ny": 0.849028709973
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550910846-8a15db",
+        "name": "Thương Lại Kịch Trường",
+        "group": "Kịch Trường",
+        "description": "Đại kịch trường tráng lệ ngút ngàn, thánh đường trình diễn nghệ thuật văn hóa cùng những sự kiện long trọng chấn động toàn cõi.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.76196449782,
+            "ny": 0.835676519789
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550921322-8a0481",
+        "name": "Thành Nova · Valentia",
+        "group": "Thủ Đô / Yếu Sái",
+        "description": "Siêu đại yếu sái đô thành sừng sững trấn giữ, ngày đêm nghiêm ngặt giám thị và phong ấn Vô Tận Địa Thành dưới đáy sâu.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.441588322272,
+            "ny": 0.669715827765
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550937731-836f89",
+        "name": "Lưu Vực Sông Noir",
+        "group": "Khu Vực Mạo Hiểm / Sông Ngòi",
+        "description": "Vùng lưu vực đa dạng sinh thái kỳ vĩ của Sông Noir, trải dài miên man từ cội nguồn thần bí cho tới khắp các dải thượng, trung và hạ du.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.345454545455,
+            "ny": 0.731080983086
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550949389-2f34ba",
+        "name": "Kim Thực Hoang Hải",
+        "group": "Khu Vực Mạo Hiểm / Chờ Duyệt",
+        "description": "Vùng cấm địa phức hợp cực kỳ hung hiểm, phân tầng nghiêm ngặt thành ngoại tầng, trung tầng, nội tầng và hạch tâm tầng tử địa.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.515360520701,
+            "ny": 0.777425427739
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550957624-8050d6",
+        "name": "Eludrem · Neil",
+        "group": "Khu Vực Mạo Hiểm",
+        "description": "Cánh cổng mở lối vào vùng mạo hiểm độc lập, ẩn chứa muôn vàn bí ẩn chưa lời giải đáp đang chờ đón những bước chân dũng cảm.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.405224666775,
+            "ny": 0.563838079041
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550968914-2200f5",
+        "name": "Bourne · Resonance",
+        "group": "Cứ Điểm",
+        "description": "Địa điểm độc lập trọng yếu lưu giữ những manh mối định mệnh trong mạch truyện huyền bí của Hài Cốt Chi Đô.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.470637421324,
+            "ny": 0.903819306716
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550985119-cb4905",
+        "name": "Đảo Lạc Tinh",
+        "group": "Đảo",
+        "description": "Hòn đảo dừng chân biệt lập và huyền ảo trên tuyến hải trình mạo hiểm khám phá khắp các quần đảo ngoài khơi xa.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.809613400642,
+            "ny": 0.693895526352
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550973653-762249",
+        "name": "Vô Tận Địa Thành",
+        "group": "Khu Vực Mạo Hiểm / Nguy Hiểm Cao",
+        "description": "Vùng đất mạo hiểm thâm sâu khôn cùng, nơi ẩn chứa mối đe dọa sinh tử thường trực cùng những tầng mê cung thăm thẳm thách thức mọi giới hạn.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.4524195054,
+            "ny": 0.671101482004
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779550998994-ee6c1e",
+        "name": "Văn Minh Tiếu Trạm",
+        "group": "Cứ Điểm",
+        "description": "Cứ điểm tiền tiêu vững chãi nơi lằn ranh bờ cõi, điểm tựa hậu cần sinh tử nâng đỡ những chuyến viễn chinh và mạo hiểm sinh tồn.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.402925822578,
+            "ny": 0.761488774674
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779551004628-f4dd19",
+        "name": "Long Cốt Khâu Lăng",
+        "group": "Khâu Lăng",
+        "description": "Dải khâu lăng lừng danh với địa mạo tàn tích xương cốt cự long trắng xóa cùng hệ sinh thái dị biến cực kỳ hung hiểm.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.475026136058,
+            "ny": 0.859123477876
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779551029908-ab89ad",
+        "name": "Chân Khuẩn Oa Địa",
+        "group": "Oa Địa",
+        "description": "Vùng trũng đầm lầy đặc thù với thảm bào tử nấm độc giăng kín, rình rập muôn vàn hiểm họa sinh vật đoạt mệnh.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.402691734569,
+            "ny": 0.739659420687
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779551034267-c43589",
+        "name": "Xú Ngư Oa",
+        "group": "Cứ Điểm",
+        "description": "Cứ điểm nhỏ bé nép mình nơi góc biển u tịch, được lưu giữ như một trạm dừng chân độc lập trên tuyến hải trình mạo hiểm.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.347524834709,
+            "ny": 0.775287038685
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779551043691-49340c",
+        "name": "Đông Duy Lâm Bàn",
+        "group": "Lâm Địa / Địa Khu Nguy Hiểm Cao",
+        "description": "Địa thế bằng phẳng êm đềm, khí hậu ẩm ướt rả rích mưa giăng, bạt ngàn những cánh rừng kim và lạc diệp tùng cổ thụ, được ôm trọn một nửa bởi rặng Sơn Mạch Long Tích hùng vĩ.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.082029141932,
+            "ny": 0.503170872322
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779551052150-c07814",
+        "name": "Lộc Minh Hạp Loan",
+        "group": "Hạp Loan / Cốc Địa / Cao Nguyên Thấp / Địa Khu Nguy Hiểm Thấp",
+        "description": "Phía tây và nam tựa lưng vào non cao trùng điệp, phía đông và bắc hướng mình ra bờ biển lộng gió; nội địa là dải cao nguyên thoai thoải mang đậm khí hậu hải dương, nơi rừng hỗn giao lá kim và lá rộng tốt tươi xanh ngắt.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.318762370077,
+            "ny": 0.429849069434
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779551059931-f42d22",
+        "name": "Nguyệt Ẩn Bồn Địa",
+        "group": "Thảo Nguyên / Bồn Địa / Địa Khu Nguy Hiểm Trung Bình",
+        "description": "Hai mặt bắc nam được che chắn bởi những rặng núi cao sừng sững, chính giữa là dải bình nguyên khô cằn bao la, vách núi ẩn giấu nguồn tài nguyên khoáng thạch dồi dào vô tận.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.33926965556,
+            "ny": 0.648395346431
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779551065419-01088c",
+        "name": "Phong Khấp Tuyết Nguyên",
+        "group": "Tuyết Nguyên / Đài Nguyên / Địa Khu Nguy Hiểm Thấp",
+        "description": "Dải hoang nguyên mênh mông phủ kín đài nguyên băng giá cùng những hồ nước xói mòn đóng băng; khí hậu ẩm lạnh cắt da cắt thịt, sinh linh vạn vật thưa thớt quạnh quẽ.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.216927905666,
+            "ny": 0.489100828863
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1779551075686-7d465b",
+        "name": "Thông Nhân Hồ",
+        "group": "Hồ Bạc / Địa Khu Nguy Hiểm Thấp",
+        "description": "Hồ nước bao la bát ngát tựa biển ngọc, mặt hồ phẳng lặng in bóng mây trời giữa thảo nguyên xanh ngắt.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#78c6ff",
+        "position": {
+            "nx": 0.324043979104,
+            "ny": 0.583583591245
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1786640855613-bbf668",
+        "name": "Elvenheim",
+        "group": "Thành Phố Lớn / Thành Phố Cây Thế Giới",
+        "description": "Cư dân nơi ấy chưa từng nói mình sinh sống trong một đô thành, họ chỉ bảo mình ngụ cư dưới bóng râm của Thế Giới Thụ. Khách phương xa phóng tầm mắt từ đằng xa chẳng thể nào thấy được phố xá, chỉ thấy duy nhất một cội đại thụ chọc trời. Màn đêm buông xuống, từng phiến gân lá bừng lên ánh bạc lung linh diễm lệ, cư dân gọi đó là Thụ Huy Chi Dạ. Elvenheim không phải một tòa thành, mà là một khúc đồng dao chưa từng rời xa chiếc nôi êm đềm.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#63e6be",
+        "position": {
+            "nx": 0.234068820975,
+            "ny": 0.776370428419
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1786641387703-1c9c8a",
+        "name": "Thự Quang Liệu Vọng",
+        "group": "Tiêu Trạm",
+        "description": "Tiêu trạm tiền phương xung yếu kiên cố, sừng sững canh giữ nơi Vành Đai Biên Giới Phía Bắc.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#63e6be",
+        "position": {
+            "nx": 0.193589088943,
+            "ny": 0.761532768505
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1786642130734-f5439e",
+        "name": "Cảng Tinh Miện",
+        "group": "Thành Phố Cảng",
+        "description": "Thị trấn cảng biển thanh bình và cổ kính, nép mình nơi miền tây xa xôi hẻo lánh của bờ cõi.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#63e6be",
+        "position": {
+            "nx": 0.155930697468,
+            "ny": 0.856863153293
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1786642356054-267ce9",
+        "name": "Vành Đai Ven Biển Phía Nam",
+        "group": "Địa Khu",
+        "description": "Đường bờ biển uốn lượn quanh co tuyệt mỹ, đan xen những bán đảo, mũi đất, vịnh biển nhỏ và chuỗi đảo cận bờ, là chốn lý tưởng hình thành các bến cảng sầm uất, xóm chài trù phú cùng những cứ điểm hải phòng kiên cố.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#63e6be",
+        "position": {
+            "nx": 0.18952471222768597,
+            "ny": 0.8994998392605573
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1786642558207-e68413",
+        "name": "Cảng Bạch Diễm",
+        "group": "Thành Phố Cảng",
+        "description": "Dong thuyền vòng qua mũi đá đen chật hẹp chỉ mất chừng hai khắc đồng hồ, nhưng độ sâu mớn nước sẽ sụt giảm đột ngột tới ba tầm. Mạn trái là những boong pháo đen ngòm lặng thinh như rừng cây cùng tiếng tù và quân lệnh túc sát, mạn phải đã thoang thoảng mùi hương gia vị, mùi cam thối rữa cùng tiếng chửi thề om sòm bằng đủ thứ ngôn ngữ của tám phương. Chẳng có hoa tiêu nào dám lơ đãng khi bẻ lái chuyển hướng, bởi hai luồng hải lưu hung hãn nơi đây đã xoắn chặt vào nhau thành một nút thắt tử thần.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#63e6be",
+        "position": {
+            "nx": 0.179941520907,
+            "ny": 0.907926042115
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1786643620624-e78a24",
+        "name": "Miên Căn Cốc",
+        "group": "Thụ Thành",
+        "description": "Có hai cách để miêu tả về Miên Căn Cốc: Ngươi có thể bảo rằng, nơi đây là chốn ngụ cư dạt dào ma lực của muôn loài chúng sinh, nơi ngươi có thể nhìn thấu quá khứ, hiện tại cùng tương lai mịt mờ; hoặc ngươi cũng có thể nói như ta: \"Thuở còn niên thiếu ta từng đặt chân tới chốn này, những đấng nam nhi đều cao lớn hiên ngang, còn những người phụ nữ đều mang đôi mắt đẹp đến nao lòng. Mãi đến những năm tháng về sau ta mới thấu hiểu, đó chỉ là một trong muôn ngàn lối mòn dẫn bước vào Miên Căn Cốc mà thôi.\"",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#63e6be",
+        "position": {
+            "nx": 0.234259444333,
+            "ny": 0.81354086542
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1786650070489-b7035d",
+        "name": "Khu Sơn Hải Đông Nam",
+        "group": "Địa Khu",
+        "description": "Được hợp thành từ những rặng núi cao vút và hiểm trở nhất toàn cõi kề sát bờ biển phía nam; khoảng cách giữa non cao và sóng biển ngắn ngủi gang tấc, đất bằng hiếm hoi quý giá.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#63e6be",
+        "position": {
+            "nx": 0.23347002472768597,
+            "ny": 0.8551159576175751
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1786650232814-2ea1fc",
+        "name": "Tinh Thần Nhai",
+        "group": "Thành Phố Sơn Tích",
+        "description": "Khi trèo lên tới bậc đá thứ bảy trăm, tiếng sóng gầm gào đã hoàn toàn chìm nghỉm dưới làn sương mù dày đặc dưới chân; lên cao hơn nữa, tầng mây nghẹt thở cắt ngang lồng ngực, bốn bề chỉ còn tiếng cuồng phong gào thét xé rách vạt áo bào. Đặt chân lên đỉnh núi vào một đêm khuya không trăng, những ngọn địa đăng tinh huy dọc thềm đá hòa quyện làm một cùng vòm trời thăm thẳm buông sát đầu người; lữ khách thường chẳng dám cất bước, chỉ sợ một bước sẩy chân đạp hụt chẳng phải là vực sâu vạn trượng, mà là cả một dải tinh tú lạnh lẽo ngút ngàn.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#63e6be",
+        "position": {
+            "nx": 0.214691209358,
+            "ny": 0.896866105521
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1786651000153-13fe47",
+        "name": "Quần Đảo Ám Lan",
+        "group": "Quần Đảo",
+        "description": "Quần đảo hải ngoại u huyền trôi dạt gần bờ cõi của vương quốc Tinh Linh phía tây nam đại lục.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#63e6be",
+        "position": {
+            "nx": 0.254028330812,
+            "ny": 0.918081056899
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1786651264380-61a43a",
+        "name": "Thành Trầm Nguyệt",
+        "group": "Thành Phố Đảo",
+        "description": "Tòa thành chìm sâu trong làn sương biển này tựa như một miếng bọt biển khổng lồ, không ngừng hút cạn những đợt triều dâng ký ức cuồn cuộn đổ về, để rồi cứ thế trương nở phình to. Thành Trầm Nguyệt chưa từng hé lộ quá khứ của chính mình, mà chỉ lặng lẽ giấu nhẹm đi tựa những đường chỉ tay; quá khứ ấy được khắc ghi nơi góc phố ngõ hẻm, nơi chấn song cửa sổ, nơi tay vịn cầu thang, và trên da thịt chằng chịt của lũ nô lệ cùng các chiến binh. Mỗi một vết hằn đều là dấu tích của cào xé, cưa giũa, đục đẽo và những đòn giáng búa tạ kinh hoàng để lại.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#63e6be",
+        "position": {
+            "nx": 0.254601765188,
+            "ny": 0.928638263245
+        },
+        "imageUrls": []
+    },
+    {
+        "id": "marker-1786651269498-476d90",
+        "name": "Hắc Phương Chu",
+        "group": "Thuyền Biển Khổng Lồ",
+        "description": "Hắc Phương Chu, cỗ cự hạm quỷ quyệt và đồ sộ khôn cùng, nắm giữ nguồn sức mạnh lúc thì độc ác tàn nhẫn, khi lại dịu dàng khôn xiết. Nếu ngươi phải còng lưng mười tám giờ mỗi ngày để đục đẽo hải tinh thạch, cạo vảy kéo neo, sự khổ ải nhọc nhằn của ngươi sẽ đúc nặn nên hình hài cho dục vọng của muôn người. Ngoại trừ Chí Cao Chủ Mẫu ngự trị cao cao trên vương tọa, đối với những khách qua đường lai vãng, ngươi cứ ngỡ mình đang tận hưởng lạc thú của toàn bộ phương chu, nhưng kỳ thực ngươi chẳng qua cũng chỉ là một kẻ nô lệ của nàng mà thôi.",
+        "icon": "fa-solid fa-location-dot",
+        "color": "#63e6be",
+        "position": {
+            "nx": 0.253569595912,
+            "ny": 0.910339117852
+        },
+        "imageUrls": []
+    }
+]

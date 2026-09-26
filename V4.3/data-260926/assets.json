@@ -1,5 +1,5 @@
 {
-  "居住与载具": [
+  "Cư Trú & Phương Tiện": [
     {
       "name": "Số 13 Phố Mưa Sương",
       "cost": 150,
@@ -197,7 +197,7 @@
       }
     }
   ],
-  "农业与畜牧": [
+  "Nông Nghiệp & Chăn Nuôi": [
     {
       "name": "Cánh Đồng Luân Canh Trấn Phong Xa",
       "cost": 80,
@@ -452,7 +452,7 @@
       }
     }
   ],
-  "资源与采掘": [
+  "Tài Nguyên & Khai Thác": [
     {
       "name": "Trạm Thu Mua Vật Liệu Thủy Thảo Ma Vật",
       "cost": 25,
@@ -596,7 +596,7 @@
       }
     }
   ],
-  "商业与服务": [
+  "Thương Mại & Dịch Vụ": [
     {
       "name": "Hiệu Sách Cảng Học Thuật Pháp Hoàn",
       "cost": 75,
@@ -934,7 +934,7 @@
       }
     }
   ],
-  "公共与医疗": [
+  "Công Cộng & Y Tế": [
     {
       "name": "Y Quán Tỷ Muội Hội Thánh Aethera",
       "cost": 75,
@@ -1031,7 +1031,7 @@
       }
     }
   ],
-  "生产与工坊": [
+  "Sản Xuất & Xưởng Chế Tác": [
     {
       "name": "Xưởng Tinh Chế Hương Liệu Sa Hải Xích Kim",
       "cost": 120,
@@ -1459,7 +1459,7 @@
       }
     }
   ],
-  "贸易与交通": [
+  "Mậu Dịch & Giao Thông": [
     {
       "name": "Đoàn Thương Lộ Biển Cát",
       "cost": 125,
@@ -1586,7 +1586,7 @@
       }
     }
   ],
-  "开拓者包": [
+  "Gói Khai Phá": [
     {
       "name": "Hang Rêu Đá Đen",
       "cost": 100,
@@ -2026,7 +2026,7 @@
       }
     }
   ],
-  "金手指": [
+  "Kim Thủ Chỉ": [
     {
       "name": "Lữ Quán Vô Tận",
       "cost": 8000,
