@@ -1,6 +1,6 @@
 {
   // Khởi Đầu Chung
-  "通用开局": [
+  "Khởi Đầu Chung": [
     {
       "name": "Ngày Tháng Bình Yên",
       "description": "Một ngày bình dị như muôn vàn ngày khác."
@@ -91,7 +91,7 @@
     }
   ],
   // Giới Hạn Danh Phận
-  "身份限定": [
+  "Giới Hạn Thân Phận": [
     {
       "name": "Lãnh Chủ Trang Viên",
       "description": "<user> là kỵ sĩ thế tập bản địa, cha ngươi từng dùng đầu gối đỡ một mũi tên cho ngài bá tước, ngài bá tước ban cho cha ngươi tước vị kỵ sĩ thế tập, cùng một trang viên không lớn. Nhưng cảnh đẹp chẳng bền lâu, vài năm trước lãnh chủ đối địch tập kích nơi này, cha mẹ tử trận, lãnh địa bị tàn phá, còn ngươi được ngài bá tước dẫn theo chạy trốn, thoát khỏi kiếp nạn. Giờ đây ngươi trở lại tàn tích trang viên từng được ban cho, đào lên kho báu dưới hầm trang viên, chuẩn bị tái thiết trang viên.",
@@ -140,7 +140,7 @@
     }
   ],
   // Giới Hạn Chủng Tộc
-  "种族限定": [
+  "Giới Hạn Chủng Tộc": [
     {
       "name": "Thử Luyện Kim Dực Thần Thánh",
       "description": "Là một Dực Dân trẻ tuổi, ngươi sắp bước vào cuộc thử luyện \"Kim Dực Thần Thánh\" — trèo lên núi thánh, diện kiến giáo hoàng. Đây không chỉ là bài kiểm tra kỹ thuật bay lượn và lòng tin của ngươi, mà còn là nghi thức then chốt quyết định địa vị tương lai của ngươi tại Thánh Đô Vania.",
@@ -215,7 +215,7 @@
     }
   ],
   // Giới Hạn Khu Vực
-  "地区限定": [
+  "Giới Hạn Khu Vực": [
     {
       "name": "Nghi Thức Đạp Tinh",
       "description": "Nghi thức tuyển mộ học đồ quy mô lớn tổ chức ba năm một lần của \"Học Viện Vụ Tinh\" — \"Nghi Thức Đạp Tinh\" — sắp diễn ra, ngươi quyết định đến \"Học Viện Vụ Tinh\" để cầu học. Sau vòng sơ tuyển rườm rà, ngươi theo đoàn người bước vào đại sảnh trung tâm nguy nga tráng lệ, cùng gần trăm người vượt qua sơ tuyển ngồi vào ghế, dưới ánh nhìn hiếu kỳ của các học đồ từ các tháp trên tầng hai, chờ đợi nghi thức diễn ra. Một chiếc mũ pháp thuật rách biết nói sẽ quyết định số phận của các ngươi, còn vì sao mà chiếc mũ phóng chiếu ra sẽ phân định học phái của ngươi.",
