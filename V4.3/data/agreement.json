@@ -1,0 +1,63 @@
+{
+  "version": "1.0.0",
+  "title": "Thỏa Thuận Cấp Phép Người Dùng Cuối",
+  "sections": [
+    {
+      "title": "I. Điều khoản chung",
+      "paragraphs": [
+        "Chào mừng bạn đến với \"Mệnh Định Chi Thi Dữ Hoàng Hôn Chi Ca\" (sau đây gọi là \"dự án này\"). Đây là một bộ nội dung sáng tạo tường thuật tương tác/nhập vai được xây dựng trên nền tảng SillyTavern, bao gồm nhưng không giới hạn ở thẻ nhân vật, world book, giao diện front-end và các công cụ script liên quan.",
+        "Trước khi sử dụng dự án này, vui lòng đọc kỹ và hiểu rõ các điều khoản của thỏa thuận này. Khi bạn nhấn \"Đồng ý\" hoặc xác nhận chấp nhận thỏa thuận này bằng bất kỳ hình thức nào khác, điều đó được xem là bạn đã đọc, hiểu và đồng ý chịu sự ràng buộc của thỏa thuận này.",
+        "Dự án này được cung cấp miễn phí."
+      ]
+    },
+    {
+      "title": "II. Quyền sở hữu trí tuệ",
+      "items": [
+        "Quyền sở hữu trí tuệ đối với văn bản gốc, thiết lập nhân vật, thiết kế thế giới quan, tài nguyên mỹ thuật và mã nguồn... trong dự án này thuộc về nhóm thực hiện dự án.",
+        "Dự án này có thể chứa các thành phần hoặc tài nguyên mã nguồn mở của bên thứ ba, các thành phần đó tuân theo giấy phép mã nguồn mở tương ứng của chúng.",
+        "Bạn không được sử dụng bất kỳ nội dung nào của dự án này cho bất kỳ mục đích thương mại nào."
+      ]
+    },
+    {
+      "title": "III. Quy tắc sử dụng",
+      "items": [
+        "Dự án này chỉ dùng cho mục đích học tập cá nhân, giải trí và giao lưu phi thương mại.",
+        "Bạn không được dịch ngược (decompile), phân tích mã nguồn (reverse engineering) hoặc bằng bất kỳ hình thức nào cố gắng trích xuất mã nguồn của dự án này (trừ phần đã được công khai).",
+        "Bạn không được phân phối lại, bán lại hoặc tạo ra các sản phẩm phái sinh từ nội dung của dự án này.",
+        "Bạn không được truyền bá, thảo luận nội dung liên quan trong các cộng đồng trong nước (Trung Quốc đại lục), nhóm QQ.",
+        "Khi chia sẻ công khai trải nghiệm hoặc thành quả sử dụng dự án này, vui lòng ghi rõ nguồn gốc và tôn trọng công sức của nhóm thực hiện."
+      ]
+    },
+    {
+      "title": "IV. Tuyên bố miễn trừ trách nhiệm",
+      "items": [
+        "Dự án này được cung cấp theo nguyên trạng (\"as is\"), nhóm thực hiện không đưa ra bất kỳ bảo đảm rõ ràng hay ngụ ý nào về tính phù hợp, đầy đủ hay không có lỗi của dự án.",
+        "Nhóm thực hiện không chịu trách nhiệm đối với bất kỳ vấn đề nào phát sinh từ cấu hình môi trường, tình trạng mạng hoặc thao tác không đúng cách của người dùng.",
+        "Nội dung văn bản do dự án này tạo ra được sản sinh bởi mô hình AI, nhóm thực hiện không có nghĩa vụ kiểm duyệt cũng như không chịu trách nhiệm pháp lý đối với nội dung cụ thể do AI tạo ra.",
+        "Người dùng phải tự mình đánh giá tính hợp lý và phù hợp của nội dung do AI tạo ra, và tự chịu trách nhiệm về hành vi sử dụng của mình."
+      ]
+    },
+    {
+      "title": "V. Quyền riêng tư và dữ liệu",
+      "items": [
+        "Dự án này chạy trên môi trường cục bộ (local) của người dùng, không chủ động thu thập, tải lên hay lưu trữ bất kỳ dữ liệu cá nhân nào của bạn.",
+        "Việc giao tiếp với dịch vụ AI được thực hiện thông qua API do bạn tự cấu hình, việc xử lý dữ liệu liên quan tuân theo chính sách quyền riêng tư của nhà cung cấp dịch vụ AI tương ứng."
+      ]
+    },
+    {
+      "title": "VI. Thay đổi thỏa thuận",
+      "paragraphs": [
+        "Nhóm thực hiện có quyền sửa đổi thỏa thuận này bất cứ lúc nào. Sau khi thỏa thuận thay đổi, việc tiếp tục sử dụng dự án này được xem là bạn đã chấp nhận nội dung thỏa thuận đã sửa đổi. Các thay đổi quan trọng sẽ được thông báo cho người dùng thông qua thông báo cập nhật hoặc các hình thức khác."
+      ]
+    },
+    {
+      "title": "VII. Điều khoản khác",
+      "items": [
+        "Quyền giải thích thỏa thuận này thuộc về nhóm thực hiện dự án.",
+        "Nếu bất kỳ điều khoản nào trong thỏa thuận này bị xác định là vô hiệu hoặc không thể thực thi, các điều khoản còn lại vẫn có hiệu lực.",
+        "Nếu có bất kỳ thắc mắc nào, vui lòng liên hệ nhóm thực hiện thông qua kênh chính thức của dự án.",
+        "Tùy theo mức độ nghiêm trọng trong hành vi của bạn, nhóm thực hiện có quyền tự quyết định liệu sau khi chết bạn có được chuyển sinh vào thế giới Warhammer 40000 hay không, để đời đời cống hiến giá trị của mình cho Đấng Hoàng Đế."
+      ]
+    }
+  ]
+}

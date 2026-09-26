@@ -1,0 +1,2158 @@
+{
+  "居住与载具": [
+    {
+      "name": "Số 13 Phố Mưa Sương",
+      "cost": 150,
+      "rarity": "rare",
+      "类型": "Nhà ở",
+      "标签": [
+        "Chủ sở hữu: <user>",
+        "Mục đích: Tự ở",
+        "Trạng thái: Tự ở"
+      ],
+      "总空间": "Sân ngoài: cổng chính, sân chung; diện tích: 120m²|Tầng 1: phòng khách, phòng ăn, bếp, nhà vệ sinh, phòng chứa đồ; diện tích: 180m²|Tầng 2: phòng ngủ chính (<user>), 2 phòng khách, phòng sách, nhà vệ sinh; diện tích: 180m²|Tầng 3: xưởng thủ công, phòng chứa sách, phòng luyện tập, nhà vệ sinh; diện tích: 180m²",
+      "结算": "Định giá tài sản: 18 triệu Z",
+      "位置": "Thành Nova · Valentia - Khu Vực Trung Thành - Số 13 Phố Mưa Sương",
+      "描述": "Một biệt thự ba tầng nép mình giữa Khu Trung Thành phồn hoa của Nova · Valentia, sở hữu sân vườn riêng và đầy đủ tiện nghi sinh hoạt — chốn dừng chân yên tĩnh và riêng tư giữa lòng đô thị náo nhiệt.",
+      "内部资产": {
+        "Xưởng Thợ Thủ Công": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Xưởng làm việc",
+            "Vị trí: Tầng 3"
+          ],
+          "数量": 1,
+          "效果": {
+            "标准设备": "Khi [Luyện Kim][May Vá][Cải Tạo Sinh Học]: kiểm định +4, thời gian sản xuất -35%."
+          },
+          "描述": "Một gian xưởng được trang bị đầy đủ, sở hữu phòng thí nghiệm luyện kim, máy may ma đạo và khoang nuôi cấy sinh học.",
+          "总占用空间": "60m²"
+        }
+      }
+    },
+    {
+      "name": "Quán Trọ Trời Quang",
+      "cost": 250,
+      "rarity": "rare",
+      "类型": "Nhà ở",
+      "标签": [
+        "Chủ sở hữu: <user>",
+        "Mục đích: Quán trọ",
+        "Trạng thái: Đang vận hành"
+      ],
+      "总空间": "Vườn hoa: cổng chính, đài phun nước, xích đu; diện tích: 120m²|Tầng 1: quầy bar, phòng ăn, bếp, ký túc, nhà vệ sinh, phòng chứa đồ; diện tích: 300m²|Tầng 2: 20 phòng đơn tiêu chuẩn, phòng tắm chung; diện tích: 300m²|Tầng 3: 10 phòng đơn cao cấp, phòng ăn; diện tích: 300m²",
+      "结算": "Định giá tài sản: 28 triệu Z; đã cho thuê 20 phòng tiêu chuẩn, 10 phòng cao cấp; tổng tiền thuê: 16.000Z/ngày; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Thành Nova · Valentia - Khu Vực Trung Thành - Rìa khu dịch vụ phía Bắc",
+      "描述": "Một quán trọ ba tầng tọa lạc tại Khu Trung Thành của Nova · Valentia, có sân vườn riêng và tiện nghi đầy đủ, nổi tiếng khắp thành Valentia nhờ sự an toàn, kín đáo và giá cả phải chăng.",
+      "内部资产": {
+        "Phòng Đơn Tiêu Chuẩn": {
+          "品质": "uncommon",
+          "标签": [
+            "Loại hình: Nhà ở",
+            "Vị trí: Tầng 2 quán trọ",
+            "Trạng thái: Đang cho thuê"
+          ],
+          "数量": 22,
+          "效果": {
+            "布局": "Giường đôi, một bộ bàn ghế.",
+            "房间租金": "200Z/ngày."
+          },
+          "描述": "Phòng đơn tiêu chuẩn của Quán Trọ Trời Quang.",
+          "总占用空间": "220m²"
+        },
+        "Phòng Đơn Cao Cấp": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Nhà ở",
+            "Vị trí: Tầng 3 quán trọ",
+            "Trạng thái: Đang cho thuê"
+          ],
+          "数量": 10,
+          "效果": {
+            "布局": "Giường đôi êm ái, sofa, bàn viết, tủ quần áo, tủ đựng đồ, bàn trang điểm, phòng tắm riêng.",
+            "房间租金": "1.200Z/ngày"
+          },
+          "描述": "Phòng đơn cao cấp của Quán Trọ Trời Quang, bao gồm dịch vụ gửi thư, giặt ủi và gọi món tận phòng.",
+          "总占用空间": "240m²"
+        }
+      }
+    },
+    {
+      "name": "Nền Phù Không Ma Đạo",
+      "cost": 600,
+      "rarity": "epic",
+      "类型": "Phương tiện",
+      "标签": [
+        "Chủ sở hữu: <user>",
+        "Mục đích: Nơi ở / căn cứ di động",
+        "Trạng thái: Khả dụng"
+      ],
+      "总空间": "Thân nền tảng: 1 nền phù không, 1 biệt thự hai tầng; diện tích: khoảng 600m²|Quy mô phương tiện: cạnh dài khoảng 25m, độ cao lơ lửng khoảng 1m|Không gian khả dụng: khoảng 180m²",
+      "结算": "Định giá tài sản: 36 triệu Z; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Di chuyển theo người sở hữu",
+      "描述": "Một nền tảng phù không hình vuông xa xỉ do Cảng Vụ Tinh chế tạo, mang trong mình lõi động lực ma tinh, trên đó dựng lên một tòa biệt thự đá gạch hai tầng — vừa là mái ấm lưu động, vừa là căn cứ giữa trời.",
+      "内部资产": {
+        "Lõi Động Lực Ma Tinh": {
+          "品质": "epic",
+          "标签": [
+            "Loại hình: Thiết bị động lực",
+            "Vị trí: Khoang động lực",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "动力": "Cung cấp ma lực cần thiết cho việc lơ lửng, di chuyển và vận hành các hạ tầng của nền tảng."
+          },
+          "描述": "Thiết bị động lực cốt lõi của nền phù không.",
+          "总占用空间": "Khoang động lực"
+        },
+        "Biệt Thự Hai Tầng": {
+          "品质": "epic",
+          "标签": [
+            "Loại hình: Nhà ở",
+            "Vị trí: Tầng trên nền tảng",
+            "Trạng thái: Khả dụng"
+          ],
+          "数量": 1,
+          "效果": {
+            "布局": "Tầng 1: phòng khách, bếp, phòng ăn, nhà vệ sinh, phòng chứa đồ; Tầng 2: phòng ngủ chính, phòng khách, phòng sách, xưởng thủ công, nhà vệ sinh.",
+            "居住设施": "Cung cấp không gian sinh hoạt, lưu trữ và sản xuất trọn vẹn cho một căn cứ di động."
+          },
+          "描述": "Ngôi nhà đá gạch hai tầng được dựng ngay trên nền tảng.",
+          "总占用空间": "Kiến trúc hai tầng, khoảng 240m²"
+        }
+      }
+    },
+    {
+      "name": "Tàu Lữ Khách Tĩnh Lặng",
+      "cost": 1000,
+      "rarity": "legendary",
+      "类型": "Phương tiện",
+      "标签": [
+        "Chủ sở hữu: <user>",
+        "Mục đích: Viễn hành / căn cứ di động",
+        "Trạng thái: Khả dụng"
+      ],
+      "总空间": "Thân tàu: 1 thân phi không đĩnh, 1 khoang sinh hoạt, 1 khoang xưởng; diện tích: khoảng 900m²|Không gian khả dụng: khoảng 120m²",
+      "结算": "Định giá tài sản: 100 triệu Z; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Di chuyển theo người sở hữu",
+      "描述": "Một phi không đĩnh cỡ trung mang trong lòng lò rèn động lực dĩ thái \"Trái Tim Tịch Lặng\", vừa có thể viễn hành đường dài, vừa là nơi trú ngụ và làm việc — một căn cứ giữa mây trời có thể tự lực lâu dài.",
+      "内部资产": {
+        "Thân Phi Không Đĩnh": {
+          "品质": "legendary",
+          "标签": [
+            "Loại hình: Phương tiện",
+            "Vị trí: Thân tàu",
+            "Trạng thái: Khả dụng"
+          ],
+          "数量": 1,
+          "效果": {
+            "基础属性": "Toàn thân dài 42 mét, sải cánh 28 mét; tốc độ hành trình 150km/h; trần bay tối đa 10.000 mét; sức chở tối đa 8 người; thủy thủ đoàn tiêu chuẩn 1 người."
+          },
+          "描述": "Thân bay và hệ thống điều khiển chính của Tàu Lữ Khách Tĩnh Lặng.",
+          "总占用空间": "Phi không đĩnh cỡ trung, khoảng 900m²"
+        },
+        "Khoang Sinh Hoạt": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Cơ sở sinh hoạt",
+            "Vị trí: Giữa thân tàu",
+            "Trạng thái: Khả dụng"
+          ],
+          "数量": 1,
+          "效果": {
+            "布局": "1 phòng ngủ chính, 3 phòng khách đôi, 1 phòng khách kiêm phòng ăn, 2 phòng tắm, 1 bếp."
+          },
+          "描述": "Khoang sinh hoạt trọn vẹn đáp ứng nhu cầu cư trú lâu dài trên hành trình.",
+          "总占用空间": "Khoảng 300m²"
+        },
+        "Xưởng Đa Năng": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Xưởng thủ công",
+            "Vị trí: Đuôi thân tàu",
+            "Trạng thái: Khả dụng"
+          ],
+          "数量": 1,
+          "效果": {
+            "自律化设备": "Khi [Rèn Đúc][Luyện Kim][May Vá][Nấu Ăn]: kiểm định +4, thời gian sản xuất +35%."
+          },
+          "描述": "Xưởng tổng hợp tích hợp bàn luyện kim, bàn rèn và bàn phù chú, hỗ trợ sản xuất, chế tạo và bảo trì trên đường đi.",
+          "总占用空间": "Khoảng 80m²"
+        },
+        "Hệ Thống Hàng Trình Tĩnh Lặng": {
+          "品质": "legendary",
+          "标签": [
+            "Loại hình: Hệ thống ẩn giấu",
+            "Vị trí: Hệ thống động lực và điều khiển",
+            "Trạng thái: Khả dụng"
+          ],
+          "数量": 1,
+          "效果": {
+            "静默航行": "Có thể né tránh hiệu quả sự dò xét bằng ma lực."
+          },
+          "描述": "Hệ thống hàng trình đặc biệt dùng để giảm dấu hiệu ma lực của con tàu.",
+          "总占用空间": "Không chiếm dụng"
+        }
+      }
+    }
+  ],
+  "农业与畜牧": [
+    {
+      "name": "Cánh Đồng Luân Canh Trấn Phong Xa",
+      "cost": 80,
+      "rarity": "uncommon",
+      "类型": "Nông điền",
+      "标签": [
+        "Chủ sở hữu: Liên thể nông hộ Trấn Phong Xa",
+        "Mục đích: Trồng trọt lương thực",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Ổn định"
+      ],
+      "总空间": "Cánh đồng luân canh: 1 khoảnh ruộng: 7200m²|Diện tích trống: 800m²",
+      "结算": "Định giá tài sản: 3 triệu Z Đồng Đế Miện; dự kiến thu nhập hằng năm: 150 nghìn Z Đồng Đế Miện; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Đế Quốc Augustim - Tỉnh Hồng Khâu - Trấn Phong Xa - Phía Đông - Ruộng công thuộc trấn",
+      "描述": "Cánh đồng luân canh nằm giữa những triền lúa mì bát ngát bao quanh Trấn Phong Xa, theo mùa mà sản xuất lúa mì, cây thức ăn gia súc và rau ngắn ngày, dựa vào cối xay gió và thương lộ trong trấn để đưa nông sản vào thị trường lương thực của vùng.",
+      "内部资产": {}
+    },
+    {
+      "name": "Trang Viên Lúa Mì Trấn Phong Xa",
+      "cost": 125,
+      "rarity": "uncommon",
+      "类型": "Trang viên",
+      "标签": [
+        "Chủ sở hữu: Quý tộc nông vụ Đế Quốc Augustim",
+        "Mục đích: Sản xuất nông nghiệp / cư trú",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Ổn định"
+      ],
+      "总空间": "Viện trang: nhà chính, phòng kế toán, kho lương, chuồng ngựa; diện tích: 800m²|Ruộng đồng: ruộng lúa mì, đất luân canh, kênh tưới; diện tích: 9000m²|Đất phụ thuộc: cối xay gió, bãi bốc dỡ; diện tích: 1200m²",
+      "结算": "Định giá tài sản: 5,5 triệu Z Đồng Đế Miện; dự kiến thu nhập hằng năm: 250 nghìn Z Đồng Đế Miện; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Đế Quốc Augustim - Tỉnh Hồng Khâu - Trấn Phong Xa - Phía Nam - Trang viên ruộng lúa mì",
+      "描述": "Một trang viên nông nghiệp hạng ưu tú tọa lạc giữa những cánh đồng lúa mì vàng óng của Trấn Phong Xa, dùng cối xay gió chế biến lương thực, kiêm luôn chức năng cư trú, quản lý nông vụ và tích trữ lương thực theo mùa.",
+      "内部资产": {
+        "Cối Xay Gió": {
+          "品质": "uncommon",
+          "标签": [
+            "Loại hình: Cơ sở chế biến lương thực",
+            "Vị trí: Đất phụ thuộc",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "产出": "Bột mì; nguồn từ lúa mì thu hoạch của trang viên."
+          },
+          "描述": "Cối xay gió bằng gỗ thường thấy ở Trấn Phong Xa, đảm nhận sơ chế lương thực cho trang viên.",
+          "总占用空间": "Khoảng 220m²"
+        }
+      }
+    },
+    {
+      "name": "Trang Viên Nông Nghiệp Ốc Đảo Sa Hải Xích Kim",
+      "cost": 190,
+      "rarity": "uncommon",
+      "类型": "Lãnh địa",
+      "标签": [
+        "Chủ sở hữu: Tập đoàn thủy lợi ốc đảo Liên Bang Sahra",
+        "Mục đích: Trồng trọt ốc đảo / thủy lợi / chế biến nông sản",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Ổn định"
+      ],
+      "总空间": "Lãnh địa ốc đảo: 4 vườn chà là, 3 ruộng ngũ cốc chịu hạn, 2 vườn dược thảo, 2 hồ chứa nước, kênh nước ngầm, xưởng trái cây khô: khoảng 18000m²|Diện tích trống: khoảng 2400m²",
+      "结算": "Định giá tài sản: 10,2 triệu Z Đồng Đế Miện; dự kiến thu nhập hằng năm: 380 nghìn Z Đồng Đế Miện; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Liên Bang Sahra · Sa Hải Xích Kim · Rìa ốc đảo miền Trung, vòng cung cấp Azhar",
+      "描述": "Một trang viên ốc đảo sa mạc được duy trì nhờ kênh nước ngầm và hồ chứa, nơi chà là, ngũ cốc chịu hạn, dược thảo và trái cây khô cùng tạo nên nguồn cung ổn định. Trang viên lấy quản lý nguồn nước làm cốt lõi, vừa phục vụ thị trường đô thị vừa tiếp tế cho thương lộ, thể hiện truyền thống của Liên Bang Sahra trong việc dùng kỹ thuật công trình và luyện kim thuật để duy trì văn minh giữa vùng khô nóng khắc nghiệt.",
+      "内部资产": {
+        "Hệ Thống Kênh Ngầm Và Hồ Chứa": {
+          "品质": "uncommon",
+          "标签": [
+            "Loại hình: Công trình thủy lợi",
+            "Vị trí: Dưới lòng đất và phía Bắc lãnh địa",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Điều tiết nước ngầm, ổn định việc tưới tiêu ốc đảo, giảm ảnh hưởng của mùa bão cát lên sản lượng cây trồng."
+          },
+          "描述": "Bộ khung thủy lợi của trang viên, gồm kênh đá, hồ lắng và hồ chứa.",
+          "总占用空间": "Kênh khoảng 400m², hồ chứa khoảng 1200m²"
+        }
+      }
+    },
+    {
+      "name": "Liên Trại Nuôi Trồng Hải Tinh Vịnh Trân Châu Thành Ngân Phàm",
+      "cost": 225,
+      "rarity": "uncommon",
+      "类型": "Tổ hợp sản nghiệp",
+      "标签": [
+        "Chủ sở hữu: Thương hội thủy sản Vương Quốc Solentis",
+        "Mục đích: Nuôi trồng tài nguyên biển / chế biến thủy sản",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Ổn định"
+      ],
+      "总空间": "Khu nuôi trồng vịnh: 6 bãi lưới trai ngọc, 4 bãi cạn nhuyễn thể, 2 hồ tạm nuôi hải sản; diện tích: 18000m²|Khu tác nghiệp trên bờ: 2 lán phân loại, 1 kho lạnh, 1 nhà nghỉ công nhân; diện tích: 6000m²",
+      "结算": "Định giá tài sản: 9 triệu Z Đồng Trân Châu; dự kiến thu nhập hằng năm: 450 nghìn Z Đồng Trân Châu; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Vương Quốc Solentis - Vịnh Trân Châu - Ngoại hoàn - Vùng nước nuôi trồng phía Bắc",
+      "描述": "Một liên trại nuôi trồng dựa vào vùng biển ấm và nền vỏ sò của chuỗi đảo ngoài khơi Vịnh Trân Châu, vùng nước gần bờ nuôi dưỡng trai ngọc, nhuyễn thể và hải sản phổ biến, cơ sở trên bờ đảm nhận phân loại, tạm nuôi và trữ lạnh. Nó vừa phục vụ ngành du lịch cờ bạc của Vịnh Trân Châu, vừa cung ứng ổn định cho khu mậu dịch tự do Thành Ngân Phàm.",
+      "内部资产": {
+        "Bãi Lưới Nuôi Trai Ngọc Ráng Vồng": {
+          "品质": "uncommon",
+          "标签": [
+            "Loại hình: Cơ sở nuôi trồng",
+            "Vị trí: Vùng nước nuôi trồng ngoại hoàn",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 6,
+          "效果": {
+            "产出": "Trai ngọc ráng vồng, trai ngọc"
+          },
+          "描述": "Bãi lưới phân khu cố định trong vùng nước lặng, nuôi dưỡng trai ngọc và chăm sóc theo từng đợt.",
+          "总占用空间": "Khoảng 12000m²"
+        },
+        "Kho Lạnh Hải Sản": {
+          "品质": "uncommon",
+          "标签": [
+            "Loại hình: Cơ sở kho vận",
+            "Vị trí: Khu tác nghiệp trên bờ",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Kéo dài thời gian tươi ngon của thủy sản, hỗ trợ vận chuyển lạnh cho vùng nuôi trồng ngoài cảng."
+          },
+          "描述": "Công trình trữ lạnh trên bờ, dùng thiết bị làm lạnh bằng hải tinh để duy trì nhiệt độ thấp.",
+          "总占用空间": "Khoảng 1800m²"
+        }
+      }
+    },
+    {
+      "name": "Trang Viên Đàn Gia Súc Phong Ngân",
+      "cost": 325,
+      "rarity": "uncommon",
+      "类型": "Tổ hợp sản nghiệp",
+      "标签": [
+        "Chủ sở hữu: <user>",
+        "Mục đích: Chăn nuôi đàn gia súc / chế biến thịt sữa / buôn bán gia súc",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Ổn định"
+      ],
+      "总空间": "Khu chăn thả: bãi cỏ chăn thả theo mùa, nơi lấy nước, đường di cư; diện tích: khoảng 180000m²|Trại cố định: lều bạt cư trú, chuồng gia súc, xưởng sữa, kho lạnh; diện tích: khoảng 3200m²|Khu giao dịch: hàng rào gia súc, đài cân, dốc bốc xếp; diện tích: khoảng 1800m²|Diện tích trống: khoảng 6000m²",
+      "结算": "Định giá tài sản: 13 triệu Z Đồng Thú Minh; dự kiến thu nhập hằng năm: 650 nghìn Z Đồng Thú Minh; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Liên Minh Thú Tộc - Thảo Nguyên Hằng Phong - Vùng nguồn nước của bộ tộc",
+      "描述": "Trang trại cố định được xây dựng dọc nguồn nước Thảo Nguyên Hằng Phong, gìn giữ tập tục chăn thả theo mùa của tộc thú nhân, dùng bãi cỏ chịu gió để nuôi đàn gia súc lớn, tập trung giao dịch thịt, sữa và thú thồ trên thương lộ thảo nguyên.",
+      "内部资产": {
+        "Đàn Gia Súc Sinh Sản": {
+          "品质": "uncommon",
+          "标签": [
+            "Loại hình: Đàn gia súc",
+            "Vị trí: Khu chăn thả",
+            "Trạng thái: Đang sinh sản"
+          ],
+          "数量": 1,
+          "效果": {
+            "产出": "Cho ra ổn định thịt, sữa, da lông và thú thồ non."
+          },
+          "描述": "Đàn gia súc hỗn hợp thích nghi với khô hạn và gió mạnh của Vô Tận Phong Ngân Thảo Nguyên.",
+          "总占用空间": "Khoảng 17000m² khu chăn thả"
+        },
+        "Xưởng Sữa": {
+          "品质": "uncommon",
+          "标签": [
+            "Loại hình: Cơ sở chế biến",
+            "Vị trí: Trại cố định",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "产出": "Phô mai, sữa lên men và bột sữa để dành lâu."
+          },
+          "描述": "Xưởng sữa nhiệt độ thấp đặt gần nguồn nước, tiện cho việc vận chuyển theo mùa du mục.",
+          "总占用空间": "Khoảng 900m²"
+        }
+      }
+    },
+    {
+      "name": "Mục Trường Trời Nguyệt Lĩnh",
+      "cost": 525,
+      "rarity": "rare",
+      "类型": "Tổ hợp sản nghiệp",
+      "标签": [
+        "Chủ sở hữu: <user>",
+        "Mục đích: Nuôi dưỡng không thú / cung ứng linh thú truyền lệnh",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Ổn định"
+      ],
+      "总空间": "Khu chăn thả: bãi cỏ cao nguyên, hàng rào không thú, chuồng thú non; diện tích: khoảng 18000m²|Khu cất-hạ cánh: Đạp Nguyệt Pha, sân thuần hóa, kho trang cụ; diện tích: khoảng 2600m²|Khu chăm sóc: nhà thú y, kho thức ăn; diện tích: khoảng 900m²",
+      "结算": "Định giá tài sản: 21,5 triệu Z Đồng Thánh Vũ; dự kiến thu nhập hằng năm: 1,05 triệu Z Đồng Thánh Vũ; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Thánh Quốc Dực Dân Vania - Nguyệt Lĩnh - Mục trường Nguyệt Lĩnh",
+      "描述": "Mục trường cao nguyên đặt giữa rừng bia công huân và Đạp Nguyệt Pha, chuyên nuôi dưỡng không thú đường dài dùng cho truyền lệnh, đồng thời gìn giữ các loài không thú khác và gia súc miền núi trong thời bình. Đường gió đêm trăng là bãi tập cất-hạ cánh đường dài thiên nhiên.",
+      "内部资产": {
+        "Đàn Không Thú Đường Dài": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Linh thú bay",
+            "Vị trí: Khu chăn thả",
+            "Trạng thái: Đang sinh sản"
+          ],
+          "数量": 18,
+          "效果": {
+            "基础属性": "Thích hợp cho truyền lệnh đường dài, cất-hạ cánh miền núi và bay trên đường gió cao nguyên.",
+            "功能效果": "Cung cấp nguồn linh thú truyền lệnh và bãi cất-hạ cánh trên đường gió cao nguyên."
+          },
+          "描述": "Đàn không thú đường dài đã được thuần hóa theo hệ thống truyền lệnh của tộc Dực Dân.",
+          "总占用空间": "18 con, tổng cộng khoảng 9000m² khu vực hoạt động"
+        }
+      }
+    },
+    {
+      "name": "Sân Nuôi Chiến Thú Tuần Thiên",
+      "cost": 1200,
+      "rarity": "epic",
+      "类型": "Tổ hợp sản nghiệp",
+      "标签": [
+        "Chủ sở hữu: <user>",
+        "Mục đích: Sinh sản / thuần hóa / huấn luyện chiến thú",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Biến động"
+      ],
+      "总空间": "Khu thuần dưỡng: chuồng thú non, triền chăn thả thú trưởng thành, chuồng cách ly; diện tích: khoảng 260000m²|Khu huấn luyện: sân chạy đua, sân chịu tải, sân thử chiến đấu; diện tích: khoảng 20000m²|Khu hậu cần: nhà thú y, kho thức ăn, kho trang cụ; diện tích: khoảng 4200m²|Diện tích trống: khoảng 9000m²",
+      "结算": "Định giá tài sản: 102 triệu Z Đồng Thú Minh; dự kiến thu nhập hằng năm: 4,5 triệu Z Đồng Thú Minh; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Liên Minh Thú Tộc - Tuần Thiên Vương Đình - Trại chiến thú rìa Bạo Phong Sa Mạc",
+      "描述": "Sân huấn luyện và nuôi dưỡng chiến thú gần Tuần Thiên Vương Đình, tận dụng nguồn nước tự nhiên trên lưng Tuần Thiên Cự Thú và một ít ma khoáng để duy trì việc thuần dưỡng cường độ cao, phục vụ đơn đặt hàng chiến thú và biên chế đội kỵ của các bộ tộc trong liên minh.",
+      "内部资产": {
+        "Trại Chiến Thú": {
+          "品质": "epic",
+          "标签": [
+            "Loại hình: Cơ sở sinh sản chiến thú",
+            "Vị trí: Khu thuần dưỡng",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "产出": "Nuôi dưỡng chiến thú bền sức và thú non có thể huấn luyện.",
+            "功能效果": "Cung cấp chuồng thú non, triền chăn thả thú trưởng thành và chuồng cách ly."
+          },
+          "描述": "Sân sinh sản chiến thú được dựng từ nền đất cứng rìa sa mạc và vách đá chắn gió.",
+          "总占用空间": "Khoảng 26000m²"
+        },
+        "Sân Huấn Luyện Chiến Thú": {
+          "品质": "epic",
+          "标签": [
+            "Loại hình: Cơ sở huấn luyện",
+            "Vị trí: Khu huấn luyện",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Cung cấp thiết bị huấn luyện điều khiển linh thú, xung phong, chịu tải và thử nghiệm chiến đấu."
+          },
+          "描述": "Sân huấn luyện đa địa hình được bố trí theo nhu cầu thực chiến của đội kỵ thảo nguyên.",
+          "总占用空间": "Khoảng 12000m²"
+        }
+      }
+    }
+  ],
+  "资源与采掘": [
+    {
+      "name": "Trạm Thu Mua Vật Liệu Thủy Thảo Ma Vật",
+      "cost": 25,
+      "rarity": "common",
+      "类型": "Cửa hàng",
+      "标签": [
+        "Chủ sở hữu: Thương hội vật liệu Cảng Khai Thác",
+        "Mục đích: Thu mua vật liệu / kho vận",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Biến động"
+      ],
+      "总空间": "Tầng cầu tàu: quầy thu mua, khu cân, phòng kiểm sơ, kho phân loại; diện tích: 200m²|Tầng dưới: kho vật liệu chống ẩm, tủ niêm phong; diện tích: 300m²",
+      "结算": "Định giá tài sản: 1 triệu Z Đồng Đế Miện; dự kiến thu nhập hằng năm: 50 nghìn Z Đồng Đế Miện; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Thành Nova · Valentia - Khu Vực Ngoại Hoàn - Cảng Khai Thác - Trạm Thu Mua Vật Liệu Thủy Thảo Ma Vật",
+      "描述": "Trạm thu mua vật liệu đặt trên cầu tàu nhiều tầng của Sông Noir, thu mua quặng liệu, bộ phận ma vật và nguyên liệu luyện kim trôi ra từ Thụ Hải Vô Tận và Vô Tận Địa Thành, trước tiên đăng ký, cân đo và phân loại sơ bộ, sau đó chuyển cho thuyền hàng hoặc thương lộ thành phố.",
+      "内部资产": {}
+    },
+    {
+      "name": "Hãng Gỗ Bách Linh",
+      "cost": 175,
+      "rarity": "uncommon",
+      "类型": "Cửa hàng",
+      "标签": [
+        "Chủ sở hữu: <user>",
+        "Mục đích: Buôn bán gỗ tinh linh / cung ứng vật liệu đóng thuyền",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Biến động"
+      ],
+      "总空间": "Sảnh trưng bày: mẫu gỗ, danh mục vật liệu thuyền, chỗ đàm phán; diện tích: 420m²|Kho gỗ: tấm ván tiêu chuẩn, dầm cột, gỗ sống tàu; diện tích: 2200m²|Bãi bến cảng: gỗ tròn chờ vận chuyển, lán chống ẩm; diện tích: 3200m²",
+      "结算": "Định giá tài sản: 7 triệu Z Đồng Tinh Quán; dự kiến thu nhập hằng năm: 350 nghìn Z Đồng Tinh Quán; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Vương Đình Tinh Linh - Cảng Bạch Diễm - Phía Nam vành đai thương cảng - Hãng Gỗ Bách Linh",
+      "描述": "Hãng gỗ tinh linh nằm trong vành đai thương cảng của Cảng Bạch Diễm, tiếp nhận lâm sản từ Khu Vực Sơn Lâm Phía Đông, vận chuyển qua đường thủy và chợ biển phía Nam đến các thương lộ biển hợp pháp, cung ứng gỗ đã qua bảo dưỡng cho thợ đóng thuyền, đoàn thương viễn dương và khách hàng cảng vụ Vương Đình Tinh Linh.",
+      "内部资产": {
+        "Kho Vật Liệu Đóng Thuyền": {
+          "品质": "epic",
+          "标签": [
+            "Loại hình: Kho vật liệu",
+            "Vị trí: Kho gỗ",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Trữ chống ẩm và phân cấp ván gỗ, dầm cột và gỗ sống tàu của tinh linh."
+          },
+          "描述": "Kho gỗ đá gác cao gần bến cảng Cảng Bạch Diễm, tiện cho việc bốc thuyền và kiểm hàng.",
+          "总占用空间": "Khoảng 1800m²"
+        }
+      }
+    },
+    {
+      "name": "Công Viên Săn Bắn Cao Cấp Phong Ngân",
+      "cost": 875,
+      "rarity": "rare",
+      "类型": "Lãnh địa",
+      "标签": [
+        "Chủ sở hữu: <user>",
+        "Mục đích: Săn bắn cao cấp / buôn bán chiến lợi phẩm",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Biến động"
+      ],
+      "总空间": "Bãi săn: khu vây săn Phong Ngữ Thảo Nguyên, dải quan sát đàn thú, ranh giới an toàn; diện tích: khoảng 420000m²|Trại tiếp đón: lều bạt quý khách, doanh trại thợ săn, lán lột da, kho vật liệu; diện tích: khoảng 5200m²",
+      "结算": "Định giá tài sản: 35,4 triệu Z Đồng Thú Minh; dự kiến thu nhập hằng năm: 1,75 triệu Z Đồng Thú Minh; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Liên Minh Thú Tộc - Phong Ngữ Thảo Nguyên - Biên giới thảo nguyên",
+      "描述": "Bãi săn khép kín được phân định theo lễ săn của tộc thú nhân, giữ lại hành lang di cư đàn thú và hoạt động ma vật, chỉ mở cửa cho khách quý của bộ tộc và đội săn đủ tư cách; chiến lợi phẩm được sơ chế tại chỗ rồi đưa vào mạng lưới tập kết tài nguyên thảo nguyên.",
+      "内部资产": {
+        "Bãi Vây Săn": {
+          "品质": "epic",
+          "标签": [
+            "Loại hình: Bãi săn",
+            "Vị trí: Biên giới thảo nguyên",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Cung cấp khu săn phân vùng, quan sát con mồi và tuyến rút lui an toàn."
+          },
+          "描述": "Khu săn cao cấp được phân định bằng địa hình tự nhiên, cột mốc vật tổ và tuyến tuần tra thợ săn.",
+          "总占用空间": "Khoảng 420000m²"
+        },
+        "Xưởng Sơ Chế Vật Liệu Ma Vật": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Cơ sở chế biến vật liệu",
+            "Vị trí: Trại tiếp đón",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Chỉ mở cho khách quý bộ tộc và đội săn đủ tư cách; phân loại, lột da và đăng ký da lông, xương thú, chất sừng và vật liệu ma vật tại chỗ, giảm hao hụt chiến lợi phẩm."
+          },
+          "描述": "Bãi tác nghiệp để đội săn phân loại, lột da và đăng ký chiến lợi phẩm ngay tại chỗ.",
+          "总占用空间": "Khoảng 1600m²"
+        }
+      }
+    },
+    {
+      "name": "Mỏ Sắt Lạnh Mặc Uyên",
+      "cost": 2550,
+      "rarity": "epic",
+      "类型": "Lãnh địa",
+      "标签": [
+        "Chủ sở hữu: Ty Khoáng Vụ Công Quốc Visgrad",
+        "Mục đích: Khai thác sắt lạnh / cung ứng quặng thô",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Biến động"
+      ],
+      "总空间": "Khu mỏ: 3 mặt khai thác lộ thiên, hầm lò ngầm, giếng thông gió, giếng thoát nước; diện tích: khoảng 90000m²|Cơ sở mặt đất: bãi quặng, lán phân loại, trạm thồ vận, doanh trại thợ mỏ; diện tích: khoảng 12000m²",
+      "结算": "Định giá tài sản: 102 triệu Z Khiên North; dự kiến thu nhập hằng năm: 5,1 triệu Z Khiên North; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Liên Minh Northgard - Trường Dạ Chi Cảnh - Mỏ Mặc Uyên",
+      "描述": "Mỏ sắt lạnh nằm ở vùng đài nguyên cực Bắc, do Ty Khoáng Vụ Pháo Đài Vãn Ca thống nhất quản lý hạn ngạch khai thác, giám định phẩm cấp quặng và điều phối thồ vận. Quặng thô được vận chuyển theo tuyến đài nguyên đến Khu Đoạn Lô của Pháo Đài Vãn Ca, sản lượng chịu ảnh hưởng bởi mùa đông, an toàn vận chuyển và biến động mạch quặng.",
+      "内部资产": {
+        "Khu Khai Thác Sắt Lạnh": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Cơ sở khai khoáng",
+            "Vị trí: Khu mỏ",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "产出": "Quặng sắt lạnh thô × tùy theo mạch quặng và ca làm việc quyết toán",
+            "功能效果": "Cung cấp nguồn khai thác liên tục quặng sắt lạnh thô."
+          },
+          "描述": "Khu tác nghiệp mạch quặng gồm mặt khai thác lộ thiên và hầm lò ngầm.",
+          "总占用空间": "Khoảng 90000m²"
+        },
+        "Lán Phân Loại Quặng": {
+          "品质": "uncommon",
+          "标签": [
+            "Loại hình: Cơ sở phân loại",
+            "Vị trí: Cơ sở mặt đất",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Phân loại quặng thô theo hàm lượng sắt lạnh và cấp độ tạp chất, giảm hao hụt khi vận chuyển và luyện."
+          },
+          "描述": "Lán phân loại kín đặt bên miệng mỏ, tiếp nhận quặng thô từ khu khai thác.",
+          "总占用空间": "Khoảng 1800m²"
+        }
+      }
+    }
+  ],
+  "商业与服务": [
+    {
+      "name": "Hiệu Sách Cảng Học Thuật Pháp Hoàn",
+      "cost": 75,
+      "rarity": "common",
+      "类型": "Cửa hàng",
+      "标签": [
+        "Chủ sở hữu: Thương hội khu cảng học thuật Pháp Hoàn",
+        "Mục đích: Bán sách / lưu thông tư liệu phép thuật",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Ổn định"
+      ],
+      "总空间": "Sân ngoài: biển hiệu lơ lửng, sân hẹp, cửa bốc dỡ; diện tích: 120m²|Tầng 1: khu giá sách thường, khu giáo trình, quầy thu ngân, chỗ đọc; diện tích: 260m²|Tầng 2: kho cổ tịch, tủ cuộn giấy, phòng sao chép, phòng nghỉ nhân viên; diện tích: 220m²|Tầng hầm: kho lưu trữ chống ẩm, phòng niêm phong tư liệu; diện tích: 180m²",
+      "结算": "Định giá tài sản: 3 triệu Z, các loại tiền tệ thế lực đều lưu thông; dự kiến thu nhập hằng năm: 150 nghìn Z, các loại tiền tệ thế lực đều lưu thông; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Pháp Hoàn Borens - Cảng Vụ Tinh - Khu cảng học thuật",
+      "描述": "Hiệu sách chuyên nghiệp phục vụ sinh viên, học giả của học viện Pháp Hoàn và khách phương xa, bán giáo trình ma đạo, tư liệu phép thuật, cuộn giấy sao chép và cổ tịch đã qua đăng ký. Cửa tiệm dùng tường đá chống ẩm và ánh sáng vụ tinh dịu nhẹ, kho cổ tịch và tủ cuộn giấy được quản lý riêng biệt, phù hợp với định vị thành phố coi trọng cả mậu dịch kỹ thuật lẫn giáo dục pháp thuật của Cảng Vụ Tinh.",
+      "内部资产": {}
+    },
+    {
+      "name": "Tửu Quán Chanh Chua",
+      "cost": 125,
+      "rarity": "uncommon",
+      "类型": "Cửa hàng",
+      "标签": [
+        "Chủ sở hữu: <user>",
+        "Mục đích: Kinh doanh tửu quán",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Ổn định"
+      ],
+      "总空间": "Sảnh ngoài: 6 chỗ ngồi thư giãn có mái che; diện tích: 80m²|Tầng 1: quầy bar, chỗ ngồi rời, bếp, phòng chứa đồ, nhà vệ sinh; diện tích: 400m²|Tầng 2: 12 phòng riêng; diện tích: 350m²|Tầng 3: phòng tiếp khách, ký túc nhân viên; diện tích: 200m²",
+      "结算": "Định giá tài sản: 5,3 triệu Z; dự kiến thu nhập hằng năm: 250 nghìn Z; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "",
+      "描述": "Một tửu quán nhỏ ấm cúng giữa thị trấn, pha chế đủ loại rượu và bán các món ăn nhanh.",
+      "内部资产": {
+        "Quầy Bar": {
+          "品质": "uncommon",
+          "标签": [
+            "Loại hình: Cơ sở ẩm thực",
+            "Vị trí: Tầng 1",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "产出": "Đồ uống, món ăn nhanh, dịch vụ giao lưu cho lữ khách"
+          },
+          "描述": "Quầy bar bằng gỗ đỏ, tủ rượu bày đủ các loại rượu kinh điển, bên cạnh đặt hai thùng bia mạch nha.",
+          "总占用空间": "Khoảng 80m²"
+        }
+      }
+    },
+    {
+      "name": "Hiệu Thuốc Phù Đảo Khung Đỉnh",
+      "cost": 250,
+      "rarity": "uncommon",
+      "类型": "Cửa hàng",
+      "标签": [
+        "Chủ sở hữu: <user>",
+        "Mục đích: Trồng dược thảo mây / bán dược tễ",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Ổn định"
+      ],
+      "总空间": "Thân hiệu thuốc: quầy tiếp đón, phòng trưng bày dược liệu, phòng bào chế, phòng sấy; diện tích: 460m²|Vườn dược phù đảo: bệ trồng dược thảo mây, lán che sáng, bể chứa nước; diện tích: 600m²|Tầng lưu trữ: kho dược liệu, kho thành phẩm; diện tích: 220m²",
+      "结算": "Định giá tài sản: 10 triệu Z Đồng Thánh Vũ; dự kiến thu nhập hằng năm: 500 nghìn Z Đồng Thánh Vũ; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Thánh Quốc Dực Dân Vania - Thánh Đô - Đài mép phù đảo Khung Đỉnh Thánh Vực",
+      "描述": "Một hiệu thuốc trên không đặt tại đài mép phù đảo của Thiên Không Thánh Vực, dùng ánh sáng ổn định của phù đảo để trồng dược thảo mây, bán dược tễ tịnh hóa và dược liệu chữa lành cho các thánh chức giả, tín đồ hành hương và tộc Dực Dân cấp cao.",
+      "内部资产": {
+        "Vườn Dược Trên Không": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Cơ sở trồng trọt",
+            "Vị trí: Vườn dược phù đảo",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "产出": "Dược thảo mây và dược liệu trên không."
+          },
+          "描述": "Vườn dược được bố trí sát đường gió mép phù đảo, hứng trọn ánh sáng đặc biệt của Thiên Không Thánh Vực.",
+          "总占用空间": "Khoảng 540m²"
+        }
+      }
+    },
+    {
+      "name": "Tửu Quán Kỷ Niệm Tứ Diệp Thảo Thành Ngân Phàm",
+      "cost": 150,
+      "rarity": "uncommon",
+      "类型": "Cửa hàng",
+      "标签": [
+        "Chủ sở hữu: Thương Hội Kim Sư",
+        "Mục đích: Kinh doanh tửu quán / giao lưu hải thương / ẩm thực cho lữ khách",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Ổn định"
+      ],
+      "总空间": "Tầng 1: quầy bar, chỗ ngồi rời, bếp, phòng chứa đồ, nhà vệ sinh; diện tích: 400m²|Tầng 2: 12 phòng riêng; diện tích: 340m²|Tầng 3: phòng tiếp khách, ký túc nhân viên; diện tích: 220m²",
+      "结算": "Định giá tài sản: 6 triệu Z Đồng Trân Châu; dự kiến thu nhập hằng năm: 300 nghìn Z Đồng Trân Châu; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Vương Quốc Solentis - Thành Ngân Phàm - Khu mậu dịch tự do",
+      "描述": "Tửu quán hải thương lấy chủ đề Nữ Thần Lữ Đồ Và Hạnh Vận Tyche cùng đồng kỷ niệm tứ diệp thảo, luôn thu hút ổn định các đoàn thương, thủy thủ và du khách tìm bạn đời. Mật độ giao lưu ở đây tạo ra vô số cuộc gặp gỡ tự nhiên và các buổi hội thương, là một nút dịch vụ công khai trong mạng lưới mậu dịch của Thành Ngân Phàm.",
+      "内部资产": {
+        "Quầy Bar Chủ Đề Tyche": {
+          "品质": "uncommon",
+          "标签": [
+            "Loại hình: Cơ sở ẩm thực",
+            "Vị trí: Tầng 1",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "产出": "Đồ uống, món ăn nhanh, dịch vụ giao lưu cho lữ khách"
+          },
+          "描述": "Quầy bar chính trưng bày đồng kỷ niệm tứ diệp thảo và đèn hải tinh, cung cấp rượu địa phương và món ăn nhẹ hải sản.",
+          "总占用空间": "Khoảng 80m²"
+        }
+      }
+    },
+    {
+      "name": "Cửa Hàng Tiếp Tế Mạo Hiểm Chợ Vạn Vật",
+      "cost": 150,
+      "rarity": "uncommon",
+      "类型": "Cửa hàng",
+      "标签": [
+        "Chủ sở hữu: Liên thể thương hộ Chợ Vạn Vật",
+        "Mục đích: Bán lẻ nhu yếu phẩm",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Ổn định"
+      ],
+      "总空间": "Tầng 1: khu kệ hàng, quầy thu ngân, bàn kiểm hàng, kho sau, phòng nghỉ nhân viên; diện tích: 300m²",
+      "结算": "Định giá tài sản: 6 triệu Z Đồng Đế Miện; dự kiến thu nhập hằng năm: 300 nghìn Z Đồng Đế Miện; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Thành Nova · Valentia - Khu Vực Trung Thành - Chợ Vạn Vật - Tầng 2 mặt đất",
+      "描述": "Cửa hàng tiếp tế bình dân trong tầng giao dịch của Chợ Vạn Vật, bán lương khô, đuốc, dây thừng, dược tễ sơ cấp, dụng cụ dã ngoại và vật tư tiêu hao cho người mạo hiểm. Giao dịch được chấp nhận giám định chính thức và quản lý trật tự chợ, thu phí 1% theo quy tắc chợ.",
+      "内部资产": {}
+    },
+    {
+      "name": "Hãng Mậu Dịch Kim Vụ",
+      "cost": 600,
+      "rarity": "rare",
+      "类型": "Tổ hợp sản nghiệp",
+      "标签": [
+        "Chủ sở hữu: Thương Hành Kim Vụ",
+        "Mục đích: Mậu dịch vụ tinh / kỹ thuật Pháp Hoàn / hàng hóa viễn dương",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Biến động"
+      ],
+      "总空间": "Sân ngoài: bãi quay xe hàng, đài bốc dỡ, bảng quảng cáo lơ lửng; diện tích: 600m²|Tầng 1: sảnh trưng bày, sảnh đàm phán giá, quầy chứng từ, khu chờ khách hàng; diện tích: 520m²|Tầng 2: văn phòng thương vụ, phòng giám định, phòng ký khế ấn; diện tích: 420m²|Tầng hầm: kho vụ tinh, kho cuộn giấy kỹ thuật, phòng bảo quản hàng quý giá; diện tích: 560m²",
+      "结算": "Định giá tài sản: 24 triệu Z, các loại tiền tệ thế lực đều lưu thông; dự kiến thu nhập hằng năm: 1,2 triệu Z, các loại tiền tệ thế lực đều lưu thông; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Pháp Hoàn Borens - Cảng Vụ Tinh - Khu Trung Tâm Tinh Miêu",
+      "描述": "Hãng mậu dịch tổng hợp phục vụ thương hội các nước, môi giới thuyền vụ và cơ quan nghiên cứu, kinh doanh vụ tinh, cuộn giấy kỹ thuật Pháp Hoàn, hàng hóa viễn dương và các sản phẩm trưng bày từ Tinh Hoàn Bác Lãm Hội. Ngân hàng và hệ thống cảng vụ của Khu Trung Tâm Tinh Miêu cung cấp cho hãng chứng từ và quyết toán bằng khế ấn phép thuật, phù hợp quy tắc thương mại không dùng nhiều tiền mặt cho hàng hóa giá trị cao.",
+      "内部资产": {
+        "Kho Giám Định Và Niêm Phong Vụ Tinh": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Cơ sở kho vận / giám định",
+            "Vị trí: Tầng hầm",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Đăng ký, phân cấp, niêm phong và giao nhận vụ tinh, giảm hao hụt và tranh chấp khi vận chuyển.",
+            "情境效果": "Khi lấy hoặc cất vụ tinh đã đăng ký hoặc cuộn giấy kỹ thuật tại kho này, tài nguyên tự động sắp xếp, chỉ áp dụng cho hàng hóa do kho này bảo quản."
+          },
+          "描述": "Đơn vị kho vận chuyên dụng trang bị tủ chống ẩm, đánh dấu phân màu và niêm phong khế ấn.",
+          "总占用空间": "Khoảng 260m²"
+        }
+      }
+    },
+    {
+      "name": "Xưởng May Đo Áo Choàng Tinh Quán",
+      "cost": 1000,
+      "rarity": "rare",
+      "类型": "Cửa hàng",
+      "标签": [
+        "Chủ sở hữu: <user>",
+        "Mục đích: Vải phù văn / may đo trang phục quý tộc",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Ổn định"
+      ],
+      "总空间": "Sảnh tiếp đón: phòng đo, hành lang mẫu áo, phòng quý khách; diện tích: 420m²|Phòng dệt: khung dệt phù văn, bàn thêu, phòng nhuộm; diện tích: 780m²|Phòng cắt: bàn cắt trang phục, phòng thử áo, phòng chỉnh sửa; diện tích: 480m²|Kho vải: tơ tinh linh, thuốc nhuộm phép thuật, tủ thành phẩm; diện tích: 320m²",
+      "结算": "Định giá tài sản: 40 triệu Z Đồng Tinh Quán; dự kiến thu nhập hằng năm: 2 triệu Z Đồng Tinh Quán; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Vương Đình Tinh Linh - Lutetia - Ngoại hoàn Vũ Hoàn - Khu Huyền Tinh",
+      "描述": "Cửa hiệu may đo cao cấp đặt tại khu học nghệ và cư trú tao nhã của Lutetia, chế tác vải phù văn, pháp bào và trang phục lễ nghi nhẹ nhàng bền chắc cho quý tộc vương đình, sứ giả và lữ khách viễn dương; đơn hàng có thể qua khu bến cảng phía Nam chuyển đến Cảng Bạch Diễm.",
+      "内部资产": {
+        "Xưởng Dệt Phù Văn": {
+          "品质": "epic",
+          "标签": [
+            "Loại hình: Cơ sở dệt vải",
+            "Vị trí: Phòng dệt",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "产出": "Vải phù văn, vải hộ thân nhẹ và vải lễ nghi.",
+            "生产检定": "Kiểm định [May Vá], DC cơ bản -8, thời gian sản xuất -40%."
+          },
+          "描述": "Xưởng dệt vải cao cấp bằng tơ tinh linh và thuốc nhuộm phép thuật.",
+          "总占用空间": "Khoảng 500m²"
+        },
+        "Phòng Cắt May Quý Tộc": {
+          "品质": "epic",
+          "标签": [
+            "Loại hình: Cơ sở may đo",
+            "Vị trí: Phòng cắt",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Cung cấp dịch vụ đo người, cắt vải, thêu phù văn và may đo trang phục."
+          },
+          "描述": "Không gian cắt may riêng dành cho quý tộc vương đình và khách ngoại giao.",
+          "总占用空间": "Khoảng 480m²"
+        }
+      }
+    },
+    {
+      "name": "Sòng Bạc Xoáy Vàng Vịnh Trân Châu",
+      "cost": 2300,
+      "rarity": "epic",
+      "类型": "Cửa hàng",
+      "标签": [
+        "Chủ sở hữu: Gia Tộc Field",
+        "Mục đích: Cờ bạc hợp pháp / du lịch giải trí / tiếp đãi quý khách",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Biến động",
+        "Loại hợp đồng: Chia lợi nhuận"
+      ],
+      "总空间": "Tòa chính: sảnh cờ bạc, sảnh đổi phỉnh, khu ẩm thực, khu bàn bài dạng kịch trường, hành lang an ninh; diện tích: 4600m²|Tầng cao: sảnh quý khách, phòng riêng, phòng kế toán, hành lang ngắm cảnh; diện tích: 1400m²|Tầng hầm: kho báu, phòng thiết bị, hành lang nhân viên; diện tích: 1000m²",
+      "结算": "Định giá tài sản: 92 triệu Z Đồng Trân Châu; dự kiến thu nhập hằng năm: 4,6 triệu Z Đồng Trân Châu; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Vương Quốc Solentis - Vịnh Trân Châu - Xoáy Vàng",
+      "描述": "Sòng bạc cao tầng được xây trên một con trai khổng lồ đã hóa đá thời viễn cổ, sảnh quý khách trên đỉnh cho phép đặt cược cực cao, còn du khách thường tham gia cờ bạc đủ thể loại được giám sát ở các tầng dưới. Sòng bạc lấy tiêu dùng du lịch, giải trí ngắm biển và quyết toán tài chính hợp pháp làm cốt lõi, không ngụy trang thành sào huyệt ngầm đơn thuần, phù hợp với định vị công khai lập quốc bằng thương mại, giải trí và dòng vốn của Solentis.",
+      "内部资产": {
+        "Sảnh Quý Khách Tầng Trên": {
+          "品质": "epic",
+          "标签": [
+            "Loại hình: Cơ sở cờ bạc",
+            "Vị trí: Đỉnh tòa chính",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Cung cấp sòng bài mức cược cao, quyết toán riêng và tiếp đãi quý khách; mức cược tối đa theo thỏa thuận trong sảnh."
+          },
+          "描述": "Sảnh quý khách ngắm biển dành cho vương thất, quý tộc và thương nhân xuyên quốc gia, có phòng kế toán riêng và quầy quyết toán khế ấn.",
+          "总占用空间": "Khoảng 800m²"
+        },
+        "Kho Báu Hải Tinh": {
+          "品质": "epic",
+          "标签": [
+            "Loại hình: Kho báu",
+            "Vị trí: Tầng hầm",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Bảo quản phỉnh, chứng từ thương hội và vật thế chấp quý giá, trang bị thiết bị chống trộm và niêm phong cơ bản."
+          },
+          "描述": "Kho báu kín nằm trong nền con trai khổng lồ, đảm nhận bảo quản ngắn hạn dòng tiền mặt của sòng bạc và vật thế chấp của quý khách.",
+          "总占用空间": "Khoảng 400m²"
+        }
+      }
+    },
+    {
+      "name": "Đấu Trường Miện Cát Đỏ",
+      "cost": 1700,
+      "rarity": "epic",
+      "类型": "Tổ hợp sản nghiệp",
+      "标签": [
+        "Chủ sở hữu: <user>",
+        "Mục đích: Nuôi dưỡng đấu sĩ / biểu diễn đấu trường thương mại / huấn luyện quyết đấu quý tộc",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Ổn định"
+      ],
+      "总空间": "Thân đấu trường: sân cát hình tròn, khán đài vòng, tầng lô có mái che, cổng vào, hành lang kiểm tra và áp giải; diện tích: 6800m²|Trại đấu sĩ: ký túc đấu sĩ, chuồng biệt giam, phòng y tế, nhà bếp, phòng đăng ký chiến tích; diện tích: 1800m²|Khu diễn tập: sân diễn võ, hành lang tập binh khí, chuồng ma thú và lồng vận chuyển, sân chịu tải; diện tích: 3600m²|Khu hậu cần: phòng kế toán vé và tiền cược, phòng đăng ký nô lệ, xưởng sửa trang bị, nhà thú y và kho cỏ khô; diện tích: 1400m²",
+      "结算": "Định giá tài sản: 68 triệu Z Đồng Đế Miện; dự kiến thu nhập hằng năm: 3,4 triệu Z Đồng Đế Miện; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Liên Bang Sahra - Azhar - Khu phố đấu sĩ ngoài rìa Liệt Dương Đại Giác Đấu Trường",
+      "描述": "Đấu trường tư nhân sát cạnh Liệt Dương Đại Giác Đấu Trường của Azhar, do Gia Tộc Khalid xuất vốn xây dựng và kinh doanh công khai. Các đấu sĩ do gia tộc nuôi dưỡng biểu diễn và tử chiến trên sân cát theo lịch trình, mang lại giải trí cho thương nhân, du khách và quý tộc trên khán đài, thu lợi qua vé vào cửa, lô riêng, pha lê truyền hình và tiền cược được giám sát; những ngày không thi đấu, sân được mở cho quý tộc — nơi họ tự mình xuống sân quyết đấu, mài giũa võ nghệ và giữ gìn thanh danh. Đấu sĩ, ma thú và sổ cược đều được ghi chép đầy đủ, là hình mẫu điển hình cho việc Azhar coi biểu diễn đẫm máu là ngành kinh doanh công khai, còn quý tộc coi năng lực chiến đấu là biểu tượng địa vị cần gìn giữ.",
+      "内部资产": {
+        "Trại Huấn Luyện Đấu Sĩ": {
+          "品质": "epic",
+          "标签": [
+            "Loại hình: Cơ sở nuôi dưỡng nhân lực",
+            "Vị trí: Trại đấu sĩ",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "产出": "Đấu sĩ đã qua huấn luyện bài bản, cùng vệ sĩ và võ giả biểu diễn có thể cho thuê ngoài.",
+            "功能效果": "Cung cấp khẩu phần ăn ở, quản chế khẩu phần ăn, biệt giam, chữa trị thương bệnh và đăng ký chiến tích, duy trì trạng thái chiến đấu và giá trị thương mại của đấu sĩ."
+          },
+          "描述": "Nơi ở của đấu sĩ được dựng từ giường tầng đá xây, chuồng biệt giam song sắt và thầy thuốc thường trực, chiến tích và giá trị được niêm yết công khai.",
+          "总占用空间": "Khoảng 1600m²"
+        },
+        "Sân Diễn Võ Cát Đỏ": {
+          "品质": "epic",
+          "标签": [
+            "Loại hình: Cơ sở huấn luyện",
+            "Vị trí: Khu diễn tập",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Cung cấp đầy đủ thiết bị huấn luyện binh khí, giao đấu, chịu tải, né tránh và đối kháng nhiều người.",
+            "战斗检定": "Khi luyện tập và thực chiến [Cận Chiến][Đỡ Đòn][Thể Thuật] tại sân này: kiểm định +2.",
+            "情境效果": "Sau khi hoàn thành huấn luyện có hệ thống tại sân này, hiệu suất tiên công và khí thế khi tham gia quyết đấu hoặc đấu trường chính thức trong thời gian ngắn sẽ tốt hơn, chỉ áp dụng cho người đã tự luyện tập."
+          },
+          "描述": "Sân tập lộ thiên rải cát mịn, chia khu theo loại binh khí, xung quanh có cọc gỗ, giá bia và bậc quan sát.",
+          "总占用空间": "Khoảng 2400m²"
+        },
+        "Sân Quyết Đấu Quý Tộc": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Cơ sở quyết đấu",
+            "Vị trí: Sân trong của thân đấu trường",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Cung cấp sân quyết đấu danh dự quý tộc có người làm chứng, hộ cụ, ghế trọng tài và vị trí phép thuật cầm máu hồi phục, có thể chuyển đổi luật gây chết hoặc không gây chết theo thỏa thuận.",
+            "情境效果": "Quyết đấu danh dự phi sát thương tại sân này có sự bảo đảm của trọng tài và thầy thuốc, nguy cơ tử vong và tàn phế giảm mạnh."
+          },
+          "描述": "Sân quyết đấu ngay ngắn được khoanh bằng vòng phù văn giữa sân cát, có ghế chứng kiến gia tộc, ghế trọng tài và thầy thuốc luôn túc trực.",
+          "总占用空间": "Khoảng 1800m²"
+        },
+        "Chuồng Ma Thú Và Rào Thú": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Cơ sở nuôi nhốt ma thú",
+            "Vị trí: Khu diễn tập",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "产出": "Ma thú sa mạc có thể dùng cho biểu diễn người-thú và cược đấu.",
+            "功能效果": "Cung cấp nuôi nhốt, thuần hóa, hành lang vận chuyển và bảo trì chuồng ma thú, phối hợp lịch thi đấu để ra sân và dưỡng sức."
+          },
+          "描述": "Cụm chuồng đá nửa chìm dưới lớp cát, có cổng đôi, lỗ cho ăn và hành lang che nắng dẫn ra sân cát.",
+          "总占用空间": "Khoảng 900m²"
+        }
+      }
+    }
+  ],
+  "公共与医疗": [
+    {
+      "name": "Y Quán Tỷ Muội Hội Thánh Aethera",
+      "cost": 75,
+      "rarity": "common",
+      "类型": "Y quán",
+      "标签": [
+        "Chủ sở hữu: Tỷ Muội Hội Thánh Aethera",
+        "Mục đích: Chữa trị / dược tễ",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Ổn định"
+      ],
+      "总空间": "Y quán: phòng tiếp đón, phòng khám, phòng trị liệu, phòng bào chế, phòng theo dõi; diện tích: 260m²|Vườn dược: luống dược thảo, hồ dẫn nước thánh tuyền; diện tích: 420m²",
+      "结算": "Định giá tài sản: 3 triệu Z Đồng Đế Miện; dự kiến thu nhập hằng năm: 150 nghìn Z Đồng Đế Miện; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Đế Quốc Augustim - Tỉnh Bích Sương - Trấn Ngân Khê - Tu Đạo Viện Tỷ Muội Hội Thánh Aethera - Y quán và vườn dược phía Đông Nam",
+      "描述": "Y quán nằm phía Đông Nam tu đạo viện của Tỷ Muội Hội Thánh Aethera, dựa vào vườn dược, điển tịch y học và thánh tuyền của tu viện để chữa trị thương bệnh cho dân Trấn Ngân Khê và những người được che chở, đồng thời bào chế dược tễ cơ bản.",
+      "内部资产": {}
+    },
+    {
+      "name": "Trường Tư Thục Mùa Đông Thành Bạch Diệu",
+      "cost": 225,
+      "rarity": "uncommon",
+      "类型": "Cửa hàng",
+      "标签": [
+        "Chủ sở hữu: <user>",
+        "Mục đích: Đọc viết cơ bản / toán số / dự bị văn quan liên minh",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Ổn định"
+      ],
+      "总空间": "Tầng 1: 4 giảng đường, phòng đọc, phòng tiếp đón, phòng chứa đồ; diện tích: 600m²|Tầng 2: phòng giáo viên, 4 phòng ở, kho giáo trình; diện tích: 600m²",
+      "结算": "Định giá tài sản: 9 triệu Z Khiên North; dự kiến thu nhập hằng năm: 450 nghìn Z Khiên North; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Liên Minh Northgard - Thành Bạch Diệu - Rìa khu công phường",
+      "描述": "Trường tư thục cơ bản dành cho con em thợ thủ công, học đồ thương hộ và thường dân chuẩn bị thi vào Đại Học Lẫm Đông, dạy đọc viết, toán số, kiến thức khế ước và tri thức tự nhiên cơ bản. Gần khu công phường nên chương trình học có thêm nội dung thực dụng như nhận biết vật liệu, ghi sổ sách và an toàn xưởng thợ.",
+      "内部资产": {
+        "Giảng Đường Cơ Bản": {
+          "品质": "uncommon",
+          "标签": [
+            "Loại hình: Cơ sở giảng dạy",
+            "Vị trí: Tầng 1",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 4,
+          "效果": {
+            "功能效果": "Cung cấp các môn đọc viết cơ bản, toán số, kiến thức khế ước và an toàn xưởng thợ."
+          },
+          "描述": "Giảng đường đá xây dành cho lớp học nhỏ, trang bị bảng đen, giáo cụ toán học và giáo trình cơ bản.",
+          "总占用空间": "Khoảng 360m²"
+        }
+      }
+    },
+    {
+      "name": "Giáo Đường Ánh Vũ Thánh Vực",
+      "cost": 475,
+      "rarity": "rare",
+      "类型": "Tổ hợp sản nghiệp",
+      "标签": [
+        "Chủ sở hữu: <user>",
+        "Mục đích: Lễ bái / tiếp đón hành hương / bảo dưỡng thánh cụ",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Ổn định"
+      ],
+      "总空间": "Chính điện: bệ tế phù văn thánh, hàng ghế lễ bái, cột thánh dẫn quang; diện tích: 1200m²|Viện phụ thuộc: sân cầu nguyện, sảnh tiếp đón, phòng ở giáo sĩ; diện tích: 700m²|Khu xưởng: phòng bảo dưỡng thánh cụ, giếng ánh sáng tịnh hóa, kho thánh liệu; diện tích: 500m²",
+      "结算": "Định giá tài sản: 19 triệu Z Đồng Thánh Vũ; dự kiến thu nhập hằng năm: 950 nghìn Z Đồng Thánh Vũ; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Thánh Quốc Dực Dân Vania - Thiên Không Thánh Vực - Cụm điện tầng dưới Khung Đỉnh Thánh Vực của Thánh Đô",
+      "描述": "Giáo đường của tộc Dực Dân, phụ thuộc vào cụm điện của Khung Đỉnh Thánh Vực để vận hành, tường ngọc trắng và trục vàng kim đón trọn ánh ban mai, hằng ngày đảm nhận lễ bái, tiếp đón hành hương và bảo dưỡng nghi lễ cho thánh cụ.",
+      "内部资产": {
+        "Bệ Tế Phù Văn Thánh": {
+          "品质": "epic",
+          "标签": [
+            "Loại hình: Cơ sở tôn giáo",
+            "Vị trí: Trục giữa chính điện",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Chủ trì lễ bái và thánh lễ, tiếp đón người hành hương, và cung cấp bảo dưỡng cộng hưởng thánh quang cho thánh cụ đã đăng ký."
+          },
+          "描述": "Trung tâm nghi lễ nối liền với cột thánh dẫn quang trong chính điện.",
+          "总占用空间": "Khoảng 80m²"
+        },
+        "Giếng Ánh Sáng Tịnh Hóa": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Cơ sở tịnh hóa",
+            "Vị trí: Khu xưởng",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Tịnh hóa thánh liệu và cung cấp ánh sáng cho Tịnh Vũ Lễ cùng chữa lành cơ bản."
+          },
+          "描述": "Giếng ánh sáng thẳng đứng được duy trì bằng phù văn cổ của tộc Dực Dân.",
+          "总占用空间": "Khoảng 60m²"
+        }
+      }
+    }
+  ],
+  "生产与工坊": [
+    {
+      "name": "Xưởng Tinh Chế Hương Liệu Sa Hải Xích Kim",
+      "cost": 120,
+      "rarity": "uncommon",
+      "类型": "Xưởng thủ công",
+      "标签": [
+        "Chủ sở hữu: Thương hội hương liệu Liên Bang Sahra",
+        "Mục đích: Tinh chế hương liệu / chế biến thuốc nhuộm / đóng gói đường dài",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Ổn định"
+      ],
+      "总空间": "Sân ngoài: lán dỡ nguyên liệu, giá phơi khô, bãi bốc dỡ đoàn lạc đà; diện tích: 420m²|Tầng 1: phòng phân loại hương liệu, phòng nghiền, phòng chưng cất, phòng đóng gói; diện tích: 520m²|Tầng 2: phòng pha chế thuốc nhuộm, phòng giám định chất lượng, văn phòng thương hội; diện tích: 300m²|Tầng hầm: kho hương liệu chống ẩm, kho hàng quý giá; diện tích: 360m²",
+      "结算": "Định giá tài sản: 6 triệu Z Đồng Đế Miện; dự kiến thu nhập hằng năm: 225 nghìn Z Đồng Đế Miện; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Liên Bang Sahra - Thương lộ Sa Hải Xích Kim - Khu mậu dịch bán buôn Azhar",
+      "描述": "Thu mua hương liệu từ ruộng ốc đảo và các loài thực vật đặc sắc dọc thương lộ, qua sấy khô, phân loại, nghiền, chưng cất và đóng gói kín, sau đó bán buôn cho các thành phố liên bang và đoàn thương xuyên biên giới. Kho mát, thiết bị chưng cất và bao bì chống ẩm đường dài của xưởng thích nghi với khí hậu sa mạc, khiến hương liệu vừa mang giá trị tiêu dùng thường nhật, vừa có giá trị lễ hội tôn giáo, kỹ nghệ nhuộm và mậu dịch xa xỉ.",
+      "内部资产": {
+        "Dây Chuyền Chưng Cất Và Tinh Chế Hương Liệu": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Thiết bị tinh chế",
+            "Vị trí: Phòng chưng cất tầng 1",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 2,
+          "效果": {
+            "产出": "Hương liệu tinh chế, tinh dầu và nguyên liệu thuốc nhuộm.",
+            "功能效果": "Hoàn thành tinh chế hương liệu qua sấy khô, phân loại, nghiền, chưng cất và đóng gói kín, nâng cao độ tinh khiết, thời hạn bảo quản và độ ổn định khi vận chuyển đường dài."
+          },
+          "描述": "Tháp chưng cất bằng đồng và hệ thống ống ngưng kết hợp công trình học Sahra với luyện kim thuật.",
+          "总占用空间": "Khoảng 120m²"
+        }
+      }
+    },
+    {
+      "name": "Phòng Thí Nghiệm Thiết Bị Ma Đạo Số 107",
+      "cost": 150,
+      "rarity": "uncommon",
+      "类型": "Xưởng thủ công",
+      "标签": [
+        "Chủ sở hữu: Xứ quản lý liên hợp cơ sở nghiên cứu Pháp Hoàn",
+        "Mục đích: Nghiên cứu phát triển thiết bị ma đạo / thử nghiệm vật liệu",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Biến động"
+      ],
+      "总空间": "Sân ngoài: sân đệm chống nổ, đài dỡ vật liệu; diện tích: 100m²|Tầng 1: phòng lắp ráp thiết bị, bàn hiệu chỉnh, kho công cụ, phòng tiếp đón; diện tích: 400m²|Tầng 2: phòng thử năng lượng, phòng thử nguyên tố, phòng nghiên cứu viên; diện tích: 400m²|Tầng hầm: kho vật liệu nguy hiểm, phòng thí nghiệm cách ly, phòng niêm phong phế liệu; diện tích: 300m²",
+      "结算": "Định giá tài sản: 7 triệu Z, các loại tiền tệ thế lực đều lưu thông; dự kiến thu nhập hằng năm: 300 nghìn Z, các loại tiền tệ thế lực đều lưu thông; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Pháp Hoàn Borens - Cảng Vụ Tinh - Giao giữa Khu Học Viện Tịch Triều và khu cảng học thuật",
+      "描述": "Phòng thí nghiệm hợp quy cho nhà nghiên cứu đã được chứng nhận thuê và nhận dự án chuyển hóa thiết bị, trọng tâm xử lý thiết bị ma đạo, mạch năng lượng và thử nghiệm vật liệu nguyên tố. Nó kế thừa truyền thống nghiên cứu thực dụng và trung lập của Pháp Hoàn Borens, dùng kết giới chống nổ, phân khu vật liệu nguy hiểm và niêm phong phế liệu thí nghiệm để đảm bảo an toàn cho sản xuất kỹ thuật mật độ cao của khu cảng.",
+      "内部资产": {
+        "Bàn Hiệu Chỉnh Và Thử Nghiệm Tổng Hợp": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Thiết bị chuyên dụng",
+            "Vị trí: Phòng lắp ráp thiết bị tầng 1",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 2,
+          "效果": {
+            "功能效果": "Hỗ trợ lắp ráp thiết bị ma đạo, hiệu chỉnh mạch năng lượng và thử nghiệm vật liệu nguyên tố."
+          },
+          "描述": "Thiết bị thử nghiệm tổng hợp gồm mạch tiêu chuẩn Pháp Hoàn, mặt bàn kim loại chống ăn mòn và máy đọc số vụ tinh.",
+          "总占用空间": "Khoảng 80m²"
+        },
+        "Phòng Thí Nghiệm Cách Ly Chống Nổ": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Cơ sở an toàn",
+            "Vị trí: Tầng hầm",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Cách ly thí nghiệm năng lượng cao và phản ứng mất kiểm soát, hạn chế nổ, rò rỉ và ô nhiễm ma lực lan ra ngoài."
+          },
+          "描述": "Đơn vị thí nghiệm kín được chôn trong nền đá ngầm, bên ngoài phủ nhiều lớp kết giới chống nổ.",
+          "总占用空间": "Khoảng 120m²"
+        }
+      }
+    },
+    {
+      "name": "Xưởng Luyện Kim Đông Kết Vụ Tinh",
+      "cost": 200,
+      "rarity": "uncommon",
+      "类型": "Xưởng thủ công",
+      "标签": [
+        "Chủ sở hữu: Xưởng được Ngưng Tinh Bí Xã chứng nhận",
+        "Mục đích: Tinh luyện sương biển / đông kết vụ tinh / cắt gọt tinh thể",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Biến động"
+      ],
+      "总空间": "Sân ngoài: dốc nhập liệu, tháp thoát khói, khu đệm; diện tích: 360m²|Tầng 1: phòng nhận sương biển, phòng tinh luyện, phòng thuốc thử, quầy giám định; diện tích: 440m²|Tầng 2: phòng lò đông kết, phòng cắt tinh thể, phòng gia công vật liệu ma đạo; diện tích: 420m²|Tầng hầm: kho dung dịch chưa ổn định, kho thành phẩm, phòng niêm phong chống nổ; diện tích: 360m²",
+      "结算": "Định giá tài sản: 8,5 triệu Z, các loại tiền tệ thế lực đều lưu thông; dự kiến thu nhập hằng năm: 400 nghìn Z, các loại tiền tệ thế lực đều lưu thông; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Pháp Hoàn Borens - Cảng Vụ Tinh - Khu công phường Ngưng Tinh",
+      "描述": "Xưởng thủ công được chứng nhận chuyên xử lý cầu dung dịch sương biển ba màu, không phải tiệm dược tễ thông thường. Xưởng trước tiên phân loại và tinh luyện dung dịch sương biển chưa ổn định, sau đó dùng lò đông kết định hình thành vụ tinh, rồi tiến hành cắt tinh thể, giám định chất lượng và gia công theo quy cách vật liệu ma đạo. Vụ tinh ba màu vàng-tím-lục hoàn tất quá trình chuyển hóa từ dung dịch thô thành vật liệu có thể đăng ký, giữa kết giới chống nổ và làn khói phát quang mờ ảo.",
+      "内部资产": {
+        "Lò Đông Kết Vụ Tinh": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Thiết bị chuyên dụng",
+            "Vị trí: Phòng lò đông kết tầng 2",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 2,
+          "效果": {
+            "产出": "Đông kết dung dịch sương biển ba màu đã tinh luyện thành vụ tinh.",
+            "炼金生产检定": "+3",
+            "材料加工": "Gia công dung dịch sương biển ba màu đã tinh luyện thành vật liệu vụ tinh có thể đăng ký."
+          },
+          "描述": "Thiết bị đông kết trang bị kim châm dẫn dòng bằng đồng thau và vạch chia phân màu, kết quả xử lý chịu ảnh hưởng bởi phẩm chất và hiệu ứng của dung dịch sương biển thô.",
+          "总占用空间": "Khoảng 90m²"
+        },
+        "Bàn Cắt Tinh Thể Và Gia Công Vật Liệu": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Thiết bị vật liệu ma đạo",
+            "Vị trí: Phòng gia công tầng 2",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 3,
+          "效果": {
+            "功能效果": "Hoàn thành cắt gọt, đánh bóng, quy cách hóa vụ tinh và gia công vật liệu ma đạo, hỗ trợ khảm ghép và chế tạo thiết bị về sau."
+          },
+          "描述": "Dùng dao ma lực chính xác và kẹp giảm chấn thấp để xử lý vụ tinh dễ vỡ, dễ biến chất.",
+          "总占用空间": "Khoảng 100m²"
+        }
+      }
+    },
+    {
+      "name": "Học Viện Công Nghệ Xa Xỉ Phẩm Thiên Sa",
+      "cost": 220,
+      "rarity": "uncommon",
+      "类型": "Xưởng thủ công",
+      "标签": [
+        "Chủ sở hữu: Liên minh công nghệ tài phiệt Azhar",
+        "Mục đích: Thảm phép thuật / vải vóc xa xỉ / may đo quý tộc",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Biến động"
+      ],
+      "总空间": "Sân trong: sân đón khách, đài phơi thuốc nhuộm, cửa hàng hóa; diện tích: 260m²|Tầng 1: sảnh dệt, sảnh tiếp đón thường, kho vật liệu, sảnh trưng bày thành phẩm; diện tích: 520m²|Tầng 2: phòng dệt thảm phép thuật, phòng thêu, phòng nhuộm, phòng thiết kế; diện tích: 460m²|Tầng 3: sảnh may đo quý tộc, phòng thử áo, tủ niêm phong; diện tích: 280m²",
+      "结算": "Định giá tài sản: 8,9 triệu Z Đồng Đế Miện; dự kiến thu nhập hằng năm: 450 nghìn Z Đồng Đế Miện; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Liên Bang Sahra - Azhar - Khu thương mại công nghệ Quảng Trường Thiên Sa",
+      "描述": "Lấy đài phun nước và màn lụa của Quảng Trường Thiên Sa làm bối cảnh văn hóa, học viện phục vụ thương gia giàu có, quý tộc và sứ thần ngoại quốc. Thợ thủ công kết hợp thuốc nhuộm sa mạc, vải vóc tinh xảo, sợi ma lực và họa tiết địa vị để chế tác thảm phép thuật, vải điều nhiệt, trang phục lễ nghi và đồ đặt riêng mang tính biểu tượng của cải, thể hiện phong cách xã hội coi trọng của cải, thẩm mỹ và tay nghề của Sahra.",
+      "内部资产": {
+        "Thiết Bị Dệt Thảm Phép Thuật": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Thiết bị dệt phép thuật",
+            "Vị trí: Phòng dệt thảm phép thuật tầng 2",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 6,
+          "效果": {
+            "产出": "Thảm phép thuật thương mại, vải quý tộc và vải xa xỉ có hiệu ứng giữ nhiệt hoặc tự làm sạch.",
+            "裁缝生产检定": "+2"
+          },
+          "描述": "Bộ thiết bị gồm khung dệt đạp chân, thoi ma lực và trận khóa họa tiết.",
+          "总占用空间": "Khoảng 180m²"
+        }
+      }
+    },
+    {
+      "name": "Xưởng Nhưỡng Sương Thụ Lộ",
+      "cost": 250,
+      "rarity": "uncommon",
+      "类型": "Xưởng thủ công",
+      "标签": [
+        "Chủ sở hữu: <user>",
+        "Mục đích: Nhưỡng trái cây cổ thụ / chế biến đồ uống nhựa cây",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Ổn định"
+      ],
+      "总空间": "Sảnh nhưỡng: phòng lên men, phòng pha chế, hầm chum gốm; diện tích: 900m²|Viện thu hoạch: bàn phân loại trái cây, hồ tạm chứa nhựa cây, bàn rửa; diện tích: 650m²|Kho thành phẩm: kho đóng chai, phòng vận chuyển thương lộ; diện tích: 350m²",
+      "结算": "Định giá tài sản: 10 triệu Z Đồng Tinh Quán; dự kiến thu nhập hằng năm: 500 nghìn Z Đồng Tinh Quán; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Vương Đình Tinh Linh - Elvenheim - Vòng thứ ba Dục Mộc Chi Hoàn",
+      "描述": "Xưởng nhưỡng của tinh linh được xây dựa vào Thế Giới Thụ Học Hoàn và đài luyện dược, dùng trái cây cổ thụ, sương lộ mộng thúy nồng độ thấp và nhựa cây đã đăng ký để pha chế rượu trái cây và đồ uống trường sinh không cồn, thành phẩm qua Lâm Duyên Chi Hoàn đến với đoàn thương thú tộc và thương lộ vương đình.",
+      "内部资产": {
+        "Phòng Lên Men Trái Cây Cổ Thụ": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Cơ sở nhưỡng tạo",
+            "Vị trí: Sảnh nhưỡng",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "产出": "Rượu trái cây cổ thụ, rượu nhựa cây nhẹ độ và đồ uống trường sinh.",
+            "功能效果": "Cung cấp thiết bị phân loại, rửa, lên men, pha chế và ủ hầm cho quá trình nhưỡng tạo."
+          },
+          "描述": "Phòng nhưỡng kín tận dụng nhiệt độ cây sống và ma lực tự nhiên để giữ ổn định quá trình lên men.",
+          "总占用空间": "Khoảng 500m²"
+        }
+      }
+    },
+    {
+      "name": "Xưởng Đóng Tàu Thiết Chùy Dữ Miêu",
+      "cost": 600,
+      "rarity": "rare",
+      "类型": "Xưởng thủ công",
+      "标签": [
+        "Chủ sở hữu: Ủy Ban Cảng Vụ Cảng Vụ Tinh",
+        "Mục đích: Đóng thuyền phép thuật / sửa chữa thuyền bắt sương",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Biến động"
+      ],
+      "总空间": "Ụ tàu: ụ tàu lộ thiên cỡ lớn, cần cẩu hắc thiết, bãi gỗ; diện tích: 1800m²|Tầng 1: lán lắp ráp thân tàu, phòng xử lý gỗ phù chú, phòng buồm, phòng nghỉ công nhân; diện tích: 1400m²|Tầng 2: phòng thiết kế thuyền, phòng mạch ma đạo, sảnh nghiệm thu; diện tích: 600m²|Tầng hầm: kho lõi động lực vụ tinh, kho vật liệu thuyền, kho phụ tùng sửa chữa; diện tích: 800m²",
+      "结算": "Định giá tài sản: 26,25 triệu Z, các loại tiền tệ thế lực đều lưu thông; dự kiến thu nhập hằng năm: 1,2 triệu Z, các loại tiền tệ thế lực đều lưu thông; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Pháp Hoàn Borens - Cảng Vụ Tinh - Khu Cảng Cự Lãng",
+      "描述": "Nằm ở cảng nước sâu đối diện trực tiếp khu bắt sương ngoài khơi xa, vỏ ngoài được cấu thành từ hắc thiết hạng nặng và gỗ phù chú, phía trên ụ tàu lộ thiên quanh năm lóe sáng lực trường ổn định màu đỏ thẫm. Xưởng đóng tàu kết hợp nhu cầu hàng hải viễn dương vùng ven biển Đông Bắc với kỹ thuật ma đạo Pháp Hoàn, nhận đóng và bảo trì thuyền dẫn dòng, thuyền bắt sương, thuyền phù không và tàu phép thuật viễn dương.",
+      "内部资产": {
+        "Lực Trường Ổn Định Đỏ Thẫm": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Thiết bị bảo hộ ụ tàu",
+            "Vị trí: Trên ụ tàu lộ thiên",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Ổn định quá trình đóng và sửa chữa lớn thân tàu, chống gió biển, xung kích ma lực và biến dạng thân tàu chưa hoàn thiện."
+          },
+          "描述": "Mảng lực trường đỏ bao phủ ụ tàu chính, là thiết bị then chốt để xưởng xử lý thân tàu phép thuật cỡ lớn.",
+          "总占用空间": "Bao phủ khoảng 1200m²"
+        },
+        "Bàn Lắp Ráp Tàu Phép Thuật": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Thiết bị đóng thuyền",
+            "Vị trí: Lán lắp ráp thân tàu",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 2,
+          "效果": {
+            "产出": "Thuyền dẫn dòng, thuyền bắt sương, thuyền phù không và tàu phép thuật viễn dương.",
+            "功能效果": "Hỗ trợ lắp ráp đồng bộ thân tàu cỡ lớn, động lực ma đạo và mạch ổn định."
+          },
+          "描述": "Bàn lắp ráp hạng nặng gắn phù văn cẩu nâng và mạch định vị thân tàu.",
+          "总占用空间": "Khoảng 700m²"
+        }
+      }
+    },
+    {
+      "name": "Xưởng Đóng Tàu Viễn Dương Ma Đạo Ngân Phàm",
+      "cost": 9999,
+      "rarity": "legendary",
+      "类型": "Xưởng thủ công",
+      "标签": [
+        "Chủ sở hữu: Liên hội thuyền vụ Thành Ngân Phàm",
+        "Mục đích: Đóng thuyền ma đạo / sửa chữa tàu cỡ lớn",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Biến động"
+      ],
+      "总空间": "Khu ụ tàu: 2 ụ khô, 1 ụ lắp ráp nước sâu, 2 bệ sống tàu; diện tích: 26000m²|Khu xưởng: kho vật liệu thuyền, xưởng ngư cụ ma đạo, lán đinh tán, phòng thiết kế; diện tích: 10000m²|Khu tác nghiệp ngoài cảng: bến thử tàu, đài cẩu nâng, khu giao nhận thủy thủ; diện tích: 6000m²",
+      "结算": "Định giá tài sản: 420 triệu Z Đồng Trân Châu; dự kiến thu nhập hằng năm: 21 triệu Z Đồng Trân Châu; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Vương Quốc Solentis - Thành Ngân Phàm - Ngân Phàm Thuyền Ổ",
+      "描述": "Xưởng đóng tàu viễn dương nằm ở cảng nước sâu cửa vịnh, có thể đóng những con tàu khổng lồ ma đạo và đảm nhận cải tạo, sửa chữa thương thuyền. Ụ tàu kết nối vật liệu thuyền, thiết bị ma đạo và dịch vụ tài chính của cảng mậu dịch tự do, đơn hàng biến động theo nhu cầu mậu dịch viễn dương và hải quân vương quốc.",
+      "内部资产": {
+        "Ụ Lắp Ráp Nước Sâu": {
+          "品质": "epic",
+          "标签": [
+            "Loại hình: Cơ sở đóng thuyền",
+            "Vị trí: Khu ụ tàu",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "产出": "Dịch vụ đóng và cải tạo thương thuyền cỡ lớn, thuyền viễn dương ma đạo"
+          },
+          "描述": "Cơ sở lắp ráp nước sâu có thể chứa thân tàu cỡ lớn, đi kèm hệ thống cẩu nâng và thoát nước.",
+          "总占用空间": "Khoảng 12000m²"
+        },
+        "Xưởng Ngư Cụ Ma Đạo": {
+          "品质": "legendary",
+          "标签": [
+            "Loại hình: Xưởng chuyên dụng",
+            "Vị trí: Khu xưởng",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {},
+          "描述": "Xưởng chuyên chế tạo và kiểm tu ngư cụ ma đạo, nhận đơn hàng đã qua thương hội chứng nhận.",
+          "总占用空间": "Khoảng 1800m²"
+        }
+      }
+    },
+    {
+      "name": "Xưởng Nhưỡng Bia Mạch Nha Ambergard",
+      "cost": 575,
+      "rarity": "rare",
+      "类型": "Xưởng thủ công",
+      "标签": [
+        "Chủ sở hữu: Thương hội nhưỡng tạo Gia Tộc Hổ Phách",
+        "Mục đích: Sản xuất bia mạch nha và rượu mạnh lúa mạch đen",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Ổn định"
+      ],
+      "总空间": "Khu nhưỡng tạo: phòng đường hóa, phòng đun sôi, hầm lên men, phòng đóng chai; diện tích: 2200m²|Khu kho vận: kho mạch nha, kho thùng rượu, kho thành phẩm; diện tích: 1200m²|Khu phụ thuộc: phòng xử lý nước, phòng nếm thử, nhà nghỉ công nhân; diện tích: 500m²",
+      "结算": "Định giá tài sản: 25 triệu Z Khiên North; dự kiến thu nhập hằng năm: 1,15 triệu Z Khiên North; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Liên Minh Northgard - Ambergard - Khu Nhưỡng Phường",
+      "描述": "Xưởng nhưỡng cỡ trung xây dọc Tửu Khê, tận dụng nguồn nước nhánh Sông Kim Tuệ và điều kiện làm mát tự nhiên để sản xuất bia mạch nha và rượu mạnh lúa mạch đen. Thành phẩm được đóng dấu chất lượng của công hội nhưỡng tạo sư liên minh, rồi qua kho lương Khu Hà Cảng và thuyền phà đưa đi khắp liên minh.",
+      "内部资产": {
+        "Hầm Lên Men": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Cơ sở nhưỡng tạo",
+            "Vị trí: Dưới lòng đất khu nhưỡng tạo",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "产出": "Bia mạch nha, rượu mạnh lúa mạch đen"
+          },
+          "描述": "Hầm lên men tận dụng mạch nước Tửu Khê và phòng đá ngầm để giữ nhiệt độ.",
+          "总占用空间": "Khoảng 900m²"
+        },
+        "Phòng Nếm Thử Chất Lượng Liên Minh": {
+          "品质": "uncommon",
+          "标签": [
+            "Loại hình: Cơ sở nếm thử",
+            "Vị trí: Khu phụ thuộc",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Tiến hành kiểm tra mẫu theo lô, phân cấp hương vị và xin đóng dấu chất lượng của công hội nhưỡng tạo sư."
+          },
+          "描述": "Phòng riêng cho nhưỡng tạo sư và kiểm định viên công hội đánh giá từng lô.",
+          "总占用空间": "Khoảng 120m²"
+        }
+      }
+    },
+    {
+      "name": "Cụm Xưởng Quân Giới Sắt Lạnh Pháo Đài Vãn Ca",
+      "cost": 1250,
+      "rarity": "rare",
+      "类型": "Xưởng thủ công",
+      "标签": [
+        "Chủ sở hữu: Ty Khoáng Vụ Công Quốc Visgrad",
+        "Mục đích: Sản xuất vũ khí và quân giới sắt lạnh",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Ổn định"
+      ],
+      "总空间": "Khu đoạn lô: 4 lò cao địa nhiệt, phòng quạt gió luyện kim, bãi phân loại nguyên liệu; diện tích: 2200m²|Xưởng quân giới: phòng búa rèn thủy lực, phòng rèn thủ công, phòng tôi luyện, kho thành phẩm; diện tích: 1800m²|Hang tác nghiệp hắc diệu thạch: bãi cắt, phòng thu hồi bột; diện tích: 1000m²",
+      "结算": "Định giá tài sản: 50 triệu Z Khiên North; dự kiến thu nhập hằng năm: 2,5 triệu Z Khiên North; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Liên Minh Northgard - Pháo Đài Vãn Ca - Khu Đoạn Lô",
+      "描述": "Xưởng quân giới xây bên rìa cụm lò địa nhiệt, dùng quặng sắt lạnh thô chở về từ Mỏ Mặc Uyên để sản xuất đao kiếm, mũi giáo, mảnh giáp và mũi tên. Nhiệt lượng địa nhiệt liên tục giúp giảm áp lực nhiên liệu cho vùng cực Bắc, búa rèn thủy lực đảm nhận quân nhu số lượng lớn, thợ rèn bậc cao đảm nhận đơn hàng tinh chế.",
+      "内部资产": {
+        "Lò Cao Tinh Luyện Sắt Lạnh": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Cơ sở luyện kim",
+            "Vị trí: Khu đoạn lô",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 4,
+          "效果": {
+            "产出": "Thỏi sắt lạnh, phụ phẩm luyện kim"
+          },
+          "描述": "Lò cao đá xây nối vào dải khe địa nhiệt và được quạt gió luyện kim điều chỉnh nhiệt độ.",
+          "总占用空间": "Khoảng 900m²"
+        },
+        "Phòng Búa Rèn Thủy Lực": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Cơ sở rèn đúc",
+            "Vị trí: Xưởng quân giới",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "产出": "Đao kiếm, mũi giáo, mảnh giáp, mũi tên tiêu chuẩn",
+            "生产检定": "Khi [Rèn Đúc], DC cơ bản -4, thời gian sản xuất -30%."
+          },
+          "描述": "Phòng tác nghiệp búa rèn hạng nặng vận hành bằng thủy lực từ hẻm núi.",
+          "总占用空间": "Khoảng 500m²"
+        }
+      }
+    },
+    {
+      "name": "Tiệm Sửa Trang Bị Hạng Hỏa Hoa",
+      "cost": 80,
+      "rarity": "common",
+      "类型": "Xưởng thủ công",
+      "标签": [
+        "Chủ sở hữu: Thợ đã đăng ký của Hiệp Hội Đoạn Tạo",
+        "Mục đích: Sửa chữa trang bị",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Ổn định"
+      ],
+      "总空间": "Tầng trệt: quầy tiếp đón, bàn sửa chữa, phòng tôi luyện, giá vật liệu, khu giao thành phẩm; diện tích: 160m²",
+      "结算": "Định giá tài sản: 3,2 triệu Z Đồng Đế Miện; dự kiến thu nhập hằng năm: 160 nghìn Z Đồng Đế Miện; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Thành Nova · Valentia - Khu Vực Trung Thành - Hạng Hỏa Hoa",
+      "描述": "Tiệm sửa chữa đã đăng ký nằm dưới mái vòm đá của Hạng Hỏa Hoa, gần Hiệp Hội Đoạn Tạo và bãi phế liệu. Có thể xử lý hao mòn, nứt vỡ và lỗi mạch đơn giản của vũ khí, giáp trụ và dụng cụ ma đạo thông thường, trang bị phức tạp sẽ chuyển cho thợ của hiệp hội.",
+      "内部资产": {}
+    },
+    {
+      "name": "Xưởng Sản Xuất Rèn Đúc Tiêu Chuẩn Ironforge",
+      "cost": 300,
+      "rarity": "rare",
+      "类型": "Xưởng thủ công",
+      "标签": [
+        "Chủ sở hữu: <user>",
+        "Mục đích: Sản xuất vũ khí / giáp trụ tiêu chuẩn",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Ổn định"
+      ],
+      "总空间": "Khu nghệ nhân: sảnh rèn đúc, phòng cắt gọt, hồ tôi luyện, dây chuyền lắp ráp, kho thành phẩm; diện tích: 800m²|Viện phụ thuộc: bãi chứa nhiên liệu, bãi bốc dỡ; diện tích: 700m²",
+      "结算": "Định giá tài sản: 12 triệu Z Đồng Đế Miện; dự kiến thu nhập hằng năm: 600 nghìn Z Đồng Đế Miện; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Đế Quốc Augustim - Tỉnh Trì Nguyên - Ironforge - Khu nghệ nhân",
+      "描述": "Xưởng sản xuất rèn đúc tiêu chuẩn trong khu nghệ nhân của Ironforge, dựa vào khu mỏ, lò cao khổng lồ và công hội rèn đúc tại chỗ, sản xuất hàng loạt vũ khí, khiên, mảnh giáp và công cụ kỹ thuật dùng cho người mạo hiểm.",
+      "内部资产": {
+        "Phòng Rèn Đúc Tiêu Chuẩn": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Thiết bị chuyên dụng",
+            "Vị trí: Sảnh rèn đúc",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "生产检定": "Khi [Rèn Đúc], DC cơ bản -4, thời gian sản xuất -35%."
+          },
+          "描述": "Phòng rèn đúc kết nối lò cao, búa động lực và thiết bị tôi luyện.",
+          "总占用空间": "Khoảng 900m²"
+        }
+      }
+    }
+  ],
+  "贸易与交通": [
+    {
+      "name": "Đoàn Thương Lộ Biển Cát",
+      "cost": 125,
+      "rarity": "uncommon",
+      "类型": "Tổ hợp sản nghiệp",
+      "标签": [
+        "Chủ sở hữu: Liên hội thương lộ Liên Bang Sahra",
+        "Mục đích: Vận chuyển xuyên ốc đảo / tiếp tế / hộ vệ thương lộ",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Biến động"
+      ],
+      "总空间": "Biên chế phương tiện: 40 lạc đà chở hàng, 12 lạc đà hộ vệ, 2 xe đội trưởng, 4 xe chở túi nước di động; quy mô: có thể vận chuyển khoảng 90 tấn hàng hóa, một chuyến bao phủ các thương lộ ốc đảo chính của Sa Hải Xích Kim|Không gian khả dụng: khoang hàng khoảng 140m³",
+      "结算": "Định giá tài sản: 3 triệu Z Đồng Đế Miện; dự kiến thu nhập hằng năm: 250 nghìn Z Đồng Đế Miện; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Liên Bang Sahra - Thương lộ Sa Hải Xích Kim, nơi đăng ký là Tổng hội mậu dịch Azhar",
+      "描述": "Đoàn thương đường dài nối liền Azhar, Bait · Nar, Dar Suk và các ốc đảo biên giới, vận chuyển lương thực, dược thảo, vải vóc, hương liệu và vật liệu công trình. Đoàn thương gộp chung xe chở túi nước, trạm đổi thú, hoa tiêu sa mạc và hộ vệ vào một hệ thống vận hành, duy trì dòng chảy hàng hóa trên những thương lộ nơi của cải tập trung cao độ cùng với cướp cát và ma vật sa mạc.",
+      "内部资产": {
+        "Xe Túi Nước Di Động": {
+          "品质": "uncommon",
+          "标签": [
+            "Loại hình: Phương tiện tiếp tế sa mạc",
+            "Vị trí: Biên chế đoàn thương",
+            "Trạng thái: Khả dụng"
+          ],
+          "数量": 4,
+          "效果": {
+            "功能效果": "Chứa và vận chuyển nước uống, cung cấp tiếp tế khẩn cấp cho đội thương lộ đường dài.",
+            "情境效果": "Khi đoàn thương này thực hiện vận chuyển xuyên ốc đảo, mức tiêu thụ nước uống của cả đoàn giảm 6%, chỉ áp dụng cho vận chuyển thương lộ của đoàn thương này."
+          },
+          "描述": "Xe chở nước có khung che nắng và lớp chống bốc hơi, là trang bị bắt buộc cho vận chuyển xuyên ốc đảo.",
+          "总占用空间": "Mỗi xe khoảng 18m³"
+        }
+      }
+    },
+    {
+      "name": "Trạm Xe Lửa Ma Đạo Thành Kim Cốc",
+      "cost": 999,
+      "rarity": "rare",
+      "类型": "Tổ hợp sản nghiệp",
+      "标签": [
+        "Chủ sở hữu: Sở Giao Thông Đế Quốc Augustim",
+        "Mục đích: Giao thông ma đạo / trung chuyển hàng hóa",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Ổn định"
+      ],
+      "总空间": "Thân trạm: sảnh chờ tàu, quầy chứng từ, kho hàng, lán bảo trì; diện tích: 1600m²|Cơ sở tuyến đường: đường ray ngắn, cột cấp ma lực, đài điều độ; phạm vi bao phủ: khoảng 4km",
+      "结算": "Định giá tài sản: 56 triệu Z Đồng Đế Miện; dự kiến thu nhập hằng năm: 2,8 triệu Z Đồng Đế Miện; giá vé tàu tính theo nội thành 300-3000Z, tàu đường dài 30 nghìn-200 nghìn Z; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Đế Quốc Augustim - Tỉnh Viridis - Thành Kim Cốc - Rìa khu mậu dịch",
+      "描述": "Trạm xe lửa ma đạo nguyên thủy được đặt dựa vào khu mậu dịch của Thành Kim Cốc. Tàu được ma lực dẫn động, chạy dọc theo đường ray cố định, phục vụ việc luân chuyển người và hàng hóa lớn giữa các thành phố trong đế quốc, vẫn giữ hệ thống chứng từ, phục vụ ga và điều độ thủ công thời trung cổ, không có tần suất chuyến dày đặc tốc độ cao như mạng lưới đường sắt hiện đại.",
+      "内部资产": {
+        "Đoàn Tàu Ma Đạo": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Phương tiện ma đạo",
+            "Vị trí: Tuyến đường ga",
+            "Trạng thái: Có thể điều động"
+          ],
+          "数量": 2,
+          "效果": {
+            "功能效果": "Biên chế 2 đoàn tàu, chạy dọc đường ray cố định, đảm nhận vận chuyển người và hàng hóa lớn giữa các thành phố trong đế quốc."
+          },
+          "描述": "Đoàn tàu nguyên thủy được kéo bằng lõi ma lực, có toa khách và toa hàng.",
+          "总占用空间": "Mỗi đoàn khoảng 180m, sức chứa bãi ga 2 đoàn"
+        }
+      }
+    },
+    {
+      "name": "Sở Tổng Hợp Cảng Vụ Bắc Cảnh Cảng Sương Kính",
+      "cost": 1650,
+      "rarity": "epic",
+      "类型": "Tổ hợp sản nghiệp",
+      "标签": [
+        "Chủ sở hữu: Liên minh thương hội Sương Phong",
+        "Mục đích: Kho vận / môi giới thuyền vụ / dụng cụ hàng hải / dịch vụ thủy thủ",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Ổn định"
+      ],
+      "总空间": "Khu hành chính thương vụ: sảnh môi giới thuyền vụ, phòng công chứng bảo hiểm, cửa hàng hải đồ, phòng lưu trữ khế ước; diện tích: 1200m²|Kho cảng: 2 kho chuyển khẩu, kho dụng cụ hàng hải, kho tiếp tế thủy thủ; diện tích: 2400m²|Khu dịch vụ thủy thủ: quán trọ thủy thủ, phòng tắm, phòng chiêu mộ và quyết toán; diện tích: 900m²",
+      "结算": "Định giá tài sản: 67,5 triệu Z Khiên North; dự kiến thu nhập hằng năm: 3,8 triệu Z Khiên North; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Liên Minh Northgard - Cảng Sương Kính - Giao giữa Khu Hành Chính Thương Vụ và Khu Công Nghiệp Tạo Thuyền",
+      "描述": "Tài sản cảng vụ tổng hợp được xây dựa vào quân cảng Cảng Sương Kính, trung tâm đóng thuyền lớn nhất và khu hành chính thương vụ, xử lý việc tạm giữ hàng hóa, môi giới thuyền vụ, công chứng bảo hiểm, cung ứng hải đồ và dụng cụ hàng hải cho tuyến ven biển và Ngoại Thương Bạch Hải, đồng thời cung cấp chỗ ở, tiếp tế và quyết toán thuê mướn cho thủy thủ quá cảng. Nó không thay thế bộ chỉ huy quân cảng, chỉ phục vụ vận tải biển thương mại và chuỗi ngành đóng thuyền của liên minh.",
+      "内部资产": {
+        "Kho Chuyển Khẩu": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Cơ sở kho vận",
+            "Vị trí: Rìa đài địa khu hành chính thương vụ",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 2,
+          "效果": {
+            "功能效果": "Tạm chứa hàng hóa quá cảnh từ Cảng Bạch xuống Nam hoặc từ Lẫm Phong Độ sang Đông, cung cấp đăng ký, phân loại và trung chuyển."
+          },
+          "描述": "Kho kín xếp dọc rìa đài địa, kết nối đường cảng và điều độ ụ tàu.",
+          "总占用空间": "Khoảng 1600m²"
+        },
+        "Sảnh Môi Giới Thuyền Vụ Và Công Chứng Bảo Hiểm": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Cơ sở dịch vụ thuyền vụ",
+            "Vị trí: Khu hành chính thương vụ",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Môi giới cho thuê bán thuyền và đơn hàng vận chuyển, làm thủ tục bảo hiểm hàng hải, chứng kiến khế ước và đăng ký rủi ro."
+          },
+          "描述": "Sảnh dịch vụ đối ngoại gần Thiết Miêu Nghị Sự Sảnh, tập hợp quầy thường trú của thương hành, hành môi giới hàng hải và sở công chứng bảo hiểm thuyền.",
+          "总占用空间": "Khoảng 500m²"
+        },
+        "Quán Trọ Thủy Thủ": {
+          "品质": "uncommon",
+          "标签": [
+            "Loại hình: Cơ sở lưu trú",
+            "Vị trí: Khu dịch vụ thủy thủ",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "产出": "Dịch vụ lưu trú, ẩm thực, tắm rửa và chiêu mộ ngắn hạn cho thủy thủ"
+          },
+          "描述": "Quán trọ thực dụng dành cho thương thuyền và công nhân đóng thuyền, cung cấp lưu trú ngắn hạn, tiếp tế và giao nhận thủy thủ.",
+          "总占用空间": "Khoảng 900m²"
+        }
+      }
+    }
+  ],
+  "开拓者包": [
+    {
+      "name": "Hang Rêu Đá Đen",
+      "cost": 100,
+      "rarity": "common",
+      "类型": "Địa hạ thành",
+      "标签": [
+        "Chủ sở hữu: <user>",
+        "Mục đích: Tái khởi động địa hạ thành / thám hiểm",
+        "Trạng thái: Bỏ hoang"
+      ],
+      "总空间": "Khu cửa vào mặt đất: 1 nhà đăng ký bỏ hoang, 1 lán tiếp tế sập đổ; diện tích: khoảng 500m²|Tầng ngầm 1: hầm mỏ bỏ hoang, ngã rẽ đá vụn; diện tích: khoảng 3km²|Tầng ngầm 2: hang rêu đọng nước, tiền sảnh đá đen; diện tích: khoảng 4km²|Sau cánh cổng đá đen: chưa khám phá",
+      "结算": "Định giá tài sản: 2 triệu Z; hiện không có thu chi.",
+      "位置": "Vùng đất hoang biên giới phía Tây Đế Quốc Augustim - Hầm mỏ bỏ hoang",
+      "描述": "Một địa hạ thành hai tầng đã hoang phế từ lâu, được học giả gọi là \"Hang Rêu Đá Đen\" vì cánh cổng đá đen ở tầng thứ hai. Nhiều năm trước từng có không ít đoàn học thuật nghiên cứu văn khắc trên cổng, hợp kim và mạch đất lân cận, đội thăm dò cũng đã dọn sạch tầng một và tiến vào vòng ngoài tầng hai, nhưng vẫn không thể mở được cánh cổng; phép thuật tiên tri cảm ứng thấy phía sau cổng chỉ là một khoảng trống rỗng. Sau khi nghiên cứu bế tắc kéo dài mà sản lượng bề mặt lại không đủ để duy trì một trạm đóng, các bên lần lượt rút hết nhân lực, tiếp tế và tài nguyên quản lý. Hiện chỉ còn lại đất cửa vào và cơ sở bỏ hoang, việc tái khởi động thăm dò, khôi phục thị trường hay xử lý khu vực sau cổng đá đen đều phải do người sở hữu tự gánh chịu rủi ro và chi phí.",
+      "内部资产": {
+        "Nhà Đăng Ký Bỏ Hoang": {
+          "品质": "common",
+          "标签": [
+            "Loại hình: Cơ sở quản lý bỏ hoang",
+            "Vị trí: Khu cửa vào mặt đất",
+            "Trạng thái: Bỏ hoang"
+          ],
+          "数量": 1,
+          "效果": {},
+          "描述": "Nhà đăng ký bằng gỗ đá còn sót lại từ đợt thăm dò xưa, sổ danh sách, biển cảnh báo và tủ cấp cứu đều đã hoang phế.",
+          "总占用空间": "Quầy làm việc, điểm cấp cứu và lán vật tư tổng cộng khoảng 500m²"
+        },
+        "Tầng Ngầm 1 · Hầm Mỏ Bỏ Hoang": {
+          "品质": "common",
+          "标签": [
+            "Loại hình: Tầng địa hạ thành",
+            "Vị trí: Tầng ngầm 1",
+            "Trạng thái: Đã khám phá"
+          ],
+          "数量": 1,
+          "效果": {
+            "产出": "Giết trùng huyệt cư đá vụn (bậc 1) sẽ thu được vỏ giáp và thịt trùng; khám phá các ngã rẽ có thể nhặt được ít mảnh quặng phế."
+          },
+          "描述": "Chất mùn, hơi ẩm và khe đá vụn của hầm mỏ bỏ hoang nuôi dưỡng đàn trùng huyệt cư, chúng đào xới quặng vụn và thu hút những kẻ săn mồi nhỏ. Đường ray khai thác cũ đứt đoạn ở nhiều ngã rẽ đá vụn, tiếng động di chuyển sẽ làm kinh động trùng huyệt cư; đợt thăm dò trước đã dọn sạch tầng này nhưng sau khi rút đi không còn ai duy trì ánh sáng, biển chỉ dẫn và kết cấu chống đỡ.",
+          "总占用空间": "Hầm mỏ bỏ hoang và ngã rẽ đá vụn tổng cộng khoảng 3400m²"
+        },
+        "Tầng Ngầm 2 · Tiền Sảnh Đá Đen": {
+          "品质": "common",
+          "标签": [
+            "Loại hình: Tầng địa hạ thành",
+            "Vị trí: Tầng ngầm 2",
+            "Trạng thái: Chưa khám phá hết"
+          ],
+          "数量": 1,
+          "效果": {
+            "产出": "Hang rêu đọng nước bên ngoài cổng đá đen có thể giết slime giáp rêu (bậc 1) để lấy chất keo và rêu ẩm, và hái được dược thảo cùng nấm bậc thấp."
+          },
+          "描述": "Nước đọng chảy vào hõm đất trũng, rêu ẩm lấy chất mùn và cặn ma lực bậc thấp làm dưỡng chất; slime giáp rêu ăn rêu và cặn bã, duy trì vòng tuần hoàn làm sạch vũng nước. Mực nước trong hang sẽ thay đổi tuyến đường di chuyển, cuối đường sừng sững một cánh cổng đá đen không thể mở được;",
+          "总占用空间": "Hang rêu đọng nước, hang rêu, khe thoát nước và tiền sảnh đá đen tổng cộng khoảng 4100m²"
+        }
+      }
+    },
+    {
+      "name": "Đảo Vịnh Trong",
+      "cost": 180,
+      "rarity": "uncommon",
+      "类型": "Lãnh địa",
+      "标签": [
+        "Chủ sở hữu: <user>",
+        "Mục đích: Khai phá đảo / thu thập / xây dựng trại",
+        "Trạng thái: Chưa khởi động"
+      ],
+      "总空间": "Đảo Vịnh Trong: 1 bãi cát thủy triều, 1 triền cây bụi, 1 vũng nước ngọt, 1 rạn vỏ sò vùng triều, 2 ngôi nhà đá bỏ hoang; diện tích đảo: khoảng 18km²|Khu vực chưa khai phá: khoảng 16,5km²",
+      "结算": "Định giá tài sản: 8 triệu Z; hiện không có thu chi; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Vô Tận Hải - Phía Nam Quần Đảo Toái Tinh - Đảo Vịnh Trong",
+      "描述": "Một hòn đảo hoang vô chủ ở phía Nam Quần Đảo Toái Tinh, mang tên từ vịnh nước nông trong vắt phía Tây. Trên đảo có vịnh cạn có thể đậu thuyền nhỏ, rạn vỏ sò vùng triều, vũng nước ngọt, triền cây bụi và hai ngôi nhà đá bỏ hoang. Có thể xây bến tàu tạm, điểm thu thập hoặc trại nhỏ, nhưng không có dân cư thường trú, ruộng đất trù phú, tuyến hàng hải ổn định hay nhân lực sẵn có, việc khai phá bị giới hạn bởi thủy triều, bão tố, thú biển và tiếp tế đường biển.",
+      "内部资产": {
+        "Vùng Nước Đậu Thuyền Vịnh Cạn": {
+          "品质": "common",
+          "标签": [
+            "Loại hình: Bến đậu tự nhiên",
+            "Vị trí: Phía Tây đảo",
+            "Trạng thái: Chưa khai phá"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Chỉ có thể cho thuyền nhỏ đậu tạm khi triều lặng và thời tiết tốt."
+          },
+          "描述": "Vịnh cạn chịu ảnh hưởng của thủy triều và bão tố, không có tuyến hàng hải ổn định, bến nước sâu hay điều kiện cầu cảng.",
+          "总占用空间": "Khoảng 0,3 héc-ta mặt nước"
+        },
+        "Bãi Cát Thủy Triều": {
+          "品质": "common",
+          "标签": [
+            "Loại hình: Không gian ven biển",
+            "Vị trí: Từ vịnh cạn phía Tây đến bờ Nam",
+            "Trạng thái: Chưa khai phá"
+          ],
+          "数量": 1,
+          "效果": {
+            "产出": "Một ít vỏ sò, gỗ trôi và vật liệu bờ biển có thể dùng cắm trại tạm."
+          },
+          "描述": "Bãi cát dài hẹp chịu ảnh hưởng của mực nước triều, có thể làm nơi dỡ hàng, phơi phóng và cắm trại tạm thời.",
+          "总占用空间": "Khoảng 0,45 héc-ta"
+        },
+        "Triền Cây Bụi": {
+          "品质": "common",
+          "标签": [
+            "Loại hình: Không gian đất liền",
+            "Vị trí: Giữa đảo",
+            "Trạng thái: Chưa khai phá"
+          ],
+          "数量": 1,
+          "效果": {
+            "产出": "Một ít củi khô, cây sợi và dược thảo dại có thể thu hái."
+          },
+          "描述": "Triền dốc thoải phủ đầy cây bụi chịu mặn, chưa có điều kiện thành ruộng đất trù phú.",
+          "总占用空间": "Khoảng 0,55 héc-ta"
+        },
+        "Vũng Nước Ngọt": {
+          "品质": "common",
+          "标签": [
+            "Loại hình: Tài nguyên nước ngọt",
+            "Vị trí: Vùng trũng giữa đảo",
+            "Trạng thái: Chưa khai phá"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Có thể đáp ứng nhu cầu lấy nước cơ bản cho nhân viên lưu trú ngắn hạn, rủi ro mùa khô và ô nhiễm cần quản lý riêng."
+          },
+          "描述": "Vũng nước ngọt nhỏ hình thành từ nước mưa và nước ngầm nông, chưa đủ để hỗ trợ định cư quy mô lớn hay tưới tiêu nông nghiệp.",
+          "总占用空间": "Khoảng 0,05 héc-ta"
+        },
+        "Rạn Vỏ Sò Vùng Triều": {
+          "品质": "uncommon",
+          "标签": [
+            "Loại hình: Tài nguyên ngư nghiệp",
+            "Vị trí: Rìa ngoài vịnh cạn phía Tây",
+            "Trạng thái: Chưa khai phá"
+          ],
+          "数量": 1,
+          "效果": {
+            "产出": "Nhuyễn thể theo mùa, giáp xác nhỏ và cá gần bờ; có thể tìm thấy một ít trân châu hoặc vật liệu ma pháp biển bậc thấp."
+          },
+          "描述": "Dải rạn tự nhiên lộ ra theo thủy triều, chỉ thích hợp thu thập cường độ thấp; bão tố, thú biển và đánh bắt quá mức sẽ ảnh hưởng trực tiếp đến sản lượng.",
+          "总占用空间": "Khoảng 0,132 héc-ta"
+        },
+        "Nhà Đá Bỏ Hoang": {
+          "品质": "common",
+          "标签": [
+            "Loại hình: Di tích kiến trúc",
+            "Vị trí: Phía Tây đảo hoang",
+            "Trạng thái: Chờ tu sửa"
+          ],
+          "数量": 2,
+          "效果": {},
+          "描述": "Nhà đá một tầng đã xuống cấp, có thể cải tạo thành kho, lán thợ hoặc điểm canh gác.",
+          "总占用空间": "Tổng cộng khoảng 180m²"
+        }
+      }
+    },
+    {
+      "name": "Phù Đảo Di Tích Vân Giai",
+      "cost": 300,
+      "rarity": "uncommon",
+      "类型": "Quyền kinh doanh du lịch",
+      "标签": [
+        "Chủ sở hữu: <user>",
+        "Mục đích: Du lịch / dừng chân tạm thời",
+        "Trạng thái: Đang vận hành",
+        "Bên A: Thánh Quốc Dực Dân Vania",
+        "Bên B: <user>",
+        "Loại hợp đồng: Quyền kinh doanh du lịch"
+      ],
+      "总空间": "Di tích phù không: đài ngắm cảnh Vân Giai, hành lang đứt gãy, đài địa rêu phong, tàn tích tháp đá; diện tích: khoảng 16km²|Không gian có thể mở cửa: khoảng 3,2km²",
+      "结算": "Định giá tài sản: 12 triệu Z; dự kiến thu nhập ròng hằng năm: 600 nghìn Z; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Thánh Quốc Dực Dân Vania - Không vực Thần Tích Quần Sơn - Phù Đảo Di Tích Vân Giai",
+      "描述": "Một phù đảo nhỏ mang di tích nằm trên không vực Thần Tích Quần Sơn, hành lang đứt gãy, tháp đá và đài địa rêu phong tuy không có cổ vật quý giá gì, nhưng được tộc Dực Dân biến thành điểm ngắm mây núi từ trên cao. <user> nắm giữ quyền kinh doanh du lịch, có thể bảo trì lối đi, tiếp đón du khách và kinh doanh dịch vụ; có tin đồn rằng không gian tầng trong của di tích ẩn giấu dưới chân tháp đá, chưa từng được du khách hay bên quản lý điều tra kỹ.",
+      "内部资产": {
+        "Đài Ngắm Cảnh Vân Giai": {
+          "品质": "common",
+          "标签": [
+            "Loại hình: Cơ sở du lịch",
+            "Vị trí: Phía Bắc phù đảo",
+            "Trạng thái: Mở cửa"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Cung cấp lối đi ngắm cảnh đã được bảo trì, điểm dừng chân tạm thời và khu vực hướng dẫn, du khách không được vượt quá ranh giới cảnh giới di tích."
+          },
+          "描述": "Khu vực mở được chỉnh trang từ hành lang đứt gãy và tường ngoài tháp đá nghiêng nửa, tạo thành tuyến ngắm cảnh.",
+          "总占用空间": "Khoảng 600m²"
+        },
+        "Không Gian Tầng Trong Tháp Đá": {
+          "品质": "uncommon",
+          "标签": [
+            "Loại hình: Không gian di tích khép kín",
+            "Vị trí: Sau chân tháp đá thường",
+            "Trạng thái: Chưa mở cửa"
+          ],
+          "数量": 1,
+          "效果": {},
+          "描述": "Không gian tầng trong sau chân tháp đá chưa được khảo sát chính thức, quan sát từ bên ngoài không thấy manh mối nào đáng để đầu tư nghiên cứu sâu.",
+          "总占用空间": "Quy mô chưa rõ"
+        }
+      }
+    },
+    {
+      "name": "Địa Hạ Thành · Vương Đình Nham Xích",
+      "cost": 8000,
+      "rarity": "epic",
+      "类型": "Địa hạ thành",
+      "标签": [
+        "Chủ sở hữu: Thành Bait Nar",
+        "Mục đích: Kinh doanh địa hạ thành / thám hiểm",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Biến động",
+        "Bên A: Thành Bait Nar / Công Hội Mạo Hiểm Giả",
+        "Bên B: <user>",
+        "Loại hợp đồng: Ủy thác vận hành"
+      ],
+      "总空间": "Khu cửa vào mặt đất: 1 nơi quản lý địa hạ thành, 1 phòng giám định cách ly, 1 y sở, 1 phố chợ Nham Xích; diện tích: khoảng 0,12km²|Tầng ngầm 1: tiền sảnh dung nham, hang trùng hỏa nhung; diện tích: khoảng 0,6km²|Tầng ngầm 2: hầm mỏ Nham Xích, tàn tích trại thợ mỏ; diện tích: khoảng 0,85km²|Tầng ngầm 3: hang khe nứt nhiệt, hang thằn lằn dung nham; diện tích: khoảng 3,1km²|Tầng ngầm 4: di tích vương đình; diện tích: khoảng 1,5km²|Tổng khu vực đã khám phá: khoảng 8,37km²|Khu vực chưa khảo sát: quy mô chưa rõ",
+      "结算": "Định giá tài sản: 475 triệu Z; dự kiến thu nhập hằng năm: 22,5 triệu Z; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Rìa Bắc Sa Hải Xích Kim - Dưới lòng đất hẻm núi Nham Xích",
+      "描述": "Một địa hạ thành nhiều tầng hình thành quanh di tích vương đình người lùn cổ đại (hiện mới khám phá đến tầng thứ tư), nằm ở rìa Bắc Sa Hải Xích Kim, cách Bait Nar về phía Tây (ba ngày đường bộ). Nơi quản lý địa hạ thành là cơ quan trực thuộc công hội mạo hiểm giả, phụ trách cấp phép, trị an, giám định, thuế vụ và cảnh báo, bên vận hành không được trực tiếp chỉ huy nhân sự của họ. Khu vực chưa khảo sát, khu phong ấn và hệ sinh thái địa thành vẫn được xử lý theo mức độ nguy hiểm thực tế và tiến độ thám hiểm.",
+      "内部资产": {
+        "Nơi Quản Lý Địa Hạ Thành Nham Xích": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Cơ quan trú thành của công hội",
+            "Vị trí: Khu cửa vào mặt đất",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Do xứ trưởng thống lĩnh các bộ phận hành chính, chấp pháp, hậu cần và tình báo, biên chế 24 nhân viên trú thành, phụ trách giấy phép, cảnh báo dị thường, duy trì trật tự và báo cáo về tổng bộ công hội."
+          },
+          "描述": "Cơ quan chấp hành trực thuộc do công hội mạo hiểm giả đặt tại cửa vào, không chịu sự chỉ huy trực tiếp của thế lực địa phương hay bên ủy thác.",
+          "总占用空间": "Sảnh làm việc, phòng chấp pháp, phòng tình báo và kho hậu cần tổng cộng khoảng 0,03km²"
+        },
+        "Phố Chợ Nham Xích": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Khu dịch vụ người mạo hiểm",
+            "Vị trí: Khu cửa vào mặt đất",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Cung cấp dịch vụ tiếp tế, đăng ký thu mua vật liệu, bảo trì trang bị, y tế, giám định, bản đồ và lưu trú; các cửa hàng do nơi quản lý cấp phép và chịu sự thanh tra."
+          },
+          "描述": "Khu dịch vụ cố định hình thành quanh cửa vào, nhiều thương hội và cửa hàng độc lập cùng tồn tại.",
+          "总占用空间": "Khu quầy hàng, tiệm tiếp tế, xưởng bảo trì và quán trọ tạm tổng cộng khoảng 0,09km²"
+        },
+        "Tầng Ngầm 1 · Tiền Sảnh Dung Nham": {
+          "品质": "common",
+          "标签": [
+            "Loại hình: Tầng địa hạ thành",
+            "Vị trí: Tầng ngầm 1",
+            "Trạng thái: Đã khám phá"
+          ],
+          "数量": 1,
+          "效果": {
+            "产出": "Giết trùng hỏa nhung (bậc 1) sẽ thu được thịt trùng hỏa nhung, da chuột chịu nhiệt và túi tuyến ngưng nhiệt; thu hái rêu dung nham có thể dùng làm nguyên liệu ăn hoặc phụ liệu luyện kim."
+          },
+          "描述": "Khe nứt dung nham liên tục truyền nhiệt vào tiền sảnh, rêu dung nham bám vào xỉ quặng mà sinh trưởng, trùng hỏa nhung ăn rêu và trứng côn trùng, trở thành nguồn thức ăn cho những kẻ săn mồi tầng sâu hơn. Tiền sảnh rộng mở nối liền nhiều hang nhánh, đàn trùng sẽ tránh ánh sáng mạnh và đội đông người; săn bắt quá mức sẽ làm giảm sản lượng nguyên liệu và da lông của tầng này.",
+          "总占用空间": "Tiền sảnh dung nham, khu hang tổ trùng hỏa nhung và hang nhánh tổng cộng khoảng 4800m²"
+        },
+        "Tầng Ngầm 2 · Hầm Mỏ Nham Xích": {
+          "品质": "uncommon",
+          "标签": [
+            "Loại hình: Tầng địa hạ thành",
+            "Vị trí: Tầng ngầm 2",
+            "Trạng thái: Đã khám phá"
+          ],
+          "数量": 1,
+          "效果": {
+            "产出": "Đánh bại linh mỏ Nham Xích (bậc 2) sẽ thu được ma thạch bậc thấp và hạch tinh linh mỏ; thu thập dọc hầm mỏ đã biết có thể lấy được xỉ quặng giàu ma lực và quặng Nham Xích."
+          },
+          "描述": "Ma lực rỉ ra từ mạch quặng cũ ngấm vào đá vụn và bụi quặng, hình thành linh mỏ Nham Xích; chúng tụ tập xỉ quặng giàu ma lực, cũng sẽ mai phục kẻ quấy nhiễu trong hầm mỏ hẹp. Đường ray cũ và tàn tích trại thợ mỏ đan xen nhau, việc thu thập quặng bị giới hạn bởi kết cấu chống đỡ hầm mỏ, hoạt động của linh mỏ và tuyến phong tỏa của nơi quản lý.",
+          "总占用空间": "Hầm mỏ Nham Xích, tàn tích trại thợ mỏ và ngã rẽ tổng cộng khoảng 6200m²"
+        },
+        "Tầng Ngầm 3 · Hang Khe Nứt Nhiệt": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Tầng địa hạ thành",
+            "Vị trí: Tầng ngầm 3",
+            "Trạng thái: Đang khám phá"
+          ],
+          "数量": 1,
+          "效果": {
+            "产出": "Giết thằn lằn hang dung nham (bậc 2) sẽ thu được vảy lột, túi tuyến chịu nhiệt và thịt thằn lằn; ven khe nứt nhiệt có thể thu thập cụm tinh thể nhiệt."
+          },
+          "描述": "Khe nứt nhiệt độ cao nuôi dưỡng thảm nấm chịu nhiệt và ma vật nhỏ, thằn lằn hang dung nham ăn chúng và chiếm cứ tổ quanh khe nứt, là kẻ săn mồi chủ yếu trong chuỗi thức ăn ba tầng đầu. Hơi nóng và dung nham trong tổ phun trào bất ổn, người lạ đến gần thú non hoặc nguồn nhiệt sẽ bị cả đàn tấn công.",
+          "总占用空间": "Hang khe nứt nhiệt và khu tổ thằn lằn hang tổng cộng khoảng 7400m²"
+        },
+        "Tầng Ngầm 4 · Di Tích Vương Đình": {
+          "品质": "epic",
+          "标签": [
+            "Loại hình: Tầng địa hạ thành",
+            "Vị trí: Tầng ngầm 4",
+            "Trạng thái: Đang khám phá"
+          ],
+          "数量": 1,
+          "效果": {
+            "产出": "Thăm dò đã xác nhận vòng ngoài có thể lấy được mảnh vỡ khí cụ người lùn cổ đại, phiến đá khắc chữ và vật liệu xây dựng phế bỏ; di vật hoàn chỉnh và cấu kiện chưa rõ có thể tiềm ẩn nguy hiểm."
+          },
+          "描述": "Nhiệt lượng và bụi quặng từ các tầng trước lắng đọng ở vòng ngoài di tích, rêu, côn trùng và thằn lằn hang sẽ theo khe nứt tiến vào khu vực vòng ngoài để kiếm ăn, hình thành hệ sinh thái tàn dư nối liền với tầng trên. Vương đình người lùn cổ đại mới chỉ hoàn thành thăm dò vòng ngoài, kết cấu sâu bên trong và mức độ nguy hiểm chưa được xác nhận; đã biết có một tượng đá cự thạch nuốt đá đang say ngủ (dự kiến bậc 3), không chịu sự điều khiển trực tiếp của bên vận hành, sẽ tỉnh dậy khi khu vực vương đình bị xâm nhập.",
+          "总占用空间": "Vòng ngoài di tích vương đình, hành lang vòng và các sảnh đã xác nhận tổng cộng khoảng 6000m²"
+        }
+      }
+    },
+    {
+      "name": "Vương Quốc Lam Giới",
+      "cost": 8000,
+      "rarity": "legendary",
+      "类型": "Lãnh địa",
+      "标签": [
+        "Chủ sở hữu: <user>",
+        "Mục đích: Quản trị biên giới / nông nghiệp / mậu dịch",
+        "Trạng thái: Đang vận hành",
+        "Chế độ: Ổn định"
+      ],
+      "总空间": "Vương Quốc Lam Giới: 1 Thành Lam Kiều, 1 ải quan, 1 ruộng đất thung lũng sông, 3 làng biên giới, 1 rừng cây và triền khai thác đá; diện tích quốc thổ: khoảng 400km²|Đất chưa khai phá: khoảng 120km²",
+      "结算": "Định giá tài sản: 430 tỷ Z; dự kiến thu nhập ròng hằng năm: 21,5 tỷ Z; lần quyết toán gần nhất: chưa quyết toán",
+      "位置": "Tuyến Nam biên giới Đế Quốc Augustim và Liên Minh Thú Tộc - Thung lũng sông chưa phân định ranh giới",
+      "描述": "Một bang quốc độc lập nằm trên tuyến Nam biên giới Đế Quốc Augustim và Liên Minh Thú Tộc, sinh tồn dựa vào Thành Lam Kiều, ba làng biên giới, ải quan cũ và ruộng đất thung lũng sông có thể canh tác. <user> nắm quyền thống trị quốc gia này, xử lý thuế khóa, bổ nhiệm quan chức, ngoại giao, trị an và phong đất; trong số khoảng 42.000 dân cư thường trú, người thuộc chủng người chiếm khoảng 54%, tộc thú nhân khoảng 40%, chủng tộc khác khoảng 6%. Hai đại quốc hai bên công nhận địa vị vùng đệm của nó, nhưng mậu dịch biên giới, thuế quan, dòng dân cư và quan hệ với các thế lực xung quanh vẫn cần được điều hành trên thực tế.",
+      "内部资产": {
+        "Thành Lam Kiều": {
+          "品质": "rare",
+          "标签": [
+            "Quy mô: Thị trấn cỡ trung",
+            "Vị trí: Giữa thung lũng sông chưa phân định ranh giới",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Trung tâm hành chính, chợ búa, thuế vụ, tư pháp và mậu dịch biên giới của vương quốc."
+          },
+          "描述": "Vương thành thung lũng sông được xây dựa theo dòng sông, thiết lập khu hành chính vương thất, chợ búa, kho vận và doanh trại quân thường trực; người thuộc chủng người và thú tộc tự do cùng chung sống, cùng buôn bán.",
+          "总占用空间": "Khoảng 2,4km²"
+        },
+        "Ải Quan Cũ": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Di tích phòng thủ",
+            "Vị trí: Cửa ngõ thung lũng sông",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Đảm nhận đăng ký thông hành biên giới, thu thuế quan và luân phiên đồn trú, là tuyến phòng thủ tiền tiêu của vương thành thung lũng sông."
+          },
+          "描述": "Ải quan đá xây đã được tu sửa và khôi phục sử dụng, có trạm thuế, tháp canh và doanh trại đồn trú.",
+          "总占用空间": "Khoảng 2400m²"
+        },
+        "Ruộng Đất Thung Lũng Sông": {
+          "品质": "uncommon",
+          "标签": [
+            "Loại hình: Đất nông nghiệp",
+            "Vị trí: Hai bờ thung lũng sông chưa phân định ranh giới",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "产出": "Ngũ cốc, đậu, rau và cây thức ăn gia súc.",
+            "功能效果": "Duy trì nguồn lương thực cơ bản cho vương thành và các làng, đồng thời tạo ra lương thực dư thừa cho mậu dịch biên giới."
+          },
+          "描述": "Ruộng đất liền mạch được tưới tiêu dọc sông, áp dụng luân canh và kiêm một ít đồng cỏ chăn nuôi.",
+          "总占用空间": "Khoảng 7km²"
+        },
+        "Làng Bờ Bắc, Làng Bến Đò và Làng Triền Nam": {
+          "品质": "common",
+          "标签": [
+            "Loại hình: Làng biên giới",
+            "Vị trí: Thung lũng sông chưa phân định ranh giới",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 3,
+          "效果": {
+            "功能效果": "Cung cấp nhân lực cho nông canh, bốc dỡ đường sông, buôn bán gia súc, khai thác đá và tiếp tế mậu dịch biên giới."
+          },
+          "描述": "Ba làng hỗn cư nằm lần lượt ở bờ Bắc, bến đò và triền Nam của thung lũng sông, nông hộ người thuộc chủng người và thợ thủ công thú tộc tự do cùng sinh sống, làng triền Nam còn giữ đồn dân binh.",
+          "总占用空间": "Tổng cộng khoảng 2,1km²"
+        },
+        "Rừng Cây Và Triền Khai Thác Đá": {
+          "品质": "uncommon",
+          "标签": [
+            "Loại hình: Đất lâm nghiệp và khai thác đá",
+            "Vị trí: Triền Bắc Nam thung lũng sông",
+            "Trạng thái: Đang vận hành"
+          ],
+          "数量": 1,
+          "效果": {
+            "产出": "Đá xây dựng, củi, gỗ và lâm sản theo mùa."
+          },
+          "描述": "Rừng cây và triền đá được vương quốc quản lý theo hạn ngạch, cung cấp vật liệu cơ bản cho việc tu sửa ải quan, xây dựng thị trấn và mậu dịch.",
+          "总占用空间": "Khoảng 6,5km²"
+        },
+        "Nghị Chính Viện Lam Giới": {
+          "品质": "uncommon",
+          "标签": [
+            "Loại hình: Tổ chức hành chính",
+            "Vị trí: Thành Lam Kiều",
+            "Trạng thái: Đang hoạt động"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Hỗ trợ người thống trị xử lý thuế khóa, bổ nhiệm quan chức, phong đất, tranh chấp liên chủng tộc và hiệp ước đối ngoại."
+          },
+          "描述": "Cơ quan nghị chính thường trực do văn quan vương thất, đại biểu làng thung lũng sông và đại biểu thú tộc tự do hợp thành.",
+          "总占用空间": "Đã tính vào khu hành chính Thành Lam Kiều"
+        },
+        "Quân Biên Phòng Lam Giới": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Bộ đội thường trực",
+            "Vị trí: Thành Lam Kiều và ải quan cũ",
+            "Trạng thái: Đang đồn trú"
+          ],
+          "数量": 1200,
+          "效果": {
+            "基础属性": "Do bộ binh người thuộc chủng người, trinh sát thú tộc và đội tuần kỵ hỗn hợp hợp thành, đảm nhận đồn trú ải quan, tuần tra thung lũng sông, hộ vệ thương lộ và cảnh báo biên giới."
+          },
+          "描述": "Quân biên phòng thường trực có thể chiêu mộ dân binh làng để hiệp phòng, không tham gia các cuộc chiến tấn công của hai đại quốc.",
+          "总占用空间": "Doanh trại và chuồng ngựa đã tính vào Thành Lam Kiều và ải quan cũ"
+        },
+        "Cư Dân Hỗn Cư Lam Giới": {
+          "品质": "common",
+          "标签": [
+            "Loại hình: Dân số thường trú",
+            "Vị trí: Thành Lam Kiều và ba làng biên giới",
+            "Trạng thái: Định cư"
+          ],
+          "数量": 42000,
+          "效果": {
+            "功能效果": "Cung cấp nhân lực cho nông nghiệp, thủ công nghiệp, mậu dịch, vận tải đường sông, khai thác đá và dân binh địa phương."
+          },
+          "描述": "Người thuộc chủng người chiếm khoảng 54%, thú tộc tự do khoảng 40%, chủng tộc khác khoảng 6%; cư dân thú tộc có quyền công dân, tài sản, di cư và kinh doanh.",
+          "总占用空间": "Không gian cư trú và sản xuất đã tính vào vương thành, các làng và ruộng đất"
+        }
+      }
+    }
+  ],
+  "金手指": [
+    {
+      "name": "Lữ Quán Vô Tận",
+      "cost": 8000,
+      "rarity": "only",
+      "类型": "Kiến trúc đặc biệt",
+      "标签": [
+        "Chủ sở hữu: <user>",
+        "Mục đích: Lưu trú / đàm phán / lánh nạn tạm thời",
+        "Trạng thái: Khả dụng"
+      ],
+      "总空间": "Đại sảnh cửa vào: quầy lễ tân, lò sưởi, bàn dài chung; diện tích: khoảng 300m²|Phòng khách vô hạn: mở theo nhu cầu của khách đã đăng ký|Phạm vi bao phủ: bên trong lữ quán kẽ vị diện",
+      "结算": "Định giá tài sản: không áp dụng; thu nhập: trong tương lai có thể quan sát được, mọi khoản thu đều dùng để trả nợ",
+      "位置": "Kẽ vị diện; cánh cửa vào chỉ có thể mở tại nơi an toàn",
+      "描述": "Một lữ quán triết học lấy vô số căn phòng và lữ khách trường trú làm chủ đề, chỉ cung cấp không gian lưu trú, đàm phán và nghỉ ngơi. Không cung cấp đồ ăn, vật tư, nhân lực, tin tức hay tăng tốc thời gian miễn phí; cánh cửa không thể mở trong lúc chiến đấu, khu phong ấn, không gian riêng của người khác, hư hải hay môi trường nguy hiểm, khách trọ có thể tự do rời đi. Khi phòng đầy mà có khách mới đến ở, mọi khách trọ hiện có sẽ lần lượt chuyển sang phòng kế tiếp; vị chủ nhân đời trước từng vì thế mà phải đền bù vô số lần di chuyển cho khách trọ, cuối cùng chuyển nhượng luôn cả lữ quán lẫn khoản nợ vô hạn.",
+      "内部资产": {
+        "Danh Mục Phòng Khách Vô Hạn": {
+          "品质": "only",
+          "标签": [
+            "Loại hình: Không gian lưu trú",
+            "Vị trí: Bên trong lữ quán",
+            "Trạng thái: Khả dụng"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Cung cấp giường chiếu cơ bản, phòng tắm và phòng cách âm cho khách đã đăng ký; khi đầy phòng, khách mới đến sẽ kích hoạt quy tắc toàn thể khách trọ dời sang phòng kế tiếp. Đồ vật trong phòng không thể mang ra ngoài, và không sinh ra vật tư có thể giao dịch."
+          },
+          "描述": "Phòng khách hiện ra theo nhu cầu lưu trú, đóng lại khi trống phòng.",
+          "总占用空间": "Phòng khách vô hạn; không có dung lượng kho có thể mang ra ngoài"
+        }
+      }
+    },
+    {
+      "name": "Thần Quốc Hoang Phế",
+      "cost": 8000,
+      "rarity": "only",
+      "类型": "Di tích vị diện",
+      "标签": [
+        "Chủ sở hữu: <user>",
+        "Mục đích: Thám hiểm di tích / lánh nạn / tu phục",
+        "Trạng thái: Đình trệ"
+      ],
+      "总空间": "Tàn khuyết thần quốc: thánh điện đổ nát, viên đình tĩnh chỉ, tường thành thất hiệu, khu lõi phong bế; khu vực đã ổn định: khoảng 400000m²|Khu vực nguy hiểm phong bế: quy mô chưa rõ",
+      "结算": "Định giá tài sản: không áp dụng; không có thu chi cố định",
+      "位置": "Vị trí không xác định trong hư hải; có thể tiến vào qua chìa khóa cổng đặc định",
+      "描述": "Một tàn tích thần quốc đã mất chủ nhân nguyên bản và phần lớn đã sụp đổ, nằm ở nơi không xác định trong hư hải. Người sở hữu chỉ nắm quyền sử dụng chìa khóa cổng đặc định và khu vực đã ổn định, không sở hữu thần vị, pháp tắc, quyền lập quy, quyền tăng tốc thời gian hay khả năng tự do hàng hải trong hư hải; việc tu phục cần đầu tư vật liệu và nhân lực thực tế, khu lõi phong bế không được mở nếu không đủ điều kiện tương ứng.",
+      "内部资产": {
+        "Chìa Khóa Cổng Đặc Định": {
+          "品质": "only",
+          "标签": [
+            "Loại hình: Chìa khóa vị diện",
+            "Vị trí: Người sở hữu mang theo bên mình",
+            "Trạng thái: Khả dụng hạn chế"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Khi <user> dùng chìa khóa này mở bất kỳ cánh cửa nào, cánh cửa đó sẽ tạm thời nối thông đến sân ngoài của di tích thần quốc; không thể tạo ra cửa từ hư không, cũng không thể kết nối đến địa điểm hay vị diện khác."
+          },
+          "描述": "Một chiếc chìa khóa cũ không khắc chữ, sau khi rời khỏi di tích, cổng tạm thời sẽ khôi phục lại thành cánh cửa vốn có.",
+          "总占用空间": "Không áp dụng"
+        }
+      }
+    },
+    {
+      "name": "Ruộng Đất Tùy Thân",
+      "cost": 5000,
+      "rarity": "only",
+      "类型": "Lãnh địa gấp nếp",
+      "标签": [
+        "Chủ sở hữu: <user>",
+        "Mục đích: Trồng trọt / tự cấp",
+        "Trạng thái: Khả dụng"
+      ],
+      "总空间": "Ruộng đất tùy thân: 1 luống ruộng canh tác, 1 bể chứa nước, 1 lán dụng cụ; diện tích: 1200m²|Diện tích trống: khoảng 180m²",
+      "结算": "Định giá tài sản: không áp dụng; không có thu chi cố định",
+      "位置": "Cổng vào ruộng đất gấp nếp di chuyển theo người sở hữu",
+      "描述": "Một mảnh ruộng đất diện tích cố định mà người sở hữu có thể mang theo lối vào, chờ được khai phá.",
+      "内部资产": {
+        "Bể Chứa Nước Và Duy Trì Đất": {
+          "品质": "rare",
+          "标签": [
+            "Loại hình: Cơ sở nông nghiệp",
+            "Vị trí: Rìa ruộng đất",
+            "Trạng thái: Khả dụng"
+          ],
+          "数量": 1,
+          "效果": {
+            "功能效果": "Duy trì tưới tiêu cơ bản và trạng thái đất cho 1200m² đất canh tác; vẫn cần đầu tư nguồn nước, hạt giống, công sức và phân bón."
+          },
+          "描述": "Hệ thống bể nông duy trì điều kiện nông nghiệp thông thường.",
+          "总占用空间": "Khoảng 60m²"
+        }
+      }
+    },
+    {
+      "name": "Quán Ăn Nơi Tận Cùng Hư Hải",
+      "cost": 8000,
+      "rarity": "only",
+      "类型": "Cửa hàng đặc biệt",
+      "标签": [
+        "Chủ sở hữu: ？？？",
+        "Bên B: <user>",
+        "Mục đích: Ẩm thực / đàm phán",
+        "Trạng thái: Khả dụng",
+        "Chế độ: Đình trệ"
+      ],
+      "总空间": "Nhà hàng: quầy bar, chỗ ngồi rời, bếp, cửa sổ ngắm cảnh; diện tích: khoảng 500m²|Hậu bếp và phòng trữ đồ: khoảng 220m²|Phạm vi bao phủ: bên trong quán ăn",
+      "结算": "Định giá tài sản: không áp dụng; không có thu chi cố định; giá dùng bữa tại chỗ được quy đổi ra Z theo ma trận ẩm thực và quyết toán bằng tiền tệ bản địa của người đến thăm",
+      "位置": "Tận cùng hư hải; chỉ có thể đến qua cửa mời của quán ăn",
+      "描述": "Một quán ăn mở ở tận cùng hư hải, bên ngoài cửa sổ ngắm cảnh không có bến cảng nào, chỉ có biển sao đang tắt dần chậm rãi và đôi khi tàn dư vị diện lướt qua tấm kính. Hậu bếp của nhà hàng và phòng ngủ của <user> có phần không gian trùng lặp nhau, tuy vì thế mà <user> không thể về phòng ngủ được, nhưng cũng nhờ đó mà có thể bước vào quán ăn. Khách đến theo chế độ mời, do ？？？ mời tới, cùng nhau bàn về những chuyến đi, ngày tận thế hay món tráng miệng trên bàn ăn.",
+      "内部资产": {
+        "Nhà Bếp Biên Giới": {
+          "品质": "only",
+          "标签": [
+            "Loại hình: Cơ sở ẩm thực",
+            "Vị trí: Hậu bếp",
+            "Trạng thái: Khả dụng"
+          ],
+          "数量": 1,
+          "效果": {
+            "产出": "Chế biến các món ăn thường, ngày thường, tinh tế hoặc xa xỉ theo nguyên liệu đã thanh toán và thực đơn, cùng món tráng miệng được đặt tên theo tâm trạng đầu bếp trong ngày.",
+            "功能效果": "Kiểm định [Nấu Ăn] +5"
+          },
+          "描述": "Một gian bếp bình thường, dụng cụ và gia vị đầy đủ.",
+          "总占用空间": "Khoảng 220m²"
+        }
+      }
+    }
+  ]
+}

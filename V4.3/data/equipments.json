@@ -1,0 +1,4606 @@
+{
+  "Vũ Khí Kiếm": [
+    {
+      "name": "Lời Cầu Nguyện Thi Thiên 46",
+      "cost": 46,
+      "type": "Vũ Khí",
+      "tag": [
+        "Cự Kiếm",
+        "Pháp Trượng",
+        "Tấn Công: 180"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Nạp Năng": "Khi tấn công tăng 12% sát thương.",
+        "Viên Mãn": "Khi tấn công tăng thêm 12% sát thương."
+      },
+      "description": "Cự kiếm phù văn được bí pháp rèn từ nguyên khối nguyệt quang thạch, thân kiếm rộng màu trắng ngà khắc phù văn sắc màu khuếch đại ma pháp, bảy viên bảo thạch sắc màu khảm trong rãnh kiếm, khi ngâm xướng chú văn sẽ tỏa ra lưu quang rực rỡ."
+    },
+    {
+      "name": "Kiếm Liễu Cung Đình",
+      "cost": 10,
+      "type": "Vũ Khí",
+      "tag": [
+        "Thích Kiếm",
+        "Tấn Công: 15"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Ngưng Hộ": "Mỗi lần tấn công nhận 50 điểm khiên, không cộng dồn."
+      },
+      "description": "Thân kiếm thanh mảnh rèn từ tinh thép, trang bị chuôi bảo vệ hình bướm tinh xảo, nhẹ nhàng linh hoạt, là vũ khí quyết đấu thường dùng của quý tộc."
+    },
+    {
+      "name": "Kiếm Thủ Bán",
+      "cost": 8,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đơn Thủ Kiếm",
+        "Tấn Công: 19"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Lợi Nhận": "Tấn công gây thêm 15 điểm sát thương vật lý."
+      },
+      "description": "Rèn từ vật liệu sắt ưu chất, chiều dài chuôi kiếm thích hợp cầm bằng một tay hoặc hai tay, chiến thuật linh hoạt đa biến."
+    },
+    {
+      "name": "Đại Kiếm Tinh Thiết",
+      "cost": 15,
+      "type": "Vũ Khí",
+      "tag": [
+        "Song Thủ Kiếm",
+        "Tấn Công: 25"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Trầm Trọng": "Đòn đánh thường gây thêm 25 điểm sát thương vật lý."
+      },
+      "description": "Trọng kiếm hai lưỡi đúc từ tinh thiết, trang bị chuôi bảo vệ hình chữ thập dài, cần dùng hai tay vung chém, uy lực cực lớn."
+    },
+    {
+      "name": "Kiếm Luyện Tập Học Đồ",
+      "cost": 12,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đơn Thủ Kiếm",
+        "Tấn Công: 20"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Luyện Tập": "Sát thương tạo thành khi tấn công giảm một nửa."
+      },
+      "description": "Thanh kiếm dùng để luyện tập của học đồ kiếm thuật, thân kiếm tương đối cùn để tránh ngộ thương."
+    },
+    {
+      "name": "Trường Kiếm Thép Cương Phong",
+      "cost": 28,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đơn Thủ Kiếm",
+        "Tấn Công: 75"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Xé Rách": "Tấn công có tỷ lệ d20≥16 gây hiệu ứng [Chảy Máu], mỗi hiệp tổn thất 150 điểm HP, kéo dài 2 hiệp."
+      },
+      "description": "Rèn từ bách luyện tinh thép, thân kiếm thẳng tắp có rãnh máu rõ nét, độ cân bằng cực tốt, là lựa chọn đáng tin cậy của các chiến sĩ lão luyện."
+    },
+    {
+      "name": "Thích Kiếm Chim Ruồi",
+      "cost": 26,
+      "type": "Vũ Khí",
+      "tag": [
+        "Thích Kiếm",
+        "Tấn Công: 70"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Chí Mạng": "Khi tấn công trúng đích gây thêm 60 điểm sát thương vật lý."
+      },
+      "description": "Thân kiếm cực mảnh rèn từ bách luyện thép, chuôi bảo vệ mạ vàng điêu khắc hoa văn, tốc độ đâm cực nhanh, khó lòng đón đỡ."
+    },
+    {
+      "name": "Kiếm Thủ Bán Nhanh Nhẹn",
+      "cost": 27,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đơn Thủ Kiếm",
+        "Tấn Công: 68"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Khí Lãng": "Khi tấn công trúng đích gây thêm 50 điểm sát thương vật lý."
+      },
+      "description": "Thân kiếm trọng lượng nhẹ rèn từ tinh thép, chuôi kiếm dùng được cả một tay lẫn hai tay, có thể tăng nhẹ tốc độ tấn công."
+    },
+    {
+      "name": "Đại Kiếm Đồ Hộp",
+      "cost": 15,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đơn Thủ Kiếm",
+        "Tấn Công: 82"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Tiếc Nuối": "Không thể chém đứt vận mệnh, đại kiếm này với đồ hộp có khác gì nhau.",
+        "Khổ Nạn": "Chó hoang không cần bia mộ, cứ cuồng chạy tới lúc mục nát là được."
+      },
+      "description": "Đại kiếm ghép nối từ 101 chiếc hộp thiếc dài, tựa như đồ chơi con nít, nhưng trên thân kiếm lại toát ra nỗi giày vò khôn nguôi, mồ hôi đầm đìa sau trận chiến, nỗi đau vì người thân, nỗi hận với kẻ thù, cùng sự lo lắng khôn xiết cho những người bạn đồng hành gặp trên đường."
+    },
+    {
+      "name": "Bảo Kiếm Gia Truyền",
+      "cost": 32,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đơn Thủ Kiếm",
+        "Tấn Công: 140"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Kế Thừa": "Khi trang bị nhận trạng thái 'Vinh Quang Gia Tộc', khi bị đánh trúng giảm 150 điểm sát thương.",
+        "Đắt Đỏ": "Nguyên liệu sử dụng vượt xa phẩm chất hiện tại, thân kiếm điêu khắc vô cùng rườm rà lộng lẫy."
+      },
+      "description": "Bảo kiếm do tổ tiên truyền lại, trên chuôi kiếm có khắc gia huy."
+    },
+    {
+      "name": "Trường Kiếm Phù Phép Xích Diễm",
+      "cost": 42,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đơn Thủ Kiếm",
+        "Tấn Công: 160"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Liệt Diễm": "Mọi đòn tấn công kèm thêm 180 điểm sát thương năng lượng (Hỏa).",
+        "Phun Lửa": "Khi tấn công có tỷ lệ d20≥16 phun lửa thiêu đốt đối phương, gây 160 điểm sát thương năng lượng mỗi hiệp, kéo dài 2 hiệp."
+      },
+      "description": "Thân kiếm rèn tỉ mỉ từ bách luyện thép, chính giữa chuôi kiếm chữ thập khảm một viên hồng ngọc rực cháy, khi vung chém lưỡi kiếm quấn quanh dòng lửa nhiệt độ cao."
+    },
+    {
+      "name": "Đại Kiếm Chữ Thập Thánh Quang",
+      "cost": 42,
+      "type": "Vũ Khí",
+      "tag": [
+        "Song Thủ Kiếm",
+        "Tấn Công: 170"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Thánh Dương": "Sát thương năng lượng cuối cùng tăng 12%.",
+        "Thần Thánh Trừng Phạt": "Sát thương đối với Vong Linh và Ma Tộc tăng 12% + 150 điểm sát thương năng lượng (Thánh)."
+      },
+      "description": "Đại kiếm lưỡi rộng đúc từ thép mạ bạc, thân kiếm dày dặn chắc chắn, trung tâm ăn mòn khắc thánh huy rạng ngời, là trang bị tiêu chuẩn của kỵ sĩ thánh điện."
+    },
+    {
+      "name": "Trọng Kiếm Dung Nham",
+      "cost": 43,
+      "type": "Vũ Khí",
+      "tag": [
+        "Song Thủ Kiếm",
+        "Tấn Công: 180"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Dung Nham Bộc Phát": "Khi thi triển kỹ năng tiêu hao thêm [Hành Động] nện mạnh xuống đất, gây sát thương lên kẻ địch trong phạm vi 3 và thêm 180 điểm sát thương năng lượng (Hỏa).",
+        "Sức Mạnh Dung Nham": "Khi tấn công có tỷ lệ d20≥16 phát nổ gây 500 điểm sát thương năng lượng (Hỏa)."
+      },
+      "description": "Cự kiếm lưỡi rộng đúc từ hắc thép dung hợp đá núi lửa, trung tâm thân kiếm khảm một lõi lửa dung nham đang đập thình thịch, sức tàn phá kinh người nhưng vô cùng nặng nề."
+    },
+    {
+      "name": "Huyết Khế Chi Nhận",
+      "cost": 48,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đơn Thủ Kiếm",
+        "Tấn Công: 190"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Huyết Chi Khế Ước": "Tiêu hao 500 điểm HP, tấn công kẻ địch vũ khí sẽ trực tiếp phun trào gai máu gây 800 điểm sát thương vật lý lên đối thủ, kéo dài 2 hiệp."
+      },
+      "description": "Thân kiếm phủ đầy hoa văn màu máu, cần trả giá bằng máu tươi của người sử dụng mới giải phóng được sức mạnh chân chính."
+    },
+    {
+      "name": "Kiếm Trói Buộc Linh Hồn",
+      "cost": 68,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đơn Thủ Kiếm",
+        "Tấn Công: 320"
+      ],
+      "rarity": "epic",
+      "effect": {
+        "Trói Buộc Linh Hồn": "Vũ khí không thể bị người khác sử dụng.",
+        "Xé Rách Linh Hồn": "Mỗi lần tấn công gây 350 điểm sát thương năng lượng (Ám).",
+        "Trích Xuất Linh Hồn": "Sau khi kẻ địch tử vong, linh hồn sẽ bị vũ khí chuyển hóa thành pha lê lưu trữ."
+      },
+      "description": "Thân kiếm sẽ trói buộc với linh hồn của người sử dụng, không ngừng trưởng thành theo kinh nghiệm chiến đấu."
+    },
+    {
+      "name": "Hi Sinh Chi Nhận",
+      "cost": 55,
+      "type": "Vũ Khí",
+      "tag": [
+        "Song Thủ Kiếm",
+        "Tấn Công: 250"
+      ],
+      "rarity": "epic",
+      "effect": {
+        "Lấy Mạng Đổi Mạng": "Tiêu hao 16% HP hiện tại, gây lượng sát thương chuẩn tương đương lên mục tiêu.",
+        "Hiến Tế": "Khi tấn công có tỷ lệ d20≥16 tạo thành phù văn hiến tế, tự động phóng thích gây 1200 điểm sát thương năng lượng lên kẻ địch."
+      },
+      "description": "Thân kiếm khắc đầy phù văn hiến tế, cần trả giá bằng sinh mệnh để giải phóng sức mạnh hủy diệt."
+    },
+    {
+      "name": "Frostmourne (Sương Chi Ai Thương)",
+      "cost": 120,
+      "type": "Vũ Khí",
+      "tag": [
+        "Song Thủ Kiếm",
+        "Tấn Công: 1100"
+      ],
+      "rarity": "legendary",
+      "effect": {
+        "Sương Chi Ai Thương": "Khi vũ khí gây sát thương, mỗi lần tấn công gây thêm 1100 điểm sát thương năng lượng (Băng).",
+        "Quyền Năng: Thu Hoạch Linh Hồn": "Khi thi triển kỹ năng tấn công gây thêm sát thương năng lượng bằng 20% máu tối đa của mục tiêu.",
+        "Yếu Tố: Đánh Cắp Linh Hồn": "Khi kẻ địch tử vong, sẽ bị vũ khí thu thập hóa thành thủy tinh linh hồn, có thể dùng cho luyện kim."
+      },
+      "description": "Cự kiếm song thủ phù văn khổng lồ dung hòa tinh hoa ác ma, mảnh băng giá Hư Không Vặn Vẹo cùng sức mạnh Thánh Quang sa đọa chế thành, thân kiếm quấn quanh sương mù băng giá vĩnh viễn không tan, phù văn u lam nhấp nháy quang mang quỷ dị, chuôi kiếm đầu lâu tỏa ra hàn ý khiếp đảm lòng người."
+    },
+    {
+      "name": "Phá Hiểu",
+      "cost": 666,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đơn Thủ Kiếm",
+        "Tấn Công: 1600"
+      ],
+      "rarity": "only",
+      "effect": {
+        "Yếu Tố: Thánh Quang": "Tất cả hiệu ứng thần thuật tăng 20%.",
+        "Quyền Năng: Thự Quang": "Khi vũ khí gây sát thương, mỗi lần tấn công gây thêm 4800 điểm sát thương năng lượng (Quang), sát thương này đối với sinh vật dị giới và tà ác có hệ số 200%.",
+        "Quy Tắc: Thần Hi": "Khi kẻ địch còn 20% sinh mệnh trở xuống, sẽ trực tiếp bị ánh rạng đông tiêu diệt."
+      },
+      "description": "Vũ khí của Phá Hiểu Thánh Quyền Muir, thanh kiếm sinh ra từ sự hỗn loạn thời không sau khi Muir từ tương lai đăng thần, mang đậm thần tính của Muir, trên thân kiếm màu trắng bạc ẩn hiện phù văn phù phép đen nhánh lưu chuyển, hộ thủ kiếm do một đôi trăng khuyết hoàng kim tạo thành, hình thoi ở giữa khảm một viên lam ngọc, chuôi kiếm màu đen nhám, phần đuôi là khối hình thoi vàng nhạt."
+    },
+    {
+      "name": "Kiếm Lời Thề Kỵ Sĩ",
+      "cost": 36,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đơn Thủ Kiếm",
+        "Tấn Công: 155"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Lời Thề Kỵ Sĩ": "Khi bảo vệ đồng đội, phòng ngự tăng 12%. Khi làm trái lời thề (tấn công người vô tội), vũ khí mất toàn bộ gia số.",
+        "Tuyệt Địa Phản Kích": "Khi lượng máu dưới 50%, hồi phục 800 điểm máu, mỗi trận chiến chỉ dùng được một lần."
+      },
+      "description": "Bảo kiếm nhận được khi kỵ sĩ thụ phong, thân kiếm khắc quy tắc thủ tắc của kỵ sĩ."
+    },
+    {
+      "name": "Tế Kiếm Kẻ Quyết Đấu",
+      "cost": 38,
+      "type": "Vũ Khí",
+      "tag": [
+        "Thích Kiếm",
+        "Tấn Công: 160"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Quyết Đấu": "Khi chiến đấu 1v1, chính xác +2, né tránh +2.",
+        "Đấu Sĩ Quyết Đấu": "Khi chiến đấu 1v1, sát thương cuối cùng tăng 12%."
+      },
+      "description": "Tế kiếm chuyên dùng cho quyết đấu, thân kiếm mảnh mai linh hoạt."
+    },
+    {
+      "name": "Đại Kiếm Xử Hình",
+      "cost": 44,
+      "type": "Vũ Khí",
+      "tag": [
+        "Song Thủ Kiếm",
+        "Tấn Công: 180"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Xử Hình": "Tăng 12% sát thương đối với kẻ địch dưới 50% HP.",
+        "Trảm Sát": "Tăng 12% sát thương đối với kẻ địch dưới 50% HP, cộng dồn với Xử Hình."
+      },
+      "description": "Thanh kiếm xử hình nặng nề, chuyên dùng để chặt đầu."
+    },
+    {
+      "name": "Nguyệt Quang Kiếm",
+      "cost": 50,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đơn Thủ Kiếm",
+        "Tấn Công: 160"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Nguyệt Quang": "Khi chiến đấu ban đêm, tấn công kèm theo 180 điểm sát thương năng lượng.",
+        "Nguyệt Quang Ngưng Hợp": "Khi chiến đấu ban đêm, có thể chủ động ngưng tụ năng lượng ánh trăng hồi phục 800 điểm sinh mệnh, 1 lần/trận chiến."
+      },
+      "description": "Thân kiếm sẽ phát ra ánh sáng bạc lung linh dưới ánh trăng."
+    },
+    {
+      "name": "Phá Ma Kiếm",
+      "cost": 48,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đơn Thủ Kiếm",
+        "Tấn Công: 175"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Hút Ma": "12% sát thương năng lượng phải chịu chuyển hóa thành sinh mệnh và ma pháp hồi phục cho bản thân.",
+        "Phá Ma": "Tăng 12% sát thương đối với sinh vật ma pháp."
+      },
+      "description": "Thân kiếm khắc đầy phù văn phá ma, là khắc tinh của các sinh vật ma pháp."
+    },
+    {
+      "name": "Hấp Huyết Kiếm",
+      "cost": 44,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đơn Thủ Kiếm",
+        "Tấn Công: 180"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Hút Máu": "Khi gây sát thương, hồi phục HP tương đương 12% sát thương gây ra.",
+        "Huyết Thuẫn": "12% sát thương gây ra sẽ chuyển hóa thành lượng khiên tương đương, có thể cộng dồn."
+      },
+      "description": "Thân kiếm có màu đỏ như máu, có khả năng hút lấy sinh mệnh lực của kẻ thù."
+    }
+  ],
+  "Vũ Khí Rìu Búa": [
+    {
+      "name": "Cự Phủ Song Thủ",
+      "cost": 14,
+      "type": "Vũ Khí",
+      "tag": [
+        "Song Thủ Phủ",
+        "Tấn Công: 20"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Thô Quáng": "Đòn đánh thường gây thêm 20 điểm sát thương vật lý."
+      },
+      "description": "Đầu rìu sắt hai lưỡi nặng nề, lắp trên cán gỗ chắc chắn, cần vung bằng hai tay, khả năng phá giáp cực mạnh."
+    },
+    {
+      "name": "Rìu Đốn Củi",
+      "cost": 10,
+      "type": "Vũ Khí",
+      "tag": [
+        "Thủ Phủ",
+        "Tấn Công: 20"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Đốn Củi": "Khi thu thập thực vật hoặc gỗ [Bình Thường], sản lượng +1."
+      },
+      "description": "Công cụ đốn củi thông thường, lưỡi rìu sắc bén nhưng không thích hợp cho chiến đấu."
+    },
+    {
+      "name": "Cuốc Thợ Mỏ",
+      "cost": 10,
+      "type": "Vũ Khí",
+      "tag": [
+        "Độn Khí",
+        "Tấn Công: 20"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Khai Khoáng": "Khi khai thác khoáng vật [Bình Thường], sản lượng +1."
+      },
+      "description": "Cuốc chim do thợ mỏ sử dụng, có thể dễ dàng đục vỡ nham thạch."
+    },
+    {
+      "name": "Chân Ghế Hỗn Chiến Quán Rượu",
+      "cost": 6,
+      "type": "Vũ Khí",
+      "tag": [
+        "Độn Khí",
+        "Tấn Công: 12"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Vũ Khí Tùy Cơ": "Khi chiến đấu trong quán rượu, sát thương +30%."
+      },
+      "description": "Chân ghế được tháo từ ghế quán rượu, bên trên còn dính vết rượu."
+    },
+    {
+      "name": "Thạch Chùy Cầu Nguyện",
+      "cost": 24,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đơn Thủ Chùy",
+        "Tấn Công: 70"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Thần Thánh Phụ Gia": "Khi dùng vũ khí này thực hiện đòn đánh thường, gây thêm 75 điểm sát thương năng lượng."
+      },
+      "description": "Đầu búa mài từ đá hoa cương cứng cáp, khắc phù văn cầu nguyện cơ bản, có thể dẫn dắt năng lượng thần thuật tốt hơn."
+    },
+    {
+      "name": "Chiến Chùy Toái Giáp",
+      "cost": 26,
+      "type": "Vũ Khí",
+      "tag": [
+        "Song Thủ Chùy",
+        "Tấn Công: 85"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Phá Giáp": "Khi tấn công bỏ qua 80 điểm giáp của địch."
+      },
+      "description": "Đầu búa nhiều góc cạnh bằng thép, phối hợp cán dài bằng gỗ cứng vững chắc, trọng tâm hướng về phía trước, chuyên dùng để phá hủy giáp nặng."
+    },
+    {
+      "name": "Lưu Tinh Xích Chùy",
+      "cost": 24,
+      "type": "Vũ Khí",
+      "tag": [
+        "Xích Gia",
+        "Tấn Công: 74"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Choáng Váng": "Có tỷ lệ d20≥16 khiến mục tiêu bị [Chóng Mặt], kiểm định trúng đích -1, duy trì 1 hiệp."
+      },
+      "description": "Quả cầu sắt có gai lớn hơn thông thường, nối bằng dây xích sắt gia cố, xung lực cực lớn khi vung, thích hợp để phá giáp."
+    },
+    {
+      "name": "Ngạnh Đầu Chùy Hám Địa",
+      "cost": 23,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đơn Thủ Chùy",
+        "Tấn Công: 73"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Đoạn Cốt": "Có tỷ lệ d20≥11 khiến mục tiêu bị [Gãy Xương], kiểm định nhanh nhẹn -1, duy trì 2 hiệp."
+      },
+      "description": "Đầu búa đúc bằng tinh thép đặc ruột, bề mặt phủ đầy mấu lồi, có thể dễ dàng đập nát xương cốt và đá tảng."
+    },
+    {
+      "name": "Thiết Tượng Chi Chùy",
+      "cost": 28,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đơn Thủ Chùy",
+        "Tấn Công: 120"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Sức Mạnh Rèn Đúc": "Kiểm định rèn đúc +2, thời gian chế tạo -20%."
+      },
+      "description": "Búa làm việc của thợ rèn, mặt búa nhẵn bóng, tay cầm mài đến sáng bóng."
+    },
+    {
+      "name": "Thủ Phủ Ném Bay",
+      "cost": 18,
+      "type": "Vũ Khí",
+      "tag": [
+        "Thủ Phủ",
+        "Tấn Công: 50"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Phóng Chí Mạng": "Khi tấn công trúng đích gây thêm 45 điểm sát thương vật lý."
+      },
+      "description": "Rìu tinh thép cán ngắn một lưỡi, thân rìu nhẹ nhàng, quỹ đạo bay ổn định hơn khi ném."
+    },
+    {
+      "name": "Đinh Chùy Thẩm Phán",
+      "cost": 41,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đơn Thủ Chùy",
+        "Tấn Công: 160"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Thần Thánh Tài Quyết": "Khi tấn công bằng vũ khí này, gây thêm 150 điểm sát thương năng lượng. Hiệu ứng này tăng 12% sát thương đối với Vong Linh hoặc Ma Tộc."
+      },
+      "description": "Đinh chùy một tay chế tác từ bí ngân, đầu búa hình ngôi sao nhiều cánh, ở giữa khảm một viên tinh thể quang minh tịnh hóa, khi đánh trúng kẻ địch sẽ bùng nổ năng lượng thần thánh phạm vi nhỏ."
+    },
+    {
+      "name": "Tuẫn Đạo Giả Chi Chùy",
+      "cost": 42,
+      "type": "Vũ Khí",
+      "tag": [
+        "Độn Khí",
+        "Tấn Công: 165"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Đổi Vết Thương Lấy Vết Thương": "Mỗi khi mất 100 điểm HP, đòn tấn công tiếp theo gây thêm 150 điểm sát thương thần thánh, có thể cộng dồn."
+      },
+      "description": "Cán búa khắc đầy tên của những người tử vì đạo, mỗi lần vung đánh đều kèm theo cái giá đắt đỏ."
+    },
+    {
+      "name": "Chiến Phủ Bão Táp",
+      "cost": 40,
+      "type": "Vũ Khí",
+      "tag": [
+        "Song Thủ Phủ",
+        "Tấn Công: 160"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Thuận Phách": "Khi tấn công, gây sát thương vật lý lan 12% lên mục tiêu trong phạm vi 3.",
+        "Cuồng Phong": "Đơn vị bị sát thương lan từ Thuận Phách chịu thêm 150 điểm sát thương vật lý."
+      },
+      "description": "Chiến phủ hai mặt đối xứng rèn từ thiên thạch thiết, mặt rìu nhẵn mịn, trung tâm khảm một viên bảo thạch mắt bão thu nhỏ, cần dùng hai tay mới có thể điều khiển."
+    },
+    {
+      "name": "Chiến Phủ Sứ Giả Băng Sương",
+      "cost": 40,
+      "type": "Vũ Khí",
+      "tag": [
+        "Song Thủ Phủ",
+        "Tấn Công: 175"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Sương Đống": "Khi tấn công trúng đích có 50% tỷ lệ (d20≥11) tạo hiệu ứng [Đóng Băng], khiến quyền tiên công của mục tiêu -2, kéo dài 2 hiệp."
+      },
+      "description": "Chiến phủ hai lưỡi đúc từ hàn thiết cực bắc, mặt rìu tự nhiên phủ một tầng băng sương khó tan, hàn khí giải phóng khi chém có thể làm chậm hành động của kẻ địch."
+    },
+    {
+      "name": "Lôi Đình Chi Chùy",
+      "cost": 38,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đơn Thủ Chùy",
+        "Tấn Công: 175"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Tê Liệt": "Khi tấn công trúng đích có tỷ lệ d20≥16 khiến mục tiêu bị [Tê Liệt], hiệp kế tiếp không thể sử dụng tài nguyên [Hành Động].",
+        "Hồ Quang": "Khi tấn công trúng đích giải phóng tia hồ quang điện, gây 150 điểm sát thương sấm sét lên mục tiêu và kẻ địch trong phạm vi 3."
+      },
+      "description": "Đầu búa hình vuông rèn từ nguyên khối thiên thạch sắt, bề mặt khảm vài viên lôi tinh thạch bất quy tắc, khi đánh trúng mục tiêu sẽ bắn ra tia hồ quang chói lóa."
+    },
+    {
+      "name": "Chiến Phủ Hồi Âm",
+      "cost": 52,
+      "type": "Vũ Khí",
+      "tag": [
+        "Song Thủ Phủ",
+        "Tấn Công: 220"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Hồi Âm": "Sau khi tấn công trúng đích, tạo hiệu ứng dễ bị tổn thương 12% lên kẻ địch.",
+        "Gợn Sóng": "Sau khi tấn công trúng đích, tạo hiệu ứng dễ bị tổn thương 12% lên kẻ địch, có thể cộng dồn với Hồi Âm."
+      },
+      "description": "Lưỡi rìu khi rung động sẽ phát ra hồi âm kéo dài, dường như đòn tấn công vĩnh viễn không dừng lại."
+    },
+    {
+      "name": "Chùy Gai Nhọn Phá Giáp",
+      "cost": 44,
+      "type": "Vũ Khí",
+      "tag": [
+        "Độn Khí",
+        "Tấn Công: 175"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Phá Giáp": "Sau khi tấn công trúng đích, phòng ngự mục tiêu giảm 12%, kéo dài 3 hiệp (có thể cộng dồn 3 tầng)."
+      },
+      "description": "Đầu búa phủ đầy gai nhọn, chuyên dụng để xé rách áo giáp của kẻ địch."
+    },
+    {
+      "name": "Chiến Chùy Lôi Minh",
+      "cost": 50,
+      "type": "Vũ Khí",
+      "tag": [
+        "Chiến Chùy",
+        "Tấn Công: 210"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Lôi Đình Chấn Kích": "Khi tấn công trúng đích, gây sát thương lên tất cả mục tiêu trong phạm vi 2m xung quanh."
+      },
+      "description": "Đầu búa ẩn chứa sức mạnh sấm sét, mỗi lần vung đánh đều kèm theo tiếng sấm rền."
+    },
+    {
+      "name": "Chiến Chùy Toái Cốt",
+      "cost": 42,
+      "type": "Vũ Khí",
+      "tag": [
+        "Song Thủ Chùy",
+        "Tấn Công: 175"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Toái Cốt": "Bỏ qua 30% phòng ngự đối với mục tiêu mặc giáp nặng."
+      },
+      "description": "Búa nặng chuyên thiết kế để đập nát xương cốt và áo giáp."
+    },
+    {
+      "name": "Rìu Cuồng Chiến Sĩ",
+      "cost": 46,
+      "type": "Vũ Khí",
+      "tag": [
+        "Song Thủ Phủ",
+        "Tấn Công: 195"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Cuồng Bạo": "Sau mỗi lần tiêu diệt địch, kiểm định tiên công +1 (cộng dồn tối đa 3 tầng)."
+      },
+      "description": "Cự phủ mà cuồng chiến sĩ sử dụng, nhuốm đầy máu tươi của kẻ thù."
+    },
+    {
+      "name": "Lôi Thần Chi Chùy",
+      "cost": 52,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đơn Thủ Chùy",
+        "Tấn Công: 220"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Lôi Kích": "Khi tấn công, có tỷ lệ d20≥17 triệu hồi sấm sét, gây thêm 100 điểm sát thương sấm sét."
+      },
+      "description": "Đầu búa khắc phù văn sấm sét, có thể dẫn dắt thiên lôi."
+    },
+    {
+      "name": "Chiến Chùy Chấn Địa",
+      "cost": 50,
+      "type": "Vũ Khí",
+      "tag": [
+        "Song Thủ Chùy",
+        "Tấn Công: 215"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Chấn Địa": "Khi nện xuống mặt đất, gây 60% sát thương lên tất cả kẻ địch trong phạm vi 3."
+      },
+      "description": "Búa chiến nặng nề, có thể làm chấn động mặt đất."
+    },
+    {
+      "name": "Chiến Phủ Hàn Băng",
+      "cost": 46,
+      "type": "Vũ Khí",
+      "tag": [
+        "Song Thủ Phủ",
+        "Tấn Công: 195"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Băng Đống": "Hiệu ứng kèm theo (kiểm định trí lực): Mục tiêu bị đóng băng (không thể hành động), duy trì 1 hiệp."
+      },
+      "description": "Lưỡi rìu tỏa ra hàn khí, có thể đóng băng kẻ địch."
+    },
+    {
+      "name": "Thẩm Phán Chi Chùy",
+      "cost": 58,
+      "type": "Vũ Khí",
+      "tag": [
+        "Độn Khí",
+        "Tấn Công: 270"
+      ],
+      "rarity": "epic",
+      "effect": {
+        "Thánh Tài": "Tăng 16% sát thương lên mục tiêu mang trạng thái [Tiêu Cực].",
+        "Thẩm Phán": "Tăng 16% sát thương lên mục tiêu mang trạng thái [Tiêu Cực], có thể cộng dồn với Thánh Tài."
+      },
+      "description": "Thân búa khắc đầy phù văn thẩm phán, chuyên dùng để trừng trị những kẻ tội ác."
+    }
+  ],
+  "Vũ Khí Thương Giáo": [
+    {
+      "name": "Chiến Phủ Cán Dài",
+      "cost": 10,
+      "type": "Vũ Khí",
+      "tag": [
+        "Trường Bính Vũ Khí",
+        "Tấn Công: 18"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Chuẩn Xác": "Tấn công gây thêm 10 điểm sát thương vật lý."
+      },
+      "description": "Đỉnh cán gỗ dài lắp đầu rìu một lưỡi dày nặng, kết hợp cả phạm vi tấn công lẫn sức sát thương, thích hợp đối kháng với nhiều kẻ địch trên chiến trường."
+    },
+    {
+      "name": "Trường Mâu Chế Thức",
+      "cost": 10,
+      "type": "Vũ Khí",
+      "tag": [
+        "Trường Bính Vũ Khí",
+        "Tấn Công: 15"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Phá Giáp": "Tấn công gây thêm 10 điểm sát thương vật lý."
+      },
+      "description": "Cán gỗ dẻo dai lắp mũi giáo sắt đơn giản, ưu thế chiều dài giúp dễ dàng khống chế cự ly trong đội hình."
+    },
+    {
+      "name": "Mạch Đao",
+      "cost": 15,
+      "type": "Vũ Khí",
+      "tag": [
+        "Trường Bính Vũ Khí",
+        "Tấn Công: 20"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Trầm Trọng": "Tấn công gây thêm 10 điểm sát thương vật lý."
+      },
+      "description": "Đại đao hai lưỡi cán dài, thân đao rộng bản, phạm vi chém rộng, là vũ khí sắc bén của bộ binh đối phó kỵ binh."
+    },
+    {
+      "name": "Câu Liêm Thương",
+      "cost": 13,
+      "type": "Vũ Khí",
+      "tag": [
+        "Trường Bính Vũ Khí",
+        "Tấn Công: 19"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Lợi Nhận": "Tấn công gây thêm 6 điểm sát thương vật lý."
+      },
+      "description": "Bên cạnh mũi thương dài có thêm một lưỡi móc cong, có thể dùng móc kéo kẻ địch hoặc chặt đứt chân ngựa, công năng đa dạng."
+    },
+    {
+      "name": "Trường Mâu Bằng Gỗ",
+      "cost": 12,
+      "type": "Vũ Khí",
+      "tag": [
+        "Trường Thương",
+        "Tấn Công: 19"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Thô Sơ": "Tấn công có thể lan thêm 1 mục tiêu (phạm vi: 2), nhưng mỗi trận chiến tối đa kích hoạt 3 lần."
+      },
+      "description": "Cây gậy gỗ vót nhọn, là vũ khí đơn giản mà dân binh thường dùng."
+    },
+    {
+      "name": "Ngư Xoa",
+      "cost": 16,
+      "type": "Vũ Khí",
+      "tag": [
+        "Trường Thương",
+        "Tấn Công: 28"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Bắt Cá": "Sát thương đối với sinh vật thủy sinh +35%, kiểm định trúng đích khi chiến đấu dưới nước +2."
+      },
+      "description": "Chĩa ba ngạnh ngư dân thường dùng, đặc biệt hữu dụng trong môi trường nước."
+    },
+    {
+      "name": "Trường Mâu Phá Giáp",
+      "cost": 25,
+      "type": "Vũ Khí",
+      "tag": [
+        "Trường Bính Vũ Khí",
+        "Tấn Công: 78"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Xuyên Thứ": "Tất cả kỹ năng sát thương vật lý gây thêm 60 điểm sát thương vật lý."
+      },
+      "description": "Cán dài bằng gỗ cứng lắp mũi giáo tinh thép hình tam lăng, ưu thế chiều dài và sức xuyên thấu giúp dễ dàng đâm thủng giáp trụ."
+    },
+    {
+      "name": "Câu Liêm Thương Liệt Khải",
+      "cost": 28,
+      "type": "Vũ Khí",
+      "tag": [
+        "Trường Bính Vũ Khí",
+        "Tấn Công: 80"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Hư Hỏng": "Khi tấn công trúng đích, có tỷ lệ d20≥16 khiến giá trị phòng ngự của một trang bị [Phòng Cụ] của mục tiêu giảm 8%, kéo dài 2 hiệp."
+      },
+      "description": "Bên cạnh mũi thương tinh thép hàn thêm móc cong gia cố, dễ dàng móc giữ và xé rách áo giáp của đối phương."
+    },
+    {
+      "name": "Mạch Đao Trảm Mã",
+      "cost": 30,
+      "type": "Vũ Khí",
+      "tag": [
+        "Trường Bính Vũ Khí",
+        "Tấn Công: 80"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Sát Thủ Sinh Vật Lớn": "Sát thương vật lý tạo thành lên kẻ địch có thể hình lớn hơn bản thân tăng 8%."
+      },
+      "description": "Lưỡi đao tinh thép được làm dài và rộng hơn, lắp trên cán dài dẻo dai, phạm vi chém quét khổng lồ khiến nó trở thành cơn ác mộng đối với kỵ binh."
+    },
+    {
+      "name": "Tam Xoa Kích Triều Tịch",
+      "cost": 42,
+      "type": "Vũ Khí",
+      "tag": [
+        "Trường Bính Vũ Khí",
+        "Tấn Công: 140"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Ẩm Ướt": "Khi tấn công trúng đích có tỷ lệ d20≥11 khiến mục tiêu bị [Ẩm Ướt], sát thương năng lượng phải chịu tăng 12%, kéo dài 2 hiệp."
+      },
+      "description": "Rèn từ hàn thiết biển sâu, ba mũi kích nhấp nhô như sóng biển, trung tâm khảm viên bảo thạch lam ngọc thuần khiết, là vũ khí của hộ vệ thần điện đại dương."
+    },
+    {
+      "name": "Long Kỵ Thương",
+      "cost": 48,
+      "type": "Vũ Khí",
+      "tag": [
+        "Trường Thương",
+        "Tấn Công: 200"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Xung Phong": "Khi cưỡi thú, sát thương +12%, và gây thêm 150 điểm sát thương vật lý."
+      },
+      "description": "Trường thương chuyên dụng cho kỵ binh, thích hợp để xung phong trên lưng thú cưỡi."
+    },
+    {
+      "name": "Tam Xoa Kích",
+      "cost": 40,
+      "type": "Vũ Khí",
+      "tag": [
+        "Trường Thương",
+        "Tấn Công: 170"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Tam Trọng Đả Kích": "Khi tấn công, có tỷ lệ d20≥17 gây 2 lần sát thương."
+      },
+      "description": "Ngọn thương ba ngạnh, mỗi đòn tấn công đều có nhiều điểm va chạm."
+    },
+    {
+      "name": "Phá Trận Thương",
+      "cost": 44,
+      "type": "Vũ Khí",
+      "tag": [
+        "Trường Thương",
+        "Tấn Công: 185"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Phá Trận": "Khi tấn công, giảm 10% phòng ngự của mục tiêu, kéo dài 2 hiệp."
+      },
+      "description": "Trường thương chuyên dụng để đột phá trận địa quân địch."
+    },
+    {
+      "name": "Xuyên Tâm Thương",
+      "cost": 46,
+      "type": "Vũ Khí",
+      "tag": [
+        "Trường Thương",
+        "Tấn Công: 195"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Xuyên Tâm": "Khi bạo kích, gây thêm 150 điểm sát thương chuẩn."
+      },
+      "description": "Mũi thương sắc bén vô cùng, có thể đâm xuyên qua trái tim."
+    },
+    {
+      "name": "Hấp Hồn Trường Thương",
+      "cost": 58,
+      "type": "Vũ Khí",
+      "tag": [
+        "Trường Thương",
+        "Tấn Công: 260"
+      ],
+      "rarity": "epic",
+      "effect": {
+        "Thu Nhận Linh Hồn": "Khi đánh bại kẻ địch, hồi phục HP và MP tương đương 10% HP tối đa của đối phương."
+      },
+      "description": "Mũi thương khảm viên bảo thạch màu tím sẫm, có thể hấp thu năng lượng linh hồn của kẻ tử trận."
+    }
+  ],
+  "Vũ Khí Cung Nỏ": [
+    {
+      "name": "Trường Cung",
+      "cost": 11,
+      "type": "Vũ Khí",
+      "tag": [
+        "Cung",
+        "Tấn công: 17"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Sắc Bén": "Đòn đánh thường gây thêm 8 sát thương vật lý."
+      },
+      "description": "Thân cung ép lớp từ gỗ và sừng thú, lực kéo vừa phải, độ chính xác tốt, là vũ khí thông dụng của thợ săn và trinh sát."
+    },
+    {
+      "name": "Nỏ Thập Tự",
+      "cost": 15,
+      "type": "Vũ Khí",
+      "tag": [
+        "Nỏ",
+        "Tấn công: 20"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Vững Vàng": "Đòn đánh thường gây thêm 5 sát thương vật lý."
+      },
+      "description": "Được cấu thành từ cánh nỏ bằng sắt và báng gỗ, lên dây bằng cơ cấu cơ học, độ chính xác cao nhưng nạp đạn chậm, thích hợp thủ thành và bắn tỉa."
+    },
+    {
+      "name": "Phi Gai",
+      "cost": 5,
+      "type": "Vũ Khí",
+      "tag": [
+        "Vũ khí ném",
+        "Tấn công: 8"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Phòng Hộ": "Cung cấp thêm 5 giảm sát thương vật lý."
+      },
+      "description": "Gai nhọn hình con thoi bằng sắt, được cân bằng trọng lượng tốt, thích hợp ném nhanh để quấy rối kẻ địch."
+    },
+    {
+      "name": "Dây Ném Đá",
+      "cost": 6,
+      "type": "Vũ Khí",
+      "tag": [
+        "Vũ khí ném",
+        "Tấn công: 12"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Choáng Váng": "Khi trúng đầu, có tỷ lệ d20≥18 khiến mục tiêu choáng váng 1 hiệp."
+      },
+      "description": "Công cụ ném đá đơn giản, người chăn cừu dùng để xua đuổi dã thú."
+    },
+    {
+      "name": "Trường Cung Ưng Nhãn",
+      "cost": 28,
+      "type": "Vũ Khí",
+      "tag": [
+        "Cung",
+        "Tấn công: 68"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Chuẩn Xác": "Khi kết quả kiểm định tấn công của bạn là [Miễn Cưỡng Trúng], tự động nâng lên thành [Trúng Hiệu Quả]."
+      },
+      "description": "Chế tác từ gỗ sam ép lớp với sừng thú, đầu ngọn cung điêu khắc phù văn ưng nhãn, tầm bắn và độ chính xác đều vượt xa trường cung thông thường."
+    },
+    {
+      "name": "Súng Ngắn Hỏa Mai",
+      "cost": 30,
+      "type": "Vũ Khí",
+      "tag": [
+        "Súng hỏa mai",
+        "Tấn công: 60"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Phá Giáp Xạ Kích": "Khi tấn công, bỏ qua 60 phòng ngự trang bị của mục tiêu."
+      },
+      "description": "Nòng súng bằng đồng thau và báng gỗ óc chó, dùng cơ cấu búa đập đá lửa nạp thuốc phía sau, có thể giảm bớt độ lệch khi bắn."
+    },
+    {
+      "name": "Nỏ Phức Hợp Thợ Săn",
+      "cost": 29,
+      "type": "Vũ Khí",
+      "tag": [
+        "Nỏ",
+        "Tấn công: 77"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Xạ Kích Trí Mạng": "Khi tấn công trúng đích gây thêm 45 sát thương vật lý."
+      },
+      "description": "Cánh nỏ bằng thép và báng gỗ cứng, kết cấu đã được tối ưu hóa, độ chính xác cực cao nhưng tốc độ nạp đạn vẫn chậm."
+    },
+    {
+      "name": "Súng Trường Hỏa Mai Khương Tuyến",
+      "cost": 30,
+      "type": "Vũ Khí",
+      "tag": [
+        "Súng hỏa mai",
+        "Tấn công: 80"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Ưu Thế Tầm Xa": "Khi thực hiện tấn công tầm xa, sát thương cuối cùng tăng 8%."
+      },
+      "description": "Nòng súng dài bằng thép bên trong có rãnh khương tuyến, trang bị báng gỗ, có thể bắn tỉa chính xác ở cự ly siêu xa."
+    },
+    {
+      "name": "Phi Đao Chuẩn Xác",
+      "cost": 18,
+      "type": "Vũ Khí",
+      "tag": [
+        "Vũ khí ném",
+        "Tấn công: 50"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Ném Tinh Xảo": "Khi trang bị vũ khí này, độ nhanh nhẹn của bạn được cộng thêm +2 trong kiểm định tấn công."
+      },
+      "description": "Bộ ba thanh phi đao bằng thép tinh luyện, cân bằng tỉ mỉ, tăng mạnh tỷ lệ trúng khi ném."
+    },
+    {
+      "name": "Nỏ Tín Hiệu",
+      "cost": 22,
+      "type": "Vũ Khí",
+      "tag": [
+        "Nỏ",
+        "Tấn công: 45"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Đạn Tín Hiệu": "Có thể bắn đạn tín hiệu, triệu hồi quân đồng minh gần đó chi viện (dùng ngoài chiến đấu)."
+      },
+      "description": "Nỏ tín hiệu đặc chế, có thể bắn ra mũi tên mang dấu ấn ma pháp."
+    },
+    {
+      "name": "Cung Tín Sứ",
+      "cost": 30,
+      "type": "Vũ Khí",
+      "tag": [
+        "Cung",
+        "Tấn công: 130"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Truyền Thư Tầm Xa": "Có thể buộc thư vào mũi tên bắn ra xa, chắc chắn trúng khu vực mục tiêu."
+      },
+      "description": "Cung đặc chế dùng cho tín sứ, mũi tên bay được cự ly cực xa."
+    },
+    {
+      "name": "Súng Trường Ma Đạo · Cắt Lưng Trời",
+      "cost": 45,
+      "type": "Vũ Khí",
+      "tag": [
+        "Súng hỏa mai",
+        "Tấn công: 180"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Nạp Đạn": "Sử dụng tài nguyên [Hành Động] để nạp đạn, [Tấn Công] của bạn gây thêm 500 sát thương vật lý."
+      },
+      "description": "Sự kết hợp hoàn hảo giữa báng gỗ óc chó tinh xảo và nòng thép dài, tích hợp ma tinh thạch cỡ nhỏ làm nguồn động lực, là vũ khí chết người dùng để bắn tỉa ở cự ly siêu xa."
+    },
+    {
+      "name": "Pháo Tay Xích Diễm",
+      "cost": 44,
+      "type": "Vũ Khí",
+      "tag": [
+        "Súng hỏa mai",
+        "Tấn công: 170"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Đạn Nổ": "Khi tấn công trúng đích, gây 180 sát thương năng lượng lan (Hỏa) lên mục tiêu và tối đa 2 kẻ địch trong phạm vi: 3."
+      },
+      "description": "Pháo tay nòng ngắn đúc bằng đồng thiếc, thân thô ráp, dùng ma tinh thạch cỡ lớn làm cơ cấu kích hoạt, đạn bắn ra khi va chạm mục tiêu sẽ tạo ra vụ nổ lửa phạm vi nhỏ."
+    },
+    {
+      "name": "Trường Cung Phong Ngữ Giả",
+      "cost": 43,
+      "type": "Vũ Khí",
+      "tag": [
+        "Cung",
+        "Tấn công: 150"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Gió Nhanh Nhẹn": "Khi kiểm định tấn công đạt [Trúng Hiệu Quả] hoặc cao hơn, có tỷ lệ d20≥11 khiến kiểm định tiên thủ nhận hiệu chỉnh +1, duy trì 2 hiệp."
+      },
+      "description": "Thân cung làm từ gỗ tần bì và dây leo tinh linh, ở giữa khảm một viên phong tinh thạch trong suốt, mũi tên bắn ra sẽ kèm theo lốc xoáy, tăng đáng kể tốc độ bay và độ chính xác."
+    },
+    {
+      "name": "Súng Lục Ma Năng · Độc Xà",
+      "cost": 41,
+      "type": "Vũ Khí",
+      "tag": [
+        "Súng hỏa mai",
+        "Tấn công: 150"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Đạn Xuyên Giáp": "Tấn công bỏ qua 50% phòng ngự trang bị của mục tiêu."
+      },
+      "description": "Súng lục ổ quay sáu viên rèn từ thép tinh luyện, báng súng có hoa văn vảy rắn, dùng cơ cấu điểm hỏa ma tinh thạch, đạn có thể xuyên qua giáp thông thường và bình chướng ma pháp."
+    },
+    {
+      "name": "Súng Ngắn U Hồn",
+      "cost": 39,
+      "type": "Vũ Khí",
+      "tag": [
+        "Súng hỏa mai",
+        "Tấn công: 140"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Hấp Thu Linh Hồn": "Khi gây sát thương, hồi phục lượng MP bằng 15% sát thương gây ra."
+      },
+      "description": "Sự kết hợp kỳ dị giữa báng gỗ mun và thân súng chạm rỗng bằng bạc, có thể bắn thẳng năng lượng linh hồn."
+    },
+    {
+      "name": "Lao Ném Lôi Đình",
+      "cost": 37,
+      "type": "Vũ Khí",
+      "tag": [
+        "Vũ khí ném",
+        "Tấn công: 150"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Nhiễm Điện": "Khi tấn công trúng đích, có tỷ lệ d20≥11 khiến mục tiêu bị [Nhiễm Điện], toàn bộ sát thương gánh chịu tăng 12%, duy trì 1 hiệp.",
+        "Tự Động Thu Hồi": "Sau khi ném, vũ khí này sẽ tự động quay trở lại tay vào đầu hiệp tiếp theo của bạn."
+      },
+      "description": "Cán thương bằng gỗ sắt cứng cáp kết hợp mũi giáo ba cạnh bằng thép, phía sau mũi thương khảm một viên lôi tinh thạch, không cần tự tay đi nhặt lại."
+    },
+    {
+      "name": "Nỏ Tay Ma Tinh",
+      "cost": 37,
+      "type": "Vũ Khí",
+      "tag": [
+        "Nỏ",
+        "Tấn công: 170"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Cơ Hội": "Khi tấn công nếu kiểm định là [Hụt], có thể tiêu hao ngay 10 SP để thực hiện lại kiểm định tấn công một lần (mỗi hiệp giới hạn một lần)."
+      },
+      "description": "Thân nỏ bằng thép nhỏ gọn, dùng ma tinh thạch làm nguồn động lực, có thể lên dây nhanh chóng, tên bắn ra có thể tự điều chỉnh quỹ đạo ở biên độ nhỏ để tăng độ chính xác."
+    },
+    {
+      "name": "Cung Truy Tung",
+      "cost": 46,
+      "type": "Vũ Khí",
+      "tag": [
+        "Cung",
+        "Tấn công: 180"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Tự Động Truy Đuổi": "Mũi tên bắn ra sẽ tự động truy đuổi mục tiêu, trúng đích +3, bỏ qua vật cản che chắn."
+      },
+      "description": "Dây cung bám ma pháp yếu ớt, mũi tên bắn ra có thể tự điều chỉnh quỹ đạo."
+    },
+    {
+      "name": "Tên Nỏ Tẩm Độc",
+      "cost": 40,
+      "type": "Vũ Khí",
+      "tag": [
+        "Nỏ",
+        "Tấn công: 155"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Kịch Độc": "Hiệu ứng phụ (Kiểm định Thể chất): Mục tiêu bị trúng độc (mỗi hiệp chịu 80 sát thương độc tố, hiệu quả hồi phục -30%), duy trì 3 hiệp."
+      },
+      "description": "Tên nỏ bôi dịch độc đặc chế, vết thương sẽ tiếp tục chuyển biến xấu."
+    },
+    {
+      "name": "Cung Băng Sương",
+      "cost": 48,
+      "type": "Vũ Khí",
+      "tag": [
+        "Cung",
+        "Tấn công: 185"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Tên Băng": "Hiệu ứng phụ (Kiểm định Trí lực): Mục tiêu bị đóng băng (không thể hành động), duy trì 1 hiệp."
+      },
+      "description": "Thân cung tỏa ra hàn khí, mũi tên bắn ra có thể đóng băng mục tiêu."
+    },
+    {
+      "name": "Nỏ Bắn Tỉa Xuyên Thấu",
+      "cost": 52,
+      "type": "Vũ Khí",
+      "tag": [
+        "Nỏ",
+        "Tấn công: 220"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Xuyên Thấu": "Tấn công xuyên qua mục tiêu, gây 70% sát thương lên tất cả kẻ địch trên một đường thẳng phía sau nó."
+      },
+      "description": "Nỏ đặc chế cực mạnh, tên nỏ có thể xuyên thủng nhiều mục tiêu."
+    },
+    {
+      "name": "Phi Nhẫn Tia Chớp",
+      "cost": 31,
+      "type": "Vũ Khí",
+      "tag": [
+        "Vũ khí ném",
+        "Tấn công: 130"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Tia Sét Lan": "Khi đòn ném trúng đích, sẽ nảy sang thêm 1 kẻ địch (phạm vi: 2), gây 12% sát thương ban đầu.",
+        "Tự Động Thu Hồi": "Sau khi ném, vũ khí này sẽ tự động quay trở lại tay vào đầu hiệp tiếp theo của bạn."
+      },
+      "description": "Phi nhẫn tròn bằng thép tinh luyện với cạnh sắc bén, trung tâm khảm lôi tinh thạch, độ cân bằng cực tốt, sau khi ném có thể tự động quay lại và giật sét tất cả kẻ địch trên đường bay."
+    },
+    {
+      "name": "Nỏ Chuẩn Xác",
+      "cost": 36,
+      "type": "Vũ Khí",
+      "tag": [
+        "Nỏ",
+        "Tấn công: 150"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Chuẩn Xác": "Kiểm định tấn công +2."
+      },
+      "description": "Nỏ chế tác tinh mật, độ chính xác cực cao."
+    },
+    {
+      "name": "Liên Nỏ",
+      "cost": 40,
+      "type": "Vũ Khí",
+      "tag": [
+        "Nỏ",
+        "Tấn công: 165"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Bắn Liên Tiếp": "Mỗi lần tấn công bắn ra 3 mũi tên, mỗi mũi tên gây 40% sát thương."
+      },
+      "description": "Cơ cấu cơ học đặc biệt, có thể bắn liên tiếp nhanh chóng."
+    },
+    {
+      "name": "Nỏ Bộc Liệt",
+      "cost": 48,
+      "type": "Vũ Khí",
+      "tag": [
+        "Nỏ",
+        "Tấn công: 200"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Bộc Liệt": "Tên trúng đích phát nổ, gây 50% sát thương lên kẻ địch trong phạm vi: 3."
+      },
+      "description": "Nỏ đặc chế bắn ra tên nổ."
+    },
+    {
+      "name": "Cung Bắn Tỉa",
+      "cost": 44,
+      "type": "Vũ Khí",
+      "tag": [
+        "Cung",
+        "Tấn công: 185"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Bắn Tỉa": "Khi thực hiện tấn công tầm xa, sát thương cuối cùng tăng 12%."
+      },
+      "description": "Trường cung có tầm bắn cực xa, thích hợp bắn tỉa cự ly xa."
+    },
+    {
+      "name": "Nỏ Đa Tầng Phân Liệt",
+      "cost": 54,
+      "type": "Vũ Khí",
+      "tag": [
+        "Nỏ",
+        "Tấn công: 230"
+      ],
+      "rarity": "epic",
+      "effect": {
+        "Mũi Tên Phân Liệt": "Khi tấn công, tên tách làm 3 mũi trên không trung, gây 60% sát thương lên 3 kẻ địch ngẫu nhiên."
+      },
+      "description": "Nỏ có cơ cấu đặc biệt, có thể khiến tên phân tách trong lúc bay."
+    }
+  ],
+  "Dao Găm Đoản Kiếm": [
+    {
+      "name": "Hoàn Thủ Đao",
+      "cost": 10,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đao một tay",
+        "Tấn công: 16"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Lưỡi Sắc": "Đòn đánh thường gây thêm 6 sát thương vật lý."
+      },
+      "description": "Đao thẳng một lưỡi bằng sắt, chuôi đao có vòng sắt, trọng tâm thiên về phía trước, chém bổ uy lực."
+    },
+    {
+      "name": "Loan Đao",
+      "cost": 11,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đao một tay",
+        "Tấn công: 17"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Nặng Nề": "Đòn đánh thường gây thêm 8 sát thương vật lý."
+      },
+      "description": "Loan đao một lưỡi bằng sắt, độ cong vừa phải, thuận tiện chém và rạch trên lưng ngựa."
+    },
+    {
+      "name": "Dao Găm Ám Sát",
+      "cost": 6,
+      "type": "Vũ Khí",
+      "tag": [
+        "Dao găm",
+        "Tấn công: 10"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Lưỡi Sắc": "Đòn đánh thường gây thêm 6 sát thương vật lý."
+      },
+      "description": "Rèn từ sắt tinh chế, thân lưỡi ngắn mảnh và sắc bén khác thường, thiết kế chuyên dùng để ẩn giấu và ám sát."
+    },
+    {
+      "name": "Đao Chặt Thợ Săn",
+      "cost": 8,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đoản đao",
+        "Tấn công: 12"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Thanh Thoát": "Vũ khí này gọn nhẹ dễ mang theo, không ảnh hưởng đến tốc độ hành động."
+      },
+      "description": "Đoản đao cán ngắn lưỡi dày bản rộng, trọng tâm phía trước, thích hợp phạt cây bụi và xử lý con mồi, là công cụ sinh tồn dã ngoại thực dụng."
+    },
+    {
+      "name": "Loan Đao Tân Nguyệt",
+      "cost": 26,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đao một tay",
+        "Tấn công: 72"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Cắt Rách": "Khi kiểm định tấn công đạt [Trúng Hiệu Quả] hoặc cao hơn, có tỷ lệ d20≥16 gây hiệu ứng [Chảy Máu] lên mục tiêu, mỗi hiệp mất 15 HP, duy trì 2 hiệp."
+      },
+      "description": "Lưỡi cong rèn từ thép tinh luyện chất lượng cao, sở hữu đường cong trăng lưỡi liềm tao nhã, có thể tạo ra vết thương chảy máu liên tục."
+    },
+    {
+      "name": "Dao Găm Ảnh Kích",
+      "cost": 20,
+      "type": "Vũ Khí",
+      "tag": [
+        "Dao găm",
+        "Tấn công: 55"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Đâm Sau Lưng": "Khi tấn công từ phía sau kẻ địch chưa phát hiện ra bạn, đòn đánh đầu tiên gây thêm 85 sát thương vật lý."
+      },
+      "description": "Dao găm không phản quang rèn từ hắc thiết, thân lưỡi nhẹ mỏng, có thể tăng nhẹ tỷ lệ tạo ra đòn đánh chí mạng."
+    },
+    {
+      "name": "Song Nhẫn Nguyệt Quang",
+      "cost": 38,
+      "type": "Vũ Khí",
+      "tag": [
+        "Song đao",
+        "Tấn công: 150"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Nguyệt Chúc Phúc": "Vào ban đêm hoặc trong môi trường tăm tối, toàn bộ đòn tấn công của bạn được kèm thêm 150 sát thương năng lượng."
+      },
+      "description": "Cặp song đao hình vòng cung đúc từ kim loại ánh trăng, lưỡi dao tỏa ra ánh sáng mờ lạnh lẽo trong bóng tối, là vũ khí yêu thích của trinh sát Thượng Cấp Tinh Linh."
+    },
+    {
+      "name": "Dao Găm Ám Ảnh",
+      "cost": 36,
+      "type": "Vũ Khí",
+      "tag": [
+        "Dao găm",
+        "Tấn công: 180"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Suy Yếu": "Khi tấn công trúng đích có tỷ lệ d20≥11 gây trạng thái [Suy Yếu] lên mục tiêu, giảm 10% sát thương vật lý mục tiêu gây ra, duy trì 2 hiệp."
+      },
+      "description": "Lưỡi dao đen tuyền rèn từ vẫn thiết pha trộn bột hắc diệu thạch, hầu như không phản xạ bất kỳ ánh sáng nào, là công cụ lý tưởng để thích khách chấp hành nhiệm vụ."
+    },
+    {
+      "name": "Đoản Đao Liên Kích",
+      "cost": 35,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đoản kiếm",
+        "Tấn công: 120"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Liên Kích": "Khi tấn công liên tiếp cùng một mục tiêu, sát thương đòn đánh thứ hai +12%+150 điểm (đổi mục tiêu sẽ làm mới)."
+      },
+      "description": "Đoản đao thanh thoát, độ cân bằng thân đao hoàn hảo, thích hợp tấn công liên hoàn chớp nhoáng."
+    },
+    {
+      "name": "Dao Găm Đỡ Đòn",
+      "cost": 6,
+      "type": "Vũ Khí",
+      "tag": [
+        "Dao găm",
+        "Tấn công: 10"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Phòng Hộ": "Cung cấp thêm 5 giảm sát thương vật lý."
+      },
+      "description": "Dao găm sắt bản rộng, có chuôi chắn cong hướng lên trên, thiết kế chuyên dụng để đỡ đòn và phản kích."
+    },
+    {
+      "name": "Câu Đao",
+      "cost": 7,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đoản đao",
+        "Tấn công: 11"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Phòng Hộ": "Cung cấp thêm 5 giảm sát thương vật lý."
+      },
+      "description": "Đao một lưỡi cán ngắn, đầu mũi đao có một móc cong sắc bén, có thể móc kéo vũ khí hoặc giáp trụ của đối thủ."
+    },
+    {
+      "name": "Đoản Kiếm Đỡ Đòn",
+      "cost": 19,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đoản kiếm",
+        "Tấn công: 60"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Cường Hóa Phòng Ngự": "Khi bạn sử dụng [Hành Động] để phòng ngự, nhận thêm 80 giảm sát thương vật lý tạm thời."
+      },
+      "description": "Thân kiếm bằng thép bản rộng cùng chuôi chắn hình đĩa lớn, qua xử lý tăng độ dẻo dai, chuyên dùng để chống đỡ đòn đánh nặng."
+    },
+    {
+      "name": "Dao Găm Hộ Vệ",
+      "cost": 20,
+      "type": "Vũ Khí",
+      "tag": [
+        "Dao găm",
+        "Tấn công: 55"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Thừa Cơ Phản Kích": "Sau khi né tránh thành công đòn đánh của kẻ địch, sát thương đòn đánh thường tiếp theo tăng 8%."
+      },
+      "description": "Rèn từ thép tinh luyện, có chuôi chắn chữ S rộng rãi, có thể phản công hiệu quả song song với việc đỡ đòn."
+    },
+    {
+      "name": "Câu Đao Phá Giáp",
+      "cost": 21,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đoản đao",
+        "Tấn công: 50"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Xé Rách Hộ Giáp": "Khi tấn công, có tỷ lệ d20≥18 bỏ qua 50% phòng ngự trang bị của mục tiêu."
+      },
+      "description": "Đao một lưỡi có móc cán ngắn đúc bằng thép tinh chế, lưỡi móc có thể xé rách kẽ hở giáp sắt hiệu quả hơn."
+    },
+    {
+      "name": "Dao Găm Phản Kích",
+      "cost": 36,
+      "type": "Vũ Khí",
+      "tag": [
+        "Dao găm",
+        "Tấn công: 130"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Phản Kích Hoàn Hảo": "Sau khi né đòn thành công, lập tức phản công một lần vào kẻ tấn công (gây 80% sát thương vũ khí)."
+      },
+      "description": "Dao găm gọn nhẹ thiết kế chuyên cho phản đòn, độ cong thân dao hoàn mỹ."
+    },
+    {
+      "name": "Nanh Hút Máu",
+      "cost": 42,
+      "type": "Vũ Khí",
+      "tag": [
+        "Dao găm",
+        "Tấn công: 160"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Hút Sinh Lực": "Khi gây sát thương, hồi phục lượng HP tương đương 15% sát thương."
+      },
+      "description": "Thân dao găm có màu đỏ như máu, có thể hút sinh lực của kẻ thù."
+    },
+    {
+      "name": "Dao Ăn",
+      "cost": 4,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đoản đao",
+        "Tấn công: 8"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Thô Sơ": "Vũ khí méo mó có hơn không, kiểm định nấu nướng +1."
+      },
+      "description": "Dao ăn cơm bình thường, không được thiết kế cho chiến đấu."
+    },
+    {
+      "name": "Dao Găm Đạo Tặc",
+      "cost": 18,
+      "type": "Vũ Khí",
+      "tag": [
+        "Dao găm",
+        "Tấn công: 35"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Trộm Cắp": "Kiểm định lén lút +2, kiểm định mở khóa +1."
+      },
+      "description": "Dao găm bọn trộm thường dùng, thân dao thanh mảnh dễ cất giấu."
+    },
+    {
+      "name": "Lưỡi Dao Thích Khách",
+      "cost": 34,
+      "type": "Vũ Khí",
+      "tag": [
+        "Dao găm",
+        "Tấn công: 145"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Đâm Sau Lưng": "Khi tấn công từ phía sau, kiểm định tấn công +2."
+      },
+      "description": "Dao găm thiết kế chuyên cho ám sát, thân dao phủ lớp tiêu âm."
+    },
+    {
+      "name": "Độc Nhẫn",
+      "cost": 38,
+      "type": "Vũ Khí",
+      "tag": [
+        "Dao găm",
+        "Tấn công: 155"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Kịch Độc": "Mục tiêu bị trúng độc nặng (mỗi hiệp chịu 150 sát thương độc tố), duy trì 3 hiệp."
+      },
+      "description": "Lưỡi dao được bôi chất độc chết người."
+    },
+    {
+      "name": "Ảnh Nhẫn",
+      "cost": 42,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đoản kiếm",
+        "Tấn công: 175"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Bóng Tối": "Sát thương gây ra giảm 40%, nhưng số lần tấn công +1."
+      },
+      "description": "Đoản kiếm màu đen, gần như vô hình trong bóng râm."
+    },
+    {
+      "name": "Dao Găm Trí Mạng",
+      "cost": 46,
+      "type": "Vũ Khí",
+      "tag": [
+        "Dao găm",
+        "Tấn công: 190"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Trí Mạng": "Khi đâm sau lưng, kiểm định tấn công +4, hệ số bạo kích +1."
+      },
+      "description": "Vũ khí tối thượng của thích khách, một đòn đoạt mạng."
+    },
+    {
+      "name": "Minh Kiếm · Vô Danh",
+      "cost": 80,
+      "type": "Vũ Khí",
+      "tag": [
+        "Dao găm",
+        "Tấn công: 350"
+      ],
+      "rarity": "epic",
+      "effect": {
+        "Trí Mạng": "Bỏ qua 350 điểm phòng ngự vật lý của đối phương, sát thương vật lý tăng 15%.",
+        "Yếu Tố Yếu Ớt [Minh Kiếm]": "Mỗi đoạn tấn công gây thêm 300 sát thương vật lý (kiếm khí vô thuộc tính)."
+      },
+      "description": "Thân kiếm trong suốt tựa như chưa từng tồn tại, chỉ lộ ra chuôi kiếm bằng ngọc bích thúy lục, chuôi kiếm điêu khắc vài đạo phù văn vân mây, hình dáng như một nửa chữ thập, khó lòng nhận ra đây là vũ khí."
+    }
+  ],
+  "Pháp Trượng Ma Đạo Thư": [
+    {
+      "name": "Pháp Trượng Học Đồ",
+      "cost": 15,
+      "type": "Vũ Khí",
+      "tag": [
+        "Pháp trượng",
+        "Tấn công: 15"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Hội Tụ Yếu Ớt": "Khi thi pháp giảm 25 điểm tiêu hao pháp lực."
+      },
+      "description": "Thân trượng bằng gỗ tần bì được mài nhẵn đơn giản, thẳng tắp không hoa văn, phần đỉnh hơi to, là trang bị tiêu chuẩn của pháp sư tập sự."
+    },
+    {
+      "name": "Cầu Thủy Tinh Trong Suốt",
+      "cost": 13,
+      "type": "Vũ Khí",
+      "tag": [
+        "Pháp khí",
+        "Tấn công: 10"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Dẫn Dắt Linh Lực": "Khi dùng vũ khí này thi pháp, gây thêm 10 sát thương năng lượng."
+      },
+      "description": "Quả cầu mài từ thủy tinh trong suốt, bên trong sạch sẽ không tạp chất, có thể dùng để bói toán cơ bản hoặc làm vật trung gian thi pháp."
+    },
+    {
+      "name": "Pháp Trượng Gỗ Sồi Trắng",
+      "cost": 30,
+      "type": "Vũ Khí",
+      "tag": [
+        "Pháp trượng",
+        "Tấn công: 75"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Tiết Kiệm Pháp Lực": "Khi thi pháp giảm 8% tiêu hao MP."
+      },
+      "description": "Pháp trượng điêu khắc từ lõi cây sồi trắng trăm năm, thân trượng thon dài mảnh mai, giúp người thi pháp tập trung tinh thần tốt hơn."
+    },
+    {
+      "name": "Ma Đạo Thư Học Đồ",
+      "cost": 27,
+      "type": "Vũ Khí",
+      "tag": [
+        "Ma đạo thư",
+        "Tấn công: 65"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Chuẩn Bị Chú Pháp": "Giải phóng miễn phí một lần ma pháp phẩm chất [Ưu Tú], 1 lần/trận."
+      },
+      "description": "Bìa da cứng, góc sách bọc đồng thau, ghi chép vài ma pháp cơ bản, giúp ghi nhớ thần chú."
+    },
+    {
+      "name": "Thủy Tinh Hỏa Diễm",
+      "cost": 29,
+      "type": "Vũ Khí",
+      "tag": [
+        "Cầu thủy tinh",
+        "Tấn công: 80"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Kèm Theo Hỏa Diễm": "Mọi kỹ năng gây sát thương năng lượng được kèm thêm 80 sát thương năng lượng (Hỏa)."
+      },
+      "description": "Tinh thể lửa độ thuần khiết thấp đã qua gọt giũa, gắn trên đế đồng thau, có thể tăng nhẹ uy lực của pháp thuật hệ hỏa."
+    },
+    {
+      "name": "Pháp Trượng Tiêu Điểm Bí Thuật",
+      "cost": 45,
+      "type": "Vũ Khí",
+      "tag": [
+        "Pháp trượng",
+        "Tấn công: 150"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Hội Tụ Năng Lượng": "Toàn bộ kỹ năng sát thương năng lượng đơn mục tiêu của bạn tăng 12% sát thương cuối cùng lên mục tiêu.",
+        "Tiết Kiệm Năng Lượng": "Pháp lực tiêu hao cho kỹ năng và chế tạo giảm 12%+200 điểm."
+      },
+      "description": "Làm từ gỗ mun đánh bóng, đầu gậy khảm một viên lam bảo thạch cắt gọt tinh xảo, thân gậy quấn quanh phù văn sợi bạc tỉ mỉ, là môi giới thi pháp mơ ước của các pháp sư trung giai."
+    },
+    {
+      "name": "Pháp Cầu Lõi Bão Tố",
+      "cost": 44,
+      "type": "Vũ Khí",
+      "tag": [
+        "Cầu thủy tinh",
+        "Tấn công: 140"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Mở Rộng Phạm Vi": "Khi thi triển kỹ năng diện rộng, số lượng mục tiêu tối đa trong phạm vi +1."
+      },
+      "description": "Phong nhãn thạch được bao bọc trong khung bí ngân, trung tâm quả cầu có lốc xoáy siêu nhỏ quay tít, tăng phạm vi và lực xung kích của pháp thuật hệ phong."
+    },
+    {
+      "name": "Pháp Cầu Nguyên Tố Luân Chuyển",
+      "cost": 50,
+      "type": "Vũ Khí",
+      "tag": [
+        "Cầu thủy tinh",
+        "Tấn công: 140"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Bão Sét": "Khi tấn công gây thêm 180 sát thương năng lượng (Lôi).",
+        "Tràn Đầy Ma Năng": "Sát thương năng lượng tăng 12%."
+      },
+      "description": "Quả cầu thủy tinh trong suốt lấp lánh, bên trong bốn nguyên tố xoắn ốc vặn vẹo như một cơn bão."
+    },
+    {
+      "name": "Đèn Lồng Người Lái Đò Sông Minh Hà · Con Mắt Charon",
+      "cost": 666,
+      "type": "Vũ Khí",
+      "tag": [
+        "Pháp trượng",
+        "Tấn công: 880",
+        "Có thể trưởng thành"
+      ],
+      "rarity": "only",
+      "effect": {
+        "Người Dẫn Lối": "Số lượng triệu hồi đơn lẻ của bất kỳ kỹ năng triệu hồi nào +1 (phá vỡ giới hạn vốn có của kỹ năng)",
+        "Tiền Qua Đường": "Nếu kích hoạt hiệu ứng triệu hồi trong chiến đấu, sau khi trận đấu kết thúc chắc chắn gặp một sự kiện xui xẻo cần 'tiêu tiền giải hạn' theo cốt truyện (như rơi túi tiền, đạo cụ quý giá bất ngờ hư hỏng, v.v.), giá trị tổn thất tỷ lệ thuận với độ mạnh của vật triệu hồi"
+      },
+      "description": "Thân trượng là sào thuyền gỗ mục đẫm tử khí, treo chiếc đèn lồng thanh đồng đơn độc loang lổ, ngọn đèn là con ngươi dựng đứng màu trắng nhợt nhạt đang cháy, tham lam dòm ngó hư không. Khi triệu hồi có hiệu lực, từ cõi hư không sẽ truyền đến tiếng mái chèo khua nước trầm đục của sông Minh Hà. Tương truyền đây là chiếc đèn lồng bị thất lạc của Charon, nó không còn đưa tiễn vong hồn nữa, mà lừa gạt những quái vật khao khát qua sông đến thế gian chiến đấu vì bạn — miễn là bạn có thể trả nổi khoản phí qua đường đắt đỏ kia."
+    },
+    {
+      "name": "Kẻ Trộm Ký Ức",
+      "cost": 45,
+      "type": "Vũ Khí",
+      "tag": [
+        "Pháp trượng",
+        "Tấn công: 180"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Trộm Ký Ức": "Khi đánh bại kẻ địch, có tỷ lệ d20≥14 học được một kỹ năng phẩm chất [Hiếm] mà nó từng sử dụng (quên sau khi kết thúc chiến đấu)."
+      },
+      "description": "Thân trượng hắc diệu thạch, đỉnh khảm một quả cầu thủy tinh rỗng, có thể bắt giữ mảnh ký ức của kẻ địch trong thời gian ngắn."
+    },
+    {
+      "name": "Cầu Thủy Tinh Thời Gian",
+      "cost": 70,
+      "type": "Vũ Khí",
+      "tag": [
+        "Cầu thủy tinh",
+        "Tấn công: 320"
+      ],
+      "rarity": "epic",
+      "effect": {
+        "Quay Ngược Thời Gian": "Lập tức giải phóng hai đòn tấn công ma pháp, 1 lần/trận.",
+        "Yếu Tố Yếu Ớt [Cát Thời Gian]": "Tiêu hao MP giảm 15%, đồng thời hiệu chỉnh trúng đích khi tấn công cộng thêm +4, có thể cộng dồn với hiệu chỉnh trúng đích của kỹ năng."
+      },
+      "description": "Bên trong thân trượng thủy tinh trong suốt có cát mịn màu vàng kim chảy trôi, tựa như thời gian đang chậm rãi trôi qua bên trong."
+    },
+    {
+      "name": "Pháp Điển Cộng Hưởng",
+      "cost": 38,
+      "type": "Vũ Khí",
+      "tag": [
+        "Ma đạo thư",
+        "Tấn công: 140"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Cộng Hưởng Pháp Thuật": "Khi đồng đội thi triển [Ma Pháp], kỹ năng tiếp theo của bạn giảm 400 điểm tiêu hao MP."
+      },
+      "description": "Giữa các trang sách ngân vang sự cộng hưởng ma pháp yếu ớt, có thể tạo ra cộng hưởng với ma lực của người thi pháp khác."
+    },
+    {
+      "name": "Ma Điển Cấm Kỵ",
+      "cost": 70,
+      "type": "Vũ Khí",
+      "tag": [
+        "Ma đạo thư",
+        "Tấn công: 350"
+      ],
+      "rarity": "epic",
+      "effect": {
+        "Tri Thức Cấm Kỵ": "Có thể học và sử dụng kỹ năng của địch, nhưng mỗi lần sử dụng mất 1200 điểm HP."
+      },
+      "description": "Điển tịch cổ xưa ghi chép ma pháp cấm kỵ, sử dụng cần phải trả giá đắt."
+    },
+    {
+      "name": "Quyển Sách Thánh Ngôn",
+      "cost": 28,
+      "type": "Vũ Khí",
+      "tag": [
+        "Ma đạo thư",
+        "Tấn công: 45"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Kéo Dài Tăng Ích": "Tất cả kỹ năng mang nhãn [Tăng Ích], thời gian duy trì tăng thêm 1 hiệp."
+      },
+      "description": "Cuộn giấy da chép những bài cầu nguyện cơ bản, hai đầu cuộn sách được cố định bằng gỗ mạ bạc, khi tụng đọc có thể tăng cường sức mạnh tín ngưỡng."
+    },
+    {
+      "name": "Điển Tịch Bí Thuật",
+      "cost": 35,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Ma đạo thư",
+        "Phòng ngự: 140"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Hấp Thu Pháp Thuật": "Mỗi trận đấu một lần, khi bạn nhận sát thương năng lượng, có thể tiêu hao [Hành Động] để tích trữ 50% sát thương đó lại, và giải phóng trong đòn tấn công tiếp theo của bạn, kèm theo lượng sát thương năng lượng tương đương."
+      },
+      "description": "Bìa làm từ da ấu long, trang sách làm từ lá bạc dát mỏng, gáy sách khảm tinh thể lam u tối, có thể tự động đỡ một đòn tấn công pháp thuật cấp thấp."
+    },
+    {
+      "name": "Pháp Trượng Nhánh Cây",
+      "cost": 7,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đoản trượng",
+        "Tấn công: 14"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Thân Hòa Tự Nhiên": "Hiệu quả pháp thuật hệ thực vật +10%."
+      },
+      "description": "Nhánh cây bẻ từ trên cây ma pháp xuống, ẩn chứa ma lực tự nhiên yếu ớt."
+    },
+    {
+      "name": "Pháp Trượng Nguyên Tố",
+      "cost": 46,
+      "type": "Vũ Khí",
+      "tag": [
+        "Pháp trượng",
+        "Tấn công: 175"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Tinh Thông Nguyên Tố": "Sát thương kỹ năng nguyên tố Hỏa/Băng/Phong/Lôi/Độc tăng 12%."
+      },
+      "description": "Thân trượng khảm bốn loại đá quý nguyên tố."
+    },
+    {
+      "name": "Triệu Hồi Pháp Điển",
+      "cost": 44,
+      "type": "Vũ Khí",
+      "tag": [
+        "Ma đạo thư",
+        "Tấn công: 180"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Cường Hóa Triệu Hồi": "Điểm thuộc tính cơ bản của vật triệu hồi tăng thêm +2, thời gian duy trì tăng thêm 1 hiệp (nếu có)."
+      },
+      "description": "Điển tịch cổ xưa ghi chép các loại pháp thuật triệu hồi."
+    },
+    {
+      "name": "Pháp Trượng Hư Không",
+      "cost": 50,
+      "type": "Vũ Khí",
+      "tag": [
+        "Pháp trượng",
+        "Tấn công: 180"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Hư Không": "Khi tấn công bỏ qua 180 phòng ngự của đối phương.",
+        "Xé Rách": "Khi tấn công gây thêm 180 sát thương chuẩn."
+      },
+      "description": "Thân trượng tựa như kết nối với hư không, có thể xuyên thấu mọi phòng hộ."
+    },
+    {
+      "name": "Pháp Trượng Ám Ảnh",
+      "cost": 48,
+      "type": "Vũ Khí",
+      "tag": [
+        "Pháp trượng",
+        "Tấn công: 180"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Ám Năng": "Khi tấn công gây thêm 150 sát thương năng lượng (Ám).",
+        "Ám Ảnh": "Sau khi thi triển kỹ năng nhận hiệu ứng [Ám Ảnh], khi bị kẻ địch tấn công đối phương phải tiến hành kiểm định (DC 14 Tinh thần), thất bại sẽ miễn nhiễm đòn tấn công lần này, duy trì 1 hiệp."
+      },
+      "description": "Thân trượng do ám ảnh ngưng tụ thành, khó nắm bắt."
+    }
+  ],
+  "Thánh Điển Quyền Trượng": [
+    {
+      "name": "Thánh Huy Bằng Gỗ",
+      "cost": 7,
+      "type": "Vũ Khí",
+      "tag": [
+        "Thánh huy",
+        "Tấn công: 15"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Hồi Phục Yếu Ớt": "Mỗi hiệp hồi phục 20 điểm MP."
+      },
+      "description": "Huy ký thái dương điêu khắc từ gỗ thông thường, rìa thô ráp, có thể dùng làm môi giới thi triển thần thuật, là chứng nhận thân phận của mục sư tập sự."
+    },
+    {
+      "name": "Quyền Trượng Giản Dị",
+      "cost": 12,
+      "type": "Vũ Khí",
+      "tag": [
+        "Quyền trượng",
+        "Tấn công: 18"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Cầu Nguyện Yếu Ớt": "Khi dùng kỹ năng trị liệu, hồi phục thêm 45 điểm HP cho mục tiêu."
+      },
+      "description": "Cán bằng gỗ cứng, đầu gắn khối đồng thau chưa qua mài giũa, tượng trưng cho thần quyền, cũng có thể dùng như vũ khí đập cùn."
+    },
+    {
+      "name": "Chuông Thánh Bạc Trắng",
+      "cost": 26,
+      "type": "Vũ Khí",
+      "tag": [
+        "Chuông thánh",
+        "Tấn công: 55"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Tăng Cường Trị Liệu": "Mọi kỹ năng mang nhãn [Trị Liệu], hồi phục thêm 200 điểm HP cho mục tiêu."
+      },
+      "description": "Chuông cầm tay tinh xảo đúc bằng bạc nguyên chất, khi lắc tiếng chuông thanh thúy êm tai, có thể tăng hiệu quả của thần thuật chúc phúc."
+    },
+    {
+      "name": "Viên Huy Bạc Thánh",
+      "cost": 30,
+      "type": "Vũ Khí",
+      "tag": [
+        "Chuông thánh",
+        "Tấn công: 55"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Tăng Cường Trị Liệu": "Mọi kỹ năng [Trị Liệu], hồi phục thêm 200 điểm HP cho mục tiêu.",
+        "Thần Thánh Thủ Hộ": "Khi sử dụng kỹ năng [Trị Liệu], áp dụng 200 điểm khiên hộ mệnh cho bản thân."
+      },
+      "description": "Thánh huy nhận được sự gia hộ của Thánh Aethera, mang lại sự chữa lành cho người khác, đồng thời cũng che chở cho chính mình."
+    },
+    {
+      "name": "Thánh Ấn Thánh Cốt",
+      "cost": 40,
+      "type": "Vũ Khí",
+      "tag": [
+        "Thánh huy",
+        "Tấn công: 130"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Thương Xót": "Kỹ năng trị liệu của bạn đối với mục tiêu có HP dưới 30%, hiệu quả trị liệu tăng 12%.",
+        "Thần Dũ": "Khi dùng kỹ năng trị liệu, hồi phục thêm 400 điểm HP cho mục tiêu."
+      },
+      "description": "Lấy xương ngón tay của một thánh đồ tử vì đạo làm cốt lõi, bao bọc bên trong huy hiệu mặt trời đúc bằng bạc nguyên chất, toàn thể tỏa ra thánh quang dịu nhẹ."
+    },
+    {
+      "name": "Chuông Thánh Giọng Nói Thiên Sứ",
+      "cost": 38,
+      "type": "Vũ Khí",
+      "tag": [
+        "Chuông thánh",
+        "Tấn công: 130"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Chấn Nhiếp Tà Ác": "Khi bạn dùng kỹ năng gây sát thương lên vong linh hoặc sinh vật dị vực, có tỷ lệ d20≥11 áp dụng trạng thái [Chấn Nhiếp] lên chúng, khiến chúng không thể di chuyển, duy trì 1 hiệp."
+      },
+      "description": "Đúc từ quặng âm ngân quý hiếm, tiếng chuông trong trẻo ngân xa, tựa như được thiên sứ ban phước, có thể gây sát thương thần thánh diện rộng lên vong linh và ác ma."
+    },
+    {
+      "name": "Quyền Trượng Quang Minh",
+      "cost": 42,
+      "type": "Vũ Khí",
+      "tag": [
+        "Quyền trượng",
+        "Tấn công: 175"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Thánh Quang": "Hiệu quả kỹ năng trị liệu +20%, sát thương lên vong linh +30%."
+      },
+      "description": "Quyền trượng tỏa ánh thánh quang, là khắc tinh của vong linh."
+    },
+    {
+      "name": "Thánh Điển Phán Xét",
+      "cost": 48,
+      "type": "Vũ Khí",
+      "tag": [
+        "Thánh điển",
+        "Tấn công: 200"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Phán Xét": "Kiểm định tinh thần +2.",
+        "Chống Đỡ": "Khi sử dụng khiên hộ mệnh nhận thêm 400 điểm khiên."
+      },
+      "description": "Thánh điển ghi chép giáo pháp phán xét."
+    },
+    {
+      "name": "Thánh Điển Cứu Rỗi",
+      "cost": 55,
+      "type": "Vũ Khí",
+      "tag": [
+        "Thánh điển",
+        "Tấn công: 240"
+      ],
+      "rarity": "epic",
+      "effect": {
+        "Quang Cứu Rỗi": "Khi trị liệu cho mục tiêu, xóa bỏ 1 trạng thái [Tiêu Cực] trên người mục tiêu.",
+        "Mưa Tái Sinh": "Khi trị liệu cho mục tiêu, hồi phục thêm 800 điểm HP."
+      },
+      "description": "Trang sách viền vàng tỏa thánh quang dịu dàng, ghi chép giáo nghĩa về cứu rỗi và khoan dung."
+    }
+  ],
+  "Vũ Khí Đặc Biệt": [
+    {
+      "name": "Tiên Nhận",
+      "cost": 14,
+      "type": "Vũ Khí",
+      "tag": [
+        "Roi",
+        "Tấn công: 19"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Nặng Nề": "Đòn đánh thường gây thêm 8 sát thương vật lý."
+      },
+      "description": "Tạo thành từ nhiều mảnh sắt có gắn lưỡi dao nối với nhau bằng các vòng sắt tròn, có thể vung như roi, cũng có thể thu gọn như kiếm, biến hóa khôn lường."
+    },
+    {
+      "name": "Quyền Kiếm",
+      "cost": 10,
+      "type": "Vũ Khí",
+      "tag": [
+        "Bao tay đấm",
+        "Tấn công: 16"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Nặng Nề": "Đòn đánh thường gây thêm 8 sát thương vật lý."
+      },
+      "description": "Tay nắm hình chữ H bằng sắt, hai đầu nhô ra các lưỡi ngắn sắc bén, thích hợp cận chiến áp sát và ám sát, khó lòng phòng bị."
+    },
+    {
+      "name": "Quyền Thoa",
+      "cost": 5,
+      "type": "Vũ Khí",
+      "tag": [
+        "Bao tay đấm",
+        "Tấn công: 9"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Nặng Nề": "Đòn đánh thường gây thêm 8 sát thương vật lý."
+      },
+      "description": "Nhẫn sắt đúc liền ngón, có bốn gai nhọn ngắn, tăng mạnh sát thương đòn đấm."
+    },
+    {
+      "name": "Roi Ngắn",
+      "cost": 4,
+      "type": "Vũ Khí",
+      "tag": [
+        "Roi",
+        "Tấn công: 7"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Phòng Hộ": "Cung cấp thêm 5 giảm sát thương vật lý."
+      },
+      "description": "Roi mềm cán ngắn đan từ da dày, phần đuôi tăng nặng, chủ yếu dùng quất để làm rối loạn nhịp điệu của đối thủ."
+    },
+    {
+      "name": "Quyền Kiếm Độc Xà",
+      "cost": 22,
+      "type": "Vũ Khí",
+      "tag": [
+        "Bao tay đấm",
+        "Tấn công: 65"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Tẩm Độc": "Khi tấn công có tỷ lệ d20≥16 gây hiệu ứng [Trúng Độc], mỗi hiệp gây 10 sát thương chuẩn, duy trì 2 hiệp."
+      },
+      "description": "Tay nắm hình chữ H đúc bằng thép tinh chế, song lưỡi tẩm độc tê liệt tác dụng nhẹ, tăng tốc độ tấn công."
+    },
+    {
+      "name": "Roi Gai Ngắn",
+      "cost": 17,
+      "type": "Vũ Khí",
+      "tag": [
+        "Roi",
+        "Tấn công: 55"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Suy Giảm Tinh Lực": "Khi kiểm định tấn công đạt [Trúng Hiệu Quả] hoặc cao hơn, có tỷ lệ d20≥11 làm tốc độ hồi phục SP của mục tiêu giảm 8%, duy trì 2 hiệp."
+      },
+      "description": "Thân roi đan bằng da có khảm các gai thép nhỏ li ti, khi quất có thể quấy rối đối thủ liên tục."
+    },
+    {
+      "name": "Tiên Nhận Bụi Gai",
+      "cost": 35,
+      "type": "Vũ Khí",
+      "tag": [
+        "Roi",
+        "Tấn công: 160"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Hút Sinh Lực": "Khi gây sát thương, hồi phục lượng HP bằng 10% sát thương gây ra."
+      },
+      "description": "Vũ khí mềm dẻo liên kết từ hàng chục mảnh thép sắc nhọn thông qua dây leo ma hóa, có thể dùng như roi hoặc kiếm đâm, có thể hút một lượng nhỏ sinh lực nuôi dưỡng người sở hữu."
+    },
+    {
+      "name": "Roi Ký Sinh",
+      "cost": 46,
+      "type": "Vũ Khí",
+      "tag": [
+        "Roi",
+        "Tấn công: 170"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Ký Sinh": "Sau khi tấn công trúng đích, cấy hạt giống ký sinh vào cơ thể mục tiêu, mỗi hiệp hút 50 HP chuyển cho bạn. Duy trì 3 hiệp."
+      },
+      "description": "Thân roi quấn quanh dây leo kỳ dị, có thể ký sinh vào cơ thể kẻ địch."
+    },
+    {
+      "name": "Vuốt Đấu Vật Ám Ảnh",
+      "cost": 34,
+      "type": "Vũ Khí",
+      "tag": [
+        "Bao tay đấm",
+        "Tấn công: 140"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Phản Kích Ám Ảnh": "Nếu bạn né tránh hoặc đỡ đòn tấn công của địch thành công trong hiệp này, đòn tấn công tiếp theo gây thêm 120 sát thương vật lý."
+      },
+      "description": "Móng vuốt hắc thép gắn liền với giáp tay, móng sắc bén, giáp hộ thủ vững chắc, phản đòn sau khi đỡ đòn thành công sẽ kèm theo sát thương bóng tối."
+    },
+    {
+      "name": "Roi Xích Sắt",
+      "cost": 36,
+      "type": "Vũ Khí",
+      "tag": [
+        "Roi",
+        "Tấn công: 150"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Trói Buộc": "Sau khi tấn công trúng đích, có tỷ lệ d20≥16 trói buộc mục tiêu, khiến nó không thể di chuyển 1 hiệp."
+      },
+      "description": "Roi xích có ngạnh ngược, có thể quấn chặt kẻ địch."
+    },
+    {
+      "name": "Chiến Trảo",
+      "cost": 34,
+      "type": "Vũ Khí",
+      "tag": [
+        "Móng vuốt",
+        "Tấn công: 140"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Xé Rách": "Tấn công gây chảy máu (mỗi hiệp chịu 70 sát thương vật lý), duy trì 3 hiệp."
+      },
+      "description": "Móng vuốt kim loại sắc bén, có thể xé rách da thịt kẻ địch."
+    },
+    {
+      "name": "Roi Dây Thép",
+      "cost": 40,
+      "type": "Vũ Khí",
+      "tag": [
+        "Roi",
+        "Tấn công: 170"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Cắt Xẻ": "Tấn công gây chảy máu (mỗi hiệp chịu 80 sát thương vật lý), duy trì 3 hiệp."
+      },
+      "description": "Roi dây thép sắc lẹm, có thể cắt xẻ da thịt."
+    },
+    {
+      "name": "Quạt Lông Phượng Hoàng",
+      "cost": 40,
+      "type": "Vũ Khí",
+      "tag": [
+        "Vũ phiến",
+        "Tấn công: 150"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Phong Thiết": "Khi tấn công gây thêm 140 sát thương năng lượng (Phong).",
+        "Thần Phong": "Kiểm định trúng đích +2, sát thương năng lượng gây ra +12%."
+      },
+      "description": "Chiếc quạt lông màu đỏ rực, vũ khí đến từ đại lục phía Đông, chế tác từ lông đuôi hồng hạc, ẩn chứa sức mạnh cuồng phong."
+    }
+  ],
+  "Phòng Cụ Đầu": [
+    {
+      "name": "Mũ Sắt Hộ Tị",
+      "cost": 5,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nặng",
+        "Phòng ngự: 8"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Hộ Đầu": "Sát thương vật lý phải chịu giảm 3%."
+      },
+      "description": "Mũ sắt hình cái nồi, phía trước tán đinh một thanh sắt chúc xuống để bảo vệ sống mũi, là trang bị phổ biến trong quân đội."
+    },
+    {
+      "name": "Mũ Trùm Đầu Chiến Sĩ",
+      "cost": 28,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Mũ giáp",
+        "Phòng ngự (Đầu): 120"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Hộ Đầu": "Khi chịu đòn đánh vào đầu, sát thương -30%."
+      },
+      "description": "Mũ giáp bằng sắt dày dặn, có thể bảo vệ phần đầu hiệu quả."
+    },
+    {
+      "name": "Nón Chóp Pháp Sư",
+      "cost": 32,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Mũ nón",
+        "Phòng ngự (Đầu): 135"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Trí Tuệ": "Kiểm định trí lực +2, giới hạn MP +100."
+      },
+      "description": "Chiếc mũ chóp nhọn kinh điển của pháp sư, biểu tượng của trí tuệ."
+    },
+    {
+      "name": "Mũ Hộ Tị Cường Hóa",
+      "cost": 18,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nặng",
+        "Phòng ngự: 62"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Phòng Hộ Tinh Thần": "Sát thương tinh thần phải chịu giảm 8%."
+      },
+      "description": "Mũ giáp bằng thép có miếng bảo vệ mũi cử động được, lớp lót da dày, nâng cao khả năng phòng hộ mà không cản trở tầm nhìn."
+    },
+    {
+      "name": "Mũ Giáp Mặt Thủ Hộ Giả",
+      "cost": 17,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nặng",
+        "Phòng ngự: 65"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Kiên Định": "Sát thương vật lý phải chịu giảm 7%."
+      },
+      "description": "Mũ giáp kín mặt đúc từ thép tinh luyện, che chắn hoàn toàn phần đầu và mặt, mang lại sự bảo vệ toàn diện cho phần đầu."
+    },
+    {
+      "name": "Vành Nón Thuật Sĩ Bí Thuật",
+      "cost": 44,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Mũ giáp",
+        "Phòng ngự (Đầu): 170"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Trí Tuệ": "Kiểm định trí lực +3, sát thương kỹ năng +12%."
+      },
+      "description": "Chiếc mũ pháp sư chóp nhọn dày đặc phù văn sợi bạc, có thể tăng cường trí lực và năng lực ma pháp của người đội."
+    },
+    {
+      "name": "Mũ Da Phù Văn",
+      "cost": 33,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nhẹ",
+        "Phòng ngự: 130"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Cảnh Báo Thi Pháp": "Khi có người thi pháp mang địch ý bắt đầu niệm chú trong phạm vi 15 mét, bạn sẽ lập tức nhận được cảnh báo."
+      },
+      "description": "Khâu từ da bò rừng ma hóa, phía trong vành mũ khắc đầy các phù văn cảnh báo mini, khi phát hiện dao động ma pháp ác ý, phù văn sẽ phát sáng cảnh báo."
+    },
+    {
+      "name": "Vương Miện Động Sát",
+      "cost": 35,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp vải",
+        "Phòng ngự: 130"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Chân Thị": "Sát thương phải chịu giảm 8%."
+      },
+      "description": "Vương miện giản dị đúc bằng bí ngân, giữa trán khảm một viên lam bảo thạch thuần khiết, giúp người đội cảm nhận và phân tích dao động ma pháp xung quanh nhanh hơn."
+    },
+    {
+      "name": "Mũ Giáp Vảy Rồng",
+      "cost": 38,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nặng",
+        "Phòng ngự: 150"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Kháng Hỏa": "Sát thương năng lượng (Hỏa) phải chịu giảm 12%."
+      },
+      "description": "Mũ giáp trùm kín rèn từ vảy phi long lửa phân loài cùng thép tinh luyện, có giáp mặt đóng mở được, kháng cự hiệu quả môi trường nhiệt độ cao và sát thương ma pháp hệ hỏa."
+    },
+    {
+      "name": "Mặt Nạ Dối Trá",
+      "cost": 38,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Phụ kiện",
+        "Phòng ngự: 120"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Ngụy Trang": "Khi kiểm định chống lại hiệu ứng dò xét tinh thần hoặc mê hoặc, thuộc tính [Tinh Thần] của bạn được tính tăng thêm +2."
+      },
+      "description": "Một chiếc mặt nạ bí ngân mỏng nhẹ có thể ôm khít khuôn mặt hoàn hảo. Sau khi đeo vào, nó có thể che giấu hoàn hảo những biểu cảm nhỏ li ti trên mặt bạn, đồng thời khiến nhịp tim và thân nhiệt của bạn không có bất kỳ thay đổi nào khi nói dối."
+    }
+  ],
+  "Phòng Cụ Thân": [
+    {
+      "name": "Pháp Bào Học Đồ",
+      "cost": 22,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp vải",
+        "Phòng ngự: 20"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Che Chở Yếu Ớt": "Sát thương năng lượng phải chịu giảm 3%."
+      },
+      "description": "Cắt may từ vải bông thô màu đen dày dặn, có mũ trùm đầu rộng rãi, có thể che giấu vóc dáng, là minh chứng thân phận của học đồ pháp sư."
+    },
+    {
+      "name": "Bộ Giáp Da Nạm Đinh",
+      "cost": 28,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nhẹ",
+        "Phòng ngự: 20"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Phòng Hộ": "Sát thương vật lý phải chịu giảm 3%."
+      },
+      "description": "Trên nền da thuộc cứng được nạm dày đặc đinh sắt, vừa giữ được sự linh hoạt vừa tăng cường khả năng phòng ngự trước những nhát chém bổ."
+    },
+    {
+      "name": "Áo Vải",
+      "cost": 5,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp vải",
+        "Phòng ngự (Toàn thân): 10"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Bình Thường": "Quần áo bình thường, hầu như không có lực phòng hộ."
+      },
+      "description": "Áo vải bình thường mà thường dân hay mặc, méo mó có hơn không."
+    },
+    {
+      "name": "Tạp Dề Da",
+      "cost": 8,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nhẹ",
+        "Phòng ngự (Ngực): 16"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Thợ Thủ Công": "Khi rèn đúc / nấu nướng / luyện kim, ngăn ngừa sát thương văng bắn."
+      },
+      "description": "Tạp dề da dày thợ thủ công hay mặc, có thể ngăn tia lửa và vật sắc nhọn."
+    },
+    {
+      "name": "Áo Choàng Lữ Khách",
+      "cost": 12,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Áo choàng",
+        "Phòng ngự (Lưng): 22"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Du Hành": "Kiểm định sinh tồn dã ngoại +1, chống chọi thời tiết khắc nghiệt."
+      },
+      "description": "Áo choàng người lữ hành thường mặc, chắn gió che mưa."
+    },
+    {
+      "name": "Áo Dài Thương Nhân",
+      "cost": 16,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp vải",
+        "Phòng ngự (Toàn thân): 28"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Thương Mại": "Kiểm định ý chí +1."
+      },
+      "description": "Áo dài chỉnh tề mà thương nhân mặc, trông giàu có và đáng tin cậy."
+    },
+    {
+      "name": "Áo Dài Học Giả",
+      "cost": 20,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp vải",
+        "Phòng ngự (Toàn thân): 38"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Học Thức": "Kiểm định tri thức +2, tốc độ đọc +30%."
+      },
+      "description": "Áo dài học giả mặc, trong túi chứa đầy ghi chép và sách vở."
+    },
+    {
+      "name": "Tạp Dề Đầu Bếp",
+      "cost": 14,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp vải",
+        "Phòng ngự (Ngực): 24"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Nấu Nướng": "Kiểm định nấu nướng +2, phẩm chất món ăn tạo ra +10%."
+      },
+      "description": "Tạp dề làm việc của đầu bếp, dính đầy dấu vết của các loại nguyên liệu nấu ăn."
+    },
+    {
+      "name": "Áo Rách Tù Nhân",
+      "cost": 2,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp vải",
+        "Phòng ngự (Toàn thân): 4"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Tù Nhân": "Khi mặc, lính canh sẽ coi bạn là tù nhân. Kiểm định trốn thoát +2."
+      },
+      "description": "Bộ quần áo tù nhân rách rưới, bên trên còn có số hiệu."
+    },
+    {
+      "name": "Áo Dài Pháp Sư",
+      "cost": 50,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp vải",
+        "Phòng ngự: 60"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Tăng Cường Pháp Lực": "Giảm 8% tiêu hao MP."
+      },
+      "description": "May bằng nhung xanh lam dày dặn, cổ tay áo và gấu áo thêu hoa văn ma pháp bằng chỉ bạc, có thể tăng nhẹ hiệu quả pháp thuật."
+    },
+    {
+      "name": "Bộ Giáp Da Ẩn Mật",
+      "cost": 55,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nhẹ",
+        "Phòng ngự: 60"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Ẩn Mật": "Trong trạng thái ngoài chiến đấu, giảm tỷ lệ bị kẻ địch phát hiện."
+      },
+      "description": "May từ da thuộc mềm mại nhuộm đen, cắt may ôm sát, có thể giảm nhẹ tiếng ồn phát ra khi hành động."
+    },
+    {
+      "name": "Bộ Giáp Xích",
+      "cost": 55,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nặng",
+        "Phòng ngự: 80"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Phòng Hộ Giáp Xích": "Sát thương vật lý phải chịu giảm 8%."
+      },
+      "description": "Bộ giáp xích toàn thân đan từ hàng ngàn vòng thép tinh luyện, có thể phòng ngự hiệu quả đòn chém rạch và đâm bổ."
+    },
+    {
+      "name": "Bộ Giáp Bản Hiệp Sĩ",
+      "cost": 60,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nặng",
+        "Phòng ngự: 85"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Gia Tăng Sinh Lực": "Giới hạn HP tối đa tăng 200 điểm."
+      },
+      "description": "Giáp bản đúc bằng thép tinh luyện liền khối, lực phòng ngự cực mạnh, là trang bị bảo hộ cốt lõi của hiệp sĩ."
+    },
+    {
+      "name": "Bộ Giáp Vảy",
+      "cost": 55,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nặng",
+        "Phòng ngự: 85"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Phòng Hộ Mảnh Giáp": "Sát thương vật lý phải chịu giảm 8%."
+      },
+      "description": "Gắn nhiều mảnh thép nhỏ xếp lớp như vảy cá lên giáp da, phòng ngự hiệu quả đòn chém bổ."
+    },
+    {
+      "name": "Bộ Quần Áo Da Lữ Khách",
+      "cost": 50,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nhẹ",
+        "Phòng ngự: 70"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Gia Tăng Độ Bền Bỉ": "Giới hạn SP tối đa tăng 150 điểm."
+      },
+      "description": "May từ da cứng, bên trong có lớp đệm mềm, giảm bớt mệt mỏi do những chuyến đi đường dài."
+    },
+    {
+      "name": "Dạ Hành Phục",
+      "cost": 26,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nhẹ",
+        "Phòng ngự (Toàn thân): 110"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Dạ Hành": "Kiểm định lén lút vào ban đêm +3, rất khó bị phát hiện trong bóng tối."
+      },
+      "description": "Quần áo bó sát màu đen, thiết kế chuyên dụng cho hành động ban đêm."
+    },
+    {
+      "name": "Hoa Phục Thi Nhân Hát Rong",
+      "cost": 25,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp vải",
+        "Phòng ngự (Toàn thân): 105"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Biểu Diễn": "Giới hạn MP +150."
+      },
+      "description": "Trang phục biểu diễn lộng lẫy, có thể thu hút sự chú ý của khán giả."
+    },
+    {
+      "name": "Pháp Bào Thuật Sĩ Bí Thuật",
+      "cost": 80,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp vải",
+        "Phòng ngự: 160"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Bí Thuật Tinh Thông": "Sát thương cuối cùng của mọi kỹ năng sát thương năng lượng tăng 12%.",
+        "Hồi Phục Pháp Lực": "Mỗi hiệp hồi phục thêm 400 điểm MP."
+      },
+      "description": "Pháp bào hoa mỹ dệt từ nhung xanh thẫm và chỉ bạc, cổ tay áo và cổ áo thêu hoa văn tinh tú, khảm nhiều viên lam bảo thạch."
+    },
+    {
+      "name": "Áo Dài Che Chở Nguyên Tố",
+      "cost": 75,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp vải",
+        "Phòng ngự: 150"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Kháng Nguyên Tố": "Mọi sát thương năng lượng phải chịu giảm 12%."
+      },
+      "description": "Dệt từ sợi bí ngân pha lẫn vải chống cháy, trên mặt vải lưu chuyển ánh sáng mờ ảo của bốn nguyên tố."
+    },
+    {
+      "name": "Tinh Không Pháp Bào",
+      "cost": 48,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Pháp bào",
+        "Phòng ngự: 150"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Sao Trời Chúc Phúc": "Khi chiến đấu vào ban đêm, mọi kiểm định +2."
+      },
+      "description": "Áo dài màu xanh thẫm điểm xuyết hoa văn tinh tú, sẽ phát sáng vào ban đêm."
+    },
+    {
+      "name": "Bộ Giáp Bản Hiệp Sĩ · Kiên Nghị",
+      "cost": 85,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nặng",
+        "Phòng ngự: 180"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Phòng Hộ Vật Lý": "Mọi sát thương vật lý phải chịu giảm 12%."
+      },
+      "description": "Bộ giáp bản đúc bằng thép tinh chế, bề mặt mài bóng loáng, viền khắc phù văn thủ hộ, là bảo đảm vững chắc cho những người lính tiền tuyến."
+    },
+    {
+      "name": "Bộ Giáp Xích Kháng Nguyên Tố",
+      "cost": 85,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nặng",
+        "Phòng ngự: 150"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Phòng Hộ Nguyên Tố": "Mọi sát thương năng lượng phải chịu giảm 12%."
+      },
+      "description": "Đan từ hàng ngàn vòng bí ngân nhỏ li ti, giữa các vòng khảm đá quý nhỏ tượng trưng cho bốn nguyên tố, kháng đồng đều các loại sát thương nguyên tố, tính ứng dụng cao."
+    },
+    {
+      "name": "Bộ Giáp Da Ẩn Ảnh",
+      "cost": 85,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nhẹ",
+        "Phòng ngự: 130"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Né Tránh Bóng Tối": "Trong bóng râm hoặc môi trường tăm tối, kiểm định né tránh nhận thêm +3 gia trị."
+      },
+      "description": "May bằng da báo ám ảnh, các bộ phận trọng yếu khảm hắc diệu thạch hấp thụ ánh sáng, giúp người mặc dễ dàng hòa mình vào bóng tối."
+    },
+    {
+      "name": "Bộ Giáp Xích Sức Mạnh Cự Hùng",
+      "cost": 85,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nặng",
+        "Phòng ngự: 145"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Gia Tăng Sức Mạnh": "Sức mạnh của bạn nhận thêm hiệu chỉnh +2 khi tính toán kiểm định."
+      },
+      "description": "Bộ giáp xích thép tinh luyện, lưới dệt thêu phù văn cự hùng tượng trưng cho sức mạnh, tăng đáng kể lực bộc phát và lực xung kích của người mặc."
+    },
+    {
+      "name": "Bộ Giáp Da Du Hiệp Độn Phong",
+      "cost": 85,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nhẹ",
+        "Phòng ngự: 140"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Gia Tăng Nhanh Nhẹn": "Thuộc tính [Nhanh Nhẹn] của bạn được +2 khi tính toán né tránh và tiên thủ."
+      },
+      "description": "May từ lụa ma hóa và da mềm, nạm phong tinh thạch thanh nhẹ, giúp người mặc di chuyển nhanh hơn, né tránh linh hoạt hơn."
+    },
+    {
+      "name": "Áo Choàng Tắc Kè Hoa",
+      "cost": 48,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Áo choàng",
+        "Phòng ngự (Lưng): 180"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Ẩn Mật": "Khi bắt đầu chiến đấu, nhận trạng thái ẩn mật (kẻ địch trúng đích -4), duy trì 2 hiệp hoặc cho đến khi bạn tấn công."
+      },
+      "description": "Áo choàng có thể đổi màu theo môi trường, khiến người mặc khó bị phát hiện."
+    },
+    {
+      "name": "Thắt Lưng Giảm Trọng Lượng",
+      "cost": 35,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Thắt lưng",
+        "Phòng ngự (Eo): 130"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Giảm Bớt Tải Trọng": "Kiểm định sức mạnh +2."
+      },
+      "description": "Bên trong thắt lưng đan xen phù văn giảm trọng lượng, có thể giảm đáng kể sức nặng của trang bị."
+    },
+    {
+      "name": "Áo Dài Kháng Nguyên Tố",
+      "cost": 52,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Pháp bào",
+        "Phòng ngự (Toàn thân): 210"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Kháng Nguyên Tố": "Sát thương nguyên tố Hỏa/Băng/Lôi/Độc phải chịu giảm 25%."
+      },
+      "description": "Áo dài dệt hoa văn bốn màu nguyên tố, có thể chống đỡ các đòn tấn công nguyên tố."
+    },
+    {
+      "name": "Giáp Bụi Gai Phản Sát Thương",
+      "cost": 54,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nặng",
+        "Phòng ngự (Toàn thân): 230"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Bụi Gai": "Khi chịu đòn đánh, phản lại 30% sát thương cho kẻ tấn công."
+      },
+      "description": "Bề mặt giáp đầy gai ma pháp, kẻ tấn công sẽ bị phản phệ."
+    },
+    {
+      "name": "Giáp Vảy Rồng",
+      "cost": 52,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nặng",
+        "Phòng ngự (Toàn thân): 225"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Vảy Rồng": "Sát thương lửa phải chịu -40%, phòng ngự +15%."
+      },
+      "description": "Bộ giáp đúc từ vảy Chân Long, kiên cố không thể phá vỡ."
+    },
+    {
+      "name": "Áo Dài Mạch Ma Lực",
+      "cost": 56,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Pháp bào",
+        "Phòng ngự (Toàn thân): 240"
+      ],
+      "rarity": "epic",
+      "effect": {
+        "Tuần Hoàn Ma Lực": "Khi thi triển kỹ năng, có tỷ lệ d20≥17 không tiêu hao MP."
+      },
+      "description": "Bên trong áo dài đan các mạch ma pháp, giúp ma lực được tái tuần hoàn sử dụng."
+    },
+    {
+      "name": "Pháp Bào Thời Không",
+      "cost": 68,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Pháp bào",
+        "Phòng ngự (Toàn thân): 310"
+      ],
+      "rarity": "epic",
+      "effect": {
+        "Bẻ Cong Thời Không": "Khi bị tấn công, có tỷ lệ d20≥18 khiến đòn tấn công đó đánh hụt."
+      },
+      "description": "Pháp bào dệt ma pháp thời không, có thể bẻ cong thời gian để né tránh đòn đánh."
+    },
+    {
+      "name": "Giáp Tái Sinh",
+      "cost": 60,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nặng",
+        "Phòng ngự (Toàn thân): 280"
+      ],
+      "rarity": "epic",
+      "effect": {
+        "Tự Phục Hồi": "Giáp tự sửa chữa mỗi hiệp, hồi phục 100 điểm HP."
+      },
+      "description": "Bề mặt giáp lưu chuyển năng lượng sinh mệnh, có thể tự động vá lành tổn thương."
+    },
+    {
+      "name": "Áo Choàng U Linh",
+      "cost": 60,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Áo choàng",
+        "Phòng ngự (Lưng): 260"
+      ],
+      "rarity": "epic",
+      "effect": {
+        "Hóa Hư": "Mỗi trận chiến 1 lần, có thể hư hóa cơ thể, miễn nhiễm hoàn toàn đòn tấn công tiếp theo."
+      },
+      "description": "Áo choàng giúp người mặc bước vào trạng thái hư hóa trong chốc lát."
+    }
+  ],
+  "Phòng Cụ Tay": [
+    {
+      "name": "Găng Tay Vải",
+      "cost": 3,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Găng tay",
+        "Phòng ngự (Tay): 6"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Giữ Ấm": "Chống chọi thời tiết lạnh giá, chống cóng tay."
+      },
+      "description": "Găng tay vải đơn giản, chủ yếu dùng để giữ ấm."
+    },
+    {
+      "name": "Găng Tay Lao Động",
+      "cost": 7,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Găng tay",
+        "Phòng ngự (Tay): 14"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Lao Tác": "Khi lao động thể lực, chống mài mòn và chấn thương."
+      },
+      "description": "Găng tay da dày dặn, thích hợp bốc vác vật nặng."
+    },
+    {
+      "name": "Giáp Cánh Tay",
+      "cost": 6,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp tay",
+        "Phòng ngự: 8"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Kiên Cố": "Sát thương vật lý phải chịu giảm 3%."
+      },
+      "description": "Cấu thành từ nhiều mảnh giáp sắt và dây đai da, bảo vệ toàn bộ cẳng tay, có thể dùng đỡ gạt đao kiếm."
+    },
+    {
+      "name": "Hộ Thủ Bằng Sắt",
+      "cost": 5,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nặng",
+        "Phòng ngự: 7"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Lực Nắm": "Đòn đánh thường gây thêm 5 sát thương vật lý."
+      },
+      "description": "Mảnh sắt che mu bàn tay, cố định bằng dây đai da, có thể bảo vệ bàn tay trước những đòn chém bổ khi đỡ đòn."
+    },
+    {
+      "name": "Hộ Thủ Chiến Sĩ",
+      "cost": 24,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Găng tay",
+        "Phòng ngự (Tay): 100"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Lực Nắm": "Vũ khí sẽ không bị đánh rơi, kiểm định sức mạnh +1."
+      },
+      "description": "Găng tay chiến đấu gia cố, có thể nắm chặt vũ khí."
+    },
+    {
+      "name": "Găng Tay Pháp Sư",
+      "cost": 26,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Găng tay",
+        "Phòng ngự (Tay): 110"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Thi Pháp": "Kiểm định tiên thủ của các hành động liên quan đến thi pháp +1, thi pháp không bị gián đoạn."
+      },
+      "description": "Găng tay tơ tằm mềm mại, thuận tiện kết thủ ấn thi pháp."
+    },
+    {
+      "name": "Giáp Cánh Tay Đỡ Đòn",
+      "cost": 23,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp tay",
+        "Phòng ngự: 75"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Gia Tăng Thể Chất": "Khi bạn sử dụng [Hành Động] để phòng thủ, nhận thêm 60 điểm giảm sát thương vật lý tạm thời."
+      },
+      "description": "Nhiều lớp mảnh giáp thép tinh luyện tán đinh nối lại, bọc kín toàn bộ cẳng tay, mang lại sự bảo vệ mạnh mẽ hơn khi đỡ đòn."
+    },
+    {
+      "name": "Găng Tay Sức Mạnh Cự Hùng",
+      "cost": 18,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nhẹ",
+        "Phòng ngự: 55"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Đòn Nặng": "Sát thương cuối cùng của đòn đánh thường tăng 50 điểm."
+      },
+      "description": "Làm từ da gấu thuộc, trên mu bàn tay may miếng sắt gia cố, có thể tăng nhẹ lực cầm nắm của người sử dụng."
+    },
+    {
+      "name": "Găng Tay Bản Giáp Nắm Thép",
+      "cost": 22,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nặng",
+        "Phòng ngự: 60"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Tăng Cường Sức Mạnh": "Khi sử dụng kỹ năng liên kết với [Sức Mạnh], sát thương cuối cùng tăng 5%."
+      },
+      "description": "Ghép nối bản lề từ nhiều mảnh giáp thép tinh luyện, che phủ hoàn toàn bàn tay, có thể tăng cường đáng kể lực đấm."
+    },
+    {
+      "name": "Găng Tay Sức Mạnh Titan",
+      "cost": 48,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Găng tay",
+        "Phòng ngự (Tay): 180"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Cự Lực": "Kiểm định sức mạnh +3, sát thương vũ khí cận chiến +15%."
+      },
+      "description": "Găng tay ẩn chứa sức mạnh của Titan, có thể tăng cường mạnh mẽ sức mạnh của người sử dụng."
+    },
+    {
+      "name": "Hộ Giáp Đỡ Đòn Phong Bạo",
+      "cost": 35,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp tay",
+        "Phòng ngự: 140"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Lệch Đường Đạn": "Mọi sát thương vật lý tầm xa phải chịu giảm 12%."
+      },
+      "description": "Giáp cánh tay rèn từ hợp kim nhẹ, mặt ngoài có vài rãnh dẫn khí chuẩn xác, có thể làm lệch quỹ đạo của các đòn tấn công vật lý tầm xa một cách hiệu quả."
+    },
+    {
+      "name": "Hộ Thủ Liệt Diễm",
+      "cost": 33,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp tay",
+        "Phòng ngự: 140"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Hấp Thu Hỏa Diễm": "Sát thương năng lượng (Hỏa) phải chịu giảm 12%, và chuyển hóa 50% lượng giảm đó thành sát thương năng lượng (Hỏa) cộng thêm cho đòn đánh tiếp theo của bạn."
+      },
+      "description": "Làm từ da thằn lằn lửa, mu bàn tay khảm một viên hồng ngọc ấm áp, có thể chống đỡ sát thương hệ hỏa và chuyển hóa thành năng lượng."
+    },
+    {
+      "name": "Hộ Thủ Sức Mạnh Nắm Thép",
+      "cost": 37,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nặng",
+        "Phòng ngự: 155"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Nắm Đấm Thép": "Đòn đánh tay không của bạn gây sát thương vật lý tương đương (Sức mạnh x 5), và có tỷ lệ d20≥16 đánh ngã mục tiêu."
+      },
+      "description": "Hộ thủ thép tinh luyện đầy vết chém xước, khớp ngón và mu bàn tay điêu khắc phù văn sức mạnh, tăng đáng kể lực cầm nắm và lực đấm của người đeo."
+    },
+    {
+      "name": "Bàn Tay Thuật Sĩ Bí Thuật",
+      "cost": 34,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp vải",
+        "Phòng ngự: 140"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Nạp Đầy Năng Lượng": "Sát thương năng lượng tăng 12%."
+      },
+      "description": "Dệt từ lụa bạc, trên mu bàn tay dùng bột tinh thể bí thuật thêu nên một pháp trận phức tạp, có thể gia tăng uy năng ma pháp."
+    }
+  ],
+  "Phòng Cụ Chân": [
+    {
+      "name": "Giày Vải",
+      "cost": 4,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Ủng",
+        "Phòng ngự (Bàn chân): 8"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Gọn Nhẹ": "Di chuyển hầu như không phát ra tiếng động, kiểm định lén lút +1."
+      },
+      "description": "Giày vải mềm mại, bước đi rất êm."
+    },
+    {
+      "name": "Ủng Leo Núi",
+      "cost": 18,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Ủng",
+        "Phòng ngự (Bàn chân): 32"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Leo Núi": "Kiểm định leo trèo +2, di chuyển trên địa hình đồi núi không bị cản trở."
+      },
+      "description": "Ủng thiết kế chuyên cho leo núi, đế giày có đinh chống trượt."
+    },
+    {
+      "name": "Hộ Túc Bằng Sắt",
+      "cost": 5,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nặng",
+        "Phòng ngự: 7"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Phòng Hộ": "Sát thương vật lý phải chịu giảm 3%."
+      },
+      "description": "Giáp bảo vệ bàn chân cấu thành từ nhiều mảnh sắt bản lề, thường bọc ngoài ủng để bảo vệ đôi chân."
+    },
+    {
+      "name": "Ủng Da",
+      "cost": 5,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nhẹ",
+        "Phòng ngự: 5"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Vững Bước": "Trang bị này không ảnh hưởng tốc độ di chuyển, cung cấp khả năng chống trượt nhẹ."
+      },
+      "description": "Ủng ngắn chắc chắn làm từ da bò, đế ủng khá dày, có thể bảo vệ bàn chân và thích nghi với những chuyến đi dài ngày."
+    },
+    {
+      "name": "Chiến Hài Chiến Sĩ",
+      "cost": 28,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Ủng",
+        "Phòng ngự (Bàn chân): 120"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Giẫm Đạp": "Sát thương lên kẻ địch ngã gục +25%."
+      },
+      "description": "Chiến hài dày dặn, có thể giẫm nát xương cốt kẻ thù."
+    },
+    {
+      "name": "Hộ Thối Chiến Sĩ",
+      "cost": 30,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp ống chân",
+        "Phòng ngự (Chân): 130"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Vững Vàng": "Khó bị đánh ngã, kiểm định thể chất +1."
+      },
+      "description": "Giáp bọc chân bằng sắt dày dặn, bảo vệ phần chân khỏi bị tổn thương."
+    },
+    {
+      "name": "Giáp Ống Chân Nhẹ",
+      "cost": 26,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp ống chân",
+        "Phòng ngự (Chân): 110"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Nhanh Nhẹn": "Kiểm định tiên thủ +2, kiểm định né tránh +1."
+      },
+      "description": "Giáp bọc chân bằng da nhẹ nhàng, không cản trở di chuyển."
+    },
+    {
+      "name": "Ủng Bản Giáp Trọng Trang",
+      "cost": 27,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nặng",
+        "Phòng ngự: 65"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Giảm Sát Thương Diện Rộng": "Sát thương diện rộng phải chịu giảm 8%."
+      },
+      "description": "Chiến hài hạng nặng cấu thành hoàn toàn từ các mảnh thép tinh luyện, phòng ngự hiệu quả đòn tấn công hạ bàn, cái giá là hy sinh sự linh hoạt."
+    },
+    {
+      "name": "Ủng Dài Lữ Khách",
+      "cost": 19,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nhẹ",
+        "Phòng ngự: 45"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Cấp Hành": "Mỗi ngày có thể thực hiện di chuyển nhanh kéo dài 1 giờ, không tiêu hao thêm thể lực."
+      },
+      "description": "Ủng da cổ cao, đế ủng kiên cố chống mài mòn, giảm bớt cảm giác mệt mỏi trong chuyến hành trình dài."
+    },
+    {
+      "name": "Ủng Bản Giáp Nạm Thép",
+      "cost": 21,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nặng",
+        "Phòng ngự: 55"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Vững Vàng": "Miễn nhiễm hiệu ứng [Đánh Ngã]."
+      },
+      "description": "Các vị trí trọng yếu của thân ủng da như mu bàn chân và mắt cá chân đều nạm các miếng thép, mang lại sự bảo vệ cộng thêm."
+    },
+    {
+      "name": "Ủng Tật Phong",
+      "cost": 34,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Ủng",
+        "Phòng ngự (Bàn chân): 160"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Gió Lốc": "Kiểm định tiên thủ +3, kiểm định né tránh +2."
+      },
+      "description": "Đôi ủng thanh nhẹ, bước đi tựa như giẫm trên ngọn gió."
+    },
+    {
+      "name": "Ủng Ảnh Vũ",
+      "cost": 40,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Ủng",
+        "Phòng ngự (Bàn chân): 150"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Tàn Ảnh": "Sau khi di chuyển, để lại tàn ảnh (đòn tấn công tiếp theo của kẻ địch có tỷ lệ d20≥15 đánh trúng tàn ảnh dẫn đến hụt)."
+      },
+      "description": "Đế ủng khắc phù văn bóng đêm, khi di chuyển sẽ lưu lại tàn ảnh hư ảo."
+    },
+    {
+      "name": "Ủng Đi Trên Nước",
+      "cost": 33,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nhẹ",
+        "Phòng ngự: 130"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Đi Trên Nước": "Bạn có thể tiêu hao tài nguyên [Hành Động] để đi trên mặt nước như trên đất bằng, duy trì 1 phút."
+      },
+      "description": "Làm từ da hải thú chống thấm nước, viền ủng nạm vài viên lam ngọc nước, giúp người mang đứng hoặc bước đi trong thời gian ngắn trên mặt nước."
+    },
+    {
+      "name": "Kẻ Giẫm Đạp Nham Thạch",
+      "cost": 35,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nặng",
+        "Phòng ngự: 165"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Bất Động Như Sơn": "Khi bạn bị cưỡng chế dịch chuyển vị trí, bạn có thể thực hiện một lần kiểm định thể chất (d20 + Thể chất), nếu kết quả lớn hơn 15, sẽ kháng lại hiệu ứng dịch chuyển vị trí đó."
+      },
+      "description": "Chiến hài hạng nặng kết hợp giữa da cứng và tấm thép, đế ủng nặng nề như nham thạch, giúp người mang vững như bàn thạch trước các chấn động xung kích."
+    },
+    {
+      "name": "Giáp Ống Chân Bí Pháp Lữ Khách",
+      "cost": 35,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nhẹ",
+        "Phòng ngự: 130"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Tăng Cường Tải Trọng": "Kiểm định sức mạnh +2."
+      },
+      "description": "Giáp bảo vệ chân thực dụng làm từ da chống mòn và vải bạt, túi bên trong giấu một viên bảo thạch không gian siêu nhỏ, giảm bớt rất nhiều mệt mỏi trong chuyến đi dài."
+    },
+    {
+      "name": "Ủng Dài Phong Hành Giả",
+      "cost": 36,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giáp nhẹ",
+        "Phòng ngự: 120"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Di Chuyển Không Tiếng Động": "Di chuyển của bạn không phát ra bất kỳ tiếng động nào, đồng thời kiểm định tiên thủ +1."
+      },
+      "description": "Làm từ da hươu mềm mại, đế ủng khắc phù văn hệ phong, hai bên nạm phong tinh thạch, thích hợp lén lút di chuyển nhanh."
+    }
+  ],
+  "Trang Phục Nữ": [
+    {
+      "name": "Trang Phục Hầu Gái Lữ Quán Tình Thiên",
+      "cost": 15,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Bộ trang phục",
+        "Phòng ngự: 45",
+        "Tăng ích"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Tự Làm Sạch": "Trang phục tự làm sạch, tiêu hao SP -8%."
+      },
+      "description": "Vòng cổ màu đen có khóa kim loại ôm quanh cổ, thân trên mặc áo hai dây croptop màu trắng hở rốn, trước ngực đính nơ nhỏ màu đen và cúc trang trí, hai cánh tay đeo ống tay áo dài màu trắng tách rời có viền bèo nhún cố định bằng nơ dây buộc màu đen, thân dưới mặc chân váy xếp ly ngắn màu đen, chân mang tất ngắn màu trắng có ren và họa tiết đen ở cổ tất, chân mang giày da đế dày màu đen."
+    },
+    {
+      "name": "Trang Phục Hầu Gái Mùa Hè Lữ Quán Tình Thiên",
+      "cost": 15,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Bộ trang phục",
+        "Phòng ngự: 45",
+        "Tăng ích"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Tự Làm Sạch": "Trang phục tự làm sạch, tiêu hao SP -8%."
+      },
+      "description": "Vòng cổ màu trắng có khóa kim loại màu bạc, thân trên là áo ngắn croptop hở rốn màu trắng với hai dây mảnh và hàng cúc phía trước, hai cánh tay là ống tay dài tách rời xòe hình loa kèn viền bèo nhún chất liệu mỏng nhẹ bán trong suốt, eo thắt thắt lưng trắng có khóa kim loại bạc, thân dưới là váy siêu ngắn viền bèo nhún màu trắng để lộ mép lót trong màu trắng bên dưới gấu váy, chân mang bốt ngắn buộc dây màu trắng."
+    },
+    {
+      "name": "Khăn Trùm Đầu Tu Nữ",
+      "cost": 15,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Phụ kiện đầu",
+        "Phòng ngự (Đầu): 50",
+        "Tăng ích"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Cấm Dục": "Giảm bớt sự can nhiễu của âm thanh bên ngoài, kiểm định tinh thần +1."
+      },
+      "description": "Khăn trùm đầu tu nữ màu đen rộng rãi, viền trong lót vải trắng bản rộng, bao bọc lấy hai bên đầu và rủ xuống vai và lưng một cách tự nhiên."
+    },
+    {
+      "name": "Trang Phục Tu Nữ Kiểu Aethera",
+      "cost": 20,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Phòng ngự: 80",
+        "Tăng ích"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Từ Ái": "Trang phục tự làm sạch, khi sử dụng kỹ năng trị liệu, hồi phục thêm 150 điểm sinh lực."
+      },
+      "description": "Váy ngắn liền thân hở vai màu đen, thiết kế tay dài, trên vai và phía trên tay áo đính khuy kim loại màu vàng kim trang trí, cổ tay áo phối vải trắng đính kèm một chiếc cúc màu vàng kim."
+    },
+    {
+      "name": "Ủng Tu Nữ Kiểu Aethera",
+      "cost": 20,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Giày",
+        "Phòng ngự (Chân): 70",
+        "Tăng ích"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Thanh Thoát": "Tiêu hao SP -8%, kiểm định nhanh nhẹn +1."
+      },
+      "description": "Ủng ngắn cổ cao buộc dây màu đen, bề mặt có khoen xỏ kim loại và dây giày đen đan chéo."
+    },
+    {
+      "name": "Đồng Phục Nữ Hiệp Hội Ma Pháp Valentia",
+      "cost": 30,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Bộ trang phục",
+        "Phòng ngự: 80",
+        "Tăng ích"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Phòng Ngự Lực Đẩy": "Sát thương vật lý phải chịu -70.",
+        "Tuần Hoàn Ma Lực": "Mỗi hiệp hồi phục 200 điểm pháp lực."
+      },
+      "description": "Áo sơ mi cổ thủy thủ màu trắng viền đen, hai bên cổ áo đính huy hiệu kim loại màu vàng kim, vạt trước có cúc đen, tay áo dài bồng bềnh kết hợp ống tay tách rời có dây buộc nơ đen ở cẳng tay, chân váy ngắn xếp ly kẻ caro sẫm màu, tất trắng cao quá gối, chân mang giày da đế dày màu đen."
+    },
+    {
+      "name": "Nón Ma Nữ Quần Tinh",
+      "cost": 60,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Nón ma nữ",
+        "Phòng ngự (Đầu): 160",
+        "Tăng ích"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Trí Tuệ Ma Lực": "Kiểm định trí lực +2.",
+        "Ma Thức Của Linh": "Kiểm định trúng đích +2."
+      },
+      "description": "Mũ vành rộng chóp nhọn màu trắng, chóp nón uốn cong rủ sang bên phải, đỉnh chóp đính vật trang trí hình nón màu bạc; mặt trong vành nón rộng vẽ họa tiết bầu trời sao đêm màu xanh thẫm, ranh giới giữa thân nón và vành nón quấn dải ruy băng màu xanh lam thắt nơ lớn bên phải, tâm nơ khảm viên lam bảo thạch hình thoi viền vàng."
+    },
+    {
+      "name": "Alice Lạc Vào Xứ Sở Thần Tiên",
+      "cost": 60,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Bộ trang phục",
+        "Phòng ngự (Toàn thân): 170",
+        "Tăng ích"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Lạc Vào Xứ Sở Thần Tiên": "Chớp mắt nhập mộng, kiểm định né tránh +2.",
+        "Cái Nhìn Không Thể Gọi Tên": "Sát thương phải chịu -180 điểm."
+      },
+      "description": "Đầu cài kẹp tóc nơ lớn màu xanh tím nhạt, cổ áo sơ mi trắng thắt nơ cổ màu xanh thẫm, thân trên là váy liền ngắn tay màu xanh nhạt với hàng cúc trắng trước ngực và viền bèo nhún ở tay áo, khoác ngoài tạp dề trắng viền bèo nhún, thân dưới là tùng váy viền bèo màu xanh nhạt, chân mang tất dài sọc ngang đen trắng, chân mang giày đen."
+    }
+  ],
+  "Khiên": [
+    {
+      "name": "Khiên Hình Diều",
+      "cost": 8,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Khiên",
+        "Phòng ngự: 12"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Hỗ Trợ Đỡ Đòn": "Cung cấp thêm 5 giảm sát thương vật lý."
+      },
+      "description": "Thiết kế hình diều bằng gỗ trên rộng dưới hẹp, có thể bảo vệ thân mình hiệu quả, là trang bị tiêu chuẩn khi bộ binh xung phong."
+    },
+    {
+      "name": "Khiên Gỗ Nhỏ",
+      "cost": 10,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Khiên",
+        "Phòng ngự: 25"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Phản Kích": "Khi bị tấn công tiến hành kiểm định đối kháng (Sức mạnh vs Sức mạnh), có thể đỡ các đòn tấn công từ phẩm chất [Ưu Tú] trở xuống, miễn nhiễm sát thương vật lý lần này."
+      },
+      "description": "Chiếc khiên tròn nhỏ bằng gỗ có thể dùng như giáp hộ thủ, bọc thêm lớp sắt, vô cùng chắc chắn."
+    },
+    {
+      "name": "Khiên Gỗ",
+      "cost": 10,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Khiên",
+        "Phòng ngự: 20"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Thô Sơ": "Đỡ đòn +1, nhưng dễ bị tổn thương trước các đòn tấn công bằng lửa."
+      },
+      "description": "Khiên gỗ đơn giản, dễ bị lửa thiêu rụi."
+    },
+    {
+      "name": "Khiên Cánh Diều Thép",
+      "cost": 22,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Khiên",
+        "Phòng ngự: 70"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Giảm Sát Thương Vật Lý": "Sát thương vật lý phải chịu giảm 5%."
+      },
+      "description": "Mặt trước thân khiên gỗ sồi được phủ một lớp thép mỏng hình giọt nước, diện tích bảo hộ lớn và kiên cố hơn."
+    },
+    {
+      "name": "Khiên Tròn Bách Luyện",
+      "cost": 24,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Khiên",
+        "Phòng ngự: 70"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Hồi Phục Tinh Lực": "Khi bị đánh trúng, SP bản thân hồi phục 70 điểm."
+      },
+      "description": "Khiên tròn nhỏ dập từ thép tinh luyện trăm lần, gọn nhẹ linh hoạt, dễ dàng làm chệch hướng đòn tấn công."
+    },
+    {
+      "name": "Khiên Tháp Cự Hùng",
+      "cost": 30,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Khiên",
+        "Phòng ngự: 85"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Mất Thăng Bằng": "Khi bị tấn công, có tỷ lệ d20≥16 khiến kẻ tấn công [Mất Thăng Bằng], kiểm định trúng đích tiếp theo của nó -2."
+      },
+      "description": "Chiếc khiên lớn bọc viền thép tinh luyện, mặt trước vẽ huy hiệu đầu gấu, cung cấp khả năng bảo vệ toàn diện nhưng vô cùng nặng nề cồng kềnh."
+    },
+    {
+      "name": "Khiên Tròn",
+      "cost": 32,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Khiên",
+        "Phòng ngự: 135"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Đỡ Đòn": "Khi bị đánh tiến hành kiểm định đối kháng (Sức mạnh vs Sức mạnh), có thể đỡ các đòn tấn công từ phẩm chất [Hiếm] trở xuống, miễn nhiễm sát thương vật lý lần này."
+      },
+      "description": "Khiên hình tròn linh hoạt, thuận tiện cho việc đỡ đòn và phản công."
+    },
+    {
+      "name": "Khiên Bùa Hộ Mệnh Thánh Quang",
+      "cost": 37,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Khiên",
+        "Phòng ngự: 140"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Lời Cầu Nguyện Thủ Hộ": "Khi bạn hoặc đồng minh bị vong linh hoặc ma tộc tấn công, bạn có thể tiêu hao [Hành Động] để cung cấp một lần đỡ đòn cho mục tiêu, hấp thụ lượng sát thương tương đương 10% HP tối đa của bạn."
+      },
+      "description": "Khiên hình diều nhỏ bằng bạc, trung tâm mặt khiên khảm một viên thánh tinh thạch tỏa ánh sáng dịu nhẹ, kháng cự hiệu quả sự ăn mòn của năng lượng bóng tối và vong linh."
+    },
+    {
+      "name": "Khiên Diều Phù Văn",
+      "cost": 36,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Khiên",
+        "Phòng ngự: 180"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Làm Lệch Pháp Thuật": "Khi bạn trở thành mục tiêu của một phép thuật đơn mục tiêu, có 15% cơ hội (d20≥18) vô hiệu hóa phép thuật đó."
+      },
+      "description": "Khiên hình diều làm từ gỗ sồi dẻo dai, bề mặt phủ các lá bí ngân mỏng, bên trên điêu khắc dày đặc phù văn phòng hộ."
+    },
+    {
+      "name": "Khiên Tròn Hộ Thủ",
+      "cost": 34,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Khiên",
+        "Phòng ngự: 160"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Làm Lệch Đòn Đánh": "Khi bị đánh tiến hành kiểm định đối kháng (Sức mạnh + 2 vs Sức mạnh), thành công sẽ làm lệch sát thương vật lý của kỹ năng phẩm chất [Hiếm] trở xuống lần này."
+      },
+      "description": "Khiên tròn cỡ nhỏ đúc bằng gang thép, mặt khiên đầy phù văn làm lệch đòn đánh, có thể đỡ đòn tấn công."
+    },
+    {
+      "name": "Khiên Nhỏ Băng Tinh",
+      "cost": 32,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Khiên",
+        "Phòng ngự: 140"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Băng Sương Đỡ Đòn": "Khi đỡ đòn cận chiến thành công, có tỷ lệ d20≥11 áp dụng trạng thái [Sương Giá] lên kẻ tấn công, khiến kiểm định tiên thủ của nó -1, duy trì 1 hiệp."
+      },
+      "description": "Khiên tròn trong suốt rèn từ lõi băng của sông băng sâu thẳm, thân khiên cứng rắn lạ thường, tỏa hàn khí ngút trời, có thể đóng băng đối phương trong thoáng chốc."
+    },
+    {
+      "name": "Khiên Phản Xạ Pháp Thuật",
+      "cost": 50,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Khiên",
+        "Phòng ngự: 200"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Phản Xạ Pháp Thuật": "Khi nhận sát thương năng lượng, có tỷ lệ d20≥16 phản lại 50% sát thương cho người thi pháp."
+      },
+      "description": "Mặt khiên khảm tinh thể phản quang, có thể hắt ngược năng lượng ma pháp trở lại."
+    },
+    {
+      "name": "Khiên Tròn Bụi Gai",
+      "cost": 44,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Khiên",
+        "Phòng ngự: 175"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Gai Nhọn Phản Sát Thương": "Khi nhận đòn đánh cận chiến, gây 180 sát thương vật lý cho kẻ tấn công."
+      },
+      "description": "Mặt khiên phủ đầy gai kim loại sắc nhọn, kẻ tấn công sẽ bị đâm rách da thịt."
+    },
+    {
+      "name": "Khiên Hấp Thu",
+      "cost": 56,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Khiên",
+        "Phòng ngự: 240"
+      ],
+      "rarity": "epic",
+      "effect": {
+        "Hấp Thu Sát Thương": "Khi nhận sát thương, hấp thu 30% chuyển hóa thành MP."
+      },
+      "description": "Mặt khiên có thể hấp thu năng lượng tấn công và chuyển hóa thành ma lực."
+    },
+    {
+      "name": "Khiên Tháp",
+      "cost": 38,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Khiên",
+        "Phòng ngự: 160"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Yểm Hộ": "Có thể che chắn cho đồng đội phía sau, đồng đội nhận sát thương -20%."
+      },
+      "description": "Chiếc khiên hình tháp khổng lồ, có thể che chắn cho nhiều người."
+    },
+    {
+      "name": "Khiên Ma Pháp",
+      "cost": 44,
+      "type": "Phòng Cụ",
+      "tag": [
+        "Khiên",
+        "Phòng ngự: 185"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Khiên Ma Pháp": "Khi nhận sát thương ma pháp, hấp thu 30% chuyển hóa thành MP."
+      },
+      "description": "Mặt khiên khắc ma pháp trận, có thể hấp thu năng lượng ma pháp."
+    }
+  ],
+  "Nhẫn": [
+    {
+      "name": "Nhẫn Bạc",
+      "cost": 4,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Nhẫn",
+        "Phòng ngự: 5"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Tăng Cường Yếu Ớt": "Đòn đánh thường gây thêm 10 sát thương vật lý."
+      },
+      "description": "Chiếc nhẫn bạc bình thường, thiết kế đơn giản không hoa văn, có thể dùng làm phôi để phụ ma hoặc làm tín vật."
+    },
+    {
+      "name": "Nhẫn Đồng",
+      "cost": 6,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Nhẫn"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Đẹp Mắt": "Giá bán ước tính +200G."
+      },
+      "description": "Chiếc nhẫn đồng xinh xắn, không có bất kỳ hiệu ứng ma pháp nào."
+    },
+    {
+      "name": "Nhẫn Chuẩn Xác",
+      "cost": 18,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Nhẫn",
+        "Phòng ngự: 45"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Tăng Sát Thương Tầm Xa": "Mọi đòn tấn công tầm xa gây thêm 60 sát thương vật lý."
+      },
+      "description": "Chiếc nhẫn bạc khảm một viên đá mắt mèo đã mài giũa, có thể tăng nhẹ độ ổn định của đòn tấn công tầm xa."
+    },
+    {
+      "name": "Nhẫn Đính Hôn",
+      "cost": 20,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Nhẫn"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Lời Thề Tình Yêu": "Khi bạn đời có trong đội, sát thương đôi bên +5%."
+      },
+      "description": "Chiếc nhẫn tượng trưng cho tình yêu, bên trong khắc tên hai người."
+    },
+    {
+      "name": "Nhẫn Năng Lượng Bí Thuật",
+      "cost": 32,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Nhẫn",
+        "Phòng ngự: 130"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Hồi Phục Pháp Lực": "Cuối mỗi hiệp, hồi phục lượng MP bằng 12% giới hạn pháp lực.",
+        "Hồi Phục Quá Tải": "Sử dụng [Hành Động] hồi phục 800 điểm MP, mỗi trận chiến dùng được một lần."
+      },
+      "description": "Chiếc nhẫn bạc thanh nhã khảm một viên thủy tinh bí thuật cắt gọt hoàn mỹ, có thể liên tục hồi phục một lượng nhỏ ma lực cho người đeo, là bảo đảm hồi phục cho pháp sư."
+    },
+    {
+      "name": "Nhẫn Cộng Sinh",
+      "cost": 45,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Nhẫn"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Chia Sẻ Sinh Mệnh": "Khi bạn nhận trị liệu, đồng đội ở gần nhất hồi phục lượng HP bằng một nửa con số đó."
+      },
+      "description": "Một trong đôi nhẫn cặp, có thể chia sẻ sinh lực cho người khác."
+    },
+    {
+      "name": "Nhẫn Trầm Mặc",
+      "cost": 48,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Nhẫn"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Hào Quang Trầm Mặc": "Tối đa 2 kẻ địch xung quanh bạn, tiêu hao MP khi thi pháp +400 điểm."
+      },
+      "description": "Chiếc nhẫn tỏa ra trường lực phản ma pháp, áp chế ma pháp xung quanh."
+    },
+    {
+      "name": "Nhẫn Khuếch Đại Ma Lực",
+      "cost": 52,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Nhẫn"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Khuếch Đại Ma Lực": "Sát thương kỹ năng +12%, nhưng tiêu hao MP +10%."
+      },
+      "description": "Thiết bị có thể khuếch đại uy lực ma pháp, nhưng sẽ tiêu hao nhiều ma lực hơn."
+    },
+    {
+      "name": "Nhẫn Sức Mạnh",
+      "cost": 36,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Nhẫn"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Cự Lực": "Kiểm định sức mạnh +2."
+      },
+      "description": "Chiếc nhẫn ẩn chứa sức mạnh của người khổng lồ."
+    },
+    {
+      "name": "Nhẫn Nhanh Nhẹn",
+      "cost": 36,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Nhẫn"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Nhanh Nhẹn": "Kiểm định né tránh, nhanh nhẹn, tiên thủ +2."
+      },
+      "description": "Chiếc nhẫn khiến động tác của người đeo trở nên nhanh nhẹn hơn."
+    },
+    {
+      "name": "Nhẫn Trí Lực",
+      "cost": 36,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Nhẫn"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Trí Tuệ": "Kiểm định trí lực +2.",
+        "Hấp Thu Ma Lực": "Tiêu hao một [Hành Động] và 400 điểm MP, nhận hiệu ứng [Cường Hóa Năng Lượng], mỗi hiệp hồi phục 350 điểm MP, duy trì 2 hiệp."
+      },
+      "description": "Chiếc nhẫn có thể tăng cường trí lực của người đeo."
+    }
+  ],
+  "Dây Chuyền": [
+    {
+      "name": "Dây Chuyền Bằng Xương",
+      "cost": 5,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Dây chuyền",
+        "Phòng ngự: 8"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Gia Hộ Yếu Ớt": "Sát thương vật lý phải chịu giảm 3%."
+      },
+      "description": "Xâu từ răng nanh hoặc mẩu xương nhỏ của dã thú, tượng trưng cho lòng dũng cảm và kỹ năng săn bắn của thợ săn."
+    },
+    {
+      "name": "Dây Chuyền Hạt Gỗ",
+      "cost": 5,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Dây chuyền"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Mộc Mạc": "Tấn công +10."
+      },
+      "description": "Dây chuyền xâu từ các hạt gỗ, mộc mạc không chút cầu kỳ."
+    },
+    {
+      "name": "Dây Chuyền Phòng Hộ",
+      "cost": 19,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Dây chuyền",
+        "Phòng ngự: 45"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Phòng Hộ": "Nhận một khiên hộ mệnh có thể hấp thu 150 sát thương. Sau khi khiên bị phá hủy, có hiệu lực một lần mỗi trận chiến."
+      },
+      "description": "Dây chuyền bạc treo mặt dây hình chiếc khiên thu nhỏ đã được thánh thủy thanh tẩy, có thể tự động đỡ một lần sát thương nhẹ."
+    },
+    {
+      "name": "Huy Ký Gia Tộc",
+      "cost": 24,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Dây chuyền"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Gia Tộc": "Giới hạn MP cộng thêm +250."
+      },
+      "description": "Huy ký khắc gia huy, đại diện cho thân phận và vinh dự."
+    },
+    {
+      "name": "Dây Chuyền Thủ Hộ Sinh Mệnh",
+      "cost": 38,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Dây chuyền",
+        "Phòng ngự: 130"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Hồi Phục Sinh Mệnh": "Cuối mỗi hiệp, hồi phục 350 điểm HP."
+      },
+      "description": "Dây chuyền bí ngân xâu viên bảo thạch sinh mệnh màu sắc ấm áp, tỏa ánh sáng xanh lục dịu nhẹ, có thể chữa lành vết thương của người đeo một cách chậm rãi và bền bỉ."
+    },
+    {
+      "name": "Bùa Hộ Mệnh Kháng Nguyên Tố",
+      "cost": 34,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Dây chuyền",
+        "Phòng ngự: 174"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Kháng Cự Nguyên Tố": "Mọi sát thương năng lượng phải chịu giảm 12%."
+      },
+      "description": "Năm viên bảo thạch ngũ sắc bao quanh bùa hộ mệnh hình tròn bằng bạc, tượng trưng cho năm loại nguyên tố chủ chốt, có thể nâng cao đồng đều khả năng kháng cự các loại sát thương nguyên tố."
+    },
+    {
+      "name": "Mặt Dây Chuyền Tinh Thể Pháp Lực",
+      "cost": 38,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Dây chuyền"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Tích Trữ Pháp Lực": "Mỗi lần nhận đòn đánh hồi phục 400 điểm MP."
+      },
+      "description": "Bên trong tinh thể tích trữ ma lực thuần khiết, có thể dùng làm nguồn năng lượng dự phòng."
+    },
+    {
+      "name": "Răng Nanh Ma Cà Rồng",
+      "cost": 50,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Dây chuyền"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Hút Máu": "Khi gây sát thương, hồi phục lượng HP bằng 20% sát thương, nhưng sát thương thuộc tính Tinh thần phải chịu +12%."
+      },
+      "description": "Dây chuyền làm từ răng nanh của ma cà rồng, ban cho người đeo năng lực hút máu."
+    },
+    {
+      "name": "Dây Chuyền Sinh Mệnh",
+      "cost": 38,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Dây chuyền"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Sinh Mệnh": "Giới hạn HP cộng thêm +500."
+      },
+      "description": "Dây chuyền ẩn chứa năng lượng sinh mệnh."
+    },
+    {
+      "name": "Dây Chuyền Ma Lực",
+      "cost": 38,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Dây chuyền"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Ma Lực": "Giới hạn MP cộng thêm +500."
+      },
+      "description": "Dây chuyền tích trữ ma lực thuần khiết."
+    },
+    {
+      "name": "Đồng Hồ Bỏ Túi Thời Gian",
+      "cost": 62,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Dây chuyền"
+      ],
+      "rarity": "epic",
+      "effect": {
+        "Gia Tốc Thời Gian": "Mỗi 3 hiệp, nhận thêm 1 tài nguyên [Hành Động]."
+      },
+      "description": "Đồng hồ bỏ túi tinh xảo, kim đồng hồ quay nhanh bất thường, tựa như thời gian đang tăng tốc trôi qua."
+    }
+  ],
+  "Hộ Phù Huy Chương": [
+    {
+      "name": "Ghim Cài Đính Đá Quý",
+      "cost": 13,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Ghim Cài",
+        "Phòng Ngự: 10"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Cường Hóa Yếu Ớt": "Đòn đánh thường gây thêm 5 điểm sát thương vật lý."
+      },
+      "description": "Ghim cài áo hình chiếc lá bằng bạc, ở giữa khảm một viên đá quý nhỏ rẻ tiền, có thể tăng nhẹ mị lực của người đeo."
+    },
+    {
+      "name": "Bùa Bình An",
+      "cost": 8,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Bùa Hộ Mệnh"
+      ],
+      "rarity": "common",
+      "effect": {
+        "An Tâm": "Có hiệu ứng phù phép xua đuổi muỗi và côn trùng."
+      },
+      "description": "Bùa bình an do thương nhân đại lục phương Đông bày bán, mang lại sự an ủi về mặt tâm lý."
+    },
+    {
+      "name": "Huy Chương Học Đồ",
+      "cost": 12,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Huy Chương"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Học Đồ": "Khi người khác nhìn thấy huy chương này, thường sẽ không làm khó bạn."
+      },
+      "description": "Huy chương chứng minh thân phận học đồ, đại diện cho thân phận của người học việc."
+    },
+    {
+      "name": "Hộ Phù Của Mẹ",
+      "cost": 10,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Bùa Hộ Mệnh"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Tưởng Niệm": "Khi HP dưới 20%, nhận được 200 điểm khiên hộ thể."
+      },
+      "description": "Lá bùa hộ mệnh lấp lánh, là món quà mẹ trao trước khi rời nhà."
+    },
+    {
+      "name": "Huy Chương Mạo Hiểm Giả Cấp C",
+      "cost": 20,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Huy Chương"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Mạo Hiểm Giả": "Huy chương này mang lại cho bạn sự đãi ngộ xứng đáng của một mạo hiểm giả cấp C."
+      },
+      "description": "Huy chương do Công Hội Mạo Hiểm Giả cấp phát, cấp bậc càng cao thì phần thưởng càng hậu hĩnh."
+    },
+    {
+      "name": "Thẻ Bài Của Chiến Hữu",
+      "cost": 20,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Dây Chuyền"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Chiến Hữu": "Khi đồng đội ngã xuống, sát thương +25%, chính xác +2 (báo thù cho chiến hữu)."
+      },
+      "description": "Thẻ định danh của người chiến hữu đã hy sinh, nhắc nhở bạn nhất định phải sống sót."
+    },
+    {
+      "name": "Mặt Dây Chuyền Hổ Phách Lục Nhỏ",
+      "cost": 25,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Dây Chuyền",
+        "Phòng Ngự: 50"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Gia Tăng Thể Lực": "Giảm 8% tiêu hao SP."
+      },
+      "description": "Mặt dây chuyền nhỏ khảm một mảnh hổ phách xanh lá. Hổ phách xanh lá ẩn chứa sức sống nguyên thủy, giúp người đeo luôn tràn đầy sinh lực."
+    },
+    {
+      "name": "Mặt Dây Chuyền Hổ Phách Lam Nhỏ",
+      "cost": 25,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Dây Chuyền",
+        "Phòng Ngự: 50"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Gia Tăng Ma Lực": "Giảm 8% tiêu hao MP."
+      },
+      "description": "Mặt dây chuyền nhỏ khảm một mảnh hổ phách lam. Hổ phách lam ẩn chứa ma lực nguyên thủy, giúp người đeo tập trung tinh thần."
+    },
+    {
+      "name": "Mặt Dây Chuyền Hổ Phách Đỏ Nhỏ",
+      "cost": 25,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Dây Chuyền",
+        "Phòng Ngự: 50"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Gia Tăng Sinh Mệnh": "Giới hạn HP tối đa tăng thêm +200."
+      },
+      "description": "Mặt dây chuyền nhỏ khảm một mảnh hổ phách đỏ. Hổ phách đỏ ẩn chứa sinh mệnh lực nguyên thủy, giúp nâng cao sức sống của người đeo."
+    },
+    {
+      "name": "Mặt Dây Chuyền Hổ Phách Lam",
+      "cost": 50,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Dây Chuyền",
+        "Phòng Ngự: 140"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Gia Tăng Ma Lực Cường Hiệu": "Giới hạn MP tối đa tăng thêm +700."
+      },
+      "description": "Mặt dây chuyền khảm nhiều mảnh hổ phách lam. Hổ phách lam ẩn chứa ma lực nguyên thủy dồi dào, giúp người đeo tập trung tinh thần vượt trội."
+    },
+    {
+      "name": "Mặt Dây Chuyền Hổ Phách Lục",
+      "cost": 50,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Dây Chuyền",
+        "Phòng Ngự: 140"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Gia Tăng Thể Lực Cường Hiệu": "Giới hạn SP tối đa tăng thêm +700."
+      },
+      "description": "Mặt dây chuyền khảm nhiều mảnh hổ phách xanh lá. Hổ phách xanh ẩn chứa sức sống nguyên thủy, giúp người đeo lúc nào cũng tràn trề sinh lực."
+    },
+    {
+      "name": "Mặt Dây Chuyền Hổ Phách Đỏ",
+      "cost": 50,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Dây Chuyền",
+        "Phòng Ngự: 140"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Gia Tăng Sinh Mệnh Cường Hiệu": "Giới hạn HP tối đa tăng thêm +700."
+      },
+      "description": "Mặt dây chuyền khảm nhiều mảnh hổ phách đỏ. Hổ phách đỏ ẩn chứa sinh mệnh lực nguyên thủy dồi dào, nâng cao đáng kể sức sống của người đeo."
+    },
+    {
+      "name": "Mặt Dây Chuyền Rùa Xanh Hai Đầu",
+      "cost": 60,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Dây Chuyền",
+        "Phòng Ngự: 165"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Hồi Phục Thể Lực": "Mỗi khi kết thúc lượt, hồi phục SP tương đương 12% thể lực.",
+        "Hồi Phục Quá Tải": "Sử dụng [Hành Động] để hồi phục 800 điểm SP, mỗi trận chiến dùng được một lần."
+      },
+      "description": "Bùa hộ mệnh được chế tác theo hình dạng rùa xanh hai đầu. Rùa là biểu tượng của nguồn sinh lực vô tận."
+    },
+    {
+      "name": "Hộ Phù Giọt Sương Ân Huệ Lam",
+      "cost": 60,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Dây Chuyền",
+        "Phòng Ngự: 160"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Hồi Phục Ma Lực": "Mỗi khi kết thúc lượt, hồi phục MP tương đương 12% ma lực.",
+        "Hồi Phục Quá Tải": "Sử dụng [Hành Động] để hồi phục 800 điểm MP, mỗi trận chiến dùng được một lần."
+      },
+      "description": "Làm từ hổ phách xanh lam và đồng thau, mô phỏng lại hình ảnh sinh linh trên mặt đất từ thuở xa xưa đón lấy những giọt sương rơi xuống từ Cây Thế Giới."
+    },
+    {
+      "name": "Hộ Phù Giọt Sương Ân Huệ",
+      "cost": 60,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Dây Chuyền",
+        "Phòng Ngự: 160"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Hồi Phục Sinh Mệnh": "Mỗi khi kết thúc lượt, hồi phục HP tương đương 12% sinh mệnh.",
+        "Hồi Phục Quá Tải": "Sử dụng [Hành Động] để hồi phục 800 điểm HP, mỗi trận chiến dùng được một lần."
+      },
+      "description": "Làm từ hổ phách vàng kim và đồng thau, mô phỏng lại hình ảnh sinh linh trên mặt đất từ thuở xa xưa đón lấy những giọt sương rơi xuống từ Cây Thế Giới."
+    },
+    {
+      "name": "Huy Chương Ám Ảnh Ẩn Nấp",
+      "cost": 40,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Ghim Cài",
+        "Phòng Ngự: 120"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Cường Hóa Lén Lút": "Trong trạng thái lén lút, bạn chuyển sang tàng hình, mắt thường không thể nhìn thấy."
+      },
+      "description": "Huy chương hình con quạ đúc từ hắc thiết, bề mặt khắc hoa văn phù văn ẩn nấp tinh vi, giúp người đeo hòa mình vào bóng tối tốt hơn."
+    },
+    {
+      "name": "Vật Tổ Cuồng Chiến Sĩ",
+      "cost": 50,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Bùa Hộ Mệnh"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Cuồng Bạo": "Khi HP dưới 50%, sát thương gánh chịu và sát thương gây ra đều tăng 20%."
+      },
+      "description": "Vật tổ được chạm khắc từ xương thú, có thể khơi dậy bản năng hoang dã của người đeo."
+    },
+    {
+      "name": "Hộ Phù Phản Ma Pháp",
+      "cost": 50,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Bùa Hộ Mệnh"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Miễn Dịch Ma Pháp": "Khi bị tấn công tiến hành kiểm tra đối kháng (Trí Tuệ vs Trí Tuệ), thành công sẽ miễn nhiễm lần sát thương năng lượng này, mỗi trận chiến 1 lần."
+      },
+      "description": "Lá bùa tỏa ra trường phản ma pháp, có thể triệt tiêu các đòn tấn công ma pháp."
+    },
+    {
+      "name": "Hộ Phù Lệch Hướng Năng Lượng",
+      "cost": 30,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Bùa Hộ Mệnh"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Kháng Ma Lực": "Sát thương năng lượng gánh chịu -12%."
+      },
+      "description": "Lá bùa có thể chống đỡ sát thương năng lượng."
+    },
+    {
+      "name": "Hộ Phù Chệch Hướng Vật Lý",
+      "cost": 30,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Bùa Hộ Mệnh"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Kháng Vật Lý": "Sát thương vật lý gánh chịu -12%."
+      },
+      "description": "Lá bùa có thể chống đỡ sát thương vật lý."
+    },
+    {
+      "name": "Đồng Xu Vận Mệnh Hai Mặt",
+      "cost": 55,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Bùa Hộ Mệnh"
+      ],
+      "rarity": "epic",
+      "effect": {
+        "Lựa Chọn Vận Mệnh": "Mỗi trận chiến 1 lần, có thể gieo lại bất kỳ xúc xắc kiểm tra nào; nếu thành công thì toàn bộ kiểm tra trong trận này +4, nếu thất bại thì bị -4."
+      },
+      "description": "Đồng tiền vàng cổ xưa, một mặt là mặt cười, một mặt là mặt khóc, có thể thay đổi hướng đi của định mệnh."
+    },
+    {
+      "name": "Lông Phượng Hoàng",
+      "cost": 75,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Bùa Hộ Mệnh"
+      ],
+      "rarity": "legendary",
+      "effect": {
+        "Tắm Lửa Trùng Sinh": "Khi tử trận, tiêu hao vật phẩm này để hồi sinh với 50% HP và miễn nhiễm mọi sát thương trong 1 hiệp."
+      },
+      "description": "Cọng lông phượng hoàng trong truyền thuyết, ẩn chứa sức mạnh trùng sinh tái sinh."
+    }
+  ],
+  "Đạo Cụ Không Gian": [
+    {
+      "name": "Túi Đeo Hông Thứ Nguyên Tiêu Chuẩn",
+      "cost": 30,
+      "type": "Trang Bị Không Gian",
+      "tag": [
+        "Không Gian: Cỡ Trung",
+        "Túi Đeo Hông",
+        "Cấm Sinh Vật Sống"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Không Gian Gấp Nếp": "Cung cấp khoảng 5 mét khối không gian gấp nếp tĩnh lặng tuyệt đối. Giới hạn trọng lượng 200kg."
+      },
+      "description": "Túi đeo hông may từ tơ bạc bí ngân, miệng túi khóa chặt bằng khóa kéo bí ngân, bên trên có ký hiệu sản xuất hàng loạt của công hội."
+    },
+    {
+      "name": "Nhẫn Tu Di U Kim",
+      "cost": 30,
+      "type": "Trang Bị Không Gian",
+      "tag": [
+        "Không Gian: Cỡ Nhỏ",
+        "Nhẫn",
+        "Cấm Sinh Vật Sống"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Không Gian Gấp Nếp": "Cung cấp khoảng 2 mét khối không gian gấp nếp tĩnh lặng tuyệt đối. Giới hạn trọng lượng 80kg."
+      },
+      "description": "Bề mặt nhẫn khắc hoa văn hình học đứt đoạn cực kỳ nhỏ bé, tính ẩn mật cực cao, người ngoài khó lòng phát hiện manh mối hay cướp đoạt."
+    },
+    {
+      "name": "Hòm Du Hành Tường Than Thở",
+      "cost": 50,
+      "type": "Trang Bị Không Gian",
+      "tag": [
+        "Không Gian: Cỡ Lớn",
+        "Rương Hòm",
+        "Cấm Sinh Vật Sống"
+      ],
+      "rarity": "epic",
+      "effect": {
+        "Gấp Nếp Diện Rộng": "Cung cấp khoảng 30 mét khối không gian lưu trữ, tốc độ trôi thời gian bên trong giảm 90%."
+      },
+      "description": "Một chiếc vali da màu đen khổng lồ trông có vẻ bình thường, có thể chứa một lượng lớn nguyên liệu thô, nhược điểm là khi lấy vật phẩm cồng kềnh ra ngoài bắt buộc phải tìm một bãi đất trống tương đối rộng rãi mới có thể giải phong và đưa ra an toàn."
+    }
+  ],
+  "Phụ Kiện Khác": [
+    {
+      "name": "Vòng Tay Đồng",
+      "cost": 2,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Vòng Tay",
+        "Phòng Ngự: 6"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Gia Hộ Yếu Ớt": "Sát thương vật lý gánh chịu giảm 3%."
+      },
+      "description": "Vòng tay hở làm từ đồng, gia công thô sơ nhưng vô cùng bền chắc, là món phụ kiện thường thấy ở lính đánh thuê và mạo hiểm giả."
+    },
+    {
+      "name": "Đồng Hồ Bỏ Túi",
+      "cost": 16,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Phụ Kiện"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Đúng Giờ": "Biết chính xác thời gian hiện tại, hẹn hò sẽ không bị trễ."
+      },
+      "description": "Đồng hồ bỏ túi cơ học tinh xảo, chạy giờ chính xác."
+    },
+    {
+      "name": "La Bàn",
+      "cost": 14,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Phụ Kiện"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Định Vị": "Không bị lạc đường nơi hoang dã, có thể xác định vị trí địa điểm bạn muốn tìm trong phạm vi 500 mét."
+      },
+      "description": "La bàn chỉ nam, công cụ không thể thiếu của người lữ hành."
+    },
+    {
+      "name": "Đồng Xu May Mắn",
+      "cost": 8,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Phụ Kiện"
+      ],
+      "rarity": "common",
+      "effect": {
+        "May Mắn": "Khi thất bại trong lần kiểm tra đầu tiên mỗi ngày, có thể gieo lại một lần, đằng nào cũng chẳng có hiệu ứng gì."
+      },
+      "description": "Một đồng xu bình thường, nhưng bạn tin rằng nó có thể mang lại may mắn."
+    },
+    {
+      "name": "Bản Nhạc Rách Nát",
+      "cost": 15,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Phụ Kiện"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Ký Ức": "Khi tấu nhạc, hồi tưởng lại những khoảng thời gian tươi đẹp trong quá khứ, hồi phục 50 điểm MP."
+      },
+      "description": "Bản nhạc do người yêu đã khuất để lại, các góc cạnh đều đã mòn rách."
+    },
+    {
+      "name": "Tấm Bản Đồ Cũ Kỹ",
+      "cost": 12,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Phụ Kiện"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Sổ Tay Khám Phá": "Khi khám phá khu vực chưa biết, có thể thực hiện một lần kiểm tra xác suất (d20 > 18), nếu thành công sẽ phát hiện địa điểm ẩn."
+      },
+      "description": "Bản đồ mạo hiểm do cha để lại, đánh dấu rất nhiều địa điểm chưa được biết đến."
+    },
+    {
+      "name": "Đinh Thúc Ngựa Nhanh Nhẹn",
+      "cost": 18,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Phụ Kiện Giày",
+        "Phòng Ngự: 60"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Tiên Phát Chế Nhân": "Khi đòn tấn công trúng đích, gây thêm 50 điểm sát thương vật lý."
+      },
+      "description": "Cựa sắt gắn ở gót ủng, có thể gia tăng nhẹ tốc độ phản xạ của người mang."
+    },
+    {
+      "name": "Bàn Chân Thỏ May Mắn",
+      "cost": 32,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Phụ Kiện"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "May Mắn": "Toàn bộ kiểm tra +1."
+      },
+      "description": "Bàn chân thỏ tương truyền có thể đem lại may mắn, dẫu cho với chú thỏ thì điều này chẳng may mắn chút nào."
+    },
+    {
+      "name": "Kính Viễn Vọng",
+      "cost": 22,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Đạo Cụ"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Nhìn Xa": "Có thể nhìn rõ các chi tiết ở khoảng cách xa.",
+        "Phác Họa Nguyên Tố": "Có thể phác họa ra đường viền của sinh vật hoặc vật phẩm hàm chứa ma lực."
+      },
+      "description": "Kính viễn vọng quang học tinh vi, có thể nhìn rõ cảnh vật ở xa và sở hữu phù phép phác họa ma lực."
+    },
+    {
+      "name": "Túi Tiền Lớn",
+      "cost": 50,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Phụ Kiện"
+      ],
+      "rarity": "uncommon",
+      "effect": {
+        "Tài Phú": "Mỗi ngày có thể thực hiện một lần kiểm tra xác suất (d20 > 18), nếu thành công trong túi sẽ xuất hiện một nén bạc (phẩm chất Ưu Tú)."
+      },
+      "description": "Túi phép thuật có khả năng thu hút tài lộc."
+    },
+    {
+      "name": "Bộ Tạo Khiên Pháp Sư",
+      "cost": 37,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Phụ Kiện Hông",
+        "Phòng Ngự: 160"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Khiên Hộ Thể Khẩn Cấp": "Khi HP của bạn lần đầu tiên giảm xuống dưới 50%, tự động nhận được một lớp khiên hấp thụ 800 điểm sát thương, duy trì 3 lượt. Mỗi trận chiến chỉ kích hoạt một lần."
+      },
+      "description": "Trên đĩa tròn bằng bạc khảm nhiều viên pha lê nạp năng lượng tạo thành một ma pháp trận thu nhỏ, khi bị tấn công sẽ tự động sinh ra một lá chắn ma pháp tạm thời."
+    },
+    {
+      "name": "Vòng Tay Lôi Đình Chi Lực",
+      "cost": 36,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Vòng Tay",
+        "Phòng Ngự: 160"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Đính Kèm Sấm Sét": "Đòn tấn công sát thương vật lý của bạn đính kèm thêm 130 điểm sát thương năng lượng (Sấm Sét)."
+      },
+      "description": "Vòng tay thép thô ráp, trên bề mặt khảm một viên Lôi Tinh Thạch chực chờ phóng ra dòng điện, đòn tấn công vật lý của người đeo có xác suất đính kèm hiệu ứng giật điện."
+    },
+    {
+      "name": "Kính Ngắm Chuẩn Xác",
+      "cost": 35,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Phụ Kiện Trang Bị",
+        "Phòng Ngự: 120"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Gia Tăng Nhắm Bắn": "Trang bị lên cung, nỏ hoặc súng hỏa mai. Đòn tấn công của vũ khí này nhận thêm +3 chính xác."
+      },
+      "description": "Tạo vật giả kim tinh xảo cấu thành từ ống kính đồng thau và thấu kính pha lê nhiều lớp, có thể nâng cao đáng kể độ chuẩn xác khi ngắm bắn của vũ khí tầm xa."
+    },
+    {
+      "name": "Đinh Thúc Ngựa Vũ Linh Nhanh Nhẹn",
+      "cost": 31,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Phụ Kiện Giày",
+        "Phòng Ngự: 130"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Gia Tăng Né Tránh": "Kiểm tra né tránh của bạn +2."
+      },
+      "description": "Cựa sắt cố định ở gót ủng, phần đuôi điểm xuyết một chiếc lông vũ sư tử ưng nhẹ nhàng, có thể nâng cao khả năng né tránh của người mang."
+    },
+    {
+      "name": "Mắt Bạo Kích",
+      "cost": 44,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Khuyên Tai"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Đòn Chí Mạng": "Kiểm tra chính xác +2, yêu cầu bạo kích -2 (bạo kích trở thành 18 thay vì 20)."
+      },
+      "description": "Hoa tai hồng ngọc, giúp người đeo dễ dàng tìm thấy điểm yếu của kẻ địch hơn."
+    },
+    {
+      "name": "Găng Tay Đạo Tặc",
+      "cost": 38,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Găng Tay"
+      ],
+      "rarity": "rare",
+      "effect": {
+        "Trộm Cắp": "Khi đi ngang qua người đi đường, có xác suất (d20 > 17) nhận thêm một món chiến lợi phẩm."
+      },
+      "description": "Găng tay khéo léo linh hoạt, có thể thuận tay dắt dê ngay trong chiến đấu."
+    },
+    {
+      "name": "Mặt Nạ Cuồng Nộ",
+      "cost": 56,
+      "type": "Phụ Kiện",
+      "tag": [
+        "Mặt Nạ"
+      ],
+      "rarity": "epic",
+      "effect": {
+        "Cuồng Nộ": "Mỗi khi mất 10% HP, lực tấn công +5% (tối đa +50%)."
+      },
+      "description": "Mặt nạ ác ma, có thể chuyển hóa nỗi đau đớn thành sức mạnh."
+    }
+  ],
+  "Gói Vũ Khí Của Ai Đó Không Rõ": [
+    {
+      "name": "Kiếm Gỗ Chống Cãi Cố",
+      "cost": 0,
+      "type": "Vũ Khí",
+      "tag": [
+        "Kiếm Một Tay",
+        "Tấn Công: 0"
+      ],
+      "rarity": "common",
+      "effect": {
+        "Nhân Chi Kiếm": "Đòn tấn công của bạn phớt lờ cự ly tấn công.",
+        "Nghĩa Chi Kiếm": "Đòn tấn công của bạn chắc chắn trúng đích.",
+        "Vô Tình Kiếm": "Mục tiêu bị đánh trúng sẽ bị trục xuất khỏi trò chơi."
+      },
+      "description": "Thanh kiếm gỗ luyện tập chế tạo thô thiển, bề mặt không có chút vân gỗ nào, cầm trên tay cảm giác hời hợt nhẹ bẫng."
+    },
+    {
+      "name": "Tang Lễ Hoa Diên Vĩ",
+      "cost": 600,
+      "type": "Vũ Khí",
+      "tag": [
+        "Dù",
+        "Vũ Khí Cán Dài",
+        "Tấn Công: 0∨2000"
+      ],
+      "rarity": "legendary",
+      "effect": {
+        "Diên Vĩ Song Sinh": "Chuyển đổi qua lại giữa 「Hắc Diên Vĩ」 và 「Bạch Diên Vĩ」.",
+        "Hắc Diên Vĩ · Điếu Ca Không Tiếng": "[Bị Động] Tiếng bước chân và hơi thở được tiêu trừ, giác quan tăng vọt.",
+        "Hắc Diên Vĩ · Vĩnh Dạ Rủ Lòng": "Tán dù thu hẹp, hóa thành ngọn trường thương Tây phương đen tuyền. Gây sát thương hỗn hợp Vật Lý / Năng Lượng.",
+        "Bạch Diên Vĩ · Thánh Sở Tĩnh Lặng": "[Bị Động] Miễn nhiễm các hiểm họa từ môi trường.",
+        "Bạch Diên Vĩ · Vọng Âm Cầu Vồng": "Tán dù bung mở, tạo thành một bình chướng phòng ngự."
+      },
+      "description": "Một chiếc ô cán dài màu đen thẫm, chỗ thu tán ô khảm một vòng hoa văn diên vĩ chạm khắc tinh xảo bằng bạch kim, chuôi ô thắt một dải ruy băng màu tím."
+    },
+    {
+      "name": "Chân · Hắc Long Côn",
+      "cost": 800,
+      "type": "Vũ Khí",
+      "tag": [
+        "Thao Trùng Côn",
+        "Thuộc Tính Rồng",
+        "Tấn Công: 2000"
+      ],
+      "rarity": "legendary",
+      "effect": {
+        "Thao Ngự Trùng Săn": "[Cốt Lõi] Cần trang bị 「Trùng Săn」 hiệp đồng tác chiến. Thông qua đạn đánh dấu để chỉ huy trùng săn hút tinh hoa của kẻ địch.",
+        "Chiết Xuất Tam Sắc": "Khi thu thập đủ 3 loại tinh hoa Đỏ, Trắng, Vàng, bước vào trạng thái 「Kim Cương Thể」, toàn bộ năng lực tăng mạnh.",
+        "Nhảy Chống Gậy": "Dùng thân côn làm điểm tựa bật nhảy lên không trung, có thể lướt trên không và nhảy múa trên không trung.",
+        "Gia Hộ Trùng Săn · Cường Hóa Khí Lực": "Thể lực của trùng săn tăng vọt, đồng thời có thể tích trữ cùng lúc 2 loại màu tinh hoa.",
+        "Hàng Long": "Tích tụ thế năng trên không trung rồi lao vút xuống, hội tụ toàn bộ động năng và thuộc tính rồng vào đầu côn, gây sát thương đâm xuyên mang tính hủy diệt."
+      },
+      "description": "Được chế tác từ nguyên liệu của Hắc Long trong truyền thuyết, thân côn tựa như sự cụ thể hóa của tai ương. Đỉnh côn lập lòe ánh tím điềm gở, tựa như một con mắt rồng đang nhìn trộm vực sâu, khi vung lên vang vọng tiếng gầm của rồng khiến vạn vật run rẩy."
+    },
+    {
+      "name": "Thiên Thượng Thiên Hạ Thiên Địa Vô Song Đao",
+      "cost": 800,
+      "type": "Vũ Khí",
+      "tag": [
+        "Thái Đao",
+        "Tấn Công: 3000"
+      ],
+      "rarity": "legendary",
+      "effect": {
+        "Luyện Khí Hóa Thần": "[Bị Động] Tấn công tích lũy 「Luyện Khí」, tiêu hao luyện khí xuất chiêu Khí Nhận Trảm để nâng cao cấp bậc lưỡi đao, ở trạng thái Lưỡi Đao Đỏ sức tấn công vật lý tăng vọt.",
+        "Kiến Thiết · Khán Phá": "Lùi lại và phản kích ngay tại thời điểm bị phán định trúng đòn, hoàn toàn miễn nhiễm sát thương lần đó và lập tức nạp đầy thanh luyện khí.",
+        "Cư Hợp · Bạt Đao Khí Nhận": "Tư thế thu kiếm đặc biệt. Rút đao ngay khoảnh khắc mục tiêu tấn công, gây sát thương chém xuyên phòng ngự, khi phán định thành công không tiêu hao cấp bậc lưỡi đao.",
+        "Bí Kiếm · Khí Nhận Đâu Cát": "Tiêu hao một tầng cấp bậc lưỡi đao, đạp không bay lên, dồn toàn bộ khí lực vào thân đao, bổ từ trên xuống thực hiện chuỗi chém nhiều đoạn mang tính hủy diệt."
+      },
+      "description": "Tuyệt tác truyền đời hội tụ đỉnh cao kỹ nghệ của các nghệ nhân Lục Địa Cũ. Thân đao cổ kính thon dài, tỏa ra hàn quang khiến người khác phải run sợ, tồn tại chỉ để theo đuổi cảnh giới 「Chém Cắt」 tột cùng, chỉ có thợ săn trong truyền thuyết mới đủ sức thuần phục."
+    },
+    {
+      "name": "Đoạn Tội · Hoàng Hắc Long Chi Tử Cáo",
+      "cost": 850,
+      "type": "Vũ Khí",
+      "tag": [
+        "Đại Kiếm",
+        "Song Thuộc Tính Rồng/Lửa",
+        "Tấn Công: 2000∨4000"
+      ],
+      "rarity": "legendary",
+      "effect": {
+        "Nghịch Lân": "[Bị Động] Lượng máu càng thấp, lực tấn công và tỷ lệ bạo kích càng cao.",
+        "Thiết Sơn Kháo": "Dùng vai va chạm mạnh trong quá trình tụ lực, phán định bá thể, triệt tiêu xung lực và độ khựng sắp xảy đến.",
+        "Chân · Tụ Lực Trảm": "Thực hiện ba đoạn tụ lực thông qua thế thủ đặc biệt, nếu đòn thứ nhất đánh trúng điểm yếu, đòn thứ hai sẽ gây sát thương chuẩn mang tính hủy diệt.",
+        "Cương Nhận Nghiền Mài": "Trong một khoảng thời gian sau khi mài đao, bất kể tấn công thế nào cũng không tiêu hao độ sắc bén.",
+        "Chuyên Tinh Miên Trảm": "[Bị Động] Bội số sát thương của đòn đầu tiên giáng vào kẻ địch đang trong trạng thái ngủ say tăng vọt."
+      },
+      "description": "Thanh cự kiếm được rèn từ nghịch lân và lớp giáp cứng của Hoàng Hắc Long - sinh vật có khả năng thao túng muôn vàn thuộc tính. Thân kiếm tỏa ra u quang đỏ tím đầy điềm gở, chỉ riêng việc vung nó lên đã đòi hỏi một cánh tay vượt xa phàm nhân."
+    }
+  ]
+}

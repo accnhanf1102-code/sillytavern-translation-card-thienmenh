@@ -1,0 +1,54 @@
+{
+  // Ngày bắt đầu luân phiên (tính Tuần 1 từ ngày này)
+  "startDate": "2026-03-23",
+  "weeks": {
+    // Đề cử Tuần 1
+    "week1": {
+      "[Bản Gốc][Hệ Thống Định Mệnh] Cốt lõi Độc Giả (Angtuck)": {
+        "note": "Cô gái cà phê bí ẩn, hiện là cốt lõi duy nhất có thể chơi chiến tranh lạnh"
+      },
+      "[Bản Gốc][Hệ Thống Định Mệnh]Loại Não Nương(by_lili)": {
+        "note": "Nhớ gửi đoạn đối thoại lên bài đăng chính để trêu chọc Loại Não Nương"
+      },
+      "[Bản Gốc][Hệ Thống Định Mệnh]Cốt Lõi Don Quixote(十七)": {
+        "note": "Xung phong về phía cối xay gió"
+      }
+    },
+    // Đề cử Tuần 2
+    "week2": {
+      "[Bản Gốc][Hệ Thống Định Mệnh]Cốt Lõi Lily(青砚)": {
+        "note": "Bạch vu nữ mang tên \"Lily\""
+      },
+      "[Bản Gốc][Hệ Thống Định Mệnh] Cốt lõi Arya (by_那什么阿法)": {
+        "note": "Một chuyến phiêu lưu chưa từng có, đi nào, hãy kể câu chuyện của chính bạn"
+      },
+      "[Bản Gốc][Hệ Thống Định Mệnh]Cốt Lõi Merlin(北游)": {
+        "note": "Bạn cũng có thể vào Workshop để chơi Merli"
+      }
+    },
+    // Đề cử Tuần 3
+    "week3": {
+      "[Bản Gốc][Hệ Thống Định Mệnh] Otto · Apocalypse (by_lili)": {
+        "note": "Hàng riêng"
+      },
+      "[Bản Gốc][Hệ Thống Định Mệnh] Cốt lõi Dalian (随风渐变)": {
+        "note": "Hàng riêng"
+      },
+      "[Bản Gốc][Hệ Thống Định Mệnh] Cốt lõi null (H一串)": {
+        "note": "Vĩ đại không cần nhiều lời"
+      }
+    },
+    // Đề cử Tuần 4
+    "week4": {
+      "[Bản Gốc][Hệ Thống Định Mệnh]Cốt Lõi Tiểu Dạ Oanh(fishfish)": {
+        "note": "..."
+      },
+      "[Bản Gốc][Hệ Thống Định Mệnh]Cốt Lõi Hươu Cao Cổ(仰望星空)": {
+        "note": "..."
+      },
+      "[Bản Gốc][Hệ Thống Định Mệnh]Cốt Lõi Nãi Long(K1nn)": {
+        "note": "Chẳng buồn chê"
+      }
+    }
+  }
+}

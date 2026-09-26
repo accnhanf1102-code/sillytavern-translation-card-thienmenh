@@ -8,5 +8,13 @@ Py-Temp/
 .gemini/
 Linh Tinh/
 docs/
-.agents/
+# Exclude archives and zip files
+*.zip
+*.zop
+*.7z
+*Lo3x*
+*Lox3*
+
+# Exclude V4.2 directory
+V4.2/
 
