@@ -23,7 +23,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Thiết bị tiêu chuẩn": "Khi [Luyện Kim][May Vá][Cải Tạo Sinh Học]: kiểm định +4, thời gian sản xuất -35%."
+            "标准设备": "Khi [Luyện Kim][May Vá][Cải Tạo Sinh Học]: kiểm định +4, thời gian sản xuất -35%."
           },
           "描述": "Một gian xưởng được trang bị đầy đủ, sở hữu phòng thí nghiệm luyện kim, máy may ma đạo và khoang nuôi cấy sinh học.",
           "总占用空间": "60m²"
@@ -54,8 +54,8 @@
           ],
           "数量": 22,
           "效果": {
-            "Bố cục": "Giường đôi, một bộ bàn ghế.",
-            "Tiền thuê phòng": "200Z/ngày."
+            "布局": "Giường đôi, một bộ bàn ghế.",
+            "房间租金": "200Z/ngày."
           },
           "描述": "Phòng đơn tiêu chuẩn của Quán Trọ Trời Quang.",
           "总占用空间": "220m²"
@@ -69,8 +69,8 @@
           ],
           "数量": 10,
           "效果": {
-            "Bố cục": "Giường đôi êm ái, sofa, bàn viết, tủ quần áo, tủ đựng đồ, bàn trang điểm, phòng tắm riêng.",
-            "Tiền thuê phòng": "1.200Z/ngày"
+            "布局": "Giường đôi êm ái, sofa, bàn viết, tủ quần áo, tủ đựng đồ, bàn trang điểm, phòng tắm riêng.",
+            "房间租金": "1.200Z/ngày"
           },
           "描述": "Phòng đơn cao cấp của Quán Trọ Trời Quang, bao gồm dịch vụ gửi thư, giặt ủi và gọi món tận phòng.",
           "总占用空间": "240m²"
@@ -101,7 +101,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Động lực": "Cung cấp ma lực cần thiết cho việc lơ lửng, di chuyển và vận hành các hạ tầng của nền tảng."
+            "动力": "Cung cấp ma lực cần thiết cho việc lơ lửng, di chuyển và vận hành các hạ tầng của nền tảng."
           },
           "描述": "Thiết bị động lực cốt lõi của nền phù không.",
           "总占用空间": "Khoang động lực"
@@ -115,8 +115,8 @@
           ],
           "数量": 1,
           "效果": {
-            "Bố cục": "Tầng 1: phòng khách, bếp, phòng ăn, nhà vệ sinh, phòng chứa đồ; Tầng 2: phòng ngủ chính, phòng khách, phòng sách, xưởng thủ công, nhà vệ sinh.",
-            "Tiện nghi cư trú": "Cung cấp không gian sinh hoạt, lưu trữ và sản xuất trọn vẹn cho một căn cứ di động."
+            "布局": "Tầng 1: phòng khách, bếp, phòng ăn, nhà vệ sinh, phòng chứa đồ; Tầng 2: phòng ngủ chính, phòng khách, phòng sách, xưởng thủ công, nhà vệ sinh.",
+            "居住设施": "Cung cấp không gian sinh hoạt, lưu trữ và sản xuất trọn vẹn cho một căn cứ di động."
           },
           "描述": "Ngôi nhà đá gạch hai tầng được dựng ngay trên nền tảng.",
           "总占用空间": "Kiến trúc hai tầng, khoảng 240m²"
@@ -147,7 +147,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Thuộc tính cơ bản": "Toàn thân dài 42 mét, sải cánh 28 mét; tốc độ hành trình 150km/h; trần bay tối đa 10.000 mét; sức chở tối đa 8 người; thủy thủ đoàn tiêu chuẩn 1 người."
+            "基础属性": "Toàn thân dài 42 mét, sải cánh 28 mét; tốc độ hành trình 150km/h; trần bay tối đa 10.000 mét; sức chở tối đa 8 người; thủy thủ đoàn tiêu chuẩn 1 người."
           },
           "描述": "Thân bay và hệ thống điều khiển chính của Tàu Lữ Khách Tĩnh Lặng.",
           "总占用空间": "Phi không đĩnh cỡ trung, khoảng 900m²"
@@ -161,7 +161,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Bố cục": "1 phòng ngủ chính, 3 phòng khách đôi, 1 phòng khách kiêm phòng ăn, 2 phòng tắm, 1 bếp."
+            "布局": "1 phòng ngủ chính, 3 phòng khách đôi, 1 phòng khách kiêm phòng ăn, 2 phòng tắm, 1 bếp."
           },
           "描述": "Khoang sinh hoạt trọn vẹn đáp ứng nhu cầu cư trú lâu dài trên hành trình.",
           "总占用空间": "Khoảng 300m²"
@@ -175,7 +175,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Thiết bị tự động hóa": "Khi [Rèn Đúc][Luyện Kim][May Vá][Nấu Ăn]: kiểm định +4, thời gian sản xuất +35%."
+            "自律化设备": "Khi [Rèn Đúc][Luyện Kim][May Vá][Nấu Ăn]: kiểm định +4, thời gian sản xuất +35%."
           },
           "描述": "Xưởng tổng hợp tích hợp bàn luyện kim, bàn rèn và bàn phù chú, hỗ trợ sản xuất, chế tạo và bảo trì trên đường đi.",
           "总占用空间": "Khoảng 80m²"
@@ -189,7 +189,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Hành trình tĩnh lặng": "Có thể né tránh hiệu quả sự dò xét bằng ma lực."
+            "静默航行": "Có thể né tránh hiệu quả sự dò xét bằng ma lực."
           },
           "描述": "Hệ thống hàng trình đặc biệt dùng để giảm dấu hiệu ma lực của con tàu.",
           "总占用空间": "Không chiếm dụng"
@@ -240,7 +240,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Sản phẩm": "Bột mì; nguồn từ lúa mì thu hoạch của trang viên."
+            "产出": "Bột mì; nguồn từ lúa mì thu hoạch của trang viên."
           },
           "描述": "Cối xay gió bằng gỗ thường thấy ở Trấn Phong Xa, đảm nhận sơ chế lương thực cho trang viên.",
           "总占用空间": "Khoảng 220m²"
@@ -272,7 +272,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Điều tiết nước ngầm, ổn định việc tưới tiêu ốc đảo, giảm ảnh hưởng của mùa bão cát lên sản lượng cây trồng."
+            "功能效果": "Điều tiết nước ngầm, ổn định việc tưới tiêu ốc đảo, giảm ảnh hưởng của mùa bão cát lên sản lượng cây trồng."
           },
           "描述": "Bộ khung thủy lợi của trang viên, gồm kênh đá, hồ lắng và hồ chứa.",
           "总占用空间": "Kênh khoảng 400m², hồ chứa khoảng 1200m²"
@@ -304,7 +304,7 @@
           ],
           "数量": 6,
           "效果": {
-            "Sản phẩm": "Trai ngọc ráng vồng, trai ngọc"
+            "产出": "Trai ngọc ráng vồng, trai ngọc"
           },
           "描述": "Bãi lưới phân khu cố định trong vùng nước lặng, nuôi dưỡng trai ngọc và chăm sóc theo từng đợt.",
           "总占用空间": "Khoảng 12000m²"
@@ -318,7 +318,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Kéo dài thời gian tươi ngon của thủy sản, hỗ trợ vận chuyển lạnh cho vùng nuôi trồng ngoài cảng."
+            "功能效果": "Kéo dài thời gian tươi ngon của thủy sản, hỗ trợ vận chuyển lạnh cho vùng nuôi trồng ngoài cảng."
           },
           "描述": "Công trình trữ lạnh trên bờ, dùng thiết bị làm lạnh bằng hải tinh để duy trì nhiệt độ thấp.",
           "总占用空间": "Khoảng 1800m²"
@@ -350,7 +350,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Sản phẩm": "Cho ra ổn định thịt, sữa, da lông và thú thồ non."
+            "产出": "Cho ra ổn định thịt, sữa, da lông và thú thồ non."
           },
           "描述": "Đàn gia súc hỗn hợp thích nghi với khô hạn và gió mạnh của Vô Tận Phong Ngân Thảo Nguyên.",
           "总占用空间": "Khoảng 17000m² khu chăn thả"
@@ -364,7 +364,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Sản phẩm": "Phô mai, sữa lên men và bột sữa để dành lâu."
+            "产出": "Phô mai, sữa lên men và bột sữa để dành lâu."
           },
           "描述": "Xưởng sữa nhiệt độ thấp đặt gần nguồn nước, tiện cho việc vận chuyển theo mùa du mục.",
           "总占用空间": "Khoảng 900m²"
@@ -396,8 +396,8 @@
           ],
           "数量": 18,
           "效果": {
-            "Thuộc tính cơ bản": "Thích hợp cho truyền lệnh đường dài, cất-hạ cánh miền núi và bay trên đường gió cao nguyên.",
-            "Hiệu quả tính năng": "Cung cấp nguồn linh thú truyền lệnh và bãi cất-hạ cánh trên đường gió cao nguyên."
+            "基础属性": "Thích hợp cho truyền lệnh đường dài, cất-hạ cánh miền núi và bay trên đường gió cao nguyên.",
+            "功能效果": "Cung cấp nguồn linh thú truyền lệnh và bãi cất-hạ cánh trên đường gió cao nguyên."
           },
           "描述": "Đàn không thú đường dài đã được thuần hóa theo hệ thống truyền lệnh của tộc Dực Dân.",
           "总占用空间": "18 con, tổng cộng khoảng 9000m² khu vực hoạt động"
@@ -429,8 +429,8 @@
           ],
           "数量": 1,
           "效果": {
-            "Sản phẩm": "Nuôi dưỡng chiến thú bền sức và thú non có thể huấn luyện.",
-            "Hiệu quả tính năng": "Cung cấp chuồng thú non, triền chăn thả thú trưởng thành và chuồng cách ly."
+            "产出": "Nuôi dưỡng chiến thú bền sức và thú non có thể huấn luyện.",
+            "功能效果": "Cung cấp chuồng thú non, triền chăn thả thú trưởng thành và chuồng cách ly."
           },
           "描述": "Sân sinh sản chiến thú được dựng từ nền đất cứng rìa sa mạc và vách đá chắn gió.",
           "总占用空间": "Khoảng 26000m²"
@@ -444,7 +444,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Cung cấp thiết bị huấn luyện điều khiển linh thú, xung phong, chịu tải và thử nghiệm chiến đấu."
+            "功能效果": "Cung cấp thiết bị huấn luyện điều khiển linh thú, xung phong, chịu tải và thử nghiệm chiến đấu."
           },
           "描述": "Sân huấn luyện đa địa hình được bố trí theo nhu cầu thực chiến của đội kỵ thảo nguyên.",
           "总占用空间": "Khoảng 12000m²"
@@ -495,7 +495,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Trữ chống ẩm và phân cấp ván gỗ, dầm cột và gỗ sống tàu của tinh linh."
+            "功能效果": "Trữ chống ẩm và phân cấp ván gỗ, dầm cột và gỗ sống tàu của tinh linh."
           },
           "描述": "Kho gỗ đá gác cao gần bến cảng Cảng Bạch Diễm, tiện cho việc bốc thuyền và kiểm hàng.",
           "总占用空间": "Khoảng 1800m²"
@@ -527,7 +527,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Cung cấp khu săn phân vùng, quan sát con mồi và tuyến rút lui an toàn."
+            "功能效果": "Cung cấp khu săn phân vùng, quan sát con mồi và tuyến rút lui an toàn."
           },
           "描述": "Khu săn cao cấp được phân định bằng địa hình tự nhiên, cột mốc vật tổ và tuyến tuần tra thợ săn.",
           "总占用空间": "Khoảng 420000m²"
@@ -541,7 +541,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Chỉ mở cho khách quý bộ tộc và đội săn đủ tư cách; phân loại, lột da và đăng ký da lông, xương thú, chất sừng và vật liệu ma vật tại chỗ, giảm hao hụt chiến lợi phẩm."
+            "功能效果": "Chỉ mở cho khách quý bộ tộc và đội săn đủ tư cách; phân loại, lột da và đăng ký da lông, xương thú, chất sừng và vật liệu ma vật tại chỗ, giảm hao hụt chiến lợi phẩm."
           },
           "描述": "Bãi tác nghiệp để đội săn phân loại, lột da và đăng ký chiến lợi phẩm ngay tại chỗ.",
           "总占用空间": "Khoảng 1600m²"
@@ -573,8 +573,8 @@
           ],
           "数量": 1,
           "效果": {
-            "Sản phẩm": "Quặng sắt lạnh thô × tùy theo mạch quặng và ca làm việc quyết toán",
-            "Hiệu quả tính năng": "Cung cấp nguồn khai thác liên tục quặng sắt lạnh thô."
+            "产出": "Quặng sắt lạnh thô × tùy theo mạch quặng và ca làm việc quyết toán",
+            "功能效果": "Cung cấp nguồn khai thác liên tục quặng sắt lạnh thô."
           },
           "描述": "Khu tác nghiệp mạch quặng gồm mặt khai thác lộ thiên và hầm lò ngầm.",
           "总占用空间": "Khoảng 90000m²"
@@ -588,7 +588,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Phân loại quặng thô theo hàm lượng sắt lạnh và cấp độ tạp chất, giảm hao hụt khi vận chuyển và luyện."
+            "功能效果": "Phân loại quặng thô theo hàm lượng sắt lạnh và cấp độ tạp chất, giảm hao hụt khi vận chuyển và luyện."
           },
           "描述": "Lán phân loại kín đặt bên miệng mỏ, tiếp nhận quặng thô từ khu khai thác.",
           "总占用空间": "Khoảng 1800m²"
@@ -639,7 +639,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Sản phẩm": "Đồ uống, món ăn nhanh, dịch vụ giao lưu cho lữ khách"
+            "产出": "Đồ uống, món ăn nhanh, dịch vụ giao lưu cho lữ khách"
           },
           "描述": "Quầy bar bằng gỗ đỏ, tủ rượu bày đủ các loại rượu kinh điển, bên cạnh đặt hai thùng bia mạch nha.",
           "总占用空间": "Khoảng 80m²"
@@ -671,7 +671,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Sản phẩm": "Dược thảo mây và dược liệu trên không."
+            "产出": "Dược thảo mây và dược liệu trên không."
           },
           "描述": "Vườn dược được bố trí sát đường gió mép phù đảo, hứng trọn ánh sáng đặc biệt của Thiên Không Thánh Vực.",
           "总占用空间": "Khoảng 540m²"
@@ -703,7 +703,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Sản phẩm": "Đồ uống, món ăn nhanh, dịch vụ giao lưu cho lữ khách"
+            "产出": "Đồ uống, món ăn nhanh, dịch vụ giao lưu cho lữ khách"
           },
           "描述": "Quầy bar chính trưng bày đồng kỷ niệm tứ diệp thảo và đèn hải tinh, cung cấp rượu địa phương và món ăn nhẹ hải sản.",
           "总占用空间": "Khoảng 80m²"
@@ -752,8 +752,8 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Đăng ký, phân cấp, niêm phong và giao nhận vụ tinh, giảm hao hụt và tranh chấp khi vận chuyển.",
-            "Hiệu quả tình huống": "Khi lấy hoặc cất vụ tinh đã đăng ký hoặc cuộn giấy kỹ thuật tại kho này, tài nguyên tự động sắp xếp, chỉ áp dụng cho hàng hóa do kho này bảo quản."
+            "功能效果": "Đăng ký, phân cấp, niêm phong và giao nhận vụ tinh, giảm hao hụt và tranh chấp khi vận chuyển.",
+            "情境效果": "Khi lấy hoặc cất vụ tinh đã đăng ký hoặc cuộn giấy kỹ thuật tại kho này, tài nguyên tự động sắp xếp, chỉ áp dụng cho hàng hóa do kho này bảo quản."
           },
           "描述": "Đơn vị kho vận chuyên dụng trang bị tủ chống ẩm, đánh dấu phân màu và niêm phong khế ấn.",
           "总占用空间": "Khoảng 260m²"
@@ -785,8 +785,8 @@
           ],
           "数量": 1,
           "效果": {
-            "Sản phẩm": "Vải phù văn, vải hộ thân nhẹ và vải lễ nghi.",
-            "Kiểm định sản xuất": "Kiểm định [May Vá], DC cơ bản -8, thời gian sản xuất -40%."
+            "产出": "Vải phù văn, vải hộ thân nhẹ và vải lễ nghi.",
+            "生产检定": "Kiểm định [May Vá], DC cơ bản -8, thời gian sản xuất -40%."
           },
           "描述": "Xưởng dệt vải cao cấp bằng tơ tinh linh và thuốc nhuộm phép thuật.",
           "总占用空间": "Khoảng 500m²"
@@ -800,7 +800,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Cung cấp dịch vụ đo người, cắt vải, thêu phù văn và may đo trang phục."
+            "功能效果": "Cung cấp dịch vụ đo người, cắt vải, thêu phù văn và may đo trang phục."
           },
           "描述": "Không gian cắt may riêng dành cho quý tộc vương đình và khách ngoại giao.",
           "总占用空间": "Khoảng 480m²"
@@ -833,7 +833,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Cung cấp sòng bài mức cược cao, quyết toán riêng và tiếp đãi quý khách; mức cược tối đa theo thỏa thuận trong sảnh."
+            "功能效果": "Cung cấp sòng bài mức cược cao, quyết toán riêng và tiếp đãi quý khách; mức cược tối đa theo thỏa thuận trong sảnh."
           },
           "描述": "Sảnh quý khách ngắm biển dành cho vương thất, quý tộc và thương nhân xuyên quốc gia, có phòng kế toán riêng và quầy quyết toán khế ấn.",
           "总占用空间": "Khoảng 800m²"
@@ -847,7 +847,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Bảo quản phỉnh, chứng từ thương hội và vật thế chấp quý giá, trang bị thiết bị chống trộm và niêm phong cơ bản."
+            "功能效果": "Bảo quản phỉnh, chứng từ thương hội và vật thế chấp quý giá, trang bị thiết bị chống trộm và niêm phong cơ bản."
           },
           "描述": "Kho báu kín nằm trong nền con trai khổng lồ, đảm nhận bảo quản ngắn hạn dòng tiền mặt của sòng bạc và vật thế chấp của quý khách.",
           "总占用空间": "Khoảng 400m²"
@@ -879,8 +879,8 @@
           ],
           "数量": 1,
           "效果": {
-            "Sản phẩm": "Đấu sĩ đã qua huấn luyện bài bản, cùng vệ sĩ và võ giả biểu diễn có thể cho thuê ngoài.",
-            "Hiệu quả tính năng": "Cung cấp khẩu phần ăn ở, quản chế khẩu phần ăn, biệt giam, chữa trị thương bệnh và đăng ký chiến tích, duy trì trạng thái chiến đấu và giá trị thương mại của đấu sĩ."
+            "产出": "Đấu sĩ đã qua huấn luyện bài bản, cùng vệ sĩ và võ giả biểu diễn có thể cho thuê ngoài.",
+            "功能效果": "Cung cấp khẩu phần ăn ở, quản chế khẩu phần ăn, biệt giam, chữa trị thương bệnh và đăng ký chiến tích, duy trì trạng thái chiến đấu và giá trị thương mại của đấu sĩ."
           },
           "描述": "Nơi ở của đấu sĩ được dựng từ giường tầng đá xây, chuồng biệt giam song sắt và thầy thuốc thường trực, chiến tích và giá trị được niêm yết công khai.",
           "总占用空间": "Khoảng 1600m²"
@@ -894,9 +894,9 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Cung cấp đầy đủ thiết bị huấn luyện binh khí, giao đấu, chịu tải, né tránh và đối kháng nhiều người.",
-            "Kiểm định chiến đấu": "Khi luyện tập và thực chiến [Cận Chiến][Đỡ Đòn][Thể Thuật] tại sân này: kiểm định +2.",
-            "Hiệu quả tình huống": "Sau khi hoàn thành huấn luyện có hệ thống tại sân này, hiệu suất tiên công và khí thế khi tham gia quyết đấu hoặc đấu trường chính thức trong thời gian ngắn sẽ tốt hơn, chỉ áp dụng cho người đã tự luyện tập."
+            "功能效果": "Cung cấp đầy đủ thiết bị huấn luyện binh khí, giao đấu, chịu tải, né tránh và đối kháng nhiều người.",
+            "战斗检定": "Khi luyện tập và thực chiến [Cận Chiến][Đỡ Đòn][Thể Thuật] tại sân này: kiểm định +2.",
+            "情境效果": "Sau khi hoàn thành huấn luyện có hệ thống tại sân này, hiệu suất tiên công và khí thế khi tham gia quyết đấu hoặc đấu trường chính thức trong thời gian ngắn sẽ tốt hơn, chỉ áp dụng cho người đã tự luyện tập."
           },
           "描述": "Sân tập lộ thiên rải cát mịn, chia khu theo loại binh khí, xung quanh có cọc gỗ, giá bia và bậc quan sát.",
           "总占用空间": "Khoảng 2400m²"
@@ -910,8 +910,8 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Cung cấp sân quyết đấu danh dự quý tộc có người làm chứng, hộ cụ, ghế trọng tài và vị trí phép thuật cầm máu hồi phục, có thể chuyển đổi luật gây chết hoặc không gây chết theo thỏa thuận.",
-            "Hiệu quả tình huống": "Quyết đấu danh dự phi sát thương tại sân này có sự bảo đảm của trọng tài và thầy thuốc, nguy cơ tử vong và tàn phế giảm mạnh."
+            "功能效果": "Cung cấp sân quyết đấu danh dự quý tộc có người làm chứng, hộ cụ, ghế trọng tài và vị trí phép thuật cầm máu hồi phục, có thể chuyển đổi luật gây chết hoặc không gây chết theo thỏa thuận.",
+            "情境效果": "Quyết đấu danh dự phi sát thương tại sân này có sự bảo đảm của trọng tài và thầy thuốc, nguy cơ tử vong và tàn phế giảm mạnh."
           },
           "描述": "Sân quyết đấu ngay ngắn được khoanh bằng vòng phù văn giữa sân cát, có ghế chứng kiến gia tộc, ghế trọng tài và thầy thuốc luôn túc trực.",
           "总占用空间": "Khoảng 1800m²"
@@ -925,8 +925,8 @@
           ],
           "数量": 1,
           "效果": {
-            "Sản phẩm": "Ma thú sa mạc có thể dùng cho biểu diễn người-thú và cược đấu.",
-            "Hiệu quả tính năng": "Cung cấp nuôi nhốt, thuần hóa, hành lang vận chuyển và bảo trì chuồng ma thú, phối hợp lịch thi đấu để ra sân và dưỡng sức."
+            "产出": "Ma thú sa mạc có thể dùng cho biểu diễn người-thú và cược đấu.",
+            "功能效果": "Cung cấp nuôi nhốt, thuần hóa, hành lang vận chuyển và bảo trì chuồng ma thú, phối hợp lịch thi đấu để ra sân và dưỡng sức."
           },
           "描述": "Cụm chuồng đá nửa chìm dưới lớp cát, có cổng đôi, lỗ cho ăn và hành lang che nắng dẫn ra sân cát.",
           "总占用空间": "Khoảng 900m²"
@@ -977,7 +977,7 @@
           ],
           "数量": 4,
           "效果": {
-            "Hiệu quả tính năng": "Cung cấp các môn đọc viết cơ bản, toán số, kiến thức khế ước và an toàn xưởng thợ."
+            "功能效果": "Cung cấp các môn đọc viết cơ bản, toán số, kiến thức khế ước và an toàn xưởng thợ."
           },
           "描述": "Giảng đường đá xây dành cho lớp học nhỏ, trang bị bảng đen, giáo cụ toán học và giáo trình cơ bản.",
           "总占用空间": "Khoảng 360m²"
@@ -1009,7 +1009,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Chủ trì lễ bái và thánh lễ, tiếp đón người hành hương, và cung cấp bảo dưỡng cộng hưởng thánh quang cho thánh cụ đã đăng ký."
+            "功能效果": "Chủ trì lễ bái và thánh lễ, tiếp đón người hành hương, và cung cấp bảo dưỡng cộng hưởng thánh quang cho thánh cụ đã đăng ký."
           },
           "描述": "Trung tâm nghi lễ nối liền với cột thánh dẫn quang trong chính điện.",
           "总占用空间": "Khoảng 80m²"
@@ -1023,7 +1023,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Tịnh hóa thánh liệu và cung cấp ánh sáng cho Tịnh Vũ Lễ cùng chữa lành cơ bản."
+            "功能效果": "Tịnh hóa thánh liệu và cung cấp ánh sáng cho Tịnh Vũ Lễ cùng chữa lành cơ bản."
           },
           "描述": "Giếng ánh sáng thẳng đứng được duy trì bằng phù văn cổ của tộc Dực Dân.",
           "总占用空间": "Khoảng 60m²"
@@ -1057,8 +1057,8 @@
           ],
           "数量": 2,
           "效果": {
-            "Sản phẩm": "Hương liệu tinh chế, tinh dầu và nguyên liệu thuốc nhuộm.",
-            "Hiệu quả tính năng": "Hoàn thành tinh chế hương liệu qua sấy khô, phân loại, nghiền, chưng cất và đóng gói kín, nâng cao độ tinh khiết, thời hạn bảo quản và độ ổn định khi vận chuyển đường dài."
+            "产出": "Hương liệu tinh chế, tinh dầu và nguyên liệu thuốc nhuộm.",
+            "功能效果": "Hoàn thành tinh chế hương liệu qua sấy khô, phân loại, nghiền, chưng cất và đóng gói kín, nâng cao độ tinh khiết, thời hạn bảo quản và độ ổn định khi vận chuyển đường dài."
           },
           "描述": "Tháp chưng cất bằng đồng và hệ thống ống ngưng kết hợp công trình học Sahra với luyện kim thuật.",
           "总占用空间": "Khoảng 120m²"
@@ -1090,7 +1090,7 @@
           ],
           "数量": 2,
           "效果": {
-            "Hiệu quả tính năng": "Hỗ trợ lắp ráp thiết bị ma đạo, hiệu chỉnh mạch năng lượng và thử nghiệm vật liệu nguyên tố."
+            "功能效果": "Hỗ trợ lắp ráp thiết bị ma đạo, hiệu chỉnh mạch năng lượng và thử nghiệm vật liệu nguyên tố."
           },
           "描述": "Thiết bị thử nghiệm tổng hợp gồm mạch tiêu chuẩn Pháp Hoàn, mặt bàn kim loại chống ăn mòn và máy đọc số vụ tinh.",
           "总占用空间": "Khoảng 80m²"
@@ -1104,7 +1104,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Cách ly thí nghiệm năng lượng cao và phản ứng mất kiểm soát, hạn chế nổ, rò rỉ và ô nhiễm ma lực lan ra ngoài."
+            "功能效果": "Cách ly thí nghiệm năng lượng cao và phản ứng mất kiểm soát, hạn chế nổ, rò rỉ và ô nhiễm ma lực lan ra ngoài."
           },
           "描述": "Đơn vị thí nghiệm kín được chôn trong nền đá ngầm, bên ngoài phủ nhiều lớp kết giới chống nổ.",
           "总占用空间": "Khoảng 120m²"
@@ -1136,9 +1136,9 @@
           ],
           "数量": 2,
           "效果": {
-            "Sản phẩm": "Đông kết dung dịch sương biển ba màu đã tinh luyện thành vụ tinh.",
-            "Kiểm định sản xuất luyện kim": "+3",
-            "Gia công vật liệu": "Gia công dung dịch sương biển ba màu đã tinh luyện thành vật liệu vụ tinh có thể đăng ký."
+            "产出": "Đông kết dung dịch sương biển ba màu đã tinh luyện thành vụ tinh.",
+            "炼金生产检定": "+3",
+            "材料加工": "Gia công dung dịch sương biển ba màu đã tinh luyện thành vật liệu vụ tinh có thể đăng ký."
           },
           "描述": "Thiết bị đông kết trang bị kim châm dẫn dòng bằng đồng thau và vạch chia phân màu, kết quả xử lý chịu ảnh hưởng bởi phẩm chất và hiệu ứng của dung dịch sương biển thô.",
           "总占用空间": "Khoảng 90m²"
@@ -1152,7 +1152,7 @@
           ],
           "数量": 3,
           "效果": {
-            "Hiệu quả tính năng": "Hoàn thành cắt gọt, đánh bóng, quy cách hóa vụ tinh và gia công vật liệu ma đạo, hỗ trợ khảm ghép và chế tạo thiết bị về sau."
+            "功能效果": "Hoàn thành cắt gọt, đánh bóng, quy cách hóa vụ tinh và gia công vật liệu ma đạo, hỗ trợ khảm ghép và chế tạo thiết bị về sau."
           },
           "描述": "Dùng dao ma lực chính xác và kẹp giảm chấn thấp để xử lý vụ tinh dễ vỡ, dễ biến chất.",
           "总占用空间": "Khoảng 100m²"
@@ -1184,8 +1184,8 @@
           ],
           "数量": 6,
           "效果": {
-            "Sản phẩm": "Thảm phép thuật thương mại, vải quý tộc và vải xa xỉ có hiệu ứng giữ nhiệt hoặc tự làm sạch.",
-            "Kiểm định sản xuất may vá": "+2"
+            "产出": "Thảm phép thuật thương mại, vải quý tộc và vải xa xỉ có hiệu ứng giữ nhiệt hoặc tự làm sạch.",
+            "裁缝生产检定": "+2"
           },
           "描述": "Bộ thiết bị gồm khung dệt đạp chân, thoi ma lực và trận khóa họa tiết.",
           "总占用空间": "Khoảng 180m²"
@@ -1217,8 +1217,8 @@
           ],
           "数量": 1,
           "效果": {
-            "Sản phẩm": "Rượu trái cây cổ thụ, rượu nhựa cây nhẹ độ và đồ uống trường sinh.",
-            "Hiệu quả tính năng": "Cung cấp thiết bị phân loại, rửa, lên men, pha chế và ủ hầm cho quá trình nhưỡng tạo."
+            "产出": "Rượu trái cây cổ thụ, rượu nhựa cây nhẹ độ và đồ uống trường sinh.",
+            "功能效果": "Cung cấp thiết bị phân loại, rửa, lên men, pha chế và ủ hầm cho quá trình nhưỡng tạo."
           },
           "描述": "Phòng nhưỡng kín tận dụng nhiệt độ cây sống và ma lực tự nhiên để giữ ổn định quá trình lên men.",
           "总占用空间": "Khoảng 500m²"
@@ -1250,7 +1250,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Ổn định quá trình đóng và sửa chữa lớn thân tàu, chống gió biển, xung kích ma lực và biến dạng thân tàu chưa hoàn thiện."
+            "功能效果": "Ổn định quá trình đóng và sửa chữa lớn thân tàu, chống gió biển, xung kích ma lực và biến dạng thân tàu chưa hoàn thiện."
           },
           "描述": "Mảng lực trường đỏ bao phủ ụ tàu chính, là thiết bị then chốt để xưởng xử lý thân tàu phép thuật cỡ lớn.",
           "总占用空间": "Bao phủ khoảng 1200m²"
@@ -1264,8 +1264,8 @@
           ],
           "数量": 2,
           "效果": {
-            "Sản phẩm": "Thuyền dẫn dòng, thuyền bắt sương, thuyền phù không và tàu phép thuật viễn dương.",
-            "Hiệu quả tính năng": "Hỗ trợ lắp ráp đồng bộ thân tàu cỡ lớn, động lực ma đạo và mạch ổn định."
+            "产出": "Thuyền dẫn dòng, thuyền bắt sương, thuyền phù không và tàu phép thuật viễn dương.",
+            "功能效果": "Hỗ trợ lắp ráp đồng bộ thân tàu cỡ lớn, động lực ma đạo và mạch ổn định."
           },
           "描述": "Bàn lắp ráp hạng nặng gắn phù văn cẩu nâng và mạch định vị thân tàu.",
           "总占用空间": "Khoảng 700m²"
@@ -1297,7 +1297,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Sản phẩm": "Dịch vụ đóng và cải tạo thương thuyền cỡ lớn, thuyền viễn dương ma đạo"
+            "产出": "Dịch vụ đóng và cải tạo thương thuyền cỡ lớn, thuyền viễn dương ma đạo"
           },
           "描述": "Cơ sở lắp ráp nước sâu có thể chứa thân tàu cỡ lớn, đi kèm hệ thống cẩu nâng và thoát nước.",
           "总占用空间": "Khoảng 12000m²"
@@ -1341,7 +1341,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Sản phẩm": "Bia mạch nha, rượu mạnh lúa mạch đen"
+            "产出": "Bia mạch nha, rượu mạnh lúa mạch đen"
           },
           "描述": "Hầm lên men tận dụng mạch nước Tửu Khê và phòng đá ngầm để giữ nhiệt độ.",
           "总占用空间": "Khoảng 900m²"
@@ -1355,7 +1355,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Tiến hành kiểm tra mẫu theo lô, phân cấp hương vị và xin đóng dấu chất lượng của công hội nhưỡng tạo sư."
+            "功能效果": "Tiến hành kiểm tra mẫu theo lô, phân cấp hương vị và xin đóng dấu chất lượng của công hội nhưỡng tạo sư."
           },
           "描述": "Phòng riêng cho nhưỡng tạo sư và kiểm định viên công hội đánh giá từng lô.",
           "总占用空间": "Khoảng 120m²"
@@ -1387,7 +1387,7 @@
           ],
           "数量": 4,
           "效果": {
-            "Sản phẩm": "Thỏi sắt lạnh, phụ phẩm luyện kim"
+            "产出": "Thỏi sắt lạnh, phụ phẩm luyện kim"
           },
           "描述": "Lò cao đá xây nối vào dải khe địa nhiệt và được quạt gió luyện kim điều chỉnh nhiệt độ.",
           "总占用空间": "Khoảng 900m²"
@@ -1401,8 +1401,8 @@
           ],
           "数量": 1,
           "效果": {
-            "Sản phẩm": "Đao kiếm, mũi giáo, mảnh giáp, mũi tên tiêu chuẩn",
-            "Kiểm định sản xuất": "Khi [Rèn Đúc], DC cơ bản -4, thời gian sản xuất -30%."
+            "产出": "Đao kiếm, mũi giáo, mảnh giáp, mũi tên tiêu chuẩn",
+            "生产检定": "Khi [Rèn Đúc], DC cơ bản -4, thời gian sản xuất -30%."
           },
           "描述": "Phòng tác nghiệp búa rèn hạng nặng vận hành bằng thủy lực từ hẻm núi.",
           "总占用空间": "Khoảng 500m²"
@@ -1451,7 +1451,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Kiểm định sản xuất": "Khi [Rèn Đúc], DC cơ bản -4, thời gian sản xuất -35%."
+            "生产检定": "Khi [Rèn Đúc], DC cơ bản -4, thời gian sản xuất -35%."
           },
           "描述": "Phòng rèn đúc kết nối lò cao, búa động lực và thiết bị tôi luyện.",
           "总占用空间": "Khoảng 900m²"
@@ -1485,8 +1485,8 @@
           ],
           "数量": 4,
           "效果": {
-            "Hiệu quả tính năng": "Chứa và vận chuyển nước uống, cung cấp tiếp tế khẩn cấp cho đội thương lộ đường dài.",
-            "Hiệu quả tình huống": "Khi đoàn thương này thực hiện vận chuyển xuyên ốc đảo, mức tiêu thụ nước uống của cả đoàn giảm 6%, chỉ áp dụng cho vận chuyển thương lộ của đoàn thương này."
+            "功能效果": "Chứa và vận chuyển nước uống, cung cấp tiếp tế khẩn cấp cho đội thương lộ đường dài.",
+            "情境效果": "Khi đoàn thương này thực hiện vận chuyển xuyên ốc đảo, mức tiêu thụ nước uống của cả đoàn giảm 6%, chỉ áp dụng cho vận chuyển thương lộ của đoàn thương này."
           },
           "描述": "Xe chở nước có khung che nắng và lớp chống bốc hơi, là trang bị bắt buộc cho vận chuyển xuyên ốc đảo.",
           "总占用空间": "Mỗi xe khoảng 18m³"
@@ -1518,7 +1518,7 @@
           ],
           "数量": 2,
           "效果": {
-            "Hiệu quả tính năng": "Biên chế 2 đoàn tàu, chạy dọc đường ray cố định, đảm nhận vận chuyển người và hàng hóa lớn giữa các thành phố trong đế quốc."
+            "功能效果": "Biên chế 2 đoàn tàu, chạy dọc đường ray cố định, đảm nhận vận chuyển người và hàng hóa lớn giữa các thành phố trong đế quốc."
           },
           "描述": "Đoàn tàu nguyên thủy được kéo bằng lõi ma lực, có toa khách và toa hàng.",
           "总占用空间": "Mỗi đoàn khoảng 180m, sức chứa bãi ga 2 đoàn"
@@ -1550,7 +1550,7 @@
           ],
           "数量": 2,
           "效果": {
-            "Hiệu quả tính năng": "Tạm chứa hàng hóa quá cảnh từ Cảng Bạch xuống Nam hoặc từ Lẫm Phong Độ sang Đông, cung cấp đăng ký, phân loại và trung chuyển."
+            "功能效果": "Tạm chứa hàng hóa quá cảnh từ Cảng Bạch xuống Nam hoặc từ Lẫm Phong Độ sang Đông, cung cấp đăng ký, phân loại và trung chuyển."
           },
           "描述": "Kho kín xếp dọc rìa đài địa, kết nối đường cảng và điều độ ụ tàu.",
           "总占用空间": "Khoảng 1600m²"
@@ -1564,7 +1564,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Môi giới cho thuê bán thuyền và đơn hàng vận chuyển, làm thủ tục bảo hiểm hàng hải, chứng kiến khế ước và đăng ký rủi ro."
+            "功能效果": "Môi giới cho thuê bán thuyền và đơn hàng vận chuyển, làm thủ tục bảo hiểm hàng hải, chứng kiến khế ước và đăng ký rủi ro."
           },
           "描述": "Sảnh dịch vụ đối ngoại gần Thiết Miêu Nghị Sự Sảnh, tập hợp quầy thường trú của thương hành, hành môi giới hàng hải và sở công chứng bảo hiểm thuyền.",
           "总占用空间": "Khoảng 500m²"
@@ -1578,7 +1578,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Sản phẩm": "Dịch vụ lưu trú, ẩm thực, tắm rửa và chiêu mộ ngắn hạn cho thủy thủ"
+            "产出": "Dịch vụ lưu trú, ẩm thực, tắm rửa và chiêu mộ ngắn hạn cho thủy thủ"
           },
           "描述": "Quán trọ thực dụng dành cho thương thuyền và công nhân đóng thuyền, cung cấp lưu trú ngắn hạn, tiếp tế và giao nhận thủy thủ.",
           "总占用空间": "Khoảng 900m²"
@@ -1623,7 +1623,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Sản phẩm": "Giết trùng huyệt cư đá vụn (bậc 1) sẽ thu được vỏ giáp và thịt trùng; khám phá các ngã rẽ có thể nhặt được ít mảnh quặng phế."
+            "产出": "Giết trùng huyệt cư đá vụn (bậc 1) sẽ thu được vỏ giáp và thịt trùng; khám phá các ngã rẽ có thể nhặt được ít mảnh quặng phế."
           },
           "描述": "Chất mùn, hơi ẩm và khe đá vụn của hầm mỏ bỏ hoang nuôi dưỡng đàn trùng huyệt cư, chúng đào xới quặng vụn và thu hút những kẻ săn mồi nhỏ. Đường ray khai thác cũ đứt đoạn ở nhiều ngã rẽ đá vụn, tiếng động di chuyển sẽ làm kinh động trùng huyệt cư; đợt thăm dò trước đã dọn sạch tầng này nhưng sau khi rút đi không còn ai duy trì ánh sáng, biển chỉ dẫn và kết cấu chống đỡ.",
           "总占用空间": "Hầm mỏ bỏ hoang và ngã rẽ đá vụn tổng cộng khoảng 3400m²"
@@ -1637,7 +1637,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Sản phẩm": "Hang rêu đọng nước bên ngoài cổng đá đen có thể giết slime giáp rêu (bậc 1) để lấy chất keo và rêu ẩm, và hái được dược thảo cùng nấm bậc thấp."
+            "产出": "Hang rêu đọng nước bên ngoài cổng đá đen có thể giết slime giáp rêu (bậc 1) để lấy chất keo và rêu ẩm, và hái được dược thảo cùng nấm bậc thấp."
           },
           "描述": "Nước đọng chảy vào hõm đất trũng, rêu ẩm lấy chất mùn và cặn ma lực bậc thấp làm dưỡng chất; slime giáp rêu ăn rêu và cặn bã, duy trì vòng tuần hoàn làm sạch vũng nước. Mực nước trong hang sẽ thay đổi tuyến đường di chuyển, cuối đường sừng sững một cánh cổng đá đen không thể mở được;",
           "总占用空间": "Hang rêu đọng nước, hang rêu, khe thoát nước và tiền sảnh đá đen tổng cộng khoảng 4100m²"
@@ -1668,7 +1668,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Chỉ có thể cho thuyền nhỏ đậu tạm khi triều lặng và thời tiết tốt."
+            "功能效果": "Chỉ có thể cho thuyền nhỏ đậu tạm khi triều lặng và thời tiết tốt."
           },
           "描述": "Vịnh cạn chịu ảnh hưởng của thủy triều và bão tố, không có tuyến hàng hải ổn định, bến nước sâu hay điều kiện cầu cảng.",
           "总占用空间": "Khoảng 0,3 héc-ta mặt nước"
@@ -1682,7 +1682,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Sản phẩm": "Một ít vỏ sò, gỗ trôi và vật liệu bờ biển có thể dùng cắm trại tạm."
+            "产出": "Một ít vỏ sò, gỗ trôi và vật liệu bờ biển có thể dùng cắm trại tạm."
           },
           "描述": "Bãi cát dài hẹp chịu ảnh hưởng của mực nước triều, có thể làm nơi dỡ hàng, phơi phóng và cắm trại tạm thời.",
           "总占用空间": "Khoảng 0,45 héc-ta"
@@ -1696,7 +1696,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Sản phẩm": "Một ít củi khô, cây sợi và dược thảo dại có thể thu hái."
+            "产出": "Một ít củi khô, cây sợi và dược thảo dại có thể thu hái."
           },
           "描述": "Triền dốc thoải phủ đầy cây bụi chịu mặn, chưa có điều kiện thành ruộng đất trù phú.",
           "总占用空间": "Khoảng 0,55 héc-ta"
@@ -1710,7 +1710,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Có thể đáp ứng nhu cầu lấy nước cơ bản cho nhân viên lưu trú ngắn hạn, rủi ro mùa khô và ô nhiễm cần quản lý riêng."
+            "功能效果": "Có thể đáp ứng nhu cầu lấy nước cơ bản cho nhân viên lưu trú ngắn hạn, rủi ro mùa khô và ô nhiễm cần quản lý riêng."
           },
           "描述": "Vũng nước ngọt nhỏ hình thành từ nước mưa và nước ngầm nông, chưa đủ để hỗ trợ định cư quy mô lớn hay tưới tiêu nông nghiệp.",
           "总占用空间": "Khoảng 0,05 héc-ta"
@@ -1724,7 +1724,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Sản phẩm": "Nhuyễn thể theo mùa, giáp xác nhỏ và cá gần bờ; có thể tìm thấy một ít trân châu hoặc vật liệu ma pháp biển bậc thấp."
+            "产出": "Nhuyễn thể theo mùa, giáp xác nhỏ và cá gần bờ; có thể tìm thấy một ít trân châu hoặc vật liệu ma pháp biển bậc thấp."
           },
           "描述": "Dải rạn tự nhiên lộ ra theo thủy triều, chỉ thích hợp thu thập cường độ thấp; bão tố, thú biển và đánh bắt quá mức sẽ ảnh hưởng trực tiếp đến sản lượng.",
           "总占用空间": "Khoảng 0,132 héc-ta"
@@ -1770,7 +1770,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Cung cấp lối đi ngắm cảnh đã được bảo trì, điểm dừng chân tạm thời và khu vực hướng dẫn, du khách không được vượt quá ranh giới cảnh giới di tích."
+            "功能效果": "Cung cấp lối đi ngắm cảnh đã được bảo trì, điểm dừng chân tạm thời và khu vực hướng dẫn, du khách không được vượt quá ranh giới cảnh giới di tích."
           },
           "描述": "Khu vực mở được chỉnh trang từ hành lang đứt gãy và tường ngoài tháp đá nghiêng nửa, tạo thành tuyến ngắm cảnh.",
           "总占用空间": "Khoảng 600m²"
@@ -1817,7 +1817,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Do xứ trưởng thống lĩnh các bộ phận hành chính, chấp pháp, hậu cần và tình báo, biên chế 24 nhân viên trú thành, phụ trách giấy phép, cảnh báo dị thường, duy trì trật tự và báo cáo về tổng bộ công hội."
+            "功能效果": "Do xứ trưởng thống lĩnh các bộ phận hành chính, chấp pháp, hậu cần và tình báo, biên chế 24 nhân viên trú thành, phụ trách giấy phép, cảnh báo dị thường, duy trì trật tự và báo cáo về tổng bộ công hội."
           },
           "描述": "Cơ quan chấp hành trực thuộc do công hội mạo hiểm giả đặt tại cửa vào, không chịu sự chỉ huy trực tiếp của thế lực địa phương hay bên ủy thác.",
           "总占用空间": "Sảnh làm việc, phòng chấp pháp, phòng tình báo và kho hậu cần tổng cộng khoảng 0,03km²"
@@ -1831,7 +1831,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Cung cấp dịch vụ tiếp tế, đăng ký thu mua vật liệu, bảo trì trang bị, y tế, giám định, bản đồ và lưu trú; các cửa hàng do nơi quản lý cấp phép và chịu sự thanh tra."
+            "功能效果": "Cung cấp dịch vụ tiếp tế, đăng ký thu mua vật liệu, bảo trì trang bị, y tế, giám định, bản đồ và lưu trú; các cửa hàng do nơi quản lý cấp phép và chịu sự thanh tra."
           },
           "描述": "Khu dịch vụ cố định hình thành quanh cửa vào, nhiều thương hội và cửa hàng độc lập cùng tồn tại.",
           "总占用空间": "Khu quầy hàng, tiệm tiếp tế, xưởng bảo trì và quán trọ tạm tổng cộng khoảng 0,09km²"
@@ -1845,7 +1845,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Sản phẩm": "Giết trùng hỏa nhung (bậc 1) sẽ thu được thịt trùng hỏa nhung, da chuột chịu nhiệt và túi tuyến ngưng nhiệt; thu hái rêu dung nham có thể dùng làm nguyên liệu ăn hoặc phụ liệu luyện kim."
+            "产出": "Giết trùng hỏa nhung (bậc 1) sẽ thu được thịt trùng hỏa nhung, da chuột chịu nhiệt và túi tuyến ngưng nhiệt; thu hái rêu dung nham có thể dùng làm nguyên liệu ăn hoặc phụ liệu luyện kim."
           },
           "描述": "Khe nứt dung nham liên tục truyền nhiệt vào tiền sảnh, rêu dung nham bám vào xỉ quặng mà sinh trưởng, trùng hỏa nhung ăn rêu và trứng côn trùng, trở thành nguồn thức ăn cho những kẻ săn mồi tầng sâu hơn. Tiền sảnh rộng mở nối liền nhiều hang nhánh, đàn trùng sẽ tránh ánh sáng mạnh và đội đông người; săn bắt quá mức sẽ làm giảm sản lượng nguyên liệu và da lông của tầng này.",
           "总占用空间": "Tiền sảnh dung nham, khu hang tổ trùng hỏa nhung và hang nhánh tổng cộng khoảng 4800m²"
@@ -1859,7 +1859,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Sản phẩm": "Đánh bại linh mỏ Nham Xích (bậc 2) sẽ thu được ma thạch bậc thấp và hạch tinh linh mỏ; thu thập dọc hầm mỏ đã biết có thể lấy được xỉ quặng giàu ma lực và quặng Nham Xích."
+            "产出": "Đánh bại linh mỏ Nham Xích (bậc 2) sẽ thu được ma thạch bậc thấp và hạch tinh linh mỏ; thu thập dọc hầm mỏ đã biết có thể lấy được xỉ quặng giàu ma lực và quặng Nham Xích."
           },
           "描述": "Ma lực rỉ ra từ mạch quặng cũ ngấm vào đá vụn và bụi quặng, hình thành linh mỏ Nham Xích; chúng tụ tập xỉ quặng giàu ma lực, cũng sẽ mai phục kẻ quấy nhiễu trong hầm mỏ hẹp. Đường ray cũ và tàn tích trại thợ mỏ đan xen nhau, việc thu thập quặng bị giới hạn bởi kết cấu chống đỡ hầm mỏ, hoạt động của linh mỏ và tuyến phong tỏa của nơi quản lý.",
           "总占用空间": "Hầm mỏ Nham Xích, tàn tích trại thợ mỏ và ngã rẽ tổng cộng khoảng 6200m²"
@@ -1873,7 +1873,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Sản phẩm": "Giết thằn lằn hang dung nham (bậc 2) sẽ thu được vảy lột, túi tuyến chịu nhiệt và thịt thằn lằn; ven khe nứt nhiệt có thể thu thập cụm tinh thể nhiệt."
+            "产出": "Giết thằn lằn hang dung nham (bậc 2) sẽ thu được vảy lột, túi tuyến chịu nhiệt và thịt thằn lằn; ven khe nứt nhiệt có thể thu thập cụm tinh thể nhiệt."
           },
           "描述": "Khe nứt nhiệt độ cao nuôi dưỡng thảm nấm chịu nhiệt và ma vật nhỏ, thằn lằn hang dung nham ăn chúng và chiếm cứ tổ quanh khe nứt, là kẻ săn mồi chủ yếu trong chuỗi thức ăn ba tầng đầu. Hơi nóng và dung nham trong tổ phun trào bất ổn, người lạ đến gần thú non hoặc nguồn nhiệt sẽ bị cả đàn tấn công.",
           "总占用空间": "Hang khe nứt nhiệt và khu tổ thằn lằn hang tổng cộng khoảng 7400m²"
@@ -1887,7 +1887,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Sản phẩm": "Thăm dò đã xác nhận vòng ngoài có thể lấy được mảnh vỡ khí cụ người lùn cổ đại, phiến đá khắc chữ và vật liệu xây dựng phế bỏ; di vật hoàn chỉnh và cấu kiện chưa rõ có thể tiềm ẩn nguy hiểm."
+            "产出": "Thăm dò đã xác nhận vòng ngoài có thể lấy được mảnh vỡ khí cụ người lùn cổ đại, phiến đá khắc chữ và vật liệu xây dựng phế bỏ; di vật hoàn chỉnh và cấu kiện chưa rõ có thể tiềm ẩn nguy hiểm."
           },
           "描述": "Nhiệt lượng và bụi quặng từ các tầng trước lắng đọng ở vòng ngoài di tích, rêu, côn trùng và thằn lằn hang sẽ theo khe nứt tiến vào khu vực vòng ngoài để kiếm ăn, hình thành hệ sinh thái tàn dư nối liền với tầng trên. Vương đình người lùn cổ đại mới chỉ hoàn thành thăm dò vòng ngoài, kết cấu sâu bên trong và mức độ nguy hiểm chưa được xác nhận; đã biết có một tượng đá cự thạch nuốt đá đang say ngủ (dự kiến bậc 3), không chịu sự điều khiển trực tiếp của bên vận hành, sẽ tỉnh dậy khi khu vực vương đình bị xâm nhập.",
           "总占用空间": "Vòng ngoài di tích vương đình, hành lang vòng và các sảnh đã xác nhận tổng cộng khoảng 6000m²"
@@ -1919,7 +1919,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Trung tâm hành chính, chợ búa, thuế vụ, tư pháp và mậu dịch biên giới của vương quốc."
+            "功能效果": "Trung tâm hành chính, chợ búa, thuế vụ, tư pháp và mậu dịch biên giới của vương quốc."
           },
           "描述": "Vương thành thung lũng sông được xây dựa theo dòng sông, thiết lập khu hành chính vương thất, chợ búa, kho vận và doanh trại quân thường trực; người thuộc chủng người và thú tộc tự do cùng chung sống, cùng buôn bán.",
           "总占用空间": "Khoảng 2,4km²"
@@ -1933,7 +1933,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Đảm nhận đăng ký thông hành biên giới, thu thuế quan và luân phiên đồn trú, là tuyến phòng thủ tiền tiêu của vương thành thung lũng sông."
+            "功能效果": "Đảm nhận đăng ký thông hành biên giới, thu thuế quan và luân phiên đồn trú, là tuyến phòng thủ tiền tiêu của vương thành thung lũng sông."
           },
           "描述": "Ải quan đá xây đã được tu sửa và khôi phục sử dụng, có trạm thuế, tháp canh và doanh trại đồn trú.",
           "总占用空间": "Khoảng 2400m²"
@@ -1947,8 +1947,8 @@
           ],
           "数量": 1,
           "效果": {
-            "Sản phẩm": "Ngũ cốc, đậu, rau và cây thức ăn gia súc.",
-            "Hiệu quả tính năng": "Duy trì nguồn lương thực cơ bản cho vương thành và các làng, đồng thời tạo ra lương thực dư thừa cho mậu dịch biên giới."
+            "产出": "Ngũ cốc, đậu, rau và cây thức ăn gia súc.",
+            "功能效果": "Duy trì nguồn lương thực cơ bản cho vương thành và các làng, đồng thời tạo ra lương thực dư thừa cho mậu dịch biên giới."
           },
           "描述": "Ruộng đất liền mạch được tưới tiêu dọc sông, áp dụng luân canh và kiêm một ít đồng cỏ chăn nuôi.",
           "总占用空间": "Khoảng 7km²"
@@ -1962,7 +1962,7 @@
           ],
           "数量": 3,
           "效果": {
-            "Hiệu quả tính năng": "Cung cấp nhân lực cho nông canh, bốc dỡ đường sông, buôn bán gia súc, khai thác đá và tiếp tế mậu dịch biên giới."
+            "功能效果": "Cung cấp nhân lực cho nông canh, bốc dỡ đường sông, buôn bán gia súc, khai thác đá và tiếp tế mậu dịch biên giới."
           },
           "描述": "Ba làng hỗn cư nằm lần lượt ở bờ Bắc, bến đò và triền Nam của thung lũng sông, nông hộ người thuộc chủng người và thợ thủ công thú tộc tự do cùng sinh sống, làng triền Nam còn giữ đồn dân binh.",
           "总占用空间": "Tổng cộng khoảng 2,1km²"
@@ -1976,7 +1976,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Sản phẩm": "Đá xây dựng, củi, gỗ và lâm sản theo mùa."
+            "产出": "Đá xây dựng, củi, gỗ và lâm sản theo mùa."
           },
           "描述": "Rừng cây và triền đá được vương quốc quản lý theo hạn ngạch, cung cấp vật liệu cơ bản cho việc tu sửa ải quan, xây dựng thị trấn và mậu dịch.",
           "总占用空间": "Khoảng 6,5km²"
@@ -1990,7 +1990,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Hỗ trợ người thống trị xử lý thuế khóa, bổ nhiệm quan chức, phong đất, tranh chấp liên chủng tộc và hiệp ước đối ngoại."
+            "功能效果": "Hỗ trợ người thống trị xử lý thuế khóa, bổ nhiệm quan chức, phong đất, tranh chấp liên chủng tộc và hiệp ước đối ngoại."
           },
           "描述": "Cơ quan nghị chính thường trực do văn quan vương thất, đại biểu làng thung lũng sông và đại biểu thú tộc tự do hợp thành.",
           "总占用空间": "Đã tính vào khu hành chính Thành Lam Kiều"
@@ -2004,7 +2004,7 @@
           ],
           "数量": 1200,
           "效果": {
-            "Thuộc tính cơ bản": "Do bộ binh người thuộc chủng người, trinh sát thú tộc và đội tuần kỵ hỗn hợp hợp thành, đảm nhận đồn trú ải quan, tuần tra thung lũng sông, hộ vệ thương lộ và cảnh báo biên giới."
+            "基础属性": "Do bộ binh người thuộc chủng người, trinh sát thú tộc và đội tuần kỵ hỗn hợp hợp thành, đảm nhận đồn trú ải quan, tuần tra thung lũng sông, hộ vệ thương lộ và cảnh báo biên giới."
           },
           "描述": "Quân biên phòng thường trực có thể chiêu mộ dân binh làng để hiệp phòng, không tham gia các cuộc chiến tấn công của hai đại quốc.",
           "总占用空间": "Doanh trại và chuồng ngựa đã tính vào Thành Lam Kiều và ải quan cũ"
@@ -2018,7 +2018,7 @@
           ],
           "数量": 42000,
           "效果": {
-            "Hiệu quả tính năng": "Cung cấp nhân lực cho nông nghiệp, thủ công nghiệp, mậu dịch, vận tải đường sông, khai thác đá và dân binh địa phương."
+            "功能效果": "Cung cấp nhân lực cho nông nghiệp, thủ công nghiệp, mậu dịch, vận tải đường sông, khai thác đá và dân binh địa phương."
           },
           "描述": "Người thuộc chủng người chiếm khoảng 54%, thú tộc tự do khoảng 40%, chủng tộc khác khoảng 6%; cư dân thú tộc có quyền công dân, tài sản, di cư và kinh doanh.",
           "总占用空间": "Không gian cư trú và sản xuất đã tính vào vương thành, các làng và ruộng đất"
@@ -2051,7 +2051,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Cung cấp giường chiếu cơ bản, phòng tắm và phòng cách âm cho khách đã đăng ký; khi đầy phòng, khách mới đến sẽ kích hoạt quy tắc toàn thể khách trọ dời sang phòng kế tiếp. Đồ vật trong phòng không thể mang ra ngoài, và không sinh ra vật tư có thể giao dịch."
+            "功能效果": "Cung cấp giường chiếu cơ bản, phòng tắm và phòng cách âm cho khách đã đăng ký; khi đầy phòng, khách mới đến sẽ kích hoạt quy tắc toàn thể khách trọ dời sang phòng kế tiếp. Đồ vật trong phòng không thể mang ra ngoài, và không sinh ra vật tư có thể giao dịch."
           },
           "描述": "Phòng khách hiện ra theo nhu cầu lưu trú, đóng lại khi trống phòng.",
           "总占用空间": "Phòng khách vô hạn; không có dung lượng kho có thể mang ra ngoài"
@@ -2082,7 +2082,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Khi <user> dùng chìa khóa này mở bất kỳ cánh cửa nào, cánh cửa đó sẽ tạm thời nối thông đến sân ngoài của di tích thần quốc; không thể tạo ra cửa từ hư không, cũng không thể kết nối đến địa điểm hay vị diện khác."
+            "功能效果": "Khi <user> dùng chìa khóa này mở bất kỳ cánh cửa nào, cánh cửa đó sẽ tạm thời nối thông đến sân ngoài của di tích thần quốc; không thể tạo ra cửa từ hư không, cũng không thể kết nối đến địa điểm hay vị diện khác."
           },
           "描述": "Một chiếc chìa khóa cũ không khắc chữ, sau khi rời khỏi di tích, cổng tạm thời sẽ khôi phục lại thành cánh cửa vốn có.",
           "总占用空间": "Không áp dụng"
@@ -2113,7 +2113,7 @@
           ],
           "数量": 1,
           "效果": {
-            "Hiệu quả tính năng": "Duy trì tưới tiêu cơ bản và trạng thái đất cho 1200m² đất canh tác; vẫn cần đầu tư nguồn nước, hạt giống, công sức và phân bón."
+            "功能效果": "Duy trì tưới tiêu cơ bản và trạng thái đất cho 1200m² đất canh tác; vẫn cần đầu tư nguồn nước, hạt giống, công sức và phân bón."
           },
           "描述": "Hệ thống bể nông duy trì điều kiện nông nghiệp thông thường.",
           "总占用空间": "Khoảng 60m²"
@@ -2146,8 +2146,8 @@
           ],
           "数量": 1,
           "效果": {
-            "Sản phẩm": "Chế biến các món ăn thường, ngày thường, tinh tế hoặc xa xỉ theo nguyên liệu đã thanh toán và thực đơn, cùng món tráng miệng được đặt tên theo tâm trạng đầu bếp trong ngày.",
-            "Hiệu quả tính năng": "Kiểm định [Nấu Ăn] +5"
+            "产出": "Chế biến các món ăn thường, ngày thường, tinh tế hoặc xa xỉ theo nguyên liệu đã thanh toán và thực đơn, cùng món tráng miệng được đặt tên theo tâm trạng đầu bếp trong ngày.",
+            "功能效果": "Kiểm định [Nấu Ăn] +5"
           },
           "描述": "Một gian bếp bình thường, dụng cụ và gia vị đầy đủ.",
           "总占用空间": "Khoảng 220m²"
