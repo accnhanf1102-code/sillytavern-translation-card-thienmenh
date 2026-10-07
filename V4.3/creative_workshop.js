@@ -3840,7 +3840,10 @@ async function apiFetch(endpoint, options = {}) {
 
   let response;
   try {
-    response = await fetch(API_BASE + endpoint, { ...options, headers });
+    const targetUrl = (typeof endpoint === 'string' && (endpoint.startsWith('http://') || endpoint.startsWith('https://')))
+      ? endpoint
+      : API_BASE + endpoint;
+    response = await fetch(targetUrl, { ...options, headers });
   } catch (error) {
     throw normalizeThrownError(error, '请求失败');
   }
@@ -10910,11 +10913,24 @@ function getAuthorName(project) {
   return project.authorGlobalName || project.authorName || 'Tác giả ẩn danh';
 }
 
+function getSafeBaseUrl() {
+  if (typeof API_BASE !== 'undefined' && API_BASE) {
+    return API_BASE;
+  }
+  try {
+    const origin = window.location?.origin;
+    if (origin && origin !== 'null' && !origin.startsWith('about:')) {
+      return origin;
+    }
+  } catch {}
+  return 'https://poemofdestinycreativeworkshop.1528779666.workers.dev';
+}
+
 function appendCacheVersion(url, version) {
   if (!url) return url;
 
   try {
-    const parsed = new URL(String(url), window.location.origin);
+    const parsed = new URL(String(url), getSafeBaseUrl());
     if (version) {
       parsed.searchParams.set('v', String(version));
     }
@@ -10928,7 +10944,7 @@ function encodeWsrvSource(url) {
   if (!url) return '';
 
   try {
-    const parsed = new URL(String(url), window.location.origin);
+    const parsed = new URL(String(url), getSafeBaseUrl());
     return encodeURIComponent(parsed.toString());
   } catch {
     return encodeURIComponent(String(url));
@@ -10974,9 +10990,10 @@ function getDirectCoverUrl(project) {
   }
 
   const rawUrl = String(project.coverImage || '');
+  const base = getSafeBaseUrl().replace(/\/+$/, '');
   const url = (rawUrl.startsWith('http://') || rawUrl.startsWith('https://') || rawUrl.startsWith('data:') || rawUrl.startsWith('blob:'))
     ? rawUrl
-    : ((typeof API_BASE !== 'undefined' ? API_BASE : '') + (rawUrl.startsWith('/') ? '' : '/') + rawUrl);
+    : (base + (rawUrl.startsWith('/') ? '' : '/') + rawUrl);
 
   return appendCacheVersion(url, project.updatedAt || project.latestApprovedAt || project.coverImage);
 }
@@ -10984,7 +11001,7 @@ function getDirectCoverUrl(project) {
 function getCoverImageSources(project) {
   const placeholder = getFallbackSvgUrl();
   const fallback = getDirectCoverUrl(project);
-  const requiresAuth = Boolean(fallback && project?.status !== 'approved' && String(fallback).includes('/api/files/'));
+  const requiresAuth = Boolean(fallback && project?.status && project.status !== 'approved' && String(fallback).includes('/api/files/'));
   if (requiresAuth) {
     return {
       primary: placeholder,
